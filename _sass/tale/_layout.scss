@@ -12,7 +12,11 @@ footer,
   max-width: 800px;
   width: 80%;
 }
-
+.orange-border {
+    color: $shadow-color;
+    border-style: dotted;
+    border-color: $border-color;
+}
 .nav {
   box-shadow: 0 2px 2px -2px $shadow-color;
   overflow: auto;
@@ -25,9 +29,7 @@ footer,
 
   &-title {
     @include transition(all .2s ease-out);
-    color: $shadow-color;
-    border-style: dotted;
-    border-color: $border-color;
+    color: $default-color;
     display: inline-block;
     margin: 0;
     padding-right: .2rem;
