@@ -1,16 +1,16 @@
 # Site settings
-title:          Tale
-description:    "Minimal Jekyll theme for storytellers"
-url:            "https://chesterhow.github.io"
+title:          OOPSpam API blog
+description:    "A blog about spam filtering & detection"
+url:            "https://www.oopspam.com/blog/"
 
 # Google Analytics
 google_analytics: UA—XXXXXXXX-X
 
 # Author
 author:
-  name:         Chester How
-  url:          https://chester.how
-  email:        chesterhow@gmail.com
+  name:         Onar A.
+  url:          https://www.oopspam.com/
+  email:        contact@oopspam.com
 
 # Build settings
 markdown:       kramdown
