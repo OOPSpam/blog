@@ -4,7 +4,7 @@ title:  "How to use OOPSpam API to filter spam"
 author: "Onar A."
 ---
 
-If you have ever owned a website with a form submission or a blog (Wordpress etc.) then you probably experience a huge amount of spam comments/submission almost daily. In fact, these are two cases I personally had experience and decided to build OOPSpam API to detect and filter spam.
+If you have ever owned a website with a form submission or a blog (Wordpress etc.) then you probably experienced a huge amount of spam comments/submission almost daily. In fact, these are two cases I personally had experience and decided to build OOPSpam API to detect and filter spam.
 
 Deciding which content is spam solely based on content is a hard problem. Even well-trained machine learning algorithms have a good chance of making a false positive. Hence, OOPSpam API allows you to pass the following values to make  a better decision :
 - ```sender_ip``` 
