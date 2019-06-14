@@ -1,7 +1,7 @@
 # Site settings
 title:          OOPSpam API blog
 description:    "A blog about spam filtering & detection"
-url:            "https://www.oopspam.com/blog/"
+url:            "https://www.oopspam.com/"
 
 # Google Analytics
 google_analytics: UA-103050221-1
