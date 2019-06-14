@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "How to use OOPSpam API to filter spams"
+title:  "How to use OOPSpam API to filter spam"
 author: "Onar A."
 ---
 
-If you have ever owned a website with a form submission or a blog (Wordpress etc.) then you probably experience a huge amount of spam comments/submission almost daily. In fact, these are two cases I personally had experience and decided to build OOPSpam API to detect and filter spams.
+If you have ever owned a website with a form submission or a blog (Wordpress etc.) then you probably experience a huge amount of spam comments/submission almost daily. In fact, these are two cases I personally had experience and decided to build OOPSpam API to detect and filter spam.
 
 Deciding which content is spam solely based on content is a hard problem. Even well-trained machine learning algorithms have a good chance of making a false positive. Hence, OOPSpam API allows you to pass the following values to make  a better decision :
 - ```sender_ip``` 
@@ -13,7 +13,7 @@ Deciding which content is spam solely based on content is a hard problem. Even w
 
 Let's see how the API makes a decision and which fields are important even though passing all values increase accuracy greatly.
 ```sender_ip```  is an _optional_ field representing the IP of the content sender. Whether you got a form submission or a comment on your blog, get sender's IP and pass it to OOPSpam API via this parameter. Although this field optional, if you let us know what IP sent you the content then the API will check that IP in multiple lists of blocked IPs. It is safe to assume that in case IP is present in one of those blocked lists, the sender is a spammer. Note that OOPSpam uses daily-updated, powerful blacklisted IP lists which are also used by notable email provides such as Gmail, Outlook Thus if a content sender IP (```sender_ip```) is in one of those lists, no matter what other parameters you passed the spam score will be maximum (6).
-```content``` is a required field representing actual content (form submission, a blog comment) you received. The machine learning algorithm will look for a pattern of similarity with other spams and decide whether the content is spam or not.
+```content``` is a required field representing actual content (form submission, a blog comment) you received. The machine learning algorithm will look for a pattern of similarity with other type of spam and decide whether the content is spam or not.
 ```content_lang``` is an optional parameter, however, can be a powerful way to prevent spam. 
 
 ***What is ```content_lang```  and how it helps to prevent spam?***
