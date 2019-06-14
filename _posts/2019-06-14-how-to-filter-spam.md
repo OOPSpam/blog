@@ -3,6 +3,7 @@ layout: post
 title:  "How to use OOPSpam API to filter spam"
 author: "Onar A."
 ---
+<center><a title="Stefan Bellini [CC0], via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:No_JunkMail_Valletta.JPG"><img width="512" alt="No JunkMail Valletta" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/No_JunkMail_Valletta.JPG/512px-No_JunkMail_Valletta.JPG"></a></center>
 
 If you have ever owned a website with a form submission or a blog (Wordpress etc.) then you probably experienced a huge amount of spam comments/submission almost daily. In fact, these are two cases I personally had experience and decided to build OOPSpam API to detect and filter spam.
 
