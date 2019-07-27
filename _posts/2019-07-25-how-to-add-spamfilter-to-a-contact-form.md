@@ -13,17 +13,17 @@ Besides all these madnesses, bots are improving and overcoming spam prevention t
 ## How to integrate a contact form with OOPSpam API?
 Let's assume we run a digital agency website in English and you got a contact form in your HTML file:
 ```html
-   <form action="/send" method="post">
-          <div class="half left cf">
-            <input type="text" name="name" id="input-name" placeholder="Name" class="four columns">
-            <input type="email" name="email" id="input-email" placeholder="Email address" class="four columns">
-            <input type="text" name="subject" id="input-subject" placeholder="Subject" class="four columns">
-          </div>
-        <div class="half right cf">
-          <textarea name="message" type="text" id="input-message" placeholder="Message" class="twelve columns"></textarea>
+<form action="/send" method="post">
+        <div class="half left cf">
+        <input type="text" name="name" id="input-name" placeholder="Name" class="four columns">
+        <input type="email" name="email" id="input-email" placeholder="Email address" class="four columns">
+        <input type="text" name="subject" id="input-subject" placeholder="Subject" class="four columns">
         </div>
-        <input type="submit" value="Submit" id="input-submit" class="button-primary">
-      </form>
+    <div class="half right cf">
+        <textarea name="message" type="text" id="input-message" placeholder="Message" class="twelve columns"></textarea>
+    </div>
+    <input type="submit" value="Submit" id="input-submit" class="button-primary">
+    </form>
 ```
 As you may already know, once _submit_ button clicked ```form``` element collects the value of all fields within the form tag and ```post``` them to the path assigned in ```action```. It means you have to have a backend code to receive these values and handle them. And this is where we have to write our spam filter API to check for spam.
 Besides contact form field values, we have to get the user's IP, this is important because it allows us to check IP against multiple blacklisted IPs via the spam filter. 
@@ -38,7 +38,9 @@ Handling contact form submission in the backend is different in various language
 8. Done! 💪🏼
 
 We are going to use Node.js for our backend but you can use any programming language you feel comfortable with. 
-*Important*: Make sure you get user's IP in the server-side. Don't assign the API to a form field since a user (or bot) may alter IP address. 
+
+**Important**: Make sure you get user's IP in the server-side. Don't assign the API to a form field since a user (or bot) may alter IP address. 
+
 To get started quickly, I'm going to fork [one of the contact form example projects](https://github.com/germancutraro/Contact-Form-nodejs) from GitHub and add an integration to OOPSpam API.
 As mentioned above, we have to get a user's IP in the server-side. This is done differently in every language. 
 In Node.js with express framework environment it would be as simple as checking under ```req.ip```.
@@ -104,7 +106,7 @@ With all cases, you will get a JSON object with an error ```code``` and ```messa
 }
 ````
 
-Back to having a successful request, as you can see above snip of code, the root field ```Score``` has a value of 4. It is safe to assume that a score equal to 3 or above is spam.  Thus, we are going to have a simple if statement to consider this and do all the email forwarding inside this statement. In the below code we consider scores that is less than 3, otherwise, ignore the message.
+Back to having a successful request, as you can see below snip of code, the root field ```Score``` has a value of 4. It is safe to assume that a score equal to 3 or above is spam.  Thus, we are going to have a simple if statement to consider this and do all the email forwarding inside this statement. In the below code we consider scores that is less than 3, otherwise, ignore the message.
 <script src="https://gist.github.com/onaralili/b4d8238f31fff719cb7d845fcba4851b.js"></script>
 
 Check out [OOPSpam API docs](https://rapidapi.com/oopspam/api/oopspam-spam-filter/details) to learn about response parameters and much more.
