@@ -3,7 +3,7 @@ layout: post
 title:  "How to add a powerful spam filter to your contact form"
 author: "Onar A."
 ---
-<center><img width="512" alt="A contact form illustration" src="../assets/howtoaddspamfilter.png"></a></center>
+<center><img width="512" alt="A contact form illustration" src="../assets/howtoaddspamfilter.png"></center>
 
 Let's starting with
 ## [Why you should add spam filter to your contact form?](#why-spam-filter)
