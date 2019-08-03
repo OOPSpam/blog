@@ -59,7 +59,7 @@ String ipAddress = request.getRemoteAddr();
 
 It is usually easy and straightforward. 
 
-**Important:** Make sure an IP doesn't contain any IPv6 prefix (::ffff:127.0.0.1) or isn't IPv6 (2001:db8:85a3:8d3:1319:8a2e:370:7348). Currently, only IPv4 supported.
+**Important:** Make sure an IP doesn't contain any IPv6 prefix (::ffff:127.0.0.1) or isn't IPv6 (2001:db8:85a3:8d3:1319:8a2e:370:7348). Currently, only IPv4 supported, IPv6 will be ignored.
 
 Once you have the user's IP, time to make a request to OOPSpam API and forward legit contact form submission to your email. To request OOPSpam API, you have to have an API key. You get this key when you subscribe to one of the plans available on [OOPSpam API's RapidAPI page](https://rapidapi.com/oopspam/api/oopspam-spam-filter). There you will also find a ready-to-use example request which you can copy and paste into your project (it already contains your API key).
 	![alt text](../assets/OOPSpamAPI_on_RapidAPI.png "OOPSpam API on RapidAPI marketplace")
@@ -96,14 +96,13 @@ Any other type of HTTP status needs to be handled accordingly.
 ### Error handling
 In this example, if a returned status code anything other than ```200``` then we console out the body of the response. In case you didn't include necessary headers in your requests, for example, an API key which you will get status code ```401```  (Unauthorized) with an explanatory ```message``` as the part of response's body. Other possible errors can be :
 - An invalid JSON format
-- An invalid IP address (only IPv4 supported)
 - Generic error message
 
 With all cases, you will get a JSON object with an error ```code``` and ```message``` which looks like this:
 ```json
 {
     "code":"5740538",
-    "message":"Bad Request - IP address is invalid. Reminder: Only IPv4 supported."
+    "message":"Invalid JSON format. Please verify and resubmit."
 }
 ````
 
