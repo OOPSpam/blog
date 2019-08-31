@@ -11,6 +11,7 @@ author:
   name:         Onar A.
   url:          https://www.oopspam.com/
   email:        contact@oopspam.com
+  twitter:      oopspamapi
 
 # Build settings
 markdown:       kramdown
@@ -36,6 +37,3 @@ paginate:       5
 
 # Excludes
 exclude: [ Gemfile, Gemfile.lock, tale.gemspec ]
-
-# Social networks
-twitter_username: oopspamapi
