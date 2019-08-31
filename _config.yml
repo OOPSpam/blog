@@ -1,7 +1,7 @@
 # Site settings
 title:          OOPSpam Anti-Spam API blog
 description:    "A blog about spam filtering & detection"
-url:            "https://www.oopspam.com/blog"
+url:            "https://www.oopspam.com/"
 
 # Google Analytics
 google_analytics: UA-103050221-1
@@ -9,7 +9,7 @@ google_analytics: UA-103050221-1
 # Author
 author:
   name:         Onar A.
-  url:          https://www.oopspam.com/blog
+  url:          https://www.oopspam.com/
   email:        contact@oopspam.com
 
 # Build settings
