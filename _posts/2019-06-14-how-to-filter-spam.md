@@ -2,6 +2,7 @@
 layout: post
 title:  "How to use OOPSpam API to filter spam"
 author: "Onar A."
+image: https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/No_JunkMail_Valletta.JPG/512px-No_JunkMail_Valletta.JPG
 ---
 <center><a title="Stefan Bellini [CC0], via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:No_JunkMail_Valletta.JPG"><img width="512" alt="No JunkMail Valletta" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/No_JunkMail_Valletta.JPG/512px-No_JunkMail_Valletta.JPG"></a></center>
 

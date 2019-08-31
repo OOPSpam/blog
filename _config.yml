@@ -37,3 +37,7 @@ paginate:       5
 
 # Excludes
 exclude: [ Gemfile, Gemfile.lock, tale.gemspec ]
+
+# Social networks
+twitter:
+  username: oopspamapi

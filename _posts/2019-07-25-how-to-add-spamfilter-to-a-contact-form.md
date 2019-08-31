@@ -2,6 +2,7 @@
 layout: post
 title:  "How to add a powerful spam filter to your contact form"
 author: "Onar A."
+image: ../assets/howtoaddspamfilter.png
 ---
 <center><img width="512" alt="A contact form illustration" src="../assets/howtoaddspamfilter.png"></center>
 
