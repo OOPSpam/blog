@@ -1,15 +1,15 @@
 # Site settings
-title:          OOPSpam API blog
+title:          OOPSpam Anti-Spam API blog
 description:    "A blog about spam filtering & detection"
-url:            "https://www.oopspam.com/"
+url:            "https://www.oopspam.com/blog"
 
 # Google Analytics
 google_analytics: UA-103050221-1
 
 # Author
 author:
-  name:         OOPSpam API
-  url:          https://www.oopspam.com/
+  name:         Onar A.
+  url:          https://www.oopspam.com/blog
   email:        contact@oopspam.com
 
 # Build settings
@@ -27,6 +27,7 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-seo-tag
+  - jekyll-sitemap
   # - jemoji #Uncomment this to allow emoji in your post
 
 # Permalinks
@@ -35,3 +36,6 @@ paginate:       5
 
 # Excludes
 exclude: [ Gemfile, Gemfile.lock, tale.gemspec ]
+
+# Social networks
+twitter_username: oopspamapi
