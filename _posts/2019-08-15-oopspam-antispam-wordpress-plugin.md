@@ -5,7 +5,7 @@ author: "Onar A."
 image: https://ps.w.org/oopspam-anti-spam/assets/banner-772x250.jpg
 ---
 <center>
-<a href="https://wordpress.org/plugins/oopspam-anti-spam/advanced/">
+<a href="https://wordpress.org/plugins/oopspam-anti-spam/">
 <img width="772" alt="OOPSpam Anti-Spam WordPress Plugin" src="https://ps.w.org/oopspam-anti-spam/assets/banner-772x250.jpg">
 </a>
 
