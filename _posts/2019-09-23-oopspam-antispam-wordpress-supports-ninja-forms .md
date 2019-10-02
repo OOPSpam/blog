@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "How to protect your Ninja Forms from spam with OOPSpam  Anti-Spam WordPress plugin"
+title:  "How to protect your Ninja Forms from spam with OOPSpam Anti-Spam WordPress plugin"
 author: "Onar A."
 image: ../blog/assets/nj-oopspam-wordpress-plugin.jpg
 ---

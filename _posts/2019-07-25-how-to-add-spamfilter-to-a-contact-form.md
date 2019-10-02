@@ -6,6 +6,8 @@ image: ../blog/assets/howtoaddspamfilter.png
 ---
 <center><img width="512" alt="A contact form illustration" src="../assets/howtoaddspamfilter.png"></center>
 
+> This is a blog post on how to integrate a spam filter with non-WordPress websites. If you are WordPress user check out [How to protect your Ninja Forms from spam with OOPSpam Anti-Spam WordPress plugin](https://www.oopspam.com/blog/2019-09-23/oopspam-antispam-wordpress-supports-ninja-forms) article.
+
 Let's starting with
 ## Why should you add a spam filter to your contact form?
 If you have a contact form then you probably already know the amount of spam one can get daily. Usually, bots scan websites looking for a contact form on a website and fill up all fields. As a result, the owner of a website gets so much spam from a different source with a different context. These spambots are not only fill up form submissions and comment sections but also save your website in their database to save time in the future.
