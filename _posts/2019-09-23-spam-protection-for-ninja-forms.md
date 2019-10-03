@@ -6,7 +6,7 @@ image: ../blog/assets/nj-oopspam-wordpress-plugin.jpg
 ---
 <center>
 <a href="https://wordpress.org/plugins/oopspam-anti-spam/">
-<img width="772" alt="OOPSpam Anti-Spam WordPress Plugin supports Ninja Forms" src="../assets/nj-oopspam-wordpress-plugin.jpg">
+<img width="772" alt="OOPSpam Anti-Spam WordPress Plugin supports Ninja Forms" src="/blog/assets/nj-oopspam-wordpress-plugin.jpg">
 </a>
 </center>
 
