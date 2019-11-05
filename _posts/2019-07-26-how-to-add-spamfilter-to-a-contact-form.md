@@ -66,12 +66,9 @@ It is usually easy and straightforward.
 
 Once you have the user's IP, time to make a request to OOPSpam API and forward legit contact form submission to your email. To request OOPSpam API, you have to have an API key. You get this key when you subscribe to one of the plans available on [OOPSpam API's RapidAPI page](https://rapidapi.com/oopspam/api/oopspam-spam-filter). There you will also find a ready-to-use example request which you can copy and paste into your project (it already contains your API key).
 	![OOPSpam Anti-Spam API on RapidAPI marketplace](/assets/OOPSpamAPI_on_RapidAPI.png "OOPSpam Anti-Spam API on RapidAPI marketplace")
-
     ![OOPSpam Anti-Spam API Pricing on RapidAPI marketplace](/assets/OOPSpamAPI_Pricing.png "OOPSpam Anti-Spam API's Pricing on RapidAPI marketplace")
-
     ![OOPSpam Anti-Spam API test from browser on RapidAPI marketplace](/assets/OOPSpamAPI_CodeSnippet.png "OOPSpam Anti-Spam API test from browser on RapidAPI marketplace")
 
-    
 ```javascript
 unirest.post("https://oopspam.p.rapidapi.com/v1/spamdetection")
 .header("X-RapidAPI-Host", "oopspam.p.rapidapi.com")
