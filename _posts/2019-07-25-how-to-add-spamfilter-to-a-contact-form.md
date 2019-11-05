@@ -14,7 +14,7 @@ If you have a contact form then you probably already know the amount of spam one
 <center><blockquote class="twitter-tweet"><p lang="en" dir="ltr">Fun fact! There is a company with a database containing 25M websites. They fill up contact forms, solve the captcha for you and send 1M messages for $49. This is exactly what <a href="https://twitter.com/oopspamapi?ref_src=twsrc%5Etfw">@oopspamapi</a> fights against.</p>&mdash; 🐾 Onar (@OnarAlili) <a href="https://twitter.com/OnarAlili/status/1147141090023284736?ref_src=twsrc%5Etfw">July 5, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> </center>
 
 Besides all this madness, bots are improving and overcoming spam prevention techniques. The honeypot technique, in fact, is almost obsolete for this reason. Another example would be reCaptcha by Google, Google itself announced that reCAPTCHA v2 can be bypassed by their own AI tools. Later Google announced [reCAPTCHA v3](https://www.google.com/recaptcha/intro/v3.html) which introduced an extra layer on top of the v2 by making it invisible (appears in case of a suspicious user). V3 is much more powerful in terms of accuracy and user-friendliness. However, there is one major problem (along with others). Spammers are not always bots, there are people you can hire for a very low-fare ($1 per hour) to spam people by solving captchas and filling out forms. Therefore, it makes sense not to rely on user behavior (reCAPTCHA) or on the chance that the bot is too dumb to figure which field is hidden (honeypot). OOPSpam API, on the other hand, stays in your backend and decides on multiple inputs. 
-# How to integrate a contact form with OOPSpam API
+## How to integrate a contact form with OOPSpam API
 Let's assume we run a digital agency website in English and you have a contact form in your HTML file:
 ```html
 <form action="/send" method="post">
@@ -41,7 +41,7 @@ Handling contact form submissions in the backend is different in various languag
 7. Forward contact form information to your email or ignore based on the spam score.
 8. Done! 💪🏼
 
-We are going to use Node.js for our backend but you can use any programming language you feel comfortable with. 
+We are going to use [Node.js](https://nodejs.org/) with Nodemailer module (to send emails) for our backend but you can use any programming language you feel comfortable with. 
 
 **Important**: Make sure you get user's IP in the server-side. Don't assign the API to a form field since a user (or bot) may alter IP address. 
 
@@ -65,9 +65,9 @@ It is usually easy and straightforward.
 **Important:** Make sure an IP doesn't contain any IPv6 prefix (::ffff:127.0.0.1) or isn't IPv6 (2001:db8:85a3:8d3:1319:8a2e:370:7348). Currently, only IPv4 supported, IPv6 will be ignored.
 
 Once you have the user's IP, time to make a request to OOPSpam API and forward legit contact form submission to your email. To request OOPSpam API, you have to have an API key. You get this key when you subscribe to one of the plans available on [OOPSpam API's RapidAPI page](https://rapidapi.com/oopspam/api/oopspam-spam-filter). There you will also find a ready-to-use example request which you can copy and paste into your project (it already contains your API key).
-	![alt text](../assets/OOPSpamAPI_on_RapidAPI.png "OOPSpam API on RapidAPI marketplace")
-    ![alt text](../assets/OOPSpamAPI_Pricing.png "OOPSpam API's Pricing on RapidAPI marketplace")
-    ![alt text](../assets/OOPSpamAPI_CodeSnippet.png "OOPSpam API test from browser on RapidAPI marketplace")
+	![OOPSpam Anti-Spam API on RapidAPI marketplace](/blog/assets/OOPSpamAPI_on_RapidAPI.png "OOPSpam Anti-Spam API on RapidAPI marketplace")
+    ![OOPSpam Anti-Spam API's Pricing on RapidAPI marketplace](/blog/assets/OOPSpamAPI_Pricing.png "OOPSpam Anti-Spam API's Pricing on RapidAPI marketplace")
+    ![OOPSpam Anti-Spam API test from browser on RapidAPI marketplace](/blog/assets/OOPSpamAPI_CodeSnippet.png "OOPSpam Anti-Spam API test from browser on RapidAPI marketplace")
     
 ```javascript
 unirest.post("https://oopspam.p.rapidapi.com/v1/spamdetection")
@@ -113,4 +113,6 @@ Back to having a successful request, as you can see in the snip of code above , 
 <script src="https://gist.github.com/onaralili/b4d8238f31fff719cb7d845fcba4851b.js"></script>
 
 Check out [OOPSpam API docs](https://rapidapi.com/oopspam/api/oopspam-spam-filter/details) to learn in detail about response parameters and much more.
-You can also access the example project code on [Github](https://github.com/OOPSpam/Contact-Form-nodejs). Let me know if you have any question via contact@oopspam.com.
+You can also access the example project code on [Github](https://github.com/OOPSpam/Contact-Form-nodejs). 
+
+Let me know if you have any question via contact@oopspam.com.
