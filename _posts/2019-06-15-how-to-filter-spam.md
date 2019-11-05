@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "How to use OOPSpam API to filter spam"
+title:  "How to use OOPSpam Anti-Spam API to filter spam"
 author: "Onar A."
 image: https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/No_JunkMail_Valletta.JPG/512px-No_JunkMail_Valletta.JPG
 ---
