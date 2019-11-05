@@ -4,7 +4,7 @@ title:  "How to add a powerful spam filter to your contact form"
 author: "Onar A."
 image: ../blog/assets/howtoaddspamfilter.png
 ---
-<center><img width="512" alt="A contact form illustration" src="/blog/assets/howtoaddspamfilter.png"></center>
+<center><img width="512" alt="A contact form illustration" src="/assets/howtoaddspamfilter.png"></center>
 
 > This is a blog post on how to integrate a spam filter with non-WordPress websites. If you are WordPress user check out [How to protect your Ninja Forms from spam with spam-filter API](https://www.oopspam.com/blog/spam-protection-for-ninja-forms) article.
 
@@ -65,10 +65,12 @@ It is usually easy and straightforward.
 **Important:** Make sure an IP doesn't contain any IPv6 prefix (::ffff:127.0.0.1) or isn't IPv6 (2001:db8:85a3:8d3:1319:8a2e:370:7348). Currently, only IPv4 supported, IPv6 will be ignored.
 
 Once you have the user's IP, time to make a request to OOPSpam API and forward legit contact form submission to your email. To request OOPSpam API, you have to have an API key. You get this key when you subscribe to one of the plans available on [OOPSpam API's RapidAPI page](https://rapidapi.com/oopspam/api/oopspam-spam-filter). There you will also find a ready-to-use example request which you can copy and paste into your project (it already contains your API key).
+	![OOPSpam Anti-Spam API on RapidAPI marketplace](/assets/OOPSpamAPI_on_RapidAPI.png "OOPSpam Anti-Spam API on RapidAPI marketplace")
 
-	![OOPSpam Anti-Spam API on RapidAPI marketplace](/blog/assets/OOPSpamAPI_on_RapidAPI.png "OOPSpam Anti-Spam API on RapidAPI marketplace")
-    ![OOPSpam Anti-Spam API Pricing on RapidAPI marketplace](/blog/assets/OOPSpamAPI_Pricing.png "OOPSpam Anti-Spam API's Pricing on RapidAPI marketplace")
-    ![OOPSpam Anti-Spam API test from browser on RapidAPI marketplace](/blog/assets/OOPSpamAPI_CodeSnippet.png "OOPSpam Anti-Spam API test from browser on RapidAPI marketplace")
+    ![OOPSpam Anti-Spam API Pricing on RapidAPI marketplace](/assets/OOPSpamAPI_Pricing.png "OOPSpam Anti-Spam API's Pricing on RapidAPI marketplace")
+
+    ![OOPSpam Anti-Spam API test from browser on RapidAPI marketplace](/assets/OOPSpamAPI_CodeSnippet.png "OOPSpam Anti-Spam API test from browser on RapidAPI marketplace")
+
     
 ```javascript
 unirest.post("https://oopspam.p.rapidapi.com/v1/spamdetection")
