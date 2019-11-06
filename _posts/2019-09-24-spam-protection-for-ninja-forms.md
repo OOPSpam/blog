@@ -37,6 +37,7 @@ Once spam detected your message will appear on the bottom of the message field.
 <div style="display:inline;">
 
 ![Get OOPSpam Anti-Spam WordPress Plugin button](/blog/assets/btn-oopspam-wordpress-plugin.png "Get OOPSpam Anti-Spam WordPress Plugin")
+
 ![Get OOPSpam Anti-Spam API key button](/blog/assets/btn-oopspam-get-key.png "Get OOPSpam Anti-Spam API key")
 
 </div>
