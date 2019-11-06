@@ -22,9 +22,7 @@ Here are a few steps to activate spam protection for Ninja Forms:
 1. You have to [Subscribe to the API](https://rapidapi.com/oopspam/api/oopspam-spam-filter) then copy-paste the API key to the plugin's appropriate field under __Settings->OOPSpam Anti-Spam__ on your WordPress Admin Dashboard.
 
 2. If you have a Ninja Forms installed and activated then a special section will appear on OOPSpam Anti-Spam plugin's setting page.
-<center>
-<img width="550" alt="OOPSpam Anti-Spam WordPress Plugin" src="/blog/assets/oopspam-nj-settings.png">
-</center>
+  ![OOPSpam Anti-Spam WordPress Plugin Settings](/blog/assets/oopspam-nj-settings.png "OOPSpam Anti-Spam WordPress Plugin Settings")
 
 3. On this page, you need to activate Ninja Forms Spam Protection by checking the Activate Spam Protection checkbox. 
 4. Don't forget to enter a short message to display when a spam Ninja Forms entry has been submitted.
