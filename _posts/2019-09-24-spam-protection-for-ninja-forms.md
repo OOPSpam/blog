@@ -6,11 +6,10 @@ image: ../blog/assets/nj-oopspam-wordpress-plugin.jpg
 ---
 <center>
 <a href="https://wordpress.org/plugins/oopspam-anti-spam/">
-<img width="772" alt="OOPSpam Anti-Spam WordPress Plugin supports Ninja Forms" src="/blog/assets/nj-oopspam-wordpress-plugin.jpg">
+<img width="772" alt="OOPSpam Anti-Spam WordPress Plugin supports Ninja Forms" src="/blog/assets/nj-oopspam-wordpress-plugin-header.jpg">
 </a>
 </center>
-
-
+<br/>
 Recently, we announced the [OOPSpam Anti-Spam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/) which uses OOPSpam Anti-Spam API to filter spam on your comment. Very soon we realized that many people also concern about spam through contact forms. In fact, most of the requests to OOPSpam Anti-Spam API are coming from contact form submissions. 
 
 A few days ago we published a new update to our WordPress plugin. This update brings [Ninja Forms](https://ninjaforms.com/) support. If you are familiar with WordPress contact form solution then you hear about Ninja Forms. Ninja Forms is a powerful plugin that supports form drag&drop form building and many add-ons for any custom needs. It has a free and premium version. The free version is pretty flexible and allows you to get started quickly. 
@@ -33,3 +32,12 @@ Once spam detected your message will appear on the bottom of the message field.
 <center>
 <img width="350" alt="OOPSpam Anti-Spam WordPress Plugin" src="/blog/assets/nj-spam-detected.png">
 </center>
+<br/>
+
+<div style="display:inline;">
+
+![Get OOPSpam Anti-Spam WordPress Plugin button](/blog/assets/btn-oopspam-wordpress-plugin.png "Get OOPSpam Anti-Spam WordPress Plugin")
+![Get OOPSpam Anti-Spam API key button](/blog/assets/btn-oopspam-get-key.png "Get OOPSpam Anti-Spam API key")
+
+</div>
+
