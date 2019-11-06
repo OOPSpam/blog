@@ -5,7 +5,7 @@ author: "Onar A."
 image: ../blog/assets/howtoaddspamfilter.png
 ---
 <center><img width="512" alt="A contact form illustration" src="/blog/assets/howtoaddspamfilter.png"></center>
-
+<br/>
 > This is a blog post on how to integrate a spam filter with non-WordPress websites. If you are WordPress user check out [How to protect your Ninja Forms from spam with spam-filter API](https://www.oopspam.com/blog/spam-protection-for-ninja-forms) article.
 
 Let's starting with
