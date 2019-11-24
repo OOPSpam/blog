@@ -21,10 +21,8 @@ There are many options, some runs hell a lot of ads on your blog, some collect a
 ## Open-source and free comment systems
 
 ### [Isso](https://posativ.org/isso/)
-[Isso](image here)
-Isso is an open-source, self-hosted and completely free. It comes out as "a commenting server similar to Disqus". Instead of writing a long paragraph I'm going to list main points: 
 
-![Isso comment system](/blog/assets/posts/Isso_comment_system.png "Isso comment system")
+Isso is an open-source, self-hosted and completely free. It comes out as "a commenting server similar to Disqus". Instead of writing a long paragraph I'm going to list main points: 
 
 - It's written in Python
 - Supports all major browsers including IE10 (yep, people still use it).
@@ -34,6 +32,8 @@ Isso is an open-source, self-hosted and completely free. It comes out as "a comm
 - Support Disqus & WordPress Import
 - Small size 40kb (12kb gzipped)
 - Basic spam protection
+
+![Isso comment system](/blog/assets/posts/Isso_comment_system.png "Isso comment system")
 
 Why choose Isso as your comment system:
 
@@ -60,8 +60,6 @@ Read more about *Guard* parameters on [the Isso official documentation](https://
 
 ### [Schnack](https://schnack.cool/)
 
-![Schnack comment system](/blog/assets/posts/schnack_comment_system.png "Schnack comment system")
-
 Here is another alternative to paid comment systems. Just like Isso, Schnack is an open-source, free, self-hosted comment system. Here are the main points:
 
 - It's written in Javascript (Node.js)
@@ -73,7 +71,9 @@ Here is another alternative to paid comment systems. Just like Isso, Schnack is 
 - No explicit spam protection, asks for authentication
 - Support Disqus & WordPress Import
 
-Why choose Isso as your comment system:
+![Schnack comment system](/blog/assets/posts/schnack_comment_system.png "Schnack comment system")
+
+Why choose Schnack as your comment system:
 
 - No ads, no tracking
 - Open-source, free & self-hosted
@@ -94,7 +94,7 @@ As Schanck doesn't support anonymous commenting and requires to sign up through 
 ### [Remark42](https://remark42.com/)
 
 Remark42 looks pretty promising. It is self-hosted and lightweight. The backend is written in Go and the frontend is in Node.js. 
-Remark42 supports an anonymous comment, social login through Twitter, Github, etc, Voting, moderating comments and a bunch of other features. I would say Remark42 offers everything and more than all 2 options above.  Check the official website for the full list of features.
+Remark42 supports an anonymous comment, social login through Twitter, Github, etc, Voting, moderating comments and a bunch of other features. I would say Remark42 offers everything and more than all 2 options above.  Check [the official website](https://remark42.com/) for the full list of features.
 
 ![Remark42 comment system](/blog/assets/posts/remark42_comment_system.png "Remark42 comment system")
 
@@ -111,6 +111,7 @@ The main reason why people don't want to use paid services like Disqus is privac
 That being said, some paid comment systems such as [Commento](https://commento.io/) is a privacy-focused solution. They rely on a subscription model instead of an advertisement. Commento uses Akismet as a spam-filter which is a red flag considering Akismet requires to submit your blog URL, user's IP and user agent on top of the other optional parameters such as server information (such as $_SERVER in PHP). Read more about the difference between Akismet and OOPSpam Anti-Spam API on [A better Akismet alternative](https://www.oopspam.com/akismet-alternative.html) page.
 
 
-All in all, these are the main open-source, self-hosted and free comment systems in the wild. If you decide to give a shot to OOPSpam Anti-Spam API as your spam filter, go ahead and [test it on your browser](https://rapidapi.com/oopspam/api/oopspam-spam-filter). You could also reach me out via contact@oopspam.com. I'd be happy to help.
+All in all, these are the main open-source, self-hosted and free comment systems in the wild. 
+If you decide to give a try to OOPSpam Anti-Spam API as your spam filter, go ahead and [test it on your browser](https://rapidapi.com/oopspam/api/oopspam-spam-filter). You could also reach me out via contact@oopspam.com. I'd be happy to help.
 
 Happy spam-free day!
