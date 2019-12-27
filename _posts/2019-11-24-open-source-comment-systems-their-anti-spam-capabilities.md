@@ -107,7 +107,7 @@ As Remark42 allows optional anonymous commenting, anti-spam measurements need to
 ## Spam filter for open-source comments system
 
 One of the most liberal perks that come with open-source projects is the ability to integrate. You can build own anti-spam filter with various rules such as [honeypot](https://en.wikipedia.org/wiki/Honeypot_(computing)), [captcha](https://en.wikipedia.org/wiki/CAPTCHA) or use third-party solutions like [OOPSpam Anti-Spam API](https://oopspam.com).
-The main reason why people don't want to use paid services like Disqus is privacy. For many, It is important to keep your data on your server while serving ad-free comments. Having anonymous comment is certainly good to have in your comment system, however, this also enables spammer to post on your blog post. 
+The main reason why people don't want to use paid services like Disqus is privacy. For many, It is important to keep your data on your server while serving ad-free comments. Having anonymous comments are certainly good to have in your comment system, however, this also enables spammer to post on your blog post. 
 That being said, some paid comment systems such as [Commento](https://commento.io/) is a privacy-focused solution. They rely on a subscription model instead of an advertisement. Commento uses Akismet as a spam-filter which is a red flag considering Akismet requires to submit your blog URL, user's IP and user agent on top of the other optional parameters such as server information (such as $_SERVER in PHP). Read more about the difference between Akismet and OOPSpam Anti-Spam API on [A better Akismet alternative](https://www.oopspam.com/akismet-alternative.html) page.
 
 
