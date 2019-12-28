@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Open-source comment systems and their anti-spam capabilities"
+title:  "3 top open-source comment systems and their anti-spam capabilities"
 author: "Onar A."
 image: ../blog/assets/open-source-comment-systems.png
 ---
