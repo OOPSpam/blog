@@ -56,7 +56,7 @@ reply-to-self = false
 require-author = false
 require-email = false
 ```
-Read more about *Guard* parameters on [the Isso official documentation.](https://posativ.org/isso/docs/configuration/server/#guard){:rel=”nofollow”}
+Read more about *Guard* parameters on [the Isso official documentation.](https://posativ.org/isso/docs/configuration/server/#guard)
 
 ### [Schnack](https://schnack.cool/)
 
