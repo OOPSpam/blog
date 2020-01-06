@@ -20,7 +20,7 @@ There are many options, some runs hell a lot of ads on your blog, some collect a
 
 ## Open-source and free comment systems
 
-### [Isso](https://posativ.org/isso/){:rel=”nofollow”}
+### [Isso](https://posativ.org/isso/)
 
 Isso is an open-source, self-hosted and completely free. It comes out as "a commenting server similar to Disqus". Instead of writing a long paragraph I'm going to list main points: 
 
@@ -56,7 +56,7 @@ reply-to-self = false
 require-author = false
 require-email = false
 ```
-Read more about *Guard* parameters on [the Isso official documentation](https://posativ.org/isso/docs/configuration/server/#guard).
+Read more about *Guard* parameters on [the Isso official documentation](https://posativ.org/isso/docs/configuration/server/#guard){:rel=”nofollow”}.
 
 ### [Schnack](https://schnack.cool/)
 
