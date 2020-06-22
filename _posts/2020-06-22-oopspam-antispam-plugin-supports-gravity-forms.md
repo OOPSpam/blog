@@ -6,7 +6,7 @@ image: ../blog/assets/posts/gf-oopspam-wordpress-plugin.jpg
 ---
 <center>
 <a href="https://wordpress.org/plugins/oopspam-anti-spam/">
-<img width="772" alt="OOPSpam Anti-Spam WordPress Plugin supports Ninja Forms" src="/blog/assets/posts/gf-oopspam-wordpress-plugin.jpg">
+<img width="772" style="height: 200px;object-fit: cover;" alt="OOPSpam Anti-Spam WordPress Plugin supports Gravity Forms" src="/blog/assets/posts/gf-oopspam-wordpress-plugin.jpg">
 </a>
 </center>
 <br/>
@@ -18,7 +18,7 @@ Unlike Ninja Forms and other form submission plugins, Gravity Forms is a premium
 
 In addition to Gravity Forms integration, we added a setting "Consider short messages as spam". This allows messages with less than 20 characters to be considered as spam.
 
-![OOPSpam Anti-Spam WordPress Plugin Settings](/blog/assets/posts/contact_from_trends.png  "OOPSpam Anti-Spam WordPress Plugin Settings")
+![OOPSpam Anti-Spam WordPress Plugin Settings](/blog/assets/posts/oopspam-plugin-settings.png  "OOPSpam Anti-Spam WordPress Plugin Settings")
 
 Go ahead [get an OOPSpam Anti-Spam key](https://rapidapi.com/oopspam/api/oopspam-spam-filter) and install the [OOPSpam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/).
 
