@@ -6,7 +6,7 @@ image: ../blog/assets/howtoaddspamfilter.png
 ---
 <center><img width="512" alt="A contact form illustration" src="/blog/assets/howtoaddspamfilter.png"></center>
 <br/>
-> This is a blog post on how to integrate a spam filter with non-WordPress websites. If you are WordPress user check out [How to protect your Ninja Forms from spam with spam-filter API](https://www.oopspam.com/blog/spam-protection-for-ninja-forms) article.
+> This is a blog post on how to integrate a spam filter with non-WordPress websites. If you are WordPress user check out [How to protect your Ninja Forms from spam with spam-filter API](https://www.oopspam.com/blog/spam-protection-for-ninja-forms) or [OOPSpam Anti-Spam Plugin now supports Gravity Forms](https://www.oopspam.com/blog/oopspam-antispam-plugin-supports-gravity-forms) articles.
 
 Let's starting with
 ## Why should you add a spam filter to your contact form?
@@ -96,6 +96,8 @@ In the case of a successful request, you will get a response similar to the foll
 }
 ```
 Any other type of HTTP status needs to be handled accordingly.
+
+**Important**: Flag a contact form submission spam solely based on Score (aka Spam Score). We recommend assuming Spam Score 3 or higher to be spam.
 ### Error handling
 In this example, if a returned status code anything other than ```200``` then we console out the body of the response. In case you didn't include necessary headers in your requests, for example, an API key which you will get status code ```401```  (Unauthorized) with an explanatory ```message``` as the part of response's body. Other possible errors can be :
 - An invalid JSON format
