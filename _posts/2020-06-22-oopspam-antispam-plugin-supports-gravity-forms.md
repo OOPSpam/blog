@@ -10,7 +10,7 @@ image: ../blog/assets/posts/gf-oopspam-wordpress-plugin.jpg
 </a>
 </center>
 <br/>
-> Update! Graviy Forms Team listed OOPSpam Anti-Spam WordPress plugin integration on [their website](https://docs.gravityforms.com/gform_entry_is_spam/#integrate-with-oopspam-anti-spam).
+> Update! Gravity Forms Team listed OOPSpam Anti-Spam WordPress plugin integration on [their website](https://docs.gravityforms.com/gform_entry_is_spam/#integrate-with-oopspam-anti-spam).
 
 
 One of the most commonly used contact forms for WordPress is [Gravity Forms](https://www.gravityforms.com/). OOPSpam WordPress plugin already [supports Ninja Forms](https://www.oopspam.com/blog/spam-protection-for-ninja-forms). However, we got many requests to integrate Gravity Forms as well. Google Trends also shows that many people search for Gravity Forms than Ninja Forms. So, it was an easy decision to move forward with this integration.
