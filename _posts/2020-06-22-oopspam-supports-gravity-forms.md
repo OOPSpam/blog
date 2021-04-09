@@ -31,6 +31,6 @@ In addition to Gravity Forms integration, we added a setting "Consider short mes
 ![OOPSpam Anti-Spam WordPress Plugin Settings](/blog/assets/posts/oopspam-plugin-settings.png  "OOPSpam Anti-Spam WordPress Plugin Settings")
 
 
-Go ahead [get an OOPSpam Anti-Spam key](https://rapidapi.com/oopspam/api/oopspam-spam-filter) and install the [OOPSpam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/).
+Go ahead [get an OOPSpam Anti-Spam key](https://app.oopspam.com/Identity/Account/Register) and install the [OOPSpam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/).
 
 Have a spam-free day!
