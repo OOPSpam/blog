@@ -12,9 +12,9 @@ image: ../blog/assets/open-source-comment-systems.png
 <br/>
 We'll talk about different comment systems and how they fight spam.	
 
-Believe me, I read a lot about comment systems. Well, I run [an anti-spam API](https://www.oopspam.com) service and they are an essential part of my product as many requests to OOPSpam Anti-Spam API come from comment systems.
+Believe me, I read a lot about comment systems. Well, We run [an anti-spam API](https://www.oopspam.com) service and they are an essential part of our product as many requests to OOPSpam Anti-Spam API come from comment systems.
 
-First I thought writing on how to integrate spam filter to one of those open-source comment systems. Then, I convinced it would be probably more helpful to put together a nice list of open-source (and free) comment systems and describe the way they fight with spam.
+First I thought writing on how to integrate spam filter to one of those open-source comment systems. Then, I convinced that it would be probably more helpful to put together a nice list of open-source (and free) comment systems and describe the way they fight with spam.
 
 There are many options, some runs hell a lot of ads on your blog, some collect as much data possible about your visitors. Some ask for sign up, some don't. I will list a few good ones, you can, of course, go ahead and check their functionality on their website or different blogs. But this blog post is going to talk about How they approach spam protection in their system.
 
@@ -103,15 +103,14 @@ Remark42 supports an anonymous comment, social login through Twitter, Github, et
 As Remark42 allows optional anonymous commenting, anti-spam measurements need to be taken. There is not any built-in spam filter unless you disable anonymous commenting.
 
 
-
 ## Spam filter for open-source comments system
 
 One of the most liberal perks that come with open-source projects is the ability to integrate. You can build own anti-spam filter with various rules such as [honeypot](https://en.wikipedia.org/wiki/Honeypot_(computing)), [captcha](https://en.wikipedia.org/wiki/CAPTCHA) or use third-party solutions like [OOPSpam Anti-Spam API](https://oopspam.com).
 The main reason why people don't want to use paid services like Disqus is privacy. For many, It is important to keep your data on your server while serving ad-free comments. Having anonymous comments are certainly good to have in your comment system, however, this also enables spammer to post on your blog post. 
-That being said, some paid comment systems such as [Commento](https://commento.io/) is a privacy-focused solution. They rely on a subscription model instead of an advertisement. Commento uses Akismet as a spam-filter which is a red flag considering Akismet requires to submit your blog URL, user's IP and user agent on top of the other optional parameters such as server information (such as $_SERVER in PHP). Read more about the difference between Akismet and OOPSpam Anti-Spam API on [A better Akismet alternative](https://www.oopspam.com/akismet-alternative.html) page.
+That being said, some paid comment systems such as [Commento](https://commento.io/) is a privacy-focused solution. They rely on a subscription model instead of an advertisement. Commento uses Akismet as a spam-filter which is a red flag 🚩 considering Akismet requires to submit your blog URL, user's IP and user agent on top of the other optional parameters such as server information (such as ```$_SERVER``` in PHP). Read more about the difference between Akismet and OOPSpam Anti-Spam API on [A better Akismet alternative](https://www.oopspam.com/akismet-alternative.html) page.
 
 
 All in all, these are the main open-source, self-hosted and free comment systems in the wild. 
-If you decide to give a try to OOPSpam Anti-Spam API as your spam filter, go ahead and [test it on your browser](https://rapidapi.com/oopspam/api/oopspam-spam-filter). You could also reach me out via contact@oopspam.com. I'd be happy to help.
+If you decide to give a try to OOPSpam Anti-Spam API as your spam filter, go ahead and [test it on your browser](https://app.oopspam.com/Identity/Account/Login?ReturnUrl=%2F#test-with-your-data). You could also reach me out via onar@oopspam.com. I'd be happy to help.
 
 Happy spam-free day!

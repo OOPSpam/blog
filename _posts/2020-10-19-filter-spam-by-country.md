@@ -14,7 +14,7 @@ Today, we are excited to announce a new shiny feature, Country Restrictions.
 
 Let's say you are only interested in getting messages from people in the United States and Canada, you can pass a two-letter country code to ```allowedCountries``` parameter along with ```senderIP```. OOPSpam will return a maximum Spam Score 6 if the message sender's IP isn't originated from one of those countries in ```allowedCountries```.
 
-Check out [the official documentation](https://www.oopspam.com/docs.html) for example request and how to use the feature.
+Check out [the official documentation](https://www.oopspam.com/docs) for example request and how to use the feature.
 
 ### Why blocking countries is a powerful way to eliminate spam?
 
@@ -31,3 +31,5 @@ The majority of the spam on the internet is coming from these countries.
 Considering most businesses operate in certain countries you could limit the amount of spam you get dramatically. Any spam that passes this filter will be detected by other analyses.
 
 Give a try and let us know if you have any questions via [contact@oopspam.com](mailto:contact@oopspam.com).
+
+Happy spam-free day!
