@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "[Announcement] OOPSpam Anti-Spam Plugin now supports Gravity Forms"
+title:  "[Announcement] OOPSpam Anti-Spam Plugin now supports Contact Form 7"
 author: "Onar A."
 image: ../blog/assets/posts/cf7-oopspam-wordpress-plugin.jpg
 ---
 <center>
 <a href="https://wordpress.org/plugins/oopspam-anti-spam/">
-<img width="772" style="height: 200px;object-fit: cover;" alt="OOPSpam and Contact Form 7 logos" src="/blog/assets/posts/cf7-oopspam-wordpress-plugin.jpg">
+<img width="772" style="height: 200px;object-fit: cover;" alt="OOPSpam and Contact Form 7 logos" src="/blog/assets/posts/cf7-oopspam-wordpress-plugin.png">
 </a>
 </center>
 <br/>
