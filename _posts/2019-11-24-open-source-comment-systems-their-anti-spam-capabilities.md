@@ -10,6 +10,7 @@ image: ../blog/assets/open-source-comment-systems.png
 </a>
 </center>
 <br/>
+
 We'll talk about different comment systems and how they fight spam.	
 
 Believe me, I read a lot about comment systems. Well, We run [an anti-spam API](https://www.oopspam.com) service and they are an essential part of our product as many requests to OOPSpam Anti-Spam API come from comment systems.
@@ -17,6 +18,8 @@ Believe me, I read a lot about comment systems. Well, We run [an anti-spam API](
 First I thought writing on how to integrate spam filter to one of those open-source comment systems. Then, I convinced that it would be probably more helpful to put together a nice list of open-source (and free) comment systems and describe the way they fight with spam.
 
 There are many options, some runs hell a lot of ads on your blog, some collect as much data possible about your visitors. Some ask for sign up, some don't. I will list a few good ones, you can, of course, go ahead and check their functionality on their website or different blogs. But this blog post is going to talk about How they approach spam protection in their system.
+
+{% include toc.md %}
 
 ## Open-source and free comment systems
 

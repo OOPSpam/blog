@@ -4,6 +4,15 @@
   width: 80%;
 }
 
+#markdown-toc {
+border-style: solid;
+width: auto;
+border-width: thin;
+border-color: #ffea99;
+margin: 1em;
+padding: 1.5em;
+}
+
 main,
 footer,
 .nav-container {
@@ -70,6 +79,9 @@ footer,
 }
 
 @media (min-width: 600px) {
+  #markdown-toc {
+    width: max-content;
+    }
   .nav {
     &-container {
       text-align: left;
