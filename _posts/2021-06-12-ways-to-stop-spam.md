@@ -19,6 +19,8 @@ Instead, it lists some of the tactics we use at OOPSpam and many more proven to 
 
 Let's get to it
 
+{% include toc.md %}
+
 ## 1. Honeypot: filter spam with a hidden field
 
 It is the oldest trick in the book. The honeypot technique is easy to understand and implement. It works both for forms and comments. Here is a simple illustration that shows how honeypot spam filtering works.
