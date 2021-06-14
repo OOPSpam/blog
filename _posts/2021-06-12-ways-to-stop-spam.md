@@ -15,7 +15,7 @@ Feeling overwhelmed by the amount of spam you are getting on your website? You'r
 
 This article doesn't list every spam detection strategy under the sun.
 
-Instead, it lists some of the tactics we use at OOPSpam and many more proven to work ones. These are methods that stopped over 1M spam with 99.8% accuracy.
+Instead, it lists some of the tactics we use at [OOPSpam](https://www.oopspam.com) and many more proven to work ones. These are methods that stopped over 1M spam with 99.8% accuracy.
 
 Let's get to it
 
@@ -151,6 +151,6 @@ Although not all URL shortening services are malicious. Some shortening services
 
 There isn't a single solution for the spam problem. Spam messages on the web are different from spam in emails. To encounter them we need to use multiple approaches.
 
-Most of these tactics we already use at OOPSpam and found them very effective when used in combination.
+Most of these tactics we already use at [OOPSpam](https://www.oopspam.com) and found them very effective when used in combination.
 
 Happy spam-free day!
