@@ -21,7 +21,7 @@ Let's get to it
 
 {% include toc.md %}
 
-## 1. Honeypot: filter spam with a hidden field
+## Honeypot: filter spam with a hidden field
 
 It is the oldest trick in the book. The honeypot technique is easy to understand and implement. It works both for forms and comments. Here is a simple illustration that shows how honeypot spam filtering works.
 
@@ -55,7 +55,7 @@ and here is one way to do it:
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
-## 2. Spam Words: check content for malicious words
+## Spam Words: check content for malicious words
 
 All spam messages want you to do something for them. Let it be SEO, Website development offers, selling, and advertising products. That means they tend to use the same words such as "free", "get it now", "100%", "SEO".
 
@@ -71,7 +71,7 @@ In our experience, it depends on how you implement it. It is important that:
 
 Take a look at some of the spam words [we published](https://github.com/OOPSpam/spam-words).
 
-## 3. Captcha: Solve an interactive problem
+## Captcha: Solve an interactive problem
 
 You are presented with a puzzle, math problem, or simple game to complete. Once you complete the task you are allowed to submit a comment or purchase a product.
 
@@ -91,10 +91,10 @@ Combined your website behavior and browsing history information with a couple of
 
 The most notable captcha solution is [reCaptcha](https://developers.google.com/recaptcha/) and [hCaptcha](https://www.hcaptcha.com/) (offers better privacy).
 
->🎯 Captchas tend to have accessibility and privacy issues. It may also negatively affect your conversion rate.
+>🎯 Captchas tend to have accessibility and privacy issues. As captchas load script (js files) on your front end, they may slow down your website.
 
 
-## 4. IP-based filtering: check for blocked spammer IPs
+## IP-based filtering: check for blocked spammer IPs
 
 There are services such as [Spamhaus](https://www.spamhaus.org/) that keep a list of known spammer IPs. Spammers change their IPs often to avoid being blocked. However, blocking based on an IP is still a powerful way to block spam that is because a wide range of websites reports these IPs to these services.
 
@@ -102,7 +102,7 @@ At OOPSpam, we receive thousands of spammer IPs every day. From our experience, 
 
 >🎯 Keep in mind that some legitimate users may use VPNs or proxies which tend to be used by spammers as well. That is why you may unintentionally restrict legitimate visitors.
 
-## 5. Country and Language restriction
+## Country and Language restriction
 
 It is a simple and yet robust way to filter spam from your website. There are two approaches for this:
 
@@ -115,7 +115,7 @@ Both approaches work great but if you want to be open to every country then the 
 
 Another less known way to block spam is by languages. Similar to country restriction, by simply allowing submission in a certain language. If you expect comments on your website to be in English, letting comments only in English through could potentially eliminate unnecessary work.
 
-## 6. Machine Learning to filter spam content
+## Machine Learning to filter spam content
 
 This is a more advanced solution that can be hard to implemented and most importantly find a proper data set to train an ML algorithm.
 
@@ -123,7 +123,7 @@ Filtering spam using ML is a rather well-documented process especially with Baye
 
 That being said no matter how good the data set is, spammers also get better at customizing their messages. Especially with the recent development with OpenAI's [GPT-3](https://beta.openai.com/) shows that AI can generate genuine-looking, human-like, custom messages. This could make spam detection using Machine Learning algorithms harder.
 
-## 7. Rule-based spam filtering
+## Rule-based spam filtering
 
 Rule-based spam filtering is static and predefined rules to catch spam. It's one of the simplest forms of spam filtering. This technology has been around since spam started appearing in our email inboxes. One notable example of a rule-based spam filter is Spam Assassin for emails.
 
@@ -145,7 +145,7 @@ We are all seen URL shortening services that are used by spammers.
 
 Although not all URL shortening services are malicious. Some shortening services are for local use only, meaning they are not open to the public. For example, when you generate a short URL for your Dropbox image or Google Docs. So, be aware of this fact when you set a rule.
 
->🎯 A rule-based spam filtering is a powerful alternative to stop spam.  It has been used for decades but, make sure you reconsider your rules once in a while to avoid flagging legitimate messages.
+>🎯 A rule-based spam filtering is a powerful alternative to stop spam. It has been used for decades but, make sure you reconsider your rules once in a while to avoid flagging legitimate messages.
 
 ## Final thoughts
 

@@ -21,11 +21,12 @@ Unlike Ninja Forms and other form submission plugins, Gravity Forms is a premium
 In addition to Gravity Forms integration, we added a setting "Consider short messages as spam". This allows messages with less than 20 characters to be considered as spam.
 
 > ℹ️ Since this release, we updated our plugin with the following changes:
-> - Contact Form 7, Ninja Forms, Gravity Forms support
+
+> - Contact Form 7, Ninja Forms, Gravity Forms, Elementor Forms support
 > - Sensitivity Level
 > - Country restriction
 > - Language restriction
-> - Ability restrict IP analyses 
+> - Ability restrict IP analyses
 > - and more
 
 ![OOPSpam Anti-Spam WordPress Plugin Settings](/blog/assets/posts/oopspam-plugin-settings.png  "OOPSpam Anti-Spam WordPress Plugin Settings")
