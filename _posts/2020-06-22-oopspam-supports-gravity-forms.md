@@ -16,11 +16,11 @@ One of the most commonly used contact forms for WordPress is [Gravity Forms](htt
 
 ![Google Trends on WordPress Contact Froms](/blog/assets/posts/contact_from_trends.png "Google Trends on WordPress Contact Froms")
 
-Unlike Ninja Forms and other form submission plugins, Gravity Forms is a premium plugin meaning there is no free version, and it is not available on WordPress plugins directory. You have to get it through their website.
+Unlike Ninja Forms and other contact form plugins, Gravity Forms is a premium plugin meaning there is no free version, and it is not available on WordPress plugins directory. You have to get it through their website.
 
 In addition to Gravity Forms integration, we added a setting "Consider short messages as spam". This allows messages with less than 20 characters to be considered as spam.
 
-> ℹ️ Since this release, we updated our plugin with the following changes:
+> ℹ️ Since this release, we improved our plugin with the following changes:
 
 > - Contact Form 7, Ninja Forms, Gravity Forms, Elementor Forms support
 > - Sensitivity Level
