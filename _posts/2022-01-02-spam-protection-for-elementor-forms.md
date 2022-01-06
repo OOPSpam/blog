@@ -39,7 +39,16 @@ If you are looking for a free and quick workaround, reCaptcha is your solution.
 
 ### Why should I pay for OOPSpam when I can use the free alternatives?
 
-It's a fair question. Likely, you have already tried the above options, and they didn't work for you. For you, it could be a slow website from reCaptcha or overwhelming spam you are still getting despite implementing the above alternatives. What makes OOPSpam different from other solutions is that it doesn't slow your website and is effective against human spammers and bots. There is no challenge to solve. No performance penalty as everything happens in your server instead of client-side. The OOPSpam API uses machine learning models, content analyses, IP reputation, and other rule-based checks to score every contact form submission. A combination of all these analyses returns a single spam score that helps you stop both manual spam and bots. On the plugin's settings page, you could also adjust how sensitive you want your spam filter to be. In addition, the plugin allows you to set up a filter to accept submissions only from certain countries and languages.
+It's a fair question. Likely, you have already tried the above options, and they didn't work for you. For you, it could be a slow website from reCaptcha or overwhelming spam you are still getting despite implementing the above alternatives. What makes OOPSpam different from other solutions is that it doesn't slow your website and is effective against human spammers and bots. There is no challenge to solve. No performance penalty as everything happens in your server instead of client-side. The OOPSpam API uses machine learning models, content analyses, IP reputation, and other rule-based checks to score every contact form submission. A combination of all these analyses returns a single spam score that is how it accurately stops both manual spam and bots.
+
+On the plugin's settings page, you could also adjust how sensitive you want your spam filter to be. Even keeping default __Sensitivity level__ setting will help you cut down spam to zero.
+
+    ![OOPSpam WordPress Plugin Sensitivity level](https://www.oopspam.com/assets/WP_SensitivyLevel.jpg "OOPSpam WordPress Plugin Sensitivity level")
+
+In addition, the plugin allows you to set up a filter to accept submissions only from certain countries and languages.
+
+    ![OOPSpam WordPress Plugin country & language restrictions](https://www.oopspam.com/assets/country-language-filter.png "OOPSpam WordPress Plugin country & language restrictions")
+
 
 Here are a few steps to activate spam protection for Elementor Forms:
 
@@ -62,7 +71,7 @@ Here are a few steps to activate spam protection for Elementor Forms:
 
 ## Final thoughts
 
-All websites eventually get hit by spammers. As a website grows and gets more traffic it attracts more serious spammers with advance bots. Both honeypot and reCaptcha will protect your website to a certain degree but they are not enough for targeted spam attacks, manual spam and sophisticated bots. I hope this article help you find a solution for your spam problem.
+All websites eventually get hit by spammers. As a website grows and gets more traffic it attracts more serious spammers with advance bots. Both honeypot and reCaptcha will protect your website to a certain degree but they are not enough for targeted spam attacks, manual spam and sophisticated bots. I hope this article helps you find a solution for your spam problem.
 
 That is all! Go on and create your forms.
 
