@@ -33,6 +33,8 @@ Many people are happy with reCaptcha. It is effective against simple bots, howev
 
 If you are looking for a free and quick workaround, reCaptcha is your solution.
 
+> 📌 Tip: Consider adding both reCaptcha and the honeypot field to your contact form.
+
 ## OOPSpam WordPress plugin
 
 [Our WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/) is another way to stop spam on your Elementor Forms and WordPress comments. The plugin works with OOPSpam API that protects over 300K websites daily. While the other two alternatives are free, OOPSPam API is a paid service. But it does come with free 40/month spam checks for you to test.
