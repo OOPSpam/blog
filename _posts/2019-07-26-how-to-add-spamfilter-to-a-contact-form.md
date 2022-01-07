@@ -155,5 +155,3 @@ Check out [the documentation](https://oopspam.com/docs) to learn in detail about
 You can also access the example project code on [Github](https://github.com/OOPSpam/Contact-Form-nodejs).
 
 [Let us know](https://www.oopspam.com/#contact) if you have any questions.
-
-Happy spam-free days!
