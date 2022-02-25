@@ -6,7 +6,7 @@ image: ../blog/assets/posts/wp-forms/twitterCard.png
 ---
 <center>
 <a href="https://wordpress.org/plugins/oopspam-anti-spam/">
-<img width="772" alt="OOPSpam Anti-Spam WordPress Plugin supports WPForms" src="/blog/assets/posts/wp-forms/intro-wpforms.png">
+<img width="600" alt="OOPSpam Anti-Spam WordPress Plugin supports WPForms" src="/blog/assets/posts/wp-forms/intro-wpforms.png">
 </a>
 </center>
 <br/>
