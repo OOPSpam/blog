@@ -2,11 +2,11 @@
 layout: post
 title:  "5 ways to protect your WPForms from spam"
 author: "Onar A."
-image: ../blog/assets/posts/elementor-forms/ef-meta-image.png
+image: ../blog/assets/posts/wp-forms/twitterCard.png
 ---
 <center>
 <a href="https://wordpress.org/plugins/oopspam-anti-spam/">
-<img width="772" alt="OOPSpam Anti-Spam WordPress Plugin supports Elementor Forms" src="/blog/assets/posts/elementor-forms/ef-blog-header.png">
+<img width="772" alt="OOPSpam Anti-Spam WordPress Plugin supports WPForms" src="/blog/assets/posts/wp-forms/twitterCard.png">
 </a>
 </center>
 <br/>
