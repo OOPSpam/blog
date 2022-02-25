@@ -90,7 +90,7 @@ Here are a few steps to activate spam protection for WPForms:
 4. Don't forget to enter a short message to display when a spam form entry is submitted. Your message will appear at the bottom of the message field.
 
 <center>
-<img width="350" alt="OOPSpam detected spam on WPForms" src="/blog/assets/posts/wp-forms/WPForms.png">
+<img width="800" alt="OOPSpam detected spam on WPForms" src="/blog/assets/posts/wp-forms/WPForms.png">
 </center>
 <br/>
 
