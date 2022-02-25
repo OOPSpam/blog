@@ -42,7 +42,6 @@ Many people are happy with reCaptcha. It is effective against simple bots, howev
 
 ![WPForms reCaptcha](/blog/assets/posts/wp-forms/reCaptcha.png "WPForms reCaptcha")
 
-
 If you are looking for a free and quick workaround, reCaptcha is your solution.
 
 ## hCaptcha
@@ -50,7 +49,6 @@ If you are looking for a free and quick workaround, reCaptcha is your solution.
 Similar to reCaptcha, hCaptcha is supported in both versions of WPForms. They work in a similar fashion and suffer from the same limitations. Unlike reCaptcha, hCaptcha doesn't have an invisible version, so your visitors have to solve the presented puzzle. The most notable difference between reCaptcha and hCaptcha is privacy. hCaptcha is considered a privacy-friendly alternative to reCaptcha. Setting up hCaptcha is also very similar to hCaptcha. Check out [the official tutorial on WPForms documentation](https://wpforms.com/docs/how-to-set-up-and-use-hcaptcha-in-wpforms).
 
 ![WPForms hCaptcha](/blog/assets/posts/wp-forms/hCaptcha.png "WPForms hCaptcha")
-
 
 ## Custom captcha
 
@@ -61,7 +59,6 @@ The custom captcha is a paid functionality in WPForms. It comes as an addon, so 
 Another alternative with the custom captcha is Question and Answer based spam protection. Add a bunch of questions and let your visitors answer one of them before submitting a contact form message. See [How to set up the Custom Captcha in WPForms](https://wpforms.com/docs/how-to-install-and-use-custom-captcha-addon-in-wpforms/) for more details.
 
 ![WPForms the Custom Captcha Question & Answer](/blog/assets/posts/wp-forms/CaptchaQA.png "WPForms the Custom Captcha Question & Answer")
-
 
 ## OOPSpam WordPress plugin
 
