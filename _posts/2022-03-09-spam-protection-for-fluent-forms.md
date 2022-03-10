@@ -2,11 +2,11 @@
 layout: post
 title:  "4 ways to protect your Fluent Forms from spam"
 author: "Onar A."
-image: ../blog/assets/posts/wp-forms/twitterCard.png
+image: ../blog/assets/posts/fluent-forms/twitterCard.png
 ---
 <center>
 <a href="https://wordpress.org/plugins/oopspam-anti-spam/">
-<img width="600" alt="OOPSpam Anti-Spam WordPress Plugin supports Fluent Forms" src="/blog/assets/posts/wp-forms/intro-wpforms.png">
+<img width="600" alt="OOPSpam Anti-Spam WordPress Plugin supports Fluent Forms" src="/blog/assets/posts/fluent-forms/FluentForms.png">
 </a>
 </center>
 <br/>
