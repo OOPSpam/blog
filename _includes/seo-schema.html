@@ -30,21 +30,21 @@
     },
     "author" : {
         "@type": "Person",
-        "name": "{{ $author }}"
+        "name": "{{ page.author }}"
     },
     "creator" : {
         "@type": "Person",
-        "name": "{{ $author }}"
+        "name": "{{ page.author }}"
     },
     "accountablePerson" : {
         "@type": "Person",
-        "name": "{{ $author }}"
+        "name": "{{ page.author}}"
     },
     "copyrightHolder" : "{{ $org_name }}",
-    "copyrightYear" : "{{ .Date.Format "2006" }}",
-    "dateCreated": "{{ .Date.Format "2006-01-02T15:04:05.00Z" | safeHTML }}",
-    "datePublished": "{{ .PublishDate.Format "2006-01-02T15:04:05.00Z" | safeHTML }}",
-    "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05.00Z" | safeHTML }}",
+    "copyrightYear" : "{{ page.date.Format "2006" }}",
+    "dateCreated": "{{ page.date.Format "2006-01-02T15:04:05.00Z" | safeHTML }}",
+    "datePublished": "{{ page.date.Format "2006-01-02T15:04:05.00Z" | safeHTML }}",
+    "dateModified": "{{ page.lastmod.Format "2006-01-02T15:04:05.00Z" | safeHTML }}",
     "publisher":{
         "@type":"Organization",
         "name": {{ $org_name }},
@@ -56,11 +56,9 @@
             "height":"32"
         }
     },
-    "image": {{ if page.images }}[{{ range $i, $e := page.images }}{{ if $i }}, {{ end }}{{ $e | absURL }}{{ end }}]{{ else}}{{ site.logo | absURL }}{{ end }},
+    "image": "{{ page.image }}",
     "url" : "{{ .Permalink }}",
-    "wordCount" : "{{ .WordCount }}",
-    "genre" : [ {{ range $index, $tag := page.tags }}{{ if $index }}, {{ end }}"{{ $tag }}" {{ end }}],
-    "keywords" : [ {{ range $index, $keyword := page.keywords }}{{ if $index }}, {{ end }}"{{ $keyword }}" {{ end }}]
+    "wordCount" : "{{ .WordCount }}"
 }
 </script>
 {{ end }}

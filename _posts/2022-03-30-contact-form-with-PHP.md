@@ -7,15 +7,6 @@ lead:
 description: Learn how to build complete contact form with PHP and HTML with this step-by-step tutorial. We will validate, sanitize and check for spam to ensure our form is secure and protected .
 date: 2022-03-30
 lastmod: 
-images:
-  - "../blog/assets/posts/contact-form-with-PHP/complete-contact-form-with-PHP.png"
-tags:
-  - "PHP"
-  - "spam protection"
-keywords:
-  - "contact form"
-  - "PHP"
-  - "HTML"
 ---
 
 Every website has some way for its visitors to contact the site owner. It could be an email address, a contact form, or a live chat. If you are building your website in PHP or perhaps you already have a website and want to add a contact form then this is the tutorial for you. Having your email publicly available on your website may attract a lot of spam. To avoid this, individuals and companies have a contact form for easy communication with their users.
