@@ -17,7 +17,7 @@
   <!-- RSS -->
   {% feed_meta %}
 
-  {{ partial "seo-schema.html" . }}
+  {% include seo-schema.html %}
 
   <!-- Analytics-->
   {% if jekyll.environment == 'production' %}
