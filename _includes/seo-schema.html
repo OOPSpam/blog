@@ -1,18 +1,3 @@
-{{ if .IsHome -}}
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "WebSite",
-    "name": "{{ site.title }}",
-    "url": "{{ site.baseURL }}",
-    "description": "{{ site.description }}",
-    "thumbnailUrl": "{{ site.logo | absURL }}",
-    "license": "{{ site.copyright }}"
-}
-</script>
-{{ else if .IsPage }}
-{{ $author :=  or (page.author) (site.author.name) }}
-{{ $org_name :=  site.title }}
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -61,4 +46,3 @@
     "wordCount" : "{{ .WordCount }}"
 }
 </script>
-{{ end }}
