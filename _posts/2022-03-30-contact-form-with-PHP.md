@@ -5,7 +5,7 @@ author: "Onar A."
 image: ../blog/assets/posts/contact-form-with-PHP/complete-contact-form-with-PHP.png
 lead: 
 description: Learn how to build complete contact form with PHP and HTML with this step-by-step tutorial. We will validate, sanitize and check for spam to ensure our form is secure and protected .
-date: "2022-03-30"
+date: 2022-03-30T14:15:59-06:00
 lastmod: 
 ---
 
