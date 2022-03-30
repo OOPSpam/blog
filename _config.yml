@@ -1,7 +1,14 @@
 # Site settings
 title:          OOPSpam Blog
-description:    "A blog about spam filtering & detection"
+description:    "Learn how to protect your website from spam bots & manual spam."
 url:            "https://www.oopspam.com"
+copyright: "OOPSpam LLC"
+logo: "/blog/assets/favicon-32x32.png"
+
+# JSON-LD
+
+baseURL: "https://www.oopspam.com/"
+languageCode:  "en-us"  
 
 # Google Analytics
 google_analytics: 11111
