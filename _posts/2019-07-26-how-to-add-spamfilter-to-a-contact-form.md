@@ -5,7 +5,7 @@ author: "Onar A."
 image: ../blog/assets/howtoaddspamfilter.png
 
 description: "Learn how to add spam protection to any contact forms"
-modified: 2020-03-31
+modified: 2022-03-31
 ---
 <center><img width="512" alt="A contact form illustration" src="/blog/assets/howtoaddspamfilter.png"></center>
 <br/>
