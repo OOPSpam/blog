@@ -39,8 +39,8 @@
             "height":"32"
         }
     },
-    "image": "{{ site.url  }}{{ page.image }}",
-    "url" : "{{ site.url  }}{{ page.url }}",
+    "image": "{{ site.baseURL  }}{{ page.image }}",
+    "url" : "{{ site.baseURL  }}{{ page.url }}",
     "wordCount" : "{{ page.content | number_of_words }}"
 }
 </script>
