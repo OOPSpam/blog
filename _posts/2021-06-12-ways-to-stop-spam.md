@@ -3,6 +3,8 @@ layout: post
 title:  "7 ways to stop spam on your website"
 author: "Onar A."
 image: /assets/ways-to-stop-spam.png
+tags: [spam, contact_form]
+
 
 
 description: "Learn about 7 different technics for spam detection and prevention."

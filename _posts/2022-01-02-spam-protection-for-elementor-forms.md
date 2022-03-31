@@ -3,6 +3,8 @@ layout: post
 title:  "3 ways to protect your Elementor Forms from spam"
 author: "Onar A."
 image: /assets/posts/elementor-forms/ef-meta-image.png
+tags: [WordPress, contact_form, elementor_forms]
+
 
 description: "Learn how to add spam protection to Elementor Forms with these 3 different methods in WordPress."
 # modified: 

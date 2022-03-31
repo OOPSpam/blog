@@ -3,6 +3,8 @@ layout: post
 title:  "How to add a powerful spam filter to your contact form"
 author: "Onar A."
 image: /assets/howtoaddspamfilter.png
+tags: [WordPress, contact_form, java, honeypot]
+
 
 description: "Learn how to add spam protection to any contact forms"
 date_modified: 2022-03-31T00:00:00+00:00
