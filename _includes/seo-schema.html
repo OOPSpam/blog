@@ -11,7 +11,7 @@
     "isFamilyFriendly": "true",
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "{{ page.url | prepend: site.baseurl }}"
+        "@id": "{{ page.url | absURL }}"
     },
     "author" : {
         "@type": "Person",
@@ -26,10 +26,10 @@
         "name": "{{ page.author}}"
     },
     "copyrightHolder" : "{{ $org_name }}",
-    "copyrightYear" : "{{ page.date.Format "2006" }}",
-    "dateCreated": "{{ page.date.Format "2006-01-02T15:04:05.00Z" | safeHTML }}",
-    "datePublished": "{{ page.date.Format "2006-01-02T15:04:05.00Z" | safeHTML }}",
-    "dateModified": "{{ page.lastmod.Format "2006-01-02T15:04:05.00Z" | safeHTML }}",
+    "copyrightYear" : "{{ post.date | date: "%Y" }}",
+    "dateCreated": "{{ post.date | date: "%B %d, %Y" }}",
+    "datePublished": "{{ post.date | date: "%B %d, %Y" }}",
+    "dateModified": "{{ post.date | date: "%B %d, %Y" }}",
     "publisher":{
         "@type":"Organization",
         "name": {{ $org_name }},
@@ -41,8 +41,8 @@
             "height":"32"
         }
     },
-    "image": "{{ page.image }}",
-    "url" : "{{ page.url | prepend: site.baseurl }}",
+    "image": "{{ page.image | absURL }}",
+    "url" : "{{ page.url | absURL }}",
     "wordCount" : "{{ .WordCount }}"
 }
 </script>
