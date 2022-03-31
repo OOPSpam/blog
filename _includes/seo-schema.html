@@ -41,8 +41,8 @@
             "height":"32"
         }
     },
-    "image": "{{ page.image | absURL }}",
-    "url" : "{{ page.url | absURL }}",
-    "wordCount" : "{{ .WordCount }}"
+    "image": "{{ apply page.images "absURL" "." }}",
+    "url" : "{{ apply page.url "absURL" "." }}",
+    "wordCount" : "{{ page.WordCount }}"
 }
 </script>
