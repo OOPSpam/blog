@@ -25,6 +25,9 @@ markdown:       kramdown
 include:
   - _pages
 
+# SEO
+seo:
+ date_modified: 2019-09-15 18:10:00 -03:00
 
 # Assets
 sass:
