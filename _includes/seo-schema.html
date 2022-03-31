@@ -11,7 +11,7 @@
     "isFamilyFriendly": "true",
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "{{ .Permalink }}"
+        "@id": "{{ post.url | prepend: site.baseurl }}"
     },
     "author" : {
         "@type": "Person",
@@ -42,7 +42,7 @@
         }
     },
     "image": "{{ page.image }}",
-    "url" : "{{ .Permalink }}",
+    "url" : "{{ post.url | prepend: site.baseurl }}",
     "wordCount" : "{{ .WordCount }}"
 }
 </script>
