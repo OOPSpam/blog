@@ -2,7 +2,7 @@
 layout: post
 title:  "How to add a powerful spam filter to your contact form"
 author: "Onar A."
-image: ../blog/assets/howtoaddspamfilter.png
+image: /assets/howtoaddspamfilter.png
 
 description: "Learn how to add spam protection to any contact forms"
 modified: 2022-03-31

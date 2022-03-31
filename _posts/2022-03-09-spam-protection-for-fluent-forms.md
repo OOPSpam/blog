@@ -2,7 +2,7 @@
 layout: post
 title:  "4 ways to protect your Fluent Forms from spam"
 author: "Onar A."
-image: ../blog/assets/posts/fluent-forms/twitterCard.png
+image: /assets/posts/fluent-forms/twitterCard.png
 
 description: "Learn how to add spam protection to Fluent Forms with these 4 different methods in WordPress."
 # modified: 

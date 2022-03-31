@@ -2,7 +2,7 @@
 layout: post
 title:  "7 ways to stop spam on your website"
 author: "Onar A."
-image: ../blog/assets/ways-to-stop-spam.png
+image: /assets/ways-to-stop-spam.png
 
 
 description: "Learn about 7 different technics for spam detection and prevention."
