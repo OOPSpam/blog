@@ -37,6 +37,8 @@ plugins:
   - jekyll-paginate
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll/tagging
+  - jekyll-tagging-related_posts
   # - jemoji #Uncomment this to allow emoji in your post
 
 # Permalinks
