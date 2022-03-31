@@ -1,3 +1,4 @@
+{% assign wordcount = include.content | number_of_words %}
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -11,7 +12,7 @@
     "isFamilyFriendly": "true",
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "{{ page.url | absURL }}"
+        "@id": "{{ page.baseURL }}{{ page.url }}"
     },
     "author" : {
         "@type": "Person",
@@ -25,24 +26,24 @@
         "@type": "Person",
         "name": "{{ page.author}}"
     },
-    "copyrightHolder" : "{{ $org_name }}",
+    "copyrightHolder" : "{{ site.copyright }}",
     "copyrightYear" : "{{ page.date | date: "%Y" }}",
-    "dateCreated": "{{ page.date | date: "%B %d, %Y" }}",
     "datePublished": "{{ page.date | date: "%B %d, %Y" }}",
-    "dateModified": "{{ page.date | date: "%B %d, %Y" }}",
+    "dateModified": "{% if page.modified %}{{ page.modified }}{% else %}{{ page.date }}{% endif %}"
     "publisher":{
         "@type":"Organization",
-        "name": {{ $org_name }},
+        "description": "OOPSpam API: Stop bots and manual spam from reaching you or your customer. All with high accuracy and privacy.",
+        "name": {{ site.copyright }},
         "url": {{ site.baseURL }},
         "logo": {
             "@type": "ImageObject",
-            "url": "{{ site.logo | absURL }}",
+            "url": "{{ site.logo }}",
             "width":"32",
             "height":"32"
         }
     },
-    "image": "{{ apply page.images "absURL" "." }}",
-    "url" : "{{ apply page.url "absURL" "." }}",
-    "wordCount" : "{{ page.WordCount }}"
+    "image": "{{ page.baseURL }}{{ page.image }}",
+    "url" : "{{ page.baseURL }}{{ page.url }}",
+    "wordCount" : "{{ wordcount }}"
 }
 </script>
