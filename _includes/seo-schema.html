@@ -1,4 +1,3 @@
-{% assign wordcount = include.content | number_of_words %}
 <script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -12,7 +11,7 @@
     "isFamilyFriendly": "true",
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "{{ page.baseURL }}{{ page.url }}"
+        "@id": "{{ site.url }}{{ page.url }}"
     },
     "author" : {
         "@type": "Person",
@@ -32,8 +31,7 @@
     "dateModified": "{% if page.modified %}{{ page.modified }}{% else %}{{ page.date }}{% endif %}"
     "publisher":{
         "@type":"Organization",
-        "description": "OOPSpam API: Stop bots and manual spam from reaching you or your customer. All with high accuracy and privacy.",
-        "name": {{ site.copyright }},
+        "name": "OOPSpam API: Stop bots and manual spam from reaching you or your customer. All with high accuracy and privacy.",
         "url": {{ site.baseURL }},
         "logo": {
             "@type": "ImageObject",
@@ -42,8 +40,8 @@
             "height":"32"
         }
     },
-    "image": "{{ page.baseURL }}{{ page.image }}",
-    "url" : "{{ page.baseURL }}{{ page.url }}",
-    "wordCount" : "{{ wordcount }}"
+    "image": "{{ site.url  }}{{ page.image }}",
+    "url" : "{{ site.url  }}{{ page.url }}",
+    "wordCount" : "{{ page.content | number_of_words }}"
 }
 </script>
