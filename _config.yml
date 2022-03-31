@@ -1,7 +1,7 @@
 # Site settings
 title:          OOPSpam Blog
 description:    "Learn how to protect your website from spam bots & manual spam."
-url:            "https://www.oopspam.com/blog"
+url:            "https://www.oopspam.com/"
 copyright: "OOPSpam LLC"
 logo: "https://www.oopspam.com/blog/assets/favicon-32x32.png"
 
