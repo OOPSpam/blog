@@ -7,7 +7,9 @@ tags: [WordPress, contact_form, java, honeypot]
 
 
 description: "Learn how to add spam protection to any contact forms"
-date_modified: 2022-03-31 09:00:00+0800
+seo:
+ date_modified: 2022-03-31 09:00:00+0800
+ 
 ---
 <center><img width="512" alt="A contact form illustration" src="/blog/assets/howtoaddspamfilter.png"></center>
 <br/>
