@@ -3,6 +3,10 @@ layout: post
 title:  "Spam protection for Bubble.io"
 author: "Onar A."
 image: ../blog/assets/bubble_oopspam.png
+
+
+description: "Learn how to add spam protection to your Bubble app forms."
+# modified: 
 ---
 <center>
 <a href="https://bubble.io/plugin/oopspam-spam-detection-1582908608700x936823858020745200">
