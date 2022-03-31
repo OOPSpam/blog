@@ -2,7 +2,7 @@
 {
     "@context": "http://schema.org",
     "@type": "BlogPosting",
-    "articleSection": "{{ .Section }}",
+    "articleSection": "blog",
     "name": "{{ page.title | safeJS }}",
     "headline": "{{ page.title | safeJS }}",
     "alternativeHeadline": "{{ page.lead }}",
@@ -11,7 +11,7 @@
     "isFamilyFriendly": "true",
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "{{ post.url | prepend: site.baseurl }}"
+        "@id": "{{ page.url | prepend: site.baseurl }}"
     },
     "author" : {
         "@type": "Person",
@@ -42,7 +42,7 @@
         }
     },
     "image": "{{ page.image }}",
-    "url" : "{{ post.url | prepend: site.baseurl }}",
+    "url" : "{{ page.url | prepend: site.baseurl }}",
     "wordCount" : "{{ .WordCount }}"
 }
 </script>
