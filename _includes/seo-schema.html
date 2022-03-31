@@ -26,10 +26,10 @@
         "name": "{{ page.author}}"
     },
     "copyrightHolder" : "{{ $org_name }}",
-    "copyrightYear" : "{{ post.date | date: "%Y" }}",
-    "dateCreated": "{{ post.date | date: "%B %d, %Y" }}",
-    "datePublished": "{{ post.date | date: "%B %d, %Y" }}",
-    "dateModified": "{{ post.date | date: "%B %d, %Y" }}",
+    "copyrightYear" : "{{ page.date | date: "%Y" }}",
+    "dateCreated": "{{ page.date | date: "%B %d, %Y" }}",
+    "datePublished": "{{ page.date | date: "%B %d, %Y" }}",
+    "dateModified": "{{ page.date | date: "%B %d, %Y" }}",
     "publisher":{
         "@type":"Organization",
         "name": {{ $org_name }},
