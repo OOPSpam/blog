@@ -3,6 +3,9 @@ layout: post
 title:  "5 ways to protect your WPForms from spam"
 author: "Onar A."
 image: ../blog/assets/posts/wp-forms/twitterCard.png
+
+description: "Learn how to add spam protection to WPForms with these 5 different methods in WordPress."
+# modified: 
 ---
 <center>
 <a href="https://wordpress.org/plugins/oopspam-anti-spam/">

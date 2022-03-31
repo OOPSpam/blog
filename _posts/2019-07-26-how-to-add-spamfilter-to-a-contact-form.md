@@ -3,12 +3,15 @@ layout: post
 title:  "How to add a powerful spam filter to your contact form"
 author: "Onar A."
 image: ../blog/assets/howtoaddspamfilter.png
+
+description: "Learn how to add spam protection to any contact forms"
+modified: 2020-03-31
 ---
 <center><img width="512" alt="A contact form illustration" src="/blog/assets/howtoaddspamfilter.png"></center>
 <br/>
 > This is a blog post on how to integrate a spam filter with non-WordPress websites. If you are WordPress user check out [our WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/).
 
-
+> ✨ Are you building a contact form in PHP? Check out [How to build a complete contact form with PHP and HTML](https://www.oopspam.com/blog/contact-form-with-PHP) post.
 
 {% include toc.md %}
 

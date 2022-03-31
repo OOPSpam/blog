@@ -3,6 +3,9 @@ layout: post
 title:  "[Announcement] OOPSpam Anti-Spam Plugin now supports Contact Form 7"
 author: "Onar A."
 image: ../blog/assets/posts/cf7-oopspam-wordpress-plugin.png
+
+description: "Use OOPSpam WordPress plugin to stop spam on your Contact Form 7 forms"
+# modified: 
 ---
 <center>
 <a href="https://wordpress.org/plugins/oopspam-anti-spam/">

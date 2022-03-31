@@ -3,6 +3,9 @@ layout: post
 title:  "How to protect your Ninja Forms from spam with anti-spam filter API"
 author: "Onar A."
 image: ../blog/assets/nj-oopspam-wordpress-plugin.jpg
+
+description: "Use OOPSpam WordPress plugin to stop spam on your Ninja Forms"
+# modified: 
 ---
 <center>
 <a href="https://wordpress.org/plugins/oopspam-anti-spam/">

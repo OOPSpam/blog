@@ -3,6 +3,9 @@ layout: post
 title:  "[Announcement] OOPSpam Anti-Spam Plugin now supports Gravity Forms"
 author: "Onar A."
 image: ../blog/assets/posts/gf-oopspam-wordpress-plugin.jpg
+
+description: "Use OOPSpam WordPress plugin to stop spam on your Gravity Forms"
+# modified: 
 ---
 <center>
 <a href="https://wordpress.org/plugins/oopspam-anti-spam/">
