@@ -26,19 +26,19 @@ In this article, we are going to focus only on anti-spam capabilities of Formida
 
 ## Honeypot
 
-[We wrote](https://www.oopspam.com/blog/ways-to-stop-spam#honeypot-filter-spam-with-a-hidden-field) extensively about honeypot technique and how it works. While it's not as effective as it used to be, it still prevents some bots from spamming your contact forms. Here is a short description on what the honeypot method is:
+[We wrote](https://www.oopspam.com/blog/ways-to-stop-spam#honeypot-filter-spam-with-a-hidden-field) extensively about the honeypot technique and how it works. While it's not as effective as it used to be, it still prevents some bots from spamming your contact forms. Here is a short description of what the honeypot method is:
 
-`A honeypot field is a hidden field that meant to be filled only bots. Bots scan a website and fill all the fields, including the hidden field in your form. Formidable Forms will automatically dismiss every submission with an entry in a honeypot field.`
+> A honeypot field is a hidden field that is meant to be filled only by bots. Bots scan a website and fill all the fields, including the hidden field in your form. Formidable Forms will automatically dismiss every submission with an entry in a honeypot field.
 
 Formidable Forms comes with the honeypot feature and it's enabled by default. If you getting spammed, first make sure this honeypot is still enabled. 
 
-Unlike other contact form solutions like [Fluent Forms](https://www.oopspam.com/blog/spam-protection-for-fluent-forms), Formidable Forms allows you to configure honeypot in three different modes: Off, Basic and Strict. This is a great way to harden the spam protection.
+Unlike other contact form solutions like [Fluent Forms](https://www.oopspam.com/blog/spam-protection-for-fluent-forms), Formidable Forms allows you to configure honeypot in three different modes: _Off_, _Basic_, and _Strict_. This is a great way to harden spam protection.
 
-- Off: This is the obvious one. We don't recommend turning honeypot technique off.
-- Basic: The default value and enabled for all the forms. Adds a hidden text field to your contact form.
-- Strict: Improvement over Basic mode. Adds a hidden email field which tricks bots to fill it but you may see more false positives.
+- **Off**: This is the obvious one. We don't recommend turning the honeypot technique off.
+- **Basic**: The default value and enabled for all the forms. Adds a hidden text field to your contact form.
+- **Strict**: Improvement over Basic mode. Adds a hidden email field that tricks bots to fill it but you may see more false positives.
  
-Always make sure the honeypot is enabled for all your forms. Switch from Basic to Strict mode, if you start getting spammed. This method is less expensive and simplest way to stop spam. Once you start getting spam despite having a honeypot, look into other options.
+Always make sure the honeypot is enabled for all your forms. Switch from Basic to Strict mode, if you start getting spammed. This method is the less expensive and simplest way to stop spam. Once you start getting spam despite having a honeypot, look into other options.
 
 ![Formidable Forms Honeypot](/blog/assets/posts/formidable-forms/honeypot.png "Formidable Forms Honeypot")
 
@@ -46,29 +46,29 @@ Always make sure the honeypot is enabled for all your forms. Switch from Basic t
 
 Formidable Forms also provides Javascript-based (aka token-based) spam filtering. As this method relies on JavaScript, JavaScript needs to be enabled in the visitors' browser for this to work. This technique prevents automated spam bots from submitting multiple entries.
 
-This anti-spam measurements comes built-in and isn't enabled by default. Here is how it works: Each time a form loads, a unique token is created and stored in the page and passed along with the form submission. On the backend, Formidable validates this token to make sure it is not being reused. If the token expired, is invalid, or doesn't exist then the submission will be halted.
+This anti-spam measurement comes built-in and isn't enabled by default. Here is how it works: Each time a form loads, a unique token is created and stored on the page and passed along with the form submission. On the backend, Formidable validates this token to make sure it is not being reused. If the token expired, is invalid, or doesn't exist then the submission will be halted.
 
 Token-based spam prevention is effective against basic bots. Unfortunately, they are ineffective against targeted spam, manual spam, and headless browser-based bots. Give a shot this option if you are getting spammed despite honeypot.
 
 ![Formidable Forms Javascript-based spam filtering](/blog/assets/posts/formidable-forms/token-based.png "Formidable Forms Javascript-based spam filtering")
 
-It's worth to mention that in some cases caching (if you are using one) could be problem with this technique as a token stored in the page's DOM. [Formidable Forms points out](https://formidableforms.com/knowledgebase/add-spam-protection/#kb-javascript-token) this issue in their official docs. You can avoid this by increasing token expiration time. Formidable Forms recommends using either [frm_form_token_check_after_today](frm_form_token_check_after_today) or [frm_form_token_check_before_today](https://formidableforms.com/knowledgebase/frm_form_token_check_before_today/) hooks to do so.
+It's worth mentioning that in some cases caching (if you are using one) could be a problem with this technique as a token stored in the page's DOM. [Formidable Forms points out](https://formidableforms.com/knowledgebase/add-spam-protection/#kb-javascript-token) this issue in their official docs. You can avoid this by increasing token expiration time. Formidable Forms recommends using either [frm_form_token_check_after_today](frm_form_token_check_after_today) or [frm_form_token_check_before_today](https://formidableforms.com/knowledgebase/frm_form_token_check_before_today/) hooks to do so.
 
 ## Using WordPress's Comment Moderation
 
-Formidable Forms did a great job by incorporating already available comment moderation into their forms. I'm talking about a feature that comes with every WordPress and accessible under WordPress Settings -> Discussion page -> Disallowed Comment Keys. This is a quick way to block surge of spam by adding URLs, IP or any spam words (per line) into this field. Formidable Forms then will check every submission against this list and block if matched.
+Formidable Forms did a great job by incorporating already available comment moderation into their forms. I'm talking about a feature that comes with every WordPress and accessible under _WordPress Settings -> Discussion page -> Disallowed Comment Keys_. This is a quick way to block surge of spam by adding URLs, IP or any spam words (per line) into this field. Formidable Forms then will check every submission against this list and block if matched.
 
 ![Formidable Forms Comment Blacklist](/blog/assets/posts/formidable-forms/comment-keys.png "Formidable Forms Comment Blacklist")
 
 ## reCaptcha
 
-Up to this point we saw technics that don't require third-party solutions. reCaptcha is popular captcha solution that many websites use. Formidable Forms has built-in integration with reCaptcha. Unfortunately, unlike other similar contact form builders, Formidable Forms doesn't have hCaptcha integration.
+Up to this point, we saw technics that don't require third-party solutions. reCaptcha is a popular captcha solution that many websites use. Formidable Forms has built-in integration with reCaptcha. Unfortunately, unlike other similar contact form builders, Formidable Forms doesn't have hCaptcha integration.
 
-Formidable Forms supports both reCaptcha v2 and v3 (Invisible reCaptcha). reCaptcha is available both for free and paid versions. Enabling reCaptcha is pretty straightforward through the plugin's settings. It involves creating Google Account then grabbing `Site Key`, `Secret Key` and pasting them to appropriate fields under Global Settings -> reCaptcha in Formidable Forms. They provide a step-by-step tutorial on [how to set up reCaptcha in Formidable Forms](https://formidableforms.com/knowledgebase/recaptcha/).
+Formidable Forms supports both reCaptcha v2 and v3 (Invisible reCaptcha). reCaptcha is available both for free and paid versions. Enabling reCaptcha is pretty straightforward through the plugin's settings. It involves creating Google Account then grabbing `Site Key`, and `Secret Key` and pasting them to appropriate fields under Global Settings -> reCaptcha in Formidable Forms. They provide a step-by-step tutorial on [how to set up reCaptcha in Formidable Forms](https://formidableforms.com/knowledgebase/recaptcha/).
 
 ### Should I use reCaptcha v2 or v3?
 
-v3 came after many people complained about accessibility and usability issues with v2. v2 asks visitors to solve a challenge before submitting a form. To address this issue, Google removed the "challenge" part of reCaptcha. As a result, with v3, users don't solve any challenge. Instead, it tracks the user's behavior on your website and scores the user from 0 (bot) to 1 (human). It is up to the website owner to determine the threshold. In Formidable Forms, you don't have control over this threshold.
+v3 came after many people complained about accessibility and usability issues with v2. v2 asks visitors to solve a challenge before submitting a form. To address this issue, Google removed the "challenge" part of reCaptcha. As a result, with v3, users don't solve any challenges. Instead, it tracks the user's behavior on your website and scores the user from 0 (bot) to 1 (human). It is up to the website owner to determine the threshold. In Formidable Forms, you don't have control over this threshold.
 
 Many people are happy with reCaptcha. It is effective against simple bots, however, advanced bots can [bypass reCaptcha](https://github.com/xHossein/PyPasser). There are also "captcha farms" where people get paid to solve reCaptcha. It may also slow down your website as it loads extra js files into your website.
 
@@ -112,7 +112,7 @@ Here are a few steps to activate spam protection for Formidable Forms:
 
 ## Final thoughts
 
-All websites eventually get hit by spammers. As a website grows and gets more traffic it attracts more serious spammers with advance bots. The captcha solutions will protect your website to a certain degree but they are not enough for targeted spam attacks, manual spam and sophisticated bots. I hope this article helps you find a solution for your spam problem.
+All websites eventually get hit by spammers. As a website grows and gets more traffic it attracts more serious spammers with advanced bots. The captcha solutions will protect your website to a certain degree but they are not enough for targeted spam attacks, manual spam, and sophisticated bots. I hope this article helps you find a solution to your spam problem.
 
 That is all! Go on and create your forms.
 
