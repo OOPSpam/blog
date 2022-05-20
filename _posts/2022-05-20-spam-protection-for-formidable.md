@@ -22,7 +22,7 @@ description: "Learn how to add spam protection to Formidable Forms with these 5 
 
 Formidable Forms is one of the most popular contact form builder out there with over 13M downloads. It has everything you need to build a complex form from payment gateway integrating (Stripe etc.) to conditional logic and more. Formidable Forms Lite is available in the WordPress plugin directory and comes with basic fields and built-it spam filtering options. The Pro version adds advanced fields and many more features. [Check out official comparison](https://formidableforms.com/lite-upgrade/) between Lite & Pro.
 
-In this article, we are going to focus only on anti-spam capabilities of Formidable Forms. Both free Lite and paid Pro versions come with the same built-in spam protection choices. And then we look into third-party alternatives, including [our WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/).
+In this article, we are going to focus only on anti-spam capabilities of Formidable Forms. Both free Lite and paid Pro versions come with the same built-in spam protection choices. And then we look into third-party alternatives.
 
 ## Honeypot
 
