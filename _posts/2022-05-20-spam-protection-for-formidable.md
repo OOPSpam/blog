@@ -52,7 +52,7 @@ Token-based spam prevention is effective against basic bots. Unfortunately, they
 
 ![Formidable Forms Javascript-based spam filtering](/blog/assets/posts/formidable-forms/token-based.png "Formidable Forms Javascript-based spam filtering")
 
-It's worth mentioning that in some cases caching (if you are using one) could be a problem with this technique as a token stored in the page's DOM. [Formidable Forms points out](https://formidableforms.com/knowledgebase/add-spam-protection/#kb-javascript-token) this issue in their official docs. You can avoid this by increasing token expiration time. Formidable Forms recommends using either [frm_form_token_check_after_today](frm_form_token_check_after_today) or [frm_form_token_check_before_today](https://formidableforms.com/knowledgebase/frm_form_token_check_before_today/) hooks to do so.
+It's worth mentioning that in some cases caching (if you are using one) could be a problem with this technique as a token stored in the page's DOM. [Formidable Forms points out](https://formidableforms.com/knowledgebase/add-spam-protection/#kb-javascript-token) this issue in their official docs. You can avoid this by increasing token expiration time. Formidable Forms recommends using either [frm_form_token_check_after_today](https://formidableforms.com/knowledgebase/frm_form_token_check_after_today/) or [frm_form_token_check_before_today](https://formidableforms.com/knowledgebase/frm_form_token_check_before_today/) hooks to do so.
 
 ## Using WordPress's Comment Moderation
 
