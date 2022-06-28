@@ -24,6 +24,12 @@ Unfortunately, spammers have a lot of stolen cards to check and this can hurt yo
 
 {% include toc.md %}
 
+## (Update) Set the minimum donation amount to $10
+
+The purpose of the card testing attack is to test the valid card without sacrificing too much money. So, if your donation form allows a $1 or $5 donation then you are more likely to be a victim of this attack. Make it costly for the attacker to test their card on your website. Set minimum donation amount to at least $10.
+
+This is perhaps the simplest way you could avoid spam donations.
+
 ## Honeypot
 
 [We wrote](https://www.oopspam.com/blog/ways-to-stop-spam#honeypot-filter-spam-with-a-hidden-field) extensively about honeypot technique and how it works. While it's not as effective as it used to be, it still prevents some bots from spamming your donation forms. Give introduces built-it honeypot field in [version 1.5](https://givewp.com/give-version-1-5-released/). There is no setting to enable or disable this feature. It's automatically added to your forms. The honeypot field won't be visible to humans, but bots see the hidden field as a valid field. Bots scan a website and fill all the fields, including the hidden field in your form. Give plugin will dismiss every donation that has an entry in a hidden field. If you are still getting donor spam then try other methods.
