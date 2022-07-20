@@ -10,9 +10,7 @@ description: "Learn how to add spam protection to Give Donation forms with these
 # modified: 
 ---
 <center>
-<a href="https://wordpress.org/plugins/oopspam-anti-spam/">
 <img width="772" alt="GiveWP website screenshot" src="/blog/assets/posts/give/give.png">
-</a>
 </center>
 <br/>
 
