@@ -20,7 +20,7 @@ description: "Learn how to prevent fake orders, spam reviews and registrations w
 
 As your store grows, it will attract spammers too. You may already have this issue as this is pretty common to have fake orders. Especially for the stores with high traffic.
 
-![WooCommerce Fake Orders](https://www.oopspam.com/assets/posts/woo/fake-orders.png "WooCommerce Fake Orders")
+![WooCommerce Fake Orders](/blog/assets/posts/woo/fake-orders.png "WooCommerce Fake Orders")
 
 ## Why do spammers create fake orders?
 
