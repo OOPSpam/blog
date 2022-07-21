@@ -20,7 +20,7 @@ description: "Learn how to prevent fake orders, spam reviews and registrations w
 
 As your store grows, it will attract spammers too. You may already have this issue as this is pretty common to have fake orders. Especially for the stores with high traffic.
 
-![WooCommerce Fake Orders](https://www.oopspam.com/assets/woo/fake-orders.png "WooCommerce Fake Orders")
+![WooCommerce Fake Orders](https://www.oopspam.com/assets/posts/woo/fake-orders.png "WooCommerce Fake Orders")
 
 ## Why do spammers create fake orders?
 
@@ -40,11 +40,11 @@ As pointed out above, spammers are more likely to spam your store if allow they 
 
 In your WordPress dashboard visit _Settings -> General -> Membership_ and uncheck **Anyone can register**. This will effectively prevent spam WP user registration.
 
-![WordPress Any can register setting](https://www.oopspam.com/assets/woo/wordpress-settings-anyone-can-register.png "WordPress Any can register setting")
+![WordPress Any can register setting](https://www.oopspam.com/assets/posts/woo/wordpress-settings-anyone-can-register.png "WordPress Any can register setting")
 
 Time to require registration for the store purchases so that bots cannot create spam orders without registration. This allows us to track who created fake orders and block them. Visit _WooCommerce -> Settings -> Guess Checkout_ and uncheck **Allow customers to place orders without an account** and check **Allow customers to log into an existing account during checkout**.
 
-![WooCommerce Guest Checkout](https://www.oopspam.com/assets/woo/WooCommerce-Guest-Checkout.png "WooCommerce Guest Checkout")
+![WooCommerce Guest Checkout](https://www.oopspam.com/assets/posts/woo/WooCommerce-Guest-Checkout.png "WooCommerce Guest Checkout")
 
 This is a basic configuration you could to prevent some bots. However, many bots can create accounts during the checkout because all it takes is to fill the email field in the checkout form. The main goal here is to capture and track the spammers' email addresses and block them.
 
@@ -52,7 +52,7 @@ This is a basic configuration you could to prevent some bots. However, many bots
 
 This is perhaps the easiest way to prevent spam orders. WooCommerce comes with two powerful features that allow you to block countries. These are _Selling location(s)_ and _Shipping location(s)_ settings.
 
-![WooCommerce Selling Location setting](https://www.oopspam.com/assets/woo/WooCommerce-Selling-Location.png "WooCommerce Selling Location setting")
+![WooCommerce Selling Location setting](https://www.oopspam.com/assets/posts/woo/WooCommerce-Selling-Location.png "WooCommerce Selling Location setting")
 
 These features are a great fit for the store that serves a certain area. In the above example, we choose to sell only in US and Canada and ship only to these selected countries. Using just these two settings you could eliminate most of your fake orders. Besides the _Selling to specific countries_ option, _Selling location(s)_ setting has _Sell to all countries, except for ..._ which is another useful way to open your store to all countries but only block the spammers' location. Once you start getting fraudulent orders, check the source countries of bots and add them under this setting.
 
@@ -70,7 +70,7 @@ Just like the honeypot, WooCommerce doesn't support reCaptcha. Surprisingly, Woo
 
 v3 came after many people complained about accessibility and usability issues with v2. v2 asks visitors to solve a challenge before submitting a form. To address this issue, Google removed the "challenge" part of reCaptcha. As a result, with v3, users don't solve any challenges. Instead, it tracks the user's behavior on your website and scores the user from 0 (bot) to 1 (human). It is up to the website owner to determine the threshold.
 
-![WooCommerce reCaptcha](https://www.oopspam.com/assets/woo/WooCommerce-reCaptcha.png "WooCommerce reCaptcha")
+![WooCommerce reCaptcha](https://www.oopspam.com/assets/posts/woo/WooCommerce-reCaptcha.png "WooCommerce reCaptcha")
 
 ### hCaptcha
 
