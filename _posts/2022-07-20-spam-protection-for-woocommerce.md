@@ -111,11 +111,11 @@ Here are a few steps to activate spam protection for the WooCommerce-based store
 4. Don't forget to enter a short message to display when a spam order or registration is detected.
 
 <center>
-<img width="350" alt="OOPSpam detected spam on WooCommerce registration" src="/blog/assets/posts/woo/OOPSpam-WooCommerce-Spam-Account.png">
+<img width="" alt="OOPSpam detected spam on WooCommerce registration" src="/blog/assets/posts/woo/OOPSpam-WooCommerce-Spam-Account.png">
 </center>
 
 <center>
-<img width="350" alt="OOPSpam detected spam on WooCommerce checkout form" src="/blog/assets/posts/woo/OOPSpam-WooCommerce-Spam-Checkout.png">
+<img width="" alt="OOPSpam detected spam on WooCommerce checkout form" src="/blog/assets/posts/woo/OOPSpam-WooCommerce-Spam-Checkout.png">
 </center>
 <br/>
 
