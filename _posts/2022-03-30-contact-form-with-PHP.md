@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "How to create a contact form with PHP and HTML"
+title:  "Building a complete contact form with PHP & HTML"
 author: "Onar A."
 image: /assets/posts/contact-form-with-PHP/complete-contact-form-with-PHP.png
 tags: [PHP, HTML, spam, contact_form]
