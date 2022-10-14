@@ -3,14 +3,14 @@ layout: post
 title:  "Does reCaptcha slow down your website?"
 author: "Onar A."
 image: /assets/posts/recaptcha/recaptcha-meta.png
-tags: [reCaptcha]
+tags: [reCaptcha, contact_form]
 
 
 description: "Let's look at how reCaptcha slows down your website and what you can do about it. Performance Analyses & Alternatives"
 # modified: 
 ---
 <center>
-<img width="772" alt="Lighthouse performance results" src="/blog/assets/posts/recaptcha/recaptcha-meta.png">
+<img width="772" alt="Lighthouse performance results" src="/blog/assets/posts/recaptcha/recaptcha-header.png">
 </center>
 <br/>
 
@@ -41,16 +41,15 @@ Using the [Lighthouse](https://web.dev/performance-scoring/) tool, we will evalu
 
 As soon as we integrate reCaptcha and setup it, we immediately notice a rise in network queries and data transfers. 
 
+|  | # of network requests | Compressed transferred data | Uncompressed transferred data | Page Loaded In |
+|---|---|---|---|---|
+| Before reCaptcha | 5 | 35.6 kB | 37.3 kB | 285 ms |
+| After reCaptcha | 13 | 565 kB | 1.3 MB | 1.56 seconds |
+| **an increase of** | **160%** | **1487.08%** | **3385.25%** | **447.37%** |
 
-|                  	| Number of network requests 	| Compressed transferred data 	| Uncompressed transferred data 	| Page Loaded In             	|
-|------------------	|----------------------------	|-----------------------------	|-------------------------------	|----------------------------	|
-| Before reCaptcha 	| 5                          	| 35.6 kB                     	| 37.3 kB                       	| 285 ms                     	|
-| After reCaptcha  	| 13                         	| 565 kB                      	| 1.3 MB                        	| 1.56 seconds               	|
-|                  	| **an increase of 160%**    	| **an increase of 1487.08%** 	| **an increase of 3385.25%**   	| **an increase of 447.37%** 	|
-
-
+- **# of network requests** : The number of network requests.
 - **Compressed transferred data** : The compressed size of all uploaded & downloaded resources.
-- **Uncompressed transferred data** : The uncompressed size of all uploaded & downloaded resources. 
+- **Uncompressed transferred data** : The uncompressed size of all uploaded & downloaded resources.
 
 The browser first downloads compressed data, then decompresses them before using them to process and display relevant details on the page. 
 
