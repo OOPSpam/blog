@@ -28,8 +28,8 @@ If you have a contact form then you already know the amount of spam one can get 
 
 Besides all this madness, bots are improving and overcoming spam prevention techniques. The honeypot technique is obsolete for this reason. Another example would be reCaptcha by Google, Google itself stated that reCAPTCHA v2 can be bypassed by their own AI tools. Later Google announced reCAPTCHA v3 which introduced an extra layer on top of the v2 by making it invisible. Google claims V3 is more powerful in terms of accuracy and user-friendliness. However, there are several major problems with it. 
 
-- Spammers are not always bots, there are captcha solving services (captcha farms) like 2Captcha and many others that solves reCaptcha for a low-rate.
-- Performance issues (loading extra JavaScript files)
+- Spammers are not always bots, there are captcha solving services (captcha farms) like 2Captcha and many others that solves reCaptcha for as low as 0.20 cent per captcha.
+- [Performance issues](/recaptcha-performance-analyses) (loading extra JavaScript files)
 - Privacy issues (tracking user's behavior)
 
 Therefore, it makes sense not to rely on user behavior (reCAPTCHA) or on the chance that the bot is too dumb to figure which field is hidden (honeypot). 
