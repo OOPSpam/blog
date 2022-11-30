@@ -120,20 +120,20 @@ To enable OOPSpam spam protection for WS Form, we need to add a custom action to
 
 Let's configure our form.
 
-1. First edit your form
-2. Click on the Actions ⚡️ icon in the top-right corner
-3. Click on the + icon to add a new action
+1) First edit your form
+2) Click on the Actions ⚡️ icon in the top-right corner
+3) Click on the + icon to add a new action
 
 ![WS Form OOPSpam set up](/blog/assets/posts/ws-form/ws-oopspam-1.png "WS Form OOPSpam set up")
 
-4. Name the new action (e.g Spam Check)
-5. Select _Run WordPress Hook_ under Action
-6. Insert *oopspam_check_for_spam_tag* into Hook Tag field
-7. Choose _Before other actions_ in Priority
+4) Name the new action (e.g Spam Check)
+5) Select _Run WordPress Hook_ under Action
+6) Insert *oopspam_check_for_spam_tag* into Hook Tag field
+7) Choose _Before other actions_ in Priority
 
 ![WS Form OOPSpam set up](/blog/assets/posts/ws-form/ws-oopspam-2.png "WS Form OOPSpam set up")
 
-8. Done! ✨
+8) Done! ✨
 
 Now your form is ready to receive submissions. Each submission will run through OOPSpam first for spam check then all other actions will follow.
 
