@@ -31,7 +31,7 @@ To tackle this issue, this article presents an alternative solution to prevent s
 
 I'll be using Zapier for this tutorial, but you can do this with Make or any other automation platforms.
 
-If you wish to skip the steps below, use [the template](https://zapier.com/apps/email/integrations/webflow/1170002/spam-check-new-webflow-contact-form-submissions-with-oopspam-and-send-outbound-emails) we created for a quick start.
+If you wish to skip the steps below, use [the template](https://zapier.com/apps/email/integrations/webflow/1170002/spam-check-new-webflow-contact-form-submissions-with-oopspam-and-send-outbound-emails) we created for a quick start:
 
 <zapier-zap-templates
   theme="light"
@@ -40,6 +40,8 @@ If you wish to skip the steps below, use [the template](https://zapier.com/apps/
   presentation="row"
   use-this-zap="show"
 ></zapier-zap-templates>
+
+
 
 Zapier will walk you through the configuration for all 4 steps: Webflow -> Spam check with OOPSpam -> Filter -> Email by Zapier.
 
