@@ -41,8 +41,7 @@ If you wish to skip the steps below, use [the template](https://zapier.com/apps/
   use-this-zap="show"
 ></zapier-zap-templates>
 
-
-
+<br>
 Zapier will walk you through the configuration for all 4 steps: Webflow -> Spam check with OOPSpam -> Filter -> Email by Zapier.
 
 _Filter_ should be configured by default. The filter is straightforward with just one rule: **continue processing only if the Spam Score is less than 3**.
