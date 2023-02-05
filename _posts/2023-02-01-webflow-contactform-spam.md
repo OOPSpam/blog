@@ -72,7 +72,7 @@ The first submission will also appear as test data when you set up Webflow for t
 
 To set up spam protection, follow these steps:
 
-1. Register for an API key on the OOPSpam dashboard.
+1. Register for an API key on the [OOPSpam dashboard](https://app.oopspam.com/).
 2. In Zapier, enter the API key when prompted on the "Choose Account" step.
 3. Map necessary form information to OOPSpam's fields:
     - **Content**: This is where the form message goes.
