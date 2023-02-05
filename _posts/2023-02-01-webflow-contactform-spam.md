@@ -2,7 +2,7 @@
 layout: post
 title:  "Stop spam on Webflow contact forms using Zapier and OOPSpam"
 author: "Onar A."
-image: /assets/posts/ws-form/twitterCard.png
+image: /assets/posts/social-media-meta.png
 tags: [zapier, contact_form]
 
 
