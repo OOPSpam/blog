@@ -11,14 +11,16 @@ description: "Learn how to add spam protection to Kadence Forms with these 3 dif
 ---
 <center>
 <a href="https://wordpress.org/plugins/oopspam-anti-spam/">
-<img width="772" alt="OOPSpam Anti-Spam WordPress Plugin supports Kadence Form Block" src="/blog/assets/posts/kadence/kb-blog-header.png">
+<img width="500" alt="OOPSpam Anti-Spam WordPress Plugin supports Kadence Form Block" src="/blog/assets/posts/kadence/kb-blog-header.png">
 </a>
 </center>
 <br/>
 
 [Kadence](https://www.kadencewp.com/) is a well-known company in the WordPress community that has a couple of different products, including Kadence Theme and Kadence Blocks for building with Gutenberg. Their blocks work well and the theme is optimized for speed.
 
-Both products are free to use but a Pro version is available for additional functionality. Kadence Blocks comes with [Form Block](https://www.kadencewp.com/help-center/docs/kadence-blocks/form-block/) for building contact forms, newsletter forms, login pages, and more. In this post, I will focus on Kadence Form's spam protection capabilities. The good news is that Form Block already comes with built-in support for honeypot and reCaptcha for free. Cloudflare's Turnstile is available as part of [Kadence CAPTCHA Plugin](https://www.kadencewp.com/product/kadence-google-recaptcha/) which is a premium plugin you need to purchase separately as part of their Full Bundle plan.
+Both products are free to use but a Pro version is available for additional functionality. Kadence Blocks comes with [Form Block](https://www.kadencewp.com/help-center/docs/kadence-blocks/form-block/) for building contact forms, newsletter forms, login pages, and more. 
+
+In this post, I will focus on Kadence Form's spam protection capabilities. The good news is that Form Block already comes with built-in support for honeypot and reCaptcha for free. Cloudflare's Turnstile is available as part of [Kadence CAPTCHA Plugin](https://www.kadencewp.com/product/kadence-google-recaptcha/) which is a premium plugin you need to purchase separately as part of their Full Bundle plan.
 
 ![Kadence spam protection options](/blog/assets/posts/kadence/kadence-spam-protection.png "Kadence spam protection options")
 
@@ -61,7 +63,7 @@ Insert the Site and Secret key you obtained from Admin Console into these fields
 
 [Our WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/) is another way to stop spam on your Kadence Form Block and WordPress comments. The plugin works with OOPSpam API that protects over 350K websites daily. While the other two alternatives are free, OOPSPam API is a paid service. But it does come with free 40/month spam checks for you to test and see the difference.
 
-It's likely you have already tried the above options, and they didn't work for you. It could be a slow website from reCaptcha or overwhelming spam you are still getting despite implementing the above alternatives. What makes OOPSpam different from other solutions is that it doesn't slow your website and is effective against human spammers and bots. There is no challenge to solve. No performance penalty as everything happens in your server instead of client-side. The OOPSpam API uses machine learning models, content analyses, IP reputation, and other rule-based checks to score every contact form submission. A combination of all these analyses returns a single spam score that is how it accurately stops both manual spam and bots.
+It's likely you have already tried the above options, and they didn't work for you. It could be [a slow website from reCaptcha](https://www.oopspam.com/blog/recaptcha-performance-analyses) or overwhelming spam you are still getting despite implementing the above alternatives. What makes OOPSpam different from other solutions is that it doesn't slow your website and is effective against human spammers and bots. There is no challenge to solve. No performance penalty as everything happens in your server instead of client-side. The OOPSpam API uses machine learning models, content analyses, IP reputation, and other rule-based checks to score every contact form submission. A combination of all these analyses returns a single spam score that is how it accurately stops both manual spam and bots.
 
 On the plugin's settings page, you could also adjust how sensitive you want your spam filter to be. Even keeping default __Sensitivity level__ setting will help you cut down spam to zero.
 

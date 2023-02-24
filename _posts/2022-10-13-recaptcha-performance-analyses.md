@@ -10,7 +10,7 @@ description: "Let's look at how reCaptcha slows down your website and what you c
 # modified: 
 ---
 <center>
-<img width="772" alt="Lighthouse performance results" src="/blog/assets/posts/recaptcha/recaptcha-header.png">
+<img width="772" alt="Lighthouse performance results" src="/blog/assets/posts/recaptcha/recaptcha-header.webp">
 </center>
 <br/>
 
