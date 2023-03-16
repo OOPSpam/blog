@@ -20,16 +20,16 @@ description: "Learn how to add spam protection to Gravity Forms with these 4 dif
 
 ## Honeypot
 
-We wrote about [the honeypot technique](https://www.oopspam.com/blog/ways-to-stop-spam#honeypot-filter-spam-with-a-hidden-field) and how it works before. While it's not as effective as it used to be, it still prevents some bots from spamming your forms. 
+We previously discussed [how the honeypot technique works](https://www.oopspam.com/blog/ways-to-stop-spam#honeypot-filter-spam-with-a-hidden-field). While it's not as effective as it used to be, it still prevents some bots from spamming your forms.
 Gravity Forms has [a built-it honeypot field](https://docs.gravityforms.com/spam/#h-honeypot) but you need to enable it. The honeypot field won't be visible to humans, but bots see the hidden field as a valid field. Bots scan a website and fill in all the fields, including the hidden field in your form. Gravity Forms will dismiss every submission that has an entry in a hidden field.
 
-To enable it, just go to __Form Settings -> Form Options__ settings of your form and enable __Anti-spam honeypot__.
+To enable the honeypot field, go to __Form Settings -> Form Options__ settings of your form and enable __Anti-spam honeypot__.
 
 ![Gravity Forms Anti-spam honeypot](/blog/assets/posts/gravity/honeypot.png "Gravity Forms Anti-spam honeypot")
 
 ## reCaptcha
 
-Gravity Forms also supports reCaptcha. Unlike other major contact form builders, Gravity Forms doesn't have built-it reCaptcha v3. Instead it has reCaptcha v2 support. If you would like to use reCaptcha v3, then you have to install Gravity Forms reCAPTCHA Add-On. The add-on is available with all plans.
+Gravity Forms also supports reCaptcha. Unlike other major contact form builders, Gravity Forms doesn't have built-it reCaptcha v3. Instead, it has reCaptcha v2 support. If you would like to use reCaptcha v3, then you have to install Gravity Forms reCAPTCHA Add-On. The add-on is available with all plans.
 
 To enable reCaptcha, visit __Settings -> reCAPTCHA__ (see screenshot below) and enter Site Key and Secret Key. Here is how to get reCaptcha keys:
 
@@ -48,10 +48,10 @@ Check out Gravity Forms' [How to](https://www.gravityforms.com/blog/add-recaptch
 
 ### Should I set up v2 or v3?
 
-Gravity Forms supports only v2 and v2 Invisible by default. First, lets quickly see how are they different.
+Gravity Forms supports only v2 and v2 Invisible by default. First, let's quickly see how are they different.
 
 - reCaptcha v2 (built-in): A visitor solves provided captcha
-- reCaptcha v2 (built-in): Invisible: Hidden by default. A captcha appears if a visitor detected as malicious
+- reCaptcha v2 (built-in): Invisible: Hidden by default. A captcha appears if a visitor is detected as malicious
 - reCaptcha v3 (requires add-on): Invisible all the time
 
 v3 came after many people complained about accessibility and usability issues with v2. v2 asks visitors to solve a challenge before submitting a form. To address this issue, Google removed the "challenge" part of reCaptcha. As a result, with v3, users don't solve any challenge. Instead, it tracks the user's behavior on your website and scores the user from 0 (bot) to 1 (human). It is up to the website owner to determine the threshold. 
@@ -67,7 +67,7 @@ If you're looking for a free and easy solution, reCaptcha may be the answer.
 
 ## Custom captcha using Conditional Logic
 
-Another way to prevent spam in Gravity Forms is to ask your visitors a question. Just like the honeypot method, it is an old and inexpensive technic but still works for many cases. For this to work, you need to add a __Single Line Text__ to your form with your question as __Field Label__. Make sure this field is _required_ so that a visitor forced to fill it. In this example, we will use the sample question from [the Gravity Forms docs](https://docs.gravityforms.com/spam/#h-submit-button-conditional-logic): **A panda is black and ____**.
+Another way to prevent spam in Gravity Forms is to ask your visitors a question. Just like the honeypot method, it is an old and inexpensive technic but still works in many cases. For this to work, you need to add a __Single Line Text__ to your form with your question as __Field Label__. Make sure this field is _required_ so that a visitor is forced to fill it. In this example, we will use the sample question from [the Gravity Forms docs](https://docs.gravityforms.com/spam/#h-submit-button-conditional-logic): **A panda is black and ____**.
 
 Here are some questions you could use:
 
@@ -81,15 +81,15 @@ Here are some questions you could use:
 8. What is the primary language spoken in Japan?
 9. Which of the following is a type of food: pizza, chair, or cloud?
 
-The next step is to find __Submit Button Conditional Logic__ under the __Submit__ button settings. Here you are able to _Enable Conditional Logic_.
+The next step is to find __Submit Button Conditional Logic__ under the __Submit__ button settings. Here you can _Enable Conditional Logic_.
 
-And the final step is to add our condition as: _Show this form button if All of them following match: [Your Single Line Text field] contains white_ (See the screenshot below).
+And the final step is to add our condition as _Show this form button if All of the following match: [Your Single Line Text field] contains white_ (See the screenshot below).
 
 As you may guess, here we are forcing the Submit form to be hidden by default and display it only if the presented question is answered correctly. 
 
 ![Gravity Forms Conditional Logic](/blog/assets/posts/gravity/conditional-logic.png "Gravity Forms Conditional Logic")
 
-and here is screen recording on how it works:
+and here is a screen recording of how it works:
 
 ![Gravity Forms uses Conditional Logic for captcha purposes](/blog/assets/posts/gravity/conditional-logic.gif "Gravity Forms uses Conditional Logic for captcha purposes")
 
@@ -98,7 +98,7 @@ While question-based verification can be an effective method to verify your visi
 - Limited: It's only effective if the questions asked are relevant to the user and are not too obscure. If the questions are too specific or require specialized knowledge, it may exclude legitimate users who do not have the necessary knowledge to answer the questions correctly.
 - Predictable: If the questions asked are always the same or follow a predictable pattern, advanced bots can potentially learn how to answer them correctly, making it less effective as a form of human verification.
 - User frustration: If the questions are too difficult or confusing, it can frustrate legitimate users and discourage them from submitting a form.
-- Accessibility: As the questions presented in a text format only, visitors with visual impairments may have difficulty reading the questions.
+- Accessibility: As the questions are presented in a text format only, visitors with visual impairments may have difficulty reading the questions.
 
 
 ## OOPSpam WordPress plugin
