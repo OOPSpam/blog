@@ -87,7 +87,7 @@ To add Turnstile to your WS Form, follow [steps on WS Form's knowledge base](htt
 
 ## OOPSpam WordPress plugin
 
-[Our WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/) is another way to stop spam in WS Form and WordPress comments. The plugin works with OOPSpam API that protects over 350K websites daily. While other spam filtering methods listed above are free, OOPSpam is a premium service and comes with 40 spam checks/month to test and see the difference.
+[Our WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/) is another way to stop spam in WS Form and WordPress comments. The plugin works with OOPSpam API that protects over 500K websites daily. While other spam filtering methods listed above are free, OOPSpam is a premium service and comes with 40 spam checks/month to test and see the difference.
 
 Likely, you have already tried the above options, and they didn't work for you. For you, it could be [a slow website from reCaptcha](https://www.oopspam.com/blog/recaptcha-performance-analyses), hCaptcha, Turnstile, or overwhelming spam you are still getting despite implementing the above alternatives. What makes OOPSpam different from other solutions is that it doesn't slow your website and is effective against human spammers and bots. There is no challenge to solve. No performance penalty as everything happens in your server instead of client-side. The OOPSpam API uses machine learning models, content analyses, IP & email reputation, and other rule-based checks to score every contact form submission. A combination of all these analyses returns a single spam score which is how it accurately stops both manual spam and bots.
 
