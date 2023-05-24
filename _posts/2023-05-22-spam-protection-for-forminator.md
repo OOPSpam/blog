@@ -14,16 +14,16 @@ description: "Learn how to add spam protection to Forminator Forms with these 4 
 </center>
 <br/>
 
-[Forminator](https://wpmudev.com/project/forminator-pro/) is another popular contact form builder packed with features. It has pretty generous free plan and pro plan with extra features like Stripe integration, E-signature and better support. In this article, however, we are going to talk about Forminator's anti-spam capabilities.
+[Forminator](https://wpmudev.com/project/forminator-pro/) is another popular contact form builder packed with features. It has a generous free plan and a pro plan with extra features like Stripe integration, E-signature, and better support. In this article, however, we are going to talk about Forminator's anti-spam capabilities.
 
-Forminator comes with [built-in spam protection features](https://wpmudev.com/blog/prevent-form-comment-spam-forminator/). These are free tools like reCaptcha, hCaptcha and honeypot field and Akismet as a paid option. Our plugin OOPSpam WordPress plugin now supports Forminator too. Let's go through each of them.
+Forminator comes with [built-in spam protection features](https://wpmudev.com/blog/prevent-form-comment-spam-forminator/). These are free tools like reCaptcha, hCaptcha, and honeypot field, and Akismet is a paid option. Our plugin OOPSpam WordPress plugin now supports Forminator too. Let's go through each of them.
 
 {% include toc.md %}
 
 ## Honeypot
 
 We previously discussed [how the honeypot technique works](https://www.oopspam.com/blog/ways-to-stop-spam#honeypot-filter-spam-with-a-hidden-field). While it's not as effective as it used to be, it still prevents some bots from spamming your forms.
-Forminator has a built-it honeypot field but you need to enable it. The honeypot field won't be visible to humans, but bots see the hidden field as a valid field. Bots scan a website and fill in all the fields, including the hidden field in your form. Forminator will dismiss every submission that has an entry in a hidden field.
+Forminator has a built-in honeypot field but you need to enable it. The honeypot field won't be visible to humans, but bots see the hidden field as a valid field. Bots scan a website and fill in all the fields, including the hidden field in your form. Forminator will dismiss every submission that has an entry in a hidden field.
 
 To enable the honeypot field, edit your form and switch to __Behavior__ settings and under __Security__ toggle __Enable Honeypot protection__ option.
 
@@ -31,13 +31,13 @@ To enable the honeypot field, edit your form and switch to __Behavior__ settings
 
 ## reCaptcha and hCaptcha
 
-Forminator also supports both reCaptcha and hCaptcha. For those who have never heard of these options, both reCaptcha and hCaptcha are spam protection solutions. reCaptcha, by Google, verifies users with challenges. It has visible and invisible modes but raises privacy concerns. hCaptcha is a privacy-friendly alternative. It supports both challenge abd invisible modes. 
+Forminator also supports both [reCaptcha and hCaptcha](https://wpmudev.com/docs/wpmu-dev-plugins/forminator/#captcha-field). For those who have never heard of these options, both reCaptcha and hCaptcha are spam protection solutions. reCaptcha, by Google, verifies users with challenges. It has visible and invisible modes but raises privacy concerns. hCaptcha is a privacy-friendly alternative. It supports both challenge and invisible modes.
 
-It is available as field in your forms. Edit your forms and click on __Insert Fields__ and choose __Captcha__. On the presented screen, you will be able to select reCaptcha or hCaptcha. Here, you can also select what type of reCaptcha you want on your website.
+It is available as a field in your forms. Edit your forms and click on __Insert Fields__ and choose __Captcha__. On the presented screen, you will be able to select reCaptcha or hCaptcha. Here, you can also select what type of reCaptcha you want on your website.
 
 ![Forminator Captcha Field](/blog/assets/posts/forminator/captcha-Field.png "Forminator Captcha Field")
 
-Before start using either of the captcha options, you need get Site Key and Secret Key for it. You can enter your keys under __Forminator -> Settings -> CAPTCHA__.
+Before start using either of the captcha options, you need to get Site Key and Secret Key for it. You can enter your keys under __Forminator -> Settings -> CAPTCHA__.
 
 ![Forminator Captcha Settings](/blog/assets/posts/forminator/captcha-setup.png "Forminator Captcha Settings")
 
@@ -54,18 +54,18 @@ Here is how to get reCaptcha keys:
 
 To obtain hCaptcha Site Key and Secret Key, follow these step-by-step instructions:
 
-1. Visit the hCaptcha website: Go to the official hCaptcha website at https://www.hcaptcha.com/.
+1. Visit the hCaptcha website: Go to [the official hCaptcha website](https://www.hcaptcha.com/).
 2. Sign up for an account: Click on the "Sign Up" button and provide the required information to create a new account.
 3. Create a new site: Once you're logged in, navigate to the "Sites" section or dashboard.
 4. Register a new site: Click on the "Register a new site" button or a similar option to register a new website.
 5. Provide website details: Fill in the necessary information for your website, such as the website name, domain, and any other required fields.
-6. Select hCaptcha type: Choose the type of hCaptcha you want to use. You can select between the "Checkbox" or "Invisible" option depending on your preference.
+6. Select hCaptcha type: Choose the type of hCaptcha you want to use. You can select between the "Checkbox" or "Invisible" options depending on your preference.
 7. Get Site Key and Secret Key: After completing the registration process, hCaptcha will generate a unique Site Key and Secret Key for your website. 
 8. Copy the keys: Copy the generated Site Key and Secret Key and keep them in a secure location. 
 
 By following these steps, you should be able to obtain your hCaptcha Site Key and Secret Key for your website's forms.
 
-> 📌  Make sure to add CAPTCHA field to your Forminator form.
+> 📌  Make sure to add the CAPTCHA field to your Forminator form.
 
 
 ### Should I set up reCaptcha v2 or v3?

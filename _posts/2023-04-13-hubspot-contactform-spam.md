@@ -17,8 +17,6 @@ description: "Learn how to add spam protection to your HubSpot contact forms."
 <script type="module" src="https://cdn.zapier.com/packages/partner-sdk/v0/zapier-elements/zapier-elements.esm.js"></script>
 <link rel="stylesheet" href="https://cdn.zapier.com/packages/partner-sdk/v0/zapier-elements/zapier-elements.css"/>
 
-{% include toc.md %}
-
 ## Intro
 
 [HubSpot](https://hubspot.com/) is a popular CRM solution that offers many different tools for businesses, including form creation. HubSpot's forms can be used as contact forms, support tickets, or to generate leads, but they can also be targeted by spammers. To prevent spam, HubSpot offers built-in solutions such as [reCaptcha](https://knowledge.hubspot.com/forms/prevent-spam-form-submissions#enable-captcha) and the ability to [block specific email domains or free email providers](https://knowledge.hubspot.com/forms/prevent-spam-form-submissions#block-specific-email-domains-or-free-email-providers). These settings can be accessed in Form editing mode under _Marketing->Forms_.
@@ -43,6 +41,8 @@ If you wish to skip the steps below, use the template we created for a quick sta
 Zapier will walk you through the configuration for all 4 steps: HubSpot -> Spam check with OOPSpam -> Filter -> Email by Zapier.
 
 _Filter_ should be configured by default. The filter is straightforward with just one rule: **continue processing only if the Spam Score is less than 3**. -->
+
+{% include toc.md %}
 
 ## Configuring HubSpot Zap
 
