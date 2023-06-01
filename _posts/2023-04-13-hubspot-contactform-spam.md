@@ -7,7 +7,7 @@ tags: [zapier, contact_form, hubspot]
 
 
 description: "Learn how to add spam protection to your HubSpot contact forms."
-# modified: 
+modified: 2023-06-01
 ---
 <center>
 <img width="600" alt="Spam protection for HubSpot forms in Zapier" src="/blog/assets/posts/hubspot-contact-form/overall-setup.png">
@@ -23,11 +23,11 @@ description: "Learn how to add spam protection to your HubSpot contact forms."
 
 If you are still receiving spam submissions despite enabling the built-in spam prevention options in HubSpot, an alternative solution involves using automation tools like [Zapier](https://zapier.com/) or [Make](https://www.make.com) to capture form submissions, filter them through with OOPSpam, and then send a filtered email notification to yourself. This approach can help further reduce the amount of spam you receive through your HubSpot contact forms.
 
-<!-- ## Chose your automation tools (Zapier, Make, etc.)
+## Chose your automation tools (Zapier, Make, etc.)
 
 We'll be using Zapier for this tutorial, but you can do this with Make or any other automation platforms.
 
-If you wish to skip the steps below, use the template we created for a quick start:
+If you wish to skip the steps below, use [the template](https://zapier.com/apps/email/integrations/hubspot/1208740/spam-check-new-hubspot-form-entries-with-oopspam-and-send-outbound-emails) we created for a quick start:
 
 <zapier-zap-templates
   theme="light"
@@ -40,7 +40,7 @@ If you wish to skip the steps below, use the template we created for a quick sta
 <br>
 Zapier will walk you through the configuration for all 4 steps: HubSpot -> Spam check with OOPSpam -> Filter -> Email by Zapier.
 
-_Filter_ should be configured by default. The filter is straightforward with just one rule: **continue processing only if the Spam Score is less than 3**. -->
+_Filter_ should be configured by default. The filter is straightforward with just one rule: **continue processing only if the Spam Score is less than 3**.
 
 {% include toc.md %}
 
