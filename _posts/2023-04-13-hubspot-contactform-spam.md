@@ -23,7 +23,7 @@ modified: 2023-06-01
 
 If you are still receiving spam submissions despite enabling the built-in spam prevention options in HubSpot, an alternative solution involves using automation tools like [Zapier](https://zapier.com/) or [Make](https://www.make.com) to capture form submissions, filter them through with OOPSpam, and then send a filtered email notification to yourself. This approach can help further reduce the amount of spam you receive through your HubSpot contact forms.
 
-## Chose your automation tools (Zapier, Make, etc.)
+## Choose your automation tools (Zapier, Make, etc.)
 
 We'll be using Zapier for this tutorial, but you can do this with Make or any other automation platforms.
 
@@ -115,9 +115,9 @@ In order to send the email, you need to map the required fields to the data from
 - **Body**: The email body can be in HTML or plain text. In the example, the data points (email, name, message fields) are separated by line breaks using the <p> HTML tag.
 - **Reply To** (optional): This field is not required, but it makes responding to submissions more convenient. The sender's email can be added here so that you can simply click the "Reply" button in your email client if you want to respond to the submission.
 
-Testing the email notification is an important step to ensure that you receive the notification correctly when a new submission is made. It is recommended to test the email by submitting a test form submission and verifying that the notification email is received with the correct information.
+Testing the email notification is an important step to ensure that you receive the notification correctly when a new submission is made. It is recommended to test the email by submitting a test form and verifying that the notification email is received with the correct information.
 
-Additionally, you can use other email services such as Postmark or Mailgun instead of _Email by Zapier_ to send the email notifications. These services can offer additional features and customization options for sending emails, such as email templates and analytic
+Additionally, you can use other email service apps such as Postmark or Mailgun instead of _Email by Zapier_ to send the emails. These services can offer better deliverability, additional features and customization options such as email templates and analytic.
 
 ## Final thoughts
 
