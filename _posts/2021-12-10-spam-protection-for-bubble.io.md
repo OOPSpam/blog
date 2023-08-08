@@ -8,7 +8,7 @@ tags: [bubble]
 
 
 description: "Learn how to add spam protection to your Bubble app forms."
-# modified: 
+modified: 2023-08-08
 ---
 <center>
 <a href="https://bubble.io/plugin/oopspam-spam-detection-1582908608700x936823858020745200">
@@ -75,6 +75,7 @@ Now we have to pass all the necessary data to the plugin. Once you add the actio
 ```json
 {
    "senderIP": <>,
+   "email": <>,
    "content": <>,
    "checkForLength": <>,
    "allowedLanguages" : <>,
@@ -84,13 +85,16 @@ Now we have to pass all the necessary data to the plugin. Once you add the actio
 
 On Bubble, ```<>``` stands for dynamic data. It means we can manually enter data or insert the output from a different plugin.
 
-- ```senderIP```: We add output from the ipiphy plugin. For this remove ```<>``` and select *Insert dynamic data -> Get data from external API*. From *API provider* dropdown select *Get current user's IP address* and close.
+- ```senderIP```: We add output from the ipiphy plugin. For this, remove ```<>``` and select *Insert dynamic data -> Get data from external API*. From *API provider* dropdown select *Get current user's IP address* and close.
+- ```email```: Select email field value from your sign up or contact forms.
 - ```content```: Here we pass a message we're going to get from our contact form. Again remove ```<>``` and select your message field's value. In our case, it is a Multilineinput element with the title *What would you like to say*
 - ```checkForLength```: Short messages are usually spam. By default, any message shorter than 20 characters will be considered spam. To disable this, just enter ```false``` otherwise leave it as it is or type ```true```.
 - ```allowedLanguages```: Would like to get messages only in English and Italian then enter ```["it","en"]```. Check out [all supported languages](https://www.oopspam.com/docs/#request-body-parameters) in our docs. 
 - ```allowedCountries```: Similar to ```allowedLanguages```, would like to get messages only from Italy and the US then enter two-letter country code ```["it","us"```. Check out [all supported countries](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements).
 
 If you don't need ```allowedLanguages``` or ```allowedCountries``` just enter empty array ```[""]```.
+
+> 🚨 In some cases like in sign up forms there is no data to enter into `content` field. In this case, enter an empty value **""** (double-quote) as value. The content field is required (even it is empty) that is why we make sure to have it in our JSON request body.
 
 After setting up all these fields, you should have something like this:
 
