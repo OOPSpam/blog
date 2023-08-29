@@ -44,7 +44,7 @@ If you are looking for a free and quick workaround, reCaptcha is your solution.
 
 <center>
 <a href="https://wordpress.org/support/plugin/oopspam-anti-spam/reviews/?filter=5">
-<img  alt="OOPSpam Anti-Spam WordPress Plugin reviews" src="(/blog/assets/posts/elementor-forms/reviews.png">
+<img  alt="OOPSpam Anti-Spam WordPress Plugin reviews" src="/blog/assets/posts/elementor-forms/reviews.png">
 </a>
 </center>
 
