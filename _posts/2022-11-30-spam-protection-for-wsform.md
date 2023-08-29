@@ -105,7 +105,7 @@ In addition, the plugin allows you to set up a filter to accept submissions only
 
 > ✨ Since then, we have also added the __Block messages from these countries__ feature.
 
-![OOPSpam WordPress Plugin block countries](https://www.oopspam.com/assets/wp-block-countries.png "OOPSpam WordPress Plugin block countries")
+![OOPSpam WordPress Plugin block countries](https://www.oopspam.com/blog/assets/wp-block-countries.png "OOPSpam WordPress Plugin block countries")
 
 To enable OOPSpam spam protection for WS Form, we need to add a custom action to our forms so that every submission gets analyzed by OOPSpam:
 

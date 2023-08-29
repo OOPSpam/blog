@@ -103,7 +103,7 @@ Unlike other premium solutions, OOPSpam is privacy-friendly. We don't store or s
 
 > ✨ Since then, we have also added the __Block messages from these countries__ feature.
 
-![OOPSpam WordPress Plugin block countries](https://www.oopspam.com/assets/wp-block-countries.png "OOPSpam WordPress Plugin block countries")
+![OOPSpam WordPress Plugin block countries](https://www.oopspam.com/blog/assets/wp-block-countries.png "OOPSpam WordPress Plugin block countries")
 
 Here are a few steps to activate spam protection for Forminator
 

@@ -75,7 +75,7 @@ In addition, the plugin allows you to set up a filter to accept submissions only
 
 > ✨ Since then, we have also added the __Block messages from these countries__ feature.
 
-![OOPSpam WordPress Plugin block countries](https://www.oopspam.com/assets/wp-block-countries.png "OOPSpam WordPress Plugin block countries")
+![OOPSpam WordPress Plugin block countries](https://www.oopspam.com/blog/assets/wp-block-countries.png "OOPSpam WordPress Plugin block countries")
 
 Unlike other premium solutions, OOPSpam is privacy-friendly. We don't store or share your data. All cloud-based spam filtering services in the market require you to send visitors IP addresses which violates GDPR. With OOPSpam, you don't have to.
 
