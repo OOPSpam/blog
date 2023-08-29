@@ -94,6 +94,10 @@ In addition, the plugin allows you to set up a filter to accept orders only from
 
 ![OOPSpam WordPress Plugin country & language restrictions](https://www.oopspam.com/assets/country-language-filter.png "OOPSpam WordPress Plugin country & language restrictions")
 
+> ✨ Since then, we have also added the __Block messages from these countries__ feature.
+
+![OOPSpam WordPress Plugin block countries](https://www.oopspam.com/assets/wp-block-countries.png "OOPSpam WordPress Plugin block countries")
+
 Unlike other premium solutions, OOPSpam is privacy-friendly. We don't store, share your data, or use cookies. All the rejected spam logs are stored in your local WordPress database and can be viewed under _Form Spam Entires_ settings.
 
 Here are a few steps to activate spam protection for the WooCommerce-based store:

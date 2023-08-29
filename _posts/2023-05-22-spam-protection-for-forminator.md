@@ -101,6 +101,10 @@ In addition, the plugin allows you to set up a filter to accept submissions only
 
 Unlike other premium solutions, OOPSpam is privacy-friendly. We don't store or share your data. All cloud-based spam filtering services in the market require you to send visitors IP addresses which violates GDPR. With OOPSpam, you don't have to.
 
+> ✨ Since then, we have also added the __Block messages from these countries__ feature.
+
+![OOPSpam WordPress Plugin block countries](https://www.oopspam.com/assets/wp-block-countries.png "OOPSpam WordPress Plugin block countries")
+
 Here are a few steps to activate spam protection for Forminator
 
 1. [Subscribe to get an API key](https://app.oopspam.com/Identity/Account/Register) then copy-paste the API key to the plugin's appropriate field under __Settings->OOPSpam Anti-Spam__ on your WordPress Admin Dashboard.

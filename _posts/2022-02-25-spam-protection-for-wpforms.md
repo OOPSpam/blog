@@ -79,6 +79,9 @@ In addition, the plugin allows you to set up a filter to accept submissions only
 
 ![OOPSpam WordPress Plugin country & language restrictions](https://www.oopspam.com/assets/country-language-filter.png "OOPSpam WordPress Plugin country & language restrictions")
 
+> ✨ Since then, we have also added the __Block messages from these countries__ feature.
+
+![OOPSpam WordPress Plugin block countries](https://www.oopspam.com/assets/wp-block-countries.png "OOPSpam WordPress Plugin block countries")
 
 Here are a few steps to activate spam protection for WPForms:
 
