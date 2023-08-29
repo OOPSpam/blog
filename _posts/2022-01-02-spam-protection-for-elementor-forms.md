@@ -42,7 +42,11 @@ If you are looking for a free and quick workaround, reCaptcha is your solution.
 
 ## OOPSpam WordPress plugin
 
-[![OOPSpam Anti-Spam WordPress Plugin reviews](/blog/assets/posts/elementor-forms/reviews.png "OOPSpam Anti-Spam WordPress Plugin reviews")]
+<center>
+<a href="https://wordpress.org/support/plugin/oopspam-anti-spam/reviews/?filter=5">
+<img  alt="OOPSpam Anti-Spam WordPress Plugin reviews" src="(/blog/assets/posts/elementor-forms/reviews.png">
+</a>
+</center>
 
 [Our WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/) is another way to stop spam on your Elementor Forms and WordPress comments. The plugin works with OOPSpam API that protects over 1M websites daily. While the other two alternatives are free, OOPSPam API is a paid service. But it does come with free 40/month spam checks for you to test and see the difference.
 
