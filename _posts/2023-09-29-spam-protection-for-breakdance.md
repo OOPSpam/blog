@@ -22,7 +22,7 @@ In this article we will focus on the spam filtering options for Breakdance Forms
 
 ## Honeypot
 
-We have previously discussed [how the honeypot technique works] (https://www.oopspam.com/blog/ways-to-stop-spam#honeypot-filter-spam-with-a-hidden-field). While it's not as effective as it used to be, it still prevents some bots from spamming your forms.
+We have previously discussed [how the honeypot technique works](https://www.oopspam.com/blog/ways-to-stop-spam#honeypot-filter-spam-with-a-hidden-field). While it's not as effective as it used to be, it still prevents some bots from spamming your forms.
 Breakdance Form has a built-in honeypot field, but you must enable it. The honeypot field won't be visible to humans, but bots will see the hidden field as a valid field. Bots scan a web page and fill in all the fields, including the hidden field in your form. Breakdance Forms will reject any submission that has an entry in a hidden field.
 
 To enable the honeypot field, edit your form and enable the __Advanced -> Add Honeypot Field__ option.
