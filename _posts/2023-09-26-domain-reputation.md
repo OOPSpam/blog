@@ -28,7 +28,7 @@ _Why is this so valuable? Keep reading!_
 
 {% include toc.md %}
 
-## Why domains are blocked?
+## Why are domains blocked?
 
 The most common reasons are:
 

@@ -10,13 +10,13 @@ description: "Learn how to add spam protection to Breakdance Forms with these 3 
 # modified: 
 ---
 <center>
-<img width="500" alt="Forminator plugin" src="/blog/assets/posts/breakdance/breakdance.png">
+<img width="500" alt="Breakdance homepage" src="/blog/assets/posts/breakdance/breakdance.png">
 </center>
 <br/>
 
 [Breakdance](https://breakdance.com/) is a new and popular site builder for WordPress. Like other page builders, it comes with a form builder. [Breakdance Form](https://breakdance.com/features/form-builder/) is included in the free version, but there are some limitations in the free version, like no third party actions can be used. So you are left with the ``Email`` and ``Store Submission`` actions. To use other built-in and third-party actions, you need a Pro version.
 
-In this article we will focus on the spam filtering options for Breakdance Forms. It comes with two built-in choices: reCaptcha and Honeypot. However, you can also use other third-party anti-spam plugins like ours, OOPSpam WordPress plugin.
+In this article we will focus on the spam filtering options for Breakdance Forms. It comes with two built-in choices: reCaptcha and Honeypot. However, you can also use other third-party anti-spam plugins like ours, [OOPSpam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/).
 
 {% include toc.md %}
 
@@ -31,7 +31,7 @@ To enable the honeypot field, edit your form and enable the __Advanced -> Add Ho
 
 ## reCaptcha
 
-Breakdance Form also supports reCaptcha v3. You have probably heard of it, but for those who have never heard of it, reCaptcha is a spam protection solution. reCaptcha, by Google, verifies users with challenges. It has visible and invisible modes, but many people have concerns about privacy, [slow website](https://www.oopspam.com/blog/recaptcha-performance-analyses) and possibly accessibility (in visible mode). For now, Breakdance Form only supports v3, which is the default invisible mode. With reCaptcha v3, users don't solve a challenge. Instead, it tracks the user's behavior on your site and scores the user from 0 (bot) to 1 (human).
+Breakdance Form also supports reCaptcha v3. You have probably heard of it, but for those who have never heard of it, reCaptcha is a spam protection solution Google. It has visible and invisible modes, but many people have concerns about privacy, [slow website](https://www.oopspam.com/blog/recaptcha-performance-analyses) and possibly accessibility (in visible mode). For now, Breakdance Form only supports v3, which is the default invisible mode. With reCaptcha v3, users don't solve a challenge. Instead, it tracks the user's behavior on your site and scores the user from 0 (bot) to 1 (human).
 
 However, reCaptcha is free and works well against simple automated spam bots. Especially if your site is new, enabling both Honeypot + reCaptcha can help.
 
@@ -74,7 +74,7 @@ In addition, the plugin allows you to set up a filter to accept or block submiss
 
 ![OOPSpam WordPress Plugin country & language restrictions](/blog/assets/posts/breakdance/country-language-filter.png "OOPSpam WordPress Plugin country & language restrictions")
 
-Unlike other premium solutions, OOPSpam is privacy-friendly. We don't store or share your data. All cloud-based spam filtering services in the market require you to send visitors IP addresses which violates GDPR. With OOPSpam, you don't have to.
+Unlike other premium solutions, OOPSpam is privacy friendly. We don't store or share your data. All cloud-based spam filtering services in the market require you to send visitors IP addresses which violates GDPR. With OOPSpam, you don't have to.
 
 Here are a few steps to activate spam protection for Breakdance Forms:
 
