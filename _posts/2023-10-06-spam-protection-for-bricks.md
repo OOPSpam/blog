@@ -102,7 +102,7 @@ Here are a few steps to activate spam protection for Bricks form element:
 4. Done!
 
 <center>
-<img width="350" alt="OOPSpam detected spam on Bricks Forms" src="/blog/assets/posts/bricks/bricks-spam-form.png">
+<img width="800" alt="OOPSpam detected spam on Bricks Forms" src="/blog/assets/posts/bricks/bricks-spam-form.png">
 </center>
 <br/>
 
