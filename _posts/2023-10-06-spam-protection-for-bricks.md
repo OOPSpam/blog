@@ -14,7 +14,7 @@ description: "Learn how to add spam protection to Bricks Form Element with these
 </center>
 <br/>
 
-[Bricks](https://bricksbuilder.io/) is a popular new website builder for WordPress. Like other page builders, it includes [a form element]((https://academy.bricksbuilder.io/article/form-element/)). Typically, page builders are in the form of plugins, but Bricks is a theme. Its performance and lightness are highly praised. It's important to note that Bricks Builder is a premium theme, which means there is no free version available.
+[Bricks](https://bricksbuilder.io/) is a popular new website builder for WordPress. Like other page builders, it includes [a form element](https://academy.bricksbuilder.io/article/form-element/). Typically, page builders are in the form of plugins, but Bricks is a theme. Its performance and lightness are highly praised. It's important to note that Bricks Builder is a premium theme, which means there is no free version available.
 
 In this post, we will explore the spam filtering options for Bricks Form Element. The tool includes two integrated options out of the box: reCaptcha and hCaptcha (since version 1.9.2). But you can also use other third party anti-spam plugins like ours, [OOPSpam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/) and set up a honeypot field yourself.
 
@@ -45,7 +45,6 @@ Once you have entered the necessary keys, edit your form on your page. Scroll to
 
 ![Bricks Form Element enabling reCaptcha](/blog/assets/posts/bricks/enable-recaptcha.png "Bricks Form Element enabling reCaptcha")
 
-
 ## hCaptcha
 
 [Bricks Forms also supports hCaptcha](https://academy.bricksbuilder.io/article/form-element/#form-validation#spam#hcaptcha) (added in version 1.9.2), which functions similarly to reCaptcha and suffers from the same limitations.
@@ -67,7 +66,7 @@ If you are receiving unwanted messages and have already attempted other solution
 
 ## Honeypot
 
-We previously talked about [how the honeypot technique prevents bots]((https://www.oopspam.com/blog/ways-to-stop-spam#honeypot-filter-spam-with-a-hidden-field)) from spamming your forms. Although it's less effective now, it still works to some extent.
+We previously talked about [how the honeypot technique prevents bots](https://www.oopspam.com/blog/ways-to-stop-spam#honeypot-filter-spam-with-a-hidden-field) from spamming your forms. Although it's less effective now, it still works to some extent.
 Bricks Form doesn't currently provide a built-in honeypot field, so you'll need to create one on your own. The hidden honeypot field will not be visible to humans, but bots will regard it as a valid field. Bots scan website pages and complete all fields, including the invisible field in your form. Bricks form element declines any submission containing an entry in a hidden field.
 
 Securing your form with honeypot is a bit of work, but can be easily done by following [this video tutorial](https://www.youtube.com/watch?v=r_EMcQI-g38).
@@ -101,6 +100,11 @@ Here are a few steps to activate spam protection for Bricks form element:
 3. On this page, you need to activate the spam filtering for Gravity Forms by checking the **Activate Spam Protection** checkbox. You don't have to do anything on your form. Once you activate spam protection on the OOPSpam plugin settings, you are good to go.
 
 4. Done!
+
+<center>
+<img width="350" alt="OOPSpam detected spam on Bricks Forms" src="/blog/assets/posts/bricks/bricks-spam-form.png">
+</center>
+<br/>
 
 ## Final thoughts
 
