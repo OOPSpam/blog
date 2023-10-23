@@ -65,13 +65,10 @@ Our goal is to build a simple automation flow where it checks every form submiss
 
 ![Netlify Zapier](/blog/assets/posts/netlify/netlify-zapier.png "Netlify Zapier")
 
- 1. First, add Netlify zap to your flow and under _Event_, select _New Form Submission_. Connect your Netlify account so that it can retrieve available forms from your account.
-
-![Netlify Trigger on Zapier](/blog/assets/posts/netlify/Netlify-Trigger.png "[Netlify Trigger on Zapier")
-
- 2. Under _Trigger_, select your _Site_ and _Form_ and click Continue.
-
- 3. In the _Test_ step, your last 3 form submissions will be populated. So make sure you have submitted some test form.
+1. First, add Netlify zap to your flow and under _Event_, select _New Form Submission_. Connect your Netlify account so that it can retrieve available forms from your account.
+   <img src="/blog/assets/posts/netlify/Netlify-Trigger.png" alt="Netlify Trigger on Zapier" />
+2. Under _Trigger_, select your _Site_ and _Form_ and click Continue.
+3. In the _Test_ step, your last 3 form submissions will be populated. So make sure you have submitted some test form.
 
 ## Setting up OOPSpam for spam detection
 
