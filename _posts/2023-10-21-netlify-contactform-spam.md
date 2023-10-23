@@ -38,7 +38,7 @@ but it also did a good job of catching a lot of them:
 In addition to Akismet, Netlify Forms also supports the [reCaptcha](https://docs.netlify.com/forms/spam-filters/#recaptcha-2-challenge) and [honeypot](https://docs.netlify.com/forms/spam-filters/#honeypot-field) fields. We previously talked about [how the honeypot technique prevents bots](https://www.oopspam.com/blog/ways-to-stop-spam#honeypot-filter-spam-with-a-hidden-field) from spamming your forms. Although it's less effective now, it still works to some extent.
 The hidden honeypot field will not be visible to humans, but bots will consider it a valid field. Bots scan web pages and fill in all fields, including the hidden field in your form. Netlify Forms will reject any submission that contains an entry in a hidden field.
 
-As mentioned above, Netlify also comes with reCaptcha v2 support. Although, reCaptcha and other captcha solutions are becoming increasingly irrelevant due to the availability of services that can solve them for a low cost.
+However, reCaptcha and other captcha solutions are becoming irrelevant due to the availability of low-cost services to solve them.
 
 If you are still getting spam with the options available to you through Netlify, this article will look at an alternative solution to prevent spam submissions to Netlify contact forms. The approach is to use automation tools such as [Zapier](https://zapier.com/) or [Make](https://www.make.com) to capture form submissions, then filter them through a spam filter (using [OOPSpam](https://www.oopspam.com/)) before finally sending an email notification to yourself.
 
@@ -65,20 +65,20 @@ Our goal is to build a simple automation flow where it checks every form submiss
 
 ![Netlify Zapier](/blog/assets/posts/netlify/netlify-zapier.png "Netlify Zapier")
 
-1. First, add Netlify zap to your flow and under _Event_, select _New Form Submission_. Connect your Netlify account so that it can retrieve available forms from your account.
+ 1. First, add Netlify zap to your flow and under _Event_, select _New Form Submission_. Connect your Netlify account so that it can retrieve available forms from your account.
 
 ![Netlify Trigger on Zapier](/blog/assets/posts/netlify/Netlify-Trigger.png "[Netlify Trigger on Zapier")
 
-2. Under _Trigger_, select your _Site_ and _Form_ and click Continue.
+ 2. Under _Trigger_, select your _Site_ and _Form_ and click Continue.
 
-3. In the _Test_ step, your last 3 form submissions will be populated. So make sure you have submitted some test form.
+ 3. In the _Test_ step, your last 3 form submissions will be populated. So make sure you have submitted some test form.
 
 ## Setting up OOPSpam for spam detection
 
 To set up spam filtering in your Zapier flow, follow these steps:
 
 1. Register for an API key on the [OOPSpam Dashboard](https://app.oopspam.com/).
-2. Add the [OOPSpam](https://zapier.com/apps/oopspam/integrations) Zap to your flow
+2. Add the [OOPSpam Zap](https://zapier.com/apps/oopspam/integrations) to your flow
 3. Under OOPSpam's _Event_ select _Check for spam_
 2. To connect your OOPSpam account, enter the API key when prompted on the _Choose Account_ step.
 3. Map the necessary form information to OOPSpam's fields:
@@ -103,7 +103,7 @@ In this case, the condition is that the "Score" (or Spam Score) must be less tha
 
 ### Alternative approach: Storing spam submissions in Airtable
 
-Instead of using the Filter app, you can use the Paths app to take different actions depending on whether the submission is considered spam or not. Here's an example:
+Instead of using the Filter app, you can use the [Paths app](https://zapier.com/features/paths) to take different actions depending on whether the submission is considered spam or not. Here's an example:
 
 - Path A [Not spam]: If the Score is less than 3, then send an email.
 - Path B [Spam]: If the Score is greater than 2, then create a record in Airtable to store the spam submission for later review.
