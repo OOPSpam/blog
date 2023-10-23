@@ -129,6 +129,13 @@ To send the email, you will need to map the required fields to the data from the
 
 Once you have the email set up, test it to see if you receive the first submission. You can also use other email services like Postmark or Mailgun instead of Email by Zapier.
 
+## Configure form submission notifications in Netlify
+
+By default, Netlify sends an email for each verified submission. We need to disable this as we are already sending an email notification to ourselves in our automation. In your website settings on Netlify, go to _Site Configuration -> Notifications -> Emails and Webhooks_, under _Form Submission Notifications_, delete the email notifications.
+
+![Form submission notifications in Netlify](/blog/assets/posts/netlify/netlify-setting.png "Form submission notifications in Netlify")
+
+
 ## Final thoughts
 
 This was a basic workflow for filtering spam in your Netlify forms using Zapier and OOPSpam. You can also use other platforms to automate this process. You can also add additional steps and conditions to make it more complex, such as sending an automated email response to the visitor confirming successful submission.
