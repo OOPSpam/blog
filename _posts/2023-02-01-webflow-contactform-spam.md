@@ -80,6 +80,7 @@ To set up spam protection, follow these steps:
     - **Email**: Map the form submitter's email here.
     - **Allow messages only in these languages**: Select any languages you expect to receive form submissions in.
     - **Allow messages only from these countries**: Filter submissions by country.
+    - **Block messages from these countries**: Block by country
 4. Test the action and use the returned "Score" to approve or reject submissions.
 
 See the GIF below for a visual guide.
