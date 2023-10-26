@@ -57,9 +57,9 @@ Implementing Turnstile, hCaptcha or reCaptcha on your website involves similar s
 
 Here is the detailed documentation for each of them:
 
-- Turnstile: https://developers.cloudflare.com/turnstile/get-started#new-sites
-- hCaptcha: https://docs.hcaptcha.com/
-- reCaptcha: https://developers.google.com/recaptcha/docs/v3
+- Turnstile: [https://developers.cloudflare.com/turnstile/get-started#new-sites](https://developers.cloudflare.com/turnstile/get-started#new-sites)
+- hCaptcha: [https://docs.hcaptcha.com/](https://docs.hcaptcha.com/)
+- reCaptcha: [https://developers.google.com/recaptcha/docs/v3](https://developers.google.com/recaptcha/docs/v3)
 
 ![hCaptcha](/blog/assets/posts/spam-signups/hcaptcha.png "hCaptcha")
 
@@ -118,7 +118,7 @@ Anything you add to your site's HTML will negatively impact your site's performa
 
 ![Turnstile](/blog/assets/posts/spam-signups/cloudflare_turnstile.webp "Turnstile")
 
-### Are you getting fake signups despite reCaptcha, hCaptcha, Turnstile?
+### Do you get fake signups despite reCaptcha, hCaptcha, Turnstile?
 
 You are not alone. Captchas are effective against simple bots, but advanced bots can [bypass reCaptcha](https://github.com/ultrafunkamsterdam/undetected-chromedriver). There are also "captcha farms" (e.g. 2Captcha) where people are paid to solve reCaptcha at low cost.
 
@@ -134,7 +134,7 @@ __OOPSpam__: Process your submissions with OOPSpam on your server. This is your 
 
 __Cloudflare__: We recommend using DNS level protection with Cloudflare. You get the same benefit as Turnstile without the website performance and accessibility issues.
 
-__Honeypot__:This is easy to implement and free.
+__Honeypot__: This is easy to implement and free.
 
 ## Final Notes
 
