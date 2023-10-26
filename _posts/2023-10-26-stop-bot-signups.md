@@ -61,24 +61,61 @@ Here is the detailed documentation for each of them:
 - hCaptcha: https://docs.hcaptcha.com/
 - reCaptcha: https://developers.google.com/recaptcha/docs/v3
 
+![hCaptcha](/blog/assets/posts/spam-signups/hcaptcha.png "hCaptcha")
+
 ### Which one to use: hCaptcha, reCaptcha or Turnstile?
 
 Here is a simple table comparing these tools.
 
-|                 	| reCaptcha 	| hCaptcha           	| Turnstile  	|
-|-----------------	|:---------:	|--------------------	|------------	|
-| Accessibility   	| Partially 	| Partially          	| Partially  	|
-| Slow website    	| Worse     	| Bad                	| Better     	|
-| Can be bypassed 	| Yes       	| Yes                	| Yes        	|
-| Privacy         	| Worse     	| Better             	| Better     	|
-| Made by         	| Google    	| Intuition Machines 	| Cloudflare 	|
-
+<table border="1" cellpadding="6" cellspacing="0">
+  <thead>
+    <tr>
+      <th>&nbsp;</th>
+      <th>reCaptcha</th>
+      <th>hCaptcha</th>
+      <th>Turnstile</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Accessibility</td>
+      <td>Partially</td>
+      <td>Partially</td>
+      <td>Partially</td>
+    </tr>
+    <tr>
+      <td>Slow website</td>
+      <td>Worse</td>
+      <td>Bad</td>
+      <td>Better</td>
+    </tr>
+    <tr>
+      <td>Can be bypassed</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Privacy</td>
+      <td>Worse</td>
+      <td>Better</td>
+      <td>Better</td>
+    </tr>
+    <tr>
+      <td>Made by</td>
+      <td>Google</td>
+      <td>Intuition Machines</td>
+      <td>Cloudflare</td>
+    </tr>
+  </tbody>
+</table>
+</br>
 
 They are partially accessible because they all come with an invisible mode that you can use. However, if your visitors are detected as suspicious, they will likely be stuck with endless loop puzzles to solve.
 
-![hCaptcha](/blog/assets/posts/spam-signups/hcaptcha.png "hCaptcha")
-
 Anything you add to your site's HTML will negatively impact your site's performance, but Turnstile's JS file seems to have the least impact compared to reCaptcha and hCaptcha.
+
+![Turnstile](/blog/assets/posts/spam-signups/cloudflare_turnstile.webp "Turnstile")
 
 ### Are you getting fake signups despite reCaptcha, hCaptcha, Turnstile?
 
@@ -92,9 +129,11 @@ We already have [WordPress](https://wordpress.org/plugins/oopspam-anti-spam/), [
 
 Best of both worlds, we can combine Cloudflare with OOPSpam and Honeypot to increase our chances against fake account creation and just get a clean sign-up form without all the errors and frustrated users.
 
-__Cloudflare__: We recommend using DNS level protection with Cloudflare. You get the same benefit as Turnstile without the website performance and accessibility issues.
-__Honeypot__:This is easy to implement and free.
 __OOPSpam__: Process your submissions with OOPSpam on your server. This is your last line of defense against bots and manual spammers.
+
+__Cloudflare__: We recommend using DNS level protection with Cloudflare. You get the same benefit as Turnstile without the website performance and accessibility issues.
+
+__Honeypot__:This is easy to implement and free.
 
 ## Final Notes
 
