@@ -109,7 +109,8 @@ Here is a simple table comparing these tools.
     </tr>
   </tbody>
 </table>
-</br>
+
+<br>
 
 They are partially accessible because they all come with an invisible mode that you can use. However, if your visitors are detected as suspicious, they will likely be stuck with endless loop puzzles to solve.
 
