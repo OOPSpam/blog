@@ -10,13 +10,11 @@ description: "Learn how to add spam protection to Elementor Forms with these 3 d
 # modified: 
 ---
 <center>
-<a href="https://wordpress.org/plugins/oopspam-anti-spam/">
 <img width="772" alt="OOPSpam Anti-Spam WordPress Plugin supports Elementor Forms" src="/blog/assets/posts/elementor-forms/ef-blog-header.png">
-</a>
 </center>
 <br/>
 
-Elementor Page Builder is one of the most used and popular page builders for WordPress. It comes with generous free and paid Pro versions. You certainly don't need to have a Pro version to build a website. However, the Pro version brings a lot more built-in widgets which help you avoid installing extra plugins. Elementor Form widget is one of these widgets that comes with Elementor Pro.
+[Elementor Page Builder](https://elementor.com/) is one of the most used and popular page builders for WordPress. It comes with generous free and paid Pro versions. You certainly don't need to have a Pro version to build a website. However, the Pro version brings a lot more built-in widgets which help you avoid installing extra plugins. [Elementor Form](https://elementor.com/features/form-builder/) widget is one of these widgets that comes with Elementor Pro.
 
 Every contact form eventually gets spam. If you are using Elementor Forms, you may already have a spam problem. In this article, we are looking into spam protection options for Elementor Forms.
 
