@@ -49,7 +49,7 @@ We will use the tool [Lighthouse](https://web.dev/performance-scoring/) to evalu
 
 As soon as we integrate reCaptcha and set it up, we immediately notice an increase in network hits and data transfers.
 
-<table>
+<table border="1" cellpadding="6" cellspacing="0">
   <thead>
     <tr>
       <th>&nbsp;</th>
