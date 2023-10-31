@@ -97,7 +97,7 @@ Here are a few steps to activate spam protection for Bricks form element:
 
     ![OOPSpam Anti-Spam WordPress Plugin Settings](/blog/assets/posts/bricks/oopspam-br-setting.png "OOPSpam Anti-Spam WordPress Plugin Settings")
 
-3. On this page, you need to activate the spam filtering for Gravity Forms by checking the **Activate Spam Protection** checkbox. You don't have to do anything on your form. Once you activate spam protection on the OOPSpam plugin settings, you are good to go.
+3. On this page, you need to activate the spam filtering for Bricks Forms by checking the **Activate Spam Protection** checkbox. You don't have to do anything on your form. Once you activate spam protection on the OOPSpam plugin settings, you are good to go.
 
 4. Done!
 
