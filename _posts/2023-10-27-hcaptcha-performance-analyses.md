@@ -10,7 +10,7 @@ description: "Let's look at how hCaptcha slows down your website and what you ca
 # modified: 
 ---
 <center>
-<img width="600" alt="Lighthouse hCaptcha performance results" src="/blog/assets/posts/hcaptcha/hcaptcha-meta.png">
+<img loading="lazy"  width="600" alt="Lighthouse hCaptcha performance results" src="/blog/assets/posts/hcaptcha/hcaptcha-meta.png">
 </center>
 <br/>
 

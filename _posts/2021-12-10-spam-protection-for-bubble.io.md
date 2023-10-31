@@ -12,7 +12,7 @@ modified: 2023-08-08
 ---
 <center>
 <a href="https://bubble.io/plugin/oopspam-spam-detection-1582908608700x936823858020745200">
-<img width="772" style="height: 200px;object-fit: cover;" alt="Bubble.io and OOPSpam" src="/blog/assets/bubble_oopspam.png">
+<img loading="lazy"  width="772" style="height: 200px;object-fit: cover;" alt="Bubble.io and OOPSpam" src="/blog/assets/bubble_oopspam.png">
 </a>
 </center>
 <br/>

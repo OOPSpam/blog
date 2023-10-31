@@ -11,7 +11,7 @@ description: "Learn how to add spam protection to your Webflow contact forms."
 ---
 <center>
 <a href="https://zapier.com/apps/email/integrations/webflow/1170002/spam-check-new-webflow-contact-form-submissions-with-oopspam-and-send-outbound-emails">
-<img width="600" alt="Spam protection for Webflow contact form in Zapier" src="/blog/assets/posts/webflow-contact-form/overall-setup.png">
+<img loading="lazy"  width="600" alt="Spam protection for Webflow contact form in Zapier" src="/blog/assets/posts/webflow-contact-form/overall-setup.png">
 </a>
 </center>
 <br/>

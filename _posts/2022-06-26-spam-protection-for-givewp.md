@@ -10,7 +10,7 @@ description: "Learn how to add spam protection to Give Donation forms with these
 # modified: 
 ---
 <center>
-<img width="772" alt="GiveWP website screenshot" src="/blog/assets/posts/give/give.png">
+<img loading="lazy"  width="772" alt="GiveWP website screenshot" src="/blog/assets/posts/give/give.png">
 </center>
 <br/>
 
@@ -91,7 +91,7 @@ Here are a few steps to activate spam protection for GiveWP:
 4. Don't forget to enter a short message to display when a spam form entry is submitted. Your message will appear at the bottom of the message field.
 
 <center>
-<img width="350" alt="OOPSpam detected spam on GiveWP forms" src="/blog/assets/posts/give/OOPSpam-Give-Spam-detected.png">
+<img loading="lazy"  width="350" alt="OOPSpam detected spam on GiveWP forms" src="/blog/assets/posts/give/OOPSpam-Give-Spam-detected.png">
 </center>
 <br/>
 

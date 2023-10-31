@@ -9,7 +9,7 @@ tags: []
 description: "Add a domain to be monitored by OOPSpam. We'll let you know if your domain is blocked by Google, Mozilla, Microsoft and other major providers."
 ---
 <center>
-<img width="" alt="Domain Reputation Watch by OOPSpam logo" src="/blog/assets/posts/do-watch/do-watch-logo.png">
+<img loading="lazy"  width="" alt="Domain Reputation Watch by OOPSpam logo" src="/blog/assets/posts/do-watch/do-watch-logo.png">
 </center>
 <br/>
 

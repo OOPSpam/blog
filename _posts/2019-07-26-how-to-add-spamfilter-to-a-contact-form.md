@@ -11,7 +11,7 @@ seo:
  date_modified: 2022-03-31 09:00:00+0800
  
 ---
-<center><img width="512" alt="A contact form illustration" src="/blog/assets/howtoaddspamfilter.png"></center>
+<center><img loading="lazy"  width="512" alt="A contact form illustration" src="/blog/assets/howtoaddspamfilter.png"></center>
 <br/>
 > This is a blog post on how to integrate a spam filter with non-WordPress websites. If you are WordPress user check out [our WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/).
 

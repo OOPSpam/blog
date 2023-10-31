@@ -11,7 +11,7 @@ description: "Learn about 3 different open-source & free comments systems and ho
 ---
 <center>
 <a href="https://wordpress.org/plugins/oopspam-anti-spam/">
-<img width="772" alt="Open-source comment systems and their anti-spam capabilities" src="/blog/assets/open-source-comment-systems.png">
+<img loading="lazy"  width="772" alt="Open-source comment systems and their anti-spam capabilities" src="/blog/assets/open-source-comment-systems.png">
 </a>
 </center>
 <br/>

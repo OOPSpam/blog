@@ -10,7 +10,7 @@ description: "Learn how to add spam protection to Forminator Forms with these 4 
 # modified: 
 ---
 <center>
-<img width="500" alt="Forminator plugin" src="/blog/assets/posts/forminator/forminator.png">
+<img loading="lazy"  width="500" alt="Forminator plugin" src="/blog/assets/posts/forminator/forminator.png">
 </center>
 <br/>
 
@@ -120,7 +120,7 @@ Here are a few steps to activate spam protection for Forminator
 4. Don't forget to enter a short message to display when a spam form entry is submitted. Your message will appear at the bottom of the message field.
 
 <center>
-<img width="350" alt="OOPSpam detected spam on Forminator" src="/blog/assets/posts/forminator/forminator-spam-detected.png">
+<img loading="lazy"  width="350" alt="OOPSpam detected spam on Forminator" src="/blog/assets/posts/forminator/forminator-spam-detected.png">
 </center>
 <br/>
 

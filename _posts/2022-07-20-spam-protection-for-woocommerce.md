@@ -10,7 +10,7 @@ description: "Learn how to prevent fake orders, spam reviews and registrations w
 # modified: 
 ---
 <center>
-<img width="772" alt="WooCommerce website screenshot" src="/blog/assets/posts/woo/woo.png">
+<img loading="lazy"  width="772" alt="WooCommerce website screenshot" src="/blog/assets/posts/woo/woo.png">
 </center>
 <br/>
 
@@ -115,11 +115,11 @@ Here are a few steps to activate spam protection for the WooCommerce-based store
 4. Don't forget to enter a short message to display when a spam order or registration is detected.
 
 <center>
-<img width="" alt="OOPSpam detected spam on WooCommerce registration" src="/blog/assets/posts/woo/OOPSpam-WooCommerce-Spam-Account.png">
+<img loading="lazy"  width="" alt="OOPSpam detected spam on WooCommerce registration" src="/blog/assets/posts/woo/OOPSpam-WooCommerce-Spam-Account.png">
 </center>
 
 <center>
-<img width="" alt="OOPSpam detected spam on WooCommerce checkout form" src="/blog/assets/posts/woo/OOPSpam-WooCommerce-Spam-Checkout.png">
+<img loading="lazy"  width="" alt="OOPSpam detected spam on WooCommerce checkout form" src="/blog/assets/posts/woo/OOPSpam-WooCommerce-Spam-Checkout.png">
 </center>
 <br/>
 

@@ -16,7 +16,7 @@ description: "Learn 6 essential tips for building accessible web forms. Enhance 
 
 It is hard to imagine a website without some kind of web forms. Whether you have a contact form, sign up form or newsletter form, you want to make sure it is accessible for everyone. Unfortunately, accessibility is often ignored, but accessible forms are important for high conversion, better SEO and user experience. In this article we will look at common mistakes and general tips to be aware of them when creating a form.
 
-General guide is that a form needs to be complete, easy to understand and navigable with ``Tab``. Be sure to check the [Web Accessibility Initiative by W3C guide](https://www.w3.org/WAI/tutorials/forms/).
+General guide is that a form needs to be complete, easy to understand and navigable with ```Tab```. Be sure to check the [Web Accessibility Initiative by W3C guide](https://www.w3.org/WAI/tutorials/forms/).
 
 Here is an example [Accessible form on Codepen](https://codepen.io/oopspam/pen/JjxXvWM).
 
@@ -79,7 +79,7 @@ HTML5 comes with input types such as _email_, _password_, _date_, _number_ and [
 
 ## Unintuitive tab order
 
-__Tab order__ is crucial for navigating your website with a keyboard.  You should be able to navigate both forms and the complete website using only the <kbd>Tab</kbd> key.Your tab order needs to be intuitive, logical, and follow the visual flow of the page. Getting keyboard accessibility right is important. Many users navigate web pages using only a keyboard. Incorrect tab placement can confuse users or cause them to miss information on your website.
+__Tab order__ is crucial for navigating your website with a keyboard.  You should be able to navigate both forms and the complete website using only the ```Tab``` key.Your tab order needs to be intuitive, logical, and follow the visual flow of the page. Getting keyboard accessibility right is important. Many users navigate web pages using only a keyboard. Incorrect tab placement can confuse users or cause them to miss information on your website.
 
 The tab order is defined using [tabindex] (https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex).
 
@@ -154,7 +154,7 @@ By providing meaningful values for the autocomplete attribute, you're guiding th
 
 >  For example, asking users who are blind, visually impaired or dyslexic to identify textual characters in a distorted graphic is asking them to perform a task they are intrinsically least able to accomplish.
 
-![Inaccessible captcha example](/blog/assets/posts/spam-signups/hcaptcha.png "Inaccessible captcha example")
+![Inaccessible captcha example](/blog/assets/posts/spam-signups/inaccessible-captcha.png "Inaccessible captcha example")
 
 WCAG requires that any captcha solution provide an alternative approach to accommodate different disabilities. In addition, all images must have a text alternative that explains the image and a text describing the captcha challenge (what to solve, what to do). In general, image-based captcha puzzles like reCaptcha and hCaptcha should be avoided whenever possible. 
 
@@ -168,6 +168,6 @@ One way to make your forms accessible while still having spam and fraud detectio
 
 ### Accessible captcha alternative
 
-We designed [OOPSpam](https://www.oopspam.com/) to be an accessible and privacy friendly alternative to reCaptcha, hCaptcha and other similar solutions. By design OOPSpam works in your server and never interacts with your visitors instead it looks at form message content, IP and email to filter spam and fraud. This approach eliminates the burden on users to prove their humanity and has 0 impact on your website performance. Instead, we allow form submissions to be analyzed and categorized as spam or not. [Our WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/) does this automatically. Check out [another built-in integration](https://www.oopspam.com/help/).
+We designed [OOPSpam](https://www.oopspam.com/) to be an accessible and privacy friendly alternative to reCaptcha, hCaptcha and other similar solutions. By design OOPSpam works in your server and never interacts with your visitors instead it looks at form message content, IP and email to filter spam and fraud. This approach eliminates the burden on users to prove their humanity and has 0 impact on your website performance. Instead, we allow form submissions without any challenge or puzzle and later to be analyzed and categorized as spam or not. [Our WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/) does this automatically. Check out [another built-in integration](https://www.oopspam.com/help/).
 
 I hope this article was helpful for you in creating accessible forms that are available to everyone.

@@ -12,7 +12,7 @@ description: "Learn about 7 different technics for spam detection and prevention
 ---
 <center>
 <a href="https://oopspam.com">
-<img width="772" style="height: 200px;object-fit: cover;" alt="OOPSpam illustration" src="/blog/assets/ways-to-stop-spam.png">
+<img loading="lazy"  width="772" style="height: 200px;object-fit: cover;" alt="OOPSpam illustration" src="/blog/assets/ways-to-stop-spam.png">
 </a>
 </center>
 <br/>

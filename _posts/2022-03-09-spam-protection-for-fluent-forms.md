@@ -11,7 +11,7 @@ description: "Learn how to add spam protection to Fluent Forms with these 4 diff
 ---
 <center>
 <a href="https://wordpress.org/plugins/oopspam-anti-spam/">
-<img width="600" alt="OOPSpam Anti-Spam WordPress Plugin supports Fluent Forms" src="/blog/assets/posts/fluent-forms/FluentForms.png">
+<img loading="lazy"  width="600" alt="OOPSpam Anti-Spam WordPress Plugin supports Fluent Forms" src="/blog/assets/posts/fluent-forms/FluentForms.png">
 </a>
 </center>
 <br/>
@@ -83,7 +83,7 @@ Here are a few steps to activate spam protection for Fluent Forms:
 4. Don't forget to enter a short message to display when a spam form entry is submitted. Your message will appear at the bottom of the message field.
 
 <center>
-<img width="800" alt="OOPSpam detected spam on Fluent Forms" src="/blog/assets/posts/fluent-forms/AFluentForm.png">
+<img loading="lazy"  width="800" alt="OOPSpam detected spam on Fluent Forms" src="/blog/assets/posts/fluent-forms/AFluentForm.png">
 </center>
 <br/>
 

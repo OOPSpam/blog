@@ -12,7 +12,7 @@ description: "Introducing OOPSpam WordPress plugin. The plugin allows your contr
 ---
 <center>
 <a href="https://wordpress.org/plugins/oopspam-anti-spam/">
-<img width="772" alt="OOPSpam Anti-Spam WordPress Plugin" src="https://ps.w.org/oopspam-anti-spam/assets/screenshot-1.png">
+<img loading="lazy"  width="772" alt="OOPSpam Anti-Spam WordPress Plugin" src="https://ps.w.org/oopspam-anti-spam/assets/screenshot-1.png">
 </a>
 </center>
 <br/>

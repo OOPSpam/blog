@@ -10,7 +10,7 @@ description: "Learn how to add spam protection to your HubSpot contact forms."
 modified: 2023-06-01
 ---
 <center>
-<img width="600" alt="Spam protection for HubSpot forms in Zapier" src="/blog/assets/posts/hubspot-contact-form/overall-setup.png">
+<img loading="lazy"  width="600" alt="Spam protection for HubSpot forms in Zapier" src="/blog/assets/posts/hubspot-contact-form/overall-setup.png">
 </center>
 <br/>
 

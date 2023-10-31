@@ -10,7 +10,7 @@ description: "Learn about Overpayment Scams and how to protect yourself and your
 # modified: 
 ---
 <center>
-<img width="772" alt="money & coins" src="/blog/assets/posts/overpayment-scam/money.png">
+<img loading="lazy"  width="772" alt="money & coins" src="/blog/assets/posts/overpayment-scam/money.png">
 </center>
 <br/>
 

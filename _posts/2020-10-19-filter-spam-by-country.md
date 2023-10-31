@@ -9,7 +9,7 @@ description: "Block countries with OOPSpam"
 # modified: 
 ---
 <center>
-<img width="772" style="height: 200px;object-fit: cover;" alt="Connected world illustration" src="/blog/assets/posts/connected_world.png">
+<img loading="lazy"  width="772" style="height: 200px;object-fit: cover;" alt="Connected world illustration" src="/blog/assets/posts/connected_world.png">
 </center>
 <br/>
 

@@ -10,7 +10,7 @@ description: "Learn how to remove 'Deceptive Site Ahead' warning and prevent fut
 # modified: 
 ---
 <center>
-<img alt="Deceptive Site Ahead warning" src="/blog/assets/posts/deceptive-site/Deceptive-site-ahead.png">
+<img loading="lazy"  alt="Deceptive Site Ahead warning" src="/blog/assets/posts/deceptive-site/Deceptive-site-ahead.png">
 </center>
 <br/>
 

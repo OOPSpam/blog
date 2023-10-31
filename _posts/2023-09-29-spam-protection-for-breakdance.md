@@ -10,7 +10,7 @@ description: "Learn how to add spam protection to Breakdance Forms with these 3 
 # modified: 
 ---
 <center>
-<img width="500" alt="Breakdance homepage" src="/blog/assets/posts/breakdance/breakdance.png">
+<img loading="lazy"  width="500" alt="Breakdance homepage" src="/blog/assets/posts/breakdance/breakdance.png">
 </center>
 <br/>
 

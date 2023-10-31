@@ -11,7 +11,7 @@ description: "Use OOPSpam WordPress plugin to stop spam on your Ninja Forms"
 ---
 <center>
 <a href="https://wordpress.org/plugins/oopspam-anti-spam/">
-<img width="772" alt="OOPSpam Anti-Spam WordPress Plugin supports Ninja Forms" src="/blog/assets/nj-oopspam-wordpress-plugin-header.jpg">
+<img loading="lazy"  width="772" alt="OOPSpam Anti-Spam WordPress Plugin supports Ninja Forms" src="/blog/assets/nj-oopspam-wordpress-plugin-header.jpg">
 </a>
 </center>
 <br/>
@@ -50,7 +50,7 @@ That is all! Now go on and create your forms.
 
 Once spam detected your message will appear at the bottom of the message field.
 <center>
-<img width="350" alt="OOPSpam detected spam on Ninja Forms" src="/blog/assets/nj-spam-detected.png">
+<img loading="lazy"  width="350" alt="OOPSpam detected spam on Ninja Forms" src="/blog/assets/nj-spam-detected.png">
 </center>
 <br/>
 

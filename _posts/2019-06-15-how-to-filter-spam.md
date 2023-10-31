@@ -9,7 +9,7 @@ tags: [oopspam, spam]
 description: "Learn how to use OOPSpam API to protect your website from spam."
 # modified: 
 ---
-<center><a title="Stefan Bellini [CC0], via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:No_JunkMail_Valletta.JPG"><img width="512" alt="No JunkMail Valletta" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/No_JunkMail_Valletta.JPG/512px-No_JunkMail_Valletta.JPG"></a></center>
+<center><a title="Stefan Bellini [CC0], via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:No_JunkMail_Valletta.JPG"><img loading="lazy"  width="512" alt="No JunkMail Valletta" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/No_JunkMail_Valletta.JPG/512px-No_JunkMail_Valletta.JPG"></a></center>
 <br/>
 If you have ever owned a website with a contact form or a blog with a comment section then you've probably experienced a huge amount of spam almost daily.  You are not alone. In 2017, we decided to do something about it and built OOPSpam API.
 

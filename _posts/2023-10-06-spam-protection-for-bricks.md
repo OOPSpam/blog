@@ -10,7 +10,7 @@ description: "Learn how to add spam protection to Bricks Form Element with these
 # modified: 
 ---
 <center>
-<img width="500" alt="Bricks homepage" src="/blog/assets/posts/bricks/header.png">
+<img loading="lazy"  width="500" alt="Bricks homepage" src="/blog/assets/posts/bricks/header.png">
 </center>
 <br/>
 
@@ -102,7 +102,7 @@ Here are a few steps to activate spam protection for Bricks form element:
 4. Done!
 
 <center>
-<img width="800" alt="OOPSpam detected spam on Bricks Forms" src="/blog/assets/posts/bricks/bricks-spam-form.png">
+<img loading="lazy"  width="800" alt="OOPSpam detected spam on Bricks Forms" src="/blog/assets/posts/bricks/bricks-spam-form.png">
 </center>
 <br/>
 

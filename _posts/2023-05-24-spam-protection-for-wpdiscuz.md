@@ -10,7 +10,7 @@ description: "Learn how to add spam protection to WPDiscuz comment system with t
 # modified: 
 ---
 <center>
-<img width="600" alt="WPDiscuz plugin" src="/blog/assets/posts/wpdiscuz/wpDiscuz.png">
+<img loading="lazy"  width="600" alt="WPDiscuz plugin" src="/blog/assets/posts/wpdiscuz/wpDiscuz.png">
 </center>
 <br/>
 
@@ -116,7 +116,7 @@ Here are a few steps to activate spam protection for WPDiscuz:
 4. Don't forget to enter a short message to display when a spam form entry is submitted. Your message will appear at the bottom of the message field.
 
 <center>
-<img  alt="OOPSpam detected spam on WPDiscuz" src="/blog/assets/posts/wpdiscuz/wpdiscuz-spam-detected.png">
+<img loading="lazy"   alt="OOPSpam detected spam on WPDiscuz" src="/blog/assets/posts/wpdiscuz/wpdiscuz-spam-detected.png">
 </center>
 <br/>
 

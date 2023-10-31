@@ -11,7 +11,7 @@ description: "Learn how to add spam protection to Kadence Forms with these 3 dif
 ---
 <center>
 <a href="https://wordpress.org/plugins/oopspam-anti-spam/">
-<img width="500" alt="OOPSpam Anti-Spam WordPress Plugin supports Kadence Form Block" src="/blog/assets/posts/kadence/kb-blog-header.png">
+<img loading="lazy"  width="500" alt="OOPSpam Anti-Spam WordPress Plugin supports Kadence Form Block" src="/blog/assets/posts/kadence/kb-blog-header.png">
 </a>
 </center>
 <br/>
@@ -94,7 +94,7 @@ Here are a few steps to activate spam protection for Kadence Form:
 4. Don't forget to enter a short message to display when a spam form entry is submitted. Your message will appear at the bottom of the message field.
 
 <center>
-<img width="350" alt="OOPSpam detected spam on Kadence Form Block" src="/blog/assets/posts/kadence/kb-spam-detected.png">
+<img loading="lazy"  width="350" alt="OOPSpam detected spam on Kadence Form Block" src="/blog/assets/posts/kadence/kb-spam-detected.png">
 </center>
 <br/>
 

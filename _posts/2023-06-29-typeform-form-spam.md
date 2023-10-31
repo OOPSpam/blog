@@ -9,7 +9,7 @@ tags: [zapier, typeform]
 description: "Learn how to add spam protection to your Typeform forms."
 ---
 <center>
-<img width="600" alt="Spam protection for Typeform in Zapier" src="/blog/assets/posts/typeform/overall-setup.png">
+<img loading="lazy"  width="600" alt="Spam protection for Typeform in Zapier" src="/blog/assets/posts/typeform/overall-setup.png">
 </center>
 <br/>
 

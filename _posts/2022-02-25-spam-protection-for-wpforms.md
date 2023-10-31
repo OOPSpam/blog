@@ -11,7 +11,7 @@ description: "Learn how to add spam protection to WPForms with these 5 different
 ---
 <center>
 <a href="https://wordpress.org/plugins/oopspam-anti-spam/">
-<img width="600" alt="OOPSpam Anti-Spam WordPress Plugin supports WPForms" src="/blog/assets/posts/wp-forms/intro-wpforms.png">
+<img loading="lazy"  width="600" alt="OOPSpam Anti-Spam WordPress Plugin supports WPForms" src="/blog/assets/posts/wp-forms/intro-wpforms.png">
 </a>
 </center>
 <br/>
@@ -98,7 +98,7 @@ Here are a few steps to activate spam protection for WPForms:
 4. Don't forget to enter a short message to display when a spam form entry is submitted. Your message will appear at the bottom of the message field.
 
 <center>
-<img width="800" alt="OOPSpam detected spam on WPForms" src="/blog/assets/posts/wp-forms/WPForms.png">
+<img loading="lazy"  width="800" alt="OOPSpam detected spam on WPForms" src="/blog/assets/posts/wp-forms/WPForms.png">
 </center>
 <br/>
 

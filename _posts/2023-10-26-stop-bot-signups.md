@@ -10,7 +10,7 @@ description: "Discover effective methods to integrate bot protection into your s
 # modified: 
 ---
 <center>
-<img width="600" alt="Old door" src="/blog/assets/posts/spam-signups/old-door.jpg">
+<img loading="lazy"  width="600" alt="Old door" src="/blog/assets/posts/spam-signups/old-door.jpg">
 </center>
 <br/>
 

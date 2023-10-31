@@ -10,7 +10,7 @@ description: "Learn how to add spam protection to Gravity Forms with these 4 dif
 # modified: 
 ---
 <center>
-<img width="500" alt="Gravity Forms plugin" src="/blog/assets/posts/gravity/gf-forms.png">
+<img loading="lazy"  width="500" alt="Gravity Forms plugin" src="/blog/assets/posts/gravity/gf-forms.png">
 </center>
 <br/>
 
@@ -136,7 +136,7 @@ Here are a few steps to activate spam protection for Gravity Forms
 4. Don't forget to enter a short message to display when a spam form entry is submitted. Your message will appear at the bottom of the message field.
 
 <center>
-<img width="350" alt="OOPSpam detected spam on Gravity Forms" src="/blog/assets/posts/gravity/gravity-spam-detected.png">
+<img loading="lazy"  width="350" alt="OOPSpam detected spam on Gravity Forms" src="/blog/assets/posts/gravity/gravity-spam-detected.png">
 </center>
 <br/>
 

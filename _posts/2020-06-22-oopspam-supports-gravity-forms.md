@@ -11,7 +11,7 @@ description: "Use OOPSpam WordPress plugin to stop spam on your Gravity Forms"
 ---
 <center>
 <a href="https://wordpress.org/plugins/oopspam-anti-spam/">
-<img width="772" style="height: 200px;object-fit: cover;" alt="OOPSpam and Gravity Forms logos" src="/blog/assets/posts/gf-oopspam-wordpress-plugin.jpg">
+<img loading="lazy"  width="772" style="height: 200px;object-fit: cover;" alt="OOPSpam and Gravity Forms logos" src="/blog/assets/posts/gf-oopspam-wordpress-plugin.jpg">
 </a>
 </center>
 <br/>

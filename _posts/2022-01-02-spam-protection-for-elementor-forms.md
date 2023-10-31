@@ -10,7 +10,7 @@ description: "Learn how to add spam protection to Elementor Forms with these 3 d
 # modified: 
 ---
 <center>
-<img width="772" alt="OOPSpam Anti-Spam WordPress Plugin supports Elementor Forms" src="/blog/assets/posts/elementor-forms/ef-blog-header.png">
+<img loading="lazy"  width="772" alt="OOPSpam Anti-Spam WordPress Plugin supports Elementor Forms" src="/blog/assets/posts/elementor-forms/ef-blog-header.png">
 </center>
 <br/>
 
@@ -42,7 +42,7 @@ If you are looking for a free and quick workaround, reCaptcha is your solution.
 
 <center>
 <a href="https://wordpress.org/support/plugin/oopspam-anti-spam/reviews/?filter=5">
-<img  alt="OOPSpam Anti-Spam WordPress Plugin reviews" src="/blog/assets/posts/elementor-forms/reviews.png">
+<img loading="lazy"   alt="OOPSpam Anti-Spam WordPress Plugin reviews" src="/blog/assets/posts/elementor-forms/reviews.png">
 </a>
 </center>
 
@@ -79,7 +79,7 @@ Here are a few steps to activate spam protection for Elementor Forms:
 4. Don't forget to enter a short message to display when a spam form entry is submitted. Your message will appear at the bottom of the message field.
 
 <center>
-<img width="350" alt="OOPSpam detected spam on Elementor Forms" src="/blog/assets/posts/elementor-forms/ef-spam-detected.png">
+<img loading="lazy"  width="350" alt="OOPSpam detected spam on Elementor Forms" src="/blog/assets/posts/elementor-forms/ef-spam-detected.png">
 </center>
 <br/>
 

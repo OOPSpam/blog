@@ -11,7 +11,7 @@ description: "Learn how to add spam protection to WS Form with these 5 different
 ---
 <center>
 <a href="https://wordpress.org/plugins/oopspam-anti-spam/">
-<img width="600" alt="OOPSpam Anti-Spam WordPress Plugin supports WS Form" src="/blog/assets/posts/ws-form/WSForm.png">
+<img loading="lazy"  width="600" alt="OOPSpam Anti-Spam WordPress Plugin supports WS Form" src="/blog/assets/posts/ws-form/WSForm.png">
 </a>
 </center>
 <br/>
