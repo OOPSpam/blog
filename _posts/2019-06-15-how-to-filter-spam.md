@@ -21,7 +21,8 @@ Deciding which content is spam solely based on content is a difficult problem. E
     "content": "Dear Agent, We are a manufacturing company which specializes in supplying Aluminum Rod with Zinc Alloy Rod to customers worldwide, based in Japan, Asia. We have been unable to follow up payments effectively for transactions with debtor customers in your country due to our distant locations, thus our reason for requesting for your services representation.",
     "checkForLength": true,
     "allowedLanguages" : ["en"],
-    "allowedCountries" : ["it","us"]
+    "allowedCountries" : ["it","us"],
+    "blockedCountries" : ["ru"]
 }
 ````
 
@@ -41,6 +42,8 @@ Well, let's say you have a website in English and you serve your content (articl
 
 * ```allowedCountries``` is an _optional_ parameter. Similar to ```allowedLanguages```, it allows you to filter by a country or countries. instead of language. All you need to do is pass [the two-letter country code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements) as an array. This field requires ```senderIP``` to be included in the request body. 
 
+* ```blockedCountries``` is an _optional_ parameter. It allows you to block by a country or countries. All you need to do is pass [the two-letter country code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements) as an array. This field requires ```senderIP``` to be included in the request body. 
+
 OOPSpam API will returns ```Score``` along with a detailed report to let you know why it's spam or not. Here the all possible value you will get:
 
 ```json
@@ -56,6 +59,7 @@ OOPSpam API will returns ```Score``` along with a detailed report to let you kno
   }
 }
 ````
+
 Have a look at our [Response Body Parameter](https://www.oopspam.com/docs/#http-response-body-parameters) section in our documentation to learn the definition of each field.
 
 If you are a big fan of Postman like myself, here is Postman embed button that will load all the headers and request body for you. Make sure to [grab an API key](https://www.app.oopspam.com) and replace ```YOUR_API_KEY``` in the Headers tab.

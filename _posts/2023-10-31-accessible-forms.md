@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Building accessible form: 6 tips"
+title:  "Building accessible forms: 6 tips"
 author: "Onar A."
 image: /assets/posts/accessible-form/meta.png
 tags: [captcha, contact_form, accessible]
@@ -24,7 +24,7 @@ Here is an example [Accessible form on Codepen](https://codepen.io/oopspam/pen/J
 
 {% include toc.md %}
 
-## Lack of labels
+## Input labels
 
 A form field should have an associated label with them. It is common to see forms where there is no label, just ```placeholder```. ```placeholder``` is not enough alone as it disappears as you type. Providing a label, helps users to understand what information is expected in each field. To add a label to your form, use [label](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label) tag in HTML. The ``for`` attribute should always be the same as the ``id``.
 
@@ -77,7 +77,7 @@ HTML5 comes with input types such as _email_, _password_, _date_, _number_ and [
 <input type="date" name="date"/>
 ```
 
-## Unintuitive tab order
+## Tab order
 
 __Tab order__ is crucial for navigating your website with a keyboard.  You should be able to navigate both forms and the complete website using only the ```Tab``` key.Your tab order needs to be intuitive, logical, and follow the visual flow of the page. Getting keyboard accessibility right is important. Many users navigate web pages using only a keyboard. Incorrect tab placement can confuse users or cause them to miss information on your website.
 
@@ -96,7 +96,7 @@ To make your forms keyboard accessible, follow these 4 steps:
 <button>Third in tab order</button>
 ```
 
-## Ignoring ARIA Roles and States
+## ARIA Roles and States
 
 It is important to tell a screen reader what the purpose and role of a web element is. [ARIA annotations](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques) is a way to define web elements on a web page. Both HTML and ARIA are used to convert web elements to an accessible alternative format (Braille, text-to-speech). Many of us know HTML, but not ARIA.
 
@@ -129,7 +129,7 @@ ARIA attributes are especially important for web applications that rely heavily 
 <label>Email address (required): <input type="email" required aria-describedby="email-validation"> <span id="email-validation" class="validation-message">Please provide a valid email address using the format name@place.com</span></label>
 ```
 
-## Not using autocomplete element
+## Autocomplete attribute
 
 Unless you have a reason, make sure to add [autocomplete](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete) attribute to your form fields. Manually filling forms can be time-consuming and result more errors. Autocomplete helps in to auto-populate fields based on the previous inputs. The Web Content Accessibility Guidelines (WCAG) recommend using _autocomplete_ to improve the overall accessibility of web content.
 
@@ -154,7 +154,7 @@ By providing meaningful values for the autocomplete attribute, you're guiding th
 
 >  For example, asking users who are blind, visually impaired or dyslexic to identify textual characters in a distorted graphic is asking them to perform a task they are intrinsically least able to accomplish.
 
-![Inaccessible captcha example](/blog/assets/posts/spam-signups/inaccessible-captcha.png "Inaccessible captcha example")
+![Inaccessible captcha example](/blog/assets/posts/accessible-form/inaccessible-captcha.png "Inaccessible captcha example")
 
 WCAG requires that any captcha solution provide an alternative approach to accommodate different disabilities. In addition, all images must have a text alternative that explains the image and a text describing the captcha challenge (what to solve, what to do). In general, image-based captcha puzzles like reCaptcha and hCaptcha should be avoided whenever possible. 
 
