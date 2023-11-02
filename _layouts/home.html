@@ -24,8 +24,7 @@ layout: default
     <div class="item-{% increment postNo %}" style="border: solid;">
       <a href="{{ post.url | prepend: site.baseurl }}" class="card">
         
-        <!-- {% assign image = post.image %} -->
-        <div class="thumb" style="background-image: url({{ post.image }});"></div>
+        <div class="thumb" style="background-image: url({{ post.image | prepend: site.baseURL }});"></div>
         <article tabindex="0">
           <h2>{{ post.title }}</h2>
           <p>{{ post.content | strip_html | truncatewords: 30 }}</p>
