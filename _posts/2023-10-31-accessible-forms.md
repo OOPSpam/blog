@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Building accessible forms: 6 tips"
+title:  "Building Accessible Forms: 6 Tips"
 author: "Onar A."
 image: /assets/posts/accessible-form/meta.png
 tags: [captcha, contact_form, accessible]
