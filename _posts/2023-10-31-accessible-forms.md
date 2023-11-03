@@ -14,9 +14,9 @@ description: "Learn 6 essential tips for building accessible web forms. Enhance 
 </center>
 <br/>
 
-It is hard to imagine a website without some kind of web forms. Whether you have a contact form, sign up form or newsletter form, you want to make sure it is accessible for everyone. Unfortunately, accessibility is often ignored, but accessible forms are important for high conversion, better SEO and user experience. In this article we will look at common mistakes and general tips to be aware of them when creating a form.
+When considering accessibility on your website it's important to consider your web forms— whether it is a contact form, sign-up form or newsleter form. Accessible forms are important for high conversion, better SEO and user experience. In this article we will look at common mistakes and general tips to be aware of them when creating a form.
 
-General guide is that a form needs to be complete, easy to understand and navigable with ```Tab```. Be sure to check the [Web Accessibility Initiative by W3C guide](https://www.w3.org/WAI/tutorials/forms/).
+The overall goal for a form is one that is complete, easy to understand and navigable with ```Tab```. Be sure to check the [Web Accessibility Initiative by W3C guide](https://www.w3.org/WAI/tutorials/forms/).
 
 Here is an example [Accessible form on Codepen](https://codepen.io/oopspam/pen/JjxXvWM).
 
@@ -24,7 +24,7 @@ Here is an example [Accessible form on Codepen](https://codepen.io/oopspam/pen/J
 
 {% include toc.md %}
 
-## Input labels
+## 1. Use Input Labels
 
 A form field should have an associated label with them. It is common to see forms where there is no label, just ```placeholder```. ```placeholder``` is not enough alone as it disappears as you type. Providing a label, helps users to understand what information is expected in each field. To add a label to your form, use [label](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label) tag in HTML. The ``for`` attribute should always be the same as the ``id``.
 
@@ -39,7 +39,7 @@ A form field should have an associated label with them. It is common to see form
 
 Alternatively, you can use [aria-label](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-label) to identify form controls. 
 
-## Using color alone to indicate errors
+## 2. Avoid Using Color Alone to Indicate Errors
 
 Relying on color alone (e.g., red text) to indicate errors can be problematic for users with visual impairments. It's important to provide text or other visual cues in addition to color. For both success and error, a form should display some sort of notification. In the case of an error, an error message should provide clear instructions on how to resolve the error. Ideally, an error message should appear both in the form header and next to the field. An error in the form header can be linked to the problematic field using [aria-describedby](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-describedby).
 
@@ -77,9 +77,9 @@ HTML5 comes with input types such as _email_, _password_, _date_, _number_ and [
 <input type="date" name="date"/>
 ```
 
-## Tab order
+## 3. Getting Tab Order Right
 
-__Tab order__ is crucial for navigating your website with a keyboard.  You should be able to navigate both forms and the complete website using only the ```Tab``` key.Your tab order needs to be intuitive, logical, and follow the visual flow of the page. Getting keyboard accessibility right is important. Many users navigate web pages using only a keyboard. Incorrect tab placement can confuse users or cause them to miss information on your website.
+__Tab order__ is crucial for navigating your website with a keyboard.  You should be able to navigate both forms and the complete website using only the ```Tab``` key. Your tab order needs to be intuitive, logical, and follow the visual flow of the page. Getting keyboard accessibility right is important. Many users navigate web pages using only a keyboard. Incorrect tab placement can confuse users or cause them to miss information on your website.
 
 The tab order is defined using [tabindex] (https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex).
 
@@ -96,7 +96,7 @@ To make your forms keyboard accessible, follow these 4 steps:
 <button>Third in tab order</button>
 ```
 
-## ARIA Roles and States
+## 4. Use ARIA Roles and States
 
 It is important to tell a screen reader what the purpose and role of a web element is. [ARIA annotations](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques) is a way to define web elements on a web page. Both HTML and ARIA are used to convert web elements to an accessible alternative format (Braille, text-to-speech). Many of us know HTML, but not ARIA.
 
@@ -129,7 +129,7 @@ ARIA attributes are especially important for web applications that rely heavily 
 <label>Email address (required): <input type="email" required aria-describedby="email-validation"> <span id="email-validation" class="validation-message">Please provide a valid email address using the format name@place.com</span></label>
 ```
 
-## Autocomplete attribute
+## 5. Include Autocomplete Attribute
 
 Unless you have a reason, make sure to add [autocomplete](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete) attribute to your form fields. Manually filling forms can be time-consuming and result more errors. Autocomplete helps in to auto-populate fields based on the previous inputs. The Web Content Accessibility Guidelines (WCAG) recommend using _autocomplete_ to improve the overall accessibility of web content.
 
@@ -148,7 +148,7 @@ Unless you have a reason, make sure to add [autocomplete](https://developer.mozi
 
 By providing meaningful values for the autocomplete attribute, you're guiding the browser to suggest relevant information based on the user's input history. This helps users, especially those with disabilities, to fill out forms more efficiently and accurately.
 
-## Captcha
+## 6. Don't use Captcha
 
 [According to Builtwith](https://trends.builtwith.com/widgets/captcha), 96% of the top 1 million websites use captcha. Most of them use reCaptcha and hCaptcha. Visual turing tests such as CAPTCHA [are allowed](https://www.w3.org/TR/turingtest/#:~:text=CAPTCHAs%20are%2C%20allowed%20under,sensory%20perception%20are%20provided%20to) by the Web Content Accessibility Guidelines (WCAG) with some important restrictions.
 
@@ -156,9 +156,11 @@ By providing meaningful values for the autocomplete attribute, you're guiding th
 
 ![Inaccessible captcha example](/blog/assets/posts/accessible-form/inaccessible-captcha.png "Inaccessible captcha example")
 
-WCAG requires that any captcha solution provide an alternative approach to accommodate different disabilities. In addition, all images must have a text alternative that explains the image and a text describing the captcha challenge (what to solve, what to do). In general, image-based captcha puzzles like reCaptcha and hCaptcha should be avoided whenever possible. 
+WCAG requires that any captcha solution provide an alternative approach to accommodate different disabilities. In addition, all images must have a text alternative that explains the image and a text describing the captcha challenge (what to solve, what to do). In general, image-based captcha puzzles like reCaptcha and hCaptcha should be avoided whenever possible.
 
 Unfortunately, captchas are inaccessible by design. They are designed to prevent bots from submitting a form by obscuring images and text. Even if you use an invisible captcha, it is likely that users will be blocked or asked to solve a puzzle if their IP or browsing behavior is detected as suspicious.
+
+On top of this, captchas can often be a source of cultural misunderstanding. Anyone in UX or Visual Design knows the true difficulty in finding completely universal visual cues for icons. What is a 'mailbox' in one country or subculture may look completely different in another. Often captcha visuals are USA-centric which can be frustrating and inefficient for those who's world looks different. 
 
 ![hCaptcha example](/blog/assets/posts/spam-signups/hcaptcha.png "hCaptcha example")
 
@@ -166,8 +168,8 @@ Another problem with captcha solutions is that they require injecting javascript
 
 One way to make your forms accessible while still having spam and fraud detection is to use server-side solutions like [OOPSpam](https://www.oopspam.com/).
 
-### Accessible captcha alternative
+### Try Our Accessible Captcha Alternative
 
-We designed [OOPSpam](https://www.oopspam.com/) to be an accessible and privacy friendly alternative to reCaptcha, hCaptcha and other similar solutions. By design OOPSpam works in your server and never interacts with your visitors instead it looks at form message content, IP and email to filter spam and fraud. This approach eliminates the burden on users to prove their humanity and has 0 impact on your website performance. Instead, we allow form submissions without any challenge or puzzle and later to be analyzed and categorized as spam or not. [Our WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/) does this automatically. Check out [another built-in integration](https://www.oopspam.com/help/).
+We designed [OOPSpam](https://www.oopspam.com/) to be an accessible and privacy-friendly alternative to reCaptcha, hCaptcha and other similar solutions. By design OOPSpam works in your server and never interacts with your visitors. Instead it looks at form message content, IP and email to filter spam and fraud. This approach eliminates the burden on users to prove their humanity and has 0 impact on your website performance. Instead, we allow form submissions without any challenge or puzzle which later are analyzed and categorized as spam or not. [Our WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/) does this automatically. Check out [another built-in integration](https://www.oopspam.com/help/).
 
-I hope this article was helpful for you in creating accessible forms that are available to everyone.
+I hope this article was helpful for you in creating accessible forms which may be available to everyone.
