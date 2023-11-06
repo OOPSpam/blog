@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "3 ways to protect your Elementor Forms from spam"
+title:  "5 ways to protect your Elementor Forms from spam"
 author: "Onar A."
 image: /assets/posts/elementor-forms/ef-meta-image.png
 tags: [WordPress, contact_form, elementor_forms]
 
 
-description: "Learn how to add spam protection to Elementor Forms with these 3 different methods in WordPress."
-# modified: 
+description: "Learn how to add spam protection to Elementor Forms with these 5 different methods in WordPress."
+modified: 2023-11-06
 ---
 <center>
 <img loading="lazy"  width="772" alt="OOPSpam Anti-Spam WordPress Plugin supports Elementor Forms" src="/blog/assets/posts/elementor-forms/ef-blog-header.png">
@@ -18,15 +18,21 @@ description: "Learn how to add spam protection to Elementor Forms with these 3 d
 
 Every contact form eventually gets spam. If you are using Elementor Forms, you may already have a spam problem. In this article, we are looking into spam protection options for Elementor Forms.
 
+To address spam issue in your forms, use the built-in honeypot, reCaptcha, or a third-party plugin. An alternative approach is to restrict submissions based on the country of origin and the language of the message.
+
 {% include toc.md %}
 
 ## Honeypot
 
 [We wrote](https://www.oopspam.com/blog/ways-to-stop-spam#honeypot-filter-spam-with-a-hidden-field) extensively about honeypot technique and how it works. While it's not as effective as it used to be, it still prevents some bots from spamming your contact forms. Elementor Forms has built-it [honeypot field](https://elementor.com/help/form-fields/#type). All you need to do is add a honeypot field to your form. The honeypot field won't be visible to humans, but bots see the hidden field as a valid field. Bots scan a website and fill all the fields, including the hidden field in your form. Elementor Forms widget will dismiss every submission that has an entry in a hidden field.
 
+![Honeypot field in Elementor Forms](/blog/assets/posts/elementor-forms/honeypot.webp "Honeypot field in Elementor Forms")
+
 ## reCaptcha
 
 Elementor Forms also comes with a [captcha](https://www.oopspam.com/blog/ways-to-stop-spam#captcha-solve-an-interactive-problem) solution, namely Google's reCaptcha. Check out [step-by-step guide](https://elementor.com/help/recaptcha-elementor-integration/) by Elementor on how to setup reCaptcha v2 and v3 on your contact forms.
+
+![reCaptcha in Elementor Forms](/blog/assets/posts/elementor-forms/recaptcha.png "reCaptcha in Cloudflare")
 
 ### Should I set up v2 or v3?
 
@@ -37,6 +43,20 @@ Many people are happy with reCaptcha. It is effective against simple bots, howev
 If you are looking for a free and quick workaround, reCaptcha is your solution.
 
 > 📌 Tip: Consider adding both reCaptcha and the honeypot field to your contact form.
+
+## Cloudflare
+
+[Cloudflare](https://www.cloudflare.com/) is a content deliver network. It operates between your website visitors and your hosting. They deliver your website faster and securely across the globe. They also provide a free way to protect your website from known spammers.
+
+Follow [Add site to Cloudflare](https://developers.cloudflare.com/fundamentals/get-started/setup/add-site/) article in their official docs to change your website's DNS address and put it behind Cloudflare. By simple adding your website to Cloudflare isn't enough. You need to [enable Bot Fight Mode](https://developers.cloudflare.com/bots/get-started/free/) to activate this protection. If the visitor's IP is suspicious then a captcha (namely Turnstile) will appear and ask the user to solve the challenge. Note that the visitor will not be able to solve the captcha if cookies and javascript are disabled in their browser.
+
+Cloudflare is a good alternative to reCaptcha as it's much lighter than reCaptcha.
+
+### Block access to website by country
+
+Once you put your website behind Cloudflare, you have an option to block countries. Depending from where you are getting spam, you may consider star blocking China and Russia as many spam originates from these countries.
+
+![Blocking Countries in Cloudflare](/blog/assets/posts/elementor-forms/Blocking-Countries-in-Cloudflare.png "Blocking Countries in Cloudflare")
 
 ## OOPSpam WordPress plugin
 
@@ -61,6 +81,8 @@ In addition, the plugin allows you to set up a filter to accept submissions only
 > ✨ Since then, we have also added the __Block messages from these countries__ feature.
 
 ![OOPSpam WordPress Plugin block countries](https://www.oopspam.com/blog/assets/wp-block-countries.png "OOPSpam WordPress Plugin block countries")
+
+> 📌 Using country filtering allows your site to be available worldwide, but only limits who can submit a form.
 
 Unlike other premium solutions, OOPSpam is privacy-friendly. We don't store or share your data. All cloud-based spam filtering services in the market require you to send visitors IP addresses which violates GDPR. With OOPSpam, you don't have to.
 
