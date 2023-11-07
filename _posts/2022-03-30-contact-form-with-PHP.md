@@ -37,6 +37,8 @@ Here is how it looks like:
 
 ![HTML contact form](/blog/assets/posts/contact-form-with-PHP/contact-form.png "HTML contact form")
 
+When building a contact form, it is important to make sure that it is accessible. Check out the article [Building Accessible Forms: 6 Tips](https://www.oopspam.com/blog/accessible-forms).
+
 ### Client-side input validation
 
 It's important to add client-side validation on the form fields. As you may notice, __email__ field has <code>type="email"</code> that is to prevent user from submitting anything else but email. When possible define type for the fields. [HTML5 brought many specific types](https://developer.mozilla.org/en-US/docs/Learn/Forms/HTML5_input_types), check them out to see if any of them can be used for your fields. There are data types like <code>type="url"</code>, <code>type="number"</code>,  <code>type="tel"</code> and many more.

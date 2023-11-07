@@ -14,7 +14,7 @@ description: "Learn 6 essential tips for building accessible web forms. Enhance 
 </center>
 <br/>
 
-When considering accessibility on your website it's important to consider your web forms— whether it is a contact form, sign-up form or newsleter form. Accessible forms are important for high conversion, better SEO and user experience. In this article we will look at common mistakes and general tips to be aware of them when creating a form.
+When considering accessibility on your website it's important to consider your web forms— whether it is a [contact form](https://www.oopspam.com/blog/accessible-forms), sign-up form or newsletter form. Accessible forms are important for high conversion, better SEO and user experience. In this article we will look at common mistakes and general tips to be aware of them when creating a form.
 
 The overall goal for a form is one that is complete, easy to understand and navigable with ```Tab```. Be sure to check the [Web Accessibility Initiative by W3C guide](https://www.w3.org/WAI/tutorials/forms/).
 
