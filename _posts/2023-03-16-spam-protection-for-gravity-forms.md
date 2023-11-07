@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Stop Spam in its tracks: A Guide to Gravity Forms Protection"
+title:  "5 ways to protect your Gravity Forms from spam"
 author: "Onar A."
 image: /assets/posts/gravity/gf-meta.png
 tags: [WordPress, contact_form, gravity]
@@ -100,6 +100,19 @@ While question-based verification can be an effective method to verify your visi
 - User frustration: If the questions are too difficult or confusing, it can frustrate legitimate users and discourage them from submitting a form.
 - Accessibility: As the questions are presented in a text format only, visitors with visual impairments may have difficulty reading the questions.
 
+## Cloudflare
+
+[Cloudflare](https://www.cloudflare.com/) is a content deliver network. It operates between your website visitors and your hosting. They deliver your website faster and securely across the globe. They also provide a free way to protect your website from known spammers.
+
+Follow [Add site to Cloudflare](https://developers.cloudflare.com/fundamentals/get-started/setup/add-site/) article in their official docs to change your website's DNS address and put it behind Cloudflare. By simple adding your website to Cloudflare isn't enough. You need to [enable Bot Fight Mode](https://developers.cloudflare.com/bots/get-started/free/) to activate this protection. If the visitor's IP is suspicious then a captcha (namely Turnstile) will appear and ask the user to solve the challenge. Note that the visitor will not be able to solve the captcha if cookies and javascript are disabled in their browser.
+
+Cloudflare is a good alternative to reCaptcha as it's much lighter than reCaptcha.
+
+### Block access to website by country
+
+Once you put your website behind Cloudflare, you have an option to block countries. Depending from where you are getting spam, you may consider star blocking China and Russia as many spam originates from these countries.
+
+![Blocking Countries in Cloudflare](/blog/assets/posts/elementor-forms/Blocking-Countries-in-Cloudflare.png "Blocking Countries in Cloudflare")
 
 ## OOPSpam WordPress plugin
 
@@ -136,7 +149,7 @@ Here are a few steps to activate spam protection for Gravity Forms
 4. Don't forget to enter a short message to display when a spam form entry is submitted. Your message will appear at the bottom of the message field.
 
 <center>
-<img loading="lazy"  width="350" alt="OOPSpam detected spam on Gravity Forms" src="/blog/assets/posts/gravity/gravity-spam-detected.png">
+<img loading="lazy"   alt="OOPSpam detected spam on Gravity Forms" src="/blog/assets/posts/gravity/gravity-spam-detected.png">
 </center>
 <br/>
 
