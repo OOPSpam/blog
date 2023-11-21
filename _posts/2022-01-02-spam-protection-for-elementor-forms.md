@@ -90,7 +90,7 @@ Here are a few steps to activate spam protection for Elementor Forms:
 
 1. [Subscribe to get an API key](https://app.oopspam.com/Identity/Account/Register) then copy-paste the API key to the plugin's appropriate field under __Settings->OOPSpam Anti-Spam__ on your WordPress Admin Dashboard.
 
-> ℹ️ Make sure to select OOPSpam Dashboard on the setting page
+    > ℹ️ Make sure to select OOPSpam Dashboard on the setting page
 
 2. If you have Elementor and Elementor Pro installed then a special section will appear on the OOPSpam Anti-Spam plugin's settings page.
 
