@@ -1,6 +1,16 @@
 .post {
   padding: 3rem 0;
 
+  @media (max-width:700px) {
+    .endofarticleButtons .columns {
+      flex-direction:column;
+      padding: 0em !important;
+    }
+    .endofarticleButtons .img {
+      width: 400px !important;
+    }
+  }
+
   h3 {
     font-size: 24px;
   }
