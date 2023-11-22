@@ -1,7 +1,7 @@
 .post {
   padding: 3rem 0;
 
-  @media (max-width:700px) {
+  @media only screen and (min-width : 480px) {
     .endofarticleButtons .columns {
       flex-direction:column;
       padding: 0em !important;
