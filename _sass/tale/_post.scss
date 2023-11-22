@@ -1,16 +1,6 @@
 .post {
   padding: 3rem 0;
 
-  @media only screen and (min-width : 480px) {
-    .endofarticleButtons .columns {
-      flex-direction:column;
-      padding: 0em !important;
-    }
-    .endofarticleButtons .img {
-      width: 400px !important;
-    }
-  }
-
   h3 {
     font-size: 24px;
   }
@@ -77,4 +67,21 @@
     padding: 0;
     margin: 0;
   }
+}
+
+@media only screen and (min-width : 480px) {
+  .endofarticleButtons .columns {
+    flex-direction: column;
+    padding: 0em !important;
+  }
+  .endofarticleButtons .img {
+    width: 400px !important;
+  }
+}
+
+.endofarticleButtons .columns {
+  display: flex;
+  flex-direction: row;
+  background-color: #FBFBED;
+  padding: 3em;
 }
