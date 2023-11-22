@@ -104,27 +104,50 @@
 }
 
 // article css end
-
-@media (min-width:320px) {
-  .endofarticleButtons .columns {
-    flex-direction: column;
-    padding: 0em;
-    align-items: center;
-  }
-  .endofarticleButtons .img {
-    width: 200px;
-  }
-}
-
-.endofarticleButtons .columns {
+.endofarticleButtons {
   display: flex;
   flex-direction: row;
   background-color: #FBFBED;
   padding: 3em;
+
+  @media only screen and  (min-width:320px) {
+    flex-direction: column;
+    padding: 0em;
+    align-items: center;
+   }
+
+  img {
+    width: 400px;
+    
+    @media only screen and  (min-width:320px) {
+      width: 200px;
+     }
+  }
+     
 }
-.endofarticleButtons .img {
-  width: 400px;
-}
+
+
+
+// @media (min-width:320px) {
+//   .endofarticleButtons .columns {
+//     flex-direction: column;
+//     padding: 0em;
+//     align-items: center;
+//   }
+//   // .endofarticleButtons .img {
+//   //   width: 200px;
+//   // }
+// }
+
+// .endofarticleButtons .columns {
+//   display: flex;
+//   flex-direction: row;
+//   background-color: #FBFBED;
+//   padding: 3em;
+// }
+// .endofarticleButtons img {
+//   width: 400px;
+// }
 
 html,
 body {
