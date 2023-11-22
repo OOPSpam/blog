@@ -105,13 +105,13 @@
 
 // article css end
 
-@media (min-width: 600px) {
+@media screen and (min-width: 600px) {
   .endofarticleButtons .columns {
     flex-direction: column;
-    padding: 0em !important;
+    padding: 0em;
   }
   .endofarticleButtons .img {
-    width: 400px !important;
+    width: 400px;
   }
 }
 
@@ -121,7 +121,6 @@
   background-color: #FBFBED;
   padding: 3em;
 }
-
 
 html,
 body {
