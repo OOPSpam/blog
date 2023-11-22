@@ -105,7 +105,22 @@
 
 // article css end
 
+@media (min-width: 600px) {
+  .endofarticleButtons .columns {
+    flex-direction: column;
+    padding: 0em !important;
+  }
+  .endofarticleButtons .img {
+    width: 400px !important;
+  }
+}
 
+.endofarticleButtons .columns {
+  display: flex;
+  flex-direction: row;
+  background-color: #FBFBED;
+  padding: 3em;
+}
 
 
 html,
