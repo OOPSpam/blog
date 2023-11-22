@@ -107,9 +107,9 @@
 
 @media (min-width:320px) {
   .endofarticleButtons .columns {
-    flex-direction: column;
-    padding: 0em;
-    align-items: center;
+    flex-direction: column !important;
+    padding: 0em !important;
+    align-items: center !important;
   }
   .endofarticleButtons .img {
     width: 200px !important;
@@ -121,6 +121,9 @@
   flex-direction: row;
   background-color: #FBFBED;
   padding: 3em;
+}
+.endofarticleButtons .img {
+  width: 400px;
 }
 
 html,
