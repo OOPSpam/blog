@@ -1,48 +1,43 @@
 ---
 layout: post
-title:  "5 ways to protect your Elementor Forms from spam"
+title:  "3 ways to protect your Beaver Builder Contact Form from spam"
 author: "Onar A."
-image: /assets/posts/elementor-forms/ef-meta-image.png
-tags: [WordPress, contact_form, elementor_forms]
+image: /assets/posts/beaver/bb-meta.png
+tags: [WordPress, contact_form]
 
 
-description: "Learn how to add spam protection to Elementor Forms with these 5 different methods in WordPress."
-modified: 2023-11-06
+description: "Learn how to add spam protection to Beaver Builder Contact Form with these 3 different methods in WordPress."
+
 ---
 <center>
-<img loading="lazy"  width="772" alt="OOPSpam Anti-Spam WordPress Plugin supports Elementor Forms" src="/blog/assets/posts/elementor-forms/ef-blog-header.png">
+<img loading="lazy"  width="772" alt="Beaver Builder homepage screenshot" src="/blog/assets/posts/beaver/blog-header.png">
 </center>
 <br/>
 
-[Elementor Page Builder](https://elementor.com/) is one of the most used and popular page builders for WordPress. It comes with generous free and paid Pro versions. You certainly don't need to have a Pro version to build a website. However, the Pro version brings a lot more built-in widgets which help you avoid installing extra plugins. [Elementor Form](https://elementor.com/features/form-builder/) widget is one of these widgets that comes with Elementor Pro.
+[Beaver Page Builder](https://www.wpbeaverbuilder.com/) is one of the most used and popular page builders for WordPress. It comes with generous free and paid Pro versions. You certainly don't need to have a Pro version to build a website. However, the Pro version brings a lot more built-in modules which help you avoid installing extra plugins. [Beaver Contact Form](https://docs.wpbeaverbuilder.com/beaver-builder/layouts/modules/contact-form/) module is one of these widgets that comes with Beaver Builder Pro.
 
-Every contact form eventually gets spam. If you are using Elementor Forms, you may already have a spam problem. In this article, we are looking into spam protection options for Elementor Forms.
+Every contact form eventually gets spam. If you are using Beaver Builder Contact Form module, you may already have a spam problem. In this article, we are looking into spam protection options for this module..
 
-To address spam issue in your forms, use the built-in honeypot, reCaptcha, or a third-party plugin. An alternative approach is to restrict submissions based on the country of origin and the language of the message.
+Beaver Builder Form module comes with a basic form functionality. There are limited number of form fields and no way to add new custom fields. When it comes to spam protection, it has only reCaptcha support. Although, there are other free and paid third-party solutions.
 
 {% include toc.md %}
 
-## Honeypot
-
-[We wrote](https://www.oopspam.com/blog/ways-to-stop-spam#honeypot-filter-spam-with-a-hidden-field) extensively about honeypot technique and how it works. While it's not as effective as it used to be, it still prevents some bots from spamming your contact forms. Elementor Forms has built-it [honeypot field](https://elementor.com/help/form-fields/#type). All you need to do is add a honeypot field to your form. The honeypot field won't be visible to humans, but bots see the hidden field as a valid field. Bots scan a website and fill all the fields, including the hidden field in your form. Elementor Forms widget will dismiss every submission that has an entry in a hidden field.
-
-![Honeypot field in Elementor Forms](/blog/assets/posts/elementor-forms/honeypot.webp "Honeypot field in Elementor Forms")
 
 ## reCaptcha
 
-Elementor Forms also comes with a [captcha](https://www.oopspam.com/blog/ways-to-stop-spam#captcha-solve-an-interactive-problem) solution, namely Google's reCaptcha. Check out [step-by-step guide](https://elementor.com/help/recaptcha-elementor-integration/) by Elementor on how to setup reCaptcha v2 and v3 on your contact forms.
+Beaver Builder Contact Form comes with a [captcha](https://www.oopspam.com/blog/ways-to-stop-spam#captcha-solve-an-interactive-problem) solution, namely Google's reCaptcha. Check out [step-by-step guide](https://docs.wpbeaverbuilder.com/beaver-builder/layouts/modules/contact-form/add-a-google-recaptcha-checkbox-to-a-form) by Beaver Builder on how to setup reCaptcha v2 and v3 on your contact forms.
 
-![reCaptcha in Elementor Forms](/blog/assets/posts/elementor-forms/recaptcha.png "reCaptcha in Elementor Forms")
+![reCaptcha in Beaver Builder](/blog/assets/posts/beaver/form-settings.png "reCaptcha in Beaver Builder")
 
 ### Should I set up v2 or v3?
 
-v3 came after many people complained about accessibility and usability issues with v2. v2 asks visitors to solve a challenge before submitting a form. To address this issue, Google removed the "challenge" part of reCaptcha. As a result, with v3, users don't solve any challenge. Instead, it tracks the user's behavior on your website and scores the user from 0 (bot) to 1 (human). It is up to the website owner to determine the threshold. In Elementor Forms you don't have control over this threshold.
+Beaver Builder Contact Form module supports v2 ("I'm not a robot" checkbox), invisible v2, and invisible v3.
+
+v3 came after many people complained about accessibility and usability issues with v2. v2 asks visitors to solve a challenge before submitting a form. To address this issue, Google removed the "challenge" part of reCaptcha. As a result, with v3, users don't solve any challenge. Instead, it tracks the user's behavior on your website and scores the user from 0 (bot) to 1 (human). It is up to the website owner to determine the threshold. 
 
 Many people are happy with reCaptcha. It is effective against simple bots, however, advanced bots can [bypass reCaptcha](https://github.com/xHossein/PyPasser). There are also "captcha farms" where people get paid to solve reCaptcha. It may also slow down your website as it loads extra js files into your website.
 
 If you are looking for a free and quick workaround, reCaptcha is your solution.
-
-> 📌 Tip: Consider adding both reCaptcha and the honeypot field to your contact form.
 
 ## Cloudflare
 
@@ -60,13 +55,7 @@ Once you put your website behind Cloudflare, you have an option to block countri
 
 ## OOPSpam WordPress plugin
 
-<center>
-<a href="https://wordpress.org/support/plugin/oopspam-anti-spam/reviews/?filter=5">
-<img loading="lazy"   alt="OOPSpam Anti-Spam WordPress Plugin reviews" src="/blog/assets/posts/elementor-forms/reviews.png">
-</a>
-</center>
-
-[Our WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/) is another way to stop spam on your Elementor Forms and WordPress comments. The plugin works with OOPSpam API that protects over 1M websites daily. While the other two alternatives are free, OOPSPam API is a paid service. But it does come with free 40/month spam checks for you to test and see the difference.
+[Our WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/) is another way to stop spam on your Beaver Builder Forms and WordPress comments. The plugin works with OOPSpam API that protects over 1.5M websites daily. While the other two alternatives are free, OOPSPam API is a paid service. But it does come with free 40/month spam checks for you to test and see the difference.
 
 It's likely you have already tried the above options, and they didn't work for you. For you, it could be a [slow website from reCaptcha](https://www.oopspam.com/blog/recaptcha-performance-analyses) or overwhelming spam you are still getting despite implementing the above alternatives. What makes OOPSpam different from other solutions is that it doesn't slow your website and is effective against human spammers and bots. There is no challenge to solve. No performance penalty as everything happens in your server instead of client-side. The OOPSpam API uses machine learning models, content analyses, IP reputation, and other rule-based checks to score every contact and registration form submissions, comments and search (yes, internal search spam is a thing :) ) in WordPress website. A combination of all these analyses returns a single spam score that is how it accurately stops both manual spam and bots.
 
@@ -86,22 +75,21 @@ In addition, the plugin allows you to set up a filter to accept submissions only
 
 Unlike other premium solutions, OOPSpam is privacy-friendly. We don't store or share your data. All cloud-based spam filtering services in the market require you to send visitors IP addresses which violates GDPR. With OOPSpam, you don't have to.
 
-Here are a few steps to activate spam protection for Elementor Forms:
+Here are a few steps to activate spam protection for Beaver Builder Forms:
 
 1. [Subscribe to get an API key](https://app.oopspam.com/Identity/Account/Register) then copy-paste the API key to the plugin's appropriate field under __Settings->OOPSpam Anti-Spam__ on your WordPress Admin Dashboard.
 
     > ℹ️ Make sure to select OOPSpam Dashboard on the setting page
 
-2. If you have Elementor and Elementor Pro installed then a special section will appear on the OOPSpam Anti-Spam plugin's settings page.
+2. If you have Beaver Builder Pro installed then a special section will appear on the OOPSpam Anti-Spam plugin's settings page.
 
-    ![OOPSpam Anti-Spam WordPress Plugin Settings](/blog/assets/posts/elementor-forms/oopspam-ef-settings.png "OOPSpam Anti-Spam WordPress Plugin Settings")
+    ![OOPSpam Anti-Spam WordPress Plugin Settings](/blog/assets/posts/beaver/oopspam-bb-settings.png "OOPSpam Anti-Spam WordPress Plugin Settings")
 
-3. On this page, you need to activate the spam filter for Elementor Forms by checking the **Activate Spam Protection** checkbox. You don't have to do anything on your form. Once you activate spam protection on the OOPSpam plugin settings, you are good to go.
+3. On this page, you need to activate the spam filter for Beaver Builder Forms by checking the **Activate Spam Protection** checkbox. You don't have to do anything on your form. Once you activate spam protection on the OOPSpam plugin settings, you are good to go.
 
-4. Don't forget to enter a short message to display when a spam form entry is submitted. Your message will appear at the bottom of the message field.
 
 <center>
-<img loading="lazy"  width="350" alt="OOPSpam detected spam on Elementor Forms" src="/blog/assets/posts/elementor-forms/ef-spam-detected.png">
+<img loading="lazy"  width="350" alt="OOPSpam detected spam on Beaver Builder Contact Form" src="/blog/assets/posts/beaver/bb-spam-detected.png">
 </center>
 <br/>
 
