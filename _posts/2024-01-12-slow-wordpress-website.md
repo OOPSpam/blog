@@ -24,7 +24,7 @@ Slow websites are a big concern because they have a huge impact on your website 
 
 In our previous articles we discussed [reCaptcha](https://www.oopspam.com/blog/recaptcha-performance-analyses) and [hCaptcha](https://www.oopspam.com/blog/hcaptcha-performance-analyses) performance analysis and detailed how they affect the loading time of your website.
 
-In this article, however, we will focus on why your WordPress website is slow. This is a common topic and deserves its own article. Our main focus would be: hosting, plugins and best practices to keep in mind.
+In this article, however, we will focus on why your [WordPress](https://wordpress.org/) website is slow. This is a common topic and deserves its own article. Our main focus would be: hosting, plugins and best practices to keep in mind.
 
 
 
@@ -50,7 +50,7 @@ Caching is another way to help with slow website performance. There are plugins 
 
 Cloudflare will load images faster by caching them. If you still have a slow website, adding a caching plugin would help with a content cache (dynamic page content) so that your content loads faster. 
 
-There are many options when it comes to caching plugins. From free solutions, check out [WP Fastest Cache](https://wordpress.org/plugins/wp-fastest-cache/). [Perfmatters](https://perfmatters.io/) is a paid caching plugin that works great. Some hosting companies like Siteground offer their own caching plugin. They may work better with your hosting. Try them before using third parties.
+There are many options when it comes to caching plugins. From free solutions, check out [WP Fastest Cache](https://wordpress.org/plugins/wp-fastest-cache/). Perfmatters is a paid caching plugin that works great. Some hosting companies like Siteground offer their own caching plugin. They may work better with your hosting. Try them before using third parties.
 
 ## Plugins
 
