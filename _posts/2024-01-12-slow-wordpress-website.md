@@ -42,7 +42,7 @@ One of the main reasons why WordPress websites are slow is the hosting you are u
 
 If you are a technical or DIY person, go with a dedicated VPS. Cloud hosting options like DigitalOcean, Hetzner are cheaper and much faster than anything you will get from shared WordPress hosting companies. Alternatively, if you don't want to deal directly with cloud hosting companies, check out Cloudways (owned by DigitalOcean). Cloudways is cheap, fast, and easy to set up WordPress.
 
-Other options for the non-DIY crowd are Siteground, Kinsta, GridPan, WPEngine. Siteground is the cheapest among them and is faster compared to other cheap hosts.
+Other options for the non-DIY crowd are Siteground, Kinsta, GridPane, WPEngine. Siteground is the cheapest among them and is faster compared to other cheap hosts.
 
 ## Caching
 
