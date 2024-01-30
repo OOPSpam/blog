@@ -456,5 +456,7 @@ All client-side spam protection solutions including reCaptcha, hCaptcha, Turnsti
 table, th, td {
   border: 1px solid black;
   border-collapse: collapse;
+  padding: 10px;
+  margin-bottom: 1em;
 }
 </style>
