@@ -452,3 +452,9 @@ WPForms is the fastest when used with Turnstile. Other lightweight plugins are F
 All client-side spam protection solutions including reCaptcha, hCaptcha, Turnstile will slow down your website. This is because they load JavaScript files, use cookies. If you need to use one of them, Turnstile has slightly less impact on your site. To avoid this problem, use a backend based spam protection like [OOPSpam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/). OOPSpam has zero impact on your site speed.
 
 
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
