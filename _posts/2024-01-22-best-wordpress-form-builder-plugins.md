@@ -1,33 +1,33 @@
 ---
 layout: post
-title:  "The 8 best WordPress form plugins for accessibility, performance and spam protection."
-author: "Onar A."
-image: /assets/posts/best-wp-form/meta.png
-tags: [wordpress]
-
-
-description: "We've been working with the major form plugins for WordPress for years. Based on our experience, here are our picks for the best plugins for WordPress forms. We will look at accessibility, performance and spam protection aspect of them."
-# modified: 
+title: The 8 Best WordPress Form Plugins for Accessibility, Performance and Spam Protection
+author: Onar A.
+image: /assets/posts/best-wp-form/WordpressForms.png
+tags:
+  - wordpress
+description: We’ve been working with WordPress form builder plugins for over five years, mainly integrating the OOPSpam WordPress anti-spam plugin with them. This involves coding, creating forms and testing them.
+preview: /posts/best-wp-form/WordpressForms.png
 ---
 <center>
-<img loading="lazy"  width="600" alt="WordPress logo" src="/blog/assets/posts/slow-wordpress/wp.png">
+<img loading="lazy"  width="600" alt="WordPress logo" src="/blog/assets/posts/best-wp-form/WordpressForms.png">
 </center>
 <br/>
 
+ 
 
 We've been working with WordPress form builder plugins for over five years, mainly integrating the [OOPSpam WordPress anti-spam plugin](https://wordpress.org/plugins/oopspam-anti-spam/) with them. This involves coding, creating forms and testing them.
 
 I also spend a lot of time working on articles like [how to build accessibility forms](https://www.oopspam.com/blog/accessible-forms) and [building a complete contact form](https://www.oopspam.com/blog/contact-form-with-PHP).
 
-So I decided to share our experiences with accessibility, performance impact, spam protection, and general functionality like conditional logic.
+So, I decided to share our experiences with accessibility, performance impact, spam protection, and general functionality like conditional logic.
 
 To test accessibility and performance, I'll be using Google's open source [Lighthouse](https://github.com/GoogleChrome/lighthouse) tool. All testing will be done locally in the same environment. All forms will be simple contact forms.
 
-While most of the plugins listed below have a free version, some don't, like Gravity Forms. I will use the free version whenever possible.
+While most of the plugins listed below have a free version, some don't (like Gravity Forms). I will use the free version whenever possible.
 
 Our testing environment:
 
-- No other plugins expected, OOPSpam Anti-Spam and a form plugin installed.
+- No other plugins except OOPSpam Anti-Spam and the form plugin installed.
 - PHP 8.1.23
 - WordPress 6.4.2
 - Theme enabled: Twenty Twenty-Four
@@ -51,17 +51,17 @@ We'll see how these numbers change as we create a form and add a few fields. Tow
 
 {% include toc.md %}
 
-# WS Form
+# 1. WS Form
 
 We have already discussed [WS Form](https://wordpress.org/plugins/ws-form/) in our article about [Spam Protection for WSForm](https://www.oopspam.com/blog/spam-protection-for-wsform). It stands out as one of the most developer-friendly plugins for creating advanced forms, offering over 100 ready-to-use templates. WS Form offers features such as conditional logic, form actions, and a unique built-in debug console for easy troubleshooting. It is available in both free and paid versions.
 
-However, it's important to note that not all features are available in the WS Forms Lite version.
+However, it's important to note not all features are available in the WS Forms LITE version.
 
 ![WS Form Lighthouse Performance and Accessibility Result](/blog/assets/posts/best-wp-form/wsform-lighthouse.png "WS Form Lighthouse Performance and Accessibility Result")
 
 ## Accessibility in WS Form
 
-WS Form excels at creating accessible forms by default, including necessary `aria' attributes, labels, and keyboard navigation.
+WS Form excels at creating accessible forms by default, including necessary `aria' attributes, labels and keyboard navigation.
 
 In the Lighthouse result, it successfully passes an additional 3 audits.
 
@@ -81,14 +81,14 @@ These numbers look good. Would be interesting to see how other form plugins comp
 
 ## Spam protection in WS Form
 
-As we provide spam filtering service for various platforms including WordPress plugins. This topic is very interesting for me personally. As mentioned above, we talk about WS Form's capabilities in terms of spam protection in [other post](https://www.oopspam.com/blog/spam-protection-for-wsform). Since we are using WS Form Lite (free), we are limited to the following options
+As we provide spam filtering service for various platforms including WordPress plugins, this topic is very interesting for me personally. As mentioned above, we talk about WS Form's capabilities in terms of spam protection in [other post](https://www.oopspam.com/blog/spam-protection-for-wsform). For both WS Form LITE and PRO we have the following options:
 
 - reCaptcha
 - hCaptcha
 - Turnstile
 - Honeypot
 
-All these solutions are free. While the Pro version gives you more options, these free solutions are a good starting point. I recommend enabling Honeypot in addition to one of the other three options. Keep in mind that except for Honeypot, all others will have a negative impact on your website speed (see Performance Impact of [hCaptcha](https://www.oopspam.com/blog/hcaptcha-performance-analyses) and [reCaptcha](https://www.oopspam.com/blog/recaptcha-performance-analyses) posts for detailed analysis). Turnstile is the lightest among them. Lets enable it and see how it compares to our previous numbers:
+All these solutions are free. Both LITE and Pro versions come with the same spam protection cabailities. I recommend enabling Honeypot in addition to one of the other three options. Keep in mind except for Honeypot, all others will have a negative impact on your website speed (see Performance Impact of [hCaptcha](https://www.oopspam.com/blog/hcaptcha-performance-analyses) and [reCaptcha](https://www.oopspam.com/blog/recaptcha-performance-analyses) posts for detailed analysis). Turnstile is the lightest among them. Let's enable it and see how it compares to our previous numbers:
 
 | Before Turnstile enabled [WS Form]                                                                                  	| After Turnstile enabled [WS Form]                                                                                   	| Increase                                                        	|
 |---------------------------------------------------------------------------------------------------------------------	|---------------------------------------------------------------------------------------------------------------------	|-----------------------------------------------------------------	|
@@ -96,7 +96,7 @@ All these solutions are free. While the Pro version gives you more options, thes
 
 As you can see, after enabling Turnstile, there are 12 additional requests and the load time increases.
 
-# Fluent Forms
+# 2. Fluent Forms
 
 [Fluent Forms](https://wordpress.org/plugins/fluentform/) is another popular form builder known for being easy to use and easy to get started with. You can create contact, survey, order, conversation forms and more with it. Just like WS Form, Fluent Forms comes with over 66 ready-made forms and over 50 form fields. They claim to be accessible and fast. Let's see what our tests show. It comes with generous free and paid versions.
 
@@ -108,7 +108,7 @@ The simple form with Fluent Forms fails due to accessibility issues.
 
 > 🚨 Background and foreground colors do not have a sufficient contrast ratio.
 
-The problem seems to be low contrast on the default submit button. You can easily fix this by making sure the button text color and background color are different enough to be easily readable. For example, a black background with white text would be much easier to read than a light blue background with white text.
+The problem seems to be low contrast on the default submit button. You can easily fix this by making sure the button text color and background color are different enough to be easily readable. For example, a black background with white text would be much easier to read than a light blue background with white text. To know for sure, you can use this [contrast checker.](https://webaim.org/resources/contrastchecker/)
 
 ![Fluent Forms inaccessible button](/blog/assets/posts/best-wp-form/ff-button.png "Fluent Forms inaccessible button")
 
@@ -139,9 +139,9 @@ We talked about the performance impact of these solutions above in the WS Form s
 
 Here we see a significant increase in the time to load the website from 226 ms to 1.84 s, which is also reflected in the load time with a 103% increase.
 
-# WPForms
+# 3. WPForms
 
-WPForms has been around for a long time and is quite popular with their free plugin. Although they also have a pro version. [WPForms contact form plugin](https://wordpress.org/plugins/wpforms-lite/) has a massive active installation count of over 5 million. They have over 1300+ pre-built form templates, that's right 1300! It is also beginner friendly.
+WPForms has been around for a long time and is quite popular with their free plugin. (Though they do also have a pro version to offer.) [WPForms contact form plugin](https://wordpress.org/plugins/wpforms-lite/) has a massive active installation count of over 5 million. They have over 1300+ pre-built form templates—that's right, 1300! It is also beginner friendly.
 
 We again built a basic form with WPForms and ran the test.
 
@@ -155,7 +155,7 @@ The form has proper `aria` attributes and can be navigated using only the `Tab' 
 
 ## Performance impact of WPForms
 
-Surprisingly, the amount of network requests increased by 55%. The page load time increased by an additional 137 ms, while the DOM content load time more than doubled.
+Surprisingly, the amount of __network requests increased by 55%__. The page load time increased by an additional 137 ms, while the DOM content load time more than doubled.
 
 | Before WPForms                                                                                                      	| After WPForms                                                                                                       	| Increase                                           	|
 |---------------------------------------------------------------------------------------------------------------------	|---------------------------------------------------------------------------------------------------------------------	|----------------------------------------------------	|
@@ -169,7 +169,7 @@ Surprisingly, the amount of network requests increased by 55%. The page load tim
 - hCaptcha
 - Turnstile
 
-These are available for free in WPForms Lite version, but you can enable country and keyword filters and custom captcha features by upgrading to Pro version. 
+These are available for free in WPForms Lite version, but you can enable custom captcha features as well as country and keyword filters by upgrading to the Pro version. 
 
 Let's enable the lightest solution Turnstile among the above options and see how it affects our website performance.
 
@@ -177,11 +177,11 @@ Let's enable the lightest solution Turnstile among the above options and see how
 |---------------------------------------------------------------------------------------------------------------------	|---------------------------------------------------------------------------------------------------------------------	|----------------------------------------------------------------	|
 | 23 requests<br>1.3 MB transferred<br>1.6 MB resources<br>Finish: 292 ms<br>DOMContentLoaded: 246 ms<br>Load: 265 ms 	| 35 requests<br>1.9 MB transferred<br>2.4 MB resources<br>Finish: 1.64 s<br>DOMContentLoaded: 257 ms<br>Load: 445 ms 	| Requests: 41%<br><br><br><br>DOMContentLoaded: 4%<br>Load: 50% 	|
 
-One noticeable change is that resources have increased from 1.6 MB to 2.4 MB and web page loading time has increased by 50%.
+One noticeable change is showing resources have increased from 1.6 MB to 2.4 MB and __web page loading time has increased by 50%__.
 
-# Formidable Forms
+# 4. Formidable Forms
 
-Another popular form builder is [Formidable Forms](https://wordpress.org/plugins/formidable/). It has over 300,000 active installations. The lite version includes unlimited forms, Stripe integration, premade 33 free templates (unlike others it requires you to provide an email). I found the features in the free version a bit limited compared to other popular form builder plugins.
+Another popular form builder is [Formidable Forms](https://wordpress.org/plugins/formidable/). It has over 300,000 active installations. The Lite version includes unlimited forms, Stripe integration, 33 free premade templates (unlike others it requires you to provide an email). I found the features in the free version a bit limited compared to other popular form builder plugins.
 
 ![Formidable Forms Lighthouse Performance and Accessibility result](/blog/assets/posts/best-wp-form/ff-lighthouse.png "Formidable Forms Lighthouse Performance and Accessibility result")
 
@@ -207,7 +207,7 @@ Now that we have created a simple contact form with Formidable Forms, lets see h
 
 ## Spam protection in Formidable Forms
 
-[Formidable Forms offers similar anti-spam tools](https://www.oopspam.com/blog/spam-protection-for-formidable). However, it has a unique anti-spam feature that others don't. This is blocking spam using [WordPress's built-in _Comment Moderation_](https://www.oopspam.com/blog/spam-protection-for-formidable#using-wordpresss-comment-moderation). Add URLs, IPs or any spam words (per line) to this field in _WordPress Settings -> Discussion Page -> Disallowed Comment Keys_. Formidable Forms will then check each post against this list and block it if it matches.
+[Formidable Forms offers similar anti-spam tools](https://www.oopspam.com/blog/spam-protection-for-formidable). However, it has a unique anti-spam feature others don't. This is blocking spam using [WordPress's built-in _Comment Moderation_](https://www.oopspam.com/blog/spam-protection-for-formidable#using-wordpresss-comment-moderation). Add URLs, IPs or any spam words (per line) to this field in _WordPress Settings -> Discussion Page -> Disallowed Comment Keys_. Formidable Forms will then check each post against this list and block it if it matches.
 
 - reCaptcha
 - hCaptcha
@@ -222,7 +222,7 @@ As you can see from the above list, unfortunately it doesn't support Turnstile. 
 
 The DOM content loading time is similar to the number before enabling hCaptcha. However, massive increase in loaded resources. Since hCaptcha loads several JavaScript files, this is reflected in the increase of data transfers and resources. Both increase by 76% and 88% respectively.
 
-# Forminator
+# 5. Forminator
 
 More than 500,000 active installations. [Free version](https://wordpress.org/plugins/forminator/) with many features. This is Forminator form builder plugin for you. It comes with lots of third party integration including payment integration with Paypal and Stripe in its free version. That being said, Forminator lacks pre-built templates. There are only 5 basic templates compared to other form builders.
 
@@ -258,7 +258,7 @@ We know that hCaptcha and reCaptcha [have a big impact on page speed](https://ww
 While the general load time only increased by 46% from 221ms to 355ms, the resources added by the hCaptcha integration are massive, from 1.8 MB to 4.2 MB, an increase of 80%. The number of network requests is also nearly doubled.
 
 
-# Gravity Forms
+# 6. Gravity Forms
 
 Another popular premium form builder. [Gravity Forms](https://www.gravityforms.com/) does not have a free version. To get your hands on Gravity Forms, you need a license. Currently it comes with 3 paid plans, Basic for 1 site, Pro for 3 sites and Elite for unlimited sites. Features are limited depending on the plan you use. For example, the Basic plan includes conditional logic, multi-page forms, and file uploads. As the name suggests, it is for basic use and for a single website. Even the Basic plan comes with many add-ons. Some Pro add-ons are only included in the Pro and Elite plans such as Stripe, Slack, Zapier integrations.
 
@@ -296,7 +296,7 @@ Let's configure the invisible version of reCaptcha and see how it affects the pe
 
 As expected, a large increase in resources of 2.1 MB more resources are loaded. The load time more than doubled. Compared to other form builders, Gravity Forms' reCaptcha implementation seems to be better as overall not a huge spike in numbers.
 
-# Ninja Forms
+# 7. Ninja Forms
 
 [Ninja Forms Lite](https://wordpress.org/plugins/ninja-forms/) is the most popular of all paid form builders with over 800,000 active installations. It is known to be beginner friendly. The free version comes with over 27 field types, calculations. Unfortunately, some key features like conditional logic, multi-step forms, all payment integrations like Stripe are part of the Pro plan.
 
@@ -339,7 +339,7 @@ Lets enable reCaptcha and see how Ninja Forms performs.
 After activating reCaptcha v3, we can see the increase in resources. It increased by 63%. Another noticeable change is increase in loading time of a website by 89%. This added additional 371 ms to the website speed.
 
 
-# Contact Form 7
+# 8. Contact Form 7
 
 The most popular contact form builder for WordPress. It has over 5 million active installations. Contact Form 7 is easy to use and a great choice for a simple form. If all you need is a simple form where you get submissions via email, then this is the plugin you are looking for.
 
@@ -400,7 +400,7 @@ General performance metrics with a simple three field form. No spam protection, 
 | Contact Form 7   	| 17              	| 1.2 MB           	| 1.3 MB    	| 208 ms   	| 165 ms           	| 183 ms 	|
 
 
-According to the table above, the fastest form builder is Contact Form 7. But considering that you may need more features, your second best option is WS Form and Formidable Forms.
+According to the table above, the fastest form builder is __Contact Form 7__. But considering that you may need more features, your second best option is __WS Form__ and __Formidable Forms__.
 
 Result:
 
