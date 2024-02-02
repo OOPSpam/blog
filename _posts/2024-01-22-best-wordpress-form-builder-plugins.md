@@ -25,7 +25,7 @@ To test accessibility and performance, I'll be using Google's open source [Light
 
 While most of the plugins listed below have a free version, some don't (like Gravity Forms). I will use the free version whenever possible.
 
-Our testing environment:
+__Our testing environment:__
 
 - No other plugins except OOPSpam Anti-Spam and the form plugin installed.
 - PHP 8.1.23
@@ -81,14 +81,14 @@ These numbers look good. Would be interesting to see how other form plugins comp
 
 ## Spam protection in WS Form
 
-As we provide spam filtering service for various platforms including WordPress plugins, this topic is very interesting for me personally. As mentioned above, we talk about WS Form's capabilities in terms of spam protection in [other post](https://www.oopspam.com/blog/spam-protection-for-wsform). For both WS Form LITE and PRO we have the following options:
+As we provide spam filtering service for various platforms including WordPress plugins, this topic is very interesting for me personally. As mentioned above, we talk about WS Form's capabilities in terms of spam protection in [another post](https://www.oopspam.com/blog/spam-protection-for-wsform). For both WS Form LITE and PRO we have the following options:
 
 - reCaptcha
 - hCaptcha
 - Turnstile
 - Honeypot
 
-All these solutions are free. Both LITE and Pro versions come with the same spam protection cabailities. I recommend enabling Honeypot in addition to one of the other three options. Keep in mind except for Honeypot, all others will have a negative impact on your website speed (see Performance Impact of [hCaptcha](https://www.oopspam.com/blog/hcaptcha-performance-analyses) and [reCaptcha](https://www.oopspam.com/blog/recaptcha-performance-analyses) posts for detailed analysis). Turnstile is the lightest among them. Let's enable it and see how it compares to our previous numbers:
+All these solutions are free. Both LITE and PRO versions come with the same spam protection cabailities. I recommend enabling Honeypot in addition to one of the other three options. Keep in mind except for Honeypot, all others will have a negative impact on your website speed (see Performance Impact of [hCaptcha](https://www.oopspam.com/blog/hcaptcha-performance-analyses) and [reCaptcha](https://www.oopspam.com/blog/recaptcha-performance-analyses) posts for detailed analysis). Turnstile is the lightest among them. Let's enable it and see how it compares to our previous numbers:
 
 | Before Turnstile enabled [WS Form]                                                                                  	| After Turnstile enabled [WS Form]                                                                                   	| Increase                                                        	|
 |---------------------------------------------------------------------------------------------------------------------	|---------------------------------------------------------------------------------------------------------------------	|-----------------------------------------------------------------	|
@@ -98,7 +98,7 @@ As you can see, after enabling Turnstile, there are 12 additional requests and t
 
 # 2. Fluent Forms
 
-[Fluent Forms](https://wordpress.org/plugins/fluentform/) is another popular form builder known for being easy to use and easy to get started with. You can create contact, survey, order, conversation forms and more with it. Just like WS Form, Fluent Forms comes with over 66 ready-made forms and over 50 form fields. They claim to be accessible and fast. Let's see what our tests show. It comes with generous free and paid versions.
+[Fluent Forms](https://wordpress.org/plugins/fluentform/) is another popular form builder known for being easy to use and easy to get started with. You can create contact, survey, order, conversation forms and more. Just like WS Form, Fluent Forms comes with over 66 ready-made forms and over 50 form fields. They claim to be accessible and fast. Let's see what our tests show. It comes with generous free and paid versions.
 
 ![Fluent Forms Lighthouse Performance and Accessibility result](/blog/assets/posts/best-wp-form/fluentforms-lighthouse.png "Fluent Forms Lighthouse Performance and Accessibility result")
 
