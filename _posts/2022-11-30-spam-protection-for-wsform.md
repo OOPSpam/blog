@@ -107,7 +107,7 @@ In addition, the plugin allows you to set up a filter to accept submissions only
 
 ![OOPSpam WordPress Plugin block countries](https://www.oopspam.com/blog/assets/wp-block-countries.png "OOPSpam WordPress Plugin block countries")
 
-To enable OOPSpam spam protection for WS Form, we need to add a custom action to our forms so that every submission gets analyzed by OOPSpam:
+Here are a few steps to activate spam protection for WS Form
 
 1. [Subscribe to get an API key](https://app.oopspam.com/Identity/Account/Register) then copy-paste the API key to the plugin's appropriate field under __Settings->OOPSpam Anti-Spam__ on your WordPress Admin Dashboard.
 
@@ -119,26 +119,12 @@ To enable OOPSpam spam protection for WS Form, we need to add a custom action to
 
 3. On this page, you need to activate the spam filtering for WS Form by checking the **Activate Spam Protection** checkbox.
 
-4. We are done with setting up the OOPSpam plugin. 🎉
+4. Don't forget to enter a short message to display when a spam form entry is submitted. Your message will appear at the bottom of the message field.
 
-Let's configure our form.
+5. We are done with setting up the OOPSpam plugin. 🎉
 
-- First edit your form
-- Click on the Actions ⚡️ icon in the top-right corner
-- Click on the + icon to add a new action
 
-![WS Form OOPSpam set up](/blog/assets/posts/ws-form/ws-oopspam-1.png "WS Form OOPSpam set up")
-
-- Name the new action (e.g Spam Check)
-- Select _Run WordPress Hook_ under Action
-- Insert *oopspam_check_for_spam_tag* into Hook Tag field
-- Choose _Before other actions_ in Priority
-
-![WS Form OOPSpam set up](/blog/assets/posts/ws-form/ws-oopspam-2.png "WS Form OOPSpam set up")
-
-- Done! ✨
-
-Now your form is ready to receive submissions. Each submission will run through OOPSpam first for spam check then all other actions will follow.
+Now your form is ready to receive submissions. Each submission will be checked by OOPSpam for spam.
 
 
 ## Final thoughts
