@@ -52,7 +52,7 @@ Similar to reCaptcha, hCaptcha is supported in both versions of Fluent Forms. Th
 
 ## OOPSpam WordPress plugin
 
-[Our WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/) is another way to stop spam in Fluent Forms and WordPress comments. The plugin works with OOPSpam API that protects over 1M websites daily. While other spam filtering methods listed above are free, OOPSpam is a premium service and comes with 40 spam checks/month to test and see the difference.
+[Our WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/) is another way to stop spam in Fluent Forms and WordPress comments. The plugin works with OOPSpam API that protects over 1.5M websites daily. While other spam filtering methods listed above are free, OOPSpam is a premium service and comes with 40 spam checks/month to test and see the difference.
 
 It's likely you have already tried the above options, and they didn't work for you. For you, it could be a slow website from reCaptcha/hCaptcha or overwhelming spam you are still getting despite implementing the above alternatives. What makes OOPSpam different from other solutions is that it doesn't slow your website and is effective against human spammers and bots. There is no challenge to solve. No performance penalty as everything happens in your server instead of client-side. The OOPSpam API uses machine learning models, content analyses, IP reputation, and other rule-based checks to score every contact form submission. A combination of all these analyses returns a single spam score that is how it accurately stops both manual spam and bots.
 

@@ -102,7 +102,7 @@ While question-based verification can be an effective method to verify your visi
 
 ## Cloudflare
 
-[Cloudflare](https://www.cloudflare.com/) is a content deliver network. It operates between your website visitors and your hosting. They deliver your website faster and securely across the globe. They also provide a free way to protect your website from known spammers.
+[Cloudflare](https://www.cloudflare.com/) is a content delivery network. It operates between your website visitors and your hosting. They deliver your website faster and securely across the globe. They also provide a free way to protect your website from known spammers.
 
 Follow [Add site to Cloudflare](https://developers.cloudflare.com/fundamentals/get-started/setup/add-site/) article in their official docs to change your website's DNS address and put it behind Cloudflare. By simple adding your website to Cloudflare isn't enough. You need to [enable Bot Fight Mode](https://developers.cloudflare.com/bots/get-started/free/) to activate this protection. If the visitor's IP is suspicious then a captcha (namely Turnstile) will appear and ask the user to solve the challenge. Note that the visitor will not be able to solve the captcha if cookies and javascript are disabled in their browser.
 
@@ -116,7 +116,7 @@ Once you put your website behind Cloudflare, you have an option to block countri
 
 ## OOPSpam WordPress plugin
 
-[Our WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/) is another way to stop spam on your Gravity Forms and WordPress comments. The plugin works with OOPSpam API that protects over 1M websites daily. While the other alternatives above are free, OOPSPam API is a paid service. But it does come with free 40/month spam checks for you to test and see the difference.
+[Our WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/) is another way to stop spam on your Gravity Forms and WordPress comments. The plugin works with OOPSpam API that protects over 1.5M websites daily. While the other alternatives above are free, OOPSPam API is a paid service. But it does come with free 40/month spam checks for you to test and see the difference.
 
 It's likely you have already tried the above options, and they didn't work for you. It could be [a slow website from reCaptcha](https://www.oopspam.com/blog/recaptcha-performance-analyses) or overwhelming spam you are still getting despite implementing the above alternatives. What makes OOPSpam different from other solutions is that it doesn't slow your website and is effective against human spammers and bots. There is no challenge to solve. No performance penalty as everything happens in your server instead of client-side. The OOPSpam API uses machine learning models, content analyses, IP & email reputation, and other rule-based checks to score every contact form submission. A combination of all these analyses returns a single spam score that is how it accurately stops both manual spam and bots.
 
