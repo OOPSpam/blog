@@ -44,6 +44,6 @@ Next, we need to add a privacy and terms notice to our form to let our users kno
 
 ## No CAPTCHA, no badge solution?
 
-Maybe you don't want to have a badge or a notice on your form and want to keep it clean from noise. Some other reasons why people don't want to use reCAPTCHA is because it slows down your website, makes it inaccessible and raises privacy concerns. If you are looking for an alternative solution, [OOPSpam API](https://www.oopspam.com/) and [OOPSpam WordPress plugin](https://www.oopspam.com/wordpress) works in the background, never interacts with your visitors, has no impact on your website speed.
+Maybe you don't want to have a badge or a notice on your form and want to keep it clean from noise. Some other reasons why people don't want to use reCAPTCHA is because it [slows down your website](https://www.oopspam.com/blog/recaptcha-performance-analyses), makes it inaccessible and raises privacy concerns. If you are looking for an alternative solution, [OOPSpam API](https://www.oopspam.com/) and [OOPSpam WordPress plugin](https://www.oopspam.com/wordpress) works in the background, never interacts with your visitors, has no impact on your website speed.
 
 Hope this article was helpful. Have a spam free day!
