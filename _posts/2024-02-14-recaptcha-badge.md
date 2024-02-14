@@ -8,6 +8,8 @@ tags: [recaptcha]
 description: Learn how to properly hide the reCAPTCHA badge and display the required notice on your form?
 ---
 
+The reCAPTCHA badge typically appears at the bottom right corner of the web page where the reCAPTCHA widget is embedded. It usually looks like a small badge with the Google logo and the text "Protected by reCAPTCHA" or "This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply. The purpose of this badge is to let users know that the site is protected by Google's reCAPTCHA service and to provide a link to more information about reCAPTCHA and Google's privacy policy.
+
 ## Why is there a "Protected by reCAPTCHA?" badge?
 
 If you use [reCAPTCHA](https://developers.google.com/recaptcha/), you need to include a disclaimer on every page where reCAPTCHA is loaded. This disclaimer can take the form of a badge or a simple text link to Google's privacy policy and terms.
