@@ -27,7 +27,7 @@ Here are some reasons why you may be seeing this error:
 - Disable any browser extensions, especially privacy extensions, that may attempt to remove or block reCAPTCHA scripts from loading. 
 - If none of the above solutions work, contact your hosting company. Your server may have security restriction policies, such as Content Security Policy or Cross-Origin, in place that prevent reCAPTCHA from loading.
 
-![reCAPTCHA CORS error](/blog/assets/posts/recaptcha-errors/origin.png "reCAPTCHA CORS error")
+![reCAPTCHA CORS error](/blog/assets/posts/recaptcha-errors/origin.jpg "reCAPTCHA CORS error")
 
 ## Localhost is not in the list of supported domains
 
