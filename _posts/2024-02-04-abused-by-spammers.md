@@ -10,7 +10,7 @@ description: At OOPSpam, we noticed new wide-spread spam campaign across top com
 preview: /posts/abused-by-spammers/meta.png
 ---
 
-Recently at OOPSpam we have mitigated spam campaigns targeting our customers with lots of links from popular companies like Microsoft, GitHub, SoundCloud, MIT, ConvertKit and others. These spam attacks don't contain much information, just simple links to these platforms, hoping to use their domain reputation to bypass spam filters.
+OOPSpam has recently mitigated spam campaigns that target our customers with lots of links to popular companies like Microsoft, GitHub, SoundCloud, MIT, ConvertKit and others. These spam attacks sometimes didn't contain much information, just simple links to these platforms, hoping to use their domain reputation to bypass spam filters.
 
 ![Spam on MIT's Scratch](/blog/assets/posts/abused-by-spammers/mit.jpg "Spam on MIT's Scratch")
 

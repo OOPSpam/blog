@@ -93,7 +93,7 @@ As you can see, Schanck and Isso are pretty similar in that they are both self-h
 
 #### Spam Filtering in the Schanck Comment System
 
-The author of Schanck answers this concern in [his blog post](https://vis4.net/blog/2017/10/hello-schnack/#how-schnack-is-protecting-against-spam).  
+The author of Schanck answers this concern in [his blog post](https://web.archive.org/web/20230220195955/https://www.vis4.net/blog/2017/10/hello-schnack/).  
 
 ![Spam protection for Schanck comment system](/blog/assets/posts/schnack_anti_spam.png "Spam protection for Schanck comment system")
 
