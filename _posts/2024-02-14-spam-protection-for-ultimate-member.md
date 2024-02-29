@@ -16,7 +16,7 @@ description: "Learn how to add spam protection to the Ultimate Member Registrati
 
 [Ultimate Member](https://ultimatemember.com/) is a popular membership plugin for WordPress. It extends standard WordPress login, registration features and add more comprehensive user profile. It is commonly used for creating online community, content restriction and more. It comes with Free and Pro versions for more features. 
 
-Ultimate Member already comes with built-in spam protection like [a honeypot field](https://www.oopspam.com/blog/ways-to-stop-spam#honeypot-filter-spam-with-a-hidden-field), time delay when registering and nonces check. You may still receive spam even with these measures enabled, as they are becoming more and more absolute.
+Ultimate Member already comes with built-in spam protection like [a honeypot field](https://www.oopspam.com/blog/ways-to-stop-spam#honeypot-filter-spam-with-a-hidden-field), time delay when registering and nonces check. You may still receive spam even with these measures enabled, as they are becoming more and more obsolete.
 
 {% include toc.md %}
 
