@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "5 Ways to Block Spam in Ultimate Member Registration Form"
+title: "5 Ways to Block Spam in Ultimate Member Registration Forms"
 author: "Onar A."
 image: /assets/posts/umember/meta.png
 tags: [WordPress]
