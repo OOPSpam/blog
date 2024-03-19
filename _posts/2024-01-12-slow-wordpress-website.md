@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Why is your WordPress website slow?"
+title:  "You're Doing WordPress Performance WRONG. Here's Why."
 author: "Onar A."
 image: /assets/posts/slow-wordpress/meta.png
 tags: [wordpress]
