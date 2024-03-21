@@ -73,6 +73,8 @@ Another issue, at least with the puzzle version of CAPTCHA solutions, is inacces
 
 > It's ironic that CAPTCHAs are increasingly becoming harder for people to solve but easier for bots to crack.
 
+![reCaptcha Site Key in DOM](/blog/assets/posts/bypassing-captcha/recaptcha-sitekey.png "reCaptcha Site Key in DOM")
+
 ## Alternative to CAPTCHAs?
 
 The fact is, spammers have an entire bag of tricks to bypass those CAPTCHAs. They're constantly evolving and finding ingenious new ways to outsmart these security measures. That's why it's absolutely critical for CAPTCHA systems to stay ahead of the game with frequent updates. But even then, website owners can't rely solely on CAPTCHAs - they need to bring in extra reinforcements in the fight against spam.
