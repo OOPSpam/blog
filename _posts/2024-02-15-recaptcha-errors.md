@@ -48,6 +48,6 @@ If you load reCAPTCHA scripts twice, you may also see these errors:
 
 ## No CAPTCHA, no error solution?
 
-Tired of dealing with reCAPTCHA problems. Some other reasons why people don't want to use reCAPTCHA is because it [slows down your website](https://www.oopspam.com/blog/recaptcha-performance-analyses), makes it inaccessible and raises privacy concerns. If you are looking for an alternative solution, [OOPSpam API](https://www.oopspam.com/) and [OOPSpam WordPress plugin](https://www.oopspam.com/wordpress) works in the background, never interacts with your visitors, has no impact on your website speed.
+reCAPTCHA works in the browser of your visitors. So it is open to manipulation, conflicts with browser extensions. These are only some of the reasons why people have to deal with the above mentioned issues. Some other reasons why people don't want to use reCAPTCHA is because it [slows down your website](https://www.oopspam.com/blog/recaptcha-performance-analyses), makes it inaccessible and raises privacy concerns. If you are looking for an alternative solution, [OOPSpam API](https://www.oopspam.com/) and [OOPSpam WordPress plugin](https://www.oopspam.com/wordpress) works in the background, never interacts with your visitors, has no impact on your website speed.
 
 Hope this article was helpful. Have a spam free day!
