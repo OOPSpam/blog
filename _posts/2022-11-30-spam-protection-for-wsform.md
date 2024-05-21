@@ -85,7 +85,7 @@ To add Turnstile to your WS Form, follow [steps on WS Form's knowledge base](htt
 
 ![WS Form Turnstile](/blog/assets/posts/ws-form/turnstile.png "WS Form Turnstile")
 
-More about Turnstile check out: [What No One Tells You About Cloudflare Turnstile](https://www.oopspam.com/blog/cloudflare-turnstile)
+More about Turnstile check out: [What No One Tells You About Cloudflare Turnstile](https://www.oopspam.com/blog/cloudflare-turnstile).
 
 ## OOPSpam WordPress plugin
 
