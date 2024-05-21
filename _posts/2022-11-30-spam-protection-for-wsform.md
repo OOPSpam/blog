@@ -18,7 +18,7 @@ description: "Learn how to add spam protection to WS Form with these 5 different
 
 ## Intro
 
-[WS Form](https://wsform.com/) is one of the most feature-rich form builders for WordPress. It supports over 55 field types, 100 ready-to-go templates, and all other good stuff like conditional logic and multi-step forms. My favorite part of WS Form is the developer friendliness of it. It has Debug Console that allows you quickly test forms. Similar to other popular form builders, it has lots of hooks for custom integrations. When it comes to spam protection, they offer much built-in integration like reCaptcha, hCaptcha, Turnstile, and Akismet. Note that not all features are available in [free WS Form Lite](https://wordpress.org/plugins/ws-form/). In terms of spam filtering, it seems only reCaptcha, hCaptcha, and Turnstile are part of WS Form Lite.
+[WS Form](https://wsform.com/) is one of the most feature-rich form builders for WordPress. It supports over 55 field types, 100 ready-to-go templates, and all other good stuff like conditional logic and multi-step forms. My favorite part of WS Form is the developer friendliness of it. It has Debug Console that allows you quickly test forms. Similar to other popular form builders, it has lots of hooks for custom integrations. When it comes to spam protection, they offer much built-in integration like reCaptcha, hCaptcha, Turnstile, and Akismet. Note that not all features are available in [free WS Form Lite](https://wordpress.org/plugins/ws-form/). In terms of spam filtering, it seems only reCaptcha, hCaptcha, and Turnstile are part of WS Form Lite. 
 
 {% include toc.md %}
 
@@ -84,6 +84,8 @@ To add Turnstile to your WS Form, follow [steps on WS Form's knowledge base](htt
 5. Done! 🎉
 
 ![WS Form Turnstile](/blog/assets/posts/ws-form/turnstile.png "WS Form Turnstile")
+
+More about Turnstile check out: [What No One Tells You About Cloudflare Turnstile](https://www.oopspam.com/blog/cloudflare-turnstile)
 
 ## OOPSpam WordPress plugin
 

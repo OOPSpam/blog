@@ -449,7 +449,7 @@ WPForms is the fastest when used with Turnstile. Other lightweight plugins are F
 
 # What is the fastest spam protection for WordPress?
 
-All client-side spam protection solutions including reCaptcha, hCaptcha, Turnstile will slow down your website. This is because they load JavaScript files, use cookies. If you need to use one of them, Turnstile has slightly less impact on your site. To avoid this problem, use a backend based spam protection like [OOPSpam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/). OOPSpam has zero impact on your site speed.
+All client-side spam protection solutions including reCaptcha, hCaptcha, Turnstile will slow down your website. This is because they load JavaScript files, use cookies. If you need to use one of them, Turnstile has slightly less impact on your site. To avoid this problem, use a backend based spam protection like [OOPSpam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/). OOPSpam has zero impact on your site speed. More about Turnstile check out: [What No One Tells You About Cloudflare Turnstile](https://www.oopspam.com/blog/cloudflare-turnstile).
 
 
 <style>

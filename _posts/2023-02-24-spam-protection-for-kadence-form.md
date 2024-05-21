@@ -20,7 +20,7 @@ description: "Learn how to add spam protection to Kadence Forms with these 3 dif
 
 Both products are free to use but a Pro version is available for additional functionality. Kadence Blocks comes with [Form Block](https://www.kadencewp.com/help-center/docs/kadence-blocks/form-block/) for building contact forms, newsletter forms, login pages, and more. 
 
-In this post, I will focus on Kadence Form's spam protection capabilities. The good news is that Form Block already comes with built-in support for honeypot and reCaptcha for free. Cloudflare's Turnstile is available as part of [Kadence CAPTCHA Plugin](https://www.kadencewp.com/product/kadence-google-recaptcha/) which is a premium plugin you need to purchase separately as part of their Full Bundle plan.
+In this post, I will focus on Kadence Form's spam protection capabilities. The good news is that Form Block already comes with built-in support for honeypot and reCaptcha for free. [Cloudflare's Turnstile](https://www.oopspam.com/blog/cloudflare-turnstile) is available as part of [Kadence CAPTCHA Plugin](https://www.kadencewp.com/product/kadence-google-recaptcha/) which is a premium plugin you need to purchase separately as part of their Full Bundle plan.
 
 ![Kadence spam protection options](/blog/assets/posts/kadence/kadence-spam-protection.png "Kadence spam protection options")
 

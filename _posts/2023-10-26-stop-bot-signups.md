@@ -85,8 +85,8 @@ Here is a simple table comparing these tools.
     </tr>
     <tr>
       <td>Slow website</td>
-      <td>Worse</td>
-      <td>Bad</td>
+      <td>[Worse](https://www.oopspam.com/blog/recaptcha-performance-analyses)</td>
+      <td>[Bad](https://www.oopspam.com/blog/hcaptcha-performance-analyses)</td>
       <td>Better</td>
     </tr>
     <tr>
@@ -132,7 +132,7 @@ Best of both worlds, we can combine Cloudflare with OOPSpam and Honeypot to incr
 
 __OOPSpam__: Process your submissions with OOPSpam on your server. This is your last line of defense against bots and manual spammers.
 
-__Cloudflare__: We recommend using DNS level protection with Cloudflare. You get the same benefit as Turnstile without the website performance and accessibility issues.
+__Cloudflare__: We recommend using DNS level protection with Cloudflare. You get the same benefit as Turnstile without the website performance and accessibility issues. More about Turnstile check out: [What No One Tells You About Cloudflare Turnstile](https://www.oopspam.com/blog/cloudflare-turnstile).
 
 __Honeypot__: This is easy to implement and free.
 
