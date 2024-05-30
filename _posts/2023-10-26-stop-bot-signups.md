@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "How to minimize damage from fake sign-ups: practical measures"
+title:  "4 Practical Measures to Combat Fake Sign-Ups"
 author: "Onar A."
 image: /assets/posts/spam-signups/meta.png
-tags: [signup]
+tags: [signup, spam]
 
 
-description: "Discover effective methods to integrate bot protection into your sign-up forms, ensuring accurate analytics and minimizing chargebacks."
+description: "Learn practical measures to minimize damage from fake sign-ups. Safeguard your business with effective strategies and ensure genuine user engagement"
 # modified: 
 ---
 <center>
@@ -43,7 +43,7 @@ If you are using a CDN for your website, check if they have a bot protection fea
 
 Honeypot is the oldest trick in the book with 0 impact on your website performance, accessibility and privacy. It is considered client-side protection. It involves creating a hidden field in a form and hoping that bots won't notice it and fill it in automatically. The hidden honeypot field will not be visible to humans, but bots will consider it a valid field. Bots scan web pages and fill in all fields, including the hidden field in your form. You can then reject any submission that contains an entry in a hidden field. We previously talked more about [How the honeypot technique prevents bots](https://www.oopspam.com/blog/ways-to-stop-spam#honeypot-filter-spam-with-a-hidden-field) from spamming your forms. Although it's less effective now, it still works to some extent.
 
-### Captcha
+### CAPTCHA
 
 If you are not using Cloudflare or another CDN that comes with bot protection. You can use Cloudflare's [Turnstile](https://www.cloudflare.com/products/turnstile/) on your sign-up forms. Another option is to add reCaptcha or hCaptcha to your forms.
 
@@ -85,8 +85,8 @@ Here is a simple table comparing these tools.
     </tr>
     <tr>
       <td>Slow website</td>
-      <td>[Worse](https://www.oopspam.com/blog/recaptcha-performance-analyses)</td>
-      <td>[Bad](https://www.oopspam.com/blog/hcaptcha-performance-analyses)</td>
+      <td><a href="https://www.oopspam.com/blog/recaptcha-performance-analyses">Worse</a></td>
+      <td><a href="https://www.oopspam.com/blog/hcaptcha-performance-analyses">Bad</a></td>
       <td>Better</td>
     </tr>
     <tr>

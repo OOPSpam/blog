@@ -36,7 +36,7 @@ v3 came after many people complained about accessibility and usability issues wi
 
 A lot of people are happy with reCaptcha. It is effective against simple bots, but advanced bots can [bypass reCaptcha](https://github.com/xHossein/PyPasser). There are also "captcha farms" where people get paid to solve reCaptcha. It will also [slow down your website](https://www.oopspam.com/blog/recaptcha-performance-analyses) as it loads extra JS files into your website.
 
-![Ultimate Member form reCaptcha](/blog/assets/posts/umembers/recaptcha.png "Ultimate Member form reCaptcha")
+![Ultimate Member form reCaptcha](/blog/assets/posts/umember/recaptcha.png "Ultimate Member form reCaptcha")
 
 If you are looking for a free and quick workaround, reCaptcha is your solution.
 
