@@ -310,7 +310,7 @@ One major concern is that the form is not fully navigable using the `Tab` key. I
 
 That said, unlike others, Ninja Forms has better error handling with green, red icons in additional text based error both under each field and bottom of the form.
 
-![Ninja Forms example](/blog/assets/posts/best-wp-form/ninja-form.png "Ninja Forms example")
+![Ninja Forms example](/blog/assets/posts/best-wp-form/ninja-forms.png "Ninja Forms example")
 
 ## Performance impact of Ninja Forms
 
