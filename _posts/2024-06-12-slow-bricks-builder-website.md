@@ -23,7 +23,7 @@ In this article, however, we will focus on what you can do to improve your Brick
 
 Unless you are building a website with a native page builder like WordPress's Gutenberg, anything you add to your website, such as Bricks Builder, will put additional strain on your server. Adding more plugins, builders, and themes means more weight on your server, which can lead to slower performance. The good news is that Bricks Builder is a theme, not a plugin, unlike other page builders, and is optimized for speed. It produces clean semantic HTML, uses lazy loading, has no JQuery dependencies, and more. So it should be faster out of the box.
 
-![Slow Bricks Website page speed](/blog/assets/posts/slow-Bricks/pagespeed.webp "Slow Bricks Website page speed")
+![Slow Bricks Website page speed](/blog/assets/posts/slow-bricks/pagespeed.webp "Slow Bricks Website page speed")
 
 Before we dive into optimizing Bricks' theme, it's important to take a step back and consider the broader factors that can affect your website's speed:
 
@@ -60,7 +60,7 @@ Some popular caching plugin options include:
 - **WP Fastest Cache** (free) - A lightweight and easy-to-use caching plugin for WordPress.
 - **Perfmatters** (paid) - A premium caching plugin that works great with Bricks.
 
-![WP Fastest Cache stats](/blog/assets/posts/slow-Bricks/caching-plugin.jpg "WP Fastest Cache stats")
+![WP Fastest Cache stats](/blog/assets/posts/slow-bricks/caching-plugin.jpg "WP Fastest Cache stats")
 
 Some hosting providers, like Siteground, also offer their own caching plugins that may integrate better with your hosting environment. It's worth trying these before using a third-party caching plugin, as they may provide better optimization for your specific hosting setup.
 
