@@ -2,7 +2,7 @@
 layout: post
 title:  "Troubleshooting WPForms Not Sending Email Notifications"
 author: "Onar A."
-image: /assets/posts/wp-forms/meta.png
+image: /assets/posts/wpforms-email-notification/meta.png
 tags: [wordpress, wpforms]
 
 description: "Learn how to fix WPForms not sending email notifications. Discover step-by-step solutions using SMTP plugins, email delivery services, and spam protection."
@@ -31,9 +31,9 @@ To solve this, start using an SMTP plugin with a third-party email delivery serv
 
 I'll keep this section brief. To resolve the issue of WPForms not sending email notifications, you need to get these 3 things right:
 
-1. Use an email delivery service (e.g., Postmark)
-2. Implement an SMTP plugin (e.g., WP Mail SMTP)
-3. Set up spam protection (e.g., OOPSpam)
+1. Use an email delivery service (e.g., [Postmark](https://postmarkapp.com/))
+2. Implement an SMTP plugin (e.g., [WP Mail SMTP](https://wordpress.org/plugins/wp-mail-smtp/))
+3. Set up spam protection (e.g., [OOPSpam](https://www.oopspam.com/wordpress))
 
 When combined, these solutions will ensure you receive an email notification in your inbox for each legitimate (non-spam) form submission.
 
@@ -62,15 +62,15 @@ Setting up WP Mail SMTP with Postmark is straightforward. WP Mail SMTP provides 
 
 1. Install [WP Mail SMTP](https://wordpress.org/plugins/wp-mail-smtp/) and click "Get Started" to begin configuring the plugin.
 
-![WP Mail SMTP get started](/blog/assets/posts/wpforms-email-notification/wpmail-get-started.png "WP Mail SMTP get started")
+    ![WP Mail SMTP get started](/blog/assets/posts/wpforms-email-notification/wpmail-get-started.png "WP Mail SMTP get started")
 
 2. Select Postmark as your email delivery service in the next step. You can choose a different service depending on your budget and needs. We recommend Postmark based on our positive experience, but connecting any email service follows a similar process.
 
-![WP Mail SMTP Postmark](/blog/assets/posts/wpforms-email-notification/wpmail-postmark.png "WP Mail SMTP Postmark")
+    ![WP Mail SMTP Postmark](/blog/assets/posts/wpforms-email-notification/wpmail-postmark.png "WP Mail SMTP Postmark")
 
-Paste your *Server API Token* from your Postmark account into the corresponding field in the next step.
+3. Paste your *Server API Token* from your Postmark account into the corresponding field in the next step.
 
-![WP Mail SMTP Postmark Config](/blog/assets/posts/wpforms-email-notification/wpmail-config.png "WP Mail SMTP Postmark Config")
+    ![WP Mail SMTP Postmark Config](/blog/assets/posts/wpforms-email-notification/wpmail-config.png "WP Mail SMTP Postmark Config")
 
 That's all there is to it. The final step will send a test email to your address. Be sure to also test by submitting a form to ensure everything is working correctly.
 
@@ -82,7 +82,7 @@ Now that you have a form with proper email notifications set up, it's crucial to
 - Spam can lead to a higher bounce rate and more spam complaints for your Postmark account, potentially resulting in account suspension.
 - Your domain's reputation can be damaged, making it difficult for your emails to reach recipients' inboxes, regardless of the email delivery service you use.
 
-While many form builders come with built-in spam protection such as reCAPTCHA, hCAPTCHA, Turnstile, we will use OOPSpam Spam Protection for WordPress to view all form submission logs, including those that were filtered out as spam. The plugin captures these logs immediately after a visitor submits a form, before any emails are sent. This provides you with a comprehensive record of all submissions, helping you understand which ones didn't trigger an email notification and why.
+While [WPForms comes with built-in spam protection](https://www.oopspam.com/blog/spam-protection-for-wpforms) such as reCAPTCHA, hCAPTCHA, Turnstile, we will use [OOPSpam Spam Protection for WordPress](https://wordpress.org/plugins/oopspam-anti-spam/) to view all form submission logs, including those that were filtered out as spam. The plugin captures these logs immediately after a visitor submits a form, before any emails are sent. This provides you with a comprehensive record of all submissions, helping you understand which ones didn't trigger an email notification and why.
 
 ![OOPSpam WordPress Plugin Logs](/blog/assets/posts/wpforms-email-notification/form-entries.png "OOPSpam WordPress Plugin Logs")
 
@@ -96,7 +96,7 @@ Here are a few steps to activate spam protection for WPForms:
 
 1. [Subscribe to get an API key](https://app.oopspam.com/Identity/Account/Register) then copy-paste the API key to the plugin's appropriate field under __Settings->OOPSpam Anti-Spam__ on your WordPress Admin Dashboard.
 
-> ℹ️ Make sure to select OOPSpam Dashboard on the setting page
+    > ℹ️ Make sure to select OOPSpam Dashboard on the setting page
 
 2. If you have WPForms installed then a special section will appear on the OOPSpam Anti-Spam plugin's settings page.
 
