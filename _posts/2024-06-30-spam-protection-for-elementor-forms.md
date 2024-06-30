@@ -28,7 +28,7 @@ To address spam issue in your forms, use the built-in honeypot, reCaptcha, or a 
 
 ![Honeypot field in Elementor Forms](/blog/assets/posts/elementor-forms/honeypot.webp "Honeypot field in Elementor Forms")
 
-## reCaptcha
+## reCAPTCHA
 
 Elementor Forms also comes with a [captcha](https://www.oopspam.com/blog/ways-to-stop-spam#captcha-solve-an-interactive-problem) solution, namely Google's reCaptcha. Check out [step-by-step guide](https://elementor.com/help/recaptcha-elementor-integration/) by Elementor on how to setup reCaptcha v2 and v3 on your contact forms.
 
@@ -43,6 +43,10 @@ Many people are happy with reCaptcha. It is effective against simple bots, howev
 If you are looking for a free and quick workaround, reCaptcha is your solution.
 
 > 📌 Tip: Consider adding both reCaptcha and the honeypot field to your contact form.
+
+## hCAPTCHA
+
+If you're concerned about privacy, you may want to use hCAPTCHA instead of reCAPTCHA. Unfortunately, Elementor Forms doesn't have built-in hCAPTCHA support. There is [an active feature request](https://github.com/orgs/elementor/discussions/21148) to integrate it with Elementor. In the meantime, you can enable hCAPTCHA for your Elementor Forms using [the official hCAPTCHA plugin for WordPress](https://wordpress.org/plugins/hcaptcha-for-forms-and-more/).
 
 ## Cloudflare
 
