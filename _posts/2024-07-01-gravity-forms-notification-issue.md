@@ -44,7 +44,7 @@ To start using an SMTP plugin, you have several options:
 - [WP Mail SMTP](https://wordpress.org/plugins/wp-mail-smtp/)
 - [FluentSMTP](https://wordpress.org/plugins/fluent-smtp/)
 - [Easy WP SMTP](https://wordpress.org/plugins/easy-wp-smtp/)
-- [Gravity SMTP](https://www.gravityforms.com/gravity-smtp/) (available only for Gravity customers)
+- [Gravity SMTP](https://www.gravityforms.com/gravity-smtp/) (available for Gravity customers only)
 
 These popular solutions offer similar functionality and support top email delivery services. We'll use Postmark with WP Mail SMTP as an example, but the configuration is similar for other SMTP plugins and email delivery services. Here's the basic setup to start receiving emails from your forms:
 
@@ -58,7 +58,7 @@ For detailed instructions, check out [the official Postmark's step-by-step artic
 
 ## Setting up an SMTP plugin
 
-Recently, the company behind Gravity Forms introduced a new SMTP plugin called Gravity SMTP. There is an official guide on [how to use Gravity SMTP with Gravity Forms](https://www.gravityforms.com/blog/the-ultimate-gravity-smtp-guide/). In this post, I will use WP Mail SMTP instead of Gravity SMTP.
+Recently, the company behind Gravity Forms released a new SMTP plugin called Gravity SMTP. There is an official guide on [how to use Gravity SMTP with Gravity Forms](https://www.gravityforms.com/blog/the-ultimate-gravity-smtp-guide/). In this post, I will use WP Mail SMTP instead of Gravity SMTP.
 
 Setting up WP Mail SMTP with Postmark is straightforward. WP Mail SMTP provides a detailed article on [how to achieve this step-by-step](https://wpmailsmtp.com/docs/how-to-set-up-the-postmark-mailer-in-wp-mail-smtp/). Here's a quick guide to configure it:
 
