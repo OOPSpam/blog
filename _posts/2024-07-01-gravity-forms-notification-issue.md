@@ -9,7 +9,7 @@ description: "Learn how to fix Gravity Forms not sending email notifications. Di
 # modified: 
 ---
 <center>
-<img loading="lazy"  alt="" src="/blog/assets/posts/gravityforms-email-notification/meta.png">
+<img loading="lazy"  alt="" src="/blog/assets/posts/gravityforms-email-notification/header.png">
 </center>
 <br/>
 
