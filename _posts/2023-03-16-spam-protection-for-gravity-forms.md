@@ -128,7 +128,6 @@ In addition, the plugin allows you to set up a filter to accept submissions only
 
 ![OOPSpam WordPress Plugin country & language restrictions](https://www.oopspam.com/assets/country-language-filter.png "OOPSpam WordPress Plugin country & language restrictions")
 
-> ✨ Since then, we have also added the __Block messages from these countries__ feature.
 
 ![OOPSpam WordPress Plugin block countries](https://www.oopspam.com/blog/assets/wp-block-countries.png "OOPSpam WordPress Plugin block countries")
 
@@ -138,7 +137,7 @@ Here are a few steps to activate spam protection for Gravity Forms
 
 1. [Subscribe to get an API key](https://app.oopspam.com/Identity/Account/Register) then copy-paste the API key to the plugin's appropriate field under __Settings->OOPSpam Anti-Spam__ on your WordPress Admin Dashboard.
 
-> ℹ️ Make sure to select OOPSpam Dashboard on the setting page
+    > ℹ️ Make sure to select OOPSpam Dashboard on the setting page
 
 2. If you have Gravity Forms installed then a special section will appear on the OOPSpam Anti-Spam plugin's settings page.
 
