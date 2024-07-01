@@ -115,4 +115,4 @@ Here are a few steps to activate spam protection for Gravity Forms:
 
 ## Final thoughts
 
-This is a common issue many form builder plugin users face. In this article, we went through how to set up a SMTP plugin and enable spam protection with logging functionality for WPForms.
+This is a common issue many form builder plugin users face. In this article, we went through how to set up a SMTP plugin and enable spam protection with logging functionality for Gravity Forms.
