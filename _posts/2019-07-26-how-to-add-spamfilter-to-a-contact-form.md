@@ -22,7 +22,7 @@ seo:
 ## Why should you add a spam filter to your contact form?
 
 If you have a contact form then you already know the amount of spam one can get daily. Usually, bots scan websites looking for a contact form or a comment section on a website to fill and submit. As a result, the website gets so much spam from a different source with a different context. These spam bots are not only fill contact forms and comment sections but also save your website in their database for future use.
-<center><blockquote class="twitter-tweet"><p lang="en" dir="ltr">Fun fact! There is a company with a database containing 25M websites. They fill up contact forms, solve the captcha for you and send 1.5M messages for $49. This is exactly what 
+<center><blockquote class="twitter-tweet"><p lang="en" dir="ltr">Fun fact! There is a company with a database containing 25M websites. They fill up contact forms, solve the captcha for you and send 3.5M messages for $49. This is exactly what 
 
 <a href="https://twitter.com/oopspamapi?ref_src=twsrc%5Etfw">@oopspamapi</a> fights against.</p>&mdash; 🐾 Onar (@OnarAlili) <a href="https://twitter.com/OnarAlili/status/1147141090023284736?ref_src=twsrc%5Etfw">July 5, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> </center>
 

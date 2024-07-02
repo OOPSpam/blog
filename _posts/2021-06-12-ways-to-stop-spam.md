@@ -21,7 +21,7 @@ Feeling overwhelmed by the amount of spam you are getting on your website? You'r
 
 This article doesn't list every spam detection strategy under the sun.
 
-Instead, it lists some of the tactics we use at [OOPSpam](https://www.oopspam.com) and many more proven to work ones. These are methods that stopped over 1.5M spam with 99.8% accuracy.
+Instead, it lists some of the tactics we use at [OOPSpam](https://www.oopspam.com) and many more proven to work ones. These are methods that stopped over 3.5M spam with 99.8% accuracy.
 
 Let's get to it
 
