@@ -89,9 +89,9 @@ More about Turnstile check out: [What No One Tells You About Cloudflare Turnstil
 
 ## OOPSpam WordPress plugin
 
-[Our WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/) is another way to stop spam in WS Form and WordPress comments. The plugin works with OOPSpam API that protects over 1.5M websites daily. While other spam filtering methods listed above are free, OOPSpam is a premium service and comes with 40 spam checks/month to test and see the difference.
+[Our WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/) is another way to stop spam in WS Form and WordPress comments. The plugin works with [OOPSpam](https://www.oopspam.com/) API that protects over 1.5M websites daily. While other spam filtering methods listed above are free, OOPSpam is a premium service and comes with 40 spam checks/month to test and see the difference.
 
-Likely, you have already tried the above options, and they didn't work for you. For you, it could be [a slow website from reCaptcha](https://www.oopspam.com/blog/recaptcha-performance-analyses), hCaptcha, Turnstile, or overwhelming spam you are still getting despite implementing the above alternatives. What makes OOPSpam different from other solutions is that it doesn't slow your website and is effective against human spammers and bots. There is no challenge to solve. No performance penalty as everything happens in your server instead of client-side. The OOPSpam API uses machine learning models, content analyses, IP & email reputation, and other rule-based checks to score every contact form submission. A combination of all these analyses returns a single spam score which is how it accurately stops both manual spam and bots.
+Likely, you have already tried the above options, and they didn't work for you. For you, it could be [a slow website from reCaptcha](https://www.oopspam.com/blog/recaptcha-performance-analyses), [hCaptcha](https://www.oopspam.com/blog/hcaptcha-performance-analyses), Turnstile, or overwhelming spam you are still getting despite implementing the above alternatives. What makes OOPSpam different from other solutions is that it doesn't slow your website and is effective against human spammers and bots. There is no challenge to solve. No performance penalty as everything happens in your server instead of client-side. The OOPSpam API uses machine learning models, content analyses, IP & email reputation, and other rule-based checks to score every contact form submission. A combination of all these analyses returns a single spam score which is how it accurately stops both manual spam and bots.
 
 On the plugin's settings page, you could also adjust how sensitive you want your spam filter to be. Even keeping (recommend) the default __Sensitivity level__ setting will help you cut down spam to zero.
 
@@ -109,7 +109,7 @@ Here are a few steps to activate spam protection for WS Form
 
 1. [Subscribe to get an API key](https://app.oopspam.com/Identity/Account/Register) then copy-paste the API key to the plugin's appropriate field under __Settings->OOPSpam Anti-Spam__ on your WordPress Admin Dashboard.
 
-> ℹ️ Make sure to select OOPSpam Dashboard on the setting page
+    > ℹ️ Make sure to select OOPSpam Dashboard on the setting page
 
 2. If you have WS Form installed then a special section will appear on the OOPSpam Anti-Spam plugin's settings page.
 
@@ -121,9 +121,12 @@ Here are a few steps to activate spam protection for WS Form
 
 5. We are done with setting up the OOPSpam plugin. 🎉
 
-
 Now your form is ready to receive submissions. Each submission will be checked by OOPSpam for spam.
 
+<center>
+<img loading="lazy"  alt="OOPSpam detected spam on WS Form" src="/blog/assets/posts/ws-form/oopspam-message.png">
+</center>
+<br/>
 
 ## Final thoughts
 
