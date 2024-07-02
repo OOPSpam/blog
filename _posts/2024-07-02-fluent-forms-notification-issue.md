@@ -2,14 +2,14 @@
 layout: post
 title:  "Troubleshooting Fluent Forms Not Sending Email Notifications"
 author: "Onar A."
-image: /assets/posts/gravityforms-email-notification/meta.png
+image: /assets/posts/fluentforms-email-notification/meta.png
 tags: [wordpress, contact_form, fluent]
 
 description: "Learn how to fix Fluent Forms not sending email notifications. Discover step-by-step solutions using SMTP plugins, email delivery services, and spam protection."
 # modified: 
 ---
 <center>
-<img loading="lazy"  alt="" src="/blog/assets/posts/gravityforms-email-notification/header.png">
+<img loading="lazy"  alt="" src="/blog/assets/posts/fluentforms-email-notification/header.png">
 </center>
 <br/>
 
@@ -32,7 +32,7 @@ To solve this, start using an SMTP plugin with a third-party email delivery serv
 I'll keep this section brief. To resolve the issue of Fluent Forms not sending email notifications, you need to get these 3 things right:
 
 1. Use an email delivery service (e.g., [Postmark](https://postmarkapp.com/))
-2. Implement an SMTP plugin (e.g., [WP Mail SMTP](https://wordpress.org/plugins/wp-mail-smtp/), [Gravity SMTP](https://www.gravityforms.com/gravity-smtp/))
+2. Implement an SMTP plugin (e.g., [WP Mail SMTP](https://wordpress.org/plugins/wp-mail-smtp/))
 3. Set up spam protection (e.g., [OOPSpam](https://www.oopspam.com/wordpress))
 
 When combined, these solutions will ensure you receive an email notification in your inbox for each legitimate (non-spam) form submission.
@@ -82,7 +82,7 @@ Now that you have a form with proper email notifications set up, it's crucial to
 - Spam can lead to a higher bounce rate and more spam complaints for your Postmark account, potentially resulting in account suspension.
 - Your domain's reputation can be damaged, making it difficult for your emails to reach recipients' inboxes, regardless of the email delivery service you use.
 
-While [Fluent Forms comes with built-in spam protection](https://www.oopspam.com/blog/spam-protection-for-gravity-forms) such as reCAPTCHA, hCAPTCHA, Turnstile, we will use [OOPSpam Spam Protection for WordPress](https://wordpress.org/plugins/oopspam-anti-spam/) to view all form submission logs, including those that were filtered out as spam. The plugin captures these logs immediately after a visitor submits a form, before any emails are sent. This provides you with a comprehensive record of all submissions, helping you understand which ones didn't trigger an email notification and why.
+While [Fluent Forms comes with built-in spam protection](https://www.oopspam.com/blog/spam-protection-for-fluent-forms) such as reCAPTCHA, hCAPTCHA, Turnstile, we will use [OOPSpam Spam Protection for WordPress](https://wordpress.org/plugins/oopspam-anti-spam/) to view all form submission logs, including those that were filtered out as spam. The plugin captures these logs immediately after a visitor submits a form, before any emails are sent. This provides you with a comprehensive record of all submissions, helping you understand which ones didn't trigger an email notification and why.
 
 ![OOPSpam WordPress Plugin Logs](/blog/assets/posts/wpforms-email-notification/form-entries.png "OOPSpam WordPress Plugin Logs")
 
@@ -98,16 +98,16 @@ Here are a few steps to activate spam protection for Fluent Forms:
 
     > ℹ️ Make sure to select OOPSpam Dashboard on the setting page
 
-2. If you have Gravity Forms installed then a special section will appear on the OOPSpam Anti-Spam plugin's settings page.
+2. If you have Fluent Forms installed then a special section will appear on the OOPSpam Anti-Spam plugin's settings page.
 
-    ![OOPSpam Anti-Spam WordPress Plugin Settings](/blog/assets/posts/gravity/oopspam-gravity-setting.png "OOPSpam Anti-Spam WordPress Plugin Settings")
+    ![OOPSpam Anti-Spam WordPress Plugin Settings](/blog/assets/posts/fluent-forms/Fluent-Forms-Spam-Protection.png "OOPSpam Anti-Spam WordPress Plugin Settings")
 
-3. On this page, you need to activate the spam filtering for Gravity Forms by checking the **Activate Spam Protection** checkbox. You don't have to do anything on your form. Once you activate spam protection on the OOPSpam plugin settings, you are good to go.
+3. On this page, you need to activate the spam filtering for Fluent Forms by checking the **Activate Spam Protection** checkbox. You don't have to do anything on your form. Once you activate spam protection on the OOPSpam plugin settings, you are good to go.
 
 4. Don't forget to enter a short message to display when a spam form entry is submitted. Your message will appear at the bottom of the message field.
 
 <center>
-<img loading="lazy"   alt="OOPSpam detected spam on Gravity Forms" src="/blog/assets/posts/gravity/gravity-spam-detected.png">
+<img loading="lazy"  width="800" alt="OOPSpam detected spam on Fluent Forms" src="/blog/assets/posts/fluent-forms/AFluentForm.png">
 </center>
 <br/>
 
