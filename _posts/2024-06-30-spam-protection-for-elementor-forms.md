@@ -107,7 +107,7 @@ Here are a few steps to activate spam protection for Elementor Forms:
 4. Don't forget to enter a short message to display when a spam form entry is submitted. Your message will appear at the bottom of the message field.
 
 <center>
-<img loading="lazy"  width="350" alt="OOPSpam detected spam on Elementor Forms" src="/blog/assets/posts/elementor-forms/ef-spam-detected.png">
+<img loading="lazy"  alt="OOPSpam detected spam on Elementor Forms" src="/blog/assets/posts/elementor-forms/ef-spam-detected.png">
 </center>
 <br/>
 
