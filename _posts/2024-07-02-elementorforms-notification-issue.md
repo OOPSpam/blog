@@ -113,4 +113,4 @@ Here are a few steps to activate spam protection for Elementor Forms:
 
 ## Final thoughts
 
-This is a common issue many form builder plugin users face. In this article, we went through how to set up a SMTP plugin and enable spam protection with logging functionality for WS Form.
+This is a common issue many form builder plugin users face. In this article, we went through how to set up a SMTP plugin and enable spam protection with logging functionality for Elementor Forms.
