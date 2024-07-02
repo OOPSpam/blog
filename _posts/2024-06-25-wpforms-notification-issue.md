@@ -15,7 +15,7 @@ description: "Learn how to fix WPForms not sending email notifications. Discover
 
 ## Why you're not getting emails?
 
-You're not alone if you're NOT receiving email notifications from your WPForms on your website. The plugin uses the built-in *wp_mail* function to send your email notifications. Unfortunately, many hosting providers don't configure this properly, leading to emails being marked as spam or not delivered at all.
+You're not alone if you're NOT receiving email notifications from your [WPForms](https://wpforms.com/) on your website. The plugin uses the built-in *wp_mail* function to send your email notifications. Unfortunately, many hosting providers don't configure this properly, leading to emails being marked as spam or not delivered at all.
 To solve this, start using an SMTP plugin with a third-party email delivery service. An SMTP plugin connects your WordPress site to a dedicated email service, significantly increasing the chances that your emails will reach their intended recipients. Here are some improvements you'll see after switching to an SMTP plugin:
 
 - Improved Deliverability: Your emails are actually will be delivered to people's inbox
