@@ -11,7 +11,7 @@ description: "Learn how to add spam protection to Fluent Forms with these 4 diff
 ---
 <center>
 <a href="https://wordpress.org/plugins/oopspam-anti-spam/">
-<img loading="lazy"  width="600" alt="OOPSpam Anti-Spam WordPress Plugin supports Fluent Forms" src="/blog/assets/posts/fluent-forms/FluentForms.png">
+<img loading="lazy"  width="600" alt="OOPSpam Anti-Spam WordPress Plugin supports Fluent Forms" src="fluentforms-email-notification/header.png">
 </a>
 </center>
 <br/>
@@ -20,7 +20,7 @@ description: "Learn how to add spam protection to Fluent Forms with these 4 diff
 
 ## Intro
 
-Recently, we added Fluent Forms support to OOPSpam WordPress plugin after one of our customers requested it on [the WordPress support forum](https://wordpress.org/support/topic/please-add-more-plugin-support/). Compare to other contact form plugins, Fluent Forms is lightweight with as many features. It comes with a free version and paid [Fluent Forms Pro Add On Pack](https://wpmanageninja.com/downloads/fluentform-pro-add-on/). The free version has some limitations, such as no File upload, Payment integration, and many other complex fields. The good news is that there's no limitation on spam prevention techniques. All the options listed in this post are available for the free version.
+Recently, we added Fluent Forms support to OOPSpam WordPress plugin after one of our customers requested it on [the WordPress support forum](https://wordpress.org/support/topic/please-add-more-plugin-support/). Compare to other contact form plugins, Fluent Forms is lightweight with many features. It comes with a free version and paid [Fluent Forms Pro Add On Pack](https://wpmanageninja.com/downloads/fluentform-pro-add-on/). The free version has some limitations, such as no File upload, Payment integration, and many other complex fields. The good news is that there's no limitation on spam prevention techniques. All the options listed in this post are available for the free version too.
 
 ## Honeypot
 
