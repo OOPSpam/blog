@@ -13,7 +13,7 @@ description: "Block Users by Country, Language, Email Domain, Keyword, and IP in
 </center>
 <br/>
 
-All form builders, including WS Form, offer some level of spam protection. WS Form provides [built-in spam protection](https://www.oopspam.com/blog/spam-protection-for-wsform). Unfortunately, these measures aren't always enough to stop sophisticated bots and manual spam, as spammers have [developed ways to bypass traditional protections](https://www.oopspam.com/blog/bypassing-captcha). Other tools and strategies may be needed to effectively combat form spam.
+All form builders, including [WS Form](https://wsform.com/), offer some level of spam protection. WS Form provides [built-in spam protection](https://www.oopspam.com/blog/spam-protection-for-wsform). Unfortunately, these measures aren't always enough to stop sophisticated bots and manual spam, as spammers have [developed ways to bypass traditional protections](https://www.oopspam.com/blog/bypassing-captcha). Other tools and strategies may be needed to effectively combat form spam.
 
 When you're receiving spam and need to take quick action to stop it, you have several options depending on the type of spam:
 
