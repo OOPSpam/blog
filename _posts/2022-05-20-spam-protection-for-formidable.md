@@ -62,25 +62,25 @@ Formidable Forms did a great job by incorporating already available comment mode
 
 ## reCaptcha
 
-Up to this point, we saw technics that don't require third-party solutions. reCaptcha is a popular captcha solution that many websites use. Formidable Forms has built-in integration with reCaptcha. Unfortunately, unlike other similar contact form builders, Formidable Forms doesn't have hCaptcha integration.
+Up to this point, we saw technics that don't require third-party solutions. reCAPTCHA is a popular CAPTCHA solution that many websites use. Formidable Forms has built-in integration with reCaptcha. Unfortunately, unlike other similar contact form builders, Formidable Forms doesn't have hCaptcha integration.
 
-Formidable Forms supports both reCaptcha v2 and v3 (Invisible reCaptcha). reCaptcha is available both for free and paid versions. Enabling reCaptcha is pretty straightforward through the plugin's settings. It involves creating Google Account then grabbing `Site Key`, and `Secret Key` and pasting them to appropriate fields under Global Settings -> reCaptcha in Formidable Forms. They provide a step-by-step tutorial on [how to set up reCaptcha in Formidable Forms](https://formidableforms.com/knowledgebase/recaptcha/).
+Formidable Forms supports both reCAPTCHA v2 and v3 (Invisible reCaptcha). reCAPTCHA is available both for free and paid versions. Enabling reCAPTCHA is pretty straightforward through the plugin's settings. It involves creating Google Account then grabbing `Site Key`, and `Secret Key` and pasting them to appropriate fields under Global Settings -> reCAPTCHA in Formidable Forms. They provide a step-by-step tutorial on [how to set up reCAPTCHA in Formidable Forms](https://formidableforms.com/knowledgebase/recaptcha/).
 
-### Should I use reCaptcha v2 or v3?
+### Should I use reCAPTCHA v2 or v3?
 
 v3 came after many people complained about accessibility and usability issues with v2. v2 asks visitors to solve a challenge before submitting a form. To address this issue, Google removed the "challenge" part of reCaptcha. As a result, with v3, users don't solve any challenges. Instead, it tracks the user's behavior on your website and scores the user from 0 (bot) to 1 (human). It is up to the website owner to determine the threshold. In Formidable Forms, you don't have control over this threshold.
 
-Many people are happy with reCaptcha. It is effective against simple bots, however, advanced bots can [bypass reCaptcha](https://github.com/xHossein/PyPasser). There are also "captcha farms" where people get paid to solve reCaptcha. It will also [slow down your website](https://www.oopspam.com/blog/recaptcha-performance-analyses) as it loads extra JS files into your website.
+Many people are happy with reCaptcha. It is effective against simple bots, however, advanced bots can [bypass reCaptcha](https://www.oopspam.com/blog/bypassing-captcha). There are also "captcha farms" where people get paid to solve reCaptcha. It will also [slow down your website](https://www.oopspam.com/blog/recaptcha-performance-analyses) as it loads extra JS files into your website.
 
 ![Formidable Forms reCaptcha](/blog/assets/posts/formidable-forms/recaptcha.png "Formidable Forms reCaptcha")
 
-If you are looking for a free and quick workaround, reCaptcha is your solution.
+If you are looking for a free and quick workaround, reCAPTCHA is your solution.
 
 ## OOPSpam WordPress plugin
 
 [Our WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/) is another way to stop spam in Formidable Forms and WordPress comments. The plugin works with OOPSpam API that protects over 3.5M websites daily. While other spam filtering methods listed above are free, OOPSpam is a premium service and comes with 40 spam checks/month to test and see the difference.
 
-It's likely you have already tried the above options, and they didn't work for you. For you, it could be a slow website from reCaptcha or overwhelming spam you are still getting despite implementing the above alternatives. What makes OOPSpam different from other solutions is that it doesn't slow your website and is effective against human spammers and bots. There is no challenge to solve. No performance penalty as everything happens in your server instead of client-side. The OOPSpam API uses machine learning models, content analyses, IP reputation, and other rule-based checks to score every contact form submission. A combination of all these analyses returns a single spam score that is how it accurately stops both manual spam and bots.
+It's likely you have already tried the above options, and they didn't work for you. For you, it could be a slow website from reCAPTCHA or overwhelming spam you are still getting despite implementing the above alternatives. What makes OOPSpam different from other solutions is that it doesn't slow your website and is effective against human spammers and bots. There is no challenge to solve. No performance penalty as everything happens in your server instead of client-side. The OOPSpam API uses machine learning models, content analyses, IP reputation, and other rule-based checks to score every contact form submission. A combination of all these analyses returns a single spam score that is how it accurately stops both manual spam and bots.
 
 On the plugin's settings page, you could also adjust how sensitive you want your spam filter to be. Even keeping (recommend) default __Sensitivity level__ setting will help you cut down spam to zero.
 
@@ -115,7 +115,7 @@ Here are a few steps to activate spam protection for Formidable Forms:
 
 ## Final thoughts
 
-All websites eventually get hit by spammers. As a website grows and gets more traffic it attracts more serious spammers with advanced bots. The captcha solutions will protect your website to a certain degree but they are not enough for targeted spam attacks, manual spam, and sophisticated bots. I hope this article helps you find a solution to your spam problem.
+All websites eventually get hit by spammers. As a website grows and gets more traffic it attracts more serious spammers with advanced bots. The CAPTCHA solutions will protect your website to a certain degree but they are not enough for targeted spam attacks, manual spam, and sophisticated bots. I hope this article helps you find a solution to your spam problem.
 
 That is all! Go on and create your forms.
 

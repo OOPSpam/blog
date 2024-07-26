@@ -29,27 +29,27 @@ To enable the honeypot field, edit your form and switch to __Behavior__ settings
 
 ![Forminator Anti-spam honeypot](/blog/assets/posts/forminator/honeypot.png "Forminator Anti-spam honeypot")
 
-## reCaptcha and hCaptcha
+## reCAPTCHA and hCaptcha
 
-Forminator also supports both [reCaptcha and hCaptcha](https://wpmudev.com/docs/wpmu-dev-plugins/forminator/#captcha-field). For those who have never heard of these options, both reCaptcha and hCaptcha are spam protection solutions. reCaptcha, by Google, verifies users with challenges. It has visible and invisible modes but raises privacy concerns. hCaptcha is a privacy-friendly alternative. It supports both challenge and invisible modes.
+Forminator also supports both [reCaptcha and hCaptcha](https://wpmudev.com/docs/wpmu-dev-plugins/forminator/#captcha-field). For those who have never heard of these options, both reCAPTCHA and hCaptcha are spam protection solutions. reCaptcha, by Google, verifies users with challenges. It has visible and invisible modes but raises privacy concerns. hCaptcha is a privacy-friendly alternative. It supports both challenge and invisible modes.
 
-It is available as a field in your forms. Edit your forms and click on __Insert Fields__ and choose __Captcha__. On the presented screen, you will be able to select reCaptcha or hCaptcha. Here, you can also select what type of reCaptcha you want on your website.
+It is available as a field in your forms. Edit your forms and click on __Insert Fields__ and choose __Captcha__. On the presented screen, you will be able to select reCAPTCHA or hCaptcha. Here, you can also select what type of reCAPTCHA you want on your website.
 
 ![Forminator Captcha Field](/blog/assets/posts/forminator/captcha-Field.png "Forminator Captcha Field")
 
-Before start using either of the captcha options, you need to get Site Key and Secret Key for it. You can enter your keys under __Forminator -> Settings -> CAPTCHA__.
+Before start using either of the CAPTCHA options, you need to get Site Key and Secret Key for it. You can enter your keys under __Forminator -> Settings -> CAPTCHA__.
 
 ![Forminator Captcha Settings](/blog/assets/posts/forminator/captcha-setup.png "Forminator Captcha Settings")
 
-Here is how to get reCaptcha keys:
+Here is how to get reCAPTCHA keys:
 
-1. Go to [the reCaptcha website](https://www.google.com/recaptcha/) and click on the "v3 Admin Console" button located on the top right corner of the page.
+1. Go to [the reCAPTCHA website](https://www.google.com/recaptcha/) and click on the "v3 Admin Console" button located on the top right corner of the page.
 2. Sign in to your Google account if you haven't already done so.
 3. On the Admin Console page, click on the "Add" button to register a new site.
-4. Fill in the required fields, such as your website domain name and reCaptcha type (v2 or v3).
+4. Fill in the required fields, such as your website domain name and reCAPTCHA type (v2 or v3).
 5. After you've filled in the required fields, click on the "Submit" button to register your site.
     ![reCaptcha adding website](/blog/assets/posts/gravity/recaptcha-form.png "reCaptcha adding website")
-6. You'll be taken to a page with your site key and secret key. These are the keys you'll need to integrate reCaptcha into your website.
+6. You'll be taken to a page with your site key and secret key. These are the keys you'll need to integrate reCAPTCHA into your website.
     ![reCaptcha generates Site keys](/blog/assets/posts/gravity/recaptcha-keys.jpg "reCaptcha generates Site keys")
 
 To obtain hCaptcha Site Key and Secret Key, follow these step-by-step instructions:
@@ -68,28 +68,28 @@ By following these steps, you should be able to obtain your hCaptcha Site Key an
 > 📌  Make sure to add the CAPTCHA field to your Forminator form.
 
 
-### Should I set up reCaptcha v2 or v3?
+### Should I set up reCAPTCHA v2 or v3?
 
 Forminator supports both v2 and v3 versions. First, let's quickly see how are they different.
 
-- reCaptcha v2: A visitor solves provided captcha
-- reCaptcha v2: Invisible: Hidden by default. A captcha appears if a visitor is detected as malicious
-- reCaptcha v3: Invisible all the time
+- reCAPTCHA v2: A visitor solves provided captcha
+- reCAPTCHA v2: Invisible: Hidden by default. A CAPTCHA appears if a visitor is detected as malicious
+- reCAPTCHA v3: Invisible all the time
 
 v3 came after many people complained about accessibility and usability issues with v2. v2 asks visitors to solve a challenge before submitting a form. To address this issue, Google removed the "challenge" part of reCaptcha. As a result, with v3, users don't solve any challenge. Instead, it tracks the user's behavior on your website and scores the user from 0 (bot) to 1 (human). It is up to the website owner to determine the threshold. 
 
-Many people are happy with reCaptcha. It is effective against simple bots, however, advanced bots can [bypass reCaptcha](https://github.com/xHossein/PyPasser). There are also "captcha farms" where people get paid to solve reCaptcha. It may also slow down your website as it loads extra js files into your website.
+Many people are happy with reCaptcha. It is effective against simple bots, however, advanced bots can [bypass reCaptcha](https://www.oopspam.com/blog/bypassing-captcha). There are also "captcha farms" where people get paid to solve reCaptcha. It may also [slow down your website](https://www.oopspam.com/blog/recaptcha-performance-analyses) as it loads extra js files into your website.
 
-If you're looking for a free and easy solution, reCaptcha may be the answer.
+If you're looking for a free and easy solution, reCAPTCHA may be the answer.
 
-> 📌 Tip: Consider adding both reCaptcha and the honeypot field to your contact form. Remember HoneyPot is NOT enabled by default.
+> 📌 Tip: Consider adding both reCAPTCHA and the honeypot field to your contact form. Remember HoneyPot is NOT enabled by default.
 
 
 ## OOPSpam WordPress plugin
 
 [Our WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/) is another way to stop spam on your Forminator and WordPress comments. The plugin works with OOPSpam API that protects over 3.5M websites daily. While the other alternatives above are free, OOPSPam API is a paid service. But it does come with free 40/month spam checks for you to test and see the difference.
 
-It's likely you have already tried the above options, and they didn't work for you. It could be [a slow website from reCaptcha or hCaptcha](https://www.oopspam.com/blog/recaptcha-performance-analyses) or overwhelming spam you are still getting despite implementing the above alternatives. What makes OOPSpam different from other solutions is that it doesn't slow your website and is effective against human spammers and bots. There is no challenge to solve. No performance penalty as everything happens in your server instead of client-side. The OOPSpam API uses machine learning models, content analyses, IP & email reputation, and other rule-based checks to score every contact form submission. A combination of all these analyses returns a single spam score that is how it accurately stops both manual spam and bots.
+It's likely you have already tried the above options, and they didn't work for you. It could be [a slow website from reCAPTCHA or hCaptcha](https://www.oopspam.com/blog/recaptcha-performance-analyses) or overwhelming spam you are still getting despite implementing the above alternatives. What makes OOPSpam different from other solutions is that it doesn't slow your website and is effective against human spammers and bots. There is no challenge to solve. No performance penalty as everything happens in your server instead of client-side. The OOPSpam API uses machine learning models, content analyses, IP & email reputation, and other rule-based checks to score every contact form submission. A combination of all these analyses returns a single spam score that is how it accurately stops both manual spam and bots.
 
 On the plugin's settings page, you could also adjust how sensitive you want your spam filter to be. Even keeping default __Sensitivity level__ setting will help you cut down spam to zero.
 

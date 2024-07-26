@@ -16,7 +16,7 @@ description: "Learn how to add spam protection to Breakdance Forms with these 3 
 
 [Breakdance](https://breakdance.com/) is a new and popular site builder for WordPress. Like other page builders, it comes with a form builder. [Breakdance Form](https://breakdance.com/features/form-builder/) is included in the free version, but there are some limitations in the free version, like no third party actions can be used. So you are left with the ``Email`` and ``Store Submission`` actions. To use other built-in and third-party actions, you need a Pro version.
 
-In this article we will focus on the spam filtering options for Breakdance Forms. It comes with two built-in choices: reCaptcha and Honeypot. However, you can also use other third-party anti-spam plugins like ours, [OOPSpam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/).
+In this article we will focus on the spam filtering options for Breakdance Forms. It comes with two built-in choices: reCAPTCHA and Honeypot. However, you can also use other third-party anti-spam plugins like ours, [OOPSpam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/).
 
 {% include toc.md %}
 
@@ -31,40 +31,40 @@ To enable the honeypot field, edit your form and enable the __Advanced -> Add Ho
 
 ## reCaptcha
 
-Breakdance Form also supports reCaptcha v3. You have probably heard of it, but for those who have never heard of it, reCaptcha is a spam protection solution Google. It has visible and invisible modes, but many people have concerns about privacy, [slow website](https://www.oopspam.com/blog/recaptcha-performance-analyses) and possibly accessibility (in visible mode). For now, Breakdance Form only supports v3, which is the default invisible mode. With reCaptcha v3, users don't solve a challenge. Instead, it tracks the user's behavior on your site and scores the user from 0 (bot) to 1 (human).
+Breakdance Form also supports reCAPTCHA v3. You have probably heard of it, but for those who have never heard of it, reCAPTCHA is a spam protection solution Google. It has visible and invisible modes, but many people have concerns about privacy, [slow website](https://www.oopspam.com/blog/recaptcha-performance-analyses) and possibly accessibility (in visible mode). For now, Breakdance Form only supports v3, which is the default invisible mode. With reCAPTCHA v3, users don't solve a challenge. Instead, it tracks the user's behavior on your site and scores the user from 0 (bot) to 1 (human).
 
-However, reCaptcha is free and works well against simple automated spam bots. Especially if your site is new, enabling both Honeypot + reCaptcha can help.
+However, reCAPTCHA is free and works well against simple automated spam bots. Especially if your site is new, enabling both Honeypot + reCAPTCHA can help.
 
-There are two ways to enable reCaptcha for your Breakdance forms. 
-First one is through the form settings, which allows you to set up reCaptcha for each form individually. Edit your form, click the edit icon under __Advanced -> reCAPTCHA__ and check the __Enable reCAPTCHA__ option. reCaptcha requires you to have a Secret Key and Site Key from Google to work. On this screen you will see __Custom__ tab and here you add your keys.
+There are two ways to enable reCAPTCHA for your Breakdance forms. 
+First one is through the form settings, which allows you to set up reCAPTCHA for each form individually. Edit your form, click the edit icon under __Advanced -> reCAPTCHA__ and check the __Enable reCAPTCHA__ option. reCAPTCHA requires you to have a Secret Key and Site Key from Google to work. On this screen you will see __Custom__ tab and here you add your keys.
 
-Here is how to get reCaptcha keys:
+Here is how to get reCAPTCHA keys:
 
-1. Go to [the reCaptcha website](https://www.google.com/recaptcha/) and click on the "v3 Admin Console" button located on the top right corner of the page.
+1. Go to [the reCAPTCHA website](https://www.google.com/recaptcha/) and click on the "v3 Admin Console" button located on the top right corner of the page.
 2. Sign in to your Google account if you haven't already done so.
 3. On the Admin Console page, click on the "Add" button to register a new site.
-4. Fill in the required fields, such as your website domain name and reCaptcha type (v2 or v3).
+4. Fill in the required fields, such as your website domain name and reCAPTCHA type (v2 or v3).
 5. After you've filled in the required fields, click on the "Submit" button to register your site.
     ![reCaptcha adding website](/blog/assets/posts/gravity/recaptcha-form.png "reCaptcha adding website")
-6. You'll be taken to a page with your site key and secret key. These are the keys you'll need to integrate reCaptcha into your website.
+6. You'll be taken to a page with your site key and secret key. These are the keys you'll need to integrate reCAPTCHA into your website.
     ![reCaptcha generates Site keys](/blog/assets/posts/gravity/recaptcha-keys.jpg "reCaptcha generates Site keys")
 
-![Breakdance reCaptcha setting](/blog/assets/posts/breakdance/recaptcha.png "Breakdance reCaptcha setting")
+![Breakdance reCAPTCHA setting](/blog/assets/posts/breakdance/recaptcha.png "Breakdance reCAPTCHA setting")
 
-On the screenshot above, you can see that there is a __Default__ tab next to the Custom tab. If the default option is selected, your secret key and site key will automatically be taken from the __Breakdance -> Settings -> API Keys__ settings. This is the second way you can enter the keys here and enable reCaptcha globally for all your forms without entering the keys individually.
+On the screenshot above, you can see that there is a __Default__ tab next to the Custom tab. If the default option is selected, your secret key and site key will automatically be taken from the __Breakdance -> Settings -> API Keys__ settings. This is the second way you can enter the keys here and enable reCAPTCHA globally for all your forms without entering the keys individually.
 
-![Breakdance reCaptcha keys settings](/blog/assets/posts/breakdance/recaptcha-keys.png "Breakdance reCaptcha keys settings")
+![Breakdance reCAPTCHA keys settings](/blog/assets/posts/breakdance/recaptcha-keys.png "Breakdance reCAPTCHA keys settings")
 
-> 📌 Tip: Make sure to enable reCaptcha on each of your breakdance forms.
+> 📌 Tip: Make sure to enable reCAPTCHA on each of your breakdance forms.
 
-> 📌 Tip: Consider adding both reCaptcha and the HoneyPot field to your contact form. Remember that HoneyPot is NOT enabled by default.
+> 📌 Tip: Consider adding both reCAPTCHA and the HoneyPot field to your contact form. Remember that HoneyPot is NOT enabled by default.
 
 
 ## OOPSpam WordPress plugin
 
 [Our WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/) is another way to stop spam on your Breakdance Forms and WordPress comments. The plugin works with OOPSpam API that protects over 3.5M websites daily. While the other alternatives above are free, OOPSPam API is a paid service. But it does come with free 40/month spam checks for you to test and see the difference.
 
-It's likely that you've already tried the above options and they didn't work for you. It could be [a slow website from reCaptcha](https://www.oopspam.com/blog/recaptcha-performance-analyses) or overwhelming spam that you are still getting despite implementing the above alternatives. What makes OOPSpam different from other solutions is that it doesn't slow down your website and is effective against human spammers and bots. There is no challenge to solve. No performance penalty because everything happens on your server instead of the client side. The OOPSpam API uses machine learning models, content analysis, IP & email reputation and other rules-based checks to score each contact form submission. A combination of all these analysis results in a single spam score that accurately stops both manual spam and bots.
+It's likely that you've already tried the above options and they didn't work for you. It could be [a slow website from reCaptcha](https://www.oopspam.com/blog/recaptcha-performance-analyses) or overwhelming spam that you are still getting despite implementing the above alternatives. What makes OOPSpam different from other solutions is that it doesn't [slow down your website](https://www.oopspam.com/blog/recaptcha-performance-analyses) and is effective against human spammers and bots. There is no challenge to solve. No performance penalty because everything happens on your server instead of the client side. The OOPSpam API uses machine learning models, content analysis, IP & email reputation and other rules-based checks to score each contact form submission. A combination of all these analysis results in a single spam score that accurately stops both manual spam and bots.
 
 The plugin's settings page also allows you to adjust how sensitive your spam filter should be. Even leaving the default setting __Sensitivity Level__ will help you reduce spam to zero.
 
@@ -94,7 +94,7 @@ Here are a few steps to activate spam protection for Breakdance Forms:
 
 ## Final thoughts
 
-All websites eventually get hit by spammers. As a website grows and gets more traffic it attracts more serious spammers with advance bots. Both honeypot and reCaptcha will protect your website to a certain degree but they are not enough for targeted spam attacks, manual spam and sophisticated bots. I hope this article helps you find a solution for your spam problem.
+All websites eventually get hit by spammers. As a website grows and gets more traffic it attracts more serious spammers with advance bots. Both honeypot and reCAPTCHA will protect your website to a certain degree but they are not enough for targeted spam attacks, manual spam and sophisticated bots. I hope this article helps you find a solution for your spam problem.
 
 That is all! Go on and create your forms.
 

@@ -17,7 +17,7 @@ modified: 2023-08-08
 </center>
 <br/>
 
-I love no-code platforms. [Bubble.io](https://bubble.io) is perhaps one of the first and leading no-code solutions out there. It's amazing how fast people can build with these platforms. Our first no-code app was [Integromat app](https://www.integromat.com/en/integrations/oopspam-anti-spam) which made it easy to add a spam filter to Integromat automated workflows.
+I love no-code platforms. [Bubble.io](https://bubble.io) is perhaps one of the first and leading no-code solutions out there. It's amazing how fast people can build with these platforms. Our first no-code app was [Integromat app](https://www.integromat.com/en/integrations/oopspam-anti-spam) (now Make) which made it easy to add a spam filter to Integromat automated workflows.
 
 Today, I'm excited to announce our official [Bubble.io plugin](https://bubble.io/plugin/oopspam-spam-detection-1582908608700x936823858020745200). I say "official" because someone already developed [an unofficial OOPSpam plugin for Bubble](https://bubble.io/plugin/spam-detector-1554559198145x811832585896591400) with our API, however, it's not functional as it is not up to date. So we decided to take matters into our hands.
 

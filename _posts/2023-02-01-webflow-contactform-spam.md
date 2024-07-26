@@ -23,7 +23,7 @@ description: "Learn how to add spam protection to your Webflow contact forms."
 
 ## Intro
 
-[Webflow](https://webflow.com/) is a popular website builder that allows users to create websites through a drag-and-drop interface. While the platform provides a reCaptcha field to add spam protection to its contact forms, this may not always be effective. reCaptcha and other captcha solutions are becoming increasingly irrelevant due to the availability of services that can solve them for a low cost.
+[Webflow](https://webflow.com/) is a popular website builder that allows users to create websites through a drag-and-drop interface. While the platform provides a reCAPTCHA field to add spam protection to its contact forms, this may not always be effective. reCAPTCHA and other CAPTCHA solutions are becoming increasingly irrelevant due to the availability of services that can solve them for a low cost.
 
 To tackle this issue, this article presents an alternative solution to prevent spam submissions in Webflow contact forms. The approach involves using automation tools such as [Zapier](https://zapier.com/) or [Make](https://www.make.com) to capture form submissions, then filtering them through a spam filter before finally sending an email notification to the user.
 

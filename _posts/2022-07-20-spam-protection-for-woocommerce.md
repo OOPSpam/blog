@@ -62,9 +62,9 @@ These features are a great fit for the store that serves a certain area. In the 
 
 Using the honeypot method with the WooCommerce store is effective, especially when you just started getting spammed. It's better to use this with another method for maximum protection.
 
-## reCaptcha & hCaptcha
+## reCAPTCHA & hCaptcha
 
-Just like the honeypot, WooCommerce doesn't support reCaptcha. Surprisingly, WooCommerce doesn't offer these free spam protection measurements. However, you can add reCaptcha to your store through [WooCommerce extension store](https://woocommerce.com/products/). There are a couple of reCaptcha solutions available. [reCaptcha for WooCommerce](https://woocommerce.com/products/recaptcha-for-woocommerce/) seems to be the most popular extension. While reCaptcha itself is a free solution, the extension isn't. As of now, it's $29/year. The extension supports both reCaptcha versions 2 and 3.
+Just like the honeypot, WooCommerce doesn't support reCaptcha. Surprisingly, WooCommerce doesn't offer these free spam protection measurements. However, you can add reCAPTCHA to your store through [WooCommerce extension store](https://woocommerce.com/products/). There are a couple of reCAPTCHA solutions available. [reCaptcha for WooCommerce](https://woocommerce.com/products/recaptcha-for-woocommerce/) seems to be the most popular extension. While reCAPTCHA itself is a free solution, the extension isn't. As of now, it's $29/year. The extension supports both reCAPTCHA versions 2 and 3.
 
 ### Should I set up v2 or v3?
 
@@ -74,10 +74,10 @@ v3 came after many people complained about accessibility and usability issues wi
 
 ### hCaptcha
 
-If you are looking for a free and privacy-friendly alternative to reCaptcha then hCaptcha is your solution. There is a free [hCaptcha for WordPress](https://wordpress.org/plugins/hcaptcha-for-forms-and-more/) plugin that supports WooCommerce too.
+If you are looking for a free and privacy-friendly alternative to reCAPTCHA then hCaptcha is your solution. There is a free [hCaptcha for WordPress](https://wordpress.org/plugins/hcaptcha-for-forms-and-more/) plugin that supports WooCommerce too.
 
 
-Many people are happy with reCaptcha and hCaptcha. They are effective against simple bots, however, advanced bots can still [bypass captcha solutions](https://github.com/xHossein/PyPasser). There are also "captcha farms" (e.g 2Captcha) where people get paid to solve reCaptcha and hCaptcha as low as 0.25 cents. It may also slow down your website as it loads extra js files into your website.
+Many people are happy with reCAPTCHA and hCaptcha. They are effective against simple bots, however, advanced bots can still [bypass CAPTCHA solutions](https://www.oopspam.com/blog/bypassing-captcha). There are also "captcha farms" (e.g 2Captcha) where people get paid to solve reCAPTCHA and hCaptcha as low as 0.25 cents. It may also [slow down your website](https://www.oopspam.com/blog/recaptcha-performance-analyses) as it loads extra js files into your website.
 
 
 ## OOPSpam WordPress plugin
@@ -125,7 +125,7 @@ Here are a few steps to activate spam protection for the WooCommerce-based store
 
 ## Final thoughts
 
-All websites eventually get hit by spammers. As a store grows and gets more traffic it attracts more serious spammers with advanced bots. Both honeypot and captcha solutions will protect your website to a certain degree but they are not enough for targeted spam attacks, manual spam, and sophisticated bots. I hope this article helped you find a solution to your spam problem.
+All websites eventually get hit by spammers. As a store grows and gets more traffic it attracts more serious spammers with advanced bots. Both honeypot and CAPTCHA solutions will protect your website to a certain degree but they are not enough for targeted spam attacks, manual spam, and sophisticated bots. I hope this article helped you find a solution to your spam problem.
 
 That is all! Go on and create your forms.
 

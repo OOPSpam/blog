@@ -6,14 +6,11 @@ image: /assets/ways-to-stop-spam.png
 tags: [spam, contact_form]
 
 
-
 description: "Learn about 7 different technics for spam detection and prevention."
 # modified: 
 ---
 <center>
-<a href="https://oopspam.com">
 <img loading="lazy"  width="772" style="height: 200px;object-fit: cover;" alt="OOPSpam illustration" src="/blog/assets/ways-to-stop-spam.png">
-</a>
 </center>
 <br/>
 
@@ -89,16 +86,15 @@ Captcha techniques usually work two way:
 
 While the third option still in use, it is not sufficient anymore. Bots got better and can easily solve math problems and read obscure letters nowadays.
 
-![Different captcha examples](/blog/assets/posts/ways-to-stop-spam/captcha.png "Different captcha examples")
+![Different CAPTCHA examples](/blog/assets/posts/ways-to-stop-spam/captcha.png "Different CAPTCHA examples")
 
-The most widely used and still somehow reliable approach is to represent an interactive puzzle, game-like captcha. This is a combination of both the first and second captcha types. There is a good chance you have already seen these types of captchas. The idea behind this is that while you are busy solving a puzzle, the captcha collects certain information about your behavior like mouse movement on a website and browsing history. The bots don't like to wait for a few seconds. They have to move to the next website and act fast to submit spam as many websites as possible.
+The most widely used and still somehow reliable approach is to represent an interactive puzzle, game-like captcha. This is a combination of both the first and second CAPTCHA types. There is a good chance you have already seen these types of captchas. The idea behind this is that while you are busy solving a puzzle, the CAPTCHA collects certain information about your behavior like mouse movement on a website and browsing history. The bots don't like to wait for a few seconds. They have to move to the next website and act fast to submit spam as many websites as possible.
 
 Combined your website behavior and browsing history information with a couple of seconds waiting time results in the final decision about the user (spam or not).
 
-The most notable captcha solution is [reCaptcha](https://developers.google.com/recaptcha/) and [hCaptcha](https://www.hcaptcha.com/) (offers better privacy).
+The most notable CAPTCHA solution is [reCaptcha](https://developers.google.com/recaptcha/) and [hCaptcha](https://www.hcaptcha.com/) (offers better privacy).
 
->🎯 Captchas tend to have accessibility and privacy issues. As captchas load script (js files) on your front end, they may slow down your website.
-
+>🎯 Captchas tend to have accessibility, privacy and performance issues. As CAPTCHAs load script (JS files) on your front end, they may [slow down your website](https://www.oopspam.com/blog/recaptcha-performance-analyses).
 
 ## IP-based filtering: check for blocked spammer IPs
 
@@ -121,13 +117,19 @@ Both approaches work great but if you want to be open to every country then the 
 
 Another less known way to block spam is by languages. Similar to country restriction, by simply allowing submission in a certain language. If you expect comments on your website to be in English, letting comments only in English through could potentially eliminate unnecessary work.
 
+With OOPSpam API, we implemented three options:
+
+Allow messages only in selected languages
+Block messages from specific countries
+Allow messages only from selected countries
+
 ## Machine Learning to filter spam content
 
 This is a more advanced solution that can be hard to implemented and most importantly find a proper data set to train an ML algorithm.
 
 Filtering spam using ML is a rather well-documented process especially with Bayesian Filtering, however, if you want a good result (high accuracy) then you need to have a well-defined and clean data set which may be hard to find.
 
-That being said no matter how good the data set is, spammers also get better at customizing their messages. Especially with the recent development with OpenAI's [GPT-3](https://beta.openai.com/) shows that AI can generate genuine-looking, human-like, custom messages. This could make spam detection using Machine Learning algorithms harder.
+That being said no matter how good the data set is, spammers also get better at customizing their messages. Especially with the recent development with OpenAI's [GPT-5](https://beta.openai.com/) shows that AI can generate genuine-looking, human-like, custom messages. This could make spam detection using Machine Learning algorithms harder.
 
 ## Rule-based spam filtering
 
@@ -151,7 +153,7 @@ We are all seen URL shortening services that are used by spammers.
 
 Although not all URL shortening services are malicious. Some shortening services are for local use only, meaning they are not open to the public. For example, when you generate a short URL for your Dropbox image or Google Docs. So, be aware of this fact when you set a rule.
 
->🎯 A rule-based spam filtering is a powerful alternative to stop spam. It has been used for decades but, make sure you reconsider your rules once in a while to avoid flagging legitimate messages.
+>🎯 A rule-based spam filtering is a powerful alternative to stop spam. It has been used for decades, but make sure you reconsider your rules once in a while to avoid flagging legitimate messages.
 
 ## Final thoughts
 

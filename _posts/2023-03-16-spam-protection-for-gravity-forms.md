@@ -29,17 +29,17 @@ To enable the honeypot field, go to __Form Settings -> Form Options__ settings o
 
 ## reCaptcha
 
-Gravity Forms also supports reCaptcha. Unlike other major contact form builders, Gravity Forms doesn't have built-it reCaptcha v3. Instead, it has reCaptcha v2 support. If you would like to use reCaptcha v3, then you have to install Gravity Forms reCAPTCHA Add-On. The add-on is available with all plans.
+Gravity Forms also supports reCaptcha. Unlike other major contact form builders, Gravity Forms doesn't have built-it reCAPTCHA v3. Instead, it has reCAPTCHA v2 support. If you would like to use reCAPTCHA v3, then you have to install Gravity Forms reCAPTCHA Add-On. The add-on is available with all plans.
 
-To enable reCaptcha, visit __Settings -> reCAPTCHA__ (see screenshot below) and enter Site Key and Secret Key. Here is how to get reCaptcha keys:
+To enable reCaptcha, visit __Settings -> reCAPTCHA__ (see screenshot below) and enter Site Key and Secret Key. Here is how to get reCAPTCHA keys:
 
-1. Go to [the reCaptcha website](https://www.google.com/recaptcha/) and click on the "v3 Admin Console" button located on the top right corner of the page.
+1. Go to [the reCAPTCHA website](https://www.google.com/recaptcha/) and click on the "v3 Admin Console" button located on the top right corner of the page.
 2. Sign in to your Google account if you haven't already done so.
 3. On the Admin Console page, click on the "Add" button to register a new site.
-4. Fill in the required fields, such as your website domain name and reCaptcha type (v2 or v3).
+4. Fill in the required fields, such as your website domain name and reCAPTCHA type (v2 or v3).
 5. After you've filled in the required fields, click on the "Submit" button to register your site.
     ![reCaptcha adding website](/blog/assets/posts/gravity/recaptcha-form.png "reCaptcha adding website")
-6. You'll be taken to a page with your site key and secret key. These are the keys you'll need to integrate reCaptcha into your website.
+6. You'll be taken to a page with your site key and secret key. These are the keys you'll need to integrate reCAPTCHA into your website.
     ![reCaptcha generates Site keys](/blog/assets/posts/gravity/recaptcha-keys.jpg "reCaptcha generates Site keys")
 
 > 📌  Make sure to add CAPTCHA field to your form too.
@@ -50,22 +50,22 @@ Check out Gravity Forms' [How to](https://www.gravityforms.com/blog/add-recaptch
 
 Gravity Forms supports only v2 and v2 Invisible by default. First, let's quickly see how are they different.
 
-- reCaptcha v2 (built-in): A visitor solves provided captcha
-- reCaptcha v2 (built-in): Invisible: Hidden by default. A captcha appears if a visitor is detected as malicious
-- reCaptcha v3 (requires add-on): Invisible all the time
+- reCAPTCHA v2 (built-in): A visitor solves provided captcha
+- reCAPTCHA v2 (built-in): Invisible: Hidden by default. A CAPTCHA appears if a visitor is detected as malicious
+- reCAPTCHA v3 (requires add-on): Invisible all the time
 
 v3 came after many people complained about accessibility and usability issues with v2. v2 asks visitors to solve a challenge before submitting a form. To address this issue, Google removed the "challenge" part of reCaptcha. As a result, with v3, users don't solve any challenge. Instead, it tracks the user's behavior on your website and scores the user from 0 (bot) to 1 (human). It is up to the website owner to determine the threshold. 
 
-Many people are happy with reCaptcha. It is effective against simple bots, however, advanced bots can [bypass reCaptcha](https://github.com/xHossein/PyPasser). There are also "captcha farms" where people get paid to solve reCaptcha. It may also slow down your website as it loads extra js files into your website.
+Many people are happy with reCaptcha. It is effective against simple bots, however, advanced bots can [bypass reCaptcha](https://www.oopspam.com/blog/bypassing-captcha). There are also "captcha farms" where people get paid to solve reCaptcha. It may also [slow down your website](https://www.oopspam.com/blog/recaptcha-performance-analyses) as it loads extra js files into your website.
 
-If you're looking for a free and easy solution, reCaptcha may be the answer.
+If you're looking for a free and easy solution, reCAPTCHA may be the answer.
 
-> 📌 Tip: Consider adding both reCaptcha and the honeypot field to your contact form. Remember HoneyPot is NOT enabled by default.
+> 📌 Tip: Consider adding both reCAPTCHA and the honeypot field to your contact form. Remember HoneyPot is NOT enabled by default.
 
 
 ![Gravity Forms reCaptcha](/blog/assets/posts/gravity/reCaptcha.png "Gravity Forms reCaptcha")
 
-## Custom captcha using Conditional Logic
+## Custom CAPTCHA using Conditional Logic
 
 Another way to prevent spam in Gravity Forms is to ask your visitors a question. Just like the honeypot method, it is an old and inexpensive technic but still works in many cases. For this to work, you need to add a __Single Line Text__ to your form with your question as __Field Label__. Make sure this field is _required_ so that a visitor is forced to fill it. In this example, we will use the sample question from [the Gravity Forms docs](https://docs.gravityforms.com/spam/#h-submit-button-conditional-logic): **A panda is black and ____**.
 
@@ -91,7 +91,7 @@ As you may guess, here we are forcing the Submit form to be hidden by default an
 
 and here is a screen recording of how it works:
 
-![Gravity Forms uses Conditional Logic for captcha purposes](/blog/assets/posts/gravity/conditional-logic.gif "Gravity Forms uses Conditional Logic for captcha purposes")
+![Gravity Forms uses Conditional Logic for CAPTCHA purposes](/blog/assets/posts/gravity/conditional-logic.gif "Gravity Forms uses Conditional Logic for CAPTCHA purposes")
 
 While question-based verification can be an effective method to verify your visitor, there are some limitations:
 
@@ -104,9 +104,9 @@ While question-based verification can be an effective method to verify your visi
 
 [Cloudflare](https://www.cloudflare.com/) is a content delivery network. It operates between your website visitors and your hosting. They deliver your website faster and securely across the globe. They also provide a free way to protect your website from known spammers.
 
-Follow [Add site to Cloudflare](https://developers.cloudflare.com/fundamentals/get-started/setup/add-site/) article in their official docs to change your website's DNS address and put it behind Cloudflare. By simple adding your website to Cloudflare isn't enough. You need to [enable Bot Fight Mode](https://developers.cloudflare.com/bots/get-started/free/) to activate this protection. If the visitor's IP is suspicious then a captcha (namely Turnstile) will appear and ask the user to solve the challenge. Note that the visitor will not be able to solve the captcha if cookies and javascript are disabled in their browser. More about Turnstile check out: [What No One Tells You About Cloudflare Turnstile](https://www.oopspam.com/blog/cloudflare-turnstile).
+Follow [Add site to Cloudflare](https://developers.cloudflare.com/fundamentals/get-started/setup/add-site/) article in their official docs to change your website's DNS address and put it behind Cloudflare. By simple adding your website to Cloudflare isn't enough. You need to [enable Bot Fight Mode](https://developers.cloudflare.com/bots/get-started/free/) to activate this protection. If the visitor's IP is suspicious then a CAPTCHA (namely Turnstile) will appear and ask the user to solve the challenge. Note that the visitor will not be able to solve the CAPTCHA if cookies and javascript are disabled in their browser. More about Turnstile check out: [What No One Tells You About Cloudflare Turnstile](https://www.oopspam.com/blog/cloudflare-turnstile).
 
-Cloudflare is a good alternative to reCaptcha as it's much lighter than reCaptcha.
+Cloudflare is a good alternative to reCAPTCHA as it's much lighter than reCaptcha.
 
 ### Block access to website by country
 
@@ -154,7 +154,7 @@ Here are a few steps to activate spam protection for Gravity Forms
 
 ## Final thoughts
 
-All websites eventually get hit by spammers. As a website grows and gets more traffic it attracts more serious spammers with advance bots. Both honeypot and reCaptcha will protect your website to a certain degree but they are not enough for targeted spam attacks, manual spam and sophisticated bots. I hope this article helps you find a solution for your spam problem.
+All websites eventually get hit by spammers. As a website grows and gets more traffic it attracts more serious spammers with advance bots. Both honeypot and reCAPTCHA will protect your website to a certain degree but they are not enough for targeted spam attacks, manual spam and sophisticated bots. I hope this article helps you find a solution for your spam problem.
 
 That is all! Go on and create your forms.
 

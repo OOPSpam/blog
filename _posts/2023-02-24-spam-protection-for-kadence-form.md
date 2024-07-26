@@ -20,7 +20,7 @@ description: "Learn how to add spam protection to Kadence Forms with these 3 dif
 
 Both products are free to use but a Pro version is available for additional functionality. Kadence Blocks comes with [Form Block](https://www.kadencewp.com/help-center/docs/kadence-blocks/form-block/) for building contact forms, newsletter forms, login pages, and more. 
 
-In this post, I will focus on Kadence Form's spam protection capabilities. The good news is that Form Block already comes with built-in support for honeypot and reCaptcha for free. [Cloudflare's Turnstile](https://www.oopspam.com/blog/cloudflare-turnstile) is available as part of [Kadence CAPTCHA Plugin](https://www.kadencewp.com/product/kadence-google-recaptcha/) which is a premium plugin you need to purchase separately as part of their Full Bundle plan.
+In this post, I will focus on Kadence Form's spam protection capabilities. The good news is that Form Block already comes with built-in support for honeypot and reCAPTCHA for free. [Cloudflare's Turnstile](https://www.oopspam.com/blog/cloudflare-turnstile) is available as part of [Kadence CAPTCHA Plugin](https://www.kadencewp.com/product/kadence-google-recaptcha/) which is a premium plugin you need to purchase separately as part of their Full Bundle plan.
 
 ![Kadence spam protection options](/blog/assets/posts/kadence/kadence-spam-protection.png "Kadence spam protection options")
 
@@ -32,30 +32,30 @@ In this post, I will focus on Kadence Form's spam protection capabilities. The g
 
 ## reCaptcha
 
-Kadence Form Block also comes with a [captcha](https://www.oopspam.com/blog/ways-to-stop-spam#captcha-solve-an-interactive-problem) solution, namely Google's reCaptcha. Setting up the form with reCaptcha is pretty straightforward. Generate reCaptcha keys through Google Admin Console and enter them in your form settings. Here is how to get reCaptcha keys:
+Kadence Form Block also comes with a [captcha](https://www.oopspam.com/blog/ways-to-stop-spam#captcha-solve-an-interactive-problem) solution, namely Google's reCaptcha. Setting up the form with reCAPTCHA is pretty straightforward. Generate reCAPTCHA keys through Google Admin Console and enter them in your form settings. Here is how to get reCAPTCHA keys:
 
-1. Go to [the reCaptcha website](https://www.google.com/recaptcha/) and click on the "v3 Admin Console" button located on the top right corner of the page.
+1. Go to [the reCAPTCHA website](https://www.google.com/recaptcha/) and click on the "v3 Admin Console" button located on the top right corner of the page.
 2. Sign in to your Google account if you haven't already done so.
 3. On the Admin Console page, click on the "Add" button to register a new site.
-4. Fill in the required fields, such as your website domain name and reCaptcha type (v2 or v3).
+4. Fill in the required fields, such as your website domain name and reCAPTCHA type (v2 or v3).
 5. After you've filled in the required fields, click on the "Submit" button to register your site.
     ![reCaptcha adding website](/blog/assets/posts/kadence/recaptcha-form.png "reCaptcha adding website")
-6. You'll be taken to a page with your site key and secret key. These are the keys you'll need to integrate reCaptcha into your website.
+6. You'll be taken to a page with your site key and secret key. These are the keys you'll need to integrate reCAPTCHA into your website.
     ![reCaptcha generates Site keys](/blog/assets/posts/kadence/recaptcha-keys.jpg "reCaptcha generates Site keys")
 
 ### Should I set up v2 or v3?
 
 v3 came after many people complained about accessibility and usability issues with v2. v2 asks visitors to solve a challenge before submitting a form. To address this issue, Google removed the "challenge" part of reCaptcha. As a result, with v3, users don't solve any challenge. Instead, it tracks the user's behavior on your website and scores the user from 0 (bot) to 1 (human). It is up to the website owner to determine the threshold. In Kadence Forms, you don't have control over this threshold.
 
-Many people are happy with reCaptcha. It is effective against simple bots, however, advanced bots can [bypass reCaptcha](https://github.com/xHossein/PyPasser). There are also "captcha farms" where people get paid to solve reCaptcha. It may also slow down your website as it loads extra js files into your website.
+Many people are happy with reCaptcha. It is effective against simple bots, however, advanced bots can [bypass reCaptcha](https://www.oopspam.com/blog/bypassing-captcha). There are also "captcha farms" where people get paid to solve reCaptcha. It may also [slow down your website](https://www.oopspam.com/blog/recaptcha-performance-analyses) as it loads extra js files into your website.
 
-If you're looking for a free and easy solution, reCaptcha may be the answer.
+If you're looking for a free and easy solution, reCAPTCHA may be the answer.
 
-> 📌 Tip: Consider adding both reCaptcha and the honeypot field to your contact form. Remember HoneyPot is enabled by default under Basic Spam Check setting. You don't have to do anything.
+> 📌 Tip: Consider adding both reCAPTCHA and the honeypot field to your contact form. Remember HoneyPot is enabled by default under Basic Spam Check setting. You don't have to do anything.
 
 After generating your Site Keys, edit your form and go to the Google reCAPTCHA setting. This setting is available directly on the page where you inserted your form.
 
-![Kadence reCaptcha setting](/blog/assets/posts/kadence/kadence-reCaptcha.png "Kadence reCaptcha setting")
+![Kadence reCAPTCHA setting](/blog/assets/posts/kadence/kadence-reCaptcha.png "Kadence reCAPTCHA setting")
 
 Insert the Site and Secret key you obtained from Admin Console into these fields and click Save. That is all.
 
@@ -100,7 +100,7 @@ Here are a few steps to activate spam protection for Kadence Form:
 
 ## Final thoughts
 
-All websites eventually get hit by spammers. As a website grows and gets more traffic it attracts more serious spammers with advance bots. Both honeypot and reCaptcha will protect your website to a certain degree but they are not enough for targeted spam attacks, manual spam and sophisticated bots. I hope this article helps you find a solution for your spam problem.
+All websites eventually get hit by spammers. As a website grows and gets more traffic it attracts more serious spammers with advance bots. Both honeypot and reCAPTCHA will protect your website to a certain degree but they are not enough for targeted spam attacks, manual spam and sophisticated bots. I hope this article helps you find a solution for your spam problem.
 
 That is all! Go on and create your forms.
 

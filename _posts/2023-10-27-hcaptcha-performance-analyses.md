@@ -95,7 +95,7 @@ From the table above, we can see that there is a 220.11% increase in page load s
 ![Web page performance with hCaptcha](/blog/assets/posts/hcaptcha/page-with-hCaptcha.png "Web page performance with hCaptcha")
 ![Website performance without hCaptcha](/blog/assets/posts/hcaptcha/page-without-hCaptcha.png "Website performance without hCaptcha")
 
-A single page website with a simple form loaded in 557 ms. This is much better than reCaptcha with 1.56 seconds load time.
+A single page website with a simple form loaded in 557 ms. This is much better than reCAPTCHA with 1.56 seconds load time.
 
 In any website, you want to keep the load time below three seconds, considering that [most people leave a page that takes more than 3 seconds to load](https://about.fb.com/news/2017/08/news-feed-fyi-showing-you-stories-that-link-to-faster-loading-webpages/).
 
@@ -103,4 +103,4 @@ In any website, you want to keep the load time below three seconds, considering 
 
 It's possible to improve website speed while using hCaptcha. You can achieve this by using caching, CDN, and delaying other unnecessary CSS and JavaScript files. Another improvement you can do is to make sure that hCaptcha scripts are loaded only where you use them. If you are using WordPress, make sure to use their [official plugin](https://wordpress.org/plugins/hcaptcha-for-forms-and-more/) because [since version 1.10.1](https://github.com/hCaptcha/hcaptcha-wordpress-plugin/issues/48) the plugin will only load scripts on hCaptcha enabled pages.
 
-If you want to completely eliminate concerns about page speed, try server-side spam filtering options like [OOPSpam API](https://www.oopspam.com/) or [OOPSpam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/). Unlike hCaptcha or any other captcha solution, the backend based spam filters work in your server and never interact with your users or load any resources on the client side. With OOPSpam, there are no cookies, no JavaScript and no challenges to slow down your website or visitors.
+If you want to completely eliminate concerns about page speed, try server-side spam filtering options like [OOPSpam API](https://www.oopspam.com/) or [OOPSpam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/). Unlike hCaptcha or any other CAPTCHA solution, the backend based spam filters work in your server and never interact with your users or load any resources on the client side. With OOPSpam, there are no cookies, no JavaScript and no challenges to slow down your website or visitors.

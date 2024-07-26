@@ -45,11 +45,11 @@ Honeypot is the oldest trick in the book with 0 impact on your website performan
 
 ### CAPTCHA
 
-If you are not using Cloudflare or another CDN that comes with bot protection. You can use Cloudflare's [Turnstile](https://www.cloudflare.com/products/turnstile/) on your sign-up forms. Another option is to add reCaptcha or hCaptcha to your forms.
+If you are not using Cloudflare or another CDN that comes with bot protection. You can use Cloudflare's [Turnstile](https://www.cloudflare.com/products/turnstile/) on your sign-up forms. Another option is to add reCAPTCHA or hCaptcha to your forms.
 
 Be aware of the complication with this approach, as all of them inject javascript into your website. [This will negatively impact your site's speed](https://www.oopspam.com/blog/recaptcha-performance-analyses) and may cause accessibility issues.
 
-Implementing Turnstile, hCaptcha or reCaptcha on your website involves similar steps:
+Implementing Turnstile, hCaptcha or reCAPTCHA on your website involves similar steps:
 
 1. Generate Site Key and Secret Key for your website
 2. Add javascript file to your website
@@ -63,7 +63,7 @@ Here is the detailed documentation for each of them:
 
 ![hCaptcha](/blog/assets/posts/spam-signups/hcaptcha.png "hCaptcha")
 
-### Which one to use: hCaptcha, reCaptcha or Turnstile?
+### Which one to use: hCaptcha, reCAPTCHA or Turnstile?
 
 Here is a simple table comparing these tools.
 
@@ -114,15 +114,15 @@ Here is a simple table comparing these tools.
 
 They are partially accessible because they all come with an invisible mode that you can use. However, if your visitors are detected as suspicious, they will likely be stuck with endless loop puzzles to solve.
 
-Anything you add to your site's HTML will negatively impact your site's performance, but Turnstile's JS file seems to have the least impact compared to reCaptcha and hCaptcha.
+Anything you add to your site's HTML will negatively impact your site's performance, but Turnstile's JS file seems to have the least impact compared to reCAPTCHA and hCaptcha.
 
 ![Turnstile](/blog/assets/posts/spam-signups/cloudflare_turnstile.webp "Turnstile")
 
 ### Do you get fake signups despite reCaptcha, hCaptcha, Turnstile?
 
-You are not alone. Captchas are effective against simple bots, but advanced bots can [bypass reCaptcha](https://github.com/ultrafunkamsterdam/undetected-chromedriver). There are also "captcha farms" (e.g. 2Captcha) where people are paid to solve reCaptcha at low cost.
+You are not alone. Captchas are effective against simple bots, but advanced bots can [bypass reCaptcha](https://github.com/ultrafunkamsterdam/undetected-chromedriver). There are also "captcha farms" (e.g. 2Captcha) where people are paid to solve reCAPTCHA at low cost.
 
-This is where we come in. Another way to protect your sign-up forms without using captcha solution is to use server-side solution [OOPSpam](https://www.oopspam.com/). To put it simply, your registration form will have no challenge, no javascript or cookies, so no accessibility issues, no slow website. 
+This is where we come in. Another way to protect your sign-up forms without using CAPTCHA solution is to use server-side solution [OOPSpam](https://www.oopspam.com/). To put it simply, your registration form will have no challenge, no javascript or cookies, so no accessibility issues, no slow website. 
 
 We already have [WordPress](https://wordpress.org/plugins/oopspam-anti-spam/), [Bubble](https://bubble.io/plugin/oopspam-spam-detection-1582908608700x936823858020745200), [Make](https://www.make.com/en/integrations/oopspam-anti-spam) and [Zapier](https://zapier.com/apps/oopspam/integrations) applications, so no need to implement. But if you are building a custom site, use the [OOPSpam API](https://www.oopspam.com/docs/#introduction) to reject or allow new users before confirming or sending a welcome email. For more implementation tips, see [Building a complete contact form with PHP & HTML](https://www.oopspam.com/blog/contact-form-with-PHP).
 
@@ -138,7 +138,7 @@ __Honeypot__: This is easy to implement and free.
 
 ## Final Notes
 
-All websites get hit by spammers eventually. As a site grows and gets more traffic, it attracts more serious spammers with advanced bots. Both honeypot and captcha will protect your site to a certain extent, but they are not enough against targeted spam sign-up attacks, manual spam and sophisticated bots. Using a couple of tools will harden your forms.
+All websites get hit by spammers eventually. As a site grows and gets more traffic, it attracts more serious spammers with advanced bots. Both honeypot and CAPTCHA will protect your site to a certain extent, but they are not enough against targeted spam sign-up attacks, manual spam and sophisticated bots. Using a couple of tools will harden your forms.
 
 I hope this article helps you find a solution to your bot signup problem.
 

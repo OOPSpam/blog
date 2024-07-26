@@ -38,7 +38,7 @@ but it also did a good job of catching a lot of them:
 In addition to Akismet, Netlify Forms also supports the [reCaptcha](https://docs.netlify.com/forms/spam-filters/#recaptcha-2-challenge) and [honeypot](https://docs.netlify.com/forms/spam-filters/#honeypot-field) fields. We previously talked about [how the honeypot technique prevents bots](https://www.oopspam.com/blog/ways-to-stop-spam#honeypot-filter-spam-with-a-hidden-field) from spamming your forms. Although it's less effective now, it still works to some extent.
 The hidden honeypot field will not be visible to humans, but bots will consider it a valid field. Bots scan web pages and fill in all fields, including the hidden field in your form. Netlify Forms will reject any submission that contains an entry in a hidden field.
 
-However, reCaptcha and other captcha solutions are becoming irrelevant due to the availability of low-cost services to solve them.
+However, reCAPTCHA and other CAPTCHA solutions are becoming irrelevant due to the availability of low-cost services to solve them.
 
 If you are still getting spam with the options available to you through Netlify, this article will look at an alternative solution to prevent spam submissions to Netlify contact forms. The approach is to use automation tools such as [Zapier](https://zapier.com/) or [Make](https://www.make.com) to capture form submissions, then filter them through a spam filter (using [OOPSpam](https://www.oopspam.com/)) before finally sending an email notification to yourself.
 

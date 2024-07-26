@@ -30,7 +30,7 @@ To address spam issue in your forms, use the built-in honeypot, reCaptcha, or a 
 
 ## reCAPTCHA
 
-Elementor Forms also comes with a [captcha](https://www.oopspam.com/blog/ways-to-stop-spam#captcha-solve-an-interactive-problem) solution, namely Google's reCaptcha. Check out [step-by-step guide](https://elementor.com/help/recaptcha-elementor-integration/) by Elementor on how to setup reCaptcha v2 and v3 on your contact forms.
+Elementor Forms also comes with a [captcha](https://www.oopspam.com/blog/ways-to-stop-spam#captcha-solve-an-interactive-problem) solution, namely Google's reCaptcha. Check out [step-by-step guide](https://elementor.com/help/recaptcha-elementor-integration/) by Elementor on how to setup reCAPTCHA v2 and v3 on your contact forms.
 
 ![reCaptcha in Elementor Forms](/blog/assets/posts/elementor-forms/recaptcha.png "reCaptcha in Elementor Forms")
 
@@ -38,11 +38,11 @@ Elementor Forms also comes with a [captcha](https://www.oopspam.com/blog/ways-to
 
 v3 came after many people complained about accessibility and usability issues with v2. v2 asks visitors to solve a challenge before submitting a form. To address this issue, Google removed the "challenge" part of reCaptcha. As a result, with v3, users don't solve any challenge. Instead, it tracks the user's behavior on your website and scores the user from 0 (bot) to 1 (human). It is up to the website owner to determine the threshold. In Elementor Forms you don't have control over this threshold.
 
-Many people are happy with reCaptcha. It is effective against simple bots, however, advanced bots can [bypass reCaptcha](https://github.com/xHossein/PyPasser). There are also "captcha farms" where people get paid to solve reCaptcha. It may also slow down your website as it loads extra js files into your website.
+Many people are happy with reCaptcha. It is effective against simple bots, however, advanced bots can [bypass reCaptcha](https://www.oopspam.com/blog/bypassing-captcha). There are also "captcha farms" where people get paid to solve reCaptcha. It may also [slow down your website](https://www.oopspam.com/blog/recaptcha-performance-analyses) as it loads extra js files into your website.
 
-If you are looking for a free and quick workaround, reCaptcha is your solution.
+If you are looking for a free and quick workaround, reCAPTCHA is your solution.
 
-> 📌 Tip: Consider adding both reCaptcha and the honeypot field to your contact form.
+> 📌 Tip: Consider adding both reCAPTCHA and the honeypot field to your contact form.
 
 ## hCAPTCHA
 
@@ -53,10 +53,10 @@ If you're concerned about privacy, you may want to use hCAPTCHA instead of reCAP
 [Cloudflare](https://www.cloudflare.com/) is a content delivery network. It operates between your website visitors and your hosting. They deliver your website faster and securely across the globe. They also provide a free way to protect your website from known spammers.
 
 Follow [Add site to Cloudflare](https://developers.cloudflare.com/fundamentals/get-started/setup/add-site/) article in their official docs to change your website's DNS address and put it behind Cloudflare. By simple adding your website to Cloudflare isn't enough. You need to [enable Bot Fight Mode](https://developers.cloudflare.com/bots/get-started/free/) to activate this protection.
-If the visitor's IP is suspicious then a captcha (namely Turnstile) will appear and ask the user to solve the challenge. Note that the visitor will not be able to solve the captcha if cookies and javascript are disabled in their browser. More about Turnstile check out: [What No One Tells You About Cloudflare Turnstile](https://www.oopspam.com/blog/cloudflare-turnstile).
+If the visitor's IP is suspicious then a CAPTCHA (namely Turnstile) will appear and ask the user to solve the challenge. Note that the visitor will not be able to solve the CAPTCHA if cookies and javascript are disabled in their browser. More about Turnstile check out: [What No One Tells You About Cloudflare Turnstile](https://www.oopspam.com/blog/cloudflare-turnstile).
 
 
-Cloudflare is a good alternative to reCaptcha as it's much lighter than reCaptcha.
+Cloudflare is a good alternative to reCAPTCHA as it's much lighter than reCaptcha.
 
 ### Block access to website by country
 
@@ -113,7 +113,7 @@ Here are a few steps to activate spam protection for Elementor Forms:
 
 ## Final thoughts
 
-All websites eventually get hit by spammers. As a website grows and gets more traffic it attracts more serious spammers with advance bots. Both honeypot and reCaptcha will protect your website to a certain degree but they are not enough for targeted spam attacks, manual spam and sophisticated bots. I hope this article helps you find a solution for your spam problem.
+All websites eventually get hit by spammers. As a website grows and gets more traffic it attracts more serious spammers with advance bots. Both honeypot and reCAPTCHA will protect your website to a certain degree but they are not enough for targeted spam attacks, manual spam and sophisticated bots. I hope this article helps you find a solution for your spam problem.
 
 That is all! Go on and create your forms.
 

@@ -16,40 +16,40 @@ description: "Learn how to add spam protection to Bricks Form Element with these
 
 [Bricks](https://bricksbuilder.io/) is a popular new website builder for WordPress. Like other page builders, it includes [a form element](https://academy.bricksbuilder.io/article/form-element/). Typically, page builders are in the form of plugins, but Bricks is a theme. Its performance and lightness are highly praised. It's important to note that Bricks Builder is a premium theme, which means there is no free version available.
 
-In this post, we will explore the spam filtering options for Bricks Form Element. The tool includes two integrated options out of the box: reCaptcha and hCaptcha (since version 1.9.2). But you can also use other third party anti-spam plugins like ours, [OOPSpam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/) and set up a honeypot field yourself.
+In this post, we will explore the spam filtering options for Bricks Form Element. The tool includes two integrated options out of the box: reCAPTCHA and hCaptcha (since version 1.9.2). But you can also use other third party anti-spam plugins like ours, [OOPSpam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/) and set up a honeypot field yourself.
 
 {% include toc.md %}
 
 ## reCaptcha
 
-Bricks Form supports reCaptcha v3, a spam protection solution developed by Google. Although reCaptcha has visible and invisible modes, some people are concerned about privacy and potential accessibility issues in visible mode, as well as its [impact on website speed](https://www.oopspam.com/blog/recaptcha-performance-analyses). At this point, Bricks Form only supports v3, which is invisible by default. doesn't require users to solve a challenge. Instead, it tracks the user's behavior on your site and scores the user from 0 (bot) to 1 (human). The default score threshold is set to 0.5, but can be adjusted using the ```bricks/form/recaptcha_score_threshold``` filter. Refer to the example in the official [Bricks documentation](https://academy.bricksbuilder.io/article/form-element/#form-validation#spam) for details. It's recommended to keep the default threshold, but increasing it to a more aggressive level like 0.8 can be effective if you get spammed.
+Bricks Form supports reCAPTCHA v3, a spam protection solution developed by Google. Although reCAPTCHA has visible and invisible modes, some people are concerned about privacy and potential accessibility issues in visible mode, as well as its [impact on website speed](https://www.oopspam.com/blog/recaptcha-performance-analyses). At this point, Bricks Form only supports v3, which is invisible by default. doesn't require users to solve a challenge. Instead, it tracks the user's behavior on your site and scores the user from 0 (bot) to 1 (human). The default score threshold is set to 0.5, but can be adjusted using the ```bricks/form/recaptcha_score_threshold``` filter. Refer to the example in the official [Bricks documentation](https://academy.bricksbuilder.io/article/form-element/#form-validation#spam) for details. It's recommended to keep the default threshold, but increasing it to a more aggressive level like 0.8 can be effective if you get spammed.
 
-reCaptcha is a free and effective method for dealing with simple automated spam bots. Enabling Honeypot + reCaptcha is especially beneficial for new websites.
+reCaptcha is a free and effective method for dealing with simple automated spam bots. Enabling Honeypot + reCAPTCHA is especially beneficial for new websites.
 
-To activate reCapthca on your Bricks forms, enter the reCaptcha Site Key and Site Secret Key under __Bricks > Settings > API Keys__.
+To activate reCapthca on your Bricks forms, enter the reCAPTCHA Site Key and Site Secret Key under __Bricks > Settings > API Keys__.
 
-Follow these steps to obtain the necessary reCaptcha keys:
+Follow these steps to obtain the necessary reCAPTCHA keys:
 
-1. Go to [the reCaptcha website](https://www.google.com/recaptcha/) and click on the "v3 Admin Console" button located on the top right corner of the page.
+1. Go to [the reCAPTCHA website](https://www.google.com/recaptcha/) and click on the "v3 Admin Console" button located on the top right corner of the page.
 2. Sign in to your Google account if you haven't already done so.
 3. On the Admin Console page, click on the "Add" button to register a new site.
-4. Fill in the required fields, such as your website domain name and reCaptcha type (v2 or v3).
+4. Fill in the required fields, such as your website domain name and reCAPTCHA type (v2 or v3).
 5. After you've filled in the required fields, click on the "Submit" button to register your site.
     ![reCaptcha adding website](/blog/assets/posts/gravity/recaptcha-form.png "reCaptcha adding website")
-6. You'll be taken to a page with your site key and secret key. These are the keys you'll need to integrate reCaptcha into your website.
+6. You'll be taken to a page with your site key and secret key. These are the keys you'll need to integrate reCAPTCHA into your website.
     ![reCaptcha generates Site keys](/blog/assets/posts/gravity/recaptcha-keys.jpg "reCaptcha generates Site keys")
 
-![Bricks builder reCaptcha setting](/blog/assets/posts/bricks/recaptcha.png "Bricks builder setting")
+![Bricks builder reCAPTCHA setting](/blog/assets/posts/bricks/recaptcha.png "Bricks builder setting")
 
-Once you have entered the necessary keys, edit your form on your page. Scroll to the bottom of the page, find the "Spam Protection" setting on the right sidebar, and enable reCaptcha to activate it.
+Once you have entered the necessary keys, edit your form on your page. Scroll to the bottom of the page, find the "Spam Protection" setting on the right sidebar, and enable reCAPTCHA to activate it.
 
 ![Bricks Form Element enabling reCaptcha](/blog/assets/posts/bricks/enable-recaptcha.png "Bricks Form Element enabling reCaptcha")
 
 ## hCaptcha
 
-[Bricks Forms also supports hCaptcha](https://academy.bricksbuilder.io/article/form-element/#form-validation#spam#hcaptcha) (added in version 1.9.2), which functions similarly to reCaptcha and suffers from the same limitations.
+[Bricks Forms also supports hCaptcha](https://academy.bricksbuilder.io/article/form-element/#form-validation#spam#hcaptcha) (added in version 1.9.2), which functions similarly to reCAPTCHA and suffers from the same limitations.
 
-hCaptcha integration can be either visible or hidden.  The most significant difference between reCaptcha and hCaptcha is privacy, as hCaptcha is considered a privacy-friendly alternative. Setting up hCaptcha follows a process similar to reCaptcha. Navigate to __Bricks > Settings > API Keys__ and input the hCaptcha Site Key and Secret Key.
+hCaptcha integration can be either visible or hidden.  The most significant difference between reCAPTCHA and hCaptcha is privacy, as hCaptcha is considered a privacy-friendly alternative. Setting up hCaptcha follows a process similar to reCaptcha. Navigate to __Bricks > Settings > API Keys__ and input the hCaptcha Site Key and Secret Key.
 
 and follow these step-by-step instructions to get keys:
 
@@ -62,7 +62,7 @@ and follow these step-by-step instructions to get keys:
 7. Get Site Key and Secret Key: After completing the registration process, hCaptcha will generate a unique Site Key and Secret Key for your website. 
 8. Copy the keys: Copy the generated Site Key and Secret Key and keep them in a secure location. 
 
-If you are receiving unwanted messages and have already attempted other solutions, it may be helpful to try hCaptcha. This option is both free and simple to setup.  However, in some cases, switching from reCaptcha to hCaptcha may not make a significant difference, as spammers can now navigate around captcha solutions.
+If you are receiving unwanted messages and have already attempted other solutions, it may be helpful to try hCaptcha. This option is both free and simple to setup.  However, in some cases, switching from reCAPTCHA to hCaptcha may not make a significant difference, as spammers can now navigate around CAPTCHA solutions.
 
 ## Honeypot
 
@@ -75,7 +75,7 @@ Securing your form with honeypot is a bit of work, but can be easily done by fol
 
 [Our WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/) is another way to stop spam on your Bricks Form and WordPress comments. The plugin works with OOPSpam API that protects over 3.5M websites daily. While the other alternatives above are free, OOPSPam API is a paid service. But it does come with free 40/month spam checks for you to test and see the difference.
 
-It's likely that you've already tried the above options and they didn't work for you. It could be [a slow website from reCaptcha](https://www.oopspam.com/blog/recaptcha-performance-analyses) or overwhelming spam that you are still getting despite implementing the above alternatives. What makes OOPSpam different from other solutions is that it doesn't slow down your website and is effective against human spammers and bots. There is no challenge to solve. No performance penalty because everything happens on your server instead of the client side. The OOPSpam API uses machine learning models, content analysis, IP & email reputation and other rules-based checks to score each contact form submission. A combination of all these analysis results in a single spam score that accurately stops both manual spam and bots.
+It's likely that you've already tried the above options and they didn't work for you. It could be [a slow website from reCaptcha](https://www.oopspam.com/blog/recaptcha-performance-analyses) or overwhelming spam that you are still getting despite implementing the above alternatives. What makes OOPSpam different from other solutions is that it doesn't [slow down your website](https://www.oopspam.com/blog/recaptcha-performance-analyses) and is effective against human spammers and bots. There is no challenge to solve. No performance penalty because everything happens on your server instead of the client side. The OOPSpam API uses machine learning models, content analysis, IP & email reputation and other rules-based checks to score each contact form submission. A combination of all these analysis results in a single spam score that accurately stops both manual spam and bots.
 
 The plugin's settings page also allows you to adjust how sensitive your spam filter should be. Even leaving the default setting __Sensitivity Level__ will help you reduce spam to zero.
 
@@ -108,7 +108,7 @@ Here are a few steps to activate spam protection for Bricks form element:
 
 ## Final thoughts
 
-All websites eventually get hit by spammers. As a website grows and gets more traffic it attracts more serious spammers with advance bots. Both hCaptcha or reCaptcha will protect your website to a certain degree but they are not enough for targeted spam attacks, manual spam and sophisticated bots. I hope this article helps you find a solution for your spam problem.
+All websites eventually get hit by spammers. As a website grows and gets more traffic it attracts more serious spammers with advance bots. Both hCaptcha or reCAPTCHA will protect your website to a certain degree but they are not enough for targeted spam attacks, manual spam and sophisticated bots. I hope this article helps you find a solution for your spam problem.
 
 That is all! Go on and create your forms.
 

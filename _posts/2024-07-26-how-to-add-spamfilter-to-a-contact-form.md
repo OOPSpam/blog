@@ -3,18 +3,16 @@ layout: post
 title:  "How to add a powerful spam filter to your contact form"
 author: "Onar A."
 image: /assets/howtoaddspamfilter.png
-tags: [WordPress, contact_form, java, honeypot]
+tags: [WordPress, contact_form, java, honeypot, spam, oopspam]
 
 
-description: "Learn how to add spam protection to any contact forms"
-seo:
- date_modified: 2022-03-31 09:00:00+0800
+description: "Learn how to easily add spam protection to any contact form with email, IP and country restrictions."
  
 ---
 <center><img loading="lazy"  width="512" alt="A contact form illustration" src="/blog/assets/howtoaddspamfilter.png"></center>
 <br/>
 
-> This is a blog post on how to integrate a spam filter with non-WordPress websites. If you are WordPress user check out [our WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/).
+> This is a blog post on [how to integrate a spam filter](https://www.oopspam.com/blog/how-to-filter-spam) with non-WordPress websites. If you are WordPress user check out [our WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/).
 
 > ✨ Are you building a contact form in PHP? Check out [How to build a complete contact form with PHP and HTML](https://www.oopspam.com/blog/contact-form-with-PHP) post.
 
@@ -23,19 +21,19 @@ seo:
 ## Why should you add a spam filter to your contact form?
 
 If you have a contact form then you already know the amount of spam one can get daily. Usually, bots scan websites looking for a contact form or a comment section on a website to fill and submit. As a result, the website gets so much spam from a different source with a different context. These spam bots are not only fill contact forms and comment sections but also save your website in their database for future use.
-<center><blockquote class="twitter-tweet"><p lang="en" dir="ltr">Fun fact! There is a company with a database containing 25M websites. They fill up contact forms, solve the captcha for you and send 3.5M messages for $49. This is exactly what 
+<center><blockquote class="twitter-tweet"><p lang="en" dir="ltr">Fun fact! There is a company with a database containing 25M websites. They fill up contact forms, solve the CAPTCHA for you and send 3.5M messages for $49. This is exactly what 
 
 <a href="https://twitter.com/oopspamapi?ref_src=twsrc%5Etfw">@oopspamapi</a> fights against.</p>&mdash; 🐾 Onar (@OnarAlili) <a href="https://twitter.com/OnarAlili/status/1147141090023284736?ref_src=twsrc%5Etfw">July 5, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> </center>
 
-Besides all this madness, bots are improving and overcoming spam prevention techniques. The honeypot technique is obsolete for this reason. Another example would be reCaptcha by Google, Google itself stated that reCAPTCHA v2 can be bypassed by their own AI tools. Later Google announced reCAPTCHA v3 which introduced an extra layer on top of the v2 by making it invisible. Google claims V3 is more powerful in terms of accuracy and user-friendliness. However, there are several major problems with it. 
+Besides all this madness, bots are improving and [overcoming spam prevention techniques](https://www.oopspam.com/blog/bypassing-captcha). The honeypot technique is obsolete for this reason. Another example would be reCAPTCHA by Google, Google itself stated that reCAPTCHA v2 can be bypassed by their own AI tools. Later Google announced reCAPTCHA v3 which introduced an extra layer on top of the v2 by making it invisible. Google claims V3 is more powerful in terms of accuracy and user-friendliness. However, there are several major problems with it. 
 
-- Spammers are not always bots, there are captcha solving services (captcha farms) like 2Captcha and many others that solves reCaptcha for as low as 0.20 cent per captcha.
+- Spammers are not always bots, there are CAPTCHA solving services (captcha farms) like 2Captcha and many others that solves reCAPTCHA for as low as 0.20 cent per captcha.
 - [Performance issues](/blog/recaptcha-performance-analyses) (loading extra JavaScript files)
 - Privacy issues (tracking user's behavior)
 
-Therefore, it makes sense not to rely on user behavior (reCAPTCHA) or on the chance that the bot is too dumb to figure which field is hidden (honeypot). 
+So, it makes sense not to rely on user behavior (reCAPTCHA) or on the chance that the bot is too dumb to figure which field is hidden (honeypot). 
 
-OOPSpam API is an alternative to above solutions. It built with privacy in mind. It is accurate and accessible as it stays in your backend and flags messages silently.
+[OOPSpam API](https://www.oopspam.com/) is an alternative to above solutions. It built with privacy in mind. It is accurate and accessible as it stays in your backend and flags messages silently.
 
 ## How to integrate a contact form with OOPSpam API
 
@@ -56,7 +54,7 @@ Let's assume we run a digital agency website in English and your target market i
 As you may already know, once the _submit_ button is clicked the ```form``` element collects the value of all fields within the form tag and post them to the path assigned in ```action```. It means you have to have a backend code to receive these values and handle them (e.g send email, spam check). This is where we have to write our spam filter API to check for spam.
 Besides contact form field values, we have to get the user's IP, this is important because it allows us to check IP against multiple blacklisted IPs via the spam filter.
 
-Handling contact form submissions in the backend is different in various languages, however, the concept is similar. Here is how it may look like for you:
+Handling contact form submissions in the server is different in various languages, however, the concept is similar. Here is how it may look like for you:
 
 1. A user fills and submits a contact form message
 2. The user gets Success message no matter what (spam or not)
@@ -69,7 +67,7 @@ Handling contact form submissions in the backend is different in various languag
 
 We are going to use [Node.js](https://nodejs.org/) with [Nodemailer](https://nodemailer.com/) module (to send emails) for our backend but you can use any programming language you feel comfortable with.
 
-> 🚧 Make sure you get user's IP in the server-side. Don't assign the API to a form field since a spammer (or bot) may alter IP address. 
+> 🚧 Make sure you get user's IP in the server-side. Don't assign the API to a form field since a spammer (or bot) may alter IP address.
 
 To get started quickly, I'm going to fork [one of the contact form example projects](https://github.com/germancutraro/Contact-Form-nodejs) from GitHub and add OOPSpam API integration to it.
 As mentioned above, we have to get a user's IP in the server-side. This is done differently in every language.
@@ -105,7 +103,7 @@ Once you have the user's IP,  you are ready to make an HTTP request to OOPSpam A
 unirest.post("https://api.oopspam.com/")
 .header("X-Api-Key", "YOUR_API_KEY")
 .header("Content-Type", "application/json")
-.send({"senderIP":"31.184.238.111","content":"Dear Agent, We are a manufacturing company which specializes in supplying Aluminum Rod with Zinc Alloy Rod to customers worldwide, based in Japan, Asia.We have been unable to follow up payments effectively for transactions with debtor customers in your country due to our distant locations, thus our reason for requesting for your services representation.", 
+.send({"senderIP":"31.184.238.111","content":"Dear Agent, We are a manufacturing company which specializes in supplying Aluminum Rod with Zinc Alloy Rod to customers worldwide, based in Japan, Asia.We have been unable to follow up payments effectively for transactions with debtor customers in your country due to our distant locations, thus our reason for requesting for your services representation.", "email": "spammer@example.com",
 "allowedCountries": ["us"], "allowedLanguages": [ "en"]})
 .end(function (result) {
   console.log(result.status, result.headers, result.body);
@@ -114,10 +112,13 @@ unirest.post("https://api.oopspam.com/")
 
 As you can see above sample request, the payload contains two parameters:
 
-- The sender IP (a user's IP)
+- The sender IP
 - The message (a contact form message)
+- The sender email
 - Allowed language (English)
 - Allowed country (US)
+
+There are other features you can enable, such as blocking temporary emails with ```blockTempEmail```, or blocking countries with ```blockedCountries``` parameters. You can read more about these other features in the [API documentation](https://www.oopspam.com/docs/#spam-detection).
 
 > 🚧 Make sure you change the value of ```X-Api-Key``` from ```YOUR_API_KEY``` to your API key.
 
@@ -127,7 +128,8 @@ In the case of a successful request, you will get a response similar to the foll
 {
 "Score":4
     "Details":{
-        "isIPBlocked":true
+        "isIPBlocked":true,
+        "isEmailBlocked":false
         "isContentSpam":"spam"
         "numberOfSpamWords":1
     }

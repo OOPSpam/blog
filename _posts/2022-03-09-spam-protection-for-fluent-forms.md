@@ -32,21 +32,21 @@ Do not wait for spam, enable honeypot protection when you build your forms as it
 
 ## reCaptcha
 
-Fluent Forms supports both reCaptcha v2 and v3 (Invisible reCaptcha). reCaptcha is available both for free and paid versions. Enabling reCaptcha is pretty straightforward through the plugin's settings. It involves creating Google Account then grabbing `Site Key`, `Secret Key` and pasting them to appropriate fields under Global Settings in Fluent Forms. Fluent Forms has a step-by-step tutorial on [how to set up reCaptcha in Fluent Forms](https://wpmanageninja.com/docs/fluent-form/miscellaneous/spam-protection-with-honeypot-and-google-recaptcha-in-wp-fluent-forms/#spam-protection-with-google-recaptcha).
+Fluent Forms supports both reCAPTCHA v2 and v3 (Invisible reCaptcha). reCAPTCHA is available both for free and paid versions. Enabling reCAPTCHA is pretty straightforward through the plugin's settings. It involves creating Google Account then grabbing `Site Key`, `Secret Key` and pasting them to appropriate fields under Global Settings in Fluent Forms. Fluent Forms has a step-by-step tutorial on [how to set up reCAPTCHA in Fluent Forms](https://wpmanageninja.com/docs/fluent-form/miscellaneous/spam-protection-with-honeypot-and-google-recaptcha-in-wp-fluent-forms/#spam-protection-with-google-recaptcha).
 
-### Should I use reCaptcha v2 or v3?
+### Should I use reCAPTCHA v2 or v3?
 
 v3 came after many people complained about accessibility and usability issues with v2. v2 asks visitors to solve a challenge before submitting a form. To address this issue, Google removed the "challenge" part of reCaptcha. As a result, with v3, users don't solve any challenges. Instead, it tracks the user's behavior on your website and scores the user from 0 (bot) to 1 (human). It is up to the website owner to determine the threshold. In Fluent Forms, you don't have control over this threshold.
 
-Many people are happy with reCaptcha. It is effective against simple bots, however, advanced bots can [bypass reCaptcha](https://github.com/xHossein/PyPasser). There are also "captcha farms" where people get paid to solve reCaptcha. It may also slow down your website as it loads extra js files into your website.
+Many people are happy with reCaptcha. It is effective against simple bots, however, advanced bots can [bypass reCaptcha](https://www.oopspam.com/blog/bypassing-captcha). There are also "captcha farms" where people get paid to solve reCaptcha. It may also [slow down your website](https://www.oopspam.com/blog/recaptcha-performance-analyses) as it loads extra js files into your website.
 
 ![Fluent Forms reCaptcha](/blog/assets/posts/fluent-forms/reCaptcha.png "Fluent Forms reCaptcha")
 
-If you are looking for a free and quick workaround, reCaptcha is your solution.
+If you are looking for a free and quick workaround, reCAPTCHA is your solution.
 
 ## hCaptcha
 
-Similar to reCaptcha, hCaptcha is supported in both versions of Fluent Forms. They work similarly and suffer from the same limitations. Unlike reCaptcha, hCaptcha doesn't have an invisible version, so your visitors have to solve the presented puzzle. The most notable difference between reCaptcha and hCaptcha is privacy. hCaptcha is considered a privacy-friendly alternative to reCaptcha. Setting up hCaptcha is also very similar to hCaptcha. To enable hCaptcha for Fluent Forms check out [the official documentation](https://wpmanageninja.com/docs/fluent-form/integrations-available-in-wp-fluent-form/how-to-integrate-hcaptcha-in-wp-fluent-forms/).
+Similar to reCaptcha, hCaptcha is supported in both versions of Fluent Forms. They work similarly and suffer from the same limitations. Unlike reCaptcha, hCaptcha doesn't have an invisible version, so your visitors have to solve the presented puzzle. The most notable difference between reCAPTCHA and hCaptcha is privacy. hCaptcha is considered a privacy-friendly alternative to reCaptcha. Setting up hCaptcha is also very similar to hCaptcha. To enable hCaptcha for Fluent Forms check out [the official documentation](https://wpmanageninja.com/docs/fluent-form/integrations-available-in-wp-fluent-form/how-to-integrate-hcaptcha-in-wp-fluent-forms/).
 
 ![Fluent Forms hCaptcha](/blog/assets/posts/fluent-forms/hCaptcha.png "Fluent Forms hCaptcha")
 
@@ -89,7 +89,7 @@ Here are a few steps to activate spam protection for Fluent Forms:
 
 ## Final thoughts
 
-All websites eventually get hit by spammers. As a website grows and gets more traffic it attracts more serious spammers with advanced bots. The captcha solutions will protect your website to a certain degree but they are not enough for targeted spam attacks, manual spam, and sophisticated bots. I hope this article helps you find a solution to your spam problem.
+All websites eventually get hit by spammers. As a website grows and gets more traffic it attracts more serious spammers with advanced bots. The CAPTCHA solutions will protect your website to a certain degree but they are not enough for targeted spam attacks, manual spam, and sophisticated bots. I hope this article helps you find a solution to your spam problem.
 
 That is all! Go on and create your forms.
 

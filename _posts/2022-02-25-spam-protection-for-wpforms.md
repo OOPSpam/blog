@@ -10,9 +10,7 @@ description: "Learn how to add spam protection to WPForms with these 5 different
 # modified: 
 ---
 <center>
-<a href="https://wordpress.org/plugins/oopspam-anti-spam/">
 <img loading="lazy"  width="600" alt="OOPSpam Anti-Spam WordPress Plugin supports WPForms" src="/blog/assets/posts/wp-forms/intro-wpforms.png">
-</a>
 </center>
 <br/>
 
@@ -25,9 +23,9 @@ Recently, we added WPForms support to OOPSpam WordPress plugin after one of our 
 WPForms comes with the following built-in anti-spam techniques:
 
 - Token-based spam protection (available in Lite)
-- reCaptcha (available in Lite)
+- reCAPTCHA (available in Lite)
 - hCaptcha (available in Lite)
-- Custom captcha (available only in Pro)
+- Custom CAPTCHA (available only in Pro)
 
 ## Token-based spam protection
 
@@ -37,37 +35,37 @@ Token-based spam prevention is effective against basic bots. Unfortunately, they
 
 ## reCaptcha
 
-WPForms supports both reCaptcha v2 and v3. You can use reCaptcha both in WPForms Lite and Pro version. Enabling reCaptcha is pretty straightforward through the plugin's settings. It involves creating Google Account then grabbing `Site Key`, `Secret Key` and pasting them to appropriate fields in WPForms' settings. WPForms has step-by-step tutorial on [how to set up reCaptcha in WPForms](https://wpforms.com/docs/how-to-set-up-and-use-recaptcha-in-wpforms/).
+WPForms supports both reCAPTCHA v2 and v3. You can use reCAPTCHA both in WPForms Lite and Pro version. Enabling reCAPTCHA is pretty straightforward through the plugin's settings. It involves creating Google Account then grabbing `Site Key`, `Secret Key` and pasting them to appropriate fields in WPForms' settings. WPForms has step-by-step tutorial on [how to set up reCAPTCHA in WPForms](https://wpforms.com/docs/how-to-set-up-and-use-recaptcha-in-wpforms/).
 
 ### Should I set up v2 or v3?
 
 v3 came after many people complained about accessibility and usability issues with v2. v2 asks visitors to solve a challenge before submitting a form. To address this issue, Google removed the "challenge" part of reCaptcha. As a result, with v3, users don't solve any challenge. Instead, it tracks the user's behavior on your website and scores the user from 0 (bot) to 1 (human). It is up to the website owner to determine the threshold. In WPForms you don't have control over this threshold.
 
-Many people are happy with reCaptcha. It is effective against simple bots, however, advanced bots can [bypass reCaptcha](https://github.com/xHossein/PyPasser). There are also "captcha farms" where people get paid to solve reCaptcha. It may also slow down your website as it loads extra js files into your website.
+Many people are happy with reCaptcha. It is effective against simple bots, however, advanced bots can [bypass reCaptcha](https://www.oopspam.com/blog/bypassing-captcha). There are also "captcha farms" where people get paid to solve reCaptcha. It may also [slow down your website](https://www.oopspam.com/blog/recaptcha-performance-analyses) as it loads extra js files into your website.
 
 ![WPForms reCaptcha](/blog/assets/posts/wp-forms/reCaptcha.png "WPForms reCaptcha")
 
-If you are looking for a free and quick workaround, reCaptcha is your solution.
+If you are looking for a free and quick workaround, reCAPTCHA is your solution.
 
 ## hCaptcha
 
-Similar to reCaptcha, hCaptcha is supported in both versions of WPForms. They work in a similar fashion and suffer from the same limitations. Unlike reCaptcha, hCaptcha doesn't have an invisible version, so your visitors have to solve the presented puzzle. The most notable difference between reCaptcha and hCaptcha is privacy. hCaptcha is considered a privacy-friendly alternative to reCaptcha. Setting up hCaptcha is also very similar to hCaptcha. Check out [the official tutorial on WPForms documentation](https://wpforms.com/docs/how-to-set-up-and-use-hcaptcha-in-wpforms).
+Similar to reCaptcha, hCaptcha is supported in both versions of WPForms. They work in a similar fashion and suffer from the same limitations. Unlike reCaptcha, hCaptcha doesn't have an invisible version, so your visitors have to solve the presented puzzle. The most notable difference between reCAPTCHA and hCaptcha is privacy. hCaptcha is considered a privacy-friendly alternative to reCaptcha. Setting up hCaptcha is also very similar to hCaptcha. Check out [the official tutorial on WPForms documentation](https://wpforms.com/docs/how-to-set-up-and-use-hcaptcha-in-wpforms).
 
 ![WPForms hCaptcha](/blog/assets/posts/wp-forms/hCaptcha.png "WPForms hCaptcha")
 
 ## Custom captcha
 
-The custom captcha is a paid functionality in WPForms. It comes as an addon, so you need to install the Custom Captcha addon. The Custom Captcha addon is a Math and Q&A-based captcha. As the names suggest, math-based spam filtering presents a math question to the visitor. I have dyslexia so having a math question isn't fun for me and many other people with accessibility needs. This is something you may want to consider.
+The custom CAPTCHA is a paid functionality in WPForms. It comes as an addon, so you need to install the Custom Captcha addon. The Custom Captcha addon is a Math and Q&A-based captcha. As the names suggest, math-based spam filtering presents a math question to the visitor. I have dyslexia so having a math question isn't fun for me and many other people with accessibility needs. This is something you may want to consider.
 
 ![WPForms the Custom Captcha Math Question](/blog/assets/posts/wp-forms/CaptchaMathQuestion.png "WPForms the Custom Captcha Math Question")
 
-Another alternative with the custom captcha is Question and Answer based spam protection. Add a bunch of questions and let your visitors answer one of them before submitting a contact form message. See [How to set up the Custom Captcha in WPForms](https://wpforms.com/docs/how-to-install-and-use-custom-captcha-addon-in-wpforms/) for more details.
+Another alternative with the custom CAPTCHA is Question and Answer based spam protection. Add a bunch of questions and let your visitors answer one of them before submitting a contact form message. See [How to set up the Custom Captcha in WPForms](https://wpforms.com/docs/how-to-install-and-use-custom-captcha-addon-in-wpforms/) for more details.
 
 ![WPForms the Custom Captcha Question & Answer](/blog/assets/posts/wp-forms/CaptchaQA.png "WPForms the Custom Captcha Question & Answer")
 
 ## OOPSpam WordPress plugin
 
-[Our WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/) is another way to stop spam on your WPForms and WordPress comments. The plugin works with OOPSpam API that protects over 3.5M websites daily. Both hCaptcha and reCaptcha are free except the Custom Captcha, OOPSpam is a premium service and comes with 40 spam checks/m  to test and see the difference.
+[Our WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/) is another way to stop spam on your WPForms and WordPress comments. The plugin works with OOPSpam API that protects over 3.5M websites daily. Both hCaptcha and reCAPTCHA are free except the Custom Captcha, OOPSpam is a premium service and comes with 40 spam checks/m  to test and see the difference.
 
 It's likely you have already tried the above options, and they didn't work for you. For you, it could be [a slow website from reCaptcha/hCaptcha](https://www.oopspam.com/blog/recaptcha-performance-analyses) or overwhelming spam you are still getting despite implementing the above alternatives. What makes OOPSpam different from other solutions is that it doesn't slow your website and is effective against human spammers and bots. There is no challenge to solve. No performance penalty as everything happens in your server instead of client-side. The OOPSpam API uses machine learning models, content analyses, IP reputation, and other rule-based checks to score every contact form submission. A combination of all these analyses returns a single spam score that is how it accurately stops both manual spam and bots.
 
@@ -104,7 +102,7 @@ Here are a few steps to activate spam protection for WPForms:
 
 ## Final thoughts
 
-All websites eventually get hit by spammers. As a website grows and gets more traffic it attracts more serious spammers with advance bots. The captcha solutions will protect your website to a certain degree but they are not enough for targeted spam attacks, manual spam and sophisticated bots. I hope this article helps you find a solution for your spam problem.
+All websites eventually get hit by spammers. As a website grows and gets more traffic it attracts more serious spammers with advance bots. The CAPTCHA solutions will protect your website to a certain degree but they are not enough for targeted spam attacks, manual spam and sophisticated bots. I hope this article helps you find a solution for your spam problem.
 
 That is all! Go on and create your forms.
 

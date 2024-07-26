@@ -2,7 +2,7 @@
 layout: post
 title:  "[Announcement] OOPSpam Anti-Spam WordPress Plugin is here"
 author: "Onar A."
-image: https://ps.w.org/oopspam-anti-spam/assets/banner-772x250.jpg
+image: /assets/social-media-meta.png
 tags: [WordPress, spam]
 
 

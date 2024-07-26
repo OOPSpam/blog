@@ -26,19 +26,19 @@ It is common to use fake emails for registration. One way to deal with this prob
 
 ## reCaptcha
 
-Ultimate Member also supports reCaptcha. Unlike other built-in anti-spam features, to enable reCaptcha you need to install [the official reCaptcha plugin for Ultimate Member](https://wordpress.org/plugins/um-recaptcha/).
+Ultimate Member also supports reCaptcha. Unlike other built-in anti-spam features, to enable reCAPTCHA you need to install [the official reCAPTCHA plugin for Ultimate Member](https://wordpress.org/plugins/um-recaptcha/).
 
-Ultimate Member supports both reCaptcha v2 and v3 (invisible reCaptcha). reCaptcha is available in both free and paid versions. Enabling reCaptcha is straightforward through the reCaptcha plugin settings. It involves creating a Google account, then grabbing `Site Key` and `Secret Key` and pasting them into the appropriate fields under *Ultimate Member > Settings > Extensions > Google reCAPTCHA*. They provide a step-by-step tutorial on [how to set up reCaptcha in Ultimate Member registration](https://docs.ultimatemember.com/article/72-google-recaptcha).
+Ultimate Member supports both reCAPTCHA v2 and v3 (invisible reCaptcha). reCAPTCHA is available in both free and paid versions. Enabling reCAPTCHA is straightforward through the reCAPTCHA plugin settings. It involves creating a Google account, then grabbing `Site Key` and `Secret Key` and pasting them into the appropriate fields under *Ultimate Member > Settings > Extensions > Google reCAPTCHA*. They provide a step-by-step tutorial on [how to set up reCAPTCHA in Ultimate Member registration](https://docs.ultimatemember.com/article/72-google-recaptcha).
 
-### Should I use reCaptcha v2 or v3?
+### Should I use reCAPTCHA v2 or v3?
 
 v3 came after many people complained about accessibility and usability issues with v2. v2 asked visitors to solve a challenge before submitting a form. To address this issue, Google removed the "challenge" part of reCaptcha. As a result, with v3, users don't solve a challenge. Instead, it tracks the user's behavior on your site and scores the user from 0 (bot) to 1 (human). It is up to the website owner to determine the threshold. In Ultimate Member, you can adjust the *reCaptcha Score* setting in *Ultimate Member > Settings > Extensions > Google reCAPTCHA*.
 
-A lot of people are happy with reCaptcha. It is effective against simple bots, but advanced bots can [bypass reCaptcha](https://github.com/xHossein/PyPasser). There are also "captcha farms" where people get paid to solve reCaptcha. It will also [slow down your website](https://www.oopspam.com/blog/recaptcha-performance-analyses) as it loads extra JS files into your website.
+A lot of people are happy with reCaptcha. It is effective against simple bots, but advanced bots can [bypass reCaptcha](https://www.oopspam.com/blog/bypassing-captcha). There are also "captcha farms" where people get paid to solve reCaptcha. It will also [slow down your website](https://www.oopspam.com/blog/recaptcha-performance-analyses) as it loads extra JS files into your website.
 
 ![Ultimate Member form reCaptcha](/blog/assets/posts/umember/recaptcha.png "Ultimate Member form reCaptcha")
 
-If you are looking for a free and quick workaround, reCaptcha is your solution.
+If you are looking for a free and quick workaround, reCAPTCHA is your solution.
 
 ## Email Blocking
 
@@ -51,9 +51,9 @@ In general, this is a reactive approach, meaning that you may need to quickly bl
 
 [Cloudflare](https://www.cloudflare.com/) is a content delivery network. It works between your website visitors and your hosting. They deliver your website faster and more securely around the world. They also provide a free way to protect your website from known spammers.
 
-Follow the [Add site to Cloudflare](https://developers.cloudflare.com/fundamentals/get-started/setup/add-site/) article in their official documentation to change your website's DNS address and put it behind Cloudflare. Simply adding your website to Cloudflare isn't enough. You need to [enable Bot Fight Mode](https://developers.cloudflare.com/bots/get-started/free/) to activate this protection. If the visitor's IP is suspicious, a captcha (namely Turnstile) will appear and ask the user to solve the challenge. Note that the visitor will not be able to solve the captcha if cookies and javascript are disabled in their browser. More about Turnstile check out: [What No One Tells You About Cloudflare Turnstile](https://www.oopspam.com/blog/cloudflare-turnstile).
+Follow the [Add site to Cloudflare](https://developers.cloudflare.com/fundamentals/get-started/setup/add-site/) article in their official documentation to change your website's DNS address and put it behind Cloudflare. Simply adding your website to Cloudflare isn't enough. You need to [enable Bot Fight Mode](https://developers.cloudflare.com/bots/get-started/free/) to activate this protection. If the visitor's IP is suspicious, a CAPTCHA (namely Turnstile) will appear and ask the user to solve the challenge. Note that the visitor will not be able to solve the CAPTCHA if cookies and javascript are disabled in their browser. More about Turnstile check out: [What No One Tells You About Cloudflare Turnstile](https://www.oopspam.com/blog/cloudflare-turnstile).
 
-Cloudflare is a good alternative to reCaptcha as it's much lighter than reCaptcha.
+Cloudflare is a good alternative to reCAPTCHA as it's much lighter than reCaptcha.
 
 ## OOPSpam WordPress plugin
 
@@ -96,6 +96,6 @@ Here are a few steps to activate spam protection for Ultimate Member:
 
 ## Final thoughts
 
-All websites eventually get hit by spammers. As a website grows and gets more traffic it attracts more serious spammers with advance bots. Both honeypot and reCaptcha will protect your website to a certain degree but they are not enough for targeted spam attacks, manual spam and sophisticated bots. I hope this article helps you find a solution for your spam problem.
+All websites eventually get hit by spammers. As a website grows and gets more traffic it attracts more serious spammers with advance bots. Both honeypot and reCAPTCHA will protect your website to a certain degree but they are not enough for targeted spam attacks, manual spam and sophisticated bots. I hope this article helps you find a solution for your spam problem.
 
 Happy spam-free day!

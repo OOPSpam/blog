@@ -5,14 +5,11 @@ author: "Onar A."
 image: /assets/open-source-comment-systems.png
 tags: [comment, spam]
 
-
 description: "Learn about 3 different open-source & free comments systems and how they protect from spam."
 # modified: 
 ---
 <center>
-<a href="https://wordpress.org/plugins/oopspam-anti-spam/">
-<img loading="lazy"  width="772" alt="Open-source comment systems and their anti-spam capabilities" src="/blog/assets/open-source-comment-systems.png">
-</a>
+<img loading="lazy"  width="772" alt="" src="/blog/assets/os-comment/header.png">
 </center>
 <br/>
 
@@ -28,9 +25,9 @@ There are a lot of options, some serve a lot of ads on your blog, some collect a
 
 ## Open-source and free comment systems
 
-### [Isso](https://posativ.org/isso/)
+### Isso
 
-Isso is open source, self-hosted, and completely free. It comes out as "a commenting server similar to Disqus". Instead of writing a long paragraph, I'll list the main points: 
+[Isso](https://posativ.org/isso/) is open source, self-hosted, and completely free. It comes out as "a commenting server similar to Disqus". Instead of writing a long paragraph, I'll list the main points: 
 
 - It's written in Python
 - Supports all major browsers including IE10 (yes, people still use it)
@@ -66,9 +63,9 @@ require-email = false
 ```
 Read more about *Guard* parameters in [the official Isso documentation](https://posativ.org/isso/docs/configuration/server/#guard).
 
-### [Schnack](https://schnack.cool/)
+### Schnack
 
-Here is another alternative to paid commenting systems. Like Isso, Schnack is an open source, free, self-hosted commenting system. Here are the main features:
+Here is another alternative to paid commenting systems. Like Isso, [Schnack](https://schnack.cool/) is an open source, free, self-hosted commenting system. Here are the main features:
 
 - Written in Javascript (Node.js)
 - Really small package, 8KB
@@ -99,9 +96,9 @@ The author of Schanck answers this concern in [his blog post](https://web.archiv
 
 Since Schnack doesn't support anonymous commenting and requires you to sign up through one of the third-party providers, this prevents spambots from commenting on your blog. But spammers are not always spambots. Many spammers are real people. There are services where you can hire people very cheaply ($1 per hour) to spam. For these types of spammers, there is not much you can do with third-party authentication.
 
-### [Remark42](https://remark42.com/)
+### Remark42
 
-Remark42 looks quite promising. It is self-hosted and lightweight. The backend is written in Go and the frontend in Node.js. 
+[Remark42](https://remark42.com/) looks quite promising. It is self-hosted and lightweight. The backend is written in Go and the frontend in Node.js. 
 Remark42 supports anonymous commenting, social login through Twitter, Github, etc, voting, moderating comments, and a bunch of other features. I would say Remark42 has it all and more than all 2 options above.  Check out [the official website](https://remark42.com/) for the full list of features.
 
 ![Remark42 comment system](/blog/assets/posts/remark42_comment_system.png "Remark42 comment system")
@@ -110,15 +107,14 @@ Remark42 supports anonymous commenting, social login through Twitter, Github, et
 
 Because Remark42 allows optional anonymous commenting, anti-spam measures must be taken. There is no built-in spam filter unless you disable anonymous commenting.
 
-
 ## Spam filter for open-source comment systems
 
-One of the most liberal benefits of open source projects is the ability to integrate.You can build your own anti-spam filter with different rules like [honeypot](https://en.wikipedia.org/wiki/Honeypot_(computing)), [captcha](https://en.wikipedia.org/wiki/CAPTCHA) or use third party solutions like [OOPSpam Anti-Spam API](https://oopspam.com).
-The main reason people don't want to use paid services like Disqus is privacy. For many, it is important to keep their data on your server while providing ad-free comments.Having anonymous comments is certainly good to have in your commenting system, but it also allows spammers to post on your blog post. 
-That said, some paid commenting systems like [Commento](https://commento.io/) are a privacy-focused solution. They rely on a subscription model instead of advertising. Commento uses Akismet as a spam filter, which is a red flag 🚩 considering Akismet requires you to submit your blog URL, user's IP and user agent in addition to other optional parameters such as server information (like ``$_SERVER``` in PHP). Read more about the difference between Akismet and the OOPSpam Anti-Spam API on the [A better Akismet alternative](https://www.oopspam.com/akismet-alternative.html) page.
+One of the most liberal benefits of open source projects is the ability to integrate. You can [build your own anti-spam filter](https://www.oopspam.com/blog/ways-to-stop-spam) with different rules like [honeypot](https://en.wikipedia.org/wiki/Honeypot_(computing)), [captcha](https://en.wikipedia.org/wiki/CAPTCHA) or use third party solutions like [OOPSpam Anti-Spam API](https://oopspam.com).
 
+The main reason people don't want to use paid services like Disqus is privacy. For many, it is important to keep their data on your server while providing ad-free comments. Having anonymous comments is certainly good to have in your commenting system, but it also allows spammers to post on your blog post That said, some paid commenting systems like [Commento](https://commento.io/) are a privacy-focused solution. They rely on a subscription model instead of advertising. Commento uses Akismet as a spam filter, which is a red flag 🚩 considering Akismet requires you to submit your blog URL, user's IP and user agent in addition to other optional parameters such as server information (like ``$_SERVER``` in PHP). Read more about the difference between Akismet and the OOPSpam Anti-Spam API on the [A better Akismet alternative](https://www.oopspam.com/akismet-alternative) page.
 
-All in all, these are the major open-source, self-hosted, free commenting systems in the wild. 
+All in all, these are the major open-source, self-hosted, free commenting systems in the wild.
+
 If you decide to try OOPSpam Anti-Spam API as your spam filter, go ahead and [test it in your browser](https://app.oopspam.com/Identity/Account/Login?ReturnUrl=%2F#test-with-your-data). You can also contact us at contact@oopspam.com. We'll be happy to help.
 
 Happy spam-free day!

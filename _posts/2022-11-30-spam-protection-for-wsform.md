@@ -43,37 +43,37 @@ Check out the screenshot below if you are a visual person.
 
 ## reCaptcha
 
-Like most form builders, WS Form supports reCaptcha. reCaptcha comes as a field, meaning you need to add the reCaptcha field to your form from Toolbox and configure it.
+Like most form builders, WS Form supports reCaptcha. reCAPTCHA comes as a field, meaning you need to add the reCAPTCHA field to your form from Toolbox and configure it.
 
-It supports both reCaptcha v2 and v3 (Invisible reCaptcha). reCaptcha is available both for free Lite and paid Pro versions. Enabling reCaptcha is pretty straightforward through the plugin's settings. It involves creating Google Account then grabbing `Site Key`, and `Secret Key` and pasting them to appropriate fields under Toolbox -> reCaptcha in Edit Form mode. Check out the official tutorial on [how to set up reCaptcha in WS Form](https://wsform.com/knowledgebase/recaptcha/).
+It supports both reCAPTCHA v2 and v3 (Invisible reCaptcha). reCAPTCHA is available both for free Lite and paid Pro versions. Enabling reCAPTCHA is pretty straightforward through the plugin's settings. It involves creating Google Account then grabbing `Site Key`, and `Secret Key` and pasting them to appropriate fields under Toolbox -> reCAPTCHA in Edit Form mode. Check out the official tutorial on [how to set up reCAPTCHA in WS Form](https://wsform.com/knowledgebase/recaptcha/).
 
-### Should I use reCaptcha v2 or v3?
+### Should I use reCAPTCHA v2 or v3?
 
 v3 came after many people complained about accessibility and usability issues with v2. v2 asks visitors to solve a challenge before submitting a form. To address this issue, Google removed the "challenge" part of reCaptcha. As a result, with v3, users don't solve any challenges. Instead, it tracks the user's behavior on your website and scores the user from 0 (bot) to 1 (human). It is up to the website owner to determine the threshold. In WS Form, you can control this threshold under _Form Settings -> Spam -> Spam Threshold_.
 
-Many people are happy with reCaptcha. It is effective against simple bots, however, advanced bots can [bypass reCaptcha](https://github.com/xHossein/PyPasser). There are also "captcha farms" where people get paid to solve reCaptcha. It may also [slow down your website](/blog/recaptcha-performance-analyses) as it loads extra js files into your website.
+Many people are happy with reCaptcha. It is effective against simple bots, however, advanced bots can [bypass reCaptcha](https://www.oopspam.com/blog/bypassing-captcha). There are also "captcha farms" where people get paid to solve reCaptcha. It may also [slow down your website](/blog/recaptcha-performance-analyses) as it loads extra js files into your website.
 
 ![WS Form reCaptcha](/blog/assets/posts/ws-form/reCaptcha.png "WS Form reCaptcha")
 
-If you are looking for a free and quick workaround, reCaptcha is your solution.
+If you are looking for a free and quick workaround, reCAPTCHA is your solution.
 
 ## hCaptcha
 
-Similar to reCaptcha, hCaptcha is supported in both versions of the WS Form. They work similarly and suffer from the same limitations. hCaptcha integration comes with two types: Visible and Invisible. The most notable difference between reCaptcha and hCaptcha is privacy. hCaptcha is considered a privacy-friendly alternative to reCaptcha. Setting up hCaptcha is also very similar to hCaptcha. Check out [the official tutorial on WS Form documentation](https://wsform.com/knowledgebase/hcaptcha/). It involves adding the reCaptcha field to your form and entering Site Key and Secret Key. You can obtain these keys by creating an account on [hCaptcha's website](https://www.hcaptcha.com/).
+Similar to reCaptcha, hCaptcha is supported in both versions of the WS Form. They work similarly and suffer from the same limitations. hCaptcha integration comes with two types: Visible and Invisible. The most notable difference between reCAPTCHA and hCaptcha is privacy. hCaptcha is considered a privacy-friendly alternative to reCaptcha. Setting up hCaptcha is also very similar to hCaptcha. Check out [the official tutorial on WS Form documentation](https://wsform.com/knowledgebase/hcaptcha/). It involves adding the reCAPTCHA field to your form and entering Site Key and Secret Key. You can obtain these keys by creating an account on [hCaptcha's website](https://www.hcaptcha.com/).
 
 ![WS Form hCaptcha](/blog/assets/posts/ws-form/hCaptcha.png "WS Form hCaptcha")
 
-If you are getting spammed and you already tried other options, it's a good practice to try hCaptcha as well. It's free and already built-in with WS Form. In some cases, however, the switch from reCaptcha to hCaptcha doesn't change much as spammers can bypass captcha solutions nowadays.
+If you are getting spammed and you already tried other options, it's a good practice to try hCaptcha as well. It's free and already built-in with WS Form. In some cases, however, the switch from reCAPTCHA to hCaptcha doesn't change much as spammers can bypass CAPTCHA solutions nowadays.
 
 ## Turnstile
 
-WS Form also comes with Cloudflare's Turnstile integration. Turnstile is still in open beta. It's similar to invisible captcha alternatives in terms of how it works. However, unlike reCaptcha and hCaptcha, it doesn't have a visible mode. So, there is no challenge to solve for users. That being said in some cases if a user is suspected to be a bot, some sort of interaction is needed by the user.
+WS Form also comes with Cloudflare's Turnstile integration. Turnstile is still in open beta. It's similar to invisible CAPTCHA alternatives in terms of how it works. However, unlike reCAPTCHA and hCaptcha, it doesn't have a visible mode. So, there is no challenge to solve for users. That being said in some cases if a user is suspected to be a bot, some sort of interaction is needed by the user.
 
 Here is how [Cloudflare's docs](https://developers.cloudflare.com/turnstile) describes this interaction:
 
 > A non-intrusive interactive challenge (such as clicking a button), if the visitor is a suspected bot.
 
-Like reCaptcha and hCaptcha, Turnstile injects a JavaScript file into your website and runs on the user's browser. This makes it suspectable to manipulation and bypassing. You could prevent this by [putting your websites behind Cloudflare CDN](/blog/spam-protection-for-givewp#cloudflare) instead of relying on Turnstile. Remember that if your website is already behind Cloudflare CDN, you don't need to use Turnstile.
+Like reCAPTCHA and hCaptcha, Turnstile injects a JavaScript file into your website and runs on the user's browser. This makes it suspectable to manipulation and bypassing. You could prevent this by [putting your websites behind Cloudflare CDN](/blog/spam-protection-for-givewp#cloudflare) instead of relying on Turnstile. Remember that if your website is already behind Cloudflare CDN, you don't need to use Turnstile.
 
 To add Turnstile to your WS Form, follow [steps on WS Form's knowledge base](https://wsform.com/knowledgebase/cloudflare-turnstile/). Here is a quick way to add it to your forms:
 
@@ -130,7 +130,7 @@ Now your form is ready to receive submissions. Each submission will be checked b
 
 ## Final thoughts
 
-All websites eventually get hit by spammers. As a website grows and gets more traffic, it attracts more serious spammers with advanced bots. The captcha solutions will protect your website to a certain degree but they are not enough for targeted spam attacks, manual spam, and sophisticated bots. I hope this article helps you find a solution to your spam problem.
+All websites eventually get hit by spammers. As a website grows and gets more traffic, it attracts more serious spammers with advanced bots. The CAPTCHA solutions will protect your website to a certain degree but they are not enough for targeted spam attacks, manual spam, and sophisticated bots. I hope this article helps you find a solution to your spam problem.
 
 That is all! Go on and create your forms.
 

@@ -34,33 +34,33 @@ This is perhaps the simplest way you could avoid spam donations.
 
 ## reCaptcha
 
-Give also comes with a [captcha](https://www.oopspam.com/blog/ways-to-stop-spam#captcha-solve-an-interactive-problem) solution, namely Google's reCaptcha. GiveWP team [published a script](https://github.com/impress-org/givewp-snippet-library/blob/master/form-customizations/implement-recaptcha.php) that adds reCaptcha too all your forms. To add this script to your donation forms, they recommend following [Adding Custom Functions to your WordPress Website](https://givewp.com/documentation/resources/adding-custom-functions-to-your-wordpress-website/) article. Before implementing reCaptcha to your forms, make sure check out the instructions note at the top of the script.
+Give also comes with a [captcha](https://www.oopspam.com/blog/ways-to-stop-spam#captcha-solve-an-interactive-problem) solution, namely Google's reCaptcha. GiveWP team [published a script](https://github.com/impress-org/givewp-snippet-library/blob/master/form-customizations/implement-recaptcha.php) that adds reCAPTCHA too all your forms. To add this script to your donation forms, they recommend following [Adding Custom Functions to your WordPress Website](https://givewp.com/documentation/resources/adding-custom-functions-to-your-wordpress-website/) article. Before implementing reCAPTCHA to your forms, make sure check out the instructions note at the top of the script.
 
-Here you can set up reCaptcha integration in two ways: reCaptcha v2 or v3.
+Here you can set up reCAPTCHA integration in two ways: reCAPTCHA v2 or v3.
 
 ### Should I set up v2 or v3?
 
 v3 came after many people complained about accessibility and usability issues with v2. v2 asks visitors to solve a challenge before submitting a form. To address this issue, Google removed the "challenge" part of reCaptcha. As a result, with v3, users don't solve any challenge. Instead, it tracks the user's behavior on your website and scores the user from 0 (bot) to 1 (human). It is up to the website owner to determine the threshold.
 
-Many people are happy with reCaptcha. It is effective against simple bots, however, advanced bots can [bypass reCaptcha](https://github.com/xHossein/PyPasser). There are also "captcha farms" where people get paid to solve reCaptcha. It may also slow down your website as it loads extra js files into your website.
+Many people are happy with reCaptcha. It is effective against simple bots, however, advanced bots can [bypass reCaptcha](https://www.oopspam.com/blog/bypassing-captcha). There are also "captcha farms" where people get paid to solve reCaptcha. It may also [slow down your website](https://www.oopspam.com/blog/recaptcha-performance-analyses) as it loads extra js files into your website.
 
-If you are looking for a free and quick workaround, reCaptcha is your solution.
+If you are looking for a free and quick workaround, reCAPTCHA is your solution.
 
-> 📌 Note: Give [doesn't recommend reCaptcha](https://givewp.com/documentation/core/frequent-troubleshooting-issues/donor-spam-troubleshooting/#implementing-a-recaptcha) as it'll slow down your website. However, reCaptcha is a great alternative to the honeypot technic and effective against automated bots.
+> 📌 Note: Give [doesn't recommend reCaptcha](https://givewp.com/documentation/core/frequent-troubleshooting-issues/donor-spam-troubleshooting/#implementing-a-recaptcha) as it'll slow down your website. However, reCAPTCHA is a great alternative to the honeypot technic and effective against automated bots.
 
 ## Cloudflare
 
 Cloudflare is a content delivery network. It operates between your website visitors and your hosting. They deliver your website faster and securely across the globe. They also provide a free way to protect your website from known spammers.
 
-Follow [Add site to Cloudflare](https://developers.cloudflare.com/fundamentals/get-started/setup/add-site/) article in their official docs to change your website's DNS address and put it behind Cloudflare. By simple adding your website to Cloudflare isn't enough. You need to [enable Bot Fight Mode](https://developers.cloudflare.com/bots/get-started/free/) to activate this protection. If the visitor's IP is suspicious then a captcha (namely Turnstile) will appear and ask the user to solve the challenge. Note that the visitor will not be able to solve the captcha if cookies and javascript are disabled in their browser. More about Turnstile check out: [What No One Tells You About Cloudflare Turnstile](https://www.oopspam.com/blog/cloudflare-turnstile).
+Follow [Add site to Cloudflare](https://developers.cloudflare.com/fundamentals/get-started/setup/add-site/) article in their official docs to change your website's DNS address and put it behind Cloudflare. By simple adding your website to Cloudflare isn't enough. You need to [enable Bot Fight Mode](https://developers.cloudflare.com/bots/get-started/free/) to activate this protection. If the visitor's IP is suspicious then a CAPTCHA (namely Turnstile) will appear and ask the user to solve the challenge. Note that the visitor will not be able to solve the CAPTCHA if cookies and javascript are disabled in their browser. More about Turnstile check out: [What No One Tells You About Cloudflare Turnstile](https://www.oopspam.com/blog/cloudflare-turnstile).
 
-Cloudflare is a good alternative to reCaptcha as it's much lighter than reCaptcha.
+Cloudflare is a good alternative to reCAPTCHA as it's much lighter than reCaptcha.
 
 ## OOPSpam WordPress plugin
 
 [Our WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/) is another way to stop spam on your Give donation forms and WordPress comments. The plugin works with OOPSpam API that protects over 3.5M websites daily. While the other three alternatives are free, OOPSPam API is a paid service. But it does come with free 40/month spam checks for you to test and see the difference.
 
-It's likely you have already tried the above options, and they didn't work for you. For you, it could be a slow website from reCaptcha or overwhelming spam you are still getting despite implementing the above alternatives. What makes OOPSpam different from other solutions is that it doesn't slow your website and is effective against human spammers and bots. There is no challenge to solve, no cookies are stored or used. No performance penalty as everything happens in your server instead of client-side. The OOPSpam API uses machine learning models, content analyses, IP reputation, and other rule-based checks to score every contact form submission. A combination of all these analyses returns a single spam score that is how it accurately stops both manual spam and bots.
+It's likely you have already tried the above options, and they didn't work for you. For you, it could be a slow website from reCAPTCHA or overwhelming spam you are still getting despite implementing the above alternatives. What makes OOPSpam different from other solutions is that it doesn't slow your website and is effective against human spammers and bots. There is no challenge to solve, no cookies are stored or used. No performance penalty as everything happens in your server instead of client-side. The OOPSpam API uses machine learning models, content analyses, IP reputation, and other rule-based checks to score every contact form submission. A combination of all these analyses returns a single spam score that is how it accurately stops both manual spam and bots.
 
 On the plugin's settings page, you could also adjust how sensitive you want your spam filter to be. Even keeping default __Sensitivity level__ setting will help you cut down spam to zero.
 
@@ -97,7 +97,7 @@ Here are a few steps to activate spam protection for GiveWP:
 
 ## Final thoughts
 
-All websites eventually get hit by spammers. As a website grows and gets more traffic it attracts more serious spammers with advance bots. Both honeypot and reCaptcha will protect your website to a certain degree but they are not enough for targeted spam attacks, manual spam and sophisticated bots. I hope this article helps you find a solution for your spam problem.
+All websites eventually get hit by spammers. As a website grows and gets more traffic it attracts more serious spammers with advance bots. Both honeypot and reCAPTCHA will protect your website to a certain degree but they are not enough for targeted spam attacks, manual spam and sophisticated bots. I hope this article helps you find a solution for your spam problem.
 
 That is all! Go on and create your forms.
 
