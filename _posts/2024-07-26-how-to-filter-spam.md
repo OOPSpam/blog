@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "How to Use Spam Detection API to protect online forms"
+title:  "How to Use Spam Detection API to Protect Online Forms"
 author: "Onar A."
-image: /assets/social-media-meta.png
+image: /assets/posts/social-media-meta.png
 tags: [oopspam, spam]
 
 
