@@ -46,7 +46,7 @@ If you are looking for a free and quick workaround, reCAPTCHA is your solution.
 
 ## hCAPTCHA
 
-If you're concerned about privacy, you may want to use hCAPTCHA instead of reCAPTCHA. Unfortunately, Elementor Forms doesn't have built-in hCAPTCHA support. There is [an active feature request](https://github.com/orgs/elementor/discussions/21148) to integrate it with Elementor. In the meantime, you can enable hCAPTCHA for your Elementor Forms using [the official hCAPTCHA plugin for WordPress](https://wordpress.org/plugins/hcaptcha-for-forms-and-more/).
+If you're concerned about privacy, you may want to use hCAPTCHA instead of reCAPTCHA. Unfortunately, Elementor Forms doesn't have built-in hCAPTCHA support. There is [an active feature request](https://github.com/orgs/elementor/discussions/21148) to integrate it with Elementor. In the meantime, you can enable hCAPTCHA for your Elementor Forms using [the official hCAPTCHA plugin for WordPress](https://wordpress.org/plugins/hcaptcha-for-forms-and-more/). Check out [How to Add hCAPTCHA to Elementor Forms](https://www.oopspam.com/blog/adding-hcaptcha-elementorform) article for a step-by-step guide.
 
 ## Cloudflare
 

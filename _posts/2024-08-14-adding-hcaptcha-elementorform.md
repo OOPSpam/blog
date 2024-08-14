@@ -10,7 +10,7 @@ description: "Learn how to add hCAPTCHA to Elementor Forms for effective spam pr
 # modified: 
 ---
 <center>
-<img loading="lazy"  width="600" alt="OOPSpam Anti-Spam WordPress Plugin supports WPForms" src="/blog/assets/posts/wp-forms/intro-wpforms.png">
+<img loading="lazy" alt="Elementor homepage screenshot" width="772" src="/blog/assets/posts/elementor-forms/ef-blog-header.png">
 </center>
 <br/>
 
