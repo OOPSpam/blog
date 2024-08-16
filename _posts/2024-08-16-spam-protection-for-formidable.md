@@ -10,9 +10,7 @@ description: "Learn how to add spam protection to Formidable Forms with these 5 
 # modified: 
 ---
 <center>
-<a href="https://wordpress.org/plugins/oopspam-anti-spam/">
-<img loading="lazy"  width="600" alt="OOPSpam Anti-Spam WordPress Plugin supports Formidable Forms" src="/blog/assets/posts/formidable-forms/FormidableForms.png">
-</a>
+<img loading="lazy"  width="600" alt="Formidable Forms homepage" src="/blog/assets/posts/formidable-forms/FormidableForms.png">
 </center>
 <br/>
 
@@ -21,6 +19,10 @@ description: "Learn how to add spam protection to Formidable Forms with these 5 
 Formidable Forms is one of the most popular contact form builder out there with over 13M downloads. It has everything you need to build a complex form from payment gateway integrating (Stripe etc.) to conditional logic and more. Formidable Forms Lite is [available](https://wordpress.org/plugins/formidable/) in the WordPress plugin directory and comes with basic fields and built-it spam filtering options. The Pro version adds advanced fields and many more features. [Check out official comparison](https://formidableforms.com/lite-upgrade/) between Lite & Pro.
 
 Now we have talked about what Formidable Forms is. So let's focus on what you can do about the spam you get through your Formidable Forms.
+
+<center>
+<img loading="lazy"  width="772" style="height: 200px;object-fit: cover;" alt="OOPSpam illustration" src="/blog/assets/ways-to-stop-spam.png">
+</center>
 
 ## OOPSpam WordPress plugin
 
@@ -67,7 +69,7 @@ Here are a few steps to activate spam protection for Formidable Forms:
 
 [We wrote](https://www.oopspam.com/blog/ways-to-stop-spam#honeypot-filter-spam-with-a-hidden-field) extensively about the honeypot technique and how it works. While it's not as effective as it used to be, it still prevents some bots from spamming your contact forms. Here is a short description of what the honeypot method is:
 
-> A honeypot field is a hidden field that is meant to be filled only by bots. Bots scan a website and fill all the fields, including the hidden field in your form. Formidable Forms will automatically dismiss every submission with an entry in a honeypot field.
+> 📌 A honeypot field is a hidden field that is meant to be filled only by bots. Bots scan a website and fill all the fields, including the hidden field in your form. Formidable Forms will automatically dismiss every submission with an entry in a honeypot field.
 
 Formidable Forms comes with the honeypot feature and it's enabled by default. If you getting spammed, first make sure this honeypot is still enabled.
 
@@ -109,11 +111,11 @@ Formidable Forms supports both reCAPTCHA v2 and v3 (Invisible reCaptcha). reCAPT
 
 v3 came after many people complained about accessibility and usability issues with v2. v2 asks visitors to solve a challenge before submitting a form. To address this issue, Google removed the "challenge" part of reCaptcha. As a result, with v3, users don't solve any challenges. Instead, it tracks the user's behavior on your website and scores the user from 0 (bot) to 1 (human). It is up to the website owner to determine the threshold. In Formidable Forms, you don't have control over this threshold.
 
-Many people are happy with reCaptcha. It is effective against simple bots, however, advanced bots can [bypass reCaptcha](https://www.oopspam.com/blog/bypassing-captcha). There are also "captcha farms" where people get paid to solve reCaptcha. It will also [slow down your website](https://www.oopspam.com/blog/recaptcha-performance-analyses) as it loads extra JS files into your website.
+Many people are happy with reCaptcha. It is effective against simple bots, however, advanced bots can [bypass reCaptcha](https://www.oopspam.com/blog/bypassing-captcha). There are also "captcha farms" where people get paid to solve reCaptcha. It will also [slow down your website](https://www.oopspam.com/blog/recaptcha-performance-analyses) as it loads extra JavaScript files into your website.
 
 ![Formidable Forms reCaptcha](/blog/assets/posts/formidable-forms/recaptcha.png "Formidable Forms reCaptcha")
 
-If you are looking for a free and quick workaround, reCAPTCHA is your solution.
+If you are looking for a free solution, reCAPTCHA is a good option.
 
 ## Final thoughts
 
