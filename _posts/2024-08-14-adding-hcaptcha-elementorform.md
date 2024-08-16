@@ -76,9 +76,9 @@ Before enabling hCAPTCHA for your Elementor forms, consider the following:
 2. [Effectiveness](https://www.oopspam.com/blog/bypassing-captcha): While hCAPTCHA is a good starting point for spam protection, you may still encounter spam submissions over time. Some third-party services can solve CAPTCHAs, allowing spammers to bypass hCAPTCHA and similar solutions like reCAPTCHA or Turnstile.
 
 3. Alternatives: If hCAPTCHA doesn't meet your needs, consider alternatives like [the OOPSpam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/). [It offers](https://www.oopspam.com/wordpress):
-   - No impact on website speed
-   - Easy configuration
-   - Higher effectiveness against spam
+   1. Doesn't slow down your website
+   2. Keeps your site accessible to all users
+   3. Stops both human spammers and bots
 
 When choosing a spam protection solution, balance the trade-offs between security, user experience, and site performance to find the best fit for your specific needs.
 

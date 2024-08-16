@@ -32,12 +32,12 @@ Another built-in feature to combat fake member registrations is the **Block IP A
 
 ## CAPTCHA
 
-[CAPTCHAs](https://www.oopspam.com/blog/ways-to-stop-spam#captcha-solve-an-interactive-problem), which offer additional challenges that users must solve before they can continue their membership. You have a few options here: Math Add-on, Turnstile, hCaptcha.
+[CAPTCHAs](https://www.oopspam.com/blog/ways-to-stop-spam#captcha-solve-an-interactive-problem), which offer additional challenges that users must solve before they can continue their membership. You have a few options here: Math Add-on, Turnstile, hCAPTCHA.
 
 - Math Add-on: Math CAPTCHA is developed by MemberPress. It is not available as a built-in solution, but you can install it as an add-on from the **Dashboard > MemberPress > Add-Ons** page. As the name suggests, it asks users to solve a simple math problem. See [How to configure Math CAPTCHA add-on article](https://memberpress.com/docs/math-captcha/).
 - Cloudflare Turnstile: To set up Turnstile with your MemberPress membership form, you need to install the [Simple Cloudflare Turnstile](https://wordpress.org/plugins/simple-cloudflare-turnstile/) plugin. [MemberPress has published a guide on how to set up Turnstile with MemberPress](https://memberpress.com/docs/how-to-prevent-card-testing-and-fraudulent-sign-ups/#turnstile).
  ![MemberPress Turnstile](/blog/assets/posts/mpress/turnstile.png "MemberPress Turnstile")
-- hCaptcha: Similar to Turnstile, hCaptcha offers a puzzle for visitors to solve before payment is processed. There is [an official plugin for WordPress](https://wordpress.org/plugins/hcaptcha-for-forms-and-more/) from the hCAPTCHA team that supports MemberPress. Once installed, go to **hCAPTCHA -> Integrations** and activate hCAPTCHA for MemberPress.
+- hCAPTCHA: Similar to Turnstile, hCAPTCHA offers a puzzle for visitors to solve before payment is processed. There is [an official plugin for WordPress](https://wordpress.org/plugins/hcaptcha-for-forms-and-more/) from the hCAPTCHA team that supports MemberPress. Once installed, go to **hCAPTCHA -> Integrations** and activate hCAPTCHA for MemberPress.
    ![MemberPress hCAPTCHA](/blog/assets/posts/mpress/hcaptcha.png "MemberPress hCAPTCHA")
 
 

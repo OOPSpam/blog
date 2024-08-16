@@ -45,11 +45,11 @@ Honeypot is the oldest trick in the book with 0 impact on your website performan
 
 ### CAPTCHA
 
-If you are not using Cloudflare or another CDN that comes with bot protection. You can use Cloudflare's [Turnstile](https://www.cloudflare.com/products/turnstile/) on your sign-up forms. Another option is to add reCAPTCHA or hCaptcha to your forms.
+If you are not using Cloudflare or another CDN that comes with bot protection. You can use Cloudflare's [Turnstile](https://www.cloudflare.com/products/turnstile/) on your sign-up forms. Another option is to add reCAPTCHA or hCAPTCHA to your forms.
 
 Be aware of the complication with this approach, as all of them inject javascript into your website. [This will negatively impact your site's speed](https://www.oopspam.com/blog/recaptcha-performance-analyses) and may cause accessibility issues.
 
-Implementing Turnstile, hCaptcha or reCAPTCHA on your website involves similar steps:
+Implementing Turnstile, hCAPTCHA or reCAPTCHA on your website involves similar steps:
 
 1. Generate Site Key and Secret Key for your website
 2. Add javascript file to your website
@@ -58,12 +58,12 @@ Implementing Turnstile, hCaptcha or reCAPTCHA on your website involves similar s
 Here is the detailed documentation for each of them:
 
 - Turnstile: [https://developers.cloudflare.com/turnstile/get-started#new-sites](https://developers.cloudflare.com/turnstile/get-started#new-sites)
-- hCaptcha: [https://docs.hcaptcha.com/](https://docs.hcaptcha.com/)
+- hCAPTCHA: [https://docs.hcaptcha.com/](https://docs.hcaptcha.com/)
 - reCAPTCHA: [https://developers.google.com/recaptcha/docs/v3](https://developers.google.com/recaptcha/docs/v3)
 
 ![hCaptcha](/blog/assets/posts/spam-signups/hcaptcha.png "hCaptcha")
 
-### Which one to use: hCaptcha, reCAPTCHA or Turnstile?
+### Which one to use: hCAPTCHA, reCAPTCHA or Turnstile?
 
 Here is a simple table comparing these tools.
 
@@ -114,11 +114,11 @@ Here is a simple table comparing these tools.
 
 They are partially accessible because they all come with an invisible mode that you can use. However, if your visitors are detected as suspicious, they will likely be stuck with endless loop puzzles to solve.
 
-Anything you add to your site's HTML will negatively impact your site's performance, but Turnstile's JS file seems to have the least impact compared to reCAPTCHA and hCaptcha.
+Anything you add to your site's HTML will negatively impact your site's performance, but Turnstile's JS file seems to have the least impact compared to reCAPTCHA and hCAPTCHA.
 
 ![Turnstile](/blog/assets/posts/spam-signups/cloudflare_turnstile.webp "Turnstile")
 
-### Do you get fake signups despite reCAPTCHA, hCaptcha, Turnstile?
+### Do you get fake signups despite reCAPTCHA, hCAPTCHA, Turnstile?
 
 You are not alone. Captchas are effective against simple bots, but advanced bots can [bypass reCAPTCHA](https://github.com/ultrafunkamsterdam/undetected-chromedriver). There are also "captcha farms" (e.g. 2Captcha) where people are paid to solve reCAPTCHA at low cost.
 

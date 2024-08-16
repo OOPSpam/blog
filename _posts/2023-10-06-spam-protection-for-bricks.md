@@ -16,7 +16,7 @@ description: "Learn how to add spam protection to Bricks Form Element with these
 
 [Bricks](https://bricksbuilder.io/) is a popular new website builder for WordPress. Like other page builders, it includes [a form element](https://academy.bricksbuilder.io/article/form-element/). Typically, page builders are in the form of plugins, but Bricks is a theme. Its performance and lightness are highly praised. It's important to note that Bricks Builder is a premium theme, which means there is no free version available.
 
-In this post, we will explore the spam filtering options for Bricks Form Element. The tool includes two integrated options out of the box: reCAPTCHA and hCaptcha (since version 1.9.2). But you can also use other third party anti-spam plugins like ours, [OOPSpam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/) and set up a honeypot field yourself.
+In this post, we will explore the spam filtering options for Bricks Form Element. The tool includes two integrated options out of the box: reCAPTCHA and hCAPTCHA (since version 1.9.2). But you can also use other third party anti-spam plugins like ours, [OOPSpam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/) and set up a honeypot field yourself.
 
 {% include toc.md %}
 
@@ -45,24 +45,24 @@ Once you have entered the necessary keys, edit your form on your page. Scroll to
 
 ![Bricks Form Element enabling reCAPTCHA](/blog/assets/posts/bricks/enable-recaptcha.png "Bricks Form Element enabling reCAPTCHA")
 
-## hCaptcha
+## hCAPTCHA
 
-[Bricks Forms also supports hCaptcha](https://academy.bricksbuilder.io/article/form-element/#form-validation#spam#hcaptcha) (added in version 1.9.2), which functions similarly to reCAPTCHA and suffers from the same limitations.
+[Bricks Forms also supports hCAPTCHA](https://academy.bricksbuilder.io/article/form-element/#form-validation#spam#hcaptcha) (added in version 1.9.2), which functions similarly to reCAPTCHA and suffers from the same limitations.
 
-hCaptcha integration can be either visible or hidden.  The most significant difference between reCAPTCHA and hCaptcha is privacy, as hCaptcha is considered a privacy-friendly alternative. Setting up hCaptcha follows a process similar to reCAPTCHA. Navigate to __Bricks > Settings > API Keys__ and input the hCaptcha Site Key and Secret Key.
+hCaptcha integration can be either visible or hidden.  The most significant difference between reCAPTCHA and hCAPTCHA is privacy, as hCAPTCHA is considered a privacy-friendly alternative. Setting up hCAPTCHA follows a process similar to reCAPTCHA. Navigate to __Bricks > Settings > API Keys__ and input the hCAPTCHA Site Key and Secret Key.
 
 and follow these step-by-step instructions to get keys:
 
-1. Visit the hCaptcha website: Go to [the official hCaptcha website](https://www.hcaptcha.com/).
+1. Visit the hCAPTCHA website: Go to [the official hCAPTCHA website](https://www.hcaptcha.com/).
 2. Sign up for an account: Click on the "Sign Up" button and provide the required information to create a new account.
 3. Create a new site: Once you're logged in, navigate to the "Sites" section or dashboard.
 4. Register a new site: Click on the "Register a new site" button or a similar option to register a new website.
 5. Provide website details: Fill in the necessary information for your website, such as the website name, domain, and any other required fields.
-6. Select hCaptcha type: Choose the type of hCaptcha you want to use. You can select between the "Checkbox" or "Invisible" options depending on your preference.
-7. Get Site Key and Secret Key: After completing the registration process, hCaptcha will generate a unique Site Key and Secret Key for your website. 
+6. Select hCAPTCHA type: Choose the type of hCAPTCHA you want to use. You can select between the "Checkbox" or "Invisible" options depending on your preference.
+7. Get Site Key and Secret Key: After completing the registration process, hCAPTCHA will generate a unique Site Key and Secret Key for your website. 
 8. Copy the keys: Copy the generated Site Key and Secret Key and keep them in a secure location. 
 
-If you are receiving unwanted messages and have already attempted other solutions, it may be helpful to try hCaptcha. This option is both free and simple to setup.  However, in some cases, switching from reCAPTCHA to hCaptcha may not make a significant difference, as spammers can now navigate around CAPTCHA solutions.
+If you are receiving unwanted messages and have already attempted other solutions, it may be helpful to try hCAPTCHA. This option is both free and simple to setup.  However, in some cases, switching from reCAPTCHA to hCAPTCHA may not make a significant difference, as spammers can now navigate around CAPTCHA solutions.
 
 ## Honeypot
 
@@ -108,7 +108,7 @@ Here are a few steps to activate spam protection for Bricks form element:
 
 ## Final thoughts
 
-All websites eventually get hit by spammers. As a website grows and gets more traffic it attracts more serious spammers with advance bots. Both hCaptcha or reCAPTCHA will protect your website to a certain degree but they are not enough for targeted spam attacks, manual spam and sophisticated bots. I hope this article helps you find a solution for your spam problem.
+All websites eventually get hit by spammers. As a website grows and gets more traffic it attracts more serious spammers with advance bots. Both hCAPTCHA or reCAPTCHA will protect your website to a certain degree but they are not enough for targeted spam attacks, manual spam and sophisticated bots. I hope this article helps you find a solution for your spam problem.
 
 That is all! Go on and create your forms.
 

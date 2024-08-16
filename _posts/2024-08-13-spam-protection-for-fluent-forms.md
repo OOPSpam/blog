@@ -42,11 +42,11 @@ Many people are happy with reCAPTCHA. It is effective against simple bots, howev
 
 If you are looking for a free solution, reCAPTCHA is a good option.
 
-## hCaptcha
+## hCAPTCHA
 
-Similar to reCAPTCHA, hCaptcha is supported in both versions of Fluent Forms. They work similarly and suffer from the same limitations. Unlike reCAPTCHA, hCaptcha doesn't have an invisible version, so your visitors have to solve the presented puzzle. The most notable difference between reCAPTCHA and hCaptcha is privacy. hCaptcha is considered a privacy-friendly alternative to reCAPTCHA. Setting up hCaptcha is also very similar to hCaptcha. To enable hCaptcha for Fluent Forms check out [the official documentation](https://wpmanageninja.com/docs/fluent-form/integrations-available-in-wp-fluent-form/how-to-integrate-hcaptcha-in-wp-fluent-forms/).
+Similar to reCAPTCHA, hCAPTCHA is supported in both versions of Fluent Forms. They work similarly and suffer from the same limitations. Unlike reCAPTCHA, hCAPTCHA doesn't have an invisible version, so your visitors have to solve the presented puzzle. The most notable difference between reCAPTCHA and hCAPTCHA is privacy. hCAPTCHA is considered a privacy-friendly alternative to reCAPTCHA. Setting up hCAPTCHA is also very similar to hCAPTCHA. To enable hCAPTCHA for Fluent Forms check out [the official documentation](https://wpmanageninja.com/docs/fluent-form/integrations-available-in-wp-fluent-form/how-to-integrate-hcaptcha-in-wp-fluent-forms/).
 
-![Fluent Forms hCaptcha](/blog/assets/posts/fluent-forms/hCaptcha.png "Fluent Forms hCaptcha")
+![Fluent Forms hCAPTCHA](/blog/assets/posts/fluent-forms/hCaptcha.png "Fluent Forms hCAPTCHA")
 
 ## OOPSpam WordPress plugin
 

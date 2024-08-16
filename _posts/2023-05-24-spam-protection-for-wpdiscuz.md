@@ -55,25 +55,25 @@ Many people are happy with reCAPTCHA. It is effective against simple bots, howev
 
 If you're looking for a free and easy solution, reCAPTCHA may be the answer. If you decided to go with reCAPTCHA, consider using the invisible version via an addon for better user experience.
 
-## hCaptcha
+## hCAPTCHA
 
-Unlike reCAPTCHA, hCaptcha is not built into WPDiscuz. However, you can use [the official hCaptcha WordPress plugin](https://wordpress.org/plugins/hcaptcha-for-forms-and-more/) which supports WPDiscuz.
-hCaptcha and reCAPTCHA work similarly and suffer from the same limitations. hCaptcha integration comes with two types: Visible and Invisible. The most notable difference between reCAPTCHA and hCaptcha is privacy. hCaptcha is considered a privacy-friendly alternative to reCAPTCHA. Setting up hCaptcha is also very similar to hCaptcha. Once the hCaptcha plugin is installed, navigate to __hCaptcha -> Integration__ and enter your Site Key and Secret Key.
+Unlike reCAPTCHA, hCAPTCHA is not built into WPDiscuz. However, you can use [the official hCAPTCHA WordPress plugin](https://wordpress.org/plugins/hcaptcha-for-forms-and-more/) which supports WPDiscuz.
+hCaptcha and reCAPTCHA work similarly and suffer from the same limitations. hCAPTCHA integration comes with two types: Visible and Invisible. The most notable difference between reCAPTCHA and hCAPTCHA is privacy. hCAPTCHA is considered a privacy-friendly alternative to reCAPTCHA. Setting up hCAPTCHA is also very similar to hCAPTCHA. Once the hCAPTCHA plugin is installed, navigate to __hCaptcha -> Integration__ and enter your Site Key and Secret Key.
 
-To obtain hCaptcha Site Key and Secret Key, follow these step-by-step instructions:
+To obtain hCAPTCHA Site Key and Secret Key, follow these step-by-step instructions:
 
-1. Visit the hCaptcha website: Go to [the official hCaptcha website](https://www.hcaptcha.com/).
+1. Visit the hCAPTCHA website: Go to [the official hCAPTCHA website](https://www.hcaptcha.com/).
 2. Sign up for an account: Click on the "Sign Up" button and provide the required information to create a new account.
 3. Create a new site: Once you're logged in, navigate to the "Sites" section or dashboard.
 4. Register a new site: Click on the "Register a new site" button or a similar option to register a new website.
 5. Provide website details: Fill in the necessary information for your website, such as the website name, domain, and any other required fields.
-6. Select hCaptcha type: Choose the type of hCaptcha you want to use. You can select between the "Checkbox" or "Invisible" options depending on your preference.
-7. Get Site Key and Secret Key: After completing the registration process, hCaptcha will generate a unique Site Key and Secret Key for your website. 
+6. Select hCAPTCHA type: Choose the type of hCAPTCHA you want to use. You can select between the "Checkbox" or "Invisible" options depending on your preference.
+7. Get Site Key and Secret Key: After completing the registration process, hCAPTCHA will generate a unique Site Key and Secret Key for your website. 
 8. Copy the keys: Copy the generated Site Key and Secret Key and keep them in a secure location. 
 
-![WPDiscuz hCaptcha](/blog/assets/posts/wpdiscuz/hcaptcha.png "WPDiscuz hCaptcha")
+![WPDiscuz hCAPTCHA](/blog/assets/posts/wpdiscuz/hcaptcha.png "WPDiscuz hCAPTCHA")
 
-If you are getting spammed and you already tried other options, it's a good practice to try hCaptcha as well. It's free and easy to set up. In some cases, however, the switch from reCAPTCHA to hCaptcha doesn't change much as spammers can bypass CAPTCHA solutions nowadays.
+If you are getting spammed and you already tried other options, it's a good practice to try hCAPTCHA as well. It's free and easy to set up. In some cases, however, the switch from reCAPTCHA to hCAPTCHA doesn't change much as spammers can bypass CAPTCHA solutions nowadays.
 
 ## Using WordPress's Comment Moderation
 
@@ -85,7 +85,7 @@ WPDiscuz did a great job by incorporating WordPress's already available comment 
 
 [OOPSpam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/) (that's us 👋) is another way to stop spam on your WPDiscuz comments. The plugin works with OOPSpam API that protects over 3.5M websites daily. While the other alternatives above are free, OOPSPam API is a paid service. But it does come with free 40/month spam checks for you to test and see the difference.
 
-Likely, you have already tried the above options, and they didn't work for you. It could be [a slow website from reCAPTCHA or hCaptcha](https://www.oopspam.com/blog/recaptcha-performance-analyses) or overwhelming spam you are still getting despite implementing the above alternatives. What makes OOPSpam different from other solutions is that it doesn't slow your website and is effective against human spammers and bots. There is no challenge to solve. No performance penalty as everything happens in your server instead of client-side. The OOPSpam API uses machine learning models, content analyses, IP & email reputation, and other rule-based checks to score every contact form submission. A combination of all these analyses returns a single spam score which is how it accurately stops both manual spam and bots.
+Likely, you have already tried the above options, and they didn't work for you. It could be [a slow website from reCAPTCHA or hCAPTCHA](https://www.oopspam.com/blog/recaptcha-performance-analyses) or overwhelming spam you are still getting despite implementing the above alternatives. What makes OOPSpam different from other solutions is that it doesn't slow your website and is effective against human spammers and bots. There is no challenge to solve. No performance penalty as everything happens in your server instead of client-side. The OOPSpam API uses machine learning models, content analyses, IP & email reputation, and other rule-based checks to score every contact form submission. A combination of all these analyses returns a single spam score which is how it accurately stops both manual spam and bots.
 
 On the plugin's settings page, you could also adjust how sensitive you want your spam filter to be. Even keeping the default __Sensitivity level__ setting will help you cut down spam to zero.
 

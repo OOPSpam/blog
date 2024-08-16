@@ -150,13 +150,13 @@ By providing meaningful values for the autocomplete attribute, you're guiding th
 
 ## 6. Don't use Captcha
 
-[According to Builtwith](https://trends.builtwith.com/widgets/captcha), 96% of the top 1 million websites use captcha. Most of them use reCAPTCHA and hCaptcha. Visual turing tests such as CAPTCHA [are allowed](https://www.w3.org/TR/turingtest/#:~:text=CAPTCHAs%20are%2C%20allowed%20under,sensory%20perception%20are%20provided%20to) by the Web Content Accessibility Guidelines (WCAG) with some important restrictions.
+[According to Builtwith](https://trends.builtwith.com/widgets/captcha), 96% of the top 1 million websites use captcha. Most of them use reCAPTCHA and hCAPTCHA. Visual turing tests such as CAPTCHA [are allowed](https://www.w3.org/TR/turingtest/#:~:text=CAPTCHAs%20are%2C%20allowed%20under,sensory%20perception%20are%20provided%20to) by the Web Content Accessibility Guidelines (WCAG) with some important restrictions.
 
 >  For example, asking users who are blind, visually impaired or dyslexic to identify textual characters in a distorted graphic is asking them to perform a task they are intrinsically least able to accomplish.
 
 ![Inaccessible CAPTCHA example](/blog/assets/posts/accessible-form/inaccessible-captcha.png "Inaccessible CAPTCHA example")
 
-WCAG requires that any CAPTCHA solution provide an alternative approach to accommodate different disabilities. In addition, all images must have a text alternative that explains the image and a text describing the CAPTCHA challenge (what to solve, what to do). In general, image-based CAPTCHA puzzles like reCAPTCHA and hCaptcha should be avoided whenever possible.
+WCAG requires that any CAPTCHA solution provide an alternative approach to accommodate different disabilities. In addition, all images must have a text alternative that explains the image and a text describing the CAPTCHA challenge (what to solve, what to do). In general, image-based CAPTCHA puzzles like reCAPTCHA and hCAPTCHA should be avoided whenever possible.
 
 Unfortunately, CAPTCHAs are inaccessible by design. They are designed to prevent bots from submitting a form by obscuring images and text. Even if you use an invisible captcha, it is likely that users will be blocked or asked to solve a puzzle if their IP or browsing behavior is detected as suspicious.
 
@@ -170,6 +170,6 @@ One way to make your forms accessible while still having spam and fraud detectio
 
 ### Try Our Accessible Captcha Alternative
 
-We designed [OOPSpam](https://www.oopspam.com/) to be an accessible and privacy-friendly alternative to reCAPTCHA, hCaptcha and other similar solutions. By design OOPSpam works in your server and never interacts with your visitors. Instead it looks at form message content, IP and email to filter spam and fraud. This approach eliminates the burden on users to prove their humanity and has 0 impact on your website performance. Instead, we allow form submissions without any challenge or puzzle which later are analyzed and categorized as spam or not. [OOPSpam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/) (that's us 👋) does this automatically. Check out [other integrations](https://www.oopspam.com/help/).
+We designed [OOPSpam](https://www.oopspam.com/) to be an accessible and privacy-friendly alternative to reCAPTCHA, hCAPTCHA and other similar solutions. By design OOPSpam works in your server and never interacts with your visitors. Instead it looks at form message content, IP and email to filter spam and fraud. This approach eliminates the burden on users to prove their humanity and has 0 impact on your website performance. Instead, we allow form submissions without any challenge or puzzle which later are analyzed and categorized as spam or not. [OOPSpam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/) (that's us 👋) does this automatically. Check out [other integrations](https://www.oopspam.com/help/).
 
 I hope this article was helpful for you in creating accessible forms which may be available to everyone.

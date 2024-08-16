@@ -16,7 +16,7 @@ description: "Learn how to add spam protection to Forminator Forms with these 4 
 
 [Forminator](https://wpmudev.com/project/forminator-pro/) is another popular contact form builder packed with features. It has a generous free plan and a pro plan with extra features like Stripe integration, E-signature, and better support. In this article, however, we are going to talk about Forminator's anti-spam capabilities.
 
-Forminator comes with [built-in spam protection features](https://wpmudev.com/blog/prevent-form-comment-spam-forminator/). These are free tools like reCAPTCHA, hCaptcha, and honeypot field, and Akismet is a paid option. Our plugin OOPSpam WordPress plugin now supports Forminator too. Let's go through each of them.
+Forminator comes with [built-in spam protection features](https://wpmudev.com/blog/prevent-form-comment-spam-forminator/). These are free tools like reCAPTCHA, hCAPTCHA, and honeypot field, and Akismet is a paid option. Our plugin OOPSpam WordPress plugin now supports Forminator too. Let's go through each of them.
 
 {% include toc.md %}
 
@@ -29,11 +29,11 @@ To enable the honeypot field, edit your form and switch to __Behavior__ settings
 
 ![Forminator Anti-spam honeypot](/blog/assets/posts/forminator/honeypot.png "Forminator Anti-spam honeypot")
 
-## reCAPTCHA and hCaptcha
+## reCAPTCHA and hCAPTCHA
 
-Forminator also supports both [reCaptcha and hCaptcha](https://wpmudev.com/docs/wpmu-dev-plugins/forminator/#captcha-field). For those who have never heard of these options, both reCAPTCHA and hCaptcha are spam protection solutions. reCAPTCHA, by Google, verifies users with challenges. It has visible and invisible modes but raises privacy concerns. hCaptcha is a privacy-friendly alternative. It supports both challenge and invisible modes.
+Forminator also supports both [reCaptcha and hCAPTCHA](https://wpmudev.com/docs/wpmu-dev-plugins/forminator/#captcha-field). For those who have never heard of these options, both reCAPTCHA and hCAPTCHA are spam protection solutions. reCAPTCHA, by Google, verifies users with challenges. It has visible and invisible modes but raises privacy concerns. hCAPTCHA is a privacy-friendly alternative. It supports both challenge and invisible modes.
 
-It is available as a field in your forms. Edit your forms and click on __Insert Fields__ and choose __Captcha__. On the presented screen, you will be able to select reCAPTCHA or hCaptcha. Here, you can also select what type of reCAPTCHA you want on your website.
+It is available as a field in your forms. Edit your forms and click on __Insert Fields__ and choose __Captcha__. On the presented screen, you will be able to select reCAPTCHA or hCAPTCHA. Here, you can also select what type of reCAPTCHA you want on your website.
 
 ![Forminator Captcha Field](/blog/assets/posts/forminator/captcha-Field.png "Forminator Captcha Field")
 
@@ -52,18 +52,18 @@ Here is how to get reCAPTCHA keys:
 6. You'll be taken to a page with your site key and secret key. These are the keys you'll need to integrate reCAPTCHA into your website.
     ![reCaptcha generates Site keys](/blog/assets/posts/gravity/recaptcha-keys.jpg "reCaptcha generates Site keys")
 
-To obtain hCaptcha Site Key and Secret Key, follow these step-by-step instructions:
+To obtain hCAPTCHA Site Key and Secret Key, follow these step-by-step instructions:
 
-1. Visit the hCaptcha website: Go to [the official hCaptcha website](https://www.hcaptcha.com/).
+1. Visit the hCAPTCHA website: Go to [the official hCAPTCHA website](https://www.hcaptcha.com/).
 2. Sign up for an account: Click on the "Sign Up" button and provide the required information to create a new account.
 3. Create a new site: Once you're logged in, navigate to the "Sites" section or dashboard.
 4. Register a new site: Click on the "Register a new site" button or a similar option to register a new website.
 5. Provide website details: Fill in the necessary information for your website, such as the website name, domain, and any other required fields.
-6. Select hCaptcha type: Choose the type of hCaptcha you want to use. You can select between the "Checkbox" or "Invisible" options depending on your preference.
-7. Get Site Key and Secret Key: After completing the registration process, hCaptcha will generate a unique Site Key and Secret Key for your website. 
+6. Select hCAPTCHA type: Choose the type of hCAPTCHA you want to use. You can select between the "Checkbox" or "Invisible" options depending on your preference.
+7. Get Site Key and Secret Key: After completing the registration process, hCAPTCHA will generate a unique Site Key and Secret Key for your website. 
 8. Copy the keys: Copy the generated Site Key and Secret Key and keep them in a secure location. 
 
-By following these steps, you should be able to obtain your hCaptcha Site Key and Secret Key for your website's forms.
+By following these steps, you should be able to obtain your hCAPTCHA Site Key and Secret Key for your website's forms.
 
 > 📌  Make sure to add the CAPTCHA field to your Forminator form.
 
@@ -89,7 +89,7 @@ If you're looking for a free and easy solution, reCAPTCHA may be the answer.
 
 [OOPSpam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/) (that's us 👋) is another way to stop spam on your Forminator and WordPress comments. The plugin works with OOPSpam API that protects over 3.5M websites daily. While the other alternatives above are free, OOPSPam API is a paid service. But it does come with free 40/month spam checks for you to test and see the difference.
 
-It's likely you have already tried the above options, and they didn't work for you. It could be [a slow website from reCAPTCHA or hCaptcha](https://www.oopspam.com/blog/recaptcha-performance-analyses) or overwhelming spam you are still getting despite implementing the above alternatives. What makes OOPSpam different from other solutions is that it doesn't slow your website and is effective against human spammers and bots. There is no challenge to solve. No performance penalty as everything happens in your server instead of client-side. The OOPSpam API uses machine learning models, content analyses, IP & email reputation, and other rule-based checks to score every contact form submission. A combination of all these analyses returns a single spam score that is how it accurately stops both manual spam and bots.
+It's likely you have already tried the above options, and they didn't work for you. It could be [a slow website from reCAPTCHA or hCAPTCHA](https://www.oopspam.com/blog/recaptcha-performance-analyses) or overwhelming spam you are still getting despite implementing the above alternatives. What makes OOPSpam different from other solutions is that it doesn't slow your website and is effective against human spammers and bots. There is no challenge to solve. No performance penalty as everything happens in your server instead of client-side. The OOPSpam API uses machine learning models, content analyses, IP & email reputation, and other rule-based checks to score every contact form submission. A combination of all these analyses returns a single spam score that is how it accurately stops both manual spam and bots.
 
 On the plugin's settings page, you could also adjust how sensitive you want your spam filter to be. Even keeping default __Sensitivity level__ setting will help you cut down spam to zero.
 

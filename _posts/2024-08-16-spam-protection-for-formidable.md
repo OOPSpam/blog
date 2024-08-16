@@ -103,7 +103,7 @@ Formidable Forms did a great job by incorporating already available comment mode
 
 ## reCAPTCHA
 
-Up to this point, we saw technics that don't require third-party solutions. reCAPTCHA is a popular CAPTCHA solution that many websites use. Formidable Forms has built-in integration with reCAPTCHA. Unfortunately, unlike other similar contact form builders, Formidable Forms doesn't have hCaptcha integration.
+Up to this point, we saw technics that don't require third-party solutions. reCAPTCHA is a popular CAPTCHA solution that many websites use. Formidable Forms has built-in integration with reCAPTCHA. Unfortunately, unlike other similar contact form builders, Formidable Forms doesn't have hCAPTCHA integration.
 
 Formidable Forms supports both reCAPTCHA v2 and v3 (Invisible reCAPTCHA). reCAPTCHA is available both for free and paid versions. Enabling reCAPTCHA is pretty straightforward through the plugin's settings. It involves creating Google Account then grabbing `Site Key`, and `Secret Key` and pasting them to appropriate fields under Global Settings -> reCAPTCHA in Formidable Forms. They provide a step-by-step tutorial on [how to set up reCAPTCHA in Formidable Forms](https://formidableforms.com/knowledgebase/recaptcha/).
 

@@ -24,7 +24,7 @@ WPForms comes with the following built-in anti-spam techniques:
 
 - Token-based spam protection (available in Lite)
 - reCAPTCHA (available in Lite)
-- hCaptcha (available in Lite)
+- hCAPTCHA (available in Lite)
 - Custom CAPTCHA (available only in Pro)
 
 ## Token-based spam protection
@@ -47,11 +47,11 @@ Many people are happy with reCAPTCHA. It is effective against simple bots, howev
 
 If you are looking for a free solution, reCAPTCHA is a good option.
 
-## hCaptcha
+## hCAPTCHA
 
-Similar to reCAPTCHA, hCaptcha is supported in both versions of WPForms. They work in a similar fashion and suffer from the same limitations. Unlike reCAPTCHA, hCaptcha doesn't have an invisible version, so your visitors have to solve the presented puzzle. The most notable difference between reCAPTCHA and hCaptcha is privacy. hCaptcha is considered a privacy-friendly alternative to reCAPTCHA. Setting up hCaptcha is also very similar to hCaptcha. Check out [the official tutorial on WPForms documentation](https://wpforms.com/docs/how-to-set-up-and-use-hcaptcha-in-wpforms).
+Similar to reCAPTCHA, hCAPTCHA is supported in both versions of WPForms. They work in a similar fashion and suffer from the same limitations. Unlike reCAPTCHA, hCAPTCHA doesn't have an invisible version, so your visitors have to solve the presented puzzle. The most notable difference between reCAPTCHA and hCAPTCHA is privacy. hCAPTCHA is considered a privacy-friendly alternative to reCAPTCHA. Setting up hCAPTCHA is also very similar to hCAPTCHA. Check out [the official tutorial on WPForms documentation](https://wpforms.com/docs/how-to-set-up-and-use-hcaptcha-in-wpforms).
 
-![WPForms hCaptcha](/blog/assets/posts/wp-forms/hCaptcha.png "WPForms hCaptcha")
+![WPForms hCAPTCHA](/blog/assets/posts/wp-forms/hCaptcha.png "WPForms hCAPTCHA")
 
 ## Custom captcha
 
@@ -65,7 +65,7 @@ Another alternative with the custom CAPTCHA is Question and Answer based spam pr
 
 ## OOPSpam WordPress plugin
 
-[OOPSpam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/) (that's us 👋) is another way to stop spam on your WPForms and WordPress comments. The plugin works with OOPSpam API that protects over 3.5M websites daily. Both hCaptcha and reCAPTCHA are free except the Custom Captcha, OOPSpam is a premium service and comes with 40 spam checks/m  to test and see the difference.
+[OOPSpam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/) (that's us 👋) is another way to stop spam on your WPForms and WordPress comments. The plugin works with OOPSpam API that protects over 3.5M websites daily. Both hCAPTCHA and reCAPTCHA are free except the Custom Captcha, OOPSpam is a premium service and comes with 40 spam checks/m  to test and see the difference.
 
 It's likely you have already tried the above options, and they didn't work for you. For you, it could be [a slow website from reCAPTCHA/hCaptcha](https://www.oopspam.com/blog/recaptcha-performance-analyses) or overwhelming spam you are still getting despite implementing the above alternatives. 
 
