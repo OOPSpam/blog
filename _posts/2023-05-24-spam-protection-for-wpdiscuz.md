@@ -20,7 +20,7 @@ In this article, we are going to focus on how to use different spam protection o
 
 {% include toc.md %}
 
-## reCaptcha
+## reCAPTCHA
 
 [WPDiscuz comes with reCAPTCHA v2 support](https://wpdiscuz.com/docs/wpdiscuz-7/plugin-settings/google-recaptcha/). As you may already know reCAPTCHA has a couple of versions:
 
@@ -30,7 +30,7 @@ In this article, we are going to focus on how to use different spam protection o
 
 It is important to point out that WPDiscuz doesn't support an invisible version of reCAPTCHA out of the box.  So, you visitors have to solve the "I'm not a robot" challenge to post. If you would like to use invisible then you need to buy [reCaptcha Addon](https://gvectors.com/product/wpdiscuz-recaptcha/).
 
-![WPDiscuz reCaptcha](/blog/assets/posts/wpdiscuz/captcha-Field.png "WPDiscuz reCaptcha")
+![WPDiscuz reCAPTCHA](/blog/assets/posts/wpdiscuz/captcha-Field.png "WPDiscuz reCAPTCHA")
 
 To activate reCAPTCHA in your comment section, you need to get Site Key and Secret Key for it.
 
@@ -49,16 +49,16 @@ Once you have both keys, on your WP dashboard navigate to __wpDiscuz > Settings 
 
 ### Should I set up reCAPTCHA v2 or v3?
 
-v3 came after many people complained about accessibility and usability issues with v2. v2 asks visitors to solve a challenge before submitting a form. To address this issue, Google removed the "challenge" part of reCaptcha. As a result, with v3, users don't solve any challenges. Instead, it tracks the user's behavior on your website and scores the user from 0 (bot) to 1 (human). It is up to the website owner to determine the threshold.
+v3 came after many people complained about accessibility and usability issues with v2. v2 asks visitors to solve a challenge before submitting a form. To address this issue, Google removed the "challenge" part of reCAPTCHA. As a result, with v3, users don't solve any challenges. Instead, it tracks the user's behavior on your website and scores the user from 0 (bot) to 1 (human). It is up to the website owner to determine the threshold.
 
-Many people are happy with reCaptcha. It is effective against simple bots, however, advanced bots can [bypass reCaptcha](https://www.oopspam.com/blog/bypassing-captcha). There are also "captcha farms" where people get paid to solve reCaptcha. It may also [slow down your website](https://www.oopspam.com/blog/recaptcha-performance-analyses) as it loads extra js files into your website.
+Many people are happy with reCAPTCHA. It is effective against simple bots, however, advanced bots can [bypass reCAPTCHA](https://www.oopspam.com/blog/bypassing-captcha). There are also "captcha farms" where people get paid to solve reCAPTCHA. It may also [slow down your website](https://www.oopspam.com/blog/recaptcha-performance-analyses) as it loads extra js files into your website.
 
-If you're looking for a free and easy solution, reCAPTCHA may be the answer. If you decided to go with reCaptcha, consider using the invisible version via an addon for better user experience.
+If you're looking for a free and easy solution, reCAPTCHA may be the answer. If you decided to go with reCAPTCHA, consider using the invisible version via an addon for better user experience.
 
 ## hCaptcha
 
-Unlike reCaptcha, hCaptcha is not built into WPDiscuz. However, you can use [the official hCaptcha WordPress plugin](https://wordpress.org/plugins/hcaptcha-for-forms-and-more/) which supports WPDiscuz.
-hCaptcha and reCAPTCHA work similarly and suffer from the same limitations. hCaptcha integration comes with two types: Visible and Invisible. The most notable difference between reCAPTCHA and hCaptcha is privacy. hCaptcha is considered a privacy-friendly alternative to reCaptcha. Setting up hCaptcha is also very similar to hCaptcha. Once the hCaptcha plugin is installed, navigate to __hCaptcha -> Integration__ and enter your Site Key and Secret Key.
+Unlike reCAPTCHA, hCaptcha is not built into WPDiscuz. However, you can use [the official hCaptcha WordPress plugin](https://wordpress.org/plugins/hcaptcha-for-forms-and-more/) which supports WPDiscuz.
+hCaptcha and reCAPTCHA work similarly and suffer from the same limitations. hCaptcha integration comes with two types: Visible and Invisible. The most notable difference between reCAPTCHA and hCaptcha is privacy. hCaptcha is considered a privacy-friendly alternative to reCAPTCHA. Setting up hCaptcha is also very similar to hCaptcha. Once the hCaptcha plugin is installed, navigate to __hCaptcha -> Integration__ and enter your Site Key and Secret Key.
 
 To obtain hCaptcha Site Key and Secret Key, follow these step-by-step instructions:
 
@@ -83,7 +83,7 @@ WPDiscuz did a great job by incorporating WordPress's already available comment 
 
 ## OOPSpam WordPress plugin
 
-[Our WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/) is another way to stop spam on your WPDiscuz comments. The plugin works with OOPSpam API that protects over 3.5M websites daily. While the other alternatives above are free, OOPSPam API is a paid service. But it does come with free 40/month spam checks for you to test and see the difference.
+[OOPSpam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/) (that's us 👋) is another way to stop spam on your WPDiscuz comments. The plugin works with OOPSpam API that protects over 3.5M websites daily. While the other alternatives above are free, OOPSPam API is a paid service. But it does come with free 40/month spam checks for you to test and see the difference.
 
 Likely, you have already tried the above options, and they didn't work for you. It could be [a slow website from reCAPTCHA or hCaptcha](https://www.oopspam.com/blog/recaptcha-performance-analyses) or overwhelming spam you are still getting despite implementing the above alternatives. What makes OOPSpam different from other solutions is that it doesn't slow your website and is effective against human spammers and bots. There is no challenge to solve. No performance penalty as everything happens in your server instead of client-side. The OOPSpam API uses machine learning models, content analyses, IP & email reputation, and other rule-based checks to score every contact form submission. A combination of all these analyses returns a single spam score which is how it accurately stops both manual spam and bots.
 
@@ -122,7 +122,7 @@ Here are a few steps to activate spam protection for WPDiscuz:
 
 ## Final thoughts
 
-All websites eventually get hit by spammers. As a website grows and gets more traffic it attracts more serious spammers with advance bots. Both honeypot and reCaptcha/hCaptcha will protect your website to a certain degree but they are not enough for targeted spam attacks, manual spam and sophisticated bots. I hope this article helps you find a solution for your spam problem.
+All websites eventually get hit by spammers. As a website grows and gets more traffic it attracts more serious spammers with advance bots. Both honeypot and reCAPTCHA/hCaptcha will protect your website to a certain degree but they are not enough for targeted spam attacks, manual spam and sophisticated bots. I hope this article helps you find a solution for your spam problem.
 
 That is all! Go on and create your forms.
 

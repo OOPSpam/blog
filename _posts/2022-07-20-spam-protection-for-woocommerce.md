@@ -64,13 +64,13 @@ Using the honeypot method with the WooCommerce store is effective, especially wh
 
 ## reCAPTCHA & hCaptcha
 
-Just like the honeypot, WooCommerce doesn't support reCaptcha. Surprisingly, WooCommerce doesn't offer these free spam protection measurements. However, you can add reCAPTCHA to your store through [WooCommerce extension store](https://woocommerce.com/products/). There are a couple of reCAPTCHA solutions available. [reCaptcha for WooCommerce](https://woocommerce.com/products/recaptcha-for-woocommerce/) seems to be the most popular extension. While reCAPTCHA itself is a free solution, the extension isn't. As of now, it's $29/year. The extension supports both reCAPTCHA versions 2 and 3.
+Just like the honeypot, WooCommerce doesn't support reCAPTCHA. Surprisingly, WooCommerce doesn't offer these free spam protection measurements. However, you can add reCAPTCHA to your store through [WooCommerce extension store](https://woocommerce.com/products/). There are a couple of reCAPTCHA solutions available. [reCaptcha for WooCommerce](https://woocommerce.com/products/recaptcha-for-woocommerce/) seems to be the most popular extension. While reCAPTCHA itself is a free solution, the extension isn't. As of now, it's $29/year. The extension supports both reCAPTCHA versions 2 and 3.
 
 ### Should I set up v2 or v3?
 
-v3 came after many people complained about accessibility and usability issues with v2. v2 asks visitors to solve a challenge before submitting a form. To address this issue, Google removed the "challenge" part of reCaptcha. As a result, with v3, users don't solve any challenges. Instead, it tracks the user's behavior on your website and scores the user from 0 (bot) to 1 (human). It is up to the website owner to determine the threshold.
+v3 came after many people complained about accessibility and usability issues with v2. v2 asks visitors to solve a challenge before submitting a form. To address this issue, Google removed the "challenge" part of reCAPTCHA. As a result, with v3, users don't solve any challenges. Instead, it tracks the user's behavior on your website and scores the user from 0 (bot) to 1 (human). It is up to the website owner to determine the threshold.
 
-![WooCommerce reCaptcha](/blog/assets/posts/woo/WooCommerce-reCaptcha.png "WooCommerce reCaptcha")
+![WooCommerce reCAPTCHA](/blog/assets/posts/woo/WooCommerce-reCaptcha.png "WooCommerce reCAPTCHA")
 
 ### hCaptcha
 
@@ -82,9 +82,9 @@ Many people are happy with reCAPTCHA and hCaptcha. They are effective against si
 
 ## OOPSpam WordPress plugin
 
-[Our WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/) is another way to stop fake orders and spam registrations on your WooCommerce stores. The plugin works with OOPSpam API that protects over 3.5M websites daily. While most of the alternatives above are free, OOPSPam API is a paid service. But it does come with free 40/month spam checks for you to test and see the difference.
+[OOPSpam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/) (that's us 👋) is another way to stop fake orders and spam registrations on your WooCommerce stores. The plugin works with OOPSpam API that protects over 3.5M websites daily. While most of the alternatives above are free, OOPSPam API is a paid service. But it does come with free 40/month spam checks for you to test and see the difference.
 
-It's likely you have already tried the above options, and they didn't work for you. For you, it could be [a slow website from reCaptcha/hCaptcha](https://www.oopspam.com/blog/recaptcha-performance-analyses) or overwhelming spam orders or registrations you are still getting despite implementing the above options. What makes OOPSpam different from other solutions is that it doesn't slow your website and is effective against human spammers and bots. There is no challenge to solve, no cookies are stored or used. No performance penalty as everything happens on your server instead of client-side. The OOPSpam API uses machine learning models, content analyses, IP reputation, and other rule-based checks to score every order, registration, and review. A combination of all these analyses returns a single spam score that is how it accurately stops both manual spam and bots.
+It's likely you have already tried the above options, and they didn't work for you. For you, it could be [a slow website from reCAPTCHA/hCaptcha](https://www.oopspam.com/blog/recaptcha-performance-analyses) or overwhelming spam orders or registrations you are still getting despite implementing the above options. What makes OOPSpam different from other solutions is that it doesn't slow your website and is effective against human spammers and bots. There is no challenge to solve, no cookies are stored or used. No performance penalty as everything happens on your server instead of client-side. The OOPSpam API uses machine learning models, content analyses, IP reputation, and other rule-based checks to score every order, registration, and review. A combination of all these analyses returns a single spam score that is how it accurately stops both manual spam and bots.
 
 On the plugin's settings page, you could also adjust how sensitive you want your spam filter to be. Even keeping the default __Sensitivity level__ setting will help you cut down spam to zero.
 

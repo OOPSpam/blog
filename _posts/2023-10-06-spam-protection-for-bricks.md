@@ -20,7 +20,7 @@ In this post, we will explore the spam filtering options for Bricks Form Element
 
 {% include toc.md %}
 
-## reCaptcha
+## reCAPTCHA
 
 Bricks Form supports reCAPTCHA v3, a spam protection solution developed by Google. Although reCAPTCHA has visible and invisible modes, some people are concerned about privacy and potential accessibility issues in visible mode, as well as its [impact on website speed](https://www.oopspam.com/blog/recaptcha-performance-analyses). At this point, Bricks Form only supports v3, which is invisible by default. doesn't require users to solve a challenge. Instead, it tracks the user's behavior on your site and scores the user from 0 (bot) to 1 (human). The default score threshold is set to 0.5, but can be adjusted using the ```bricks/form/recaptcha_score_threshold``` filter. Refer to the example in the official [Bricks documentation](https://academy.bricksbuilder.io/article/form-element/#form-validation#spam) for details. It's recommended to keep the default threshold, but increasing it to a more aggressive level like 0.8 can be effective if you get spammed.
 
@@ -43,13 +43,13 @@ Follow these steps to obtain the necessary reCAPTCHA keys:
 
 Once you have entered the necessary keys, edit your form on your page. Scroll to the bottom of the page, find the "Spam Protection" setting on the right sidebar, and enable reCAPTCHA to activate it.
 
-![Bricks Form Element enabling reCaptcha](/blog/assets/posts/bricks/enable-recaptcha.png "Bricks Form Element enabling reCaptcha")
+![Bricks Form Element enabling reCAPTCHA](/blog/assets/posts/bricks/enable-recaptcha.png "Bricks Form Element enabling reCAPTCHA")
 
 ## hCaptcha
 
 [Bricks Forms also supports hCaptcha](https://academy.bricksbuilder.io/article/form-element/#form-validation#spam#hcaptcha) (added in version 1.9.2), which functions similarly to reCAPTCHA and suffers from the same limitations.
 
-hCaptcha integration can be either visible or hidden.  The most significant difference between reCAPTCHA and hCaptcha is privacy, as hCaptcha is considered a privacy-friendly alternative. Setting up hCaptcha follows a process similar to reCaptcha. Navigate to __Bricks > Settings > API Keys__ and input the hCaptcha Site Key and Secret Key.
+hCaptcha integration can be either visible or hidden.  The most significant difference between reCAPTCHA and hCaptcha is privacy, as hCaptcha is considered a privacy-friendly alternative. Setting up hCaptcha follows a process similar to reCAPTCHA. Navigate to __Bricks > Settings > API Keys__ and input the hCaptcha Site Key and Secret Key.
 
 and follow these step-by-step instructions to get keys:
 
@@ -73,9 +73,9 @@ Securing your form with honeypot is a bit of work, but can be easily done by fol
 
 ## OOPSpam WordPress plugin
 
-[Our WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/) is another way to stop spam on your Bricks Form and WordPress comments. The plugin works with OOPSpam API that protects over 3.5M websites daily. While the other alternatives above are free, OOPSPam API is a paid service. But it does come with free 40/month spam checks for you to test and see the difference.
+[OOPSpam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/) (that's us 👋) is another way to stop spam on your Bricks Form and WordPress comments. The plugin works with OOPSpam API that protects over 3.5M websites daily. While the other alternatives above are free, OOPSPam API is a paid service. But it does come with free 40/month spam checks for you to test and see the difference.
 
-It's likely that you've already tried the above options and they didn't work for you. It could be [a slow website from reCaptcha](https://www.oopspam.com/blog/recaptcha-performance-analyses) or overwhelming spam that you are still getting despite implementing the above alternatives. What makes OOPSpam different from other solutions is that it doesn't [slow down your website](https://www.oopspam.com/blog/recaptcha-performance-analyses) and is effective against human spammers and bots. There is no challenge to solve. No performance penalty because everything happens on your server instead of the client side. The OOPSpam API uses machine learning models, content analysis, IP & email reputation and other rules-based checks to score each contact form submission. A combination of all these analysis results in a single spam score that accurately stops both manual spam and bots.
+It's likely that you've already tried the above options and they didn't work for you. It could be [a slow website from reCAPTCHA](https://www.oopspam.com/blog/recaptcha-performance-analyses) or overwhelming spam that you are still getting despite implementing the above alternatives. What makes OOPSpam different from other solutions is that it doesn't [slow down your website](https://www.oopspam.com/blog/recaptcha-performance-analyses) and is effective against human spammers and bots. There is no challenge to solve. No performance penalty because everything happens on your server instead of the client side. The OOPSpam API uses machine learning models, content analysis, IP & email reputation and other rules-based checks to score each contact form submission. A combination of all these analysis results in a single spam score that accurately stops both manual spam and bots.
 
 The plugin's settings page also allows you to adjust how sensitive your spam filter should be. Even leaving the default setting __Sensitivity Level__ will help you reduce spam to zero.
 

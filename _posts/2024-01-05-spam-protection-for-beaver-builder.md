@@ -23,9 +23,9 @@ Beaver Builder Form module comes with a basic form functionality. There are limi
 {% include toc.md %}
 
 
-## reCaptcha
+## reCAPTCHA
 
-Beaver Builder Contact Form comes with a [captcha](https://www.oopspam.com/blog/ways-to-stop-spam#captcha-solve-an-interactive-problem) solution, namely Google's reCaptcha. Check out [step-by-step guide](https://docs.wpbeaverbuilder.com/beaver-builder/layouts/modules/contact-form/add-a-google-recaptcha-checkbox-to-a-form) by Beaver Builder on how to setup reCAPTCHA v2 and v3 on your contact forms.
+Beaver Builder Contact Form comes with a [captcha](https://www.oopspam.com/blog/ways-to-stop-spam#captcha-solve-an-interactive-problem) solution, namely Google's reCAPTCHA. Check out [step-by-step guide](https://docs.wpbeaverbuilder.com/beaver-builder/layouts/modules/contact-form/add-a-google-recaptcha-checkbox-to-a-form) by Beaver Builder on how to setup reCAPTCHA v2 and v3 on your contact forms.
 
 ![reCaptcha in Beaver Builder](/blog/assets/posts/beaver/form-settings.png "reCaptcha in Beaver Builder")
 
@@ -33,11 +33,11 @@ Beaver Builder Contact Form comes with a [captcha](https://www.oopspam.com/blog/
 
 Beaver Builder Contact Form module supports v2 ("I'm not a robot" checkbox), invisible v2, and invisible v3.
 
-v3 came after many people complained about accessibility and usability issues with v2. v2 asks visitors to solve a challenge before submitting a form. To address this issue, Google removed the "challenge" part of reCaptcha. As a result, with v3, users don't solve any challenge. Instead, it tracks the user's behavior on your website and scores the user from 0 (bot) to 1 (human). It is up to the website owner to determine the threshold. 
+v3 came after many people complained about accessibility and usability issues with v2. v2 asks visitors to solve a challenge before submitting a form. To address this issue, Google removed the "challenge" part of reCAPTCHA. As a result, with v3, users don't solve any challenge. Instead, it tracks the user's behavior on your website and scores the user from 0 (bot) to 1 (human). It is up to the website owner to determine the threshold. 
 
-Many people are happy with reCaptcha. It is effective against simple bots, however, advanced bots can [bypass reCaptcha](https://www.oopspam.com/blog/bypassing-captcha). There are also "captcha farms" where people get paid to solve reCaptcha. It may also [slow down your website](https://www.oopspam.com/blog/recaptcha-performance-analyses) as it loads extra js files into your website.
+Many people are happy with reCAPTCHA. It is effective against simple bots, however, advanced bots can [bypass reCAPTCHA](https://www.oopspam.com/blog/bypassing-captcha). There are also "captcha farms" where people get paid to solve reCAPTCHA. It may also [slow down your website](https://www.oopspam.com/blog/recaptcha-performance-analyses) as it loads extra js files into your website.
 
-If you are looking for a free and quick workaround, reCAPTCHA is your solution.
+If you are looking for a free solution, reCAPTCHA is a good option.
 
 ## Cloudflare
 
@@ -45,7 +45,7 @@ If you are looking for a free and quick workaround, reCAPTCHA is your solution.
 
 Follow [Add site to Cloudflare](https://developers.cloudflare.com/fundamentals/get-started/setup/add-site/) article in their official docs to change your website's DNS address and put it behind Cloudflare. By simple adding your website to Cloudflare isn't enough. You need to [enable Bot Fight Mode](https://developers.cloudflare.com/bots/get-started/free/) to activate this protection. If the visitor's IP is suspicious then a CAPTCHA (namely Turnstile) will appear and ask the user to solve the challenge. Note that the visitor will not be able to solve the CAPTCHA if cookies and javascript are disabled in their browser. More about Turnstile check out: [What No One Tells You About Cloudflare Turnstile](https://www.oopspam.com/blog/cloudflare-turnstile).
 
-Cloudflare is a good alternative to reCAPTCHA as it's much lighter than reCaptcha.
+Cloudflare is a good alternative to reCAPTCHA as it's much lighter than reCAPTCHA.
 
 ### Block access to website by country
 
@@ -55,9 +55,9 @@ Once you put your website behind Cloudflare, you have an option to block countri
 
 ## OOPSpam WordPress plugin
 
-[Our WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/) is another way to stop spam on your Beaver Builder Forms and WordPress comments. The plugin works with OOPSpam API that protects over 3.5M websites daily. While the other two alternatives are free, OOPSPam API is a paid service. But it does come with free 40/month spam checks for you to test and see the difference.
+[OOPSpam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/) (that's us 👋) is another way to stop spam on your Beaver Builder Forms and WordPress comments. The plugin works with OOPSpam API that protects over 3.5M websites daily. While the other two alternatives are free, OOPSPam API is a paid service. But it does come with free 40/month spam checks for you to test and see the difference.
 
-It's likely you have already tried the above options, and they didn't work for you. For you, it could be a [slow website from reCaptcha](https://www.oopspam.com/blog/recaptcha-performance-analyses) or overwhelming spam you are still getting despite implementing the above alternatives. What makes OOPSpam different from other solutions is that it doesn't slow your website and is effective against human spammers and bots. There is no challenge to solve. No performance penalty as everything happens in your server instead of client-side. The OOPSpam API uses machine learning models, content analyses, IP reputation, and other rule-based checks to score every contact and registration form submissions, comments and search (yes, internal search spam is a thing :) ) in WordPress website. A combination of all these analyses returns a single spam score that is how it accurately stops both manual spam and bots.
+It's likely you have already tried the above options, and they didn't work for you. For you, it could be a [slow website from reCAPTCHA](https://www.oopspam.com/blog/recaptcha-performance-analyses) or overwhelming spam you are still getting despite implementing the above alternatives. What makes OOPSpam different from other solutions is that it doesn't slow your website and is effective against human spammers and bots. There is no challenge to solve. No performance penalty as everything happens in your server instead of client-side. The OOPSpam API uses machine learning models, content analyses, IP reputation, and other rule-based checks to score every contact and registration form submissions, comments and search (yes, internal search spam is a thing :) ) in WordPress website. A combination of all these analyses returns a single spam score that is how it accurately stops both manual spam and bots.
 
 On the plugin's settings page, you could also adjust how sensitive you want your spam filter to be. Even keeping default __Sensitivity level__ setting will help you cut down spam to zero.
 

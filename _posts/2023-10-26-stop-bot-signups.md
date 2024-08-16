@@ -59,7 +59,7 @@ Here is the detailed documentation for each of them:
 
 - Turnstile: [https://developers.cloudflare.com/turnstile/get-started#new-sites](https://developers.cloudflare.com/turnstile/get-started#new-sites)
 - hCaptcha: [https://docs.hcaptcha.com/](https://docs.hcaptcha.com/)
-- reCaptcha: [https://developers.google.com/recaptcha/docs/v3](https://developers.google.com/recaptcha/docs/v3)
+- reCAPTCHA: [https://developers.google.com/recaptcha/docs/v3](https://developers.google.com/recaptcha/docs/v3)
 
 ![hCaptcha](/blog/assets/posts/spam-signups/hcaptcha.png "hCaptcha")
 
@@ -118,9 +118,9 @@ Anything you add to your site's HTML will negatively impact your site's performa
 
 ![Turnstile](/blog/assets/posts/spam-signups/cloudflare_turnstile.webp "Turnstile")
 
-### Do you get fake signups despite reCaptcha, hCaptcha, Turnstile?
+### Do you get fake signups despite reCAPTCHA, hCaptcha, Turnstile?
 
-You are not alone. Captchas are effective against simple bots, but advanced bots can [bypass reCaptcha](https://github.com/ultrafunkamsterdam/undetected-chromedriver). There are also "captcha farms" (e.g. 2Captcha) where people are paid to solve reCAPTCHA at low cost.
+You are not alone. Captchas are effective against simple bots, but advanced bots can [bypass reCAPTCHA](https://github.com/ultrafunkamsterdam/undetected-chromedriver). There are also "captcha farms" (e.g. 2Captcha) where people are paid to solve reCAPTCHA at low cost.
 
 This is where we come in. Another way to protect your sign-up forms without using CAPTCHA solution is to use server-side solution [OOPSpam](https://www.oopspam.com/). To put it simply, your registration form will have no challenge, no javascript or cookies, so no accessibility issues, no slow website. 
 

@@ -29,7 +29,7 @@ To enable the honeypot field, edit your form and enable the __Advanced -> Add Ho
 
 ![Breakdance Forms Honeypot](/blog/assets/posts/breakdance/honeypot.png "Breakdance Forms Honeypot")
 
-## reCaptcha
+## reCAPTCHA
 
 Breakdance Form also supports reCAPTCHA v3. You have probably heard of it, but for those who have never heard of it, reCAPTCHA is a spam protection solution Google. It has visible and invisible modes, but many people have concerns about privacy, [slow website](https://www.oopspam.com/blog/recaptcha-performance-analyses) and possibly accessibility (in visible mode). For now, Breakdance Form only supports v3, which is the default invisible mode. With reCAPTCHA v3, users don't solve a challenge. Instead, it tracks the user's behavior on your site and scores the user from 0 (bot) to 1 (human).
 
@@ -62,9 +62,9 @@ On the screenshot above, you can see that there is a __Default__ tab next to the
 
 ## OOPSpam WordPress plugin
 
-[Our WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/) is another way to stop spam on your Breakdance Forms and WordPress comments. The plugin works with OOPSpam API that protects over 3.5M websites daily. While the other alternatives above are free, OOPSPam API is a paid service. But it does come with free 40/month spam checks for you to test and see the difference.
+[OOPSpam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/) (that's us 👋) is another way to stop spam on your Breakdance Forms and WordPress comments. The plugin works with OOPSpam API that protects over 3.5M websites daily. While the other alternatives above are free, OOPSPam API is a paid service. But it does come with free 40/month spam checks for you to test and see the difference.
 
-It's likely that you've already tried the above options and they didn't work for you. It could be [a slow website from reCaptcha](https://www.oopspam.com/blog/recaptcha-performance-analyses) or overwhelming spam that you are still getting despite implementing the above alternatives. What makes OOPSpam different from other solutions is that it doesn't [slow down your website](https://www.oopspam.com/blog/recaptcha-performance-analyses) and is effective against human spammers and bots. There is no challenge to solve. No performance penalty because everything happens on your server instead of the client side. The OOPSpam API uses machine learning models, content analysis, IP & email reputation and other rules-based checks to score each contact form submission. A combination of all these analysis results in a single spam score that accurately stops both manual spam and bots.
+It's likely that you've already tried the above options and they didn't work for you. It could be [a slow website from reCAPTCHA](https://www.oopspam.com/blog/recaptcha-performance-analyses) or overwhelming spam that you are still getting despite implementing the above alternatives. What makes OOPSpam different from other solutions is that it doesn't [slow down your website](https://www.oopspam.com/blog/recaptcha-performance-analyses) and is effective against human spammers and bots. There is no challenge to solve. No performance penalty because everything happens on your server instead of the client side. The OOPSpam API uses machine learning models, content analysis, IP & email reputation and other rules-based checks to score each contact form submission. A combination of all these analysis results in a single spam score that accurately stops both manual spam and bots.
 
 The plugin's settings page also allows you to adjust how sensitive your spam filter should be. Even leaving the default setting __Sensitivity Level__ will help you reduce spam to zero.
 

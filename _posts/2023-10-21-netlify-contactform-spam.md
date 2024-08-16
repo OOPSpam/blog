@@ -6,7 +6,7 @@ image: /assets/posts/social-media-meta.png
 tags: [zapier, contact_form]
 
 
-description: "Learn how to add spam protection to your Netlify Forms without reCaptcha"
+description: "Learn how to add spam protection to your Netlify Forms without reCAPTCHA"
 # modified: 
 ---
 <center>

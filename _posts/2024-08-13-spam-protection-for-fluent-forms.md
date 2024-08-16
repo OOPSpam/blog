@@ -28,31 +28,31 @@ Do not wait for spam, enable honeypot protection when you build your forms as it
 
 ![Fluent Forms Honeypot](/blog/assets/posts/fluent-forms/honeypot.png "Fluent Forms Honeypot")
 
-## reCaptcha
+## reCAPTCHA
 
-Fluent Forms supports both reCAPTCHA v2 and v3 (Invisible reCaptcha). reCAPTCHA is available both for free and paid versions. Enabling reCAPTCHA is pretty straightforward through the plugin's settings. It involves creating Google Account then grabbing `Site Key`, `Secret Key` and pasting them to appropriate fields under Global Settings in Fluent Forms. Fluent Forms has a step-by-step tutorial on [how to set up reCAPTCHA in Fluent Forms](https://wpmanageninja.com/docs/fluent-form/miscellaneous/spam-protection-with-honeypot-and-google-recaptcha-in-wp-fluent-forms/#spam-protection-with-google-recaptcha).
+Fluent Forms supports both reCAPTCHA v2 and v3 (Invisible reCAPTCHA). reCAPTCHA is available both for free and paid versions. Enabling reCAPTCHA is pretty straightforward through the plugin's settings. It involves creating Google Account then grabbing `Site Key`, `Secret Key` and pasting them to appropriate fields under Global Settings in Fluent Forms. Fluent Forms has a step-by-step tutorial on [how to set up reCAPTCHA in Fluent Forms](https://wpmanageninja.com/docs/fluent-form/miscellaneous/spam-protection-with-honeypot-and-google-recaptcha-in-wp-fluent-forms/#spam-protection-with-google-recaptcha).
 
 ### Should I use reCAPTCHA v2 or v3?
 
-v3 came after many people complained about accessibility and usability issues with v2. v2 asks visitors to solve a challenge before submitting a form. To address this issue, Google removed the "challenge" part of reCaptcha. As a result, with v3, users don't solve any challenges. Instead, it tracks the user's behavior on your website and scores the user from 0 (bot) to 1 (human). It is up to the website owner to determine the threshold. In Fluent Forms, you don't have control over this threshold.
+v3 came after many people complained about accessibility and usability issues with v2. v2 asks visitors to solve a challenge before submitting a form. To address this issue, Google removed the "challenge" part of reCAPTCHA. As a result, with v3, users don't solve any challenges. Instead, it tracks the user's behavior on your website and scores the user from 0 (bot) to 1 (human). It is up to the website owner to determine the threshold. In Fluent Forms, you don't have control over this threshold.
 
-Many people are happy with reCaptcha. It is effective against simple bots, however, advanced bots can [bypass reCaptcha](https://www.oopspam.com/blog/bypassing-captcha). There are also "captcha farms" where people get paid to solve reCaptcha. It may also [slow down your website](https://www.oopspam.com/blog/recaptcha-performance-analyses) as it loads extra js files into your website.
+Many people are happy with reCAPTCHA. It is effective against simple bots, however, advanced bots can [bypass reCAPTCHA](https://www.oopspam.com/blog/bypassing-captcha). There are also "captcha farms" where people get paid to solve reCAPTCHA. It may also [slow down your website](https://www.oopspam.com/blog/recaptcha-performance-analyses) as it loads extra js files into your website.
 
-![Fluent Forms reCaptcha](/blog/assets/posts/fluent-forms/reCaptcha.png "Fluent Forms reCaptcha")
+![Fluent Forms reCAPTCHA](/blog/assets/posts/fluent-forms/reCaptcha.png "Fluent Forms reCAPTCHA")
 
-If you are looking for a free and quick workaround, reCAPTCHA is your solution.
+If you are looking for a free solution, reCAPTCHA is a good option.
 
 ## hCaptcha
 
-Similar to reCaptcha, hCaptcha is supported in both versions of Fluent Forms. They work similarly and suffer from the same limitations. Unlike reCaptcha, hCaptcha doesn't have an invisible version, so your visitors have to solve the presented puzzle. The most notable difference between reCAPTCHA and hCaptcha is privacy. hCaptcha is considered a privacy-friendly alternative to reCaptcha. Setting up hCaptcha is also very similar to hCaptcha. To enable hCaptcha for Fluent Forms check out [the official documentation](https://wpmanageninja.com/docs/fluent-form/integrations-available-in-wp-fluent-form/how-to-integrate-hcaptcha-in-wp-fluent-forms/).
+Similar to reCAPTCHA, hCaptcha is supported in both versions of Fluent Forms. They work similarly and suffer from the same limitations. Unlike reCAPTCHA, hCaptcha doesn't have an invisible version, so your visitors have to solve the presented puzzle. The most notable difference between reCAPTCHA and hCaptcha is privacy. hCaptcha is considered a privacy-friendly alternative to reCAPTCHA. Setting up hCaptcha is also very similar to hCaptcha. To enable hCaptcha for Fluent Forms check out [the official documentation](https://wpmanageninja.com/docs/fluent-form/integrations-available-in-wp-fluent-form/how-to-integrate-hcaptcha-in-wp-fluent-forms/).
 
 ![Fluent Forms hCaptcha](/blog/assets/posts/fluent-forms/hCaptcha.png "Fluent Forms hCaptcha")
 
 ## OOPSpam WordPress plugin
 
-[Our WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/) is another way to stop spam in Fluent Forms and WordPress comments. The plugin works with OOPSpam API that protects over 3.5M websites daily. While other spam filtering methods listed above are free, OOPSpam is a premium service and comes with 40 spam checks/month to test and see the difference.
+[OOPSpam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/) (that's us 👋) is another way to stop spam in Fluent Forms and WordPress comments. The plugin works with OOPSpam API that protects over 3.5M websites daily. While other spam filtering methods listed above are free, OOPSpam is a premium service and comes with 40 spam checks/month to test and see the difference.
 
-It's likely you have already tried the above options, and they didn't work for you. For you, it could be a slow website from reCaptcha/hCaptcha or overwhelming spam you are still getting despite implementing the above alternatives. 
+It's likely you have already tried the above options, and they didn't work for you. For you, it could be a slow website from reCAPTCHA/hCaptcha or overwhelming spam you are still getting despite implementing the above alternatives. 
 
 What makes OOPSpam different from other solutions is that it doesn't slow your website and is effective against human spammers and bots. There is no challenge to solve. No performance penalty as everything happens in your server instead of client-side. The OOPSpam API uses machine learning models, content analyses, IP reputation, and other rule-based checks to score every contact form submission. A combination of all these analyses returns a single spam score that is how it accurately stops both manual spam and bots.
 

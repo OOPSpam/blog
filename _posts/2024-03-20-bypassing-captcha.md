@@ -25,7 +25,7 @@ To really understand what's going on here, let's break down how CAPTCHAs work an
 
 Basically, a CAPTCHA is like a little test for your website visitors to prove they're human and not a robot. It could be something as simple as typing out some funky-looking text or identifying specific objects in a set of images. The idea is that while humans can easily solve these puzzles, bots and other automated systems can't. Even the more modern "Invisible CAPTCHAs" that don't require solving puzzles aren't safe - they work on the same fundamental principles.
 
-There are many reasons why someone would want to bypass CAPTCHAs like hCaptcha, reCaptcha, Turnstile and many others. Not all of them are malicious. Some non-malicious reasons include browser automation with Selenium, UI and form testing. Unfortunately, spammers also use similar techniques to circumvent CAPTCHAs. That's why your signup, newsletter, or contact forms are still being bombarded with spam even though you have a CAPTCHA in place.
+There are many reasons why someone would want to bypass CAPTCHAs like hCaptcha, reCAPTCHA, Turnstile and many others. Not all of them are malicious. Some non-malicious reasons include browser automation with Selenium, UI and form testing. Unfortunately, spammers also use similar techniques to circumvent CAPTCHAs. That's why your signup, newsletter, or contact forms are still being bombarded with spam even though you have a CAPTCHA in place.
 
 But here's where things get tricky...
 

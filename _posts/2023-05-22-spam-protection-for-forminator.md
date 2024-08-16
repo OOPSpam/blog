@@ -16,7 +16,7 @@ description: "Learn how to add spam protection to Forminator Forms with these 4 
 
 [Forminator](https://wpmudev.com/project/forminator-pro/) is another popular contact form builder packed with features. It has a generous free plan and a pro plan with extra features like Stripe integration, E-signature, and better support. In this article, however, we are going to talk about Forminator's anti-spam capabilities.
 
-Forminator comes with [built-in spam protection features](https://wpmudev.com/blog/prevent-form-comment-spam-forminator/). These are free tools like reCaptcha, hCaptcha, and honeypot field, and Akismet is a paid option. Our plugin OOPSpam WordPress plugin now supports Forminator too. Let's go through each of them.
+Forminator comes with [built-in spam protection features](https://wpmudev.com/blog/prevent-form-comment-spam-forminator/). These are free tools like reCAPTCHA, hCaptcha, and honeypot field, and Akismet is a paid option. Our plugin OOPSpam WordPress plugin now supports Forminator too. Let's go through each of them.
 
 {% include toc.md %}
 
@@ -31,7 +31,7 @@ To enable the honeypot field, edit your form and switch to __Behavior__ settings
 
 ## reCAPTCHA and hCaptcha
 
-Forminator also supports both [reCaptcha and hCaptcha](https://wpmudev.com/docs/wpmu-dev-plugins/forminator/#captcha-field). For those who have never heard of these options, both reCAPTCHA and hCaptcha are spam protection solutions. reCaptcha, by Google, verifies users with challenges. It has visible and invisible modes but raises privacy concerns. hCaptcha is a privacy-friendly alternative. It supports both challenge and invisible modes.
+Forminator also supports both [reCaptcha and hCaptcha](https://wpmudev.com/docs/wpmu-dev-plugins/forminator/#captcha-field). For those who have never heard of these options, both reCAPTCHA and hCaptcha are spam protection solutions. reCAPTCHA, by Google, verifies users with challenges. It has visible and invisible modes but raises privacy concerns. hCaptcha is a privacy-friendly alternative. It supports both challenge and invisible modes.
 
 It is available as a field in your forms. Edit your forms and click on __Insert Fields__ and choose __Captcha__. On the presented screen, you will be able to select reCAPTCHA or hCaptcha. Here, you can also select what type of reCAPTCHA you want on your website.
 
@@ -76,9 +76,9 @@ Forminator supports both v2 and v3 versions. First, let's quickly see how are th
 - reCAPTCHA v2: Invisible: Hidden by default. A CAPTCHA appears if a visitor is detected as malicious
 - reCAPTCHA v3: Invisible all the time
 
-v3 came after many people complained about accessibility and usability issues with v2. v2 asks visitors to solve a challenge before submitting a form. To address this issue, Google removed the "challenge" part of reCaptcha. As a result, with v3, users don't solve any challenge. Instead, it tracks the user's behavior on your website and scores the user from 0 (bot) to 1 (human). It is up to the website owner to determine the threshold. 
+v3 came after many people complained about accessibility and usability issues with v2. v2 asks visitors to solve a challenge before submitting a form. To address this issue, Google removed the "challenge" part of reCAPTCHA. As a result, with v3, users don't solve any challenge. Instead, it tracks the user's behavior on your website and scores the user from 0 (bot) to 1 (human). It is up to the website owner to determine the threshold. 
 
-Many people are happy with reCaptcha. It is effective against simple bots, however, advanced bots can [bypass reCaptcha](https://www.oopspam.com/blog/bypassing-captcha). There are also "captcha farms" where people get paid to solve reCaptcha. It may also [slow down your website](https://www.oopspam.com/blog/recaptcha-performance-analyses) as it loads extra js files into your website.
+Many people are happy with reCAPTCHA. It is effective against simple bots, however, advanced bots can [bypass reCAPTCHA](https://www.oopspam.com/blog/bypassing-captcha). There are also "captcha farms" where people get paid to solve reCAPTCHA. It may also [slow down your website](https://www.oopspam.com/blog/recaptcha-performance-analyses) as it loads extra js files into your website.
 
 If you're looking for a free and easy solution, reCAPTCHA may be the answer.
 
@@ -87,7 +87,7 @@ If you're looking for a free and easy solution, reCAPTCHA may be the answer.
 
 ## OOPSpam WordPress plugin
 
-[Our WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/) is another way to stop spam on your Forminator and WordPress comments. The plugin works with OOPSpam API that protects over 3.5M websites daily. While the other alternatives above are free, OOPSPam API is a paid service. But it does come with free 40/month spam checks for you to test and see the difference.
+[OOPSpam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/) (that's us 👋) is another way to stop spam on your Forminator and WordPress comments. The plugin works with OOPSpam API that protects over 3.5M websites daily. While the other alternatives above are free, OOPSPam API is a paid service. But it does come with free 40/month spam checks for you to test and see the difference.
 
 It's likely you have already tried the above options, and they didn't work for you. It could be [a slow website from reCAPTCHA or hCaptcha](https://www.oopspam.com/blog/recaptcha-performance-analyses) or overwhelming spam you are still getting despite implementing the above alternatives. What makes OOPSpam different from other solutions is that it doesn't slow your website and is effective against human spammers and bots. There is no challenge to solve. No performance penalty as everything happens in your server instead of client-side. The OOPSpam API uses machine learning models, content analyses, IP & email reputation, and other rule-based checks to score every contact form submission. A combination of all these analyses returns a single spam score that is how it accurately stops both manual spam and bots.
 
@@ -126,7 +126,7 @@ Here are a few steps to activate spam protection for Forminator
 
 ## Final thoughts
 
-All websites eventually get hit by spammers. As a website grows and gets more traffic it attracts more serious spammers with advance bots. Both honeypot and reCaptcha/hCaptcha will protect your website to a certain degree but they are not enough for targeted spam attacks, manual spam and sophisticated bots. I hope this article helps you find a solution for your spam problem.
+All websites eventually get hit by spammers. As a website grows and gets more traffic it attracts more serious spammers with advance bots. Both honeypot and reCAPTCHA/hCaptcha will protect your website to a certain degree but they are not enough for targeted spam attacks, manual spam and sophisticated bots. I hope this article helps you find a solution for your spam problem.
 
 That is all! Go on and create your forms.
 

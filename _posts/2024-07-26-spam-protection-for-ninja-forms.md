@@ -56,7 +56,7 @@ Many people are happy with reCAPTCHA. It is effective against simple bots, howev
 
 ![Ninja Forms reCAPTCHA](/blog/assets/posts/ninja/recaptcha.png "Ninja Forms reCAPTCHA")
 
-If you are looking for a free and quick workaround, reCAPTCHA is your solution.
+If you are looking for a free solution, reCAPTCHA is a good option.
 
 
 ## OOPSpam Anti-Spam Plugin

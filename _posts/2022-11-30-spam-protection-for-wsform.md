@@ -18,7 +18,7 @@ description: "Learn how to add spam protection to WS Form with these 5 different
 
 ## Intro
 
-[WS Form](https://wsform.com/) is one of the most feature-rich form builders for WordPress. It supports over 55 field types, 100 ready-to-go templates, and all other good stuff like conditional logic and multi-step forms. My favorite part of WS Form is the developer friendliness of it. It has Debug Console that allows you quickly test forms. Similar to other popular form builders, it has lots of hooks for custom integrations. When it comes to spam protection, they offer much built-in integration like reCaptcha, hCaptcha, Turnstile, and Akismet. Note that not all features are available in [free WS Form Lite](https://wordpress.org/plugins/ws-form/). In terms of spam filtering, it seems only reCaptcha, hCaptcha, and Turnstile are part of WS Form Lite. 
+[WS Form](https://wsform.com/) is one of the most feature-rich form builders for WordPress. It supports over 55 field types, 100 ready-to-go templates, and all other good stuff like conditional logic and multi-step forms. My favorite part of WS Form is the developer friendliness of it. It has Debug Console that allows you quickly test forms. Similar to other popular form builders, it has lots of hooks for custom integrations. When it comes to spam protection, they offer much built-in integration like reCAPTCHA, hCaptcha, Turnstile, and Akismet. Note that not all features are available in [free WS Form Lite](https://wordpress.org/plugins/ws-form/). In terms of spam filtering, it seems only reCAPTCHA, hCaptcha, and Turnstile are part of WS Form Lite. 
 
 {% include toc.md %}
 
@@ -41,25 +41,25 @@ Check out the screenshot below if you are a visual person.
 
 ![WS Form Honeypot](/blog/assets/posts/ws-form/honeypot.png "WS Form Honeypot")
 
-## reCaptcha
+## reCAPTCHA
 
-Like most form builders, WS Form supports reCaptcha. reCAPTCHA comes as a field, meaning you need to add the reCAPTCHA field to your form from Toolbox and configure it.
+Like most form builders, WS Form supports reCAPTCHA. reCAPTCHA comes as a field, meaning you need to add the reCAPTCHA field to your form from Toolbox and configure it.
 
-It supports both reCAPTCHA v2 and v3 (Invisible reCaptcha). reCAPTCHA is available both for free Lite and paid Pro versions. Enabling reCAPTCHA is pretty straightforward through the plugin's settings. It involves creating Google Account then grabbing `Site Key`, and `Secret Key` and pasting them to appropriate fields under Toolbox -> reCAPTCHA in Edit Form mode. Check out the official tutorial on [how to set up reCAPTCHA in WS Form](https://wsform.com/knowledgebase/recaptcha/).
+It supports both reCAPTCHA v2 and v3 (Invisible reCAPTCHA). reCAPTCHA is available both for free Lite and paid Pro versions. Enabling reCAPTCHA is pretty straightforward through the plugin's settings. It involves creating Google Account then grabbing `Site Key`, and `Secret Key` and pasting them to appropriate fields under Toolbox -> reCAPTCHA in Edit Form mode. Check out the official tutorial on [how to set up reCAPTCHA in WS Form](https://wsform.com/knowledgebase/recaptcha/).
 
 ### Should I use reCAPTCHA v2 or v3?
 
-v3 came after many people complained about accessibility and usability issues with v2. v2 asks visitors to solve a challenge before submitting a form. To address this issue, Google removed the "challenge" part of reCaptcha. As a result, with v3, users don't solve any challenges. Instead, it tracks the user's behavior on your website and scores the user from 0 (bot) to 1 (human). It is up to the website owner to determine the threshold. In WS Form, you can control this threshold under _Form Settings -> Spam -> Spam Threshold_.
+v3 came after many people complained about accessibility and usability issues with v2. v2 asks visitors to solve a challenge before submitting a form. To address this issue, Google removed the "challenge" part of reCAPTCHA. As a result, with v3, users don't solve any challenges. Instead, it tracks the user's behavior on your website and scores the user from 0 (bot) to 1 (human). It is up to the website owner to determine the threshold. In WS Form, you can control this threshold under _Form Settings -> Spam -> Spam Threshold_.
 
-Many people are happy with reCaptcha. It is effective against simple bots, however, advanced bots can [bypass reCaptcha](https://www.oopspam.com/blog/bypassing-captcha). There are also "captcha farms" where people get paid to solve reCaptcha. It may also [slow down your website](/blog/recaptcha-performance-analyses) as it loads extra js files into your website.
+Many people are happy with reCAPTCHA. It is effective against simple bots, however, advanced bots can [bypass reCAPTCHA](https://www.oopspam.com/blog/bypassing-captcha). There are also "captcha farms" where people get paid to solve reCAPTCHA. It may also [slow down your website](/blog/recaptcha-performance-analyses) as it loads extra js files into your website.
 
-![WS Form reCaptcha](/blog/assets/posts/ws-form/reCaptcha.png "WS Form reCaptcha")
+![WS Form reCAPTCHA](/blog/assets/posts/ws-form/reCaptcha.png "WS Form reCAPTCHA")
 
-If you are looking for a free and quick workaround, reCAPTCHA is your solution.
+If you are looking for a free solution, reCAPTCHA is a good option.
 
 ## hCaptcha
 
-Similar to reCaptcha, hCaptcha is supported in both versions of the WS Form. They work similarly and suffer from the same limitations. hCaptcha integration comes with two types: Visible and Invisible. The most notable difference between reCAPTCHA and hCaptcha is privacy. hCaptcha is considered a privacy-friendly alternative to reCaptcha. Setting up hCaptcha is also very similar to hCaptcha. Check out [the official tutorial on WS Form documentation](https://wsform.com/knowledgebase/hcaptcha/). It involves adding the reCAPTCHA field to your form and entering Site Key and Secret Key. You can obtain these keys by creating an account on [hCaptcha's website](https://www.hcaptcha.com/).
+Similar to reCAPTCHA, hCaptcha is supported in both versions of the WS Form. They work similarly and suffer from the same limitations. hCaptcha integration comes with two types: Visible and Invisible. The most notable difference between reCAPTCHA and hCaptcha is privacy. hCaptcha is considered a privacy-friendly alternative to reCAPTCHA. Setting up hCaptcha is also very similar to hCaptcha. Check out [the official tutorial on WS Form documentation](https://wsform.com/knowledgebase/hcaptcha/). It involves adding the reCAPTCHA field to your form and entering Site Key and Secret Key. You can obtain these keys by creating an account on [hCaptcha's website](https://www.hcaptcha.com/).
 
 ![WS Form hCaptcha](/blog/assets/posts/ws-form/hCaptcha.png "WS Form hCaptcha")
 
@@ -89,9 +89,9 @@ More about Turnstile check out: [What No One Tells You About Cloudflare Turnstil
 
 ## OOPSpam WordPress plugin
 
-[Our WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/) is another way to stop spam in WS Form and WordPress comments. The plugin works with [OOPSpam](https://www.oopspam.com/) API that protects over 3.5M websites daily. While other spam filtering methods listed above are free, OOPSpam is a premium service and comes with 40 spam checks/month to test and see the difference.
+[OOPSpam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/) (that's us 👋) is another way to stop spam in WS Form and WordPress comments. The plugin works with [OOPSpam](https://www.oopspam.com/) API that protects over 3.5M websites daily. While other spam filtering methods listed above are free, OOPSpam is a premium service and comes with 40 spam checks/month to test and see the difference.
 
-Likely, you have already tried the above options, and they didn't work for you. For you, it could be [a slow website from reCaptcha](https://www.oopspam.com/blog/recaptcha-performance-analyses), [hCaptcha](https://www.oopspam.com/blog/hcaptcha-performance-analyses), Turnstile, or overwhelming spam you are still getting despite implementing the above alternatives. What makes OOPSpam different from other solutions is that it doesn't slow your website and is effective against human spammers and bots. There is no challenge to solve. No performance penalty as everything happens in your server instead of client-side. The OOPSpam API uses machine learning models, content analyses, IP & email reputation, and other rule-based checks to score every contact form submission. A combination of all these analyses returns a single spam score which is how it accurately stops both manual spam and bots.
+Likely, you have already tried the above options, and they didn't work for you. For you, it could be [a slow website from reCAPTCHA](https://www.oopspam.com/blog/recaptcha-performance-analyses), [hCaptcha](https://www.oopspam.com/blog/hcaptcha-performance-analyses), Turnstile, or overwhelming spam you are still getting despite implementing the above alternatives. What makes OOPSpam different from other solutions is that it doesn't slow your website and is effective against human spammers and bots. There is no challenge to solve. No performance penalty as everything happens in your server instead of client-side. The OOPSpam API uses machine learning models, content analyses, IP & email reputation, and other rule-based checks to score every contact form submission. A combination of all these analyses returns a single spam score which is how it accurately stops both manual spam and bots.
 
 On the plugin's settings page, you could also adjust how sensitive you want your spam filter to be. Even keeping (recommended) the default __Sensitivity level__ setting will help you cut down spam to zero.
 

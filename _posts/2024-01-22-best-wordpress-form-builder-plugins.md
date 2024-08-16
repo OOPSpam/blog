@@ -83,7 +83,7 @@ These numbers look good. Would be interesting to see how other form plugins comp
 
 As we provide spam filtering service for various platforms including WordPress plugins, this topic is very interesting for me personally. As mentioned above, we talk about WS Form's capabilities in terms of spam protection in [another post](https://www.oopspam.com/blog/spam-protection-for-wsform). For both WS Form LITE and PRO we have the following options:
 
-- reCaptcha
+- reCAPTCHA
 - hCaptcha
 - Turnstile
 - Honeypot
@@ -126,7 +126,7 @@ Our contact form with Fluent Forms increased the number of network requests by 3
 
 Fluent Forms comes with [a couple of spam filtering options](https://www.oopspam.com/blog/spam-protection-for-fluent-forms) in the free version. These are
 
-- reCaptcha
+- reCAPTCHA
 - hCaptcha
 - Turnstile
 - Honeypot
@@ -209,7 +209,7 @@ Now that we have created a simple contact form with Formidable Forms, lets see h
 
 [Formidable Forms offers similar anti-spam tools](https://www.oopspam.com/blog/spam-protection-for-formidable). However, it has a unique anti-spam feature others don't. This is blocking spam using [WordPress's built-in _Comment Moderation_](https://www.oopspam.com/blog/spam-protection-for-formidable#using-wordpresss-comment-moderation). Add URLs, IPs or any spam words (per line) to this field in _WordPress Settings -> Discussion Page -> Disallowed Comment Keys_. Formidable Forms will then check each post against this list and block it if it matches.
 
-- reCaptcha
+- reCAPTCHA
 - hCaptcha
 - Token-based spam protection
 - Honeypot
@@ -246,7 +246,7 @@ Forminator comes with [three built-in options](https://www.oopspam.com/blog/spam
 
 - Honeypot
 - hCaptcha
-- reCaptcha
+- reCAPTCHA
 
 We know that hCaptcha and reCAPTCHA [have a big impact on page speed](https://www.oopspam.com/blog/hcaptcha-performance-analyses). This is expected from client-side solutions because they need to load javascript files, use cookies to track users, perform calculations, and send HTTP requests. Let's add hCaptcha to our Forminator form and see the impact.
 
@@ -281,7 +281,7 @@ Once you enable Gravity Forms on your page, the number of network requests incre
 This is where Gravity Forms really shines. It [has many options](https://www.oopspam.com/blog/spam-protection-for-gravity-forms) for spam filtering. Although only reCAPTCHA and Honeypot are natively supported. The other options require add-ons to be installed. All spam protection is available under the Basic plan. Here are some of them:
 
 - Honeypot
-- reCaptcha
+- reCAPTCHA
 - Custom CAPTCHA with conditional logic
 - hCaptcha (add-on)
 - Turnstile (add-on)
@@ -325,7 +325,7 @@ Ninja Forms doesn't have much of an impact on your website's load time in its ra
 Ninja Forms comes with a number of options, but it is also missing a couple of important integrations. Ninja Forms offers the following anti-spam features:
 
 - Honeypot
-- reCaptcha
+- reCAPTCHA
 - Question - Answer
 
 This is it. There is no Turnstile, hCaptcha support. However, you can install the official hCaptcha WordPress plugin. It supports Ninja Forms. 
@@ -343,7 +343,7 @@ After activating reCAPTCHA v3, we can see the increase in resources. It increase
 
 The most popular contact form builder for WordPress. It has over 5 million active installations. Contact Form 7 is easy to use and a great choice for a simple form. If all you need is a simple form where you get submissions via email, then this is the plugin you are looking for.
 
-It doesn't store submissions, doesn't integrate with external services, and doesn't use cookies. I expect the plugin to be super fast considering our minimum requirements. However, you can add spam protection, store submissions via third party plugins. Some integrations like Stripe, reCaptcha, Akismet are built in, but you have to set them up.
+It doesn't store submissions, doesn't integrate with external services, and doesn't use cookies. I expect the plugin to be super fast considering our minimum requirements. However, you can add spam protection, store submissions via third party plugins. Some integrations like Stripe, reCAPTCHA, Akismet are built in, but you have to set them up.
 
 
 ![Contact Form 7 Lighthouse Performance and Accessibility Result](/blog/assets/posts/best-wp-form/cf7-lighthouse.png "Contact Form 7 Lighthouse Performance and Accessibility Result")
@@ -368,7 +368,7 @@ No additional resources are required. Only 25% increase in content loading time.
 While you can use third-party anti-spam plugins to protect your Contact Form 7, it natively supports only the following solutions
 
 - Akismet
-- reCaptcha
+- reCAPTCHA
 
 Let's add reCAPTCHA to our form and see how our basic form performs.
 
@@ -430,7 +430,7 @@ In general, the fastest form builder with at least one anti-spam feature is WPFo
 2. Fluent Forms
 3. Gravity Forms
 
-Considering that Turnstile is a bit lighter than reCAPTCHA and hCaptcha. If we group hCaptcha and reCaptcha, we get the following rankings
+Considering that Turnstile is a bit lighter than reCAPTCHA and hCaptcha. If we group hCaptcha and reCAPTCHA, we get the following rankings
 
 1. Gravity Forms
 2. Ninja Forms
@@ -449,7 +449,7 @@ WPForms is the fastest when used with Turnstile. Other lightweight plugins are F
 
 # What is the fastest spam protection for WordPress?
 
-All client-side spam protection solutions including reCaptcha, hCaptcha, Turnstile will [slow down your website](https://www.oopspam.com/blog/recaptcha-performance-analyses). This is because they load JavaScript files, use cookies. If you need to use one of them, Turnstile has slightly less impact on your site. To avoid this problem, use a backend based spam protection like [OOPSpam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/). OOPSpam has zero impact on your site speed. More about Turnstile check out: [What No One Tells You About Cloudflare Turnstile](https://www.oopspam.com/blog/cloudflare-turnstile).
+All client-side spam protection solutions including reCAPTCHA, hCaptcha, Turnstile will [slow down your website](https://www.oopspam.com/blog/recaptcha-performance-analyses). This is because they load JavaScript files, use cookies. If you need to use one of them, Turnstile has slightly less impact on your site. To avoid this problem, use a backend based spam protection like [OOPSpam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/) (that's us 👋). OOPSpam has zero impact on your site speed. More about Turnstile check out: [What No One Tells You About Cloudflare Turnstile](https://www.oopspam.com/blog/cloudflare-turnstile).
 
 
 <style>
