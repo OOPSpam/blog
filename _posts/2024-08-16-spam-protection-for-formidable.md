@@ -18,11 +18,50 @@ description: "Learn how to add spam protection to Formidable Forms with these 5 
 
 {% include toc.md %}
 
-## Intro
+Formidable Forms is one of the most popular contact form builder out there with over 13M downloads. It has everything you need to build a complex form from payment gateway integrating (Stripe etc.) to conditional logic and more. Formidable Forms Lite is [available](https://wordpress.org/plugins/formidable/) in the WordPress plugin directory and comes with basic fields and built-it spam filtering options. The Pro version adds advanced fields and many more features. [Check out official comparison](https://formidableforms.com/lite-upgrade/) between Lite & Pro.
 
-Formidable Forms is one of the most popular contact form builder out there with over 13M downloads. It has everything you need to build a complex form from payment gateway integrating (Stripe etc.) to conditional logic and more. Formidable Forms Lite is available in the WordPress plugin directory and comes with basic fields and built-it spam filtering options. The Pro version adds advanced fields and many more features. [Check out official comparison](https://formidableforms.com/lite-upgrade/) between Lite & Pro.
+Now we have talked about what Formidable Forms is. So let's focus on what you can do about the spam you get through your Formidable Forms.
 
-In this article, we are going to focus only on anti-spam capabilities of Formidable Forms. Both free Lite and paid Pro versions come with the same built-in spam protection choices. And then we look into third-party alternatives.
+## OOPSpam WordPress plugin
+
+[Our WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/) (that's us 👋) is one way to stop spam in Formidable Forms and WordPress comments. The plugin works with OOPSpam API that protects over 3.5M websites daily. While other spam filtering methods listed below are free, OOPSpam is a premium service and comes with 40 spam checks/month to test and see the difference.
+
+It's likely you have already tried the below options, and they didn't work for you. It could be a [slow website from reCAPTCHA](https://www.oopspam.com/blog/recaptcha-performance-analyses) or overwhelming spam you are still getting despite implementing the below alternatives. These are benefits OOPSpam has over other alternative:
+
+1. Doesn't slow down your website
+2. Keeps your site accessible to all users
+3. Stops both human spammers and bots
+
+On the plugin's settings page, you could also adjust how sensitive you want your spam filter to be. Even keeping (recommended) default __Sensitivity level__ setting will help you cut down spam to zero.
+
+![OOPSpam WordPress Plugin Sensitivity level](https://www.oopspam.com/assets/WP_SensitivyLevel.jpg "OOPSpam WordPress Plugin Sensitivity level")
+
+In addition, the plugin allows you to set up a filter to accept submissions only from certain countries and languages.
+
+![OOPSpam WordPress Plugin country & language restrictions](https://www.oopspam.com/assets/country-language-filter.png "OOPSpam WordPress Plugin country & language restrictions")
+
+> ✨ Since then, we have also added the __Block messages from these countries__ feature.
+
+![OOPSpam WordPress Plugin block countries](https://www.oopspam.com/blog/assets/wp-block-countries.png "OOPSpam WordPress Plugin block countries")
+
+Here are a few steps to activate spam protection for Formidable Forms:
+
+1. [Subscribe to get an API key](https://app.oopspam.com/Identity/Account/Register) then copy-paste the API key to the plugin's appropriate field under __Settings->OOPSpam Anti-Spam__ on your WordPress Admin Dashboard.
+
+    > ℹ️ Make sure to select OOPSpam Dashboard on the setting page
+
+2. If you have Formidable Forms installed then a special section will appear on the OOPSpam Anti-Spam plugin's settings page.
+
+    ![OOPSpam Anti-Spam WordPress Plugin Settings](/blog/assets/posts/formidable-forms/oopspam.png "OOPSpam Anti-Spam WordPress Plugin Settings")
+
+3. On this page, you need to activate the spam filtering for Formidable Forms by checking the **Activate Spam Protection** checkbox. You don't have to do anything on your form. Once you activate spam protection on the OOPSpam plugin settings, you are good to go.
+
+4. Don't forget to enter a short message to display when a spam form entry is submitted. Your message will appear at the bottom of the message field.
+
+<center>
+<img loading="lazy"  width="800" alt="OOPSpam detected spam on Formidable Forms" src="/blog/assets/posts/formidable-forms/spam-in-formidable-forms.png">
+</center>
+<br/>
 
 ## Honeypot
 
@@ -30,7 +69,7 @@ In this article, we are going to focus only on anti-spam capabilities of Formida
 
 > A honeypot field is a hidden field that is meant to be filled only by bots. Bots scan a website and fill all the fields, including the hidden field in your form. Formidable Forms will automatically dismiss every submission with an entry in a honeypot field.
 
-Formidable Forms comes with the honeypot feature and it's enabled by default. If you getting spammed, first make sure this honeypot is still enabled. 
+Formidable Forms comes with the honeypot feature and it's enabled by default. If you getting spammed, first make sure this honeypot is still enabled.
 
 Unlike other contact form solutions like [Fluent Forms](https://www.oopspam.com/blog/spam-protection-for-fluent-forms), Formidable Forms allows you to configure honeypot in three different modes: _Off_, _Basic_, and _Strict_. This is a great way to harden spam protection.
 
@@ -75,43 +114,6 @@ Many people are happy with reCaptcha. It is effective against simple bots, howev
 ![Formidable Forms reCaptcha](/blog/assets/posts/formidable-forms/recaptcha.png "Formidable Forms reCaptcha")
 
 If you are looking for a free and quick workaround, reCAPTCHA is your solution.
-
-## OOPSpam WordPress plugin
-
-[Our WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/) is another way to stop spam in Formidable Forms and WordPress comments. The plugin works with OOPSpam API that protects over 3.5M websites daily. While other spam filtering methods listed above are free, OOPSpam is a premium service and comes with 40 spam checks/month to test and see the difference.
-
-It's likely you have already tried the above options, and they didn't work for you. For you, it could be a slow website from reCAPTCHA or overwhelming spam you are still getting despite implementing the above alternatives. What makes OOPSpam different from other solutions is that it doesn't slow your website and is effective against human spammers and bots. There is no challenge to solve. No performance penalty as everything happens in your server instead of client-side. The OOPSpam API uses machine learning models, content analyses, IP reputation, and other rule-based checks to score every contact form submission. A combination of all these analyses returns a single spam score that is how it accurately stops both manual spam and bots.
-
-On the plugin's settings page, you could also adjust how sensitive you want your spam filter to be. Even keeping (recommend) default __Sensitivity level__ setting will help you cut down spam to zero.
-
-![OOPSpam WordPress Plugin Sensitivity level](https://www.oopspam.com/assets/WP_SensitivyLevel.jpg "OOPSpam WordPress Plugin Sensitivity level")
-
-In addition, the plugin allows you to set up a filter to accept submissions only from certain countries and languages.
-
-![OOPSpam WordPress Plugin country & language restrictions](https://www.oopspam.com/assets/country-language-filter.png "OOPSpam WordPress Plugin country & language restrictions")
-
-> ✨ Since then, we have also added the __Block messages from these countries__ feature.
-
-![OOPSpam WordPress Plugin block countries](https://www.oopspam.com/blog/assets/wp-block-countries.png "OOPSpam WordPress Plugin block countries")
-
-Here are a few steps to activate spam protection for Formidable Forms:
-
-1. [Subscribe to get an API key](https://app.oopspam.com/Identity/Account/Register) then copy-paste the API key to the plugin's appropriate field under __Settings->OOPSpam Anti-Spam__ on your WordPress Admin Dashboard.
-
-> ℹ️ Make sure to select OOPSpam Dashboard on the setting page
-
-2. If you have Formidable Forms installed then a special section will appear on the OOPSpam Anti-Spam plugin's settings page.
-
-    ![OOPSpam Anti-Spam WordPress Plugin Settings](/blog/assets/posts/formidable-forms/oopspam.png "OOPSpam Anti-Spam WordPress Plugin Settings")
-
-3. On this page, you need to activate the spam filtering for Formidable Forms by checking the **Activate Spam Protection** checkbox. You don't have to do anything on your form. Once you activate spam protection on the OOPSpam plugin settings, you are good to go.
-
-4. Don't forget to enter a short message to display when a spam form entry is submitted. Your message will appear at the bottom of the message field.
-
-<center>
-<img loading="lazy"  width="800" alt="OOPSpam detected spam on Formidable Forms" src="/blog/assets/posts/formidable-forms/spam-in-formidable-forms.png">
-</center>
-<br/>
 
 ## Final thoughts
 

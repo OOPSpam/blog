@@ -93,7 +93,7 @@ More about Turnstile check out: [What No One Tells You About Cloudflare Turnstil
 
 Likely, you have already tried the above options, and they didn't work for you. For you, it could be [a slow website from reCaptcha](https://www.oopspam.com/blog/recaptcha-performance-analyses), [hCaptcha](https://www.oopspam.com/blog/hcaptcha-performance-analyses), Turnstile, or overwhelming spam you are still getting despite implementing the above alternatives. What makes OOPSpam different from other solutions is that it doesn't slow your website and is effective against human spammers and bots. There is no challenge to solve. No performance penalty as everything happens in your server instead of client-side. The OOPSpam API uses machine learning models, content analyses, IP & email reputation, and other rule-based checks to score every contact form submission. A combination of all these analyses returns a single spam score which is how it accurately stops both manual spam and bots.
 
-On the plugin's settings page, you could also adjust how sensitive you want your spam filter to be. Even keeping (recommend) the default __Sensitivity level__ setting will help you cut down spam to zero.
+On the plugin's settings page, you could also adjust how sensitive you want your spam filter to be. Even keeping (recommended) the default __Sensitivity level__ setting will help you cut down spam to zero.
 
 ![OOPSpam WordPress Plugin Sensitivity level](https://www.oopspam.com/assets/WP_SensitivyLevel.jpg "OOPSpam WordPress Plugin Sensitivity level")
 
