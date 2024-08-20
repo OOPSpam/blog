@@ -87,7 +87,7 @@ Here is a simple table comparing these tools.
       <td>Slow website</td>
       <td><a href="https://www.oopspam.com/blog/recaptcha-performance-analyses">Worse</a></td>
       <td><a href="https://www.oopspam.com/blog/hcaptcha-performance-analyses">Bad</a></td>
-      <td>Better</td>
+       <td><a href="https://www.oopspam.com/blog/cloudflare-turnstile">Better</a></td>
     </tr>
     <tr>
       <td>Can be bypassed</td>

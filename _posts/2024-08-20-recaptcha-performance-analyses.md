@@ -14,7 +14,7 @@ description: "Let's look at how reCAPTCHA slows down your website and what you c
 </center>
 <br/>
 
-reCaptcha is a popular CAPTCHA solution. It's hard to imagine anyone who hasn't solved or seen at least one reCAPTCHA. It's arguably effective against automated spam bots. There are third-party services (such as 2Captcha) that can solve reCAPTCHA challenges for as little as 0.02 cents each. Not all spam bots use these services, so reCAPTCHA still works for many.
+reCAPTCHA is a popular CAPTCHA solution. It's hard to imagine anyone who hasn't solved or seen at least one reCAPTCHA. It's arguably effective against automated spam bots. There are third-party services (such as 2Captcha) that can solve reCAPTCHA challenges for as little as 0.02 cents each. Not all spam bots use these services, so reCAPTCHA still works for many.
 
 Best of all, it's free. However, reCAPTCHA has drawbacks, including accessibility issues (only with reCAPTCHA v2), a slower website, and privacy concerns.
 
@@ -34,14 +34,15 @@ In this article we will focus on the performance aspect, how reCAPTCHA slows dow
 
 ## How does reCAPTCHA slow down your website?
 
-Any included JavaScript, CSS or font file will slow down your website. This is unavoidable. It's best to keep it to a minimum as it's good for search engine ranking and user experience. As you may know, reCAPTCHA is a JavaScript based widget. You can [integrate reCAPTCHA V3](https://developers.google.com/recaptcha/docs/v3) into your website by including a JavaScript file, a callback function to handle the token, and a button with reCAPTCHA attributes.
+Any included JavaScript, CSS or font file will slow down your website. This is unavoidable. It's best to keep it to a minimum as it's good for search engine ranking and user experience. 
 
-Our testing will be done on the complete contact form we created in [our previous article](https://www.oopspam.com/blog/contact-form-with-PHP). In that article, we integrated [OOPSpam](https://www.oopspam.com/) as a spam filter instead of reCAPTCHA. This time we will use reCAPTCHA as spam protection. Let's see the page performance before and after reCAPTCHA integration.
+As you may know, reCAPTCHA is a JavaScript based widget. You can [integrate reCAPTCHA V3](https://developers.google.com/recaptcha/docs/v3) into your website by including a JavaScript file in [every page](https://www.oopspam.com/blog/loading-recaptcha), a callback function to handle the token, and a button with reCAPTCHA attributes.
 
-The form is quite simple with 3 fields and basic styling. To see a clear difference and less noise, we stay away from using CMS systems like WordPress. 
+Our testing will be done on the complete contact form we created in [our previous article](https://www.oopspam.com/blog/contact-form-with-PHP). In that article, we integrated [OOPSpam](https://www.oopspam.com/) as a spam filter instead of reCAPTCHA. This time we will use reCAPTCHA as spam protection.
+
+The form is quite simple with 3 fields and basic styling. To see a clear difference and less noise, we stay away from using CMS systems like WordPress.
 
 ![A simple 3 field contact form](/blog/assets/posts/recaptcha/cf.png "A simple 3 field contact form")
-
 
 We will use the tool [Lighthouse](https://web.dev/performance-scoring/) to evaluate the performance. Lighthouse is available in any Chromium-based browser (Chrome, Brave, etc.).
 
@@ -99,8 +100,8 @@ A single page website with a simple form loaded in 1.56 seconds. In any website,
 
 ## Faster website with and without reCAPTCHA
 
-It's possible to improve website speed while using reCAPTCHA. You can achieve this by using caching, CDN, and delaying other unnecessary CSS and JavaScript files. The key component of reCAPTCHA integration is to include the reCAPTCHA JavaScript file only on pages where reCAPTCHA is needed. If you are using WordPress, you can [add a code snippet](https://wordpress.ezoic.com/how-to-improve-site-speed-while-using-recaptcha/) to your WordPress theme's _functions.php_ file to prevent reCAPTCHA from loading its files on other pages.
+It's possible to improve website speed while using reCAPTCHA. You can achieve this by using caching, CDN, and delaying other unnecessary CSS and JavaScript files.
 
-> Don't load reCAPTCHA's JavaScript file on every page. Only where you need it.
+> Some people may recommend not [loading reCAPTCHA files on every page](https://www.oopspam.com/blog/loading-recaptcha). According to Google's documentation, reCAPTCHA works best when it has the full context of how users interact with your entire site - both the legitimate behavior and the sketchy stuff.
 
 Replacing reCAPTCHA with the server-side spam filtering options like [OOPSpam API](https://www.oopspam.com/) or [OOPSpam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/) (that's us 👋) is another way to get a fast-loading website. Unlike reCAPTCHA or any other CAPTCHA solution, the backend based spam filters work in your server and never interact with your users or load any resources on the client side. With OOPSpam there are no cookies, no JavaScript and no challenges for your visitors to solve.
