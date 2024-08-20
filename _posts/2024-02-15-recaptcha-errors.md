@@ -10,6 +10,8 @@ description: Learn how to fix common reCAPTCHA issues
 
 Getting errors with reCAPTCHA can be frustrating. However, don't worry! This guide will walk you through the most common issues users face with reCAPTCHA and provide simple solutions to troubleshoot them quickly. Whether you're integrating reCAPTCHA into your website or encountering errors during usage, this article will help you navigate through them smoothly. Let's dive in and solve those pesky reCAPTCHA errors together!
 
+{% include toc.md %}
+
 ## Invalid site key
 
 Here are some reasons why you may be seeing this error:
@@ -48,6 +50,6 @@ If you load reCAPTCHA scripts twice, you may also see these errors:
 
 ## No CAPTCHA, no error solution?
 
-reCAPTCHA works in the browser of your visitors. So it is open to manipulation, conflicts with browser extensions. These are only some of the reasons why people have to deal with the above mentioned issues. Some other reasons why people don't want to use reCAPTCHA is because it [slows down your website](https://www.oopspam.com/blog/recaptcha-performance-analyses), makes it inaccessible and raises privacy concerns. If you are looking for an alternative solution, [OOPSpam API](https://www.oopspam.com/) and [OOPSpam WordPress plugin](https://www.oopspam.com/wordpress) works in the background, never interacts with your visitors, has no impact on your website speed.
+reCAPTCHA works in the browser of your visitors. So it is open to manipulation, conflicts with browser extensions. These are only some of the reasons why people have to deal with the above mentioned issues. Some other reasons why people don't want to use reCAPTCHA is because it [slows down your website](https://www.oopspam.com/blog/recaptcha-performance-analyses), makes it inaccessible and raises privacy concerns. If you are looking for an alternative solution, [OOPSpam API](https://www.oopspam.com/) (that's us 👋) and [OOPSpam WordPress plugin](https://www.oopspam.com/wordpress) works in the background, never interacts with your visitors, has no impact on your website speed.
 
 Hope this article was helpful. Have a spam free day!
