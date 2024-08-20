@@ -20,6 +20,47 @@ In this post, we will explore the spam filtering options for Bricks Form Element
 
 {% include toc.md %}
 
+## OOPSpam WordPress plugin
+
+[OOPSpam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/) (that's us 👋) is another way to stop spam on your Bricks Form and WordPress comments. The plugin works with OOPSpam API that protects over 3.5M websites daily. While the other alternatives above are free, OOPSPam API is a paid service. But it does come with free 40/month spam checks for you to test and see the difference.
+
+It's likely you have already tried the below options, and they didn't work for you. It could be a [slow website from reCAPTCHA](https://www.oopspam.com/blog/recaptcha-performance-analyses) or overwhelming spam you are still getting despite implementing the below alternatives. These are benefits OOPSpam has over other alternative:
+
+1. Doesn't slow down your website
+2. Keeps your site accessible to all users
+3. Stops both human spammers and bots
+
+The plugin's settings page also allows you to adjust how sensitive your spam filter should be. Even leaving the default setting __Sensitivity Level__ will help you reduce spam to zero.
+
+![OOPSpam WordPress Plugin Sensitivity level](https://www.oopspam.com/assets/WP_SensitivyLevel.jpg "OOPSpam WordPress Plugin Sensitivity level")
+
+In addition, the plugin allows you to set up a filter to accept or block submissions only from certain countries and languages.
+
+![OOPSpam WordPress Plugin country & language restrictions](/blog/assets/posts/breakdance/country-language-filter.png "OOPSpam WordPress Plugin country & language restrictions")
+
+> ✨ Since then, we have also added the __Block messages from these countries__ feature.
+
+![OOPSpam WordPress Plugin block countries](https://www.oopspam.com/blog/assets/wp-block-countries.png "OOPSpam WordPress Plugin block countries")
+
+Here are a few steps to activate spam protection for Bricks form element:
+
+1. [Subscribe to get an API key](https://app.oopspam.com/Identity/Account/Register) then copy-paste the API key to the plugin's appropriate field under __Settings->OOPSpam Anti-Spam__ on your WordPress Admin Dashboard.
+
+    > ℹ️ Make sure to select OOPSpam Dashboard on the setting page
+
+2. If you have Bricks installed then a special section will appear on the OOPSpam Anti-Spam plugin's settings page.
+
+    ![OOPSpam Anti-Spam WordPress Plugin Settings](/blog/assets/posts/bricks/oopspam-br-setting.png "OOPSpam Anti-Spam WordPress Plugin Settings")
+
+3. On this page, you need to activate the spam filtering for Bricks Forms by checking the **Activate Spam Protection** checkbox. You don't have to do anything on your form. Once you activate spam protection on the OOPSpam plugin settings, you are good to go.
+
+4. Done!
+
+<center>
+<img loading="lazy"  width="800" alt="OOPSpam detected spam on Bricks Forms" src="/blog/assets/posts/bricks/bricks-spam-form.png">
+</center>
+<br/>
+
 ## reCAPTCHA
 
 Bricks Form supports reCAPTCHA v3, a spam protection solution developed by Google. Although reCAPTCHA has visible and invisible modes, some people are concerned about privacy and potential accessibility issues in visible mode, as well as its [impact on website speed](https://www.oopspam.com/blog/recaptcha-performance-analyses). At this point, Bricks Form only supports v3, which is invisible by default. doesn't require users to solve a challenge. Instead, it tracks the user's behavior on your site and scores the user from 0 (bot) to 1 (human). The default score threshold is set to 0.5, but can be adjusted using the ```bricks/form/recaptcha_score_threshold``` filter. Refer to the example in the official [Bricks documentation](https://academy.bricksbuilder.io/article/form-element/#form-validation#spam) for details. It's recommended to keep the default threshold, but increasing it to a more aggressive level like 0.8 can be effective if you get spammed.
@@ -70,41 +111,6 @@ We previously talked about [how the honeypot technique prevents bots](https://ww
 Bricks Form doesn't currently provide a built-in honeypot field, so you'll need to create one on your own. The hidden honeypot field will not be visible to humans, but bots will regard it as a valid field. Bots scan website pages and complete all fields, including the invisible field in your form. Bricks form element declines any submission containing an entry in a hidden field.
 
 Securing your form with honeypot is a bit of work, but can be easily done by following [this video tutorial](https://www.youtube.com/watch?v=r_EMcQI-g38).
-
-## OOPSpam WordPress plugin
-
-[OOPSpam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/) (that's us 👋) is another way to stop spam on your Bricks Form and WordPress comments. The plugin works with OOPSpam API that protects over 3.5M websites daily. While the other alternatives above are free, OOPSPam API is a paid service. But it does come with free 40/month spam checks for you to test and see the difference.
-
-It's likely that you've already tried the above options and they didn't work for you. It could be [a slow website from reCAPTCHA](https://www.oopspam.com/blog/recaptcha-performance-analyses) or overwhelming spam that you are still getting despite implementing the above alternatives. What makes OOPSpam different from other solutions is that it doesn't [slow down your website](https://www.oopspam.com/blog/recaptcha-performance-analyses) and is effective against human spammers and bots. There is no challenge to solve. No performance penalty because everything happens on your server instead of the client side. The OOPSpam API uses machine learning models, content analysis, IP & email reputation and other rules-based checks to score each contact form submission. A combination of all these analysis results in a single spam score that accurately stops both manual spam and bots.
-
-The plugin's settings page also allows you to adjust how sensitive your spam filter should be. Even leaving the default setting __Sensitivity Level__ will help you reduce spam to zero.
-
-![OOPSpam WordPress Plugin Sensitivity level](https://www.oopspam.com/assets/WP_SensitivyLevel.jpg "OOPSpam WordPress Plugin Sensitivity level")
-
-In addition, the plugin allows you to set up a filter to accept or block submissions only from certain countries and languages.
-
-![OOPSpam WordPress Plugin country & language restrictions](/blog/assets/posts/breakdance/country-language-filter.png "OOPSpam WordPress Plugin country & language restrictions")
-
-OOPSpam is privacy friendly. We don't store or share your information. And you don't need to send us your visitors' email or IP to accurately detect spam.
-
-Here are a few steps to activate spam protection for Bricks form element:
-
-1. [Subscribe to get an API key](https://app.oopspam.com/Identity/Account/Register) then copy-paste the API key to the plugin's appropriate field under __Settings->OOPSpam Anti-Spam__ on your WordPress Admin Dashboard.
-
-> ℹ️ Make sure to select OOPSpam Dashboard on the setting page
-
-2. If you have Bricks installed then a special section will appear on the OOPSpam Anti-Spam plugin's settings page.
-
-    ![OOPSpam Anti-Spam WordPress Plugin Settings](/blog/assets/posts/bricks/oopspam-br-setting.png "OOPSpam Anti-Spam WordPress Plugin Settings")
-
-3. On this page, you need to activate the spam filtering for Bricks Forms by checking the **Activate Spam Protection** checkbox. You don't have to do anything on your form. Once you activate spam protection on the OOPSpam plugin settings, you are good to go.
-
-4. Done!
-
-<center>
-<img loading="lazy"  width="800" alt="OOPSpam detected spam on Bricks Forms" src="/blog/assets/posts/bricks/bricks-spam-form.png">
-</center>
-<br/>
 
 ## Final thoughts
 
