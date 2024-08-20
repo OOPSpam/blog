@@ -148,11 +148,11 @@ Unless you have a reason, make sure to add [autocomplete](https://developer.mozi
 
 By providing meaningful values for the autocomplete attribute, you're guiding the browser to suggest relevant information based on the user's input history. This helps users, especially those with disabilities, to fill out forms more efficiently and accurately.
 
-## 6. Don't use Captcha
+## 6. Don't use CAPTCHA
 
 [According to Builtwith](https://trends.builtwith.com/widgets/captcha), 96% of the top 1 million websites use captcha. Most of them use reCAPTCHA and hCAPTCHA. Visual turing tests such as CAPTCHA [are allowed](https://www.w3.org/TR/turingtest/#:~:text=CAPTCHAs%20are%2C%20allowed%20under,sensory%20perception%20are%20provided%20to) by the Web Content Accessibility Guidelines (WCAG) with some important restrictions.
 
->  For example, asking users who are blind, visually impaired or dyslexic to identify textual characters in a distorted graphic is asking them to perform a task they are intrinsically least able to accomplish.
+> For example, asking users who are blind, visually impaired or dyslexic to identify textual characters in a distorted graphic is asking them to perform a task they are intrinsically least able to accomplish.
 
 ![Inaccessible CAPTCHA example](/blog/assets/posts/accessible-form/inaccessible-captcha.png "Inaccessible CAPTCHA example")
 
@@ -164,7 +164,7 @@ On top of this, CAPTCHAs can often be a source of cultural misunderstanding. Any
 
 ![hCaptcha example](/blog/assets/posts/spam-signups/hcaptcha.png "hCaptcha example")
 
-Another problem with CAPTCHA solutions is that they require injecting javascript code into your website. This will have a negative impact on page load speed, as we have demonstrated in our performance analysis of [reCaptcha](https://www.oopspam.com/blog/recaptcha-performance-analyses) and [hCaptcha](https://www.oopspam.com/blog/hcaptcha-performance-analyses).
+Another problem with CAPTCHA solutions is that they require injecting JavaScript code into your website. This will have a negative impact on page load speed, as we have demonstrated in our performance analysis of [reCaptcha](https://www.oopspam.com/blog/recaptcha-performance-analyses) and [hCaptcha](https://www.oopspam.com/blog/hcaptcha-performance-analyses).
 
 One way to make your forms accessible while still having spam and fraud detection is to use server-side solutions like [OOPSpam](https://www.oopspam.com/).
 
