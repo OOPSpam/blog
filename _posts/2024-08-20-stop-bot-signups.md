@@ -14,8 +14,6 @@ description: "Learn practical measures to minimize damage from fake sign-ups. Sa
 </center>
 <br/>
 
-## Intro
-
 If you run a business with a website and a signup form, you may already be getting spam signups. From a custom SaaS application to a WordPress blog, almost everyone is affected in one way or another. Here are some of the ways bot signups hurt businesses:
 
 - More chargebacks
