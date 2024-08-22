@@ -33,7 +33,7 @@ You probably already have a web application and just want to see the integration
 
 ## Creating an ASP.NET Core Web App
 
-I am quickly creating a web application with __Individual Accounts__ as the authentication type. I choose .NET 8.0 as the framework, but you should be fine with an older version since we are not doing anything fancy.
+I am creating a web application with __Individual Accounts__ as the authentication type. I choose .NET 8.0 as the framework, but you should be fine with an older version since we are not doing anything fancy.
 
 ![New ASP NET Core Web App](/blog/assets/posts/netcore/new-project.png "New ASP NET Core Web App")
 
@@ -47,7 +47,7 @@ Let me run this app to see if everything works before we continue with the rest 
 
 ![Scaffolded Identity in ASP NET Core Web App](/blog/assets/posts/netcore/scaffolded.png "Scaffolded Identity in ASP NET Core Web App")
 
-On this page you have the option to pick the file you want to edit. I'm going to select /Account/Register because that's where we're going to implement spam protection. The file __Register.cshtml__ will be added to your project.
+On this page you have the option to pick the file you want to edit. I'm going to select _/Account/Register_ because that's where we're going to implement spam protection. The file __Register.cshtml__ will be added to your project.
 
 ![Scaffolded Identity in ASP NET Core Web App](/blog/assets/posts/netcore/scaffolded-identity.png "Scaffolded Identity in ASP NET Core Web App")
 
@@ -57,12 +57,12 @@ First, let's create an account on [the OOPSpam Dashboard](https://app.oopspam.co
 
 ![OOPSpam Dashboard](/blog/assets/posts/netcore/apikey-dashboard.png "OOPSpam Dashboard")
 
-We will have two parameters to check with OOPSpam API:
+We will have two parameters to check with [OOPSpam API](https://www.oopspam.com/docs/#introduction):
 
 - senderIP
 - email
 
-In other types of forms like contact form you could also use the _content_ field. While you are at it, have a look at the OOPSpam API documentation for more ways to harden your registration form.
+In other types of forms like contact form you could also use the _content_ field. While you are at it, have a look at the [OOPSpam API documentation](https://www.oopspam.com/docs/#introduction) for more ways to harden your registration form.
 
 We'll secure our registration form by
 
@@ -144,7 +144,7 @@ We will use this class to pass the data from the form to the API. Now that we ha
         }
 ```
 
-We are missing the _OOPSpamResponseBody_ class, which we need to do the deserialization of our response from the OOPSpam API. Let's create the _OOPSpamResponseBody_ class.
+We are missing the _OOPSpamResponseBody_ class, which we are going to need it for deserlizing response the API. Let's create the _OOPSpamResponseBody_ class.
 
 ```csharp
   public class OOPSpamResponseBody
@@ -219,7 +219,7 @@ It seems to work. Two things happened:
 
 ## Wrapping this up
 
-<iframe src="https://giphy.com/embed/5XKm5cq4Kik9O" width="480" height="281" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/christmas-merry-presents-5XKm5cq4Kik9O">via GIPHY</a></p>
+<iframe src="https://giphy.com/embed/5XKm5cq4Kik9O" width="480" height="281" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
 
 So we took a simple web application and added spam protection to it. You could do the same for other forms like quote, contact or comment system.There are other parameters you can use to make your forms even more secure, like using the _allowedCountries_ filter to only allow submissions from your target country.
 
