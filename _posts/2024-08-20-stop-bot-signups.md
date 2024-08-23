@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "4 Practical Measures to Combat Fake Sign-Ups"
+title:  "4 Ways to Stop Fake Account Sign-Ups"
 author: "Onar A."
 image: /assets/posts/spam-signups/meta.png
 tags: [signup, spam]
