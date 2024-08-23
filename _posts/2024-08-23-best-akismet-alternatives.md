@@ -20,7 +20,9 @@ While Akismet is a popular choice, there are several other options available tha
 
 ### What is OOPSpam?
 
-OOPSpam (that's us 👋) is an all-in-one spam protection service that uses machine learning to detect and filter out spam comments, form submissions, and user registrations on websites and applications. It comes with everything you need to quickly  react on going attack by geo restricting your platform, blocking certain countries and message languages. This means it's not just an alternative to [Akismet](https://www.oopspam.com/akismet-alternative#quick-comparison), but also tools like [CleanTalk](https://www.oopspam.com/cleantalk-alternative), Antispam Bee, [reCAPTCHA](https://www.oopspam.com/recaptcha-alternative) and [Turnstile](https://www.oopspam.com/turnstile-alternative).
+[OOPSpam](https://www.oopspam.com/) (that's us 👋) is an all-in-one spam protection service that uses machine learning to detect and filter out spam comments, form submissions, and user registrations on websites and applications. It comes with everything you need to quickly  react on going attack by geo restricting your platform, blocking certain countries and message languages. This means it's not just an alternative to [Akismet](https://www.oopspam.com/akismet-alternative#quick-comparison), but also tools like [CleanTalk](https://www.oopspam.com/cleantalk-alternative), Antispam Bee, [reCAPTCHA](https://www.oopspam.com/recaptcha-alternative) and [Turnstile](https://www.oopspam.com/turnstile-alternative).
+
+![OOPSpam Dashboard](/blog/assets/posts/netcore/apikey-dashboard.png "OOPSpam Dashboard")
 
 ### Key features:
 
@@ -34,7 +36,6 @@ OOPSpam (that's us 👋) is an all-in-one spam protection service that uses mach
 - Privacy-friendly
 - Detailed analytics and reporting
 
-
 ### Why do companies use OOPSpam?
 
 1. **It replaces multiple tools**: OOPSpam can replace Akismet (WordPress plugin, an API), Cloudflare (blocking countries), CleanTalk (IP and Email blocking), Score based filtering (reCAPTCHA). This simplifies workflows, so you don't have to switch between tools.
@@ -46,6 +47,8 @@ OOPSpam (that's us 👋) is an all-in-one spam protection service that uses mach
 ### What is CleanTalk?
 
 CleanTalk is a cloud-based spam protection service that offers a wide range of features to keep websites and applications free from spam and malicious activity. It's quite similar to [Akismet](https://www.oopspam.com/compare/akismet-vs-cleantalk), making it an easy drop-in replacement.
+
+![CleanTalk Dashboard](/blog/assets/posts/akismet-alt/cleantalk-dashboard.png "CleanTalk Dashboard")
 
 ### Key features:
 
@@ -66,6 +69,8 @@ CleanTalk is a cloud-based spam protection service that offers a wide range of f
 ### What is Antispam Bee?
     
 Antispam Bee is a free, open-source WordPress plugin that provides powerful spam protection for the WordPress comment system without relying on external services.
+
+![Antispam bee Dashboard](/blog/assets/posts/akismet-alt/antispam-bee.png "Antispam bee Dashboard")
 
 ### Key features:
 
@@ -89,6 +94,8 @@ Antispam Bee is a free, open-source WordPress plugin that provides powerful spam
 
 Turnstile is a user-friendly CAPTCHA alternative developed by Cloudflare that aims to provide a seamless and privacy-focused way to protect websites from bots and spam. [Compare to Akismet](https://www.oopspam.com/compare/turnstile-vs-akismet), it focuses on bot prevention, is free and supported on various platforms.
 
+![Turnstile Dashboard](/blog/assets/posts/akismet-alt/turnstile.webp "Turnstile Dashboard")
+
 ### Key features:
 
 - Invisible challenges
@@ -109,6 +116,8 @@ Turnstile is a user-friendly CAPTCHA alternative developed by Cloudflare that ai
 ### What is reCAPTCHA?
 
 reCAPTCHA is a popular CAPTCHA service from Google that helps protect websites from spam and abuse, while digitizing text and improving machine learning algorithms. [Unlike Akismet](https://www.oopspam.com/compare/recaptcha-vs-akismet), reCAPTCHA often asks for visitors to solve a challenge.
+
+![reCAPTCHA Dashboard](/blog/assets/posts/akismet-alt/recaptcha.webp "reCAPTCHA Dashboard")
 
 ### Key features:
 
