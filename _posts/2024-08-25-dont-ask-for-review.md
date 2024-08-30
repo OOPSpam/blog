@@ -4,7 +4,7 @@ title:  "Why stop asking for review in our WordPress plugin, why you should too.
 author: "Onar A."
 image: /assets/posts/netcore/meta.png
 tags: [signup, spam]
-
+draft: true
 
 description: "Learn how to add a spam filter to .NET Core Web App forms to prevent bots and manual spam using C#"
 # modified: 

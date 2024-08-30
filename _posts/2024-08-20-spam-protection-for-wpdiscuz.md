@@ -71,7 +71,7 @@ Here are a few steps to activate spam protection for WPDiscuz:
 
 It is important to point out that WPDiscuz doesn't support an invisible version of reCAPTCHA out of the box.  So, you visitors have to solve the "I'm not a robot" challenge to post. If you would like to use invisible then you need to buy [reCaptcha Addon](https://gvectors.com/product/wpdiscuz-recaptcha/).
 
-![WPDiscuz reCAPTCHA](/blog/assets/posts/wpdiscuz/captcha-Field.png "WPDiscuz reCAPTCHA")
+![WPDiscuz reCAPTCHA](/blog/assets/posts/wpdiscuz/recaptcha.png "WPDiscuz reCAPTCHA")
 
 To activate reCAPTCHA in your comment section, you need to get Site Key and Secret Key for it.
 
