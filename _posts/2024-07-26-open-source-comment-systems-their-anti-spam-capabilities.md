@@ -9,7 +9,7 @@ description: "Learn about 3 different open-source & free comments systems and ho
 # modified: 
 ---
 <center>
-<img loading="lazy"  width="772" alt="" src="/blog/assets/os-comment/header.png">
+<img loading="lazy"  width="772" alt="" src="/blog/assets/posts/os-comment/header.png">
 </center>
 <br/>
 

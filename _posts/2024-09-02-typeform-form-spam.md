@@ -70,7 +70,7 @@ Follow these steps to set up Typeform with the New Entry event:
 4. An example submission will be populated under **Test trigger**. Check if you receive the _We found an entry!_ message. If not, fill and submit the form with example data.
 5. That's it! The next step is to check for spam.
 
-![Typeform Zapier set up](/blog/assets/posts/typeform/typeform-zapier.gif "Typeform Zapier set up")
+![Typeform Zapier set up](/blog/assets/posts/typeform/typeform-zapier.png "Typeform Zapier set up")
 
 ## Checking for spam with OOPSpam
 

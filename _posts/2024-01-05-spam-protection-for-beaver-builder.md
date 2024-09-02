@@ -27,7 +27,7 @@ Beaver Builder Form module comes with a basic form functionality. There are limi
 
 Beaver Builder Contact Form comes with a [captcha](https://www.oopspam.com/blog/ways-to-stop-spam#captcha-solve-an-interactive-problem) solution, namely Google's reCAPTCHA. Check out [step-by-step guide](https://docs.wpbeaverbuilder.com/beaver-builder/layouts/modules/contact-form/add-a-google-recaptcha-checkbox-to-a-form) by Beaver Builder on how to setup reCAPTCHA v2 and v3 on your contact forms.
 
-![reCaptcha in Beaver Builder](/blog/assets/posts/beaver/form-settings.png "reCaptcha in Beaver Builder")
+![reCaptcha in Beaver Builder](/blog/assets/posts/beaver/form-setting.png "reCaptcha in Beaver Builder")
 
 ### Should I set up v2 or v3?
 
