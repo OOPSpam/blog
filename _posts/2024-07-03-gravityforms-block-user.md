@@ -13,7 +13,7 @@ description: "Block Users by Country, Language, Email Domain, Keyword, and IP in
 </center>
 <br/>
 
-All form builders, including [Gravity Forms](https://www.gravityforms.com/), offer some level of spam protection. Gravity Forms provides built-in spam protection like reCAPTCHA and hCAPTCHA. Unfortunately, these measures aren't always enough to stop sophisticated bots and manual spam, as spammers have [developed ways to bypass traditional protections](https://www.oopspam.com/blog/bypassing-captcha). Other tools and strategies may be needed to effectively combat form spam.
+All form builders, including [Gravity Forms](https://www.gravityforms.com/), offer some level of spam protection. Gravity Forms provides built-in spam protection like [reCAPTCHA](https://www.oopspam.com/recaptcha-alternative) and [hCAPTCHA](https://www.oopspam.com/hcaptcha-alternative). Unfortunately, these measures aren't always enough to stop sophisticated bots and manual spam, as spammers have [developed ways to bypass traditional protections](https://www.oopspam.com/blog/bypassing-captcha). Other tools and strategies may be needed to effectively combat form spam.
 
 When you're receiving spam and need to take quick action to stop it, you have several options depending on the type of spam:
 

@@ -166,10 +166,10 @@ On top of this, CAPTCHAs can often be a source of cultural misunderstanding. Any
 
 Another problem with CAPTCHA solutions is that they require injecting JavaScript code into your website. This will have a negative impact on page load speed, as we have demonstrated in our performance analysis of [reCaptcha](https://www.oopspam.com/blog/recaptcha-performance-analyses) and [hCaptcha](https://www.oopspam.com/blog/hcaptcha-performance-analyses).
 
-One way to make your forms accessible while still having spam and fraud detection is to use server-side solutions like [OOPSpam](https://www.oopspam.com/).
+One way to make your forms accessible while still having spam and fraud detection is to use server-side solutions like [OOPSpam](https://www.oopspam.com/) (that's us 👋).
 
 ### Try Our Accessible Captcha Alternative
 
-We designed [OOPSpam](https://www.oopspam.com/) to be an accessible and privacy-friendly alternative to reCAPTCHA, hCAPTCHA and other similar solutions. By design OOPSpam works in your server and never interacts with your visitors. Instead it looks at form message content, IP and email to filter spam and fraud. This approach eliminates the burden on users to prove their humanity and has 0 impact on your website performance. Instead, we allow form submissions without any challenge or puzzle which later are analyzed and categorized as spam or not. [OOPSpam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/) (that's us 👋) does this automatically. Check out [other integrations](https://www.oopspam.com/help/).
+We designed [OOPSpam](https://www.oopspam.com/) to be an accessible and privacy-friendly alternative to reCAPTCHA, hCAPTCHA and other similar solutions. By design OOPSpam works in your server and never interacts with your visitors. Instead it looks at form message content, IP and email to filter spam and fraud. This approach eliminates the burden on users to prove their humanity and has 0 impact on your website performance. Instead, we allow form submissions without any challenge or puzzle which later are analyzed and categorized as spam or not. [OOPSpam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/) does this automatically. Check out [other integrations](https://www.oopspam.com/help/).
 
 I hope this article was helpful for you in creating accessible forms which may be available to everyone.
