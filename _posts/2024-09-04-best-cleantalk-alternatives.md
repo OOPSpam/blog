@@ -20,7 +20,7 @@ While CleanTalk is a popular choice, there are several other options available t
 
 ### What is OOPSpam?
 
-[OOPSpam](https://www.oopspam.com/) (that's us 👋) is an all-in-one spam protection service that uses machine learning to detect and filter out spam comments, form submissions, and user registrations on websites and applications. It comes with everything you need to quickly  react on going attack by geo restricting your platform, blocking certain countries and message languages. This means it's not just an alternative to [Akismet](https://www.oopspam.com/akismet-alternative#quick-comparison), but also tools like [CleanTalk](https://www.oopspam.com/cleantalk-alternative), Antispam Bee, [reCAPTCHA](https://www.oopspam.com/recaptcha-alternative) and [Turnstile](https://www.oopspam.com/turnstile-alternative).
+[OOPSpam](https://www.oopspam.com/) (that's us 👋) is an all-in-one spam protection service that uses machine learning to detect and filter out spam comments, form submissions, and user registrations on websites and applications. It comes with everything you need to quickly  react on going attack by geo restricting your platform, blocking certain countries and message languages. This means it's not just an alternative to [CleanTalk](https://www.oopspam.com/cleantalk-alternative), but also tools like [Akismet](https://www.oopspam.com/akismet-alternative#quick-comparison), Antispam Bee, [reCAPTCHA](https://www.oopspam.com/recaptcha-alternative) and [Turnstile](https://www.oopspam.com/turnstile-alternative).
 
 ![OOPSpam Dashboard](/blog/assets/posts/netcore/apikey-dashboard.png "OOPSpam Dashboard")
 
