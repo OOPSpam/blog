@@ -6,7 +6,7 @@ image: /assets/ways-to-stop-spam.png
 tags: [spam, contact_form]
 
 
-description: "Learn about 7 different technics for spam detection and prevention."
+description: "Prevent spam on your website with Honeypot, Spam Words, Captcha, IP-based filtering, country/language restrictions, AI, and rule-based methods."
 # modified: 
 ---
 <center>

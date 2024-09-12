@@ -97,7 +97,7 @@ It is usually easy and straightforward.
 
 Once you have the user's IP,  you are ready to make an HTTP request to OOPSpam API and forward legit contact form submission to your email. To request OOPSpam API, you have to have an API key. You get an API key by registering on [OOPSpam Dashboard](https://app.oopspam.com/Identity/Account/Register). 
 
-> 🗂 Check out [the documentation](https://oopspam.com/docs) to learn more about the API.
+> 🗂 Check out [the documentation](https://www.oopspam.com/docs) to learn more about the API.
 
 ```javascript
 unirest.post("https://api.oopspam.com/")
@@ -161,7 +161,7 @@ With all cases, you will get a JSON object with an error ```code``` and ```messa
 }
 ````
 
-Check out [the documentation](https://oopspam.com/docs) to learn in detail about response parameters and much more.
+Check out [the documentation](https://www.oopspam.com/docs) to learn in detail about response parameters and much more.
 You can also access the example project code on [Github](https://github.com/OOPSpam/Contact-Form-nodejs).
 
 [Let us know](https://www.oopspam.com/#contact) if you have any questions.
