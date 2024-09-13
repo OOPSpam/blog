@@ -85,7 +85,7 @@ Akismet is a popular online service that stops spam on websites, especially for 
 2. **It's free for non-commercial use**: You can use Akimset for free if you don't have ads, affiliate links or don't sell any products on your website.
 3. **It's easy to set up:** With many platform support, you can install and start protecting your forms.
 
-## 5. reCAPTCHA
+## 4. reCAPTCHA
 
 ### What is reCAPTCHA?
 
