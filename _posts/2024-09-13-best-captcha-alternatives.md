@@ -28,7 +28,7 @@ CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Ap
 
 [OOPSpam](https://www.oopspam.com/) (that's us 👋) is an all-in-one spam protection service that uses machine learning to detect and filter out spam comments, form submissions, and user registrations on websites and applications. It comes with everything you need to quickly  react on going attack by geo restricting your platform, blocking certain countries and message languages. This means it's not just an alternative to CAPTCHA, but [hCAPTCHA](https://www.oopspam.com/hcaptcha-alternative), and [reCAPTCHA](https://www.oopspam.com/blog/best-recaptcha-alternatives).
 
-![OOPSpam Dashboard](/blog/assets/posts/netcore/apikey-dashboard.png "OOPSpam Dashboard")
+![CAPTCHA example](/blog/assets/posts/captcha/captcha.jpg "CAPTCHA example")
 
 ### Key features:
 
@@ -52,7 +52,7 @@ CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Ap
 
 ### What is hCAPTCHA?
 
-hCAPTCHA is a popular CAPTCHA service from Intuition Machines that helps protect websites from spam and abuse. It is a privacy-friendly alternative to Turnstile and reCAPTCHA. [Unlike Turnstile](https://www.oopspam.com/compare/hcaptcha-vs-turnstile), hCAPTCHA often asks for visitors to solve a challenge.
+hCAPTCHA is a popular CAPTCHA service from Intuition Machines that helps protect websites from spam and abuse. It is a privacy-friendly alternative to Turnstile and reCAPTCHA. hCAPTCHA often asks for visitors to solve a challenge. The invisible version is not available under the Free plan.
 
 ![hCAPTCHA example](/blog/assets/posts/hcaptcha/hCaptcha.png "hCAPTCHA example")
 
