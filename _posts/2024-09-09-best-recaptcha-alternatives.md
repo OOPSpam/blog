@@ -46,9 +46,9 @@ While reCAPTCHA is a popular choice, there are several other options available t
 
 ### What is hCAPTCHA?
 
-hCAPTCHA is a popular CAPTCHA service from Intuition Machines that helps protect websites from spam and abuse. [Unlike reCAPTCHA](https://www.oopspam.com/compare/reCaptcha-vs-hCaptcha), hCAPTCHA often asks for visitors to solve a challenge.
+hCAPTCHA is a popular CAPTCHA service from Intuition Machines that helps protect websites from spam and abuse. It is a privacy-friendly alternative to reCAPTCHA and Turnstile. [Unlike reCAPTCHA](https://www.oopspam.com/compare/reCaptcha-vs-hCaptcha), hCAPTCHA often asks for visitors to solve a challenge.
 
-![hCAPTCHA example](/blog/assets/posts/hcaptcha/hCaptcha.png "reCAPTCHA example")
+![hCAPTCHA example](/blog/assets/posts/hcaptcha/hCaptcha.png "hCAPTCHA example")
 
 ### Key features:
 
