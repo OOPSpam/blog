@@ -35,10 +35,10 @@ but it also did a good job of catching a lot of them:
 
 ![Netlify Form Spam Submissions](/blog/assets/posts/netlify/spam-submissions.png "Netlify Form Spam Submissions")
 
-In addition to Akismet, Netlify Forms also supports the [reCaptcha](https://docs.netlify.com/forms/spam-filters/#recaptcha-2-challenge) and [honeypot](https://docs.netlify.com/forms/spam-filters/#honeypot-field) fields. We previously talked about [how the honeypot technique prevents bots](https://www.oopspam.com/blog/ways-to-stop-spam#honeypot-filter-spam-with-a-hidden-field) from spamming your forms. Although it's less effective now, it still works to some extent.
+In addition to Akismet, Netlify Forms also supports the [reCAPTCHA](https://docs.netlify.com/forms/spam-filters/#recaptcha-2-challenge) and [honeypot](https://docs.netlify.com/forms/spam-filters/#honeypot-field) fields. We previously talked about [how the honeypot technique prevents bots](https://www.oopspam.com/blog/ways-to-stop-spam#honeypot-filter-spam-with-a-hidden-field) from spamming your forms. Although it's less effective now, it still works to some extent.
 The hidden honeypot field will not be visible to humans, but bots will consider it a valid field. Bots scan web pages and fill in all fields, including the hidden field in your form. Netlify Forms will reject any submission that contains an entry in a hidden field.
 
-However, reCAPTCHA and other CAPTCHA solutions are becoming irrelevant due to the availability of low-cost services to solve them.
+However, [reCAPTCHA](https://www.oopspam.com/blog/best-recaptcha-alternatives) and other [CAPTCHA](https://www.oopspam.com/blog/best-captcha-alternatives) solutions are becoming irrelevant due to the availability of low-cost services to solve them.
 
 If you are still getting spam with the options available to you through Netlify, this article will look at an alternative solution to prevent spam submissions to Netlify contact forms. The approach is to use automation tools such as [Zapier](https://zapier.com/) or [Make](https://www.make.com) to capture form submissions, then filter them through a spam filter (using [OOPSpam](https://www.oopspam.com/)) before finally sending an email notification to yourself.
 
@@ -77,15 +77,15 @@ To set up spam filtering in your Zapier flow, follow these steps:
 1. Register for an API key on the [OOPSpam Dashboard](https://app.oopspam.com/).
 2. Add the [OOPSpam Zap](https://zapier.com/apps/oopspam/integrations) to your flow
 3. Under OOPSpam's _Event_ select _Check for spam_
-2. To connect your OOPSpam account, enter the API key when prompted on the _Choose Account_ step.
-3. Map the necessary form information to OOPSpam's fields:
+4. To connect your OOPSpam account, enter the API key when prompted on the _Choose Account_ step.
+5. Map the necessary form information to OOPSpam's fields:
     - **Content**: This is where the form message goes. Usually called **Data Message**.
     - **Sender IP**:  This is where the IP of the form submitter goes. Usually called **Data Ip**.
     - **Email**: This is where the form submitter's email goes. Usually called **Data Email**.
     - **Allow messages only in these languages**: Select any languages you expect to receive form submissions in.
     - **Allow messages only from these countries**: Filter submissions by country.
     - **Block messages from these countries**: Block by country.
-4. Test the action. We will use the "score" returned by OOPSpam to approve or reject submissions with [Filter Zapier](https://zapier.com/blog/filter-by-zapier-guide/) in the next step.
+6. Test the action. We will use the "score" returned by OOPSpam to approve or reject submissions with [Filter Zapier](https://zapier.com/blog/filter-by-zapier-guide/) in the next step.
 
 ![OOPSpam Zapier setup](/blog/assets/posts/netlify/oopspam-zapier.png "OOPSpam Zapier setup")
 

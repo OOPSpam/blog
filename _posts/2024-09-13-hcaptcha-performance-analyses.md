@@ -22,9 +22,9 @@ Slow websites are a big concern because they have a huge impact on your website 
 - Loss of revenue
 - Harm to your business reputation
 
-In our previous article we discussed [reCaptcha performance analysis](https://www.oopspam.com/blog/recaptcha-performance-analyses) and detailed how it affects the loading time of your website. In this article, however, we will focus on [hCaptcha](https://www.hcaptcha.com/), a privacy-friendly alternative to reCAPTCHA. They are almost identical in the way they work and are implemented.
+In our previous article we discussed [reCaptcha performance analysis](https://www.oopspam.com/blog/recaptcha-performance-analyses) and detailed how it affects the loading time of your website. In this article, however, we will focus on [hCaptcha](https://www.hcaptcha.com/), a privacy-friendly alternative to [reCAPTCHA](https://www.oopspam.com/blog/best-recaptcha-alternatives). They are almost identical in the way they work and are implemented.
 
-hCaptcha is a widely used alternative to reCAPTCHA. It is praised for its privacy-friendly approach and is not as invasive as reCAPTCHA. However, they both suffer from the same issues like accessibility, performance, and privacy (still). There are third-party services (such as 2Captcha) that can solve hCAPTCHA challenges for as little as 0.02 cents each. This is why people still get spam despite having hCAPTCHA. Not all spam bots use these workarounds, so hCAPTCHA still works for many.
+hCAPTCHA is a widely used alternative to reCAPTCHA. It is praised for its privacy-friendly approach and is not as invasive as reCAPTCHA. However, they both suffer from the same issues like accessibility, performance, and privacy (still). There are third-party services (such as 2Captcha) that can solve hCAPTCHA challenges for as little as 0.02 cents each. This is why people still get spam despite having hCAPTCHA. Not all spam bots use these workarounds, so hCAPTCHA still works for many.
 
 We will focus on the performance aspect. How hCAPTCHA slows down your website and what you can do about it.
 

@@ -38,7 +38,6 @@ Once you've cleaned up your site and fixed any issues with your SSL Certificate,
 
 ![Report false positive Deceptive Site](/blog/assets/posts/deceptive-site/google-report.png "Report false positive Deceptive Site")
 
-
 ### Step 5: Prevent Future Warnings
 
 To avoid future Google warnings, it's important to keep your website up to date and secure. This means regularly scanning your site for malware, keeping all software and plugins up-to-date, [setting up automated domain reputation monitoring](https://www.oopspam.com/blog/domain-reputation), and using strong passwords for all accounts associated with your website.

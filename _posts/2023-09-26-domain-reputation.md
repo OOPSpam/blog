@@ -60,6 +60,3 @@ The feature is free for all paid plans, with varying allotted number of domains 
 Every Monday we run our checks and __you will get a notification e-mail only if one of your domains are flagged as 'blocked'__.
 
 You will be able to understand in more detail why the domain in blocked so you can see how you may remedy the situation.
-
-
-
