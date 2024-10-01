@@ -18,8 +18,6 @@ Managing a WordPress site with Elementor forms often means dealing with spam sub
 
 This guide will walk you through setting up OOPSpam’s Make App to block spam efficiently. If you prefer a simpler option, OOPSpam also offers a [WordPress plugin to block spam](https://www.oopspam.com/blog/spam-protection-for-elementor-forms#oopspam-wordpress-plugin) without using Make.
 
-{% include toc.md %}
-
 ### Why You Need to Stop Spam Before It Starts
 
 Spam is more than just an annoyance—it can have real consequences. Every fake form submission wastes valuable time filtering out nonsense from genuine leads. If you're running email marketing or lead-gen campaigns, spam submissions can also skew your analytics, making it harder to measure real results.
