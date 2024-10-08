@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: OOPSpam/blog
-  base_url:  sveltia-cms-auth.ratelimit.workers.dev
+  base_url:  https://sveltia-cms-auth.ratelimit.workers.dev/
 media_folder: '/assets/posts'
 collections:
   - name: 'blog'
