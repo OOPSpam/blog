@@ -14,5 +14,16 @@
     {% include footer.html %}
     {% include lazyload.html %}
     <script async defer src="https://scripts.withcabin.com/hello.js"></script>
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", (user) => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
   </body>
 </html>
