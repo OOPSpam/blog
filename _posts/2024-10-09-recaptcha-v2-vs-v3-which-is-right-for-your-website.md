@@ -27,13 +27,13 @@ This version is probably the one you're most familiar with—the one that asks u
 * **How It Works:** reCAPTCHA V2 relies on explicit user interaction to determine whether someone is a bot. A user might be asked to check a box or complete an image challenge.
 * **Use Cases**: V2 is widely used on **login forms, comment sections**, and **checkout pages**—basically anywhere you want to prevent bots from entering sensitive areas of your site.
 
-![reCAPTCHA V2 image challenge asking users to select all images containing cars from a 3x3 grid, with one image selected.](/assets/posts/image2.png "reCAPTCHA V2 image challenge asking users to select all images containing cars from a 3x3 grid, with one image selected.")
+![reCAPTCHA V2 image challenge asking users to select all images containing cars from a 3x3 grid, with one image selected.](/blog/assets/posts/image2.png "reCAPTCHA V2 image challenge asking users to select all images containing cars from a 3x3 grid, with one image selected.")
 
 But here’s the thing: it’s doing all of this by tracking user behavior, which might raise privacy concerns for some users who are uncomfortable with Google collecting and analyzing their interactions. For businesses or individuals concerned with data privacy, this could be a potential drawback of using Google's services.
 
 ## Key Differences Between reCAPTCHA V2 and V3
 
-![reCAPTCHA V2 and V3 logos side by side, showing different versions of Google's bot detection technology.](/assets/posts/image3.png "reCAPTCHA V2 and V3 logos side by side, showing different versions of Google's bot detection technology.")
+![reCAPTCHA V2 and V3 logos side by side, showing different versions of Google's bot detection technology.](/blog/assets/posts/image3.png "reCAPTCHA V2 and V3 logos side by side, showing different versions of Google's bot detection technology.")
 
 Both reCAPTCHA versions offer solid spam protection, but they differ in how they approach user interaction, security, and overall experience. Let’s break it down:
 
@@ -87,7 +87,7 @@ If maintaining a frictionless flow is essential for your site’s success—such
 
 ## Pros and Cons of reCAPTCHA V2
 
-![reCAPTCHA V2 checkbox showing 'I'm not a robot' with a verification expired message, prompting users to re-verify their identity.](/assets/posts/image5.png "reCAPTCHA V2 checkbox showing 'I'm not a robot' with a verification expired message, prompting users to re-verify their identity.")
+![reCAPTCHA V2 checkbox showing 'I'm not a robot' with a verification expired message, prompting users to re-verify their identity.](/blog/assets/posts/image5.png "reCAPTCHA V2 checkbox showing 'I'm not a robot' with a verification expired message, prompting users to re-verify their identity.")
 
 When deciding between reCAPTCHA versions, it’s important to weigh the benefits and drawbacks of each. Let's take a look at reCAPTCHA V2 and its pros and cons.
 
@@ -103,7 +103,7 @@ When deciding between reCAPTCHA versions, it’s important to weigh the benefits
 
 ## Pros and Cons of reCAPTCHA V3
 
-![Introduction of reCAPTCHA V3 with the reCAPTCHA logo and text 'Introducing reCAPTCHA v3,' presenting Google's latest version of its bot detection system.](/assets/posts/image8.gif "Introduction of reCAPTCHA V3 with the reCAPTCHA logo and text 'Introducing reCAPTCHA v3,' presenting Google's latest version of its bot detection system.")
+![Introduction of reCAPTCHA V3 with the reCAPTCHA logo and text 'Introducing reCAPTCHA v3,' presenting Google's latest version of its bot detection system.](/blog/assets/posts/image8.gif "Introduction of reCAPTCHA V3 with the reCAPTCHA logo and text 'Introducing reCAPTCHA v3,' presenting Google's latest version of its bot detection system.")
 
 reCAPTCHA V3 offers a smoother, less intrusive approach, but like anything, it has its strengths and weaknesses. Here’s a quick breakdown.
 
@@ -119,7 +119,7 @@ reCAPTCHA V3 offers a smoother, less intrusive approach, but like anything, it h
 
 ## What is the Best reCAPTCHA Alternative?
 
-![OOPSpam dashboard displaying API usage statistics, average response time, and a verified API key, with navigation options on the left including logs, domain watch, and knowledge base.](/assets/posts/image4.png "OOPSpam dashboard displaying API usage statistics, average response time, and a verified API key, with navigation options on the left including logs, domain watch, and knowledge base.")
+![OOPSpam dashboard displaying API usage statistics, average response time, and a verified API key, with navigation options on the left including logs, domain watch, and knowledge base.](/blog/assets/posts/image4.png "OOPSpam dashboard displaying API usage statistics, average response time, and a verified API key, with navigation options on the left including logs, domain watch, and knowledge base.")
 
 If you’re not thrilled about the friction of V2 or the tuning required for V3, **OOPSpam** (that’s us 👋) is the [best alternative](https://www.oopspam.com/blog/best-captcha-alternatives). Unlike reCAPTCHA, it blocks spam without the need for user interaction. Here's why it’s worth considering:
 
@@ -153,7 +153,7 @@ Implementing reCAPTCHA to your site is relatively straightforward. Whether you c
 
 ### For reCAPTCHA V2
 
-![reCAPTCHA V2 admin console with 'Challenge (v2)' and 'I'm not a robot' checkbox selected, domain entered, and 'Submit' button highlighted.](/assets/posts/image7.png "reCAPTCHA V2 admin console with 'Challenge (v2)' and 'I'm not a robot' checkbox selected, domain entered, and 'Submit' button highlighted.")
+![reCAPTCHA V2 admin console with 'Challenge (v2)' and 'I'm not a robot' checkbox selected, domain entered, and 'Submit' button highlighted.](/blog/assets/posts/image7.png "reCAPTCHA V2 admin console with 'Challenge (v2)' and 'I'm not a robot' checkbox selected, domain entered, and 'Submit' button highlighted.")
 
 1. **Go to the reCAPTCHA Admin Console**: Visit the [reCAPTCHA Admin Console](https://www.google.com/recaptcha/admin/create) and create a new site.
 2. **Choose Version 2**: Select “reCAPTCHA V2” as your site type and fill out the necessary details.
@@ -162,7 +162,7 @@ Implementing reCAPTCHA to your site is relatively straightforward. Whether you c
 
 ### For reCAPTCHA V3
 
-![reCAPTCHA V3 setup displaying site key and secret key for client-side and server-side integration, with options to copy both keys.](/assets/posts/image6.png "reCAPTCHA V3 setup displaying site key and secret key for client-side and server-side integration, with options to copy both keys.")
+![reCAPTCHA V3 setup displaying site key and secret key for client-side and server-side integration, with options to copy both keys.](/blog/assets/posts/image6.png "reCAPTCHA V3 setup displaying site key and secret key for client-side and server-side integration, with options to copy both keys.")
 
 1. **Visit the reCAPTCHA Admin Console**: Go to the reCAPTCHA Admin Console.
 2. **Select Version 3**: When creating a new site, choose “reCAPTCHA V3.”
