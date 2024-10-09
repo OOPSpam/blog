@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "5 Ways To Prevent Spam On WS Form"
-author: "Onar A."
+author: onar
 image: /assets/posts/ws-form/twitterCard.png
 tags: [WordPress, contact_form, wsform]
 

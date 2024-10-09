@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "5 ways to protect your WPForms from spam"
-author: "Onar A."
+author: onar
 image: /assets/posts/social-media-meta.png
 tags: [WordPress, contact_form, wpforms]
 

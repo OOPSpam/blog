@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Fluent Forms: Advanced User Blocking to Enhance Form Security"
-author: "Onar A."
+author: onar
 image: /assets/posts/user-blocking/fluent-meta.png
 tags: [wordpress, contact_form, fluent]
 

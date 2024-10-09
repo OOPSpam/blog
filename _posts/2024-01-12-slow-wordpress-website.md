@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "You're Doing WordPress Performance WRONG. Here's Why."
-author: "Onar A."
+author: onar
 image: /assets/posts/slow-wordpress/meta.png
 tags: [wordpress]
 

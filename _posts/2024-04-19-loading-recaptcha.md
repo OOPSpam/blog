@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Don't Optimize for Speed - Load reCAPTCHA v3 on Every Page (Here's Why)"
-author: "Onar A."
+author: onar
 image: /assets/posts/loading-recaptcha/meta.png
 tags: [recaptcha]
 

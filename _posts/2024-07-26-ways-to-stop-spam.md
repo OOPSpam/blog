@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "7 ways to stop spam on your website"
-author: "Onar A."
+author: onar
 image: /assets/ways-to-stop-spam.png
 tags: [spam, contact_form]
 

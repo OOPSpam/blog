@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Does hCAPTCHA slow down your website?"
-author: "Onar A."
+author: onar
 image: /assets/posts/hcaptcha/hcaptcha-meta.png
 tags: [captcha, contact_form]
 

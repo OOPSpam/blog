@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The Best CleanTalk Alternatives & Competitors, Compared"
-author: "Onar A."
+author: onar
 image: /assets/posts/social-media-meta.png
 tags: [cleantalk, turnstile, recaptcha]
 

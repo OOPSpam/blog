@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Adding Spam Protection To ASP.NET Core Web App Forms Using C#"
-author: "Onar A."
+author: onar
 image: /assets/posts/netcore/meta.png
 tags: [signup, spam]
 

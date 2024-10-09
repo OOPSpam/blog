@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Combatting Comment Spam like a Pro: Explore WPDiscuz's Anti-Spam Capabilities"
-author: "Onar A."
+author: onar
 image: /assets/posts/wpdiscuz/wpdiscuz-meta.png
 tags: [WordPress, comment, wpdiscuz]
 

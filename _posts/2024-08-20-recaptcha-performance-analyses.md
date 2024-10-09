@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Does reCAPTCHA slow down your website?"
-author: "Onar A."
+author: onar
 image: /assets/posts/recaptcha/recaptcha-meta.png
 tags: [captcha, contact_form]
 

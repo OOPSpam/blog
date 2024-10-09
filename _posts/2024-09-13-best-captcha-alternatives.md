@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The Best CAPTCHA Alternatives & Competitors, Compared"
-author: "Onar A."
+author: onar
 image: /assets/posts/social-media-meta.png
 tags: [turnstile, recaptcha, hcaptcha, akismet]
 

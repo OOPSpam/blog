@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Spam protection for Bubble.io"
-author: "Onar A."
+author: onar
 image: /assets/bubble_oopspam.png
 tags: [bubble]
 

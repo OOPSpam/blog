@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "[Announcement] OOPSpam Anti-Spam WordPress Plugin is here"
-author: "Onar A."
+author: onar
 image: /assets/posts/social-media-meta.png
 tags: [WordPress, spam]
 

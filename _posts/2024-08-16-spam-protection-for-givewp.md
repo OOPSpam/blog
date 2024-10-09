@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "4 ways to protect your GiveWP Donation Forms from spam"
-author: "Onar A."
+author: onar
 image: /assets/posts/give/give-meta.png
 tags: [WordPress, givewp, "card_testing"]
 

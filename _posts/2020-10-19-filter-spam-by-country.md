@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Introducing Country Restrictions"
-author: "Onar A."
+author: onar
 image: /assets/posts/connected_world.png
 
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The WordPress Security Checklist Most Developers Wish They Knew Sooner"
-author: "Onar A."
+author: onar
 image: /assets/posts/best-wp-form/WordpressForms.png
 tags: [wordpress]
 

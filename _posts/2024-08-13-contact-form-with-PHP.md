@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Building a complete contact form with PHP & HTML"
-author: "Onar A."
+author: onar
 image: /assets/posts/contact-form-with-PHP/complete-contact-form-with-PHP.png
 tags: [PHP, HTML, spam, contact_form]
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Slow Elementor Site? 7 Hacks Experts Use to Drastically Improve Page Speed"
-author: "Onar A."
+author: onar
 image: /assets/posts/slow-elementor/meta.png
 tags: [wordpress]
 

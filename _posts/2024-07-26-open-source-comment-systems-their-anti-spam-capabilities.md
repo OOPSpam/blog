@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "3 top open-source comment systems and their anti-spam capabilities"
-author: "Onar A."
+author: onar
 image: /assets/open-source-comment-systems.png
 tags: [comment, spam]
 

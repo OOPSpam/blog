@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "What are Overpayment scams, and how to protect yourself?"
-author: "Onar A."
+author: onar
 image: /assets/posts/overpayment-scam/money.png
 tags: [scam, Card testing]
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Securing Bricks Form: Effective Strategies for Spam Prevention"
-author: "Onar A."
+author: onar
 image: /assets/posts/bricks/sm.png
 tags: [WordPress, contact_form, bricks]
 

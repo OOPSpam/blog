@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Troubleshooting WPForms Not Sending Email Notifications"
-author: "Onar A."
+author: onar
 image: /assets/posts/wpforms-email-notification/meta.png
 tags: [wordpress, wpforms]
 

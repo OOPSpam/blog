@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Building Accessible Forms: 6 Tips"
-author: "Onar A."
+author: onar
 image: /assets/posts/accessible-form/meta.png
 tags: [captcha, contact_form, accessible]
 

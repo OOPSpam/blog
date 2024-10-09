@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "How to Remove the 'Deceptive Site Ahead' Browser Warning"
-author: "Onar A."
+author: onar
 image: /assets/posts/deceptive-site/sm.png
 tags: []
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "3 ways to protect your Kadence Form Block from spam"
-author: "Onar A."
+author: onar
 image: /assets/posts/kadence/kb-meta-image.png
 tags: [WordPress, contact_form, kadence]
 

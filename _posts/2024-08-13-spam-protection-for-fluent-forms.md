@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "4 ways to protect your Fluent Forms from spam"
-author: "Onar A."
+author: onar
 image: /assets/posts/social-media-meta.png
 tags: [WordPress, contact_form, fluent_forms]
 

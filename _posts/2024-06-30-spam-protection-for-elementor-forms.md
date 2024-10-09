@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "5 ways to protect your Elementor Forms from spam"
-author: "Onar A."
+author: onar
 image: /assets/posts/elementor-forms/ef-meta-image.png
 tags: [WordPress, contact_form, elementor_forms]
 

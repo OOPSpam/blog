@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Introducing: Domain Reputation Watch"
-author: "Onar A."
+author: onar
 image: /assets/posts/do-watch/sm.png
 tags: []
 
