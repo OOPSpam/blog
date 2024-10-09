@@ -12,7 +12,7 @@ tags:
 ---
 Spam attacks and bot traffic are rising challenges for website owners. These can clutter up your comment sections, overwhelm your contact forms, or, worse, perform malicious activities that harm your business. 
 
-![reCAPTCHA V2 interface with the 'I'm not a robot' checkbox and a submit button.](/assets/posts/image1.gif "reCAPTCHA V2 interface with the 'I'm not a robot' checkbox and a submit button.")
+![reCAPTCHA V2 interface with the 'I'm not a robot' checkbox and a submit button.](/blog/assets/posts/image1.gif "reCAPTCHA V2 interface with the 'I'm not a robot' checkbox and a submit button.")
 
 CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Apart) is one of the most widely used defenses against such threats. But which CAPTCHA solution is right for your website?
 
@@ -143,11 +143,11 @@ Now that you know the differences, how do you choose between V2 and V3?
 
 That being said, it’s worth considering how CAPTCHAs can [impact your site’s conversion rates](https://baymard.com/blog/captcha-conversion-rate). CAPTCHAs can cause friction during checkout, resulting in higher abandonment rates. Users might give up after failing CAPTCHA challenges, which can seriously affect your bottom line. 
 
-#### Considering OOPSpam? 
+#### Considering OOPSpam?
 
 If you want a solution that offers spam protection without CAPTCHA challenges, OOPSpam is worth a look. It’s customizable, GDPR-compliant, and offers excellent spam detection without disrupting your users. 
 
-## Implementing reCAPTCHA: A Quick Guide 
+## Implementing reCAPTCHA: A Quick Guide
 
 Implementing reCAPTCHA to your site is relatively straightforward. Whether you choose V2 or V3, Google offers plenty of documentation to guide you through the setup. Here’s a simplified overview of how to implement both:
 
