@@ -3,6 +3,7 @@ backend:
   repo: OOPSpam/blog
   base_url:  https://sveltia-cms-auth.ratelimit.workers.dev/
 media_folder: '/assets/posts'
+public_folder: '/blog/assets/posts'
 collections:
   - name: 'blog'
     label: 'Blog'
