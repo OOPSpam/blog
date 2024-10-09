@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Common reCAPTCHA Errors And How To Solve Them
-author: Onar A.
+author: onar
 image: /assets/posts/recaptcha-errors/meta.png
 tags: [recaptcha]
 

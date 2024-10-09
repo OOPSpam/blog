@@ -1,7 +1,7 @@
 ---
 layout: post
 title: What No One Tells You About Cloudflare Turnstile
-author: Onar A.
+author: onar
 image: /assets/posts/turnstile/meta.png
 tags: [turnstile]
 

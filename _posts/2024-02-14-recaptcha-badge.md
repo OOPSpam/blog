@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to Hide the reCAPTCHA Badge?
-author: Onar A.
+author: onar
 image: /assets/posts/recaptcha-badge/meta.png
 tags: [recaptcha]
 

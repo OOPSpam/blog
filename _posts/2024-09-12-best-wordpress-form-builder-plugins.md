@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The 8 Best WordPress Form Plugins for Accessibility, Performance and Spam Protection
-author: Onar A.
+author: onar
 image: /assets/posts/best-wp-form/WordpressForms.png
 tags:
   - wordpress

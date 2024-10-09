@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The Tricks Spammers Use to Fool CAPTCHAs
-author: Onar A.
+author: onar
 image: /assets/posts/bypassing-captcha/meta.png
 tags: [recaptcha, hcaptcha, turnstile]
 
