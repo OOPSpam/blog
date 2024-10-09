@@ -3,21 +3,33 @@ layout: default
 ---
 
 <div class="post">
-  <div class="post-info">
-    <span>Written by</span>
-    <p>
-      {% if author %} - {{ author.display_name }}</a>
+  <div class="post-info" style="display: flex; align-items: center; justify-content: space-between;">
+    {% assign author = site.authors | where: 'name', page.author |
+      first %} {% if author %}
+      <div style="display: inline-flex; align-items: center; margin: 1em;">
+        {% if author.avatar %}
+        <img style="width: 64px; height: 64px; margin:0em; margin-right: 8px;
+        border: solid;
+        border-radius: 3em;
+        border-color: #000;" src="{{ author.avatar }}" alt="image of {{ author.display_name }}" />
+        {% endif %}
+        <div style="display: flex; flex-direction: column;">
+        <p style="color:#555; margin-bottom: 0%;">{{ author.display_name }}</p>
+        <p style="margin-bottom: 0%;">{{ author.position }}</p>
+        </div>
+        
+      </div>
       {% endif %}
-    </p>
-
-    {% if page.date %}
-      <br>
-      <span>on&nbsp;</span><time datetime="{{ page.date }}">{{ page.date | date: "%B %d, %Y" }}</time>
-    {% endif %}
-
-    <p style="color:#555; text-align: center; padding-top: 10px;">{% include reading-time.html %}</p>
+      <div style="display: inline-flex; align-items: left; margin: 1em; flex-direction: column;">
+        <p style="color:#555; margin-bottom: 0%;">{% include reading-time.html %}</p>
+        {% if page.date %}
+       <time  datetime="{{ page.date }}">{{ page.date | date: "%b %d, %Y" }}</time>
+      {% endif %}
+  
+      
+      </div>
   </div>
-
+  <hr style="width: 50px; margin-bottom: 5em;">
   <h1 class="post-title">{{ page.title }}</h1>
   <div class="post-line"></div>
 

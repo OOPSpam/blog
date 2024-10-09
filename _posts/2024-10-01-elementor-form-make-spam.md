@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Stop Spam on Elementor Forms Using Make and OOPSpam"
-author: "Chazie B."
+author: chazie
 image: /assets/posts/social-media-meta.png
 tags: [make, elementor]
 

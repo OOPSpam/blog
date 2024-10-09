@@ -24,6 +24,9 @@ collections:
         search_fields: [display_name],
         value_field: 'name',
         }
+      - { label: 'Meta image', name: 'image', widget: 'image' }
+      - { label: 'Meta description', name: 'description', widget: 'string' }
+      - { label: 'Tags', name: 'tags', widget: 'list' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
   - name: 'authors'
     label: 'Authors'
@@ -36,4 +39,5 @@ collections:
       - { label: 'Short Name', name: 'name', widget: 'string' }
       - { label: 'Display Name', name: 'display_name', widget: 'string' }
       - { label: 'Position', name: 'position', widget: 'string' }
+      - { label: 'Avatar', name: 'avatar', widget: 'image' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
