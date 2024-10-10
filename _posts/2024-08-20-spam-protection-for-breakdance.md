@@ -52,7 +52,7 @@ Here are a few steps to activate spam protection for Breakdance Forms:
 
     ![OOPSpam Anti-Spam WordPress Plugin Settings](/blog/assets/posts/breakdance/oopspam-bd-setting.png "OOPSpam Anti-Spam WordPress Plugin Settings")
 
-3. Now, OOPSpam is activated. You can edit your form and go to __Actions -> Actions After Submission__ and select __Check for spam by OOPSpam__ action. make sure __Check for spam by OOPSpam__ comes before __Store Submission__ action so that OOPSpam checks for spam before a submission is stored.
+3. Now, OOPSpam is activated. You can edit your form and go to __Actions -> Actions After Submission__ and select __Check for spam by OOPSpam__ action. Make sure __Check for spam by OOPSpam__ comes before __Store Submission__ action so that OOPSpam checks for spam before a submission is stored.
 
     ![OOPSpam spam check action in Breakdance Form setting](/blog/assets/posts/breakdance/spam-check-action.png "OOPSpam spam check action in Breakdance Form setting")
 
