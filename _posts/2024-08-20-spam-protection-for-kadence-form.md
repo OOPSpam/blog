@@ -36,6 +36,8 @@ It's likely you have already tried the below options, and they didn't work for y
 2. Keeps your site accessible to all users
 3. Stops both human spammers and bots
 
+> The plugin supports both Kadence Form and Form Adv Blocks
+
 On the plugin's settings page, you could also adjust how sensitive you want your spam filter to be. Even keeping default __Sensitivity level__ setting will help you cut down spam to zero.
 
 ![OOPSpam WordPress Plugin Sensitivity level](https://www.oopspam.com/assets/WP_SensitivyLevel.jpg "OOPSpam WordPress Plugin Sensitivity level")
