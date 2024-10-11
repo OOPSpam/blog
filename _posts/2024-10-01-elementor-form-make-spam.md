@@ -1,13 +1,15 @@
 ---
 layout: post
-title:  "Stop Spam on Elementor Forms Using Make and OOPSpam"
+title: Stop Spam on Elementor Forms Using Make and OOPSpam
+date: 2024-10-09T16:15:00.000Z
 author: chazie
-image: /assets/posts/social-media-meta.png
-tags: [make, elementor]
-
-
-description: "Learn how to stop spam on Elementor forms using OOPSpam and Make. Follow this guide to automate spam detection and improve form submission management."
-# modified: 
+image: /blog/assets/posts/meta-integration.png
+description: Learn how to stop spam on Elementor forms using OOPSpam and Make.
+  Follow this guide to automate spam detection and improve form submission
+  management.
+tags:
+  - make
+  - elementor
 ---
 <center>
 <img loading="lazy"  width="600" alt="Make homepage animation" src="/blog/assets/posts/elementor-make/make.png">
