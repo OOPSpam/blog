@@ -11,7 +11,7 @@ layout: default
     <div class="item-{% increment postNo %}" style="border: solid;">
       <a href="{{ post.url | prepend: site.baseurl }}" class="card">
         
-        <div class="thumb" style="background-image: url({{ post.image | prepend: site.baseURL }});"></div>
+        <div class="thumb" style="background-image: url({{ post.image }});"></div>
         <article tabindex="0">
           <h2>{{ post.title }}</h2>
           
