@@ -7,7 +7,7 @@ logo: "https://www.oopspam.com/blog/assets/favicon-32x32.png"
 
 # JSON-LD
 
-baseURL: "https://www.oopspam.com/blog"
+baseURL: "https://www.oopspam.com/"
 languageCode:  "en-US"  
 
 # Google Analytics
