@@ -2,7 +2,7 @@
 layout: post
 title:  "The Best Turnstile Alternatives & Competitors, Compared"
 author: onar
-image: /assets/posts/social-media-meta.png
+image: /blog/assets/posts/social-media-meta.png
 tags: [turnstile, recaptcha, hcaptcha, akismet]
 
 

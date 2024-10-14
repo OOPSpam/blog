@@ -2,7 +2,7 @@
 layout: post
 title:  "WPForms: Advanced User Blocking to Enhance Form Security"
 author: onar
-image: /assets/posts/user-blocking/wpforms-meta.png
+image: /blog/assets/posts/user-blocking/wpforms-meta.png
 tags: [wordpress, contact_form, wpforms]
 
 description: "Block Users by Country, Language, Email Domain, Keyword, and IP in WPForms"

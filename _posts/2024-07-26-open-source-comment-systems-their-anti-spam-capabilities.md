@@ -2,7 +2,7 @@
 layout: post
 title:  "3 top open-source comment systems and their anti-spam capabilities"
 author: onar
-image: /assets/open-source-comment-systems.png
+image: /blog/assets/open-source-comment-systems.png
 tags: [comment, spam]
 
 description: "Learn about 3 different open-source & free comments systems and how they protect from spam."

@@ -2,7 +2,7 @@
 layout: post
 title: The Tricks Spammers Use to Fool CAPTCHAs
 author: onar
-image: /assets/posts/bypassing-captcha/meta.png
+image: /blog/assets/posts/bypassing-captcha/meta.png
 tags: [recaptcha, hcaptcha, turnstile]
 
 description: Getting spam despite CAPTCHA on your forms? Learn how spammers get around it and what you can do?

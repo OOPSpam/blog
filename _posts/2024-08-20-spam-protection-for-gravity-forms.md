@@ -2,7 +2,7 @@
 layout: post
 title:  "5 ways to protect your Gravity Forms from spam"
 author: onar
-image: /assets/posts/gravity/gf-meta.png
+image: /blog/assets/posts/gravity/gf-meta.png
 tags: [WordPress, contact_form, gravity]
 
 

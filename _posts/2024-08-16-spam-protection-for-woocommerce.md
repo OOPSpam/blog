@@ -2,7 +2,7 @@
 layout: post
 title:  "5 ways to stop spam orders and registrations in WooCommerce"
 author: onar
-image: /assets/posts/woo/woo-meta.png
+image: /blog/assets/posts/woo/woo-meta.png
 tags: [WordPress, WooCommerce, "card_testing"]
 
 

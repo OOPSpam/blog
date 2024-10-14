@@ -2,7 +2,7 @@
 layout: post
 title:  "Securing Your Forminator Contact Forms: Proven Tactics for Spam Prevention"
 author: onar
-image: /assets/posts/forminator/forminator-meta.png
+image: /blog/assets/posts/forminator/forminator-meta.png
 tags: [WordPress, contact_form, forminator]
 
 

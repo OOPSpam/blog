@@ -2,7 +2,7 @@
 layout: post
 title:  "5 effective ways to protect your Formidable Forms from spam"
 author: onar
-image: /assets/posts/formidable-forms/twitterCard.png
+image: /blog/assets/posts/formidable-forms/twitterCard.png
 tags: [WordPress, contact_form, formidable]
 
 

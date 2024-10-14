@@ -2,7 +2,7 @@
 layout: post
 title:  "Fluent Forms: Advanced User Blocking to Enhance Form Security"
 author: onar
-image: /assets/posts/user-blocking/fluent-meta.png
+image: /blog/assets/posts/user-blocking/fluent-meta.png
 tags: [wordpress, contact_form, fluent]
 
 description: "Block Users by Country, Language, Email Domain, Keyword, and IP in Fluent Forms"

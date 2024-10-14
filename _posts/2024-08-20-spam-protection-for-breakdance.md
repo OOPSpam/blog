@@ -2,7 +2,7 @@
 layout: post
 title:  "Breakdance Forms Spam Protection: A Step-by-Step Guide"
 author: onar
-image: /assets/posts/breakdance/sm.png
+image: /blog/assets/posts/breakdance/sm.png
 tags: [WordPress, contact_form, breakdance]
 
 

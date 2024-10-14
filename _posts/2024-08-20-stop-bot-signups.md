@@ -2,7 +2,7 @@
 layout: post
 title:  "4 Ways to Stop Fake Account Sign-Ups"
 author: onar
-image: /assets/posts/spam-signups/meta.png
+image: /blog/assets/posts/spam-signups/meta.png
 tags: [signup, spam]
 
 

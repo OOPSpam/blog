@@ -2,7 +2,7 @@
 layout: post
 title:  "4 ways to protect your Ninja Forms from spam"
 author: onar
-image: /assets/nj-oopspam-wordpress-plugin.jpg
+image: /blog/assets/nj-oopspam-wordpress-plugin.jpg
 tags: [WordPress, contact_form, ninja_forms]
 
 description: "Learn how to add spam protection to Ninja Forms with these 4 different methods in WordPress."

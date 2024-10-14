@@ -2,7 +2,7 @@
 layout: post
 title:  "7 ways to stop spam on your website"
 author: onar
-image: /assets/ways-to-stop-spam.png
+image: /blog/assets/ways-to-stop-spam.png
 tags: [spam, contact_form]
 
 

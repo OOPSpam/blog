@@ -2,7 +2,7 @@
 layout: post
 title: What No One Tells You About Cloudflare Turnstile
 author: onar
-image: /assets/posts/turnstile/meta.png
+image: /blog/assets/posts/turnstile/meta.png
 tags: [turnstile]
 
 description: Cloudflare Turnstile is an alternative to reCAPTCHA and hCAPTCHA, but is it better? 

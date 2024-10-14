@@ -2,7 +2,7 @@
 layout: post
 title:  "Slow Bricks Site? 7 Hacks to Improve Website Performance"
 author: onar
-image: /assets/posts/slow-bricks/meta.png
+image: /blog/assets/posts/slow-bricks/meta.png
 tags: [wordpress]
 
 description: "Learn how to speed up website building with Bricks Builder with these 7 proven tips."

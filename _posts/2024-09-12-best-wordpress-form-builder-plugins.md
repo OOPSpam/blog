@@ -2,7 +2,7 @@
 layout: post
 title: The 8 Best WordPress Form Plugins for Accessibility, Performance and Spam Protection
 author: onar
-image: /assets/posts/best-wp-form/WordpressForms.png
+image: /blog/assets/posts/best-wp-form/WordpressForms.png
 tags:
   - wordpress
 description: We’ve been working with WordPress form builder plugins for over five years, mainly integrating the OOPSpam WordPress anti-spam plugin with them. This involves coding, creating forms and testing them.

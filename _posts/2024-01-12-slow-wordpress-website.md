@@ -2,7 +2,7 @@
 layout: post
 title:  "You're Doing WordPress Performance WRONG. Here's Why."
 author: onar
-image: /assets/posts/slow-wordpress/meta.png
+image: /blog/assets/posts/slow-wordpress/meta.png
 tags: [wordpress]
 
 

@@ -2,7 +2,7 @@
 layout: post
 title:  "Introducing Country Restrictions"
 author: onar
-image: /assets/posts/connected_world.png
+image: /blog/assets/posts/connected_world.png
 
 
 description: "Block countries with OOPSpam"

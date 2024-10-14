@@ -2,7 +2,7 @@
 layout: post
 title:  "Spam protection for Bubble.io"
 author: onar
-image: /assets/bubble_oopspam.png
+image: /blog/assets/bubble_oopspam.png
 tags: [bubble]
 
 description: "Learn how to add spam protection to your Bubble app forms."

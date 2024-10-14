@@ -2,7 +2,7 @@
 layout: post
 title:  "Troubleshooting Gravity Forms Not Sending Email Notifications"
 author: onar
-image: /assets/posts/gravityforms-email-notification/meta.png
+image: /blog/assets/posts/gravityforms-email-notification/meta.png
 tags: [wordpress, contact_form, gravity]
 
 description: "Learn how to fix Gravity Forms not sending email notifications. Discover step-by-step solutions using SMTP plugins, email delivery services, and spam protection."

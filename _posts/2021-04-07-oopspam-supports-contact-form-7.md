@@ -2,7 +2,7 @@
 layout: post
 title:  "[Announcement] OOPSpam Anti-Spam Plugin now supports Contact Form 7"
 author: onar
-image: /assets/posts/cf7-oopspam-wordpress-plugin.png
+image: /blog/assets/posts/cf7-oopspam-wordpress-plugin.png
 tags: [WordPress, contact_form, cf7]
 
 

@@ -2,7 +2,7 @@
 layout: post
 title:  "Introducing: Domain Reputation Watch"
 author: onar
-image: /assets/posts/do-watch/sm.png
+image: /blog/assets/posts/do-watch/sm.png
 tags: []
 
 

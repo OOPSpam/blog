@@ -2,7 +2,7 @@
 layout: post
 title:  "How to add a powerful spam filter to your contact form"
 author: onar
-image: /assets/howtoaddspamfilter.png
+image: /blog/assets/howtoaddspamfilter.png
 tags: [WordPress, contact_form, java, honeypot, spam, oopspam]
 
 

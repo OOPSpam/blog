@@ -2,7 +2,7 @@
 layout: post
 title:  "Gravity Forms: Advanced User Blocking to Enhance Form Security"
 author: onar
-image: /assets/posts/user-blocking/gravity-meta.png
+image: /blog/assets/posts/user-blocking/gravity-meta.png
 tags: [wordpress, contact_form, gravity]
 
 description: "Block Users by Country, Language, Email Domain, Keyword, and IP in Gravity Forms"

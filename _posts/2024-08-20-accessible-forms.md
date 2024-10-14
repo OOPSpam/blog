@@ -2,7 +2,7 @@
 layout: post
 title:  "Building Accessible Forms: 6 Tips"
 author: onar
-image: /assets/posts/accessible-form/meta.png
+image: /blog/assets/posts/accessible-form/meta.png
 tags: [captcha, contact_form, accessible]
 
 

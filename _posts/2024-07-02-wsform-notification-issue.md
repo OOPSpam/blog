@@ -2,7 +2,7 @@
 layout: post
 title:  "Troubleshooting WS Form Not Sending Email Notifications"
 author: onar
-image: /assets/posts/wsform-email-notification/meta.png
+image: /blog/assets/posts/wsform-email-notification/meta.png
 tags: [wordpress, contact_form, wsform]
 
 description: "Learn how to fix WS Form not sending email notifications. Discover step-by-step solutions using SMTP plugins, email delivery services, and spam protection."
