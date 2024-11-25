@@ -48,8 +48,7 @@ While Akismet is a good choice for WordPress users, its limitations in compatibi
 
 A side-by-side comparison of OOPSpam and Akismet reveals distinct differences in functionality, pricing, and compatibility.
 
-```html
-<table border="1" cellspacing="0" cellpadding="5">
+`<table border="1" cellspacing="0" cellpadding="5">
   <thead>
     <tr>
       <th>Feature</th>
@@ -99,8 +98,7 @@ A side-by-side comparison of OOPSpam and Akismet reveals distinct differences in
       <td>Limited</td>
     </tr>
   </tbody>
-</table>
-```
+</table>`
 
 By offering greater compatibility, better privacy controls, and advanced spam filtering features, OOPSpam emerges as the superior choice for most users.
 
@@ -156,10 +154,9 @@ Pricing is a significant factor for businesses, especially those managing multip
 ### OOPSpam Pricing
 
 * Starts at **$49/month**, including:
-* * Unlimited websites.
 
+  * Unlimited websites.
   * Generous API call limits.
-
   * Advanced features like detailed reporting and language blocking.
 
 📌 **Cost Comparison:** For an agency managing 20 websites, switching to OOPSpam can save over $1,500 annually compared to Akismet.
