@@ -51,12 +51,12 @@ A side-by-side comparison of OOPSpam and Akismet reveals distinct differences in
 
 <style>
   table {
-    border: 2px solid yellow;
+    border: 2px solid black;
     border-collapse: collapse;
     width: 100%;
   }
   th, td {
-    border: 2px solid yellow;
+    border: 2px solid black;
     padding: 10px;
     text-align: left;
   }
@@ -122,6 +122,8 @@ A side-by-side comparison of OOPSpam and Akismet reveals distinct differences in
     </tr>
   </tbody>
 </table>
+
+
 
 
 
