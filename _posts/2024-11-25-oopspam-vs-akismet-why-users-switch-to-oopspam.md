@@ -48,7 +48,6 @@ While Akismet is a good choice for WordPress users, its limitations in compatibi
 
 A side-by-side comparison of OOPSpam and Akismet reveals distinct differences in functionality, pricing, and compatibility.
 
-
 <style>
   table {
     border: 2px solid black;
@@ -122,10 +121,6 @@ A side-by-side comparison of OOPSpam and Akismet reveals distinct differences in
     </tr>
   </tbody>
 </table>
-
-
-
-
 
 By offering greater compatibility, better privacy controls, and advanced spam filtering features, OOPSpam emerges as the superior choice for most users.
 
@@ -208,7 +203,7 @@ A tool’s usability and support structure play a crucial role in its effectiven
 
 OOPSpam’s intuitive dashboard and seamless integrations make it easy to set up and manage. There’s no need for invasive CAPTCHAs or complex configurations.
 
-🌟  **Pro Tip:** Developers will appreciate OOPSpam’s detailed [API documentation](https://www.oopspam.com/docs/#introduction), which simplifies the integration process.
+🌟 **Pro Tip:** Developers will appreciate OOPSpam’s detailed [API documentation](https://www.oopspam.com/docs/#introduction), which simplifies the integration process.
 
 ### Customer Support
 
