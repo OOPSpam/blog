@@ -48,7 +48,30 @@ While Akismet is a good choice for WordPress users, its limitations in compatibi
 
 A side-by-side comparison of OOPSpam and Akismet reveals distinct differences in functionality, pricing, and compatibility.
 
-<table border="1" cellspacing="0" cellpadding="5">
+
+<style>
+  table {
+    border: 2px solid yellow;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  th, td {
+    border: 2px solid yellow;
+    padding: 10px;
+    text-align: left;
+  }
+  th {
+    background-color: #f9f9f9;
+  }
+  td:first-child {
+    font-weight: bold;
+  }
+  td.center {
+    text-align: center;
+  }
+</style>
+
+<table>
   <thead>
     <tr>
       <th>Feature</th>
@@ -74,18 +97,18 @@ A side-by-side comparison of OOPSpam and Akismet reveals distinct differences in
     </tr>
     <tr>
       <td>Country & Language Blocking</td>
-      <td>✅</td>
-      <td>❌</td>
+      <td class="center">✅</td>
+      <td class="center">❌</td>
     </tr>
     <tr>
       <td>Disposable Email Blocking</td>
-      <td>✅</td>
-      <td>❌</td>
+      <td class="center">✅</td>
+      <td class="center">❌</td>
     </tr>
     <tr>
       <td>Detailed Spam Reports</td>
-      <td>✅</td>
-      <td>❌</td>
+      <td class="center">✅</td>
+      <td class="center">❌</td>
     </tr>
     <tr>
       <td>Pricing for Agencies</td>
@@ -99,6 +122,8 @@ A side-by-side comparison of OOPSpam and Akismet reveals distinct differences in
     </tr>
   </tbody>
 </table>
+
+
 
 By offering greater compatibility, better privacy controls, and advanced spam filtering features, OOPSpam emerges as the superior choice for most users.
 
