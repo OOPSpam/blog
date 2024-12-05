@@ -1,13 +1,15 @@
 ---
 layout: post
-title:  "5 ways to stop spam orders and registrations in WooCommerce"
+title: 5 ways to stop spam orders and registrations in WooCommerce
+date: 2024-12-05T16:10:00.000Z
 author: onar
-image: /blog/assets/posts/woo/woo-meta.png
-tags: [WordPress, WooCommerce, "card_testing"]
-
-
-description: "Learn how to prevent fake orders, spam reviews and registrations with these 5 different methods in WordPress."
-# modified: 
+image: /blog/assets/posts/woo-header.png
+description: Learn how to prevent fake orders, spam reviews and registrations
+  with these 5 different methods in WordPress.
+tags:
+  - WordPress
+  - WooCommerce
+  - card_testing
 ---
 <center>
 <img loading="lazy"  width="772" alt="WooCommerce website screenshot" src="/blog/assets/posts/woo/woo.png">
@@ -20,7 +22,7 @@ description: "Learn how to prevent fake orders, spam reviews and registrations w
 
 As your store grows, it will attract spammers too. You may already have this issue as this is pretty common to have fake orders. Especially for the stores with high traffic.
 
-![WooCommerce Fake Orders](/blog/assets/posts/woo/fake-orders.png "WooCommerce Fake Orders")
+![WooCommerce Fake Orders](/blog/assets/posts/multiple-failed-orders.png "WooCommerce Fake Orders")
 
 ## Why do spammers create fake orders?
 
@@ -28,7 +30,7 @@ To stop spam orders first we need to understand why spammers decide to create a 
 
 There are so many reasons why bots (and spammers behind them) would attack your website. One of the most common reasons for spam orders is the card testing attack that we talked about in [GiveWP Donation Form article](https://www.oopspam.com/blog/spam-protection-for-givewp). The card testing attack is a way to check if a stolen credit card is valid or not. This attack can be automated or manual and they tend to target donation forms where there are fewer steps to take to test a stolen card. For this reason, your WooCommerce store needs to at least require user registration to purchase a product.
 
-Sometimes vulnerability scanners look for a specific security bug in WooCommerce. The spam bots create an order to test certain behavior in the checkout process and hope to discover a bug they are looking for. Before WooCommerce version 4.6.2, [a user reported failed orders in WooCommerce support](https://wordpress.org/support/topic/failed-orders-fake-information/) where an attacker was able to create an account without registration even though _“Allow customers to create an account during checkout”_ setting is enabled. [They announced](https://developer.woocommerce.com/2020/11/05/developer-advisory-spam-orders-and-accounts-from-bots/) the bug publicly and released a fix. This is a great example of why you may see many false orders. It's important to keep your WordPress plugins including WooCommerce up-to-date.
+Sometimes vulnerability scanners look for a specific security bug in WooCommerce. The spam bots create an order to test certain behavior in the checkout process and hope to discover a bug they are looking for. Before WooCommerce version 4.6.2, [a user reported failed orders in WooCommerce support](https://wordpress.org/support/topic/failed-orders-fake-information/) where an attacker was able to create an account without registration even though *“Allow customers to create an account during checkout”* setting is enabled. [They announced](https://developer.woocommerce.com/2020/11/05/developer-advisory-spam-orders-and-accounts-from-bots/) the bug publicly and released a fix. This is a great example of why you may see many false orders. It's important to keep your WordPress plugins including WooCommerce up-to-date.
 
 Besides the above reasons, sometimes fake orders can be simply malicious targeted attacks to harm your business. Usually, spam orders cause chargeback issues, a bad reputation with the payment processors, lost sales (putting a lot of orders and making an item out of stock), and many others.
 
@@ -48,32 +50,29 @@ It's likely you have already tried the below options, and they didn't work for y
 2. Keeps your site accessible to all users
 3. Stops both human spammers and bots
 
-On the plugin's settings page, you could also adjust how sensitive you want your spam filter to be. Even keeping the default __Sensitivity level__ setting will help you cut down spam to zero.
+On the plugin's settings page, you could also adjust how sensitive you want your spam filter to be. Even keeping the default **Sensitivity level** setting will help you cut down spam to zero.
 
 ![OOPSpam WordPress Plugin Sensitivity level](https://www.oopspam.com/assets/WP_SensitivyLevel.jpg "OOPSpam WordPress Plugin Sensitivity level")
 
-In addition, the plugin allows you to set up a filter to accept orders only from certain countries and languages (for WooCommerce reviews). Country blocking is similar to WooCommerce's _Selling location(s)_ settings, however, OOPSpam applies this restriction across the website including product reviews, registration, and orders. As additional protection, the OOPSpam WordPress plugin also adds a honeypot field to all forms so you don't have to install another plugin.
+In addition, the plugin allows you to set up a filter to accept orders only from certain countries and languages (for WooCommerce reviews). Country blocking is similar to WooCommerce's *Selling location(s)* settings, however, OOPSpam applies this restriction across the website including product reviews, registration, and orders. As additional protection, the OOPSpam WordPress plugin also adds a honeypot field to all forms so you don't have to install another plugin.
 
 ![OOPSpam WordPress Plugin country & language restrictions](https://www.oopspam.com/assets/country-language-filter.png "OOPSpam WordPress Plugin country & language restrictions")
 
-> ✨ Since then, we have also added the __Block messages from these countries__ feature.
+> ✨ Since then, we have also added the **Block messages from these countries** feature.
 
 ![OOPSpam WordPress Plugin block countries](https://www.oopspam.com/blog/assets/wp-block-countries.png "OOPSpam WordPress Plugin block countries")
 
-Unlike other premium solutions, OOPSpam is privacy-friendly. We don't store, share your data, or use cookies. All the rejected spam logs are stored in your local WordPress database and can be viewed under _Form Spam Entires_ settings.
+Unlike other premium solutions, OOPSpam is privacy-friendly. We don't store, share your data, or use cookies. All the rejected spam logs are stored in your local WordPress database and can be viewed under *Form Spam Entires* settings.
 
 Here are a few steps to activate spam protection for the WooCommerce-based store:
 
-1. [Subscribe to get an API key](https://app.oopspam.com/Identity/Account/Register) then copy-paste the API key to the plugin's appropriate field under __Settings->OOPSpam Anti-Spam__ on your WordPress Admin Dashboard.
+1. [Subscribe to get an API key](https://app.oopspam.com/Identity/Account/Register) then copy-paste the API key to the plugin's appropriate field under **Settings->OOPSpam Anti-Spam** on your WordPress Admin Dashboard.
 
-    > ℹ️ Make sure to select OOPSpam Dashboard on the setting page
-
+   > ℹ️ Make sure to select OOPSpam Dashboard on the setting page
 2. If you have WooCommerce installed then a special section will appear on the OOPSpam Anti-Spam plugin's settings page.
 
-    ![OOPSpam Anti-Spam WordPress Plugin Settings](/blog/assets/posts/woo/OOPSpam-WooCommerce-Settings.png "OOPSpam Anti-Spam WordPress Plugin Settings")
-
+   ![OOPSpam Anti-Spam WordPress Plugin Settings](/blog/assets/posts/woo/OOPSpam-WooCommerce-Settings.png "OOPSpam Anti-Spam WordPress Plugin Settings")
 3. On this page, you need to activate the spam filter for WooCommerce by checking the **Activate Spam Protection** checkbox. You don't have to do anything on your form. Once you activate spam protection on the OOPSpam plugin settings, you are good to go.
-
 4. Don't forget to enter a short message to display when a spam order or registration is detected.
 
 <center>
@@ -85,15 +84,21 @@ Here are a few steps to activate spam protection for the WooCommerce-based store
 </center>
 <br/>
 
+### Blocking orders from Unknown origin in Woo
+
+If you have origin tracking enabled, you can use OOPSpam to block all orders with an unknown origin attribute. This will effectively stop spam you receive from bots with just one click. In the plugin settings, enable the **Block orders from unknown origin setting**. That is all.
+
+![Block Unknown Origin orders in WooCommerce](/blog/assets/posts/block-unknown-order-woo.png "Block Unknown Origin orders in WooCommerce")
+
 ## Configure user registration
 
 As pointed out above, spammers are more likely to spam your store if allow they to buy without registration and leave anonymize reviews. WordPress and WooCommerce plugins come with a built-in configuration that allows you to prevent visitors from buying your product without registration. Both WordPress and WooCommerce have registration flow and they are separated. Disable WordPress registration if you don't need it. Disabling it will NOT affect your WooCommerce account registration.
 
-In your WordPress dashboard visit _Settings -> General -> Membership_ and uncheck **Anyone can register**. This will effectively prevent spam WP user registration.
+In your WordPress dashboard visit *Settings -> General -> Membership* and uncheck **Anyone can register**. This will effectively prevent spam WP user registration.
 
 ![WordPress Any can register setting](/blog/assets/posts/woo/wordpress-settings-anyone-can-register.png "WordPress Any can register setting")
 
-Time to require registration for the store purchases so that bots cannot create spam orders without registration. This allows us to track who created fake orders and block them. Visit _WooCommerce -> Settings -> Guess Checkout_ and uncheck **Allow customers to place orders without an account** and check **Allow customers to log into an existing account during checkout**.
+Time to require registration for the store purchases so that bots cannot create spam orders without registration. This allows us to track who created fake orders and block them. Visit *WooCommerce -> Settings -> Guess Checkout* and uncheck **Allow customers to place orders without an account** and check **Allow customers to log into an existing account during checkout**.
 
 ![WooCommerce Guest Checkout](/blog/assets/posts/woo/WooCommerce-Guest-Checkout.png "WooCommerce Guest Checkout")
 
@@ -101,11 +106,11 @@ This is a basic configuration you could to prevent some bots. However, many bots
 
 ## Block countries
 
-This is perhaps the easiest way to prevent spam orders. WooCommerce comes with two powerful features that allow you to block countries. These are _Selling location(s)_ and _Shipping location(s)_ settings.
+This is perhaps the easiest way to prevent spam orders. WooCommerce comes with two powerful features that allow you to block countries. These are *Selling location(s)* and *Shipping location(s)* settings.
 
 ![WooCommerce Selling Location setting](/blog/assets/posts/woo/WooCommerce-Selling-Location.png "WooCommerce Selling Location setting")
 
-These features are a great fit for the store that serves a certain area. In the above example, we choose to sell only in US and Canada and ship only to these selected countries. Using just these two settings you could eliminate most of your fake orders. Besides the _Selling to specific countries_ option, _Selling location(s)_ setting has _Sell to all countries, except for ..._ which is another useful way to open your store to all countries but only block the spammers' location. Once you start getting fraudulent orders, check the source countries of bots and add them under this setting.
+These features are a great fit for the store that serves a certain area. In the above example, we choose to sell only in US and Canada and ship only to these selected countries. Using just these two settings you could eliminate most of your fake orders. Besides the *Selling to specific countries* option, *Selling location(s)* setting has *Sell to all countries, except for ...* which is another useful way to open your store to all countries but only block the spammers' location. Once you start getting fraudulent orders, check the source countries of bots and add them under this setting.
 
 ## Honeypot
 
