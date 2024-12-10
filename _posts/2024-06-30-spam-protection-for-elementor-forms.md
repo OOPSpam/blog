@@ -1,13 +1,16 @@
 ---
+modified: 2023-11-06
 layout: post
-title:  "5 ways to protect your Elementor Forms from spam"
+title: 5 ways to protect your Elementor Forms from spam
+date: 2024-12-10T17:25:00.000Z
 author: onar
 image: /blog/assets/posts/elementor-forms/ef-meta-image.png
-tags: [WordPress, contact_form, elementor_forms]
-
-
-description: "Learn how to add spam protection to Elementor Forms with these 5 different methods in WordPress."
-modified: 2023-11-06
+description: Learn how to add spam protection to Elementor Forms with these 5
+  different methods in WordPress.
+tags:
+  - WordPress
+  - contact_form
+  - elementor_forms
 ---
 <center>
 <img loading="lazy"  width="772" alt="OOPSpam Anti-Spam WordPress Plugin supports Elementor Forms" src="/blog/assets/posts/elementor-forms/ef-blog-header.png">
@@ -38,7 +41,7 @@ It's likely you have already tried the below options, and they didn't work for y
 2. Keeps your site accessible to all users
 3. Stops both human spammers and bots
 
-On the plugin's settings page, you could also adjust how sensitive you want your spam filter to be. Even keeping default __Sensitivity level__ setting will help you cut down spam to zero.
+On the plugin's settings page, you could also adjust how sensitive you want your spam filter to be. Even keeping default **Sensitivity level** setting will help you cut down spam to zero.
 
 ![OOPSpam WordPress Plugin Sensitivity level](https://www.oopspam.com/assets/WP_SensitivyLevel.jpg "OOPSpam WordPress Plugin Sensitivity level")
 
@@ -46,7 +49,7 @@ In addition, the plugin allows you to set up a filter to accept submissions only
 
 ![OOPSpam WordPress Plugin country & language restrictions](https://www.oopspam.com/assets/country-language-filter.png "OOPSpam WordPress Plugin country & language restrictions")
 
-> ✨ Since then, we have also added the __Block messages from these countries__ feature.
+> ✨ Since then, we have also added the **Block messages from these countries** feature.
 
 ![OOPSpam WordPress Plugin block countries](https://www.oopspam.com/blog/assets/wp-block-countries.png "OOPSpam WordPress Plugin block countries")
 
@@ -56,16 +59,13 @@ Unlike other premium solutions, OOPSpam is privacy-friendly. We don't store or s
 
 Here are a few steps to activate spam protection for Elementor Forms:
 
-1. [Subscribe to get an API key](https://app.oopspam.com/Identity/Account/Register) then copy-paste the API key to the plugin's appropriate field under __Settings->OOPSpam Anti-Spam__ on your WordPress Admin Dashboard.
+1. [Subscribe to get an API key](https://app.oopspam.com/Identity/Account/Register) then copy-paste the API key to the plugin's appropriate field under **Settings->OOPSpam Anti-Spam** on your WordPress Admin Dashboard.
 
-    > ℹ️ Make sure to select OOPSpam Dashboard on the setting page
-
+   > ℹ️ Make sure to select OOPSpam Dashboard on the setting page
 2. If you have Elementor and Elementor Pro installed then a special section will appear on the OOPSpam Anti-Spam plugin's settings page.
 
-    ![OOPSpam Anti-Spam WordPress Plugin Settings](/blog/assets/posts/elementor-forms/oopspam-ef-settings.png "OOPSpam Anti-Spam WordPress Plugin Settings")
-
+   ![OOPSpam Anti-Spam WordPress Plugin Settings](/blog/assets/posts/elementor-forms/oopspam-ef-settings.png "OOPSpam Anti-Spam WordPress Plugin Settings")
 3. On this page, you need to activate the spam filter for Elementor Forms by checking the **Activate Spam Protection** checkbox. You don't have to do anything on your form. Once you activate spam protection on the OOPSpam plugin settings, you are good to go.
-
 4. Don't forget to enter a short message to display when a spam form entry is submitted. Your message will appear at the bottom of the message field.
 
 <center>
@@ -106,12 +106,11 @@ If you're concerned about privacy, you may want to use hCAPTCHA instead of reCAP
 Follow [Add site to Cloudflare](https://developers.cloudflare.com/fundamentals/get-started/setup/add-site/) article in their official docs to change your website's DNS address and put it behind Cloudflare. By simple adding your website to Cloudflare isn't enough. You need to [enable Bot Fight Mode](https://developers.cloudflare.com/bots/get-started/free/) to activate this protection.
 If the visitor's IP is suspicious then a CAPTCHA (namely Turnstile) will appear and ask the user to solve the challenge. Note that the visitor will not be able to solve the CAPTCHA if cookies and javascript are disabled in their browser. More about Turnstile check out: [What No One Tells You About Cloudflare Turnstile](https://www.oopspam.com/blog/cloudflare-turnstile).
 
-
 Cloudflare is a good alternative to reCAPTCHA as it's much lighter than reCAPTCHA.
 
 ### Block access to website by country
 
-Once you put your website behind Cloudflare, you have an option to block countries. Depending from where you are getting spam, you may consider star blocking China and Russia as many spam originates from these countries.
+Once you put your website behind Cloudflare, you have [an option to block countries](https://www.oopspam.com/blog/blocking-countries-from-accessing-your-website-using-cloudflare). Depending from where you are getting spam, you may consider star blocking China and Russia as many spam originates from these countries.
 
 ![Blocking Countries in Cloudflare](/blog/assets/posts/elementor-forms/Blocking-Countries-in-Cloudflare.png "Blocking Countries in Cloudflare")
 
