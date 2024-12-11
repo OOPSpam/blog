@@ -141,7 +141,7 @@ After configuring the limits, click “**Save Changes**.” Test your form by su
 
 During testing, legitimate users should be able to interact with the form within the defined limits, while bots or abusive users are blocked.
 
-📌 These steps make it easy to set up and fine-tune your rate limiting settings. Adjust the limits as needed based on your form’s traffic and purpose.
+> 📌 These steps make it easy to set up and fine-tune your rate limiting settings. Adjust the limits as needed based on your form’s traffic and purpose.
 
 ## Why Choose OOPSpam for Advanced Form Protection?
 
