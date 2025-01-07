@@ -49,19 +49,24 @@ Let’s get started by setting up your form and accounts.
 
 The first step is to ensure you have a functional Google Form to use in this process. Follow these steps:
 
-1. **Log into Google Forms**
-2. * Visit[ Google Forms](https://forms.google.com) and create a new form.
-3. **Design Your Form**
-4. * Add relevant fields such as:
+**1. Log into Google Forms**
 
-   * **Name** (Short answer)
-   * **Email** (Email format)
-   * **Message** (Paragraph or long answer)
-5. **Submit Test Responses**
-6. * Add both legitimate and spammy responses to test the system later. Examples:
+Visit[ Google Forms](https://forms.google.com) and create a new form.
 
-   * **Legitimate:** “John Doe, john@example.com, Interested in your services.”
-   * **Spam:** “%%BUY NOW\*\*, fake@spam.com, Win a million dollars!”
+**2. Design Your Form**
+
+Add relevant fields such as:
+
+* **Name** (Short answer)
+* **Email** (Email format)
+* **Message** (Paragraph or long answer)
+
+**3. Submit Test Responses**
+
+Add both legitimate and spammy responses to test the system later. Examples:
+
+* **Legitimate:** “John Doe, john@example.com, Interested in your services.”
+* **Spam:** “%%BUY NOW\*\*, fake@spam.com, Win a million dollars!”
 
 ## Step 2: Set Up Accounts for Make and OOPSpam
 
@@ -89,13 +94,19 @@ The next step involves creating the automation in Make. Here’s how:
 
 ### Add the Google Forms Module
 
-1. **Start a New Scenario**
-2. * Log in to Make and click **Create a new scenario**.
-3. **Search for Google Forms**
-4. * Drag the **Google Forms - Watch Responses** module into the canvas.
-5. **Connect Google Forms**
-6. * Link your Google account to Make and select the form you created.
-7. **Configure the Module**
+**1. Start a New Scenario**
+
+Log in to Make and click **Create a new scenario**.
+
+**2. Search for Google Forms**
+
+Drag the **Google Forms - Watch Responses** module into the canvas.
+
+**3. Connect Google Forms**
+
+Link your Google account to Make and select the form you created.
+
+**4. Configure the Module**
 
 ![Google Forms "Watch Responses" settings with connection, form ID, and limit fields.](/blog/assets/posts/google-forms-watch-responses.png "Google Forms Watch Responses Configuration")
 
@@ -158,12 +169,14 @@ This flow ensures seamless handling of form submissions, providing an organized 
 
 For spam submissions, you can choose to:
 
-1. **Log to Google Sheets**
-2. * Create a separate Google Sheet to store spam entries for later review.
+**1. Log to Google Sheets**
 
-   * Map fields like Name, Email, Message, and Spam Score to the spam sheet.
-3. **Discard the Data**
-4. * Simply terminate the scenario for submissions where **Spam Score > 2**, ensuring they are not processed further.
+* Create a separate Google Sheet to store spam entries for later review.
+* Map fields like Name, Email, Message, and Spam Score to the spam sheet.
+
+**2. Discard the Data**
+
+* Simply terminate the scenario for submissions where **Spam Score > 2**, ensuring they are not processed further.
 
 ## Step 5: Test the Workflow
 
@@ -174,8 +187,8 @@ Testing ensures that the workflow runs smoothly and handles submissions as expec
 1. **Run the Scenario:** In Make, click **Run Once** to manually test the workflow.
 2. **Submit Test Forms:** Use both spammy and legitimate test submissions.
 3. **Review Results:**
-4. * Check that:
 
+   * Check that:
    * Spam submissions are flagged and handled appropriately.
    * Legitimate submissions follow the correct path.
 
