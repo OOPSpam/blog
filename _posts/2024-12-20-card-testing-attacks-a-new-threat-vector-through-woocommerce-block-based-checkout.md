@@ -2,7 +2,7 @@
 layout: post
 title: "Card Testing Attacks: A New Threat Vector Through WooCommerce
   Block-based Checkout"
-date: 2024-12-20T17:13:00.000Z
+date: 2025-01-10T17:43:00.000Z
 author: onar
 image: /blog/assets/posts/blockcountrieswithcloudflare-copy-2x.jpg
 description: Learn how to prevent fake and spam orders on your WooCommerce
@@ -49,6 +49,10 @@ Install the OOPSpam plugin and enable both the Spam Protection for Woo and the *
 
 ![WooCommerce setting in the OOPSpam WordPress plugin](/blog/assets/posts/screenshot-2024-12-20-at-5.00.58 pm.png "WooCommerce setting in the OOPSpam WordPress plugin")
 
+Blocked entries will be listed under the Form Spam Entries.
+
+![Blocked orders with Unknown Origin in WooCommerce](/blog/assets/posts/screenshot-2025-01-10-at-11.40.04 am.png "Blocked orders with Unknown Origin in WooCommerce")
+
 ### Additional Security Layers
 
 * **Geographic Restrictions**: Implement country-based blocking for regions where you don't conduct business. You can either [use Cloudflare to block countries](https://www.oopspam.com/blog/blocking-countries-from-accessing-your-website-using-cloudflare) on the DNS-Level or the OOPSpam WordPress plugin.
@@ -59,7 +63,7 @@ Install the OOPSpam plugin and enable both the Spam Protection for Woo and the *
   ![CAPTHCA examples](/blog/assets/posts/captcha.webp "CAPTCHA examples")
 * **Rate Limiting**: Enable [rate limiting through the OOPSpam plugin](https://www.oopspam.com/blog/protecting-forms-with-rate-limiting-in-wordpress-using-oopspam) to restrict the number of checkout attempts from the same IP address, effectively preventing rapid-fire card testing attempts
 
-  ![](/blog/assets/posts/rate-limiting-settings.png)
+  ![OOPSpam WordPress plugin Rate Limiting setting](/blog/assets/posts/rate-limiting-settings.png "OOPSpam WordPress plugin Rate Limiting setting")
 
 ## Moving Forward
 
