@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Using OOPSpam to Filter Spam Submissions in Airtable Forms via Zapier
-date: 2025-01-19T10:00:00.000Z
+date: 2025-01-19T07:02:00.000Z
 author: chazie
 image: /blog/assets/posts/header_airtable_oopspam.jpg
 description: Keep Airtable forms spam-free with OOPSpam and Zapier. Automate
