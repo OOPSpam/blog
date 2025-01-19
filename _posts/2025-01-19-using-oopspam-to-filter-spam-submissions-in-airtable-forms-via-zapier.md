@@ -53,25 +53,21 @@ Zapier has introduced a new feature called [Copilot](https://zapier.com/blog/zap
 
 Airtable is the foundation of this workflow. To get started:
 
-1. **Log into Airtable:** If you don’t have an account, create one at [Airtable](https://airtable.com/signup).
+**1. Log into Airtable:** If you don’t have an account, create one at [Airtable](https://airtable.com/signup).
 
 ![Airtable sign-up page with email input and multiple login options.](/blog/assets/posts/sign-up-airtable.png "Airtable Sign-Up Page")
 
-2. **Create a New Base:** Name it something like "Spam Filtered Submissions."
+**2. Create a New Base:** Name it something like "Spam Filtered Submissions."
 
 ![Airtable interface showing an empty table for spam-filtered submissions with columns for Name, Email, Message, Spam Score, and Submission Date.](/blog/assets/posts/spam-filtered-submissions-table-airtable.png "Airtable Spam-Filtered Submissions Table")
 
-3. **Add Relevant Fields:**
+**3. Add Relevant Fields:**
 
-1. * **Name:** Single-line text
-
-   * **Email:** Email field
-
-   * **Message:** Long text
-
-   * **Spam Score:** Number field
-
-   * **Submission Date:** Date field (set to auto-populate)
+* **Name:** Single-line text
+* **Email:** Email field
+* **Message:** Long text
+* **Spam Score:** Number field
+* **Submission Date:** Date field (set to auto-populate)
 
 ### Create and Customize a Form View
 
@@ -105,17 +101,18 @@ OOPSpam’s robust spam-detection capabilities ensure accurate results.
 
 ### Add Airtable as the Trigger
 
-1. **Create a New Zap**
-2. * Log into Zapier and click “**Create Zap**.”
+**1. Create a New Zap**
 
-   * Name your Zap (e.g., "Filter Airtable Spam").
-3. **Select Airtable as the Trigger App:** Choose Airtable and select the event "New Record".
+* Log into Zapier and click “**Create Zap**.”
+* Name your Zap (e.g., "Filter Airtable Spam").
+
+**2. Select Airtable as the Trigger App:** Choose Airtable and select the event "New Record".
 
 ![Zapier setup screen showing a new record trigger event in Airtable.](/blog/assets/posts/zap-zapier.png "Zapier Workflow: Airtable New Record Trigger Configuration")
 
-3. **Connect Your Airtable Account:** Provide access to Zapier and select the base and table where your form submissions are stored.
+**3. Connect Your Airtable Account:** Provide access to Zapier and select the base and table where your form submissions are stored.
 
-4. **Configuring the Airtable Trigger:**
+**4. Configuring the Airtable Trigger:**
 
 ![Airtable configuration in Zapier for new record creation with sample form view.](/blog/assets/posts/configuring-new-record-in-airtable.png "Configuring New Record in Airtable with Zapier")
 
@@ -124,22 +121,22 @@ OOPSpam’s robust spam-detection capabilities ensure accurate results.
 * Under **Limit to View**, select the view you want Zapier to monitor (e.g., "Grid view"). If you only have one view, this will be the default.
 * Leave the **Include Attachment Content** option as "Yes" if your form includes file uploads, ensuring attachments are processed in the trigger.
 
-5. **Test the Trigger:** Submit a sample form entry and confirm that Zapier retrieves the data correctly.
+**5. Test the Trigger:** Submit a sample form entry and confirm that Zapier retrieves the data correctly.
 
 ### Add OOPSpam to Analyze Submissions
 
 ![Zapier integration setup showing Airtable and OOPSpam spam check configuration.](/blog/assets/posts/filter-airtable-spam-zapier.png "Zapier Workflow: Airtable Integration with OOPSpam")
 
-1. **Add OOPSpam as the Action**
+**1. Add OOPSpam as the Action**
 
 * Click the "**+**" button in your Zap and search for **OOPSpam**.
 * Select the action event "**Check for Spam**".
 
-2. **Connect OOPSpam**
+**2. Connect OOPSpam**
 
 * Enter your **API Key** to authenticate the connection.
 
-3. **Map Airtable Fields to OOPSpam**
+**3. Map Airtable Fields to OOPSpam**
 
 ![OOPSpam configuration in Zapier for spam filtering with specific content and email settings.](/blog/assets/posts/configuring-spam-check-in-oopspam.png "Configuring Spam Check in OOPSpam via Zapier")
 
@@ -149,7 +146,7 @@ Map the data fields from your Airtable trigger to OOPSpam’s input fields:
 * **Sender IP:** Leave this field empty, as Airtable forms do not collect IP addresses.
 * **Email:** Map the "**Email**" field from Airtable. This will help OOPSpam verify if the email is valid and not disposable.
 
-4. **Configure Spam Detection Settings** 
+**4. Configure Spam Detection Settings** 
 
 Fine-tune OOPSpam’s settings to customize how spam is detected:
 
@@ -167,11 +164,11 @@ After setting up the OOPSpam action, the next step is to ensure that every submi
 
 1. **Add Airtable as the Action App:** Select [Airtable](https://airtable.com/) and choose "**Update Record**."
 2. **Map OOPSpam Results to Airtable:** Map the spam score from OOPSpam back to the "Spam Score" field in Airtable.
-3. * **Spam Score Guide:**
 
+   * **Spam Score Guide:**
    * **1-2:** Not spam
    * **3-6:** Spam
-4. **Test the Update:** Submit a sample form entry and verify that Airtable is updated with the correct spam score and other relevant details.
+3. **Test the Update:** Submit a sample form entry and verify that Airtable is updated with the correct spam score and other relevant details.
 
 #### Leverage Airtable for Spam Management
 
@@ -196,8 +193,8 @@ With this setup, Airtable becomes your central hub for submission management, he
 ### 📌 Optional: Send Notifications for Legitimate Submissions
 
 * Use Gmail, Outlook or [Zapier's Email](https://zapier.com/apps/email/integrations) app to notify your team of valid submissions.
-* * **Set Conditions for Notifications:** Only send emails for submissions with a spam score below your threshold.
 
+  * **Set Conditions for Notifications:** Only send emails for submissions with a spam score below your threshold.
   * **Customize the Email Template:** Include fields like Name, Email, and Message to provide context.
 
 ## Step 4: Testing and Fine-Tuning
@@ -206,8 +203,8 @@ With this setup, Airtable becomes your central hub for submission management, he
 
 * Submit both legitimate and spammy entries through your Airtable form.
 * Check Zapier logs to confirm:
-* * Spam submissions are flagged and blocked.
 
+  * Spam submissions are flagged and blocked.
   * Legitimate submissions pass through and update Airtable.
 
 ![Airtable grid view displaying spam submissions with columns for name, message, email, spam score, and date.](/blog/assets/posts/airtable-spam-submissions.png "Airtable Spam Submissions Table View")
@@ -219,7 +216,7 @@ With this setup, Airtable becomes your central hub for submission management, he
 * Experiment with the spam score threshold to balance sensitivity and accuracy.
 * Review flagged submissions in Airtable to identify patterns and refine your filters.
 
-## Step 5: Publish and Monitor 
+## Step 5: Publish and Monitor
 
 ![Publishing progress screen for a Zap in Zapier.](/blog/assets/posts/zap-publishing.png "Zap Publishing Progress Screen")
 
