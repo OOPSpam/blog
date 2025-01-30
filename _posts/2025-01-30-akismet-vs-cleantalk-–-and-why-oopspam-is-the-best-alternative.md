@@ -168,16 +168,177 @@ One of the biggest advantages of OOPSpam is its [transparent pricing](https://ww
 
 ## **Feature Comparison: OOPSpam vs Akismet vs CleanTalk**
 
-| **Feature**                         | **OOPSpam**                | **Akismet**          | **CleanTalk**                          |
-| ----------------------------------- | -------------------------- | -------------------- | -------------------------------------- |
-| **Works Across Multiple Platforms** | ✅                          | ❌ (Mainly WordPress) | ✅                                      |
-| **GDPR Compliance**                 | ✅                          | ❌                    | ✅                                      |
-| **Advanced Spam Detection**         | ✅                          | ✅                    | ❌ (Too many false positives)           |
-| **Country & Language Blocking**     | ✅                          | ❌                    | ❌                                      |
-| **Disposable Email Blocking**       | ✅                          | ❌                    | ❌                                      |
-| **Customizable Spam Sensitivity**   | ✅                          | ❌                    | ❌                                      |
-| **Customer Support**                | Live chat with real humans | Ticketing system     | Ticketing system (slow & inconsistent) |
-| **Cost for Agencies**               | Affordable & scalable      | Expensive            | Cheap but unreliable                   |
+
+
+**<style>**
+
+ ** table {**
+
+ **   border: 2px solid black;**
+
+ **   border-collapse: collapse;**
+
+ **   width: 100%;**
+
+ ** }**
+
+ ** th, td {**
+
+ **   border: 2px solid black;**
+
+ **   padding: 10px;**
+
+ ** }**
+
+ ** th {**
+
+ **   background-color: #f9f9f9;**
+
+ **   font-weight: bold;**
+
+ **   text-align: center;**
+
+ ** }**
+
+ ** td:first-child {**
+
+ **   font-weight: bold;**
+
+ **   text-align: left;**
+
+ ** }**
+
+ ** td.center {**
+
+ **   text-align: center;**
+
+ ** }**
+
+**</style>**
+
+
+
+**<table>**
+
+ ** <thead>**
+
+ **   <tr>**
+
+ **\    <th>Feature</th>**
+
+ **\    <th>OOPSpam</th>**
+
+ **\    <th>Akismet</th>**
+
+ **\    <th>CleanTalk</th>**
+
+ **   </tr>**
+
+ ** </thead>**
+
+ ** <tbody>**
+
+ **   <tr>**
+
+ **\    <td>Works Across Multiple Platforms</td>**
+
+ **\    <td class="center">✅</td>**
+
+ **\    <td class="center">❌ (Mainly WordPress)</td>**
+
+ **\    <td class="center">✅</td>**
+
+ **   </tr>**
+
+ **   <tr>**
+
+ **\    <td>GDPR Compliance</td>**
+
+ **\    <td class="center">✅</td>**
+
+ **\    <td class="center">❌</td>**
+
+ **\    <td class="center">✅</td>**
+
+ **   </tr>**
+
+ **   <tr>**
+
+ **\    <td>Advanced Spam Detection</td>**
+
+ **\    <td class="center">✅</td>**
+
+ **\    <td class="center">✅</td>**
+
+ **\    <td class="center">❌ (Too many false positives)</td>**
+
+ **   </tr>**
+
+ **   <tr>**
+
+ **\    <td>Country & Language Blocking</td>**
+
+ **\    <td class="center">✅</td>**
+
+ **\    <td class="center">❌</td>**
+
+ **\    <td class="center">❌</td>**
+
+ **   </tr>**
+
+ **   <tr>**
+
+ **\    <td>Disposable Email Blocking</td>**
+
+ **\    <td class="center">✅</td>**
+
+ **\    <td class="center">❌</td>**
+
+ **\    <td class="center">❌</td>**
+
+ **   </tr>**
+
+ **   <tr>**
+
+ **\    <td>Customizable Spam Sensitivity</td>**
+
+ **\    <td class="center">✅</td>**
+
+ **\    <td class="center">❌</td>**
+
+ **\    <td class="center">❌</td>**
+
+ **   </tr>**
+
+ **   <tr>**
+
+ **\    <td>Customer Support</td>**
+
+ **\    <td>Live chat with real humans</td>**
+
+ **\    <td>Ticketing system</td>**
+
+ **\    <td>Ticketing system (slow & inconsistent)</td>**
+
+ **   </tr>**
+
+ **   <tr>**
+
+ **\    <td>Cost for Agencies</td>**
+
+ **\    <td>Affordable & scalable</td>**
+
+ **\    <td>Expensive</td>**
+
+ **\    <td>Cheap but unreliable</td>**
+
+ **   </tr>**
+
+ ** </tbody>**
+
+**</table>**
+
+
 
 ## **The Smart Choice for Businesses & Agencies**
 
@@ -188,9 +349,13 @@ If you’re looking for a cheap, no-frills solution, CleanTalk might work—but 
 But if you’re managing a business, agency, or high-traffic website, you need something better—and that’s why OOPSpam is the best alternative.
 
 ✅ **More accurate spam filtering** – Better detection without blocking real users.
+
 ✅ **Lower false positives** – No more missing leads or inquiries.
+
 ✅ **Scalable pricing** – More affordable for businesses managing multiple sites.
+
 ✅ **Privacy-friendly** – No forced data collection, fully GDPR-compliant.
+
 ✅ **Better customer support** – Reliable help when you need it.
 
 [Sign up for a free trial](https://app.oopspam.com/Identity/Account/Register) and protect your website with the best spam filter on the market.
