@@ -90,7 +90,7 @@ These tools eliminate the need for multiple plugins. With OOPSpam, everything is
 
 ## Integration with Popular WordPress Form Builders
 
-![WordPress form development featuring the text 'Build Better WordPress Forms: Next Generation Form Development' and a grid showcasing over 100 form templates, including options for quizzes, orders, contact forms, and more.](/blog/assets/posts/header.png "Next-Gen WordPress Form Templates")
+![WordPress form development featuring the text 'Build Better WordPress Forms: Next Generation Form Development' and a grid showcasing over 100 form templates, including options for quizzes, orders, contact forms, and more.](/blog/assets/posts/oopspam-anti-spam-overview.png "Next-Gen WordPress Form Templates")
 
 Many WordPress websites rely on form builders to collect user information. While these tools are powerful, they often need extra security measures to protect against advanced threats.
 
