@@ -3,7 +3,7 @@ layout: post
 title: Stopping Spam Submissions in Google Forms with OOPSpam and Zapier
 date: 2025-01-14T04:32:00.000Z
 author: chazie
-image: /blog/assets/posts/header.jpg
+image: /blog/assets/posts/header-stopping-spam-submissions-in-google-forms-with-oopspam-and-zapier.jpg
 description: Stop spam in Google Forms with OOPSpam and Zapier! Learn to
   automate spam filtering, save time, and manage clean, reliable submissions
   effortlessly.
@@ -11,7 +11,7 @@ tags:
   - Zapier
   - Google Forms
 ---
-![Stopping Spam Submissions in Google Forms with OOPSpam and Zapier](/blog/assets/posts/header.jpg "Stopping Spam Submissions in Google Forms with OOPSpam and Zapier")
+![Stopping Spam Submissions in Google Forms with OOPSpam and Zapier](/blog/assets/posts/header-stopping-spam-submissions-in-google-forms-with-oopspam-and-zapier.jpg "Stopping Spam Submissions in Google Forms with OOPSpam and Zapier")
 
 Spam submissions in Google Forms can be a significant issue, especially if you rely on forms for lead generation, surveys, or data collection. These submissions not only distort your data but also waste time and resources. The good news? There’s an efficient, automated way to filter out spam while ensuring legitimate responses are handled effectively—by integrating [OOPSpam](https://www.oopspam.com/) with [Zapier](https://zapier.com/).
 
