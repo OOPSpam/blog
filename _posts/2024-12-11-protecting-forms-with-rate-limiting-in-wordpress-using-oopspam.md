@@ -3,7 +3,7 @@ layout: post
 title: Protecting Forms with Rate Limiting in WordPress Using OOPSpam
 date: 2024-12-10T19:22:00.000Z
 author: chazie
-image: /blog/assets/posts/header.jpg
+image: /blog/assets/posts/header_protecting-forms-with-rate-limiting-in-wordpress-using-oopspam.jpg
 description: Secure WordPress forms with OOPSpam’s rate limiting, spam
   detection, and country blocking features. Keep your site fast, safe, and
   user-friendly!
@@ -11,7 +11,7 @@ tags:
   - WordPress Forms
   - Rate Limiting
 ---
-![Protecting Forms with Rate Limiting in WordPress](/blog/assets/posts/header.jpg "WordPress Form Protection with Rate Limiting")
+![Protecting Forms with Rate Limiting in WordPress](/blog/assets/posts/header_protecting-forms-with-rate-limiting-in-wordpress-using-oopspam.jpg "WordPress Form Protection with Rate Limiting")
 
 Securing WordPress forms is one of the most important steps in protecting your website. Without proper safeguards, spam and abuse can take over, affecting your data quality and user experience.
 
