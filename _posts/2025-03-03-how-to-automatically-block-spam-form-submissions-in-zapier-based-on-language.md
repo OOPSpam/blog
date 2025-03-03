@@ -70,7 +70,8 @@ Now that Zapier can detect the language of a form submission, we need to **set u
 
 1. Add a **Filter by Zapier** step.
 2. Set the filter condition:
-3. * “Message” does not contain “en” (or any preferred language code).
+
+   * “Message” does not contain “en” (or any preferred language code).
 
 If a form submission doesn’t match your preferred language, Zapier will stop the workflow right there and prevent it from reaching your inbox or CRM.
 
@@ -129,7 +130,7 @@ Once OOPSpam is connected, we need to configure the spam detection criteria to e
 
 ![OOPSpam settings in Zapier with language and country filters.](/blog/assets/posts/oopspam-filter-configuration-in-zapier.png "OOPSpam Filter Configuration in Zapier")
 
-1️. **Map the form submission fields** to OOPSpam’s analysis fields:
+**1️. Map the form submission fields** to OOPSpam’s analysis fields:
 
 * **Email Address:** Select the form field containing the email address.
 * **Content:** Select the field containing the message or form submission content.
@@ -137,24 +138,24 @@ Once OOPSpam is connected, we need to configure the spam detection criteria to e
 
 > **Why is this important?** Mapping these fields correctly ensures that OOPSpam evaluates the right data before assigning a Spam Score to each submission.
 
-2. **Enable "Block Disposable Emails"**
+**2. Enable "Block Disposable Emails"**
 
 This will automatically filter out any submissions from temporary or disposable email services like Guerrilla Mail, 10MinuteMail, and Mailinator, which are commonly used by spammers and bots.
 
-3.. **Enable "Language Filtering"**
+**3. Enable "Language Filtering"**
 
 OOPSpam lets you filter form submissions based on language preferences, ensuring that only messages in the languages you support make it through. Under “**Allow messages only in these languages**”, select your preferred language(s).
 
 Any submission not matching the selected language(s) will be flagged and blocked.
 
-4. **Allow or Block Messages Based on Country**
+**4. Allow or Block Messages Based on Country**
 
 If your business only serves customers from specific countries, you can [restrict submissions by geographic location](https://www.oopspam.com/blog/blocking-countries-from-accessing-your-website-using-cloudflare). 
 
 * Under "**Allow messages only from these countries**", select the countries where you want to accept submissions.
 * Under "**Block messages from these countries"**, you can also manually [restrict specific countries](https://www.oopspam.com/blog/filter-spam-by-country) known for high spam activity. For instance, if you receive frequent spam from China or France, add them to the blocked list.
 
-5. **Test the step to ensure OOPSpam correctly identifies spam and assigns a score.**
+**5. Test the step to ensure OOPSpam correctly identifies spam and assigns a score.**
 
 ### **Step 3: Add a Zapier Filter to Stop Spam Submissions**
 
@@ -163,11 +164,13 @@ If your business only serves customers from specific countries, you can [restric
 Now that OOPSpam assigns a Spam Score to each submission, we need to set a filter in Zapier to automatically block spam.
 
 1. Click **“+ Add an action”** and search for **Filter by Zapier**. 
+
 2. Set the **filter condition**:
 
 * "Spam Score" is less than 3 (You can adjust this based on how strict you want your filtering to be).
 
 3. If the spam score exceeds the set threshold, the Zap stops processing the submission—meaning spam never reaches your inbox.
+
 4. If the submission passes the spam check, it proceeds to the next step (e.g., sending an email notification or adding to a CRM).
 
 ## **Advanced Ways to Use OOPSpam + Zapier**
