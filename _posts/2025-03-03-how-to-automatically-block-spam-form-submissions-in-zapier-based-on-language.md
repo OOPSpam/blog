@@ -79,10 +79,13 @@ If a form submission doesn’t match your preferred language, Zapier will stop t
 While Translate by Zapier is a helpful tool for filtering spam submissions based on language, it does have its limitations.
 
 ✅ Simple and easy to set up
+
 ✅ Works natively within Zapier
+
 ✅ Detects and filters by language
 
 ❌ Doesn’t stop spam from bad IPs or disposable emails
+
 ❌ Can’t block spammy content beyond language detection
 
 If language-based filtering isn’t enough, let’s talk about a stronger, machine learning spam filtering solution—the OOPSpam Zapier app.
@@ -132,7 +135,7 @@ Once OOPSpam is connected, we need to configure the spam detection criteria to e
 * **Content:** Select the field containing the message or form submission content.
 * **Other Relevant Fields:** If needed, you can also pass IP addresses or other custom fields to improve filtering accuracy.
 
-***Why is this important?** Mapping these fields correctly ensures that OOPSpam evaluates the right data before assigning a Spam Score to each submission.*
+> **Why is this important?** Mapping these fields correctly ensures that OOPSpam evaluates the right data before assigning a Spam Score to each submission.
 
 2. **Enable "Block Disposable Emails"**
 
@@ -160,13 +163,11 @@ If your business only serves customers from specific countries, you can [restric
 Now that OOPSpam assigns a Spam Score to each submission, we need to set a filter in Zapier to automatically block spam.
 
 1. Click **“+ Add an action”** and search for **Filter by Zapier**. 
-
 2. Set the **filter condition**:
 
 * "Spam Score" is less than 3 (You can adjust this based on how strict you want your filtering to be).
 
 3. If the spam score exceeds the set threshold, the Zap stops processing the submission—meaning spam never reaches your inbox.
-
 4. If the submission passes the spam check, it proceeds to the next step (e.g., sending an email notification or adding to a CRM).
 
 ## **Advanced Ways to Use OOPSpam + Zapier**
@@ -180,7 +181,6 @@ For borderline spam (e.g., spam score 2-3), set up an email alert for manual ver
 While Translate by Zapier offers a basic way to filter spam based on language, it doesn’t stop bad actors from using disposable emails, blacklisted IPs, or harmful content. This is where OOPSpam’s advanced machine learning filtering provides a stronger, more reliable spam prevention system.
 
 ### **Translate by Zapier vs. OOPSpam: Which Should You Use?**
-
 
 <style>
   table {
@@ -245,7 +245,6 @@ While Translate by Zapier offers a basic way to filter spam based on language, i
     </tr>
   </tbody>
 </table>
-
 
 * If you only need basic language filtering, go with Translate by Zapier.
 * If you need full spam protection (bad emails, IPs, machine learning detection), OOPSpam is the best option.
