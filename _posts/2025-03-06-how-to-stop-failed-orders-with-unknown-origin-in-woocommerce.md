@@ -40,7 +40,7 @@ If you’re seeing a sudden spike in failed transactions marked **"Unknown"** un
 
 ## **Quick Fix: Enable OOPSpam Protection in WooCommerce**
 
-The fastest way to stop these failed orders is by enabling two key settings in the** [OOPSpam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/)**.
+The fastest way to stop these failed orders is by enabling two key settings in the[OOPSpam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/).
 
 ![OOPSpam Anti-Spam plugin banner with tagline "Automate your Spam and Abuse Detection."](/blog/assets/posts/oopspam-anti-spam-overview.png "OOPSpam Anti-Spam Plugin Overview")
 
@@ -87,11 +87,11 @@ If your store receives repeated spam orders from specific locations, country-bas
 
 ### **Block Cloud Providers and VPNs** 
 
-Spammers often use data centers and cloud providers to run automated attacks. Enabling Block Cloud Providers in OOPSpam helps prevent spam originating from these sources.
+Spammers often use data centers and cloud providers to run automated attacks. Enabling **Block Cloud Providers** in OOPSpam helps prevent spam originating from these sources.
 
 ![WooCommerce spam protection settings with options enabled.](/blog/assets/posts/ip-filtering-settings-in-security-panel.png "WooCommerce Spam Protection Settings")
 
-If spam is coming from anonymous networks, the Block VPNs setting can also be activated to block submissions from VPN users. However, be cautious, as this may affect legitimate customers using VPNs for privacy.
+If spam is coming from anonymous networks, the **Block VPNs** setting can also be activated to block submissions from VPN users. However, be cautious, as this may affect legitimate customers using VPNs for privacy.
 
 ## **A WooCommerce Store with No Failed Orders After Using OOPSpam**
 
