@@ -21,125 +21,127 @@ This comparison covers performance, built-in components, and form builder featur
 
 Here’s a quick comparison to help you decide:
 
-<style>
+`<style>`
 
-  table {
+`  table {`
 
-\    border: 2px solid black;
+`    border: 2px solid black;`
 
-\    border-collapse: collapse;
+`    border-collapse: collapse;`
 
-\    width: 100%;
+`    width: 100%;`
 
-  }
+`  }`
 
-  th, td {
+`  th, td {`
 
-\    border: 2px solid black;
+`    border: 2px solid black;`
 
-\    padding: 10px;
+`    padding: 10px;`
 
-\    text-align: left;
+`    text-align: left;`
 
-  }
+`  }`
 
-  th {
+`  th {`
 
-\    background-color: #f9f9f9;
+`    background-color: #f9f9f9;`
 
-  }
+`  }`
 
-  td:first-child {
+`  td:first-child {`
 
-\    font-weight: bold;
+`    font-weight: bold;`
 
-  }
+`  }`
 
-</style>
+`</style>`
 
+``
 
+`<table>`
 
-<table>
+`  <thead>`
 
-  <thead>
+`    <tr>`
 
-\    <tr>
+`      <th>Feature</th>`
 
-\    <th>Feature</th>
+`      <th>Bricks</th>`
 
-\    <th>Bricks</th>
+`      <th>Elementor</th>`
 
-\    <th>Elementor</th>
+`    </tr>`
 
-\    </tr>
+`  </thead>`
 
-  </thead>
+`  <tbody>`
 
-  <tbody>
+`    <tr>`
 
-\    <tr>
+`      <td>Performance</td>`
 
-\    <td>Performance</td>
+`      <td>Faster, cleaner code, no jQuery</td>`
 
-\    <td>Faster, cleaner code, no jQuery</td>
+`      <td>Loads more scripts, but optimized for speed</td>`
 
-\    <td>Loads more scripts, but optimized for speed</td>
+`    </tr>`
 
-\    </tr>
+`    <tr>`
 
-\    <tr>
+`      <td>Built-in Components</td>`
 
-\    <td>Built-in Components</td>
+`      <td>110+ customizable elements</td>`
 
-\    <td>110+ customizable elements</td>
+`      <td>100+ widgets with a larger template library</td>`
 
-\    <td>100+ widgets with a larger template library</td>
+`    </tr>`
 
-\    </tr>
+`    <tr>`
 
-\    <tr>
+`      <td>Form Builder</td>`
 
-\    <td>Form Builder</td>
+`      <td>Includes reCAPTCHA V3 and Cloudflare Turnstile for spam protection</td>`
 
-\    <td>Includes reCAPTCHA V3 and Cloudflare Turnstile for spam protection</td>
+`      <td>Includes reCAPTCHA and hCAPTCHA</td>`
 
-\    <td>Includes reCAPTCHA and hCAPTCHA</td>
+`    </tr>`
 
-\    </tr>
+`    <tr>`
 
-\    <tr>
+`      <td>Pricing</td>`
 
-\    <td>Pricing</td>
+`      <td>One-time purchase available</td>`
 
-\    <td>One-time purchase available</td>
+`      <td>Subscription-based plans only</td>`
 
-\    <td>Subscription-based plans only</td>
+`    </tr>`
 
-\    </tr>
+`    <tr>`
 
-\    <tr>
+`      <td>Ease of Use</td>`
 
-\    <td>Ease of Use</td>
+`      <td>More suited for developers & advanced users</td>`
 
-\    <td>More suited for developers & advanced users</td>
+`      <td>Beginner-friendly with more pre-built templates</td>`
 
-\    <td>Beginner-friendly with more pre-built templates</td>
+`    </tr>`
 
-\    </tr>
+`    <tr>`
 
-\    <tr>
+`      <td>Third-Party Add-ons</td>`
 
-\    <td>Third-Party Add-ons</td>
+`      <td>Limited but growing</td>`
 
-\    <td>Limited but growing</td>
+`      <td>Wide range of add-ons and integrations</td>`
 
-\    <td>Wide range of add-ons and integrations</td>
+`    </tr>`
 
-\    </tr>
+`  </tbody>`
 
-  </tbody>
+`</table>`
 
-</table>
+``
 
 ## **Performance**
 
