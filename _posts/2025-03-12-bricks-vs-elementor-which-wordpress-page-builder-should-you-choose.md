@@ -55,12 +55,6 @@ Here’s a quick comparison to help you decide:
 
   }
 
-  td.center {
-
-\    text-align: center;
-
-  }
-
 </style>
 
 
@@ -146,8 +140,6 @@ Here’s a quick comparison to help you decide:
   </tbody>
 
 </table>
-
-
 
 ## **Performance**
 
