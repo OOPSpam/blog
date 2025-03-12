@@ -21,127 +21,66 @@ This comparison covers performance, built-in components, and form builder featur
 
 Here’s a quick comparison to help you decide:
 
-`<style>`
+<style>
+  table {
+    border: 2px solid black;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  th, td {
+    border: 2px solid black;
+    padding: 10px;
+    text-align: left;
+  }
+  th {
+    background-color: #f9f9f9;
+  }
+  td:first-child {
+    font-weight: bold;
+  }
+</style>
 
-`  table {`
-
-`    border: 2px solid black;`
-
-`    border-collapse: collapse;`
-
-`    width: 100%;`
-
-`  }`
-
-`  th, td {`
-
-`    border: 2px solid black;`
-
-`    padding: 10px;`
-
-`    text-align: left;`
-
-`  }`
-
-`  th {`
-
-`    background-color: #f9f9f9;`
-
-`  }`
-
-`  td:first-child {`
-
-`    font-weight: bold;`
-
-`  }`
-
-`</style>`
-
-``
-
-`<table>`
-
-`  <thead>`
-
-`    <tr>`
-
-`      <th>Feature</th>`
-
-`      <th>Bricks</th>`
-
-`      <th>Elementor</th>`
-
-`    </tr>`
-
-`  </thead>`
-
-`  <tbody>`
-
-`    <tr>`
-
-`      <td>Performance</td>`
-
-`      <td>Faster, cleaner code, no jQuery</td>`
-
-`      <td>Loads more scripts, but optimized for speed</td>`
-
-`    </tr>`
-
-`    <tr>`
-
-`      <td>Built-in Components</td>`
-
-`      <td>110+ customizable elements</td>`
-
-`      <td>100+ widgets with a larger template library</td>`
-
-`    </tr>`
-
-`    <tr>`
-
-`      <td>Form Builder</td>`
-
-`      <td>Includes reCAPTCHA V3 and Cloudflare Turnstile for spam protection</td>`
-
-`      <td>Includes reCAPTCHA and hCAPTCHA</td>`
-
-`    </tr>`
-
-`    <tr>`
-
-`      <td>Pricing</td>`
-
-`      <td>One-time purchase available</td>`
-
-`      <td>Subscription-based plans only</td>`
-
-`    </tr>`
-
-`    <tr>`
-
-`      <td>Ease of Use</td>`
-
-`      <td>More suited for developers & advanced users</td>`
-
-`      <td>Beginner-friendly with more pre-built templates</td>`
-
-`    </tr>`
-
-`    <tr>`
-
-`      <td>Third-Party Add-ons</td>`
-
-`      <td>Limited but growing</td>`
-
-`      <td>Wide range of add-ons and integrations</td>`
-
-`    </tr>`
-
-`  </tbody>`
-
-`</table>`
-
-``
+<table>
+  <thead>
+    <tr>
+      <th>Feature</th>
+      <th>Bricks</th>
+      <th>Elementor</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Performance</td>
+      <td>Faster, cleaner code, no jQuery</td>
+      <td>Loads more scripts, but optimized for speed</td>
+    </tr>
+    <tr>
+      <td>Built-in Components</td>
+      <td>110+ customizable elements</td>
+      <td>100+ widgets with a larger template library</td>
+    </tr>
+    <tr>
+      <td>Form Builder</td>
+      <td>Includes reCAPTCHA V3 and Cloudflare Turnstile for spam protection</td>
+      <td>Includes reCAPTCHA and hCAPTCHA</td>
+    </tr>
+    <tr>
+      <td>Pricing</td>
+      <td>One-time purchase available</td>
+      <td>Subscription-based plans only</td>
+    </tr>
+    <tr>
+      <td>Ease of Use</td>
+      <td>More suited for developers & advanced users</td>
+      <td>Beginner-friendly with more pre-built templates</td>
+    </tr>
+    <tr>
+      <td>Third-Party Add-ons</td>
+      <td>Limited but growing</td>
+      <td>Wide range of add-ons and integrations</td>
+    </tr>
+  </tbody>
+</table>
 
 ## **Performance**
 
