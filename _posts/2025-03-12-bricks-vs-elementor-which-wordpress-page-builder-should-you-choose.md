@@ -21,8 +21,6 @@ This comparison covers performance, built-in components, and form builder featur
 
 Here’s a quick comparison to help you decide:
 
-
-
 <style>
 
   table {
