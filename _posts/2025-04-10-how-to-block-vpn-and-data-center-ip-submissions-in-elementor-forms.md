@@ -128,4 +128,4 @@ Spambots aren’t going anywhere, but you don’t need to spend hours chasing IP
 
 If you’ve been overwhelmed by odd submissions from anonymous sources or server farms, try blocking VPN and cloud provider IPs using the OOPSpam plugin. It’s fast, reliable, and designed to work quietly in the background while you focus on growing your site.
 
-Let us know if you’d like [help with setup](https://www.oopspam.com/#contact) or want to explore how these features work with other form builders like Contact Form 7, WS Form, or Gravity Forms.
+Let us know if you’d like [help with setup](https://www.oopspam.com/#contact) or want to explore how these features work with other form builders like Contact Form 7, WS Form, or [Gravity Forms](https://www.oopspam.com/blog/how-to-block-vpn-and-data-center-ip-submissions-in-gravity-forms).
