@@ -36,7 +36,7 @@ This is usually the safer route. The majority of spam bots operate from cloud-ho
 
 Traditional spam filters only catch repeat offenders. Blocking by IP origin—especially from VPNs and cloud networks—adds an extra layer of protection, catching new and unreported threats early.
 
-*Want to verify where a suspicious IP is from? Tools like **[IP Reputation Check](https://ipreputationcheck.com/)** can tell you if it belongs to a data center or VPN.*
+> Want to verify where a suspicious IP is from? Tools like **[IP Reputation Check](https://ipreputationcheck.com/)** can tell you if it belongs to a data center or VPN.
 
 ## **Method 1: Block VPN and Cloud Traffic with Cloudflare Firewall**
 
