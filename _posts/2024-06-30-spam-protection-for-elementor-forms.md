@@ -68,6 +68,15 @@ Here are a few steps to activate spam protection for Elementor Forms:
 3. On this page, you need to activate the spam filter for Elementor Forms by checking the **Activate Spam Protection** checkbox. You don't have to do anything on your form. Once you activate spam protection on the OOPSpam plugin settings, you are good to go.
 4. Don't forget to enter a short message to display when a spam form entry is submitted. Your message will appear at the bottom of the message field.
 
+#### **(Optional) IP Filtering**
+
+Go to the **IP Filtering** tab. Toggle on:
+
+* **Block VPNs** – [stops spam from proxy or VPN users](https://www.oopspam.com/blog/how-to-block-vpn-and-data-center-ip-submissions-in-elementor-forms)
+* **Block Cloud Providers** – filters IPs from 2,000+ data centers (recommended)
+
+Hit **Save Changes** and you're done! OOPSpam will now filter spam silently in the background.
+
 <center>
 <img loading="lazy"  alt="OOPSpam detected spam on Elementor Forms" src="/blog/assets/posts/elementor-forms/ef-spam-detected.png">
 </center>
