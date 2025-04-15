@@ -43,6 +43,8 @@ You’ll need to block traffic based on [ASN](https://en.wikipedia.org/wiki/Auto
 
 **Example**: If you notice spam traffic from DigitalOcean, you can block its ASN (AS14061) via Cloudflare’s firewall rules.
 
+![](/blog/assets/posts/cloudflare_was_asn.png)
+
 ### **Limitations of Using Cloudflare WAF**
 
 * **Manual maintenance**: ASNs and IP addresses change. You’ll need to keep checking and updating them regularly.
