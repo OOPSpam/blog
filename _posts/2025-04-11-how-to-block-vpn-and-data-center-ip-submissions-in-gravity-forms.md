@@ -41,6 +41,8 @@ If your website runs through [Cloudflare](https://www.cloudflare.com/), you can 
 
 Use [ASN](https://en.wikipedia.org/wiki/Autonomous_system_(Internet)) (Autonomous System Numbers) to block traffic from entire networks. For example, if you're seeing spam from DigitalOcean, block ASN AS14061 in Cloudflare.
 
+![](/blog/assets/posts/cloudflare_was_asn.png)
+
 ### **Limitations of Using Cloudflare WAF**
 
 * **Manual upkeep:** ASN lists can change frequently, so you'll need to stay on top of updates.
