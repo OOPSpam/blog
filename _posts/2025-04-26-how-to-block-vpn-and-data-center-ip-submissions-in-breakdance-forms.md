@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to Block VPN and Data Center IP Submissions in Breakdance Forms
-date: 2025-04-28T04:01:00.000Z
+date: 2025-04-28T06:01:00.000Z
 author: chazie
 image: /blog/assets/posts/how-to-block-vpn-and-data-center-ip-submissions-in-breakdance-forms.jpg
 description: Protect your Breakdance Forms from spam. Discover how to block VPN
