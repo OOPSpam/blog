@@ -1,0 +1,79 @@
+---
+layout: post
+title: Introducing Contextual Spam Detection
+date: 2025-05-02T16:24:00.000Z
+author: onar
+image: /blog/assets/posts/header_contextual.png
+description: Introducing Contextual Spam Detection. Learn how to use the OOPSpam
+  API to detect spam within your website context.
+tags:
+  - spam
+  - AI
+---
+We have been busy adding new features and improving existing ones. One of the features we recently added is Contextual Spam Detection. This introduces a different approach compared to our standard spam detection methodology.
+
+Our standard spam detection is a powerful model trained on up-to-date spam examples and works very well. In addition to the model-based detection, we perform many in-depth analyses (IP, email, domains, and more) on content. We have been continuously improving this since 2017 based on the latest trends in our never-ending fight against spammers.
+
+As for Contextual Spam Detection, it relies solely on content in the context of your website. For example, if you sell shoes, then your form submissions should be related to footwear.
+
+There is no country, language, IP, or email blocking. It just takes two parameters:
+
+1. `content`: This can be a message field in your form, a comment or post in your community forum, a review, or any other content you receive from the public.
+2. `context`: This represents your website's purpose, such as a post title in a community forum or a product description, which helps determine if the content is relevant.
+
+## When to use Contextual Spam Detection?
+
+Use it when you have a substantial message/content field in your forms. While the standard content analysis relies on multiple parameters to determine if a message is spam, the Contextual detection focuses solely on the message and your website's purpose.
+
+## How accurate is it compared to the Standard analysis?
+
+Our tests show similar results overall. However, Contextual detection excels at identifying unrelated messages as it operates purely based on content. The Standard analysis examines IP, Email, and domain reputation along with many other factors. In cases where spammers use new IPs, fresh email addresses, and less obvious spam content, the Standard analysis may not be as effective as the Contextual detection.
+
+## Privacy Considerations
+
+Your data is not used for training purposes unless you explicitly report false positives/negatives to us. The Contextual detection operates without requiring personal information, making it GDPR compliant.
+
+## Availability
+
+The feature is currently available through our API and [WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/). We plan to extend support to Zapier, Make, and Bubble.io in the coming weeks.
+
+In WordPress, you can find and enable this feature in the Contextual Detection tab of our plugin settings.
+
+![The Contextual Spam Detection the OOPSpam WordPress Plugin](/blog/assets/posts/screenshot-2025-05-02-at-4.01.02 pm.png "The Contextual Spam Detection the OOPSpam WordPress Plugin")
+
+For API integration, please refer to our [API documentation](https://www.oopspam.com/docs/?shell#spam-detection).
+
+Here's a simple example demonstrating how to use Contextual Spam Detection via the OOPSpam API:
+
+Request body:
+
+```json
+{
+    "content": "Looking for double front door in Monroe Nj",
+    "context": "Forever Custom Iron Doors is proud to be the best iron doors, windows, and railings fabricator and installer on the east coast. We pride ourselves on not only offering you modern wrought iron doors and products of unmatched quality and price; but by also providing an excellent experience, unmatched creative custom designs, and highly professional installation services."
+}
+```
+
+Response:
+
+```json
+{
+    "Score": 0,
+    "Details": {
+        "isContentSpam": "notspam",
+        "numberOfSpamWords": 0
+    }
+}
+```
+
+The Score value will be either 0 (not spam) or 6 (spam), and the `isContentSpam` field indicates either "spam" or "notspam".
+
+## Pricing
+
+Contextual Spam Detection is currently [billed](https://www.oopspam.com/#pricing) at the same rate as our Standard analysis. Pricing may be adjusted in the future based on usage patterns and operational costs.
+
+## Things to know
+
+* This is an experimental feature currently under development. We welcome your feedback and are happy to address any questions you may have.
+* Please use standard detection methods if your forms don't include content fields.
+* Please note that this feature does not consider IP addresses, email addresses, or URL reputation data.
