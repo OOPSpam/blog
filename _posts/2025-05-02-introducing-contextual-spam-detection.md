@@ -26,6 +26,8 @@ There is no country, language, IP, or email blocking. It just takes two paramete
 
 Use it when you have a substantial message/content field in your forms. While the standard content analysis relies on multiple parameters to determine if a message is spam, the Contextual detection focuses solely on the message and your website's purpose.
 
+> 📌 Sometimes spam comes from real people with clean IP addresses and email reputations because their devices have been compromised without their knowledge. These random spam messages that have nothing to do with your blog content typically bypass traditional filters. Contextual spam detection effectively blocks these irrelevant messages by evaluating them against your site's purpose.
+
 ## How accurate is it compared to the Standard analysis?
 
 Our tests show similar results overall. However, Contextual detection excels at identifying unrelated messages as it operates purely based on content. The Standard analysis examines IP, Email, and domain reputation along with many other factors. In cases where spammers use new IPs, fresh email addresses, and less obvious spam content, the Standard analysis may not be as effective as the Contextual detection.
@@ -72,6 +74,8 @@ The Score value will be either 0 (not spam) or 6 (spam), and the `isContentSpam`
 ## Pricing
 
 Contextual Spam Detection is currently [billed](https://www.oopspam.com/#pricing) at the same rate as our Standard analysis. Pricing may be adjusted in the future based on usage patterns and operational costs.
+
+❤️ Our goal is giving you the most bang for your buck. The team would rather pack more value into your current plan than hit you up for more money. Prices only go up when operation costs get too steep to handle - no outside funding or selling your data to keep the lights on.
 
 ## Things to know
 
