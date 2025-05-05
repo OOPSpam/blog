@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Introducing Contextual Spam Detection
+title: "Introducing Context-Aware Spam Detection: Now evaluating messages
+  against your website's purpose"
 date: 2025-05-02T16:24:00.000Z
 author: onar
 image: /blog/assets/posts/header_contextual.png
