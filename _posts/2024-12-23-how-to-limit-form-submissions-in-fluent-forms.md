@@ -38,7 +38,7 @@ With rate limiting, you can maintain website security and provide a seamless exp
 
 ## The Common Challenges of Fluent Forms Without Rate Limiting
 
-![A page for Fluent Forms, described as "The Fastest Form Plugin for WordPress," showcasing features like contact forms, payment forms, and calculators.](/blog/assets/posts/header.png "Fluent Forms - The Fastest WordPress Form Plugin for Businesses")
+![A page for Fluent Forms, described as "The Fastest Form Plugin for WordPress," showcasing features like contact forms, payment forms, and calculators.](/blog/assets/posts/fluent-forms-site.png "Fluent Forms - The Fastest WordPress Form Plugin for Businesses")
 
 Fluent Forms is an exceptional tool for creating forms, but even its robust features have limitations when it comes to spam protection. Without advanced measures like rate limiting, you may face challenges such as:
 
