@@ -33,8 +33,8 @@ When spam bots or malicious users submit forms too frequently, several issues ca
 
 Rate limiting sets a cap on the number of submissions allowed within a specific timeframe. For example:
 
-* You might allow 3 submissions per minute to ensure users can interact without abuse.
-* If a spam bot tries to submit the form 100 times in a minute, only the first three attempts are processed, and the rest are blocked automatically.
+* You might allow 3 submissions per hour to ensure users can interact without abuse.
+* If a spam bot tries to submit the form 100 times in a hour, only the first three attempts are processed, and the rest are blocked automatically.
 
 This ensures that your [forms are accessible](https://www.oopspam.com/blog/accessible-forms) but protected, keeping both your server and inbox free from spam-related overload.
 
@@ -54,7 +54,7 @@ Here’s why rate limiting is crucial for WordPress sites:
 
 Rate limiting isn’t just about combating spam; it’s also about creating a better overall experience for users. Consider these scenarios:
 
-1. **Contact Forms:** A spam bot attempts to submit 50 fake inquiries per minute. Without rate limiting, your inbox is flooded, and real messages get buried.
+1. **Contact Forms:** A spam bot attempts to submit 50 fake inquiries per hour. Without rate limiting, your inbox is flooded, and real messages get buried.
 2. **Survey Forms:** A user accidentally clicks “Submit” multiple times, resulting in duplicate entries. Rate limiting prevents duplicates, keeping your data clean.
 3. **Login or Registration Forms:** Hackers use brute force attacks to guess user credentials by submitting forms repeatedly. Rate limiting blocks these excessive attempts, adding an extra layer of security.
 
