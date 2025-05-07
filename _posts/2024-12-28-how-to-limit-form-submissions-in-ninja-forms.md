@@ -90,8 +90,8 @@ Once activated, OOPSpam will appear in your WordPress dashboard.
 
 Customize these parameters to suit your needs:
 
-* **Max Submissions per IP per Hour:** Define how many submissions are allowed from a single IP within an hour to prevent abuse.
-* **Max Submissions per Email per Hour:** Limit multiple entries from the same email address to reduce redundancy.
+* **Max Submissions per IP per hour:** Define how many submissions are allowed from a single IP within an hour to prevent abuse.
+* **Max Submissions per Email per hour:** Limit multiple entries from the same email address to reduce redundancy.
 * **Block Duration:** Specify how long users are blocked after exceeding the limit (e.g., 12 hours or 24 hours).
 * **Data Clean-Up Frequency:** Set how often the rate-limiting tracking logs are cleared to optimize system performance and maintain efficiency.
 
