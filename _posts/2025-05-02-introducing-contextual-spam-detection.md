@@ -28,6 +28,10 @@ Use it when you have a substantial message/content field in your forms. While th
 
 > 📌 Sometimes spam comes from real people with clean IP addresses and email reputations because their devices have been compromised without their knowledge. These random spam messages that have nothing to do with your blog content typically bypass traditional filters. Contextual spam detection effectively blocks these irrelevant messages by evaluating them against your site's purpose.
 
+Another use case is using it in [Zapier](https://community.zapier.com/show-tell-5/how-to-stop-spam-in-your-zap-with-oopspam-46293), [Make](https://www.oopspam.com/blog/5-common-spam-problems-in-make-how-to-fix-them) or similar automation platforms where form solutions sometimes don't pass the form submitter's IP to the automation flow. In this case, using content and context would be much more powerful.
+
+![An example Zapier flow](/blog/assets/posts/screenshot-2025-05-12-at-11001_erl7oi.png "An example Zapier flow")
+
 ## How accurate is it compared to the Standard analysis?
 
 Our tests show similar results overall. However, Contextual detection excels at identifying unrelated messages as it operates purely based on content. The Standard analysis examines IP, Email, and domain reputation along with many other factors. In cases where spammers use new IPs, fresh email addresses, and less obvious spam content, the Standard analysis may not be as effective as the Contextual detection.
