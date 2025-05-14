@@ -1,13 +1,14 @@
 ---
 layout: post
-title:  "7 ways to stop spam on your website"
+title: 7 ways to stop spam on your website
+date: 2025-05-14T12:08:00.000Z
 author: onar
 image: /blog/assets/ways-to-stop-spam.png
-tags: [spam, contact_form]
-
-
-description: "Prevent spam on your website with Honeypot, Spam Words, Captcha, IP-based filtering, country/language restrictions, AI, and rule-based methods."
-# modified: 
+description: Prevent spam on your website with Honeypot, Spam Words, Captcha,
+  IP-based filtering, country/language restrictions, AI, and rule-based methods.
+tags:
+  - spam
+  - contact_form
 ---
 <center>
 <img loading="lazy"  width="772" style="height: 200px;object-fit: cover;" alt="OOPSpam illustration" src="/blog/assets/ways-to-stop-spam.png">
@@ -94,7 +95,7 @@ Combined your website behavior and browsing history information with a couple of
 
 The most notable CAPTCHA solution is [reCaptcha](https://developers.google.com/recaptcha/) and [hCaptcha](https://www.hcaptcha.com/) (offers better privacy).
 
->🎯 Captchas tend to have accessibility, privacy and performance issues. As CAPTCHAs load script (JS files) on your front end, they may [slow down your website](https://www.oopspam.com/blog/recaptcha-performance-analyses).
+> 🎯 Captchas tend to have accessibility, privacy and performance issues. As CAPTCHAs load script (JS files) on your front end, they may [slow down your website](https://www.oopspam.com/blog/recaptcha-performance-analyses).
 
 ## IP-based filtering: check for blocked spammer IPs
 
@@ -102,7 +103,7 @@ There are services such as [Spamhaus](https://www.spamhaus.org/) that keep a lis
 
 At OOPSpam, we receive thousands of spammer IPs every day. From our experience, over 60% of spam are detected solely based on IP. That being said relying entirely on an IP-based filtering may not be the best protection.
 
->🎯 Keep in mind that some legitimate users may use VPNs or proxies which tend to be used by spammers as well. That is why you may unintentionally restrict legitimate visitors.
+> 🎯 Keep in mind that some legitimate users may use VPNs or proxies which tend to be used by spammers as well. That is why you may unintentionally restrict legitimate visitors.
 
 ## Country and Language restriction
 
@@ -143,17 +144,32 @@ Technically, some of the mentioned methods in this article can be categorized as
 
 Here are some easy-to-implement rules you could consider (besides the ones above):
 
-- URLs in a spam message
+* URLs in a spam message
 
 Many spam messages have URL(s) to get you to click on them. Does a message has a URL in it? It could be spam. Be careful with this though, you may end up blocking legitimate messages. It is important to check the reputation of URLs instead of flat-out blocking them. You could use WOT or Safe Browsing for this.
 
-- URL shortening services
+* URL shortening services
 
 We are all seen URL shortening services that are used by spammers.
 
 Although not all URL shortening services are malicious. Some shortening services are for local use only, meaning they are not open to the public. For example, when you generate a short URL for your Dropbox image or Google Docs. So, be aware of this fact when you set a rule.
 
->🎯 A rule-based spam filtering is a powerful alternative to stop spam. It has been used for decades, but make sure you reconsider your rules once in a while to avoid flagging legitimate messages.
+> 🎯 A rule-based spam filtering is a powerful alternative to stop spam. It has been used for decades, but make sure you reconsider your rules once in a while to avoid flagging legitimate messages.
+
+## **OOPSpam: A Smarter Combination of All**
+
+All the techniques above can help—but none are foolproof. Spam tactics change fast, and what works today might fail tomorrow. That’s why at OOPSpam, we’ve been refining our models since 2017 to keep up.
+
+Instead of relying on one approach, we combine multiple proven strategies into a single, powerful API. We skip honeypots—modern bots can easily bypass them—and focus on smarter, more reliable protection:
+
+* Spam detection that considers key patterns and abuse signals
+* [Contextual analysis](https://www.oopspam.com/blog/introducing-contextual-spam-detection) that helps flag spam when only the message body is available (no IP/email)
+* IP & network reputation checks based on real-time data
+* Language and [country restrictions](https://www.oopspam.com/blog/filter-spam-by-country) you can customize
+* Machine learning that continuously adapts to evolving spam tactics
+* Rule-based filtering for URLs, shortlinks, and common abuse patterns
+
+It’s automatic. It’s accurate. And it works quietly in the background. You won’t need to configure captchas, maintain blacklists, or tweak form settings.
 
 ## Final thoughts
 
