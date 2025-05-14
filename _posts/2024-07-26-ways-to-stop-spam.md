@@ -158,6 +158,8 @@ Although not all URL shortening services are malicious. Some shortening services
 
 ## **OOPSpam: A Smarter Combination of All**
 
+![OOPSpam WordPress plugin](/blog/assets/posts/oopspam-anti-spam-overview.png "OOPSpam WordPress plugin")
+
 All the techniques above can help—but none are foolproof. Spam tactics change fast, and what works today might fail tomorrow. That’s why at OOPSpam, we’ve been refining our models since 2017 to keep up.
 
 Instead of relying on one approach, we combine multiple proven strategies into a single, powerful API. We skip honeypots—modern bots can easily bypass them—and focus on smarter, more reliable protection:
