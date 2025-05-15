@@ -4,18 +4,22 @@ title: "Introducing Context-Aware Spam Detection: Now evaluating messages
   against your website's purpose"
 date: 2025-05-02T16:24:00.000Z
 author: onar
-image: /blog/assets/posts/header_context.png
+image: /blog/assets/posts/header_contextual.png
 description: Introducing Contextual Spam Detection. Learn how to use the OOPSpam
   API to detect spam within your website context.
 tags:
   - spam
   - AI
 ---
-We have been busy adding new features and improving existing ones. One of the features we recently added is Contextual Spam Detection. This introduces a different approach compared to our standard spam detection methodology.
+📣Calling anyone looking for spam protection for their websites’ forms!
 
-Our standard spam detection is a powerful model trained on up-to-date spam examples and works very well. In addition to the model-based detection, we perform many in-depth analyses (IP, email, domains, and more) on content. We have been continuously improving this since 2017 based on the latest trends in our never-ending fight against spammers.
+When you have a form on your website, you don’t always have enough background information from the sender for a traditional spam detector to properly filter. 
 
-As for Contextual Spam Detection, it relies solely on content in the context of your website. For example, if you sell shoes, then your form submissions should be related to footwear.
+We have developed a solution for this use case which is available to toggle on for all plans.
+
+Our standard spam detection is a powerful model trained on up-to-date spam examples and works very well. In addition to the model-based detection, we perform many in-depth analyses (IP, email, domains, and more) on content. We have been continuously improving this model since 2017 and it is highly effective on broad use cases, from card testing attacks to comments.
+
+For the specific use case of forms (especially when less information about the sender is available) Contextual Spam Detection our solution. It relies solely on content in the context of your website’s purpose. For example, if you sell shoes, then your form submissions should be related to footwear. 
 
 There is no country, language, IP, or email blocking. It just takes two parameters:
 
