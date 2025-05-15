@@ -11,7 +11,7 @@ tags:
   - spam
   - AI
 ---
-📣Calling anyone looking for spam protection for their websites’ forms!
+📣 Calling anyone looking for spam protection for their websites’ forms!
 
 When you have a form on your website, you don’t always have enough background information from the sender for a traditional spam detector to properly filter. 
 
