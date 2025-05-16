@@ -90,5 +90,5 @@ Contextual Spam Detection is currently [billed](https://www.oopspam.com/#pricing
 ## Things to know
 
 * This is an experimental feature currently under development. We welcome your feedback and are happy to address any questions you may have.
-* Please use standard detection methods if your forms don't include content fields.
-* Please note that this feature does not consider IP addresses, email addresses, or URL reputation data.
+* Use standard detection methods if your forms don't include content fields.
+* Note that this feature does not consider IP addresses, email addresses, or URL reputation data.
