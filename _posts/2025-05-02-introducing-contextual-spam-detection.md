@@ -19,6 +19,8 @@ We have developed a solution for this use case which is available to toggle on f
 
 Our standard spam detection is a powerful model trained on up-to-date spam examples and works very well. In addition to the model-based detection, we perform many in-depth analyses (IP, email, domains, and more) on content. We have been continuously improving this model since 2017 and it is highly effective on broad use cases, from card testing attacks to comments.
 
+{% include toc.md %}
+
 For the specific use case of forms (especially when less information about the sender is available) Contextual Spam Detection our solution. It relies solely on content in the context of your website’s purpose. For example, if you sell shoes, then your form submissions should be related to footwear. 
 
 There is no country, language, IP, or email blocking. It just takes two parameters:
