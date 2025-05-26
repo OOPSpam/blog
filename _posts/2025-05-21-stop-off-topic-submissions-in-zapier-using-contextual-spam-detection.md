@@ -82,7 +82,7 @@ Examples include:
 * "Our website offers wedding photography services across the UK."
 * "We provide customer support and feedback management tools for e-commerce businesses."
 
-Keep it focused and straightforward. The more accurate and specific your context is, the better the detection will work at filtering out irrelevant or misleading submissions.
+The more accurate and specific your context is, the better the detection will work at filtering out irrelevant or misleading submissions.
 
 ### **Step 4: Add Filter by Zapier (Optional)**
 
