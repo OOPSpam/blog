@@ -3,7 +3,7 @@ layout: post
 title: Stopping Spam Submissions in Google Forms with OOPSpam and Zapier
 date: 2025-01-14T04:32:00.000Z
 author: chazie
-image: /blog/assets/posts/header-stopping-spam-submissions-in-google-forms-with-oopspam-and-zapier.jpg
+image: /assets/posts/header-stopping-spam-submissions-in-google-forms-with-oopspam-and-zapier.jpg
 description: Stop spam in Google Forms with OOPSpam and Zapier! Learn to
   automate spam filtering, save time, and manage clean, reliable submissions
   effortlessly.

@@ -3,7 +3,7 @@ layout: post
 title: How to Stop Failed Orders with Unknown Origin in WooCommerce
 date: 2025-03-06T05:06:00.000Z
 author: chazie
-image: /blog/assets/posts/stop-failed-orders-with-unknown-origin-in-woocommerce.png
+image: /assets/posts/stop-failed-orders-with-unknown-origin-in-woocommerce.png
 description: Stop failed WooCommerce orders with "Unknown" origin caused by card
   testing attacks. Enable OOPSpam protection to block bots and secure your store
   fast.

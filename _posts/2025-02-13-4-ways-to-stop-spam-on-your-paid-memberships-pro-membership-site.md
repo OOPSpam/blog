@@ -3,7 +3,7 @@ layout: post
 title: 4 Ways to Stop Spam on Your Paid Memberships Pro Membership Site
 date: 2025-02-13T05:28:00.000Z
 author: chazie
-image: /blog/assets/posts/stop-spam-on-your-paid-memberships-pro-membership-site.png
+image: /assets/posts/stop-spam-on-your-paid-memberships-pro-membership-site.png
 description: Keep your Paid Memberships Pro site spam-free with machine learning
   OOPSpam, PMPro’s built-in features, CAPTCHAs, and Cloudflare Turnstile for
   secure sign-ups.

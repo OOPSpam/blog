@@ -3,7 +3,7 @@ layout: post
 title: 5 Ways to Stop Spam on SureForms
 date: 2025-02-04T07:08:00.000Z
 author: chazie
-image: /blog/assets/posts/5-ways-to-stop-spam-on-sureforms-header.png
+image: /assets/posts/5-ways-to-stop-spam-on-sureforms-header.png
 description: Keep your SureForms spam-free with these five solutions, including
   OOPSpam’s machine learning filtering, reCAPTCHA, Turnstile, hCaptcha, and
   Honeyspot.

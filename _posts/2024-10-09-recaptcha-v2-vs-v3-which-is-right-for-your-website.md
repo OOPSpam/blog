@@ -3,7 +3,7 @@ layout: post
 title: "reCAPTCHA V2 vs V3: Which Is Right for Your Website?"
 date: 2024-10-09T21:31:00.000Z
 author: chazie
-image: /blog/assets/posts/social-media-meta.png
+image: /assets/posts/social-media-meta.png
 description: Compare reCAPTCHA V2 and V3 to find the best spam protection for
   your site. Discover privacy-friendly alternatives for a better user experience
 tags:

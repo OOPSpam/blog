@@ -2,7 +2,7 @@
 layout: post
 title:  "3 ways to protect your Beaver Builder Contact Form from spam"
 author: onar
-image: /blog/assets/posts/beaver/bb-meta.png
+image: /assets/posts/beaver/bb-meta.png
 tags: [WordPress, contact_form]
 
 

@@ -3,7 +3,7 @@ layout: post
 title: The Importance of Spam Protection for Lead Generation
 date: 2024-11-05T20:01:00.000Z
 author: chazie
-image: /blog/assets/posts/header_spamleadgen-402x.jpg
+image: /assets/posts/header_spamleadgen-402x.jpg
 description: Boost lead quality and sales efficiency with strong spam
   protection. OOPSpam keeps your CRM clean, accurate, and cost-effective for
   true leads.

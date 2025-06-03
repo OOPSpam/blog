@@ -3,7 +3,7 @@ layout: post
 title: How to Block VPN and Data Center IP Submissions in Ninja Forms
 date: 2025-04-18T05:15:00.000Z
 author: chazie
-image: /blog/assets/posts/block-vpn-and-data-center-ip-submissions-in-ninja-forms.jpg
+image: /assets/posts/block-vpn-and-data-center-ip-submissions-in-ninja-forms.jpg
 description: Stop spam in Ninja Forms fast. Learn how to block VPN and data
   center IP submissions using OOPSpam or Cloudflare to boost your form security
   effortlessly.

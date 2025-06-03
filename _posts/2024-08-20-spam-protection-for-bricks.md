@@ -2,7 +2,7 @@
 layout: post
 title:  "Securing Bricks Form: Effective Strategies for Spam Prevention"
 author: onar
-image: /blog/assets/posts/bricks/sm.png
+image: /assets/posts/bricks/sm.png
 tags: [WordPress, contact_form, bricks]
 
 

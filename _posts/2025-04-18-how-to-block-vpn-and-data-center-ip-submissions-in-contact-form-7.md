@@ -3,7 +3,7 @@ layout: post
 title: How to Block VPN and Data Center IP Submissions in Contact Form 7
 date: 2025-04-18T04:54:00.000Z
 author: chazie
-image: /blog/assets/posts/how-to-block-vpn-and-data-center-ip-submissions-in-contact-form-7.jpg
+image: /assets/posts/how-to-block-vpn-and-data-center-ip-submissions-in-contact-form-7.jpg
 description: Get cleaner submissions in Contact Form 7. Learn how to block spam
   from VPNs and data centers using OOPSpam or Cloudflare to secure your
   WordPress forms.

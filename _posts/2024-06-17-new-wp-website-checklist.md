@@ -2,7 +2,7 @@
 layout: post
 title:  "The WordPress Security Checklist Most Developers Wish They Knew Sooner"
 author: onar
-image: /blog/assets/posts/best-wp-form/WordpressForms.png
+image: /assets/posts/best-wp-form/WordpressForms.png
 tags: [wordpress]
 
 description: "Learn to develop locally, secure forms, update plugins, and implement essential safety measures to keep your website safe from threats"

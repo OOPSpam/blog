@@ -2,7 +2,7 @@
 layout: post
 title: How spammers abuse GitHub, Microsoft, and Google
 author: onar
-image: /blog/assets/posts/abused-by-spammers/meta.png
+image: /assets/posts/abused-by-spammers/meta.png
 tags:
   - abuse
   - spam

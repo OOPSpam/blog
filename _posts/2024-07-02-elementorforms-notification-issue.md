@@ -2,7 +2,7 @@
 layout: post
 title:  "Troubleshooting Elementor Forms Not Sending Email Notifications"
 author: onar
-image: /blog/assets/posts/elementorforms-email-notification/meta.png
+image: /assets/posts/elementorforms-email-notification/meta.png
 tags: [wordpress, contact_form, elementor_forms]
 
 description: "Learn how to fix Elementor Forms not sending email notifications. Discover step-by-step solutions using SMTP plugins, email delivery services, and spam protection."

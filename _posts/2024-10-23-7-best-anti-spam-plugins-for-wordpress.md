@@ -3,7 +3,7 @@ layout: post
 title: 7 Best Anti-Spam Plugins for WordPress
 date: 2024-10-23T04:00:00.000Z
 author: chazie
-image: /blog/assets/posts/social-media-meta.png
+image: /assets/posts/social-media-meta.png
 description: Discover the best anti-spam plugins for WordPress, including
   AI-powered OOPSpam, Akismet, and more, to block spam effectively and boost
   security.

@@ -3,7 +3,7 @@ layout: post
 title: How to Limit Form Submissions in Ninja Forms?
 date: 2024-12-28T13:26:00.000Z
 author: chazie
-image: /blog/assets/posts/limitform_njforms.jpg
+image: /assets/posts/limitform_njforms.jpg
 description: Protect your Ninja Forms from spam and misuse with OOPSpam's
   rate-limiting feature. Enhance form security while ensuring a seamless user
   experience.

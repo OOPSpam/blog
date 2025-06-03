@@ -3,7 +3,7 @@ layout: post
 title: Stop Spam on Jotform Using Zapier and OOPSpam
 date: 2025-04-05T07:21:00.000Z
 author: chazie
-image: /blog/assets/posts/meta-stop-spam-on-jotform-using-zapier-and-oopspam.png
+image: /assets/posts/meta-stop-spam-on-jotform-using-zapier-and-oopspam.png
 description: Stop spam on Jotform by integrating Zapier and OOPSpam. Learn how
   to automate filtering and keep your submissions clean and high quality.
 tags:

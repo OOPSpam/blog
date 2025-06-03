@@ -2,7 +2,7 @@
 layout: post
 title: "6 Ways to Block Spam & Card Testing Attack in MemberPress Checkouts"
 author: onar
-image: /blog/assets/posts/mpress/meta.png
+image: /assets/posts/mpress/meta.png
 tags: [WordPress]
 
 

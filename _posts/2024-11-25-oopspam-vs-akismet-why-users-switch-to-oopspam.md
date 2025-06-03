@@ -3,7 +3,7 @@ layout: post
 title: "OOPSpam vs Akismet: Why Users Switch to OOPSpam"
 date: 2024-11-24T18:44:00.000Z
 author: chazie
-image: /blog/assets/posts/akismet-to-oopspam.png
+image: /assets/posts/akismet-to-oopspam.png
 description: OOPSpam offers advanced spam protection with multi-platform
   support, GDPR compliance, and better pricing—see why it’s the preferred choice
   over Akismet.

@@ -3,7 +3,7 @@ layout: post
 title: How to Block VPN and Data Center IP Submissions in WS Form
 date: 2025-04-28T05:50:00.000Z
 author: chazie
-image: /blog/assets/posts/how-to-block-vpn-and-data-center-ip-submissions-in-ws-form.jpg
+image: /assets/posts/how-to-block-vpn-and-data-center-ip-submissions-in-ws-form.jpg
 description: Stop spam in WS Form submissions by blocking VPN and cloud traffic.
   Learn how to set up protection with OOPSpam plugin to secure your WordPress
   forms.

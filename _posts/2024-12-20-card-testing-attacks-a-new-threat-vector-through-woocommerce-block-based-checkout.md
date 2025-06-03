@@ -4,7 +4,7 @@ title: "Card Testing Attacks: A New Threat Vector Through WooCommerce
   Block-based Checkout"
 date: 2025-01-10T17:43:00.000Z
 author: onar
-image: /blog/assets/posts/blockcountrieswithcloudflare-copy-2x.jpg
+image: /assets/posts/blockcountrieswithcloudflare-copy-2x.jpg
 description: Learn how to prevent fake and spam orders on your WooCommerce
   store. Explore how card testing attacks exploit the Store API and how to
   protect your business when using Block Checkout.

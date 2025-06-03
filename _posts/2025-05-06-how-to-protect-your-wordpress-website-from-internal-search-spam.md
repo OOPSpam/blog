@@ -3,7 +3,7 @@ layout: post
 title: How to Protect Your WordPress Website from Internal Search Spam
 date: 2025-05-06T03:05:00.000Z
 author: chazie
-image: /blog/assets/posts/header_sitesearch.jpg
+image: /assets/posts/header_sitesearch.jpg
 description: Protect your WordPress site from internal search spam with OOPSpam.
   Stop fake URLs, reduce bot traffic, and keep your analytics clean with smart
   filtering.

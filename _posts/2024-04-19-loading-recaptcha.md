@@ -2,7 +2,7 @@
 layout: post
 title:  "Don't Optimize for Speed - Load reCAPTCHA v3 on Every Page (Here's Why)"
 author: onar
-image: /blog/assets/posts/loading-recaptcha/meta.png
+image: /assets/posts/loading-recaptcha/meta.png
 tags: [recaptcha]
 
 description: "Learn why you need to load reCAPTCHA on every page even it is bad for website performance."

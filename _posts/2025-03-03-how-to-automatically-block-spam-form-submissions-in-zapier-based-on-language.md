@@ -3,7 +3,7 @@ layout: post
 title: How to Automatically Block Spam Form Submissions in Zapier Based on Language
 date: 2025-03-03T08:09:00.000Z
 author: chazie
-image: /blog/assets/posts/how-to-automatically-block-spam-form-submissions-in-zapier-based-on-language.jpg
+image: /assets/posts/how-to-automatically-block-spam-form-submissions-in-zapier-based-on-language.jpg
 description: Block spam in Zapier with language filtering and OOPSpam’s machine
   learning tools. Keep your inbox clean—automate spam prevention today.
 tags:

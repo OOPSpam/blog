@@ -3,7 +3,7 @@ layout: post
 title: Stop Off-Topic Form Submissions in Make with Contextual Spam Detection
 date: 2025-05-26T11:25:00.000Z
 author: chazie
-image: /blog/assets/posts/common-spam-problems-in-make.jpg
+image: /assets/posts/common-spam-problems-in-make.jpg
 description: Stop off-topic form submissions in Make by using OOPSpam’s
   Contextual Spam Detection. Filter irrelevant messages and keep your workflows
   clean.

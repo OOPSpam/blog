@@ -3,7 +3,7 @@ layout: post
 title: Stopping Spam Submissions in Google Forms with OOPSpam and Make
 date: 2025-01-07T00:40:00.000Z
 author: chazie
-image: /blog/assets/posts/google-forms-make-and-oopspam-integration.jpg
+image: /assets/posts/google-forms-make-and-oopspam-integration.jpg
 description: Learn how to stop spam in Google Forms with OOPSpam and Make.
   Streamline submissions, save time, and ensure clean, actionable data
   effortlessly.

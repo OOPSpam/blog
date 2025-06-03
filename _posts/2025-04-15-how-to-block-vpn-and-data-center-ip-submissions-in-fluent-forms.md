@@ -3,7 +3,7 @@ layout: post
 title: How to Block VPN and Data Center IP Submissions in Fluent Forms
 date: 2025-04-15T01:30:00.000Z
 author: chazie
-image: /blog/assets/posts/how-to-block-vpn-and-data-center-ip-submissions-in-fluent-forms.jpg
+image: /assets/posts/how-to-block-vpn-and-data-center-ip-submissions-in-fluent-forms.jpg
 description: Block spam in Fluent Forms fast. Learn how to stop VPN and data
   center IPs using OOPSpam plugin. Protect your site with a smart, easy-to-use
   solution.

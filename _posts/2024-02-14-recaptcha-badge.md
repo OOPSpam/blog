@@ -2,7 +2,7 @@
 layout: post
 title: How to Hide the reCAPTCHA Badge?
 author: onar
-image: /blog/assets/posts/recaptcha-badge/meta.png
+image: /assets/posts/recaptcha-badge/meta.png
 tags: [recaptcha]
 
 description: Learn how to properly hide the reCAPTCHA badge and display the required notice on your form?

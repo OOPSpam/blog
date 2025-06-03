@@ -3,7 +3,7 @@ layout: post
 title: 5 Common Spam Problems in Make & How to Fix Them
 date: 2025-03-13T21:03:00.000Z
 author: chazie
-image: /blog/assets/posts/common-spam-problems-in-make.jpg
+image: /assets/posts/common-spam-problems-in-make.jpg
 description: Prevent common spam problems in Make by blocking fake leads, junk
   submissions, and phishing threats. Learn effective solutions to keep your
   workflows clean.

@@ -3,7 +3,7 @@ layout: post
 title: How to Reduce Zapier Costs by Filtering Spam from Your Contact Forms
 date: 2025-01-24T05:33:00.000Z
 author: chazie
-image: /blog/assets/posts/header.png
+image: /assets/posts/header.png
 description: Cut Zapier costs by blocking spam at the source. Learn to filter
   contact form spam, save tasks, and streamline your workflows with OOPSpam.
 tags:

@@ -3,7 +3,7 @@ layout: post
 title: Stop Spam on Breakdance Forms Using Make and OOPSpam
 date: 2024-10-28T04:01:00.000Z
 author: chazie
-image: /blog/assets/posts/social-media-meta.png
+image: /assets/posts/social-media-meta.png
 description: Easily set up AI-powered spam protection on Breakdance forms using
   OOPSpam and Make to streamline and secure your form submissions.
 tags:

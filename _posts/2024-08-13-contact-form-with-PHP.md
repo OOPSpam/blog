@@ -2,7 +2,7 @@
 layout: post
 title:  "Building a complete contact form with PHP & HTML"
 author: onar
-image: /blog/assets/posts/contact-form-with-PHP/complete-contact-form-with-PHP.png
+image: /assets/posts/contact-form-with-PHP/complete-contact-form-with-PHP.png
 tags: [PHP, HTML, spam, contact_form]
 
 description: "Learn how to build complete contact form with PHP and HTML with this step-by-step tutorial. We will validate, sanitize and check for spam to ensure our form is secure and protected."

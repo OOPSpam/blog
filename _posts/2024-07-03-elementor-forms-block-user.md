@@ -2,7 +2,7 @@
 layout: post
 title:  "Elementor Forms: Advanced User Blocking to Enhance Form Security"
 author: onar
-image: /blog/assets/posts/user-blocking/elementor-meta.png
+image: /assets/posts/user-blocking/elementor-meta.png
 tags: [wordpress, contact_form, elementor]
 
 description: "Block Users by Country, Language, Email Domain, Keyword, and IP in Elementor Forms"

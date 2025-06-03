@@ -3,7 +3,7 @@ layout: post
 title: Blocking Countries from Accessing Your Website Using Cloudflare
 date: 2024-10-31T03:36:00.000Z
 author: chazie
-image: /blog/assets/posts/blockcountrieswithcloudflare-2x.webp
+image: /assets/posts/blockcountrieswithcloudflare-2x.webp
 description: Restrict website access by country using Cloudflare. Control spam,
   enhance security, and manage your site's reach effectively with simple setup
   steps.

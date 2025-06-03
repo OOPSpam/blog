@@ -2,7 +2,7 @@
 layout: post
 title:  "Does hCAPTCHA slow down your website?"
 author: onar
-image: /blog/assets/posts/hcaptcha/hcaptcha-meta.png
+image: /assets/posts/hcaptcha/hcaptcha-meta.png
 tags: [captcha, contact_form]
 
 

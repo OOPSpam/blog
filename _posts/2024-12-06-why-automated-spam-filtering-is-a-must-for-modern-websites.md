@@ -3,7 +3,7 @@ layout: post
 title: Why Automated Spam Filtering is a Must for Modern Websites
 date: 2024-12-06T00:09:00.000Z
 author: chazie
-image: /blog/assets/posts/automation-header.png
+image: /assets/posts/automation-header.png
 description: Automated spam filtering is essential for modern websites. Protect
   your users, enhance security, and save time with intelligent spam defenses.
 tags:

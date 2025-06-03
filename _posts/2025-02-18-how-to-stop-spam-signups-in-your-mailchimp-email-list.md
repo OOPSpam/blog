@@ -3,7 +3,7 @@ layout: post
 title: How to Stop Spam Signups in Your Mailchimp Email List
 date: 2025-02-18T04:01:00.000Z
 author: chazie
-image: /blog/assets/posts/header_how-to-stop-spam-signups-in-your-mailchimp-email-list.png
+image: /assets/posts/header_how-to-stop-spam-signups-in-your-mailchimp-email-list.png
 description: Keep your Mailchimp list free from spam! Use OOPSpam & Zapier to
   block bots, filter fake signups, and improve deliverability with automation.
 tags:

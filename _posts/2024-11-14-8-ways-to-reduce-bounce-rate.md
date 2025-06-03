@@ -3,7 +3,7 @@ layout: post
 title: 8 Ways to Reduce Bounce Rate
 date: 2024-11-14T03:38:00.000Z
 author: chazie
-image: /blog/assets/posts/headerbouncerate.png
+image: /assets/posts/headerbouncerate.png
 description: Discover 8 practical ways to reduce bounce rate, boost engagement,
   and keep visitors exploring your site longer with tips and tools like OOPSpam.
 tags:

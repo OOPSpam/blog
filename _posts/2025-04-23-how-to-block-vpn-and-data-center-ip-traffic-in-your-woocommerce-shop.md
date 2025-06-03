@@ -3,7 +3,7 @@ layout: post
 title: How to Block VPN and Data Center IP Traffic in Your WooCommerce Shop
 date: 2025-04-23T03:35:00.000Z
 author: chazie
-image: /blog/assets/posts/how-to-block-vpn-and-data-center-ip-traffic-in-your-woocommerce-shop.jpg
+image: /assets/posts/how-to-block-vpn-and-data-center-ip-traffic-in-your-woocommerce-shop.jpg
 description: Protect your WooCommerce shop from spam and fake orders. Learn how
   to block VPN and data center traffic using OOPSpam plugin for better security.
 tags:

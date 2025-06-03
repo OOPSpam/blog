@@ -3,7 +3,7 @@ layout: post
 title: 5 ways to stop spam orders and registrations in WooCommerce
 date: 2025-01-03T23:07:00.000Z
 author: onar
-image: /blog/assets/posts/woo-header.png
+image: /assets/posts/woo-header.png
 description: Learn how to prevent fake orders, spam reviews and registrations
   with these 5 different methods in WordPress.
 tags:

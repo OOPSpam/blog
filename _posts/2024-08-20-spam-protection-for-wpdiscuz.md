@@ -2,7 +2,7 @@
 layout: post
 title:  "Combatting Comment Spam like a Pro: Explore WPDiscuz's Anti-Spam Capabilities"
 author: onar
-image: /blog/assets/posts/wpdiscuz/wpdiscuz-meta.png
+image: /assets/posts/wpdiscuz/wpdiscuz-meta.png
 tags: [WordPress, comment, wpdiscuz]
 
 

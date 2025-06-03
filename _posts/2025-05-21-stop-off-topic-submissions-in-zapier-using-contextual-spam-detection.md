@@ -3,7 +3,7 @@ layout: post
 title: Stop Off-Topic Submissions in Zapier Using Contextual Spam Detection
 date: 2025-05-21T06:17:00.000Z
 author: chazie
-image: /blog/assets/posts/5-common-spam-problems-in-zapier-how-to-fix-them.jpg
+image: /assets/posts/5-common-spam-problems-in-zapier-how-to-fix-them.jpg
 description: Stop irrelevant form submissions in Zapier using OOPSpam’s
   Contextual Spam Detection—filter out off-topic messages even without IP or
   email data.

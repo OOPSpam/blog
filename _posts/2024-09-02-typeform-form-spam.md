@@ -2,7 +2,7 @@
 layout: post
 title:  "Stop spam on Typeform using Zapier and OOPSpam"
 author: onar
-image: /blog/assets/posts/typeform/social-meta.png
+image: /assets/posts/typeform/social-meta.png
 tags: [zapier, typeform]
 
 

@@ -3,7 +3,7 @@ layout: post
 title: How to Block VPN and Data Center IP Submissions in Gravity Forms
 date: 2025-04-11T05:06:00.000Z
 author: chazie
-image: /blog/assets/posts/how-to-block-vpn-and-data-center-ip-submissions-in-gravity-forms.jpg
+image: /assets/posts/how-to-block-vpn-and-data-center-ip-submissions-in-gravity-forms.jpg
 description: Stop spam in Gravity Forms fast. Learn how to block VPN and data
   center IP submissions using OOPSpam or Cloudflare. Boost your Gravity Forms
   security with ease.

@@ -3,7 +3,7 @@ layout: post
 title: So, you're using OOPSpam and still getting spam?
 date: 2025-05-16T16:43:00.000Z
 author: onar
-image: /blog/assets/posts/header-oopspam.png
+image: /assets/posts/header-oopspam.png
 description: Learn how to make the most of the OOPSpam features, such as
   blocking countries and disposable emails, and detecting spam with LLMs.
 ---

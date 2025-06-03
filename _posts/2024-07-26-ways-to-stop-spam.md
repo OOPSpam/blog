@@ -3,7 +3,7 @@ layout: post
 title: 7 ways to stop spam on your website
 date: 2025-05-14T12:08:00.000Z
 author: onar
-image: /blog/assets/ways-to-stop-spam.png
+image: /assets/ways-to-stop-spam.png
 description: Prevent spam on your website with Honeypot, Spam Words, Captcha,
   IP-based filtering, country/language restrictions, AI, and rule-based methods.
 tags:

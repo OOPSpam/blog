@@ -2,7 +2,7 @@
 layout: post
 title:  "Troubleshooting Fluent Forms Not Sending Email Notifications"
 author: onar
-image: /blog/assets/posts/fluentforms-email-notification/meta.png
+image: /assets/posts/fluentforms-email-notification/meta.png
 tags: [wordpress, contact_form, fluent]
 
 description: "Learn how to fix Fluent Forms not sending email notifications. Discover step-by-step solutions using SMTP plugins, email delivery services, and spam protection."

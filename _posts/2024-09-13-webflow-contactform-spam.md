@@ -3,7 +3,7 @@ layout: post
 title: Stop spam on Webflow forms using Zapier and OOPSpam
 date: 2024-10-22T21:29:00.000Z
 author: onar
-image: /blog/assets/posts/social-media-meta.png
+image: /assets/posts/social-media-meta.png
 description: Learn how to protect Webflow forms from spam without CAPTCHA.
   Step-by-step guide to integrate OOPSpam with Zapier or Make for better spam
   protection.

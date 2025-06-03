@@ -2,7 +2,7 @@
 layout: post
 title:  "The Best Akismet Alternatives & Competitors, Compared"
 author: onar
-image: /blog/assets/posts/social-media-meta.png
+image: /assets/posts/social-media-meta.png
 tags: [akismet, turnstile, recaptcha]
 
 

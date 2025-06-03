@@ -3,7 +3,7 @@ layout: post
 title: "Bricks vs Elementor: Which WordPress Page Builder Should You Choose?"
 date: 2025-03-11T22:07:00.000Z
 author: chazie
-image: /blog/assets/posts/bricks-vs-elementor-which-wordpress-page-builder-should-you-choose.jpg
+image: /assets/posts/bricks-vs-elementor-which-wordpress-page-builder-should-you-choose.jpg
 description: Bricks or Elementor? Discover key differences in performance,
   design flexibility, pricing, and ease of use to choose the best WordPress page
   builder.

@@ -2,7 +2,7 @@
 layout: post
 title:  "WS Form: Advanced User Blocking to Enhance Form Security"
 author: onar
-image: /blog/assets/posts/user-blocking/wsform-meta.png
+image: /assets/posts/user-blocking/wsform-meta.png
 tags: [wordpress, contact_form, wsform]
 
 description: "Block Users by Country, Language, Email Domain, Keyword, and IP in WS Form"

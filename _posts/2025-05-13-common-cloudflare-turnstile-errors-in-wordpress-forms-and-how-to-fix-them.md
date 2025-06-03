@@ -3,7 +3,7 @@ layout: post
 title: Common Cloudflare Turnstile Errors in WordPress Forms (And How to Fix Them)
 date: 2025-05-13T03:05:00.000Z
 author: chazie
-image: /blog/assets/posts/header-turnstile-errors.png
+image: /assets/posts/header-turnstile-errors.png
 description: Fix common Cloudflare Turnstile errors in WordPress forms. Learn
   causes, solutions, and how to keep your site spam-free with better Turnstile
   alternatives.

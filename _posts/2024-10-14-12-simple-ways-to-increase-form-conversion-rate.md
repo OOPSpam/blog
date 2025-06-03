@@ -3,7 +3,7 @@ layout: post
 title: 12 Simple Ways to Increase Form Conversion Rate
 date: 2024-10-14T03:37:00.000Z
 author: chazie
-image: /blog/assets/posts/social-media-meta.png
+image: /assets/posts/social-media-meta.png
 description: Learn 12 simple strategies to improve form conversion rates, boost
   user experience, and protect your forms from spam without adding friction.
 tags:

@@ -3,7 +3,7 @@ layout: post
 title: How to Block VPN and Data Center IP Submissions in SureForms
 date: 2025-04-30T04:15:00.000Z
 author: chazie
-image: /blog/assets/posts/how-to-block-vpn-and-data-center-ip-submissions-in-sureforms.jpg
+image: /assets/posts/how-to-block-vpn-and-data-center-ip-submissions-in-sureforms.jpg
 description: Keep your SureForms free from spam. Learn how to block VPN and
   cloud provider IPs using OOPSpam for a more secure and cleaner form submission
   experience.

@@ -3,7 +3,7 @@ layout: post
 title: How to Block VPN and Data Center IP Submissions in Bricks Forms
 date: 2025-04-30T04:54:00.000Z
 author: chazie
-image: /blog/assets/posts/how-to-block-vpn-and-data-center-ip-submissions-in-bricks-forms.jpg
+image: /assets/posts/how-to-block-vpn-and-data-center-ip-submissions-in-bricks-forms.jpg
 description: Protect your Bricks Forms from spam and fake entries. Learn how to
   block VPN and cloud traffic using OOPSpam or Cloudflare for a more secure
   WordPress site.

@@ -3,7 +3,7 @@ layout: post
 title: How to Limit Form Submissions in WPForms?
 date: 2024-12-17T02:04:00.000Z
 author: chazie
-image: /blog/assets/posts/limitform_wpforms.jpg
+image: /assets/posts/limitform_wpforms.jpg
 description: Learn how to use OOPSpam with WPForms to limit form submissions,
   block spam, and enhance your site's security and user experience effectively.
 tags:

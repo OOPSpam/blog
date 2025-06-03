@@ -4,7 +4,7 @@ layout: post
 title: 5 ways to protect your Elementor Forms from spam
 date: 2024-12-10T17:25:00.000Z
 author: onar
-image: /blog/assets/posts/elementor-forms/ef-meta-image.png
+image: /assets/posts/elementor-forms/ef-meta-image.png
 description: Learn how to add spam protection to Elementor Forms with these 5
   different methods in WordPress.
 tags:

@@ -3,7 +3,7 @@ layout: post
 title: 5 Common Spam Problems in Zapier & How to Fix Them
 date: 2025-02-26T04:14:00.000Z
 author: chazie
-image: /blog/assets/posts/5-common-spam-problems-in-zapier-how-to-fix-them.jpg
+image: /assets/posts/5-common-spam-problems-in-zapier-how-to-fix-them.jpg
 description: Struggling with spam in Zapier? Learn five common spam problems and
   how to fix them using OOPSpam and smart Zapier filters to keep your workflows
   clean.
