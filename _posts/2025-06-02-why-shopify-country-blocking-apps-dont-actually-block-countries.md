@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Why Shopify Country Blocking Apps Don't Actually Block Countries?
-date: 2025-06-02T18:31:00.000Z
+date: 2025-06-01T08:50:00.000Z
 author: onar
 image: /blog/assets/posts/header_shopify.jpg
 description: Learn how Shopify Geo-Blocking apps work and how they can easily be bypassed.
