@@ -17,7 +17,7 @@ Even with reCAPTCHA and multiple anti-spam layers in place, [Gravity Forms](http
 
 ## **Why reCAPTCHA alone isn’t enough**
 
-![reCAPTCHA](/assets/posts/recaptcha.png "reCAPTCHA")
+![reCAPTCHA](/blog/assets/posts/recaptcha.png "reCAPTCHA")
 
 Google's [reCAPTCHA](https://developers.google.com/recaptcha) is often the first line of defense for WordPress forms. It’s designed to block bots from submitting forms by evaluating user behavior or presenting challenges. However, it's not a silver bullet. Here’s why it falls short:
 
