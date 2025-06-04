@@ -3,7 +3,7 @@ layout: post
 title: Why Is Gravity Forms Still Getting Spam Even With reCAPTCHA
 date: 2025-06-03T07:00:00.000Z
 author: chazie
-image: /assets/posts/gravity-forms-still-getting-spam.png
+image: /blog/assets/posts/gravity-forms-still-getting-spam.png
 description: Still getting spam on Gravity Forms even with reCAPTCHA? Learn why
   it fails and how OOPSpam offers smarter, layered protection for your WordPress
   forms.
