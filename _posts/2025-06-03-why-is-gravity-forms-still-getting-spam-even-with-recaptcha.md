@@ -13,7 +13,7 @@ tags:
 ---
 ![Gravity Forms](/blog/assets/posts/gf-forms.png "Gravity Forms")
 
-Even with reCAPTCHA and multiple anti-spam layers in place, [Gravity Forms](https://www.gravityforms.com/) can still be exploited—especially in targeted attacks. If you’re here, it’s likely because bots and spam submissions are still slipping through, draining your time and, worse, your ad budget. Let’s break down why it’s happening—and what you can actually do about it.
+Even with reCAPTCHA and multiple anti-spam layers in place, [Gravity Forms](https://www.gravityforms.com/) can still be exploited—especially in targeted attacks. If you’re here, it’s likely because bots and spam submissions are still slipping through, draining your time and, worse, your ad budget. Let’s break down why it’s happening—and what you can actually do about it. 
 
 ## **Why reCAPTCHA alone isn’t enough**
 
