@@ -32,7 +32,7 @@ Understanding why these attacks happen is the first step in stopping them.
 
 ### **How to Do It:**
 
-Install the [OOPSpam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spamhttps://wordpress.org/plugins/oopspam-anti-spam/), generate an API key from [oopspam.com](https://app.oopspam.com/Identity/Account/Register), and paste it into:
+Install the [OOPSpam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/), generate an API key from [oopspam.com](https://app.oopspam.com/Identity/Account/Register), and paste it into:
 
 **Settings > OOPSpam Anti-Spam**
 
