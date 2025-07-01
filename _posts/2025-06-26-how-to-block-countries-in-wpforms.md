@@ -64,7 +64,7 @@ Then go to **OOPSpam Anti-Spam > Settings** in your dashboard. Paste your **OOPS
 
 Toggle on **Activate Spam Protection** and configure any additional settings, such as sensitivity or keyword filtering, based on your needs.
 
-![WPForms Activate Spam Protection](/blog/assets/posts/wpforms-spam-protection.png "WPForms Activate Spam Protection")
+![WPForms Activate Spam Protection](/blog/assets/posts/wpforms_activate-spam-protection.png "WPForms Activate Spam Protection")
 
 Scroll to the **Country Filtering** section. Choose whether to **allow only selected countries** or **block specific ones**. Select countries from the dropdown list and save your settings.
 
