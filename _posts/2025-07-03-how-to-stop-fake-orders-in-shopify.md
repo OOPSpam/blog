@@ -23,21 +23,21 @@ Let’s start from the beginning and build the workflow step by step.
 
 ## Install the Shopify Flow app & create a workflow
 
-Visit the Shopify App Store and install the official Flow app by Shopify. Once installed, open the Flow app and create a new workflow.
+Visit the Shopify App Store and install the official Flow app by Shopify. Once installed, open the Flow app and go to **Settings**.
 
 ![Open Shopify Flow app](/blog/assets/posts/screenshot-2025-06-10-at-11.48.54 am.png "Open Shopify Flow app")
 
 ## Add your OOPSpam API key to Manage Secrets
 
-Retrieve your API key from [the OOPSpam dashboard](https://app.oopspam.com/) and add it as a secret in **the Manage Secrets** section of the Flow app.
+Retrieve your API key from [the OOPSpam dashboard](https://app.oopspam.com/) and add it as a secret in **the Manage Secrets** section of the Flow app settings.
 
 ![Manage Secrets in Flow app](/blog/assets/posts/screenshot-2025-06-10-at-11.58.57 am.png "Manage Secrets in Flow app")
 
 ## Set up the first step
 
-With your API key ready and a new workflow created, add the first step by selecting **Shopify -> Order created** action. This will trigger the automation whenever a new order is placed.
+With your API key ready and create a new workflow, add the first step by selecting **Shopify -> Order created** action. This will trigger the automation whenever a new order is placed.
 
-![New workflow in Flow app](/blog/assets/posts/screenshot-2025-06-10-at-11.49.11 am.png "New workflow in Flow app")
+![Order created action in Flow app](/blog/assets/posts/screenshot-2025-07-03-at-5.01.37 pm.png "Order created action in Flow app")
 
 ## Perform a fraud check with OOPSpam
 
@@ -69,7 +69,7 @@ Configure the settings as follows:
   }
   ```
 
-> Be sure to update `secrets.MyOOPSpamAPIKey` to match the name of your secret. In this example, we’re blocking Russia and only allowing orders from Italy and the USA. If you use `allowedCountries`, you don’t need to specify `blockedCountries`—any country not listed will be blocked automatically. For instance, if you only sell in the USA, set `allowedCountries` to `["us"]` and all other countries will be restricted.
+> Make sure to update `secrets.MyOOPSpamAPIKey` to match the name of your secret. In this example, we’re blocking Russia and only allowing orders from Italy and the USA. If you use `allowedCountries`, you don’t need to specify `blockedCountries`—any country not listed will be blocked automatically. For instance, if you only sell in the USA, set `allowedCountries` to `["us"]` and all other countries will be restricted.
 
 To make the API response easier to use in the next steps, add a **‘Run code’** action with the following JavaScript to extract the `Score` from the response body:
 
@@ -121,4 +121,4 @@ When you review the order, you should see “Spam Score 6 by OOPSpam” listed i
 
 ![Order details in Shopify](/blog/assets/posts/screenshot-2025-07-03-at-1.56.31 pm.png "Order details in Shopify")
 
-And that’s it! You’ve successfully set up a Shopify Flow automation using OOPSpam to assess order risk and optionally trigger actions like refunds, cancellations, or email notifications.
+And with this you’ve successfully set up a Shopify Flow automation using OOPSpam to assess order risk and optionally trigger actions like refunds, cancellations, or email notifications.
