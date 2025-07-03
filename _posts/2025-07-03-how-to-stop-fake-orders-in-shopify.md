@@ -53,8 +53,8 @@ Configure the settings as follows:
 * **URL:** `https://api.oopspam.com/v1/spamdetection`
 * **Headers:**
 
-  * `X-Api-Key`: `{{secrets.MyOOPSpamAPIKey}}`
-  * `Content-Type`: `application/json`
+  * `X-Api-Key`: secrets.MyOOPSpamAPIKey
+  * `Content-Type`: application/json
 * **Body:**
 
   ```json
