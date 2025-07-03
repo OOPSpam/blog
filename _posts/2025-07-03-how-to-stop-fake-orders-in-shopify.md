@@ -11,7 +11,7 @@ tags:
   - Shopify Flow
   - OOPSpam
 ---
-[In our previous article](https://www.oopspam.com/blog/why-shopify-country-blocking-apps-dont-actually-block-countries), we discussed how nearly 90 apps in the Shopify store claim to block countries and offer similar blocking features, yet most are ineffective and easily bypassed. After exploring Shopify further to find a truly reliable solution, I discovered [Shopify Flow](https://apps.shopify.com/flow). This tool enables powerful automatons, similar to what [Zapier](https://help.oopspam.com/other-integrations/zapier/) offers directly within Shopify. With Shopify Flow, you can take full control of your orders, including integrating third-party APIs like OOPSpam to detect card testing attacks.
+[In our previous article](https://www.oopspam.com/blog/why-shopify-country-blocking-apps-dont-actually-block-countries), I discussed how nearly 90 apps in the Shopify store claim to block countries and offer similar blocking features, yet most are ineffective and easily bypassed. After exploring Shopify further to find a truly reliable solution, I discovered [Shopify Flow](https://apps.shopify.com/flow). This tool enables powerful automatons, similar to what [Zapier](https://help.oopspam.com/other-integrations/zapier/) offers directly within Shopify. With Shopify Flow, you can take full control of your orders, including integrating third-party APIs like [OOPSpam](https://www.oopspam.com/) to detect card testing attacks.
 
 Here’s a quick overview of the workflow we’ll create:
 
@@ -21,25 +21,25 @@ The goal of this flow is to automatically trigger when an order is placed and as
 
 Let’s start from the beginning and build the workflow step by step.
 
-1. Install the Shopify Flow app & create a workflow
+## Install the Shopify Flow app & create a workflow
 
 Visit the Shopify App Store and install the official Flow app by Shopify. Once installed, open the Flow app and create a new workflow.
 
 ![Open Shopify Flow app](/blog/assets/posts/screenshot-2025-06-10-at-11.48.54 am.png "Open Shopify Flow app")
 
-2. Add your OOPSpam API key to Manage Secrets
+## Add your OOPSpam API key to Manage Secrets
 
 Retrieve your API key from [the OOPSpam dashboard](https://app.oopspam.com/) and add it as a secret in **the Manage Secrets** section of the Flow app.
 
 ![Manage Secrets in Flow app](/blog/assets/posts/screenshot-2025-06-10-at-11.58.57 am.png "Manage Secrets in Flow app")
 
-3. Set up the first step
+## Set up the first step
 
 With your API key ready and a new workflow created, add the first step by selecting **Shopify -> Order created** action. This will trigger the automation whenever a new order is placed.
 
 ![New workflow in Flow app](/blog/assets/posts/screenshot-2025-06-10-at-11.49.11 am.png "New workflow in Flow app")
 
-4. Perform a fraud check with OOPSpam
+## Perform a fraud check with OOPSpam
 
 Next, we’ll send an HTTP request to the [OOPSpam API](https://www.oopspam.com/docs/#introduction) to receive a spam score for each order. Shopify Flow now supports the **‘Send HTTP request’** action, which we’ll use here. Add this action to your workflow.
 
@@ -89,7 +89,7 @@ Refer to the screenshot below for a visual guide on configuring these input and 
 
 ![Run code action in Flow app](/blog/assets/posts/screenshot-2025-07-03-at-4.20.22 pm.png "Run code action in Flow app")
 
-5. Assign a risk score
+## Assign a risk score
 
 Now, let’s flag orders with a spam score greater than 2. Add a **Condition** step and set it to “IF Score Greater than 2”.
 
@@ -109,7 +109,7 @@ Here’s how I configured mine:
 
 That’s it! Now it’s time to test the workflow.
 
-6. Test the entire flow
+## Test the entire flow
 
 To test your setup, create an order using an email like ‘testing@example.com’, which is blocked by default.
 
