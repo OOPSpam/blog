@@ -118,7 +118,7 @@ If you're looking to set up country-level blocking with Cloudflare, our article:
 * You have legal or compliance reasons for limiting access to users in certain countries.
 * You want to dramatically reduce server load from unwanted traffic.
 
-*This method is [powerful but strict](https://www.oopspam.com/blog/common-cloudflare-turnstile-errors-in-wordpress-forms-and-how-to-fix-them)—so avoid it if you're only dealing with form spam.*
+> This method is [powerful but strict](https://www.oopspam.com/blog/common-cloudflare-turnstile-errors-in-wordpress-forms-and-how-to-fix-them)—so avoid it if you're only dealing with form spam.
 
 ## **Which Country Blocking Method Is Best?**
 
