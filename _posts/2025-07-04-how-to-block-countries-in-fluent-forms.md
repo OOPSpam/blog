@@ -82,11 +82,34 @@ OOPSpam will now actively [filter submissions in your Fluent Forms](https://www.
 
 ### **Review Blocked Submissions**
 
-OOPSpam gives you access to **[submission logs](https://help.oopspam.com/wordpress/form-entries/)**. You’ll know which entries were blocked and why, so you can:
+Unlike Fluent Forms’ built-in country restriction, **OOPSpam** provides access to detailed **[submission logs](https://help.oopspam.com/wordpress/form-entries/)**—so you’re never left guessing why a submission was blocked.
 
-* Spot trends in abuse.
-* Follow up with legitimate users (if needed).
-* Adjust your filtering over time.
+You can monitor:
+
+* **Form Spam Entries**: Submissions that were flagged and blocked by OOPSpam.
+* **Form Ham Entries**: Submissions that passed the filter and were marked as legitimate.
+
+This gives you full visibility into the quality of submissions and helps you fine-tune your filtering rules.
+
+Here's what the log view looks like in your OOPSpam dashboard:
+
+![Review Blocked Submissions](/blog/assets/posts/screenshot-1.png "Review Blocked Submissions")
+
+Each entry includes useful data like:
+
+* Submission content
+* IP address
+* Email address (if provided)
+* Spam score and filtering reason
+* Timestamps and response details
+
+This transparency lets you:
+
+* Spot patterns in recurring abuse
+* Manually review leads if needed
+* Improve filtering rules based on actual spam behavior
+
+**Note:** Logging must be enabled to see these entries. 
 
 ## **3. Blocking Countries from Your Website Entirely Using Cloudflare**
 
