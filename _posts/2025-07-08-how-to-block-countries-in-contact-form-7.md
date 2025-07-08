@@ -50,7 +50,7 @@ These features are not possible with Contact Form 7 alone—but become available
 
 First, install the **OOPSpam Anti-Spam plugin** from the WordPress Plugin Directory. Once activated, open your WordPress dashboard and go to **OOPSpam Anti-Spam > Settings**.
 
-![Enter your API key](/blog/assets/posts/my-api-key-field.png "Enter your API key")
+![Enter your API key](/blog/assets/posts/oopspam-api-key.png "Enter your API key")
 
 Enter your **API key** (you can get this from your [OOPSpam account](https://app.oopspam.com/Identity/Account/Register)). Once added, **Activate** **Spam Protection**.
 
