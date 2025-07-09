@@ -96,8 +96,8 @@ Log into your [Cloudflare dashboard ](https://dash.cloudflare.com/)and select th
 
 1. Go to the **Security** tab and open the **WAF** (Web Application Firewall) section.
 2. Find the **Rules** **list** and click to **create a new firewall rule**. Give your rule a clear name—for example, “Block Specific Countries.”
-3. Next, set the condition. Choose Country as the field, is in as the operator, and then select the countries you want to block from the list.
-4. For the action, select **Block**. Once everything is set, save and deploy the rule.
+3. Next, set the condition. Choose **`Country`** as the field, **`is in`** as the operator, and then select the countries you want to block from the list.
+4. For the action, select **`Block`**. Once everything is set, save and deploy the rule.
 
 Requests from those countries will now be denied before they ever reach your WordPress site—including your SureForms.
 
