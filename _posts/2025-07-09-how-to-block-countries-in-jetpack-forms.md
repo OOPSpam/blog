@@ -103,10 +103,10 @@ Log in to your **[Cloudflare dashboard](https://dash.cloudflare.com/)** and sele
 Click **Firewall Rules** and create a new rule.
 
 * Name the rule something like “Block Countries”
-* Choose `Country` as the field
-* Set the operator to `is in`
+* Choose **`Country`** as the field
+* Set the operator to **`is in`**
 * Select the countries you want to block
-* Choose `Block` as the action
+* Choose **`Block`** as the action
 
 Save and deploy your rule. Any visitors from those countries will now be denied access to your site.
 
