@@ -129,7 +129,7 @@ Log into your **[Cloudflare dashboard](https://dash.cloudflare.com/)** and selec
 
 ![How to Set Up Country Blocking in Cloudflare WAF](/blog/assets/posts/blocking-countries-in-cloudflare.png "How to Set Up Country Blocking in Cloudflare WAF")
 
-Create a new rule. Give it a name like “Block Countries.” Choose Country as the field, is in as the operator, and select the countries to block. Set the action to **Block**, save your changes, and deploy the rule.
+Create a new rule. Give it a name like “Block Countries.” Choose **`Country`** as the field, **`is in`** as the operator, and select the countries to block. Set the action to **`Block`**, save your changes, and deploy the rule.
 
 Cloudflare will now block access to your entire site from those countries.
 
