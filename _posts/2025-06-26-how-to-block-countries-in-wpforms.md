@@ -91,9 +91,9 @@ Log in to your [Cloudflare dashboard](https://dash.cloudflare.com/). Choose your
 ![How to Block Countries in Cloudflare](/blog/assets/posts/blocking-countries-in-cloudflare.png "How to Block Countries in Cloudflare")
 
 1. **Name Your Rule**: Use something like "Block Countries" for easy identification.
-2. **Set the Field** to Country, and choose is in from the operator dropdown.
+2. **Set the Field** to `Country`, and choose `is in` from the operator dropdown.
 3. **Select the Countries** to block using the dropdown menu. Add multiple countries by clicking **OR** and adding additional entries.
-4. Set the **Action** to Block.
+4. Set the **Action** to `Block`.
 5. Click **Save** to apply your rule.
 
 If you want detailed guidance on setting up Cloudflare-level blocks, see our related article: [Blocking Countries from Accessing Your Website Using Cloudflare](https://www.oopspam.com/blog/blocking-countries-from-accessing-your-website-using-cloudflare)
