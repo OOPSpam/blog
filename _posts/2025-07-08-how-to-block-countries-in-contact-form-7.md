@@ -108,11 +108,11 @@ Create a new rule and give it a name like **"Block Countries."**
 
 Set the rule to:
 
-* **Field**: Country
-* **Operator**: is in
+* **Field**: **`Country`**
+* **Operator**: **`is in`**
 * **Value**: Choose the countries you want to block
 
-Set the **Action** to Block and save your changes.
+Set the **Action** to **`Block`** and save your changes.
 
 To learn how to block specific countries using Cloudflare, take a look at our article: [Blocking Countries from Accessing Your Website Using Cloudflare](https://www.oopspam.com/blog/blocking-countries-from-accessing-your-website-using-cloudflare)*.*
 
