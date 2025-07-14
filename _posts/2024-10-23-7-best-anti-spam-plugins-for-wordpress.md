@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 7 Best Anti-Spam Plugins for WordPress
-date: 2024-10-23T04:00:00.000Z
+title: 7 Best Anti-Spam Plugins for WordPress in 2025
+date: 2025-07-14T11:09:00.000Z
 author: chazie
 image: /assets/posts/social-media-meta.png
 description: Discover the best anti-spam plugins for WordPress, including
