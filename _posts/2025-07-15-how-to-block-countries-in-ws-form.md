@@ -31,6 +31,8 @@ You’ll see a section to add IP addresses. Click the **plus (+) icon** to add I
 
 > **Keep in mind:** This method only blocks IPs you already know. It does not detect or block new spam sources based on geography or behavior.
 
+## **1. Block Countries Using OOPSpam Anti-Spam Plugin**
+
 ![OOPSpam Anti-Spam Plugin](/blog/assets/posts/oopspam-anti-spam-overview.png "OOPSpam Anti-Spam Plugin")
 
 For more comprehensive protection, the **[OOPSpam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/)** (that’s us 👋)  gives you advanced [filtering options for WS Form](https://www.oopspam.com/blog/wsform-block-user), including:
