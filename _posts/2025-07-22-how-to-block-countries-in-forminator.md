@@ -13,7 +13,7 @@ tags:
 ---
 ![Forminator](/blog/assets/posts/formidable-forms-home.png "Forminator")
 
-Getting spam from certain countries? If you’re using [Forminator](https://formidableforms.com/), there’s no built-in way to block submissions by country but you still have options. Here’s how to do it effectively.
+Getting spam from certain countries? If you’re using [Forminator](https://wordpress.org/plugins/forminator/), there’s no built-in way to block submissions by country but you still have options. Here’s how to do it effectively.
 
 ### **No Built-In Country Blocking in Forminator**
 
