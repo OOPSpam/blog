@@ -11,7 +11,7 @@ tags:
   - Forminator
   - Cloudflare
 ---
-![Forminator](/blog/assets/posts/formidable-forms-home.png "Forminator")
+![Forminator](/blog/assets/posts/forminator-wordpress.png "Forminator")
 
 Getting spam from certain countries? If you’re using [Forminator](https://wordpress.org/plugins/forminator/), there’s no built-in way to block submissions by country but you still have options. Here’s how to do it effectively.
 
