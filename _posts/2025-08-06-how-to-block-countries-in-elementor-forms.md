@@ -153,8 +153,8 @@ Steps:
 1. Log in to [Cloudflare.com](https://dash.cloudflare.com/login)
 2. Choose your domain > go to **Security > WAF > Firewall Rules**
 3. Create a new rule
-4. Set **Field** = Country, **Operator** = is in, and choose the countries
-5. Choose **Action** = Block
+4. Set **Field** = **`Country`**, **Operator** = **`is in`**, and choose the countries
+5. Choose **Action** = **`Block`**
 6. Save and deploy
 
 > Just like Elementor Hosting’s tool, this blocks all traffic from those countries site-wide.
