@@ -53,29 +53,29 @@ Go to your WordPress admin panel:
 
 Here’s a sample code recipe developed by the PMPro team:
 
-```
-function my_pmpro_registration_checks( $user_id, $pmpro_level_id, $user_data ) {
+```php
+function my_pmpro_registration_checks($user_id, $pmpro_level_id, $user_data)
+{
 // Define the restricted countries and levels
-$restricted_countries = array(
-'level_1' => array( 'US', 'CA' ), // Level 1 restricted to US and Canada
-'level_2' => array( 'AU' ),       // Level 2 restricted to Australia
-);
+    $restricted_countries = [
+        'level_1' => ['US', 'CA'], // Level 1 restricted to US and Canada
+        'level_2' => ['AU'],       // Level 2 restricted to Australia
+    ];
 // Get the user's selected membership level
-$membership_level_id = isset( $_POST['level'] ) ? $_POST['level'] : false;
+    $membership_level_id = isset($_POST['level']) ? $_POST['level'] : false;
 // Check if the selected level is in the restricted array
-if ( $membership_level_id && isset( $restricted_countries[ 'level_' . $membership_level_id ] ) ) {
+    if ($membership_level_id && isset($restricted_countries['level_' . $membership_level_id])) {
 // Get the billing address from the POST data
-$billing_country = isset( $_POST['billing_country'] ) ? $_POST['billing_country'] : false;
+        $billing_country = isset($_POST['billing_country']) ? $_POST['billing_country'] : false;
 // Check if the billing country is in the restricted list
-if ( $billing_country && in_array( $billing_country, $restricted_countries[ 'level_' . $membership_level_id ] ) ) {
+        if ($billing_country && in_array($billing_country, $restricted_countries['level_' . $membership_level_id])) {
 // Return an error message
-return 'Sorry, registration is not allowed from your country.';
+            return 'Sorry, registration is not allowed from your country.';
+        }
+    }
+    return false; // Allow registration if no restrictions apply
 }
-}
-return false; // Allow registration if no restrictions apply
-}
-add_filter( 'pmpro_registration_checks', 'my_pmpro_registration_checks', 10, 3 );
-
+add_filter('pmpro_registration_checks', 'my_pmpro_registration_checks', 10, 3);
 ```
 
 **Tip**: Country codes should match ISO Alpha-2 codes (e.g., 'US' for United States, 'CA' for Canada). You can find these in the pmpro_countries array in /includes/countries.php.
