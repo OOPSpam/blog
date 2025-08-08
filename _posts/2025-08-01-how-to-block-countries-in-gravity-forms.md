@@ -37,17 +37,19 @@ You can edit your form’s country list by adding code to your functions.php fil
 
 To remove “United States” from the list of countries, you can use:
 
-`add_filter( 'gform_countries', 'remove_country' );`
+```php
+add_filter( 'gform_countries', 'remove_country' );
 
-`function remove_country( $countries ) {`
+function remove_country( $countries ) {
 
-`    $key = array_search( 'United States', $countries );`
+    $key = array_search( 'United States', $countries );
 
-`    unset( $countries[ $key ] );`
+    unset( $countries[ $key ] );
 
-`    return $countries;`
+    return $countries;
 
-`}`
+}
+```
 
 This code uses `array_search` to find and remove the country from the list.
 
@@ -55,17 +57,19 @@ This code uses `array_search` to find and remove the country from the list.
 
 To add a custom country to the list, use:
 
-`add_filter( 'gform_countries', 'add_country' );`
+```php
+add_filter( 'gform_countries', 'add_country' );
 
-`function add_country( $countries ) {`
+function add_country( $countries ) {
 
-`    $countries[] = 'Custom Country';`
+    $countries[] = 'Custom Country';
 
-`    sort( $countries );`
+    sort( $countries );
 
-`    return $countries;`
+    return $countries;
 
-`}`
+}
+```
 
 ### **Limiting Countries in a Single Form**
 
