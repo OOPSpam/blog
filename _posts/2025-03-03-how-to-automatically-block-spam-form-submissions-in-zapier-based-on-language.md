@@ -144,7 +144,7 @@ This will automatically filter out any submissions from temporary or disposable 
 
 **3. Enable "Language Filtering"**
 
-OOPSpam lets you filter form submissions based on language preferences, ensuring that only messages in the languages you support make it through. Under “**Allow messages only in these languages**”, select your preferred language(s).
+OOPSpam lets you filter form submissions based on language preferences, ensuring that only messages in the languages you support make it through. Under “**Language Allowlist**”, select your preferred language(s).
 
 Any submission not matching the selected language(s) will be flagged and blocked.
 

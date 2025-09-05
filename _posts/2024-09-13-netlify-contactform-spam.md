@@ -82,7 +82,7 @@ To set up spam filtering in your Zapier flow, follow these steps:
     - **Content**: This is where the form message goes. Usually called **Data Message**.
     - **Sender IP**:  This is where the IP of the form submitter goes. Usually called **Data Ip**.
     - **Email**: This is where the form submitter's email goes. Usually called **Data Email**.
-    - **Allow messages only in these languages**: Select any languages you expect to receive form submissions in.
+    - **Language Allowlist**: Select any languages you expect to receive form submissions in.
     - **Allow messages only from these countries**: Filter submissions by country.
     - **Block messages from these countries**: Block by country.
 6. Test the action. We will use the "score" returned by OOPSpam to approve or reject submissions with [Filter Zapier](https://zapier.com/blog/filter-by-zapier-guide/) in the next step.

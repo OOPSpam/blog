@@ -70,8 +70,9 @@ Once activated, all Elementor Forms on your site will start [filtering submissio
 
 Go to the **Country Filtering** section. You’ll see two options:
 
-* Allow submissions only from these countries
-* Block submissions from these countries
+* Country Allowlist (only accept from these countries)
+* Country Blocklist (reject submissions from these countries)
+* Trusted Countries (always bypasses spam checks)
 
 ![ Country Filtering section](/blog/assets/posts/country-filtering-settings.png " Country Filtering section")
 

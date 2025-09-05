@@ -84,7 +84,7 @@ To set up spam protection, follow these steps:
    * **Content**: This is where the form message goes.
    * **Sender IP**: Leave blank. Or [follow these steps](https://discourse.webflow.com/t/how-to-track-ip-address-of-people-who-fill-out-a-form/67026/2) to capture an IP and map it to this field.
    * **Email**: Map the form submitter's email here.
-   * **Allow messages only in these languages**: Select any languages you expect to receive form submissions in.
+   * **Language Allowlist**: Select any languages you expect to receive form submissions in.
    * **Allow messages only from these countries**: Filter submissions by country.
    * **Block messages from these countries**: Block by country
 4. Test the action and use the returned "Score" to approve or reject submissions.

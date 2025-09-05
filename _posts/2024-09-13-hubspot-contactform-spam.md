@@ -72,7 +72,7 @@ To set up spam protection, follow these steps:
     - **Content**: This is where the form message goes.
     - **Sender IP**: Leave blank.
     - **Email**: Map the form submitter's email here.
-    - **Allow messages only in these languages**: Select any languages you expect to receive form submissions in.
+    - **Language Allowlist**: Select any languages you expect to receive form submissions in.
     - **Allow messages only from these countries**: Filter submissions by country. Available only if **Sender IP** is provided.
 4. Test the action and use the returned "Score" to approve or reject submissions.
 

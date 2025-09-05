@@ -57,7 +57,7 @@ Below the basic fields, OOPSpam provides several additional options to help you 
 * **Block temporary/disposable emails** – Filters out emails from throwaway domains.
 * **Block IP addresses from Cloud Providers** – Stops submissions from cloud-based bots.
 * **Block IP addresses from VPN Providers** – Blocks entries [sent through VPNs](https://www.oopspam.com/blog/how-to-block-ips-from-vpn-and-cloud-providers-in-zapier).
-* **Allow messages only in these languages** – Accepts submissions [only in selected languages](https://www.oopspam.com/blog/how-to-automatically-block-spam-form-submissions-in-zapier-based-on-language).
+* **Language Allowlist** – Accepts submissions [only in selected languages](https://www.oopspam.com/blog/how-to-automatically-block-spam-form-submissions-in-zapier-based-on-language).
 * **Allow entries only from these countries** – Accepts submissions from specific countries.
 
 Once these settings are configured to match your needs, click **Continue** to move on to the filter step.

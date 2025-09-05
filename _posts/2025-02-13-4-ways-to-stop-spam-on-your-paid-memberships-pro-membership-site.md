@@ -76,7 +76,7 @@ Now that the plugin is installed, you need to connect it to your OOPSpam account
 
    * **Block messages from specific countries** – Choose countries to block from submitting forms.
 
-   * **Allow messages only in these languages** – Select the languages you want to allow.
+   * **Language Allowlist** – Select the languages you want to allow.
 5. Click **Save Changes** to apply.
 
 💡 **When to Use This?**

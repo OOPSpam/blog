@@ -78,7 +78,7 @@ For example, if you have an e-commerce website selling products only in the USA 
 ## Blocking messages by language
 
 Another effective way to block unwanted messages is by filtering languages. If you expect your form submissions to be only in English and Spanish, there's no need to allow submissions in Russian or other languages.
-To implement this, use the *"Allow messages only in these languages"* filter to limit submissions to specific languages.
+To implement this, use the *"Language Allowlist"* filter to limit submissions to specific languages.
 
 > Note: This filter works best when your Elementor Forms includes a textarea field or any text-based field that accepts at least a few sentences.
 

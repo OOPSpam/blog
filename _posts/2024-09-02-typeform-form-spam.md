@@ -82,7 +82,7 @@ To set up spam protection, follow these steps:
     - **Content**: Map any message longer than 20 characters to this field.
     - **Sender IP**: Leave blank as Typeform doesn't provide IP.
     - **Email**: Map the email field.
-    - **Allow messages only in these languages**:  Limit submissions by language, using the value from the **Content** field.
+    - **Language Allowlist**:  Limit submissions by language, using the value from the **Content** field.
     - **Allow messages only from these countries**: Filter submissions by country (available only if **Sender IP** is provided).
 4. Test the action and use the returned "Score" to approve or reject submissions.
 

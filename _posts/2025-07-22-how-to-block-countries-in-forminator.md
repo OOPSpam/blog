@@ -68,8 +68,9 @@ Scroll to the “Forminator” section and activate [spam protection for Formina
 
 Head to the **Country Filtering** section. You’ll see two dropdown options:
 
-* Allow submissions only from these countries
-* Block submissions from these countries
+* Country Allowlist (only accept from these countries)
+* Country Blocklist (reject submissions from these countries)
+* Trusted Countries (always bypasses spam checks)
 
 ![Country Filtering section](/blog/assets/posts/country-filtering-settings.png "Country Filtering section")
 
