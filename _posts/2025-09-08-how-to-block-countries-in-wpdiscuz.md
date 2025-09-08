@@ -31,7 +31,7 @@ In WordPress, go to **Settings > OOPSpam Anti-Spam** and paste the key.
 
 ![OOPSpam Anti-Spam and paste the key](/blog/assets/posts/oopspam-api-key.png "OOPSpam Anti-Spam and paste the key")
 
-Enable [spam protection for **WPDiscuz**](https://www.oopspam.com/blog/spam-protection-for-wpdiscuz)forms.
+Enable [spam protection for **WPDiscuz** ](https://www.oopspam.com/blog/spam-protection-for-wpdiscuz)forms.
 
 ![Enable spam protection for WPDiscuz forms](/blog/assets/posts/wpdiscuz-protection.png "Enable spam protection for WPDiscuz forms")
 
