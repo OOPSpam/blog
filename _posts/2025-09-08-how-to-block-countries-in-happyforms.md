@@ -11,8 +11,6 @@ tags:
   - HappyForms
   - Cloudflare
 ---
-
-
 ![HappyForms](/blog/assets/posts/happyforms.jpg "HappyForms")
 
 ### **Can HappyForms Block Countries on Its Own?**
@@ -27,7 +25,7 @@ The fastest way to add country-level blocking to HappyForms is with the [OOPSpam
 
 * Block or allow submissions by country.
 * Filter text by language to reduce irrelevant entries.
-* Limit abuse with [frequency](https://www.oopspam.com/blog/protecting-forms-with-rate-limiting-in-wordpress-using-oopspam) controls.
+* [Limit](https://www.oopspam.com/blog/how-to-limit-form-submissions-in-happyforms) abuse with [frequency](https://www.oopspam.com/blog/protecting-forms-with-rate-limiting-in-wordpress-using-oopspam) controls.
 * Detect bots with machine learning-powered spam checks.
 * Block VPN, proxy, and TOR traffic for stronger protection.
 * Log every submission so you know what was blocked and why.
