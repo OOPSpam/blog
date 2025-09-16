@@ -76,7 +76,7 @@ From then on, traffic from those countries won’t reach your forms or any part 
 
 ## **Final Takeaway**
 
-* **OOPSpam** – Best if you want form-level filtering in HappyForms while keeping your site accessible.
+* **OOPSpam** – Best if you want [form-level filtering in HappyForms](https://www.oopspam.com/blog/5-ways-to-protect-your-happyforms-from-spam) while keeping your site accessible.
 * **Cloudflare** – Best if you need site-wide blocking against unwanted or abusive traffic.
 
 HappyForms is great for building forms but isn’t designed for security. Pair it with OOPSpam and Cloudflare for complete spam protection. Together, they keep your forms open to genuine users while blocking spam and abuse at multiple levels.
