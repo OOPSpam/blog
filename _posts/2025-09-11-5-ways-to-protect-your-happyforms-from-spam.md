@@ -49,7 +49,7 @@ Activate spam protection for HappyForms.
 
 * Block or allow submissions by [country](https://www.oopspam.com/blog/how-to-block-countries-in-happyforms) to stop irrelevant traffic.
 * Filter text by language so you only get entries in the languages you want.
-* Limit abuse with [frequency controls](https://www.oopspam.com/blog/protecting-forms-with-rate-limiting-in-wordpress-using-oopspam) that stop repeated submissions.
+* [Limit abuse](https://www.oopspam.com/blog/how-to-limit-form-submissions-in-happyforms) with [frequency controls](https://www.oopspam.com/blog/protecting-forms-with-rate-limiting-in-wordpress-using-oopspam) that stop repeated submissions.
 * Detect bots with machine learning-powered spam checks.
 * Block VPN, proxy, and TOR traffic often used by spammers.
 * Use [contextual analysis](https://www.oopspam.com/blog/introducing-contextual-spam-detection) to flag spam even when only the message body is available (no IP or email).
