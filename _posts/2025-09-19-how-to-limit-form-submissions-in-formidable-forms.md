@@ -16,6 +16,10 @@ Sometimes you don’t want a form to stay open forever. Whether you’re running
 
 With just a few settings, you can decide when a form opens, when it closes, and how many responses it will accept.
 
+## **Setting Up Form Limits in Formidable Forms**
+
+Before you begin, you’ll need to access your form’s settings to enable scheduling and entry limits.
+
 ### **Step 1: Open the Form’s Settings**
 
 To begin, log into your WordPress dashboard and navigate to **Formidable Forms → Forms**. 
