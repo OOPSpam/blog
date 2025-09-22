@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to Stop Failed Orders with Unknown Origin in WooCommerce
-date: 2025-03-06T05:06:00.000Z
+date: 2025-09-22T17:37:00.000-05:00
 author: chazie
 image: /assets/posts/stop-failed-orders-with-unknown-origin-in-woocommerce.png
 description: Stop failed WooCommerce orders with "Unknown" origin caused by card
@@ -40,7 +40,7 @@ If you’re seeing a sudden spike in failed transactions marked **"Unknown"** un
 
 ## **Quick Fix: Enable OOPSpam Protection in WooCommerce**
 
-The fastest way to stop these failed orders is by enabling two key settings in the[OOPSpam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/).
+The fastest way to stop these failed orders is by enabling two key settings in the[ OOPSpam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/).
 
 ![OOPSpam Anti-Spam plugin banner with tagline "Automate your Spam and Abuse Detection."](/blog/assets/posts/oopspam-anti-spam-overview.png "OOPSpam Anti-Spam Plugin Overview")
 
@@ -50,7 +50,9 @@ This setting automatically blocks spam orders before they enter your system, fil
 
 **How to enable it:**
 
-![WooCommerce spam protection settings enabled.](/blog/assets/posts/woocommerce-spam-protection-configuration.png "WooCommerce Spam Protection")
+![WooCommerce setting in the OOPSpam WordPress plugin](/blog/assets/posts/screenshot-2025-09-22-at-5.36.41 pm.png "WooCommerce setting in the OOPSpam WordPress plugin")
+
+
 
 1. Go to **WordPress Dashboard** → **OOPSpam Settings**.
 2. Navigate to **WooCommerce Spam Protection**.
@@ -60,10 +62,18 @@ This setting automatically blocks spam orders before they enter your system, fil
 
 This setting blocks suspicious transactions before they reach your WooCommerce order list.
 
+![Fake order with Unknown origin](/blog/assets/posts/fakeorder_woo.png "Fake order with Unknown origin")
+
 **How to enable it:**
 
 1. In **OOPSpam Settings**, locate **Block Orders from Unknown Origin**.
 2. Toggle it **ON** to prevent bot-generated orders.
+
+### 3. Block orders missing device type attribution
+
+Sometimes spam orders include a valid **Origin** but no **Device Type**. In these cases, simply enable the **“Require valid device type”** setting to block them.
+
+![Fake Orders in WooCommerce with missing Device Type](/blog/assets/posts/fake_order_woo_without_devicetype.png "Failed Orders in WooCommerce with missing Device Type")
 
 ## **Additional Security Steps to Strengthen WooCommerce Protection**
 
