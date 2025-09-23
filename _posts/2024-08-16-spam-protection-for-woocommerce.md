@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 5 ways to stop spam orders and registrations in WooCommerce
-date: 2025-01-03T23:07:00.000Z
+date: 2025-09-23T13:15:00.000-05:00
 author: onar
 image: /assets/posts/woo-header.png
 description: Learn how to prevent fake orders, spam reviews and registrations
@@ -18,7 +18,7 @@ tags:
 
 [WooCommerce](https://woocommerce.com/) is a go-to e-commerce plugin for WordPress. It supports different payment methods including Paypal, Stripe via add-ons, and standard payments like credit cards even cash & check payments. WooCommerce comes with a lot of features for free. You can start selling your products and offer a subscription with multiple currencies out of the box. No surprise WooCommerce is a leading e-commerce solution with [%36.68 market share](https://www.statista.com/statistics/710207/worldwide-ecommerce-platforms-market-share/).
 
-> 🚨 A new attack targets WooCommerce shops using Block-based checkout. Learn how to protect yourself from fake orders in our article: [Card Testing Attacks: A New Threat Vector Through WooCommerce Block-based Checkout](https://www.oopspam.com/blog/card-testing-attacks-a-new-threat-vector-through-woocommerce-block-based-checkout).
+> 🚨 New card testing attacks are hitting WooCommerce stores. [Our article](https://www.oopspam.com/blog/card-testing-attacks-a-new-threat-vector-through-woocommerce-block-based-checkout) explains how they exploit checkout pages and [how to block fake orders using Order Attribution fields like Origin and Device Type](https://www.oopspam.com/blog/how-to-stop-failed-orders-with-unknown-origin-in-woocommerce#quick-fix-enable-oopspam-protection-in-woocommerce).
 
 {% include toc.md %}
 
