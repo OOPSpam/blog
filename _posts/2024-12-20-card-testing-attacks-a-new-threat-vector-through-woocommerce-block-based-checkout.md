@@ -16,7 +16,7 @@ tags:
 ---
 Recent incidents have highlighted a concerning trend in e-commerce security: card testing attacks specifically targeting WooCommerce stores using [the Block-based Checkout](https://woocommerce.com/checkout-blocks/) feature. While this modern checkout experience offers enhanced flexibility and user experience, it has inadvertently opened up new vulnerabilities that attackers are actively exploiting.
 
-!\[Block-based Checkout in Woo](/blog/assets/posts/screenshot-2024-12-20-at-4.58.01 pm.png "Block-based Checkout in Woo")
+![Block-based Checkout in Woo](/blog/assets/posts/screenshot-2024-12-20-at-4.58.01 pm.png "Block-based Checkout in Woo")
 
 ## The Root of the Problem: Block-based Checkout and Store API
 
@@ -47,11 +47,11 @@ To [protect your WooCommerce store](https://www.oopspam.com/blog/spam-protection
 
 Install the OOPSpam plugin and enable both the Spam Protection for Woo and the **"Block orders from unknown origin"** features. This targets the specific pattern these attacks follow and can significantly reduce successful attack attempts. You can also use **“Require valid device type”** setting too.
 
-!\[WooCommerce setting in the OOPSpam WordPress plugin](/blog/assets/posts/screenshot-2024-12-20-at-5.00.58 pm.png "WooCommerce setting in the OOPSpam WordPress plugin")
+![WooCommerce setting in the OOPSpam WordPress plugin](/blog/assets/posts/oopspam-woo.png "WooCommerce setting in the OOPSpam WordPress plugin")
 
 Blocked entries will be listed under the Form Spam Entries.
 
-!\[Blocked orders with Unknown Origin in WooCommerce](/blog/assets/posts/screenshot-2025-01-10-at-11.40.04 am.png "Blocked orders with Unknown Origin in WooCommerce")
+![Blocked orders with Unknown Origin in WooCommerce](/blog/assets/posts/screenshot-2025-01-10-at-11.40.04 am.png "Blocked orders with Unknown Origin in WooCommerce")
 
 ### Additional Security Layers
 
