@@ -112,7 +112,7 @@ In parallel, our IP and email reputation engines blocked over 450,000 attempts d
 
 - **Restrict by geography**
   
-  Block countries you don’t sell to at Cloudflare WAF: [https://www.oopspam.com/blog/blocking-countries-from-accessing-your-website-using-cloudflare](https://www.oopspam.com/blog/blocking-countries-from-accessing-your-website-using-cloudflare)
+  [Block countries you don’t sell to at Cloudflare WAF](https://www.oopspam.com/blog/blocking-countries-from-accessing-your-website-using-cloudflare).
 
   Or use OOPSpam’s country restrictions to prevent order placement from selected countries while keeping the site accessible.
 
@@ -128,7 +128,7 @@ Merchants with “Block orders from unknown origin” enabled were already prote
 - Expanded gateway coverage for Unknown Origin detection
 - Added “Require valid device type” and “Minimum session page views” controls to catch more automation patterns
 
-If you haven’t enabled these yet, see our step‑by‑step guide: [https://www.oopspam.com/blog/how-to-stop-failed-orders-with-unknown-origin-in-woocommerce](https://www.oopspam.com/blog/how-to-stop-failed-orders-with-unknown-origin-in-woocommerce)
+If you haven’t enabled these yet, see our [step‑by‑step guide](https://www.oopspam.com/blog/how-to-stop-failed-orders-with-unknown-origin-in-woocommerce).
 
 ## Closing notes
 
