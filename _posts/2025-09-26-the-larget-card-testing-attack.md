@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "The largest card testing attack we’ve seen: WooCommerce targeted across all payment gateways"
+title: "Defending WooCommerce: How we blocked 450,000 card testing attempts in one week"
 date: 2025-09-26T13:09:00.000-05:00
 author: onar
 image: /assets/posts/largest-card-testing-attack-Woo.png
-description: OOPSpam detected the largest card testing campaign against WooCommerce, targeting PayPal plus credit and debit gateways. Here’s what happened and how we mitigated it.
+description: How OOPSpam blocked 450,000 card testing attempts targeting WooCommerce stores across PayPal, credit, and debit gateways in seven days.
 tags:
   - Woo
   - WooCommerce
