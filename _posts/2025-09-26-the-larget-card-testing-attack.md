@@ -89,27 +89,36 @@ In parallel, our IP and email reputation engines blocked over 450,000 attempts d
 
 ## Recommendations
 
-1. **Remove Express Checkout**.
+- **Remove Express Checkout**
+  
   Express paths can hit processors directly, skipping fraud‑relevant hooks. Removing or gating them reduces exposure.
-1. **Update WooCommerce and enable Order Attribution tracking**.
+
+- **Update WooCommerce and enable Order Attribution tracking**
+  
   Ensure you're running WooCommerce ≥ 8.5 with Order Attribution enabled. This provides the data needed for attribution-based detection rules to work effectively.
-2. **Compare attribution on fake vs legitimate orders**.
+
+- **Compare attribution on fake vs legitimate orders**
+  
     If fake orders show Unknown Origin, missing Device Type, or uniform Session page views, enable:
     - Block orders from unknown origin
     - Require valid device type
     - Minimum session page views
-3. **Add a CAPTCHA where appropriate**.
+
+- **Add a CAPTCHA where appropriate**
+  
     A lightweight CAPTCHA like Cloudflare Turnstile helps discourage automation on checkout.
 
     ![CAPTCHA examples](/blog/assets/posts/captcha.webp "CAPTCHA examples")
-4. Restrict by geography
+
+- **Restrict by geography**
+  
   Block countries you don’t sell to at Cloudflare WAF: [https://www.oopspam.com/blog/blocking-countries-from-accessing-your-website-using-cloudflare](https://www.oopspam.com/blog/blocking-countries-from-accessing-your-website-using-cloudflare)
 
   Or use OOPSpam’s country restrictions to prevent order placement from selected countries while keeping the site accessible.
 
-    ![Country and language filter settings for message restrictions.](/blog/assets/posts/country-language-filter.png "Country and Language Filtering Settings")
+![Country and language filter settings for message restrictions.](/blog/assets/posts/country-language-filter.png "Country and Language Filtering Settings")
 
-6. (Optional) Disable WooCommerce checkout via REST API
+- (Optional) **Disable WooCommerce checkout via REST API**
   If you have no third‑party integrations that rely on REST (for example, Amazon, marketplaces, or custom apps), you can enable OOPSpam’s “Disable WooCommerce checkout via REST API.” Our data indicates this wave wasn’t primarily using REST endpoints, so treat this as a defense‑in‑depth option only when safe to enable.
 
 ## For teams already using OOPSpam
