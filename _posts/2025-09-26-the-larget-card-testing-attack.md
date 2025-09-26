@@ -24,12 +24,14 @@ Merchants using OOPSpam's protection settings were already covered. Our systems 
 > - [Card testing through Block‑based Checkout](https://www.oopspam.com/blog/card-testing-attacks-a-new-threat-vector-through-woocommerce-block-based-checkout)
 > - [How to stop failed orders with Unknown origin](https://www.oopspam.com/blog/how-to-stop-failed-orders-with-unknown-origin-in-woocommerce)
 
+{% include toc.md %}
+
 ## What we saw
 
 - Large, sudden bursts of checkout attempts across multiple WooCommerce sites using both Classic and Block‑based Checkout
-- Gateway coverage: PayPal, credit, and debit processors targeted—not just PayPal
-- Orders frequently recorded with Origin = “Unknown” or missing Device Type in Order Attribution
-- Highly uniform session characteristics (for example, identical Session page views across many attempts)
+- Gateway coverage: PayPal, credit, and debit processors targeted, not just PayPal
+- Orders frequently recorded with Origin = “Unknown” or missing "Device Type" in Order Attribution
+- Highly uniform session characteristics (for example, identical "Session page views" across many attempts)
 
 ![WooCommerce order list showing multiple failed transactions.](/blog/assets/posts/multiple-failed-orders.png "WooCommerce Failed Orders List")
 
@@ -59,7 +61,7 @@ Our mitigations combine attribution‑aware rules with IP/email reputation. All 
 - Block orders from unknown origin
   - Blocks orders when WooCommerce cannot reliably attribute the origin. This has been effective against Store API‑driven automation. We broadened coverage to account for different gateway flows.
 - Require valid device type
-  - Blocks orders when the Device Type field is missing or invalid—another strong automation signal.
+  - Blocks orders when the Device Type field is missing or invalid. This is another strong automation signal.
 - Minimum session page views (new)
   - Blocks orders if the session’s page views fall below a threshold. Card‑testing bots commonly show the exact same low page‑view count across attempts.
 
@@ -87,40 +89,27 @@ In parallel, our IP and email reputation engines blocked over 450,000 attempts d
 
 ## Recommendations
 
-1. Remove Express Checkout (where feasible)
-
+1. Remove Express Checkout (where feasible) 
   Express paths can hit processors directly, skipping fraud‑relevant hooks. Removing or gating them reduces exposure.
+2. Ensure WooCommerce ≥ 8.5 and Order Attribution enabled 
+  Order Attribution is required for the protections below. Docs: [https://woocommerce.com/document/order-attribution-tracking/](https://woocommerce.com/document/order-attribution-tracking/)
+3. Compare attribution on fake vs legitimate orders
+    If fake orders show Unknown Origin, missing Device Type, or uniform Session page views, enable:
+    - Block orders from unknown origin
+    - Require valid device type
+    - Minimum session page views
+4. Add a human challenge where appropriate
+  A lightweight CAPTCHA like Cloudflare Turnstile helps discourage automation on checkout.
 
-1. Ensure WooCommerce ≥ 8.5 and Order Attribution enabled
+  ![CAPTCHA examples](/blog/assets/posts/captcha.webp "CAPTCHA examples")
+5. Restrict by geography
+  Block countries you don’t sell to at Cloudflare WAF: [https://www.oopspam.com/blog/blocking-countries-from-accessing-your-website-using-cloudflare](https://www.oopspam.com/blog/blocking-countries-from-accessing-your-website-using-cloudflare)
 
-Order Attribution is required for the protections below. Docs: [https://woocommerce.com/document/order-attribution-tracking/](https://woocommerce.com/document/order-attribution-tracking/)
+  Or use OOPSpam’s country restrictions to prevent order placement from selected countries while keeping the site accessible.
 
-1. Compare attribution on fake vs legitimate orders
-
-If fake orders show Unknown Origin, missing Device Type, or uniform Session page views, enable:
-
-- Block orders from unknown origin
-- Require valid device type
-- Minimum session page views
-
-1. Add a human challenge where appropriate
-
-A lightweight CAPTCHA like Cloudflare Turnstile helps discourage automation on checkout.
-
-![CAPTCHA examples](/blog/assets/posts/captcha.webp "CAPTCHA examples")
-
-1. Restrict by geography
-
-Block countries you don’t sell to at Cloudflare WAF: [https://www.oopspam.com/blog/blocking-countries-from-accessing-your-website-using-cloudflare](https://www.oopspam.com/blog/blocking-countries-from-accessing-your-website-using-cloudflare)
-
-Or use OOPSpam’s country restrictions to prevent order placement from selected countries while keeping the site accessible.
-
-![Country and language filter settings for message restrictions.](/blog/assets/posts/country-language-filter.png "Country and Language Filtering Settings")
-
-1. (Optional) Disable WooCommerce checkout via REST API
-
-If you have no third‑party integrations that rely on REST (for example, Amazon, marketplaces, or custom apps), you can enable OOPSpam’s “Disable WooCommerce checkout via REST API.” Our data indicates this wave wasn’t primarily using REST endpoints, so treat this as a defense‑in‑depth option only when safe to enable.
-
+  ![Country and language filter settings for message restrictions.](/blog/assets/posts/country-language-filter.png "Country and Language Filtering Settings")
+6. (Optional) Disable WooCommerce checkout via REST API
+  If you have no third‑party integrations that rely on REST (for example, Amazon, marketplaces, or custom apps), you can enable OOPSpam’s “Disable WooCommerce checkout via REST API.” Our data indicates this wave wasn’t primarily using REST endpoints, so treat this as a defense‑in‑depth option only when safe to enable.
 
 ## For teams already using OOPSpam
 
@@ -131,11 +120,6 @@ Merchants with “Block orders from unknown origin” enabled were already prote
 
 If you haven’t enabled these yet, see our step‑by‑step guide: [https://www.oopspam.com/blog/how-to-stop-failed-orders-with-unknown-origin-in-woocommerce](https://www.oopspam.com/blog/how-to-stop-failed-orders-with-unknown-origin-in-woocommerce)
 
-
 ## Closing notes
 
 This attack shows how fraudsters adapt to new WooCommerce features like Block-based Checkout. Our attribution-based controls and reputation systems effectively stop these attacks while keeping legitimate orders flowing. We'll keep updating our detection as attackers try new tactics.
-
-
- 
-
