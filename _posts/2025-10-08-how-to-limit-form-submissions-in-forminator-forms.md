@@ -76,7 +76,7 @@ This is done through [Rate Limiting Rules](https://developers.cloudflare.com/waf
 
 ### **Example Setup**
 
-* **Rule:** Monitor POST requests to /wp-admin/admin-ajax.php (the endpoint Forminator uses).
+* **Rule:** Monitor POST requests to `/wp-admin/admin-ajax.php` (the endpoint Forminator uses).
 * **Condition:** Allow up to 3 submissions per 10 minutes per IP.
 * **Action:** Block or Challenge requests that exceed the rule.
 
