@@ -25,7 +25,7 @@ Set a maximum number of submissions stored for a form. Good for event registrati
 
 ![Prevent duplicates in Bricks Forms](/blog/assets/posts/save-submission-bricks.png "Prevent duplicates in Bricks Forms")
 
-### Prevent duplicates
+### **Prevent duplicates**
 
 If you’ve turned on “Save IP address,” you can use the **`ip`** keyword to block and ignore any new submissions from that same IP address.
 
