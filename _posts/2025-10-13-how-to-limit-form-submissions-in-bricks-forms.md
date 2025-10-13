@@ -21,13 +21,17 @@ Spam, duplicate entries, and submission floods can damage your site performance 
 
 ### **Max. entries**
 
-Set a maximum number of submissions stored for a form. Good for event registrations, giveaways, or capped campaigns. Once the limit is reached, Bricks blocks further entries and shows your custom error message.
+Set a maximum number of submissions stored for a form. Good for event registrations, giveaways, or capped campaigns. 
+
+Once the limit is reached, Bricks blocks further entries and shows your custom error message.
 
 ### **Prevent duplicates**
 
-Choose one or more field IDs (like email). Enable **Save IP address** and add ip to block multiple entries from the same address.
-
 ![Prevent duplicates in Bricks Forms](/blog/assets/posts/save-submission-bricks.png "Prevent duplicates in Bricks Forms")
+
+If you’ve turned on “Save IP address,” you can use the **`ip`** keyword to block and ignore any new submissions from that same IP address.
+
+![Prevent duplicates](/blog/assets/posts/bricks-save-submission-prevent-duplicate.png "Prevent duplicates")
 
 Bricks flags duplicates, halts actions, and shows your message.
 
