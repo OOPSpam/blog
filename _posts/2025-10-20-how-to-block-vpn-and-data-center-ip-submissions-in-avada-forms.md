@@ -27,11 +27,9 @@ A quick baseline helps you pick the right controls.
 
 * **Available out of the box:**
 * * Honeypot element (stops simple bots).
-
   * Cloudflare Turnstile element (privacy-friendly challenge; better UX than legacy captchas).
 * **Not available out of the box:**
 * * IP reputation or ASN filtering (e.g., “block VPNs,” “block cloud providers”).
-
   * Country allow/deny rules or per-form rate limiting with analytics.
 
 To block VPN and data center IPs, you need a third-party plugin or an edge firewall. The most direct option for Avada Forms owners is **[OOPSpam](https://www.oopspam.com/)** (that’s us 👋).
@@ -89,7 +87,7 @@ Submit your form in an **Incognito** window. Confirm outcomes in [Spam & Ham Log
 
 If your site runs behind [Cloudflare](https://www.cloudflare.com/), block or challenge bad traffic before it hits WordPress.
 
-![Cloudflare WAF](/blog/assets/posts/blocking-countries-in-cloudflare.png "Cloudflare WAF")
+![Cloudflare WAF](/blog/assets/posts/cloudflare_was_asn.png "Cloudflare WAF")
 
 * **Bot Score Rule:** Set this expression — `cf.bot_management.score lt 30 and not cf.bot_management.verified_bot`. Choose **Managed Challenge** as the action, or **Block** if the attack is severe.
 * **ASN Rules:** Keep a list of abusive networks (like specific hosting providers). Block or rate limit them temporarily, then review daily.
