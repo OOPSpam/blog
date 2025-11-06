@@ -45,7 +45,18 @@ permalink:     /:title
 paginate:       12
 
 # Excludes
-exclude: [ Gemfile, Gemfile.lock, tale.gemspec ]
+exclude: 
+  - Gemfile
+  - Gemfile.lock
+  - tale.gemspec
+  - vendor/
+  - .bundle/
+  - node_modules/
+  - .git/
+  - .gitignore
+  - README.md
+  - LICENSE
+  - "*.sh"
 
 # Social networks
 twitter:
