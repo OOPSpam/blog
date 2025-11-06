@@ -2,12 +2,12 @@
 title:          OOPSpam Blog
 description:    "Learn how to protect your website from spam bots & manual spam."
 url:            "https://www.oopspam.com"
+baseurl:        "/blog"
 copyright: "OOPSpam LLC"
 logo: "https://www.oopspam.com/blog/assets/favicon-32x32.png"
 
 # JSON-LD
 
-baseURL: "https://www.oopspam.com/blog"
 languageCode:  "en-US"  
 
 # Google Analytics
