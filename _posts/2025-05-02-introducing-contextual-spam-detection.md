@@ -2,7 +2,7 @@
 layout: post
 title: "Introducing Context-Aware Spam Detection: Now evaluating messages
   against your website's purpose"
-date: 2025-05-02T16:24:00.000Z
+date: 2025-11-07T13:53:00.000-06:00
 author: onar
 image: /assets/posts/header_contextual.png
 description: Introducing Contextual Spam Detection. Learn how to use the OOPSpam
@@ -11,8 +11,6 @@ tags:
   - spam
   - AI
 ---
-📣 Calling anyone looking for spam protection for their websites’ forms!
-
 When you have a form on your website, you don’t always have enough background information from the sender for a traditional spam detector to properly filter. 
 
 We have developed a solution for this use case which is available to toggle on for all plans.
@@ -34,7 +32,7 @@ Use it when you have a substantial message/content field in your forms. While th
 
 > 📌 Sometimes spam comes from real people with clean IP addresses and email reputations because their devices have been compromised without their knowledge. These random spam messages that have nothing to do with your blog content typically bypass traditional filters. Contextual spam detection effectively blocks these irrelevant messages by evaluating them against your site's purpose.
 
-Another use case is using it in [Zapier](https://community.zapier.com/show-tell-5/how-to-stop-spam-in-your-zap-with-oopspam-46293), [Make](https://www.oopspam.com/blog/5-common-spam-problems-in-make-how-to-fix-them) or similar automation platforms where form solutions sometimes don't pass the form submitter's IP to the automation flow. In this case, using content and context would be much more powerful.
+Another use case is using it in [Zapier](https://www.oopspam.com/blog/5-common-spam-problems-in-zapier-how-to-fix-them), [Make](https://www.oopspam.com/blog/5-common-spam-problems-in-make-how-to-fix-them) or similar automation platforms where form solutions sometimes don't pass the form submitter's IP to the automation flow. In this case, using content and context would be much more powerful.
 
 ![An example Zapier flow](/blog/assets/posts/screenshot-2025-05-12-at-11001_erl7oi.png "An example Zapier flow")
 
@@ -48,7 +46,7 @@ Your data is not used for training purposes unless you explicitly report false p
 
 ## Availability
 
-The feature is currently available through our API and [WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/). We plan to extend support to Zapier, Make, and Bubble.io in the coming weeks.
+The feature is currently available through our [API](https://www.oopspam.com/docs/#spam-detection) and [WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/). ~~We plan to extend support to Zapier, Make, and Bubble.io in the coming weeks.~~ All official [integrations](https://www.oopspam.com/integrations/) now support Contextual Detection.
 
 In WordPress, you can find and enable this feature in the Contextual Detection tab of our plugin settings.
 
@@ -89,6 +87,6 @@ Contextual Spam Detection is currently [billed](https://www.oopspam.com/#pricing
 
 ## Things to know
 
-* This is an experimental feature currently under development. We welcome your feedback and are happy to address any questions you may have.
+* This is currently in the beta stage and under development. We welcome your feedback and are happy to answer any questions you may have.
 * Use standard detection methods if your forms don't include content fields.
-* Note that this feature does not consider IP addresses, email addresses, or URL reputation data.
+* ~~Note that this feature does not consider IP addresses, email addresses, or URL reputation data.~~ With the recent update, all other analyses work, too.
