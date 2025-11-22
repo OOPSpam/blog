@@ -155,17 +155,29 @@ Use server variables or an IP detection API to filter regions you do not serve.
 
 ## **Putting It All Together**
 
-For strong, low-friction protection:
+If you use OOPSpam, you don’t need honeypots, CAPTCHA, or manual validation, OOPSpam handles everything for you. For most users, the simplest and strongest setup is:
 
-1. Install OOPSpam (main shield + logs + ML)
-2. Add a honeypot (silent bot trap)
-3. *Optional:* Add CAPTCHA (extra verification layer)
-4. Add code-based validation for custom rules or IP filtering
+### **Use OOPSpam Anti-Spam**
 
-This combination protects your ACF Frontend Forms from every major type of spam, from low-effort bots to advanced automated attacks.
+OOPSpam replaces the need for:
+
+* Honeypots
+* CAPTCHA
+* Manual code-based validation
+* Custom security rules
+
+All of the protections are built in, and you can turn them on with a toggle, no development work required.
+
+### **Optional alternatives (if not using OOPSpam):**
+
+* Add a honeypot manually
+* Add CAPTCHA manually or via a third-party ACF field
+* Use server-side validation hooks for custom filters
+
+These methods work, but they require coding, testing, and ongoing maintenance.
 
 ## **Final Takeaway**
 
-ACF Frontend Forms are powerful, but they need protection. Use anti-spam plugins, honeypots, CAPTCHA, and server-side validation together. This layered strategy keeps your submissions clean, protects your workflow, and prevents bots from abusing your website.
+ACF Frontend Forms don’t include native spam protection, so you must add it yourself. If you want a hands-off, accurate, and easy solution, OOPSpam alone is enough. It covers all the major spam threats with one plugin and a few settings.
 
-If you want the strongest, most hands-off solution, OOPSpam + a honeypot is the most effective setup for ACF.
+If you prefer to implement protection yourself, you can combine honeypots, CAPTCHA, and server-side validation to build your own layered setup, but it requires more work.
