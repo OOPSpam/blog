@@ -224,7 +224,7 @@ This error occurs when a form submission reaches the server without a Turnstile 
 
 Cloudflare documents **`300*`** as [client side execution](https://developers.cloudflare.com/turnstile/troubleshooting/client-side-errors/error-codes/#:~:text=Generic%20client%20execution%20error) related errors. In practice, these often show up when the widget cannot complete its front end flow reliably.[ ](https://developers.cloudflare.com/turnstile/troubleshooting/client-side-errors/error-codes/?utm_source=chatgpt.com)
 
-**How to fix**
+#### **How to fix**
 
 * Disable minify, combine, delay, and defer settings for Turnstile scripts.
 * Check for console errors and blocked resources.
@@ -237,13 +237,13 @@ Retrying may work temporarily, but persistent errors point to browser or script-
 
 ![Challenge Execution Failure (600010)](/blog/assets/posts/challenge-execution-failure-600010-.png "Challenge Execution Failure (600010)")
 
-**Common query:** 
+#### Error Codes:
 
 * `600010`
 
 Cloudflare documents **`600*`** as [challenge execution failures](https://developers.cloudflare.com/turnstile/troubleshooting/client-side-errors/error-codes/#:~:text=Challenge%20execution%20failure). In the Cloudflare community, `600010` is often discussed as a configuration or environment issue that can be influenced by browser state and blockers.[ ](https://developers.cloudflare.com/turnstile/troubleshooting/client-side-errors/error-codes/?utm_source=chatgpt.com)
 
-**How to fix**
+#### **How to fix**
 
 * Confirm your site key and secret key are correct and belong to the same widget setup.
 * Clear browser cache and cookies, then retry.
