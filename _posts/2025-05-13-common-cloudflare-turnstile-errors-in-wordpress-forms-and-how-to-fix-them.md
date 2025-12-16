@@ -14,7 +14,9 @@ tags:
 ![Cloudflare Turnstile homepage](/blog/assets/posts/cloudflare-turnstile-homepage.png "Cloudflare Turnstile")
 
 [Cloudflare Turnstile](https://www.oopspam.com/blog/cloudflare-turnstile) is a user-friendly, privacy-first [CAPTCHA alternative](https://www.oopspam.com/blog/best-captcha-alternatives) that’s becoming popular with WordPress users. But it can run into issues, especially with form plugins. This guide covers common Turnstile errors in WordPress forms and how to fix them fast.
+
 <!-- Quick Links (Table of Contents) for: Common Cloudflare Turnstile Errors in WordPress Forms -->
+
 <nav class="turnstile-quick-links" aria-label="Quick links">
   <p><strong>Quick Links</strong></p>
   <ul>
@@ -102,7 +104,7 @@ This issue can happen with any WordPress form builder, but we’ve seen the most
 
 ### **4. "Invalid sitekey" or "Invalid domain" Errors**
 
-!["Invalid domain" Cloudflare Turnstile Errors](/blog/assets/posts/invalid-domain-errors.png "\\\\\\\"Invalid domain\\\\\\\" Errors")
+!["Invalid domain" Cloudflare Turnstile Errors](/blog/assets/posts/invalid-domain-errors.png "\\\\\\\\"Invalid domain\\\\\\\\" Errors")
 
 These errors are typically due to incorrect settings in your Cloudflare dashboard.
 
@@ -154,20 +156,20 @@ These errors occur when a user takes too long to solve the challenge or if their
 
 ![Cloudflare Turnstile error code 106010](/blog/assets/posts/error-code-106010.png "Cloudflare Turnstile error code 106010")
 
-**Common query:**
+#### Error Codes:
 
-* `106010 error code`
+* `106010`
 
 Cloudflare groups Turnstile errors into families. The **`106*`** family is documented as [invalid parameters](https://developers.cloudflare.com/turnstile/troubleshooting/client-side-errors/error-codes/). That aligns with how **`106010`** tends to appear in real implementations, especially when something about the request environment or parameters is not accepted.
 
-**Common WordPress level causes to check**
+#### **Common WordPress level causes to check**
 
 * Content Security Policy blocks Turnstile resources
 * A privacy or script blocking extension interferes with required data or cookies
 * Aggressive caching or script optimization changes request behavior on first load
 * VPNs, proxies, or network security tooling interferes
 
-**How to fix**
+#### **How to fix**
 
 * Test in Incognito mode and a second browser to rule out extensions.
 * Temporarily disable performance features that delay or rewrite scripts, then retest.
@@ -178,13 +180,13 @@ Cloudflare groups Turnstile errors into families. The **`106*`** family is docum
 
 ![Turnstile token missing](/blog/assets/posts/turnstile-token-missing.png "Turnstile token missing")
 
-**Common query:** 
+#### **Common query:** 
 
 * `turnstile token missing`
 
 Turnstile automatically injects a hidden input named `cf-turnstile-response`inside a form. That input carries the token that your server should validate. If that field is missing, empty, or not included in the request, Siteverify can return errors like `missing-input-response`.
 
-**Most likely causes**
+#### **Most likely causes**
 
 * The widget never rendered, so no token was created
 * The form submits via AJAX but does not include the token
@@ -192,7 +194,7 @@ Turnstile automatically injects a hidden input named `cf-turnstile-response`insi
 * Caching or optimization breaks the widget lifecycle, so the token is not refreshed
 * The token is expired or already redeemed, then validation fails
 
-**How to fix**
+#### **How to fix**
 
 * Confirm the widget renders on the page and the hidden `cf-turnstile-response` field exists.[](https://developers.cloudflare.com/turnstile/get-started/client-side-rendering/?utm_source=chatgpt.com)
 * [](https://developers.cloudflare.com/turnstile/get-started/client-side-rendering/?utm_source=chatgpt.com)If the form uses AJAX, confirm the token is included in the AJAX payload.
@@ -200,7 +202,7 @@ Turnstile automatically injects a hidden input named `cf-turnstile-response`insi
 * Reduce caching or exclude the form page. Also exclude Turnstile scripts from delay and minify.
 * If the form stays on the same page after submission, ensure the Turnstile widget resets and generates a fresh token before another submit.
 
-**Related server side error codes**
+#### **Related server side error codes**
 
 Cloudflare documents these Siteverify response errors, which map directly to real WordPress issues:
 
@@ -216,13 +218,11 @@ This error occurs when a form submission reaches the server without a Turnstile 
 
 ![Client-Side Execution Errors (300010, 300030, 300031)](/blog/assets/posts/execution-errors-300010-300030-300031-.png "Client-Side Execution Errors (300010, 300030, 300031)")
 
-**Common queries:**
+#### Error Codes:
 
-* `cloudflare turnstile error 300010`
-* `cloudflare turnstile error 300030`
-* `cloudflare turnstile error 300031`
+* `300010`, `300030`, `300031`
 
-Cloudflare documents **`300`** as [client side execution](https://developers.cloudflare.com/turnstile/troubleshooting/client-side-errors/error-codes/#:~:text=Generic%20client%20execution%20error) related errors. In practice, these often show up when the widget cannot complete its front end flow reliably.[ ](https://developers.cloudflare.com/turnstile/troubleshooting/client-side-errors/error-codes/?utm_source=chatgpt.com)
+Cloudflare documents **`300*`** as [client side execution](https://developers.cloudflare.com/turnstile/troubleshooting/client-side-errors/error-codes/#:~:text=Generic%20client%20execution%20error) related errors. In practice, these often show up when the widget cannot complete its front end flow reliably.[ ](https://developers.cloudflare.com/turnstile/troubleshooting/client-side-errors/error-codes/?utm_source=chatgpt.com)
 
 **How to fix**
 
@@ -239,9 +239,9 @@ Retrying may work temporarily, but persistent errors point to browser or script-
 
 **Common query:** 
 
-* `600010 cloudflare`
+* `600010`
 
-Cloudflare documents **`600`** as [challenge execution failures](https://developers.cloudflare.com/turnstile/troubleshooting/client-side-errors/error-codes/#:~:text=Challenge%20execution%20failure). In the Cloudflare community, `600010` is often discussed as a configuration or environment issue that can be influenced by browser state and blockers.[ ](https://developers.cloudflare.com/turnstile/troubleshooting/client-side-errors/error-codes/?utm_source=chatgpt.com)
+Cloudflare documents **`600*`** as [challenge execution failures](https://developers.cloudflare.com/turnstile/troubleshooting/client-side-errors/error-codes/#:~:text=Challenge%20execution%20failure). In the Cloudflare community, `600010` is often discussed as a configuration or environment issue that can be influenced by browser state and blockers.[ ](https://developers.cloudflare.com/turnstile/troubleshooting/client-side-errors/error-codes/?utm_source=chatgpt.com)
 
 **How to fix**
 
