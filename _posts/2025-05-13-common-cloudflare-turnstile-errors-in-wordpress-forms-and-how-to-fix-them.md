@@ -245,13 +245,12 @@ These errors may show up in logs or browser dev tools:
   }
   th, td {
     border: 2px solid black;
-    padding: 10px;
+    padding: 12px;
     text-align: left;
+    vertical-align: top;
   }
   th {
     background-color: #f9f9f9;
-  }
-  td:first-child {
     font-weight: bold;
   }
 </style>
@@ -260,44 +259,86 @@ These errors may show up in logs or browser dev tools:
   <thead>
     <tr>
       <th>Error Code</th>
-      <th>Description</th>
-      <th>Retry?</th>
+      <th>Category</th>
+      <th>Meaning</th>
+      <th>Retry</th>
       <th>Fix</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>100\\\\*\\\\**</td>
-      <td>Initialization error</td>
+      <td>100xxx</td>
+      <td>Initialization</td>
+      <td>Widget failed to start</td>
       <td>No</td>
-      <td>Refresh the page, check for bots</td>
+      <td>Refresh page, check scripts</td>
     </tr>
     <tr>
-      <td>105\\\\*\\\\**</td>
+      <td>105xxx</td>
+      <td>API</td>
       <td>Deprecated API usage</td>
       <td>No</td>
-      <td>Update your plugin or integration code</td>
+      <td>Update plugin or integration</td>
     </tr>
     <tr>
-      <td>110510</td>
-      <td>Inconsistent user-agent</td>
+      <td>106010</td>
+      <td>API</td>
+      <td>Unsupported integration</td>
       <td>No</td>
-      <td>Ask user to disable spoofing extensions</td>
+      <td>Update or replace plugin</td>
     </tr>
     <tr>
-      <td>300\\\\*\\\\**</td>
-      <td>Client-side execution error</td>
-      <td>Yes</td>
-      <td>Retry challenge, check for bot behavior</td>
+      <td>110100</td>
+      <td>Config</td>
+      <td>Invalid sitekey</td>
+      <td>No</td>
+      <td>Verify site key</td>
     </tr>
     <tr>
-      <td>600\\\\*\\\\**</td>
-      <td>Challenge execution failure</td>
+      <td>110200</td>
+      <td>Config</td>
+      <td>Unknown domain</td>
+      <td>No</td>
+      <td>Add domain to allowed list</td>
+    </tr>
+    <tr>
+      <td>110420</td>
+      <td>Client</td>
+      <td>Invalid action</td>
+      <td>No</td>
+      <td>Fix widget parameters</td>
+    </tr>
+    <tr>
+      <td>110430</td>
+      <td>Client</td>
+      <td>Invalid cData</td>
+      <td>No</td>
+      <td>Use valid alphanumeric data</td>
+    </tr>
+    <tr>
+      <td>110600 / 110620</td>
+      <td>Token</td>
+      <td>Timeout or expired</td>
       <td>Yes</td>
-      <td>Retry challenge, update browser</td>
+      <td>Refresh and retry</td>
+    </tr>
+    <tr>
+      <td>300xxx</td>
+      <td>Client</td>
+      <td>Execution error</td>
+      <td>Yes</td>
+      <td>Check browser and JS</td>
+    </tr>
+    <tr>
+      <td>600010</td>
+      <td>Challenge</td>
+      <td>Execution failure</td>
+      <td>Yes</td>
+      <td>Retry, update browser</td>
     </tr>
   </tbody>
 </table>
+
 
 ## **Use OOPSpam for Advanced Spam Filtering**
 
