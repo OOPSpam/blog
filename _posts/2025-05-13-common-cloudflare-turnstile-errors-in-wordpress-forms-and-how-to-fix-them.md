@@ -15,7 +15,39 @@ tags:
 
 [Cloudflare Turnstile](https://www.oopspam.com/blog/cloudflare-turnstile) is a user-friendly, privacy-first [CAPTCHA alternative](https://www.oopspam.com/blog/best-captcha-alternatives) that’s becoming popular with WordPress users. But it can run into issues—especially with form plugins. This guide covers common Turnstile errors in WordPress forms and how to fix them fast.
 
-## **Why Cloudflare Turnstile Errors Happen in WordPress**
+### **Quick jump links**
+
+<a href="#why-errors-happen">Why Turnstile errors happen in WordPress</a>
+
+<a href="#verification-failed">Verification failed, please try again later</a>
+
+<a href="#widget-not-loading">Widget not visible or not loading</a>
+
+<a href="#token-missing">Turnstile token missing, missing-input-response</a>
+
+<a href="#ajax-blocked">Form blocked after passing Turnstile, AJAX issues</a>
+
+<a href="#invalid-sitekey">Invalid sitekey, 110100</a>
+
+<a href="#unknown-domain">Unknown domain, 110200</a>
+
+<a href="#invalid-action-cdata">Invalid action, invalid cData, 110420, 110430</a>
+
+<a href="#timeout">Challenge timed out, 110600, 110620</a>
+
+<a href="#106010">Error code 106010</a>
+
+<a href="#300010">Error code 300010</a>
+
+<a href="#300030">Error code 300030</a>
+
+<a href="#300031">Error code 300031</a>
+
+<a href="#600010">Error code 600010</a>
+
+<a href="#general-checklist">General troubleshooting checklist</a>
+
+<a id="why-errors-happen"></a>Why Cloudflare Turnstile errors happen in WordPress
 
 Turnstile issues usually come down to misconfigurations, plugin conflicts, browser-related problems, or expired credentials. WordPress adds complexity due to its wide variety of themes, plugins, and caching systems—all of which can interfere with how Turnstile renders or validates.
 
@@ -82,7 +114,7 @@ This issue can happen with any WordPress form builder, but we’ve seen the most
 
 ### **4. "Invalid sitekey" or "Invalid domain" Errors**
 
-!["Invalid domain" Cloudflare Turnstile Errors](/blog/assets/posts/invalid-domain-errors.png "\"Invalid domain\" Errors")
+!["Invalid domain" Cloudflare Turnstile Errors](/blog/assets/posts/invalid-domain-errors.png "\\\"Invalid domain\\\" Errors")
 
 These errors are typically due to incorrect settings in your Cloudflare dashboard.
 
@@ -94,7 +126,8 @@ These errors are typically due to incorrect settings in your Cloudflare dashboar
 #### **How to Fix:**
 
 * Visit your Cloudflare Turnstile dashboard and verify:
-* * The correct sitekey is being used
+
+  * The correct sitekey is being used
   * Your domain is listed under **Allowed Domains**
 
 ### **5. "Invalid action" or "Invalid cData"**
@@ -163,13 +196,13 @@ These errors may show up in logs or browser dev tools:
   </thead>
   <tbody>
     <tr>
-      <td>100\*\**</td>
+      <td>100\\\*\\\**</td>
       <td>Initialization error</td>
       <td>No</td>
       <td>Refresh the page, check for bots</td>
     </tr>
     <tr>
-      <td>105\*\**</td>
+      <td>105\\\*\\\**</td>
       <td>Deprecated API usage</td>
       <td>No</td>
       <td>Update your plugin or integration code</td>
@@ -181,13 +214,13 @@ These errors may show up in logs or browser dev tools:
       <td>Ask user to disable spoofing extensions</td>
     </tr>
     <tr>
-      <td>300\*\**</td>
+      <td>300\\\*\\\**</td>
       <td>Client-side execution error</td>
       <td>Yes</td>
       <td>Retry challenge, check for bot behavior</td>
     </tr>
     <tr>
-      <td>600\*\**</td>
+      <td>600\\\*\\\**</td>
       <td>Challenge execution failure</td>
       <td>Yes</td>
       <td>Retry challenge, update browser</td>
