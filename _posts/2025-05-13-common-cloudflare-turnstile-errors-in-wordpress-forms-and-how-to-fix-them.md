@@ -15,39 +15,7 @@ tags:
 
 [Cloudflare Turnstile](https://www.oopspam.com/blog/cloudflare-turnstile) is a user-friendly, privacy-first [CAPTCHA alternative](https://www.oopspam.com/blog/best-captcha-alternatives) that’s becoming popular with WordPress users. But it can run into issues—especially with form plugins. This guide covers common Turnstile errors in WordPress forms and how to fix them fast.
 
-### **Quick jump links**
-
-<a href="#why-errors-happen">Why Turnstile errors happen in WordPress</a>
-
-<a href="#verification-failed">Verification failed, please try again later</a>
-
-<a href="#widget-not-loading">Widget not visible or not loading</a>
-
-<a href="#token-missing">Turnstile token missing, missing-input-response</a>
-
-<a href="#ajax-blocked">Form blocked after passing Turnstile, AJAX issues</a>
-
-<a href="#invalid-sitekey">Invalid sitekey, 110100</a>
-
-<a href="#unknown-domain">Unknown domain, 110200</a>
-
-<a href="#invalid-action-cdata">Invalid action, invalid cData, 110420, 110430</a>
-
-<a href="#timeout">Challenge timed out, 110600, 110620</a>
-
-<a href="#106010">Error code 106010</a>
-
-<a href="#300010">Error code 300010</a>
-
-<a href="#300030">Error code 300030</a>
-
-<a href="#300031">Error code 300031</a>
-
-<a href="#600010">Error code 600010</a>
-
-<a href="#general-checklist">General troubleshooting checklist</a>
-
-<a id="why-errors-happen"></a>Why Cloudflare Turnstile errors happen in WordPress
+## Why Cloudflare Turnstile errors happen in WordPress
 
 Turnstile issues usually come down to misconfigurations, plugin conflicts, browser-related problems, or expired credentials. WordPress adds complexity due to its wide variety of themes, plugins, and caching systems—all of which can interfere with how Turnstile renders or validates.
 
@@ -114,7 +82,7 @@ This issue can happen with any WordPress form builder, but we’ve seen the most
 
 ### **4. "Invalid sitekey" or "Invalid domain" Errors**
 
-!["Invalid domain" Cloudflare Turnstile Errors](/blog/assets/posts/invalid-domain-errors.png "\\\"Invalid domain\\\" Errors")
+!["Invalid domain" Cloudflare Turnstile Errors](/blog/assets/posts/invalid-domain-errors.png "\\\\"Invalid domain\\\\" Errors")
 
 These errors are typically due to incorrect settings in your Cloudflare dashboard.
 
@@ -162,7 +130,105 @@ These errors occur when a user takes too long to solve the challenge or if their
 * Ask the user to refresh the page and retry
 * Ensure the system clock is synced correctly
 
-## **Technical Turnstile Error Codes and What They Mean**
+### **7. Cloudflare Turnstile error code `106010`**
+
+![Cloudflare Turnstile error code 106010](/blog/assets/posts/error-code-106010.png "Cloudflare Turnstile error code 106010")
+
+**Common query:**
+
+`106010 error code`
+
+Cloudflare groups Turnstile errors into families. The **`106*`** family is documented as [invalid parameters](https://developers.cloudflare.com/turnstile/troubleshooting/client-side-errors/error-codes/). That aligns with how **`106010`** tends to appear in real implementations, especially when something about the request environment or parameters is not accepted.
+
+**Common WordPress level causes to check**
+
+* Content Security Policy blocks Turnstile resources
+* A privacy or script blocking extension interferes with required data or cookies
+* Aggressive caching or script optimization changes request behavior on first load
+* VPNs, proxies, or network security tooling interferes
+
+**How to fix**
+
+* Test in Incognito mode and a second browser to rule out extensions.
+* Temporarily disable performance features that delay or rewrite scripts, then retest.
+* Check DevTools Network and Console for blocked requests or 4xx errors on Turnstile resources.
+* Review CSP rules and allow Cloudflare Turnstile endpoints if you enforce CSP.
+
+### **8. “Turnstile token missing”**
+
+![Turnstile token missing](/blog/assets/posts/turnstile-token-missing.png "Turnstile token missing")
+
+**Common query:** `turnstile token missing`
+
+Turnstile automatically injects a hidden input named **`cf-turnstile-response`** inside a form. That input carries the token that your server should validate. If that field is missing, empty, or not included in the request, Siteverify can return errors like **`missing-input-response`**.
+
+**Most likely causes**
+
+* The widget never rendered, so no token was created
+* The form submits via AJAX but does not include the token
+* The request reaches the server, but the integration does not read `cf-turnstile-response` correctly
+* Caching or optimisation breaks the widget lifecycle, so the token is not refreshed
+* The token is expired or already redeemed, then validation fails
+
+**How to fix**
+
+* Confirm the widget renders on the page and the hidden `cf-turnstile-response` field exists.[](https://developers.cloudflare.com/turnstile/get-started/client-side-rendering/?utm_source=chatgpt.com)
+* [](https://developers.cloudflare.com/turnstile/get-started/client-side-rendering/?utm_source=chatgpt.com)If the form uses AJAX, confirm the token is included in the AJAX payload.
+* Make sure your integration validates the token via **[Siteverify](https://developers.cloudflare.com/turnstile/get-started/server-side-validation/)**, and that the server sends both the token and the secret.
+* Reduce caching or exclude the form page. Also exclude Turnstile scripts from delay and minify.
+* If the form stays on the same page after submission, ensure the Turnstile widget resets and generates a fresh token before another submit.
+
+**Related server side error codes**
+
+Cloudflare documents these Siteverify response errors, which map directly to real WordPress issues:
+
+* `missing-input-secret`
+* `invalid-input-secret`
+* `missing-input-response`
+* `invalid-input-response`
+* `bad-request`
+
+This error occurs when a form submission reaches the server without a Turnstile response token attached.
+
+### **9. Client-Side Execution Errors (`300010`, `300030`, `300031`)**
+
+![Client-Side Execution Errors (300010, 300030, 300031)](/blog/assets/posts/execution-errors-300010-300030-300031-.png "Client-Side Execution Errors (300010, 300030, 300031)")
+
+**Common queries:**
+ `cloudflare turnstile error 300010`
+ `cloudflare turnstile error 300030`
+ `cloudflare turnstile error 300031`
+
+Cloudflare documents **`300`** as client side execution related errors. In practice, these often show up when the widget cannot complete its front end flow reliably.[ ](https://developers.cloudflare.com/turnstile/troubleshooting/client-side-errors/error-codes/?utm_source=chatgpt.com)
+
+**How to fix**
+
+* Disable minify, combine, delay, and defer settings for Turnstile scripts.
+* Check for console errors and blocked resources.
+* Test without browser extensions and without a VPN or proxy.
+* Check for CSP rules blocking `challenges.cloudflare.com`
+
+Retrying may work temporarily, but persistent errors point to browser or script-loading issues.
+
+### **10. Challenge Execution Failure (`600010`)**
+
+![Challenge Execution Failure (600010)](/blog/assets/posts/challenge-execution-failure-600010-.png "Challenge Execution Failure (600010)")
+
+**Common query:** `600010 cloudflare`
+
+Cloudflare documents **`600`** as [challenge execution failures](https://developers.cloudflare.com/turnstile/troubleshooting/client-side-errors/error-codes/?utm_source=chatgpt.com#:~:text=Challenge%20execution%20failure). In the Cloudflare community, 600010 is often discussed as a configuration or environment issue that can be influenced by browser state and blockers.[ ](https://developers.cloudflare.com/turnstile/troubleshooting/client-side-errors/error-codes/?utm_source=chatgpt.com)
+
+**How to fix**
+
+* Confirm your site key and secret key are correct and belong to the same widget setup.
+* Clear browser cache and cookies, then retry.
+* Disable extensions, especially privacy and script blockers.
+* If it occurs only on certain networks, test without VPN or filtering.
+
+This error is expected behavior when Turnstile detects abnormal execution conditions.
+
+### 
+**Technical Turnstile Error Codes and What They Mean**
 
 These errors may show up in logs or browser dev tools:
 
@@ -196,13 +262,13 @@ These errors may show up in logs or browser dev tools:
   </thead>
   <tbody>
     <tr>
-      <td>100\\\*\\\**</td>
+      <td>100\\\\*\\\\**</td>
       <td>Initialization error</td>
       <td>No</td>
       <td>Refresh the page, check for bots</td>
     </tr>
     <tr>
-      <td>105\\\*\\\**</td>
+      <td>105\\\\*\\\\**</td>
       <td>Deprecated API usage</td>
       <td>No</td>
       <td>Update your plugin or integration code</td>
@@ -214,13 +280,13 @@ These errors may show up in logs or browser dev tools:
       <td>Ask user to disable spoofing extensions</td>
     </tr>
     <tr>
-      <td>300\\\*\\\**</td>
+      <td>300\\\\*\\\\**</td>
       <td>Client-side execution error</td>
       <td>Yes</td>
       <td>Retry challenge, check for bot behavior</td>
     </tr>
     <tr>
-      <td>600\\\*\\\**</td>
+      <td>600\\\\*\\\\**</td>
       <td>Challenge execution failure</td>
       <td>Yes</td>
       <td>Retry challenge, update browser</td>
@@ -230,7 +296,9 @@ These errors may show up in logs or browser dev tools:
 
 ## **Use OOPSpam for Advanced Spam Filtering**
 
-While Turnstile helps block form abuse, it isn’t a complete solution. Some sophisticated bots can bypass it—or you may still get nuisance submissions. That’s where tools like the **[OOPSpam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/)** (that’s us 👋) come in.
+Turnstile helps reduce automated form abuse, but it is not the whole solution. Some spam still gets through, and some attacks focus on content quality rather than pure automation.
+
+**[OOPSpam WordPress plugin](<>)** (that’s us 👋) adds a second layer that helps catch nuisance submissions, patterns, and language based abuse, without adding more friction for real users.
 
 ![OOPSpam WordPress plugin](/blog/assets/posts/oopspam-anti-spam-overview.png "OOPSpam WordPress plugin")
 
