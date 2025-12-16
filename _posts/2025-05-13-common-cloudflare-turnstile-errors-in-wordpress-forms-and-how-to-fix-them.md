@@ -82,7 +82,7 @@ This issue can happen with any WordPress form builder, but we’ve seen the most
 
 ### **4. "Invalid sitekey" or "Invalid domain" Errors**
 
-!["Invalid domain" Cloudflare Turnstile Errors](/blog/assets/posts/invalid-domain-errors.png "\\\\\"Invalid domain\\\\\" Errors")
+!["Invalid domain" Cloudflare Turnstile Errors](/blog/assets/posts/invalid-domain-errors.png "\\\\\\\"Invalid domain\\\\\\\" Errors")
 
 These errors are typically due to incorrect settings in your Cloudflare dashboard.
 
@@ -232,7 +232,7 @@ Cloudflare documents **`600`** as [challenge execution failures](https://develop
 
 This error is expected behavior when Turnstile detects abnormal execution conditions.
 
-**Technical Turnstile Error Codes and What They Mean**
+## **Technical Turnstile Error Codes and What They Mean**
 
 These errors may show up in logs or browser dev tools:
 
