@@ -14,6 +14,26 @@ tags:
 ![Cloudflare Turnstile homepage](/blog/assets/posts/cloudflare-turnstile-homepage.png "Cloudflare Turnstile")
 
 [Cloudflare Turnstile](https://www.oopspam.com/blog/cloudflare-turnstile) is a user-friendly, privacy-first [CAPTCHA alternative](https://www.oopspam.com/blog/best-captcha-alternatives) that’s becoming popular with WordPress users. But it can run into issues, especially with form plugins. This guide covers common Turnstile errors in WordPress forms and how to fix them fast.
+<!-- Quick Links (Table of Contents) for: Common Cloudflare Turnstile Errors in WordPress Forms -->
+<nav class="turnstile-quick-links" aria-label="Quick links">
+  <p><strong>Quick Links</strong></p>
+  <ul>
+    <li><a href="#why-cloudflare-turnstile-errors-happen-in-wordpress">Why Cloudflare Turnstile errors happen in WordPress</a></li>
+    <li><a href="#1-cloudflare-turnstile-verification-failed-please-try-again-later">Cloudflare Turnstile verification failed, please try again later</a></li>
+    <li><a href="#2-turnstile-widget-not-displaying-on-form">Turnstile widget not displaying on form</a></li>
+    <li><a href="#3-form-submission-blocked-even-after-passing-turnstile">Form submission blocked even after passing Turnstile</a></li>
+    <li><a href="#4-invalid-sitekey-or-invalid-domain-errors">Invalid sitekey or invalid domain errors</a></li>
+    <li><a href="#5-invalid-action-or-invalid-cdata">Invalid action or invalid cData errors</a></li>
+    <li><a href="#6-turnstile-challenge-timeout">Turnstile challenge timeout</a></li>
+    <li><a href="#7-cloudflare-turnstile-error-code-106010">Cloudflare Turnstile error code 106010</a></li>
+    <li><a href="#8-turnstile-token-missing">Turnstile token missing</a></li>
+    <li><a href="#9-client-side-execution-errors-300010-300030-300031">Client-side execution errors (300010, 300030, 300031)</a></li>
+    <li><a href="#10-challenge-execution-failure-600010">Challenge execution failure (600010)</a></li>
+    <li><a href="#technical-turnstile-error-codes-and-what-they-mean">Technical Turnstile error codes and what they mean</a></li>
+    <li><a href="#use-oopspam-for-advanced-spam-filtering">Use OOPSpam for advanced spam filtering</a></li>
+    <li><a href="#final-thoughts">Final thoughts</a></li>
+  </ul>
+</nav>
 
 ## Why Cloudflare Turnstile errors happen in WordPress
 
