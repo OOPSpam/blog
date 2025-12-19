@@ -4,182 +4,201 @@ title: How to Limit Form Submissions in WPForms?
 date: 2024-12-17T02:04:00.000Z
 author: chazie
 image: /assets/posts/limitform_wpforms.jpg
-description: Learn how to use OOPSpam with WPForms to limit form submissions,
-  block spam, and enhance your site's security and user experience effectively.
+description: Limit form submissions in WPForms using the Form Locker addon and
+  OOPSpam rate limiting. Learn how to control entry caps, user limits, and spam
+  safely.
 tags:
   - Rate Limiting
   - WPForms
+  - Form Locker Addon
 ---
-![How to limit form submissions in WPForms with an illustration of a funnel filtering submissions using OOPSpam.](/blog/assets/posts/limitform_wpforms.jpg "How to Limit Form Submissions in WPForms with OOPSpam")
+![WPForms](/blog/assets/posts/wpforms-home.png "WPForms")
 
-Forms are essential to any website, acting as a bridge between you and your audience. 
+If you want to limit submissions in [WPForms](https://wpforms.com/), you have two solid options.
 
-From gathering feedback to processing registrations, [WPForms](https://wpforms.com/) makes creating user-friendly forms effortless. But with this convenience comes the challenge of managing spam and bot activity. Flooded inboxes, duplicate submissions, and malicious activity can overwhelm your site. 
+Use the Form Locker Addon when you need hard rules like a total entry cap, scheduling, logged-in access, or “one entry per person.” Add **[OOPSpam](https://www.oopspam.com/)** (that’s us 👋) rate limiting when your problem is repeated abuse, form floods, or the same IP or email submitting over and over in a short period.
 
-Fortunately, you can keep your forms secure and stress-free by leveraging advanced tools like OOPSpam. 
+This guide shows both, so you can choose what fits your form.
 
-In this guide, we’ll show you how to use OOPSpam to limit form submissions in WPForms while improving security and user experience.
+## **What “limit form submissions” can mean**
 
-## What Is Rate Limiting, and Why Is It Important?
+People use this phrase in a few different ways. [WPForms](https://www.oopspam.com/blog/wpforms-block-user) can handle each one, but the tool you use depends on the goal.
 
-[Rate limiting](https://www.oopspam.com/blog/protecting-forms-with-rate-limiting-in-wordpress-using-oopspam) sets boundaries for form submissions. Think of it as a speed limit: it determines how many times a user can submit a form within a specific timeframe. 
+* **Limit total entries**: Stop accepting submissions after a set number (example: 100 contest entries).
+* **Limit entries per person**: Restrict repeat submissions by email, IP, or logged-in user.
+* **Limit by time**: Open and close the form on specific dates, or run daily or weekly limits.
+* **Limit floods and repeated abuse**: Reduce automated or repeated submissions from the same source.
 
-For instance, you can allow only three submissions per hour to deter spam without frustrating genuine users.
+Form Locker handles the first three. OOPSpam is best for the last one.
 
-### Why Does Rate Limiting Matter?
+## **Option 1: Limit submissions using WPForms only (Form Locker Addon)**
 
-Bots and malicious users can exploit forms in several ways:
+If your goal is to cap entries, control access, or run time-based submission rules, [Form Locker](https://wpforms.com/docs/how-to-install-and-use-the-form-locker-addon-in-wpforms/) is the cleanest built-in approach.
 
-* **System Overload:** Multiple submissions can overwhelm servers, slowing down or crashing your site.
-* **Poor User Experience:** Legitimate users may face delays or interruptions due to overloaded forms.
-* **Cluttered Inbox:** Junk submissions can bury real messages, making it harder to manage valuable data.
+### **Step 1: Install WPForms Pro and activate Form Locker**
 
-By implementing rate limiting, you can ensure your site performs efficiently and maintains a secure, user-friendly experience.
+Install and activate **WPForms Pro** (or higher). In WordPress, go to **WPForms → Addons**. Search for **Form Locker**, then click **Install Addon** and activate it.
 
-## The Challenges of WPForms Without Rate Limiting
+### **Step 2: Open the form and go to Form Locker settings**
 
-![WPForms dashboard welcome screen with tips for creating your first form in WordPress.](/blog/assets/posts/intro-wpforms.png "WPForms Dashboard: Getting Started with Your First Form")
+Next, open the form you want to restrict.
 
-While WPForms includes basic spam protection tools like [CAPTCHA](https://www.oopspam.com/blog/best-captcha-alternatives) and [honeypots](https://www.oopspam.com/blog/ways-to-stop-spam#honeypot-filter-spam-with-a-hidden-field), they may not fully protect against advanced threats. Without additional measures, you might encounter:
+Go to **WPForms → All Forms**, then click **Edit** on the form you want to limit. This opens the WPForms form builder.
 
-* **Spam Floods:** Automated bots submitting hundreds of junk entries.
-* **Duplicate Submissions:** Users accidentally clicking "Submit" multiple times.
-* **Brute-Force Attacks:** Hackers exploiting login or registration forms through repeated attempts.
+![WPForms Form Locker ](/blog/assets/posts/wpforms-form-locker.png "WPForms Form Locker ")
 
-### Why WPForms Alone Isn’t Enough
+Inside the builder, click **Settings**, then select **Form Locker**. You’ll now see all [Form Locker controls](https://wpforms.com/docs/how-to-install-and-use-the-form-locker-addon-in-wpforms/) in one place, including entry limits, user restrictions, and scheduling options.
 
-Bots now account for 42% of all web traffic, and [65% of these are malicious](https://futurecio.tech/bots-compose-42-of-overall-web-traffic-study-finds/). They often [bypass basic protections](https://www.oopspam.com/blog/bypassing-captcha) like CAPTCHAs or honeypots, making advanced solutions like OOPSpam essential.
+### **Limit the total number of entries**
 
-While WPForms’ built-in features are effective against simple threats, they often lack the adaptability and depth to handle complex or persistent attacks. Tools like [OOPSpam complement WPForms](https://www.oopspam.com/integrations/spam-protection-for-wpforms) by providing advanced protections such as rate limiting, keyword filtering, and geo-blocking.
+Use this when your form should stop after a specific number of submissions.
 
-## How OOPSpam Enhances WPForms with Rate Limiting
+1. Under **Entry Limits and Restrictions**, toggle **Enable total entry limit** on.
+2. Set the **Limit** (example: 100).
+3. Add a **Closed Message** that displays when the form is full.
+4. Click **Save**.
 
-[OOPSpam](https://www.oopspam.com/) (that’s us! 👋) integrates seamlessly with WPForms, delivering advanced protection to your forms. While rate limiting is a key feature, we offer much more to keep your forms secure (more on that later!).
+This is ideal for contests, registration caps, applications, and limited-time offers.
 
-#### Key Features of OOPSpam for WPForms
+### **Limit entries per user (by IP or email)**
 
-* **Submission Limits:** Define how many submissions are allowed per IP or email address within a specified timeframe.
-* **Block Duration:** Automatically block users or bots exceeding the submission limits for a set period.
-* **Multi-Layered Protection:** Beyond rate limiting, OOPSpam includes spam filtering, keyword blocking, and geo-restrictions for comprehensive form security.
+![Limit entries per user (by IP or email)](/blog/assets/posts/restrict-entries-ip-email.png "Limit entries per user (by IP or email)")
 
-#### Seamless Integration with WPForms
+Use this when you want to stop repeat submissions from the same person.
 
-OOPSpam is designed to work effortlessly with WPForms, enhancing its existing functionality without disrupting its intuitive interface. The setup is simple, allowing you to apply advanced spam protection, access configurable rate-limiting settings, and make real-time adjustments to meet changing needs.
+1. Toggle **Enable user entry limit** on.
+2. Choose your restriction method:
+3. * Restrict by IP address
 
-## Step-by-Step Guide: Setting Up Rate Limiting in WPForms Using OOPSpam
+   * Restrict by email address
+4. If you restrict by email, select the email field from the dropdown.
+5. Set the maximum number of entries allowed per user.
+6. Choose a timeframe such as:
+7. * per 24 hours
 
-Here’s [how to protect WPForms](https://www.oopspam.com/blog/spam-protection-for-wpforms) with OOPSpam’s advanced spam protection:
+   * per 7 days
 
-### Step 1: Install and Activate OOPSpam
+   * per month
 
-* Go to the WordPress Plugin Repository.
-* Search for "OOPSpam Anti-Spam Plugin."
-* Click **Install** and then **Activate**.
-* Once activated, OOPSpam will appear in your WordPress dashboard.
+   * per year
+8. Add the message users see when they hit the limit.
+9. Click **Save**.
 
-📌 Navigate to OOPSpam Settings and ensure Spam Protection for WPForms is enabled to activate advanced security for your forms.
+This is a great fit for surveys, appointment requests, lead forms, and signups where duplicates cause trouble.
 
-### Step 2: Access OOPSpam Settings
+### **Require unique answers for specific fields**
 
-![OOPSpam General Settings screen showing API key input, sensitivity level adjustment, and navigation tabs including Rate Limiting.](/blog/assets/posts/oopspam-general-settings.png "Navigating OOPSpam General Settings: API Key and Sensitivity Configuration")
+![Require unique answers for specific fields](/blog/assets/posts/require-unique-answers-for-specific-fields.png "Require unique answers for specific fields")
 
-* Navigate to the **OOPSpam** tab in your WordPress dashboard.
-* Click on the **Settings** menu to access the configuration options.
+Use this when a user must submit a unique value like an email address, phone number, or name.
 
-### Step 3: Enable Rate Limiting
+1. Click the field you want to protect (commonly Email, Phone, Name, or Single Line Text).
+2. Open the **Advanced** settings for that field.
+3. Check **Require unique answer**.
+4. Save the form.
 
-* Toggle the **Enable Rate Limiting** option in the settings menu.
-* Activating this feature applies rate limiting across all connected forms.
+If someone tries to submit a duplicate value, WPForms will block it and show an error.
 
-### Step 4: Configure Rate-Limiting Parameters
+### **Schedule when your form is open**
 
-![Rate Limiting Settings screen with options to enable rate limiting, set submission limits, block duration, and data clean-up frequency.](/blog/assets/posts/rate-limiting-settings.png "Configuring Rate Limiting Settings to Control Form Submissions in WordPress")
+![Schedule when your form is open](/blog/assets/posts/wpforms-form-scheduling.png "Schedule when your form is open")
 
-Customize the following options based on your needs:
+Use this when the form should only accept entries during a certain time window.
 
-* **Max Submissions per IP per Hour:** Limit how many times a single IP can submit a form in a given timeframe (e.g., five submissions per hour) to block spam while allowing genuine users.
-* **Max Submissions per Email per Hour:** Prevent repeated submissions from the same email, ideal for maintaining clean data in surveys or registrations.
-* **Block Duration:** Temporarily block users who exceed submission limits (e.g., for 24 hours) to deter abuse while permitting future access.
-* **Data Clean-Up Frequency:** Set how often the rate-limiting tracking logs are cleared. For example, scheduling a clean-up every 48 hours ensures the table stays optimized while maintaining accurate tracking of recent submission activity.
+1. In **Settings → Form Locker**, find **Form Scheduling**.
+2. Set your start date and end date.
+3. Save.
 
-### Step 5: Save and Test Your Settings
+This is useful for seasonal promotions, limited-time registrations, and application windows.
 
-Click **Save Changes** to apply your configurations. Test your form by submitting it multiple times to ensure the rate limits and blocking rules function as intended.
+### **Restrict your form to logged-in users only**
 
-> 📌  **Helpful Tip:** Adjust settings, if necessary, based on your testing outcomes or site-specific requirements. For high-traffic forms, start with a more lenient limit and adjust over time based on observed activity.
+Use this when the form is for members, customers, students, or internal teams.
 
-## Tips for Maximizing WPForms Security
+1. In **Settings → Form Locker**, find **Form Restrictions**.
+2. Enable the logged-in restriction option.
+3. Save.
 
-![OOPSpam dashboard displaying API usage, response time, active API key, and spam test data.](/blog/assets/posts/oopspam-dashboard-.png "OOPSpam Dashboard")
+## **Option 2: Add OOPSpam for advanced rate limiting and abuse control**
 
-While OOPSpam provides an effective protection, here are [additional ways](https://www.oopspam.com/blog/new-wp-website-checklist) to secure your forms:
+Form Locker can limit entries per user, but it is not designed to stop fast, repeated attempts from automated traffic. That’s where [rate limiting](https://www.oopspam.com/blog/protecting-forms-with-rate-limiting-in-wordpress-using-oopspam) helps.
 
-1. **Keep Plugins Updated:** Regular updates fix vulnerabilities and improve performance.
-2. **Combine Tools:** Use [OOPSpam](https://www.oopspam.com/wordpress) alongside CAPTCHA for multi-layered defense.
-3. **Monitor Submission Logs:** Regularly review logs to identify spam trends and adjust settings accordingly.
+Rate limiting sets a “submission speed limit.” For example, you can allow only a few submissions per hour from the same IP or the same email. When the limit is exceeded, the source gets blocked for a defined period.
 
-## Why Choose OOPSpam for WPForms?
+### **Step 1: Install and connect OOPSpam**
 
-While WPForms offers basic spam protection, these are often insufficient against more sophisticated threats like bots, manual spamming, or targeted abuse. OOPSpam takes WPForms to the next level by integrating advanced, customizable tools into one powerful plugin. 
+To add rate limiting and advanced spam protection, start by installing **[OOPSpam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/)**.
 
-Here’s why OOPSpam is an ideal choice for WPForms users:
+![Install and connect OOPSpam](/blog/assets/posts/oopspam-anti-spam-overview.png "Install and connect OOPSpam")
 
-### 1. IP and Email Blocking
+In WordPress, go to **Plugins → Add New**, search for **OOPSpam Anti-Spam**, then install and activate the plugin.
 
-OOPSpam maintains a database of millions of malicious IP addresses and email domains, ensuring most spam is blocked before it even reaches you. However, if any spam manages to slip through, you have the option to quickly block those specific IPs or email domains manually.
+Next, [create an account](https://app.oopspam.com/Identity/Account/Login) at OOPSpam and copy your API key. 
 
-This can be easily done through the **Manual Moderation** tab, giving you full control over your form’s security.
+![OOPSpam ](/blog/assets/posts/oopspam-dashboard-api.png "OOPSpam ")
 
-![Manual moderation settings in OOPSpam plugin showing options to block emails, IPs, and keywords.](/blog/assets/posts/manual-moderation-settings.png "How to Configure Manual Moderation Settings in OOPSpam for WordPress")
+In your WordPress dashboard, go to **OOPSpam → General Settings**, paste the API key into the field provided, and save your changes.
 
-### 2. Geo-Blocking and Language Filters
+![OOPSpam General Settings](/blog/assets/posts/oopspam-api-key.png "OOPSpam General Settings")
 
-![Spam filter settings showing options to allow messages only from specific countries and languages.](/blog/assets/posts/country-language-filter.png "Filtering Messages by Country and Language to Prevent Spam")
+### **Step 2: Enable protection for WPForms**
 
-Restrict submissions to [specific regions](https://www.oopspam.com/blog/blocking-countries-from-accessing-your-website-using-cloudflare) or languages to align with your target audience. For example:
+Once connected, go to the OOPSpam settings for integrations and turn on spam protection for **WPForms**.
 
-* If your business serves only the U.S. and Canada, block submissions from other regions.
-* If your audience is primarily English-speaking, filter out submissions in other languages.
+![Enable protection for WPForms](/blog/assets/posts/wpforms_activate-spam-protection.png "Enable protection for WPForms")
 
-### 3. Keyword Filtering
+This ensures submissions are checked before they are delivered.
 
-OOPSpam uses an advanced machine learning model to automatically detect and block spam messages with high accuracy. Additionally, you have the option to manually block specific keywords or phrases commonly associated with spam. 
+### **Step 3: Enable rate limiting and set your limits**
 
-This dual approach ensures your inbox stays clean and focused on legitimate inquiries while giving you full control over what gets filtered.
+With [WPForms spam protection](https://www.oopspam.com/blog/spam-protection-for-wpforms) enabled, open the **Rate Limiting** tab in OOPSpam.
 
-### 4. Advanced Rate Limiting
+Toggle **Enable Rate Limiting** on to activate submission limits. From here, you can control how often a form can be submitted from the same source.
 
-OOPSpam’s rate-limiting feature outperforms the basic protections of most form builders, providing:
+![Enable rate limiting and set your limits](/blog/assets/posts/enabled-rate-limiting-settings.png "Enable rate limiting and set your limits")
 
-* Precise control over submission limits by IP or email.
-* Adjustable block durations to discourage excessive activity without locking out genuine users permanently.
+Configure:
 
-### 5. Seamless Integration with WPForms
+* **Max submissions per IP per hour -** Limits how many times one IP can submit a form in an hour to prevent repeated automated attempts.
+* **Max submissions per email per hour -** Restricts how often the same email can be used to submit a form within an hour.
+* **Block duration (hours) -** Sets how long an IP or email is temporarily blocked after exceeding the limit.
+* **Data cleanup schedule -** Automatically clears old rate-limit logs to keep the database optimized.
 
-OOPSpam is designed to integrate effortlessly with WPForms and other popular form builders like [Gravity Forms](https://www.oopspam.com/blog/spam-protection-for-gravity-forms), [Elementor Forms](https://www.oopspam.com/blog/spam-protection-for-elementor-forms), and [Contact Form 7](https://www.oopspam.com/spam-filter-for-contactform7). It enhances WPForms' functionality without disrupting its user-friendly interface.
+Save changes.
 
-### 6. Privacy-Focused and GDPR-Compliant
+A simple starting point for public contact forms is to keep limits reasonable, then tighten them only if you see [abuse patterns](https://help.oopspam.com/wordpress/form-entries/).
 
-OOPSpam values privacy and ensures compliance with GDPR and other data protection regulations. Unlike many other plugins, OOPSpam doesn’t store sensitive user data, providing peace of mind for you and your users.
+## **Option 3: Field-level limits (input control, not submission control)**
 
-### 7. Comprehensive Spam and Ham Logs
+These do not limit how many people can submit the form. They limit what users can type into specific fields, which improves data quality and prevents invalid entries.
 
-With detailed logs of blocked (spam) and legitimate (ham) entries, OOPSpam provides full visibility into your form’s activity. This transparency allows you to analyze patterns, refine your settings, and improve security measures.
+### **Limit words or characters in a field**
 
-Additionally, we offer a convenient way to log these entries for further analysis. For more details, check out our[ guide on logging form entries](https://help.oopspam.com/wordpress/form-entries/).
+For text fields, go to the field’s **Advanced** tab in Field Options and set word or character limits where available. This is useful for message fields, short-answer forms, and any form where you want clean, consistent input.
 
-#### Strengthen WPForms Security with OOPSpam
+### **Limit number ranges in the Numbers field**
 
-![OOPSpam Anti-Spam banner promoting automated spam and abuse detection](/blog/assets/posts/oopspam-anti-spam-overview.png "OOPSpam Anti-Spam WordPress plugin")
+![WPForms Numbers field](/blog/assets/posts/wpforms-limit-numbers-form.jpg "WPForms Numbers field")
 
-One of OOPSpam’s greatest advantages is its ability to consolidate multiple advanced features into a single, easy-to-use plugin. Instead of juggling multiple tools to address spam, abuse, and regional filtering, OOPSpam handles everything seamlessly.
+If you use a [Numbers field](https://wpforms.com/developers/how-to-limit-range-allowed-in-numbers-field/), WPForms supports basic range limits directly in Field Options.
 
-By pairing OOPSpam with WPForms, you gain an [advanced spam protection](https://www.oopspam.com/blog/wpforms-block-user) system that goes beyond the basics, ensuring secure, efficient, and user-friendly forms for all your website needs.
+1. Click your **Numbers** field.
+2. Go to **Field Options** and find the **Range** controls.
+3. Set your minimum and maximum values.
 
-> 📌 OOPSpam continues to expand its compatibility with additional platforms and form builders, making it a reliable long-term solution for comprehensive spam protection. For the latest integrations, visit the [OOPSpam WordPress Plugin page](https://wordpress.org/plugins/oopspam-anti-spam/).
+For specialized rules like enforcing even numbers only, you can add a CSS class in the Advanced tab and apply a small JavaScript snippet site-wide, so the rule can be reused across multiple forms.
 
-## Final Thoughts
+## **Which option should you use?** 
 
-Protecting your WPForms from spam is essential for a smooth and secure website. OOPSpam WordPress plugin makes it easy with features like rate limiting, keyword filtering, and geo-blocking to keep your forms secure and efficient.
+If you only need a submission cap, scheduling, login-only access, or unique entries, Form Locker is usually enough.
 
-Get started with OOPSpam today and enjoy hassle-free, spam-free forms!
+If you are dealing with repeated abuse, automated bursts, or the same IP or email hammering your forms, add OOPSpam rate limiting on top of Form Locker.
+
+Many sites run both:
+
+* Form Locker to control how many entries are accepted and who can submit
+* OOPSpam to prevent floods from consuming those limited slots
+
+## **Final thoughts**
+
+Limiting WPForms submissions is not one setting, it is a mix of controls depending on what you are trying to stop. Start with Form Locker for hard rules like caps, schedules, and per-user limits. Add OOPSpam when you need true rate limiting and [stronger abuse prevention](https://www.oopspam.com/integrations/spam-protection-for-wpforms).
