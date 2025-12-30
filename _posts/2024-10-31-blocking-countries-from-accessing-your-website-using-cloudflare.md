@@ -8,111 +8,154 @@ description: Restrict website access by country using Cloudflare. Control spam,
   enhance security, and manage your site's reach effectively with simple setup
   steps.
 tags:
-  - country blocking
-  - spam control
+  - Cloudflare
+  - Blocking Country
 ---
-![Graphic illustration on how to block countries from accessing your site using Cloudflare.](/blog/assets/posts/blockcountrieswithcloudflare-2x.webp "Blocking Countries from Accessing Your Website Using Cloudflare")
+![Cloudflare](/blog/assets/posts/cloudflare.png "Cloudflare")
 
-Controlling access to your website by country is simple. With Cloudflare, you can manage access based on visitors' locations, making it easy to limit certain countries from accessing your site. In this guide, we’ll walk you through setting up country restrictions with Cloudflare, weighing the pros and cons, and exploring alternative ways to keep your site accessible to a global audience without the spam.
+Blocking access to your website based on a visitor’s country is something Cloudflare *can* do, but it’s also one of the most misunderstood and frequently misused security controls.
 
-## Why Block Access by Country?
+[Cloudflare](https://www.cloudflare.com/) uses WAF Firewall Rules, and country blocking is best used for compliance or temporary risk reduction, not as a primary spam solution. Recent community [discussions](https://community.cloudflare.com/t/firewall-block-country-blocked-country-cf-connection/79833) and Cloudflare documentation clarify that country blocking alone is rarely an effective long-term solution for spam or abuse.
 
-Blocking countries might sound a bit drastic, but there are some good reasons to consider it:
+This updated guide explains:
 
-* **Enhanced Security:** Limiting access to high-risk regions can help prevent malicious activity on your site.
-* **Better Server Performance:** By reducing traffic from irrelevant or potentially harmful regions, you’ll free up resources for genuine visitors.
-* **Spam Reduction:** Many websites see spam or bot activity concentrated in specific regions, so blocking these countries can help.
+* How country blocking actually works in Cloudflare today
+* When country blocking makes sense
+* Better alternatives for stopping spam without restricting legitimate users
 
-Whether you’re looking to reduce spam or secure sensitive information, restricting country access can give you more control over who interacts with your site.
+## **What “Country Blocking” Really Means in Cloudflare**
 
-## How to Block Countries Using Cloudflare
+Cloudflare does IP-based geolocation, not user identity verification. When a request reaches Cloudflare’s edge:
 
-With Cloudflare, blocking specific countries is straightforward. Here’s how to set it up:
+* Cloudflare maps the visitor’s IP address to a country using its GeoIP database
+* That country value is evaluated in security rules
+* Actions such as Block, Managed Challenge, or Allow are applied
 
-### Sign In or Create an Account
+Important limitations:
 
-First, log into your Cloudflare account. If you’re new to Cloudflare, you can sign up at [Cloudflare.com](https://www.cloudflare.com) for free.
+* IP geolocation is not 100% accurate
+* VPNs, proxies, and Tor can easily change a visitor’s apparent country
+* A “blocked country” does not equal a “blocked attacker”
 
-![Cloudflare signup page with email, password, and CAPTCHA verification.](/blog/assets/posts/cloudflare-signup.png "Cloudflare Signup")
+Because of this, Cloudflare and security professionals generally recommend layered controls, not blanket country bans.
 
-Complete the signup process by entering your **Email** and **Password**, then verify your identity using the "Verify you are human" checkbox.
+## **When Blocking Countries *Does* Make Sense**
 
-### Add Your Website
+Blocking access by country can be reasonable if:
 
-Once logged in, add your website by clicking **Continue**. Cloudflare will scan your DNS records and set up your domain.
+* You must comply with legal or licensing restrictions
+* You are responding to a temporary, region-specific attack
+* You want to protect specific areas (admin, login, APIs)
 
-![Cloudflare domain setup screen with a domain entered and 'Continue' button highlighted.](/blog/assets/posts/cloudflare-domain.png "Cloudflare Domain")
+It is not ideal if your main goal is stopping spam.
 
-Select the **Free Plan** if you're looking to use basic features, including country blocking.
+## **How to Block Countries Using Cloudflare**
 
-![Cloudflare plan selection screen with Free plan highlighted and Continue button indicated.](/blog/assets/posts/plan-selection.png "Plan Selection")
+![How to Block Countries Using Cloudflare](/blog/assets/posts/blocking-countries-in-cloudflare.png "How to Block Countries Using Cloudflare")
 
-✨ **Quick note:** Subdomains aren’t supported on the free plan.
+### **Step 1: Log in to Cloudflare**
 
-### Update Your Nameservers
+Sign in to your [Cloudflare dashboard](https://dash.cloudflare.com/) and select your website.
 
-To apply Cloudflare’s settings to your website, you’ll need to [change your domain’s nameservers](https://developers.cloudflare.com/automatic-platform-optimization/get-started/change-nameservers/). Follow Cloudflare’s instructions to update your domain’s nameservers, pointing them to Cloudflare’s nameservers. 
+### **Step 2: Go to WAF Firewall Rule**
 
-This process can take up to 24 hours to propagate globally.
+Navigate to: **Security → WAF → Firewall Rules**
 
-![Cloudflare nameserver update instructions with Click to Copy buttons and Continue highlighted.](/blog/assets/posts/nameserver-update.png "Nameserver Update")
+### **Step 3: Create a New Rule**
 
-Cloudflare will notify you by email once your nameservers are active.
+Click **Create rule** and name it something clear, like: *Block Countries*
 
-### Access Security Settings
+### **Step 4: Set the Rule Condition**
 
-![Cloudflare WAF settings for creating a firewall rule to block specific countries.](/blog/assets/posts/blocking-countries-in-cloudflare.png "Country Blocking")
+In the rule builder:
 
-Once setup is complete, go to your Cloudflare dashboard. From there, navigate to **Security > WAF (Web Application Firewall)**.
+* **Field:** Country
+* **Operator:** is in
+* **Value:** Select the country you want to block
 
-### Create a New Rule
+To block multiple countries:
 
-1. Select **Create a New Rule** and follow these steps:
+* Add **OR** conditions, or
+* Use a country list (if available)
 
-   * **Name Your Rule:** Give it a recognizable name, like “Block Countries.”
-   * **Choose Countries to Block:**
+Behind the scenes, Cloudflare evaluates: ip.src.country
 
-     * Under **Field**, choose **Country** and enter the country names you want to block.
-     * To add multiple countries, click **OR** to add another entry.
-   * **Action:** Set the action to **Block**.
-2. Hit **Save** to activate your rule!
+### **Step 5: Choose an Action**
 
-### Test Your Setup
+You can choose:
 
-Once your rule is in place, test it using a VPN set to a blocked country to make sure it’s working as expected.
+* **Block** – completely deny access
+* **Managed Challenge** – CAPTCHA/browser check (often safer)
 
-## Drawbacks of Blocking Entire Countries
+> **Tip:**  For most sites, **Managed Challenge** is better than a hard block.
 
-While blocking countries has its perks, there are several important downsides to consider:
+### **Step 6: Save and Deploy**
 
-* **Reduced Reach:** Blocking regions can prevent legitimate users from accessing your site, potentially leading to lost traffic, customers, or clients from those areas.
-* **SEO Impact:** Geo-blocking can negatively affect SEO by [limiting search engine crawlers' access](https://community.shopify.com/c/shopify-apps/can-geo-blocking-affect-my-site-s-seo/td-p/1950142), especially if they originate from blocked regions. This restriction might reduce your site’s visibility in search results or cause de-indexing in those areas. Google generally accepts geo-blocking, but inconsistent practices could trigger penalties.
-* **User Experience:** Users from blocked countries may feel excluded or frustrated, impacting your brand's reputation. For businesses aiming for a global audience, this approach might be counterproductive.
+Save the rule. Changes apply globally within seconds.
 
-If your primary goal is to reduce spam or protect user data, consider alternative methods like targeted spam filtering before committing to country-wide restrictions.
+## **The Downsides of Blocking Entire Countries**
 
-### Alternatives to Country Blocking with OOPSpam
+Before you rely on country blocking, understand the risks:
 
-If blocking entire countries feels too restrictive, consider **[OOPSpam ](https://www.oopspam.com/)**(that’s us 👋), a reliable solution that has been using machine learning to stop spam without limiting accessibility. Here’s why OOPSpam could be the perfect [alternative for spam management](https://www.oopspam.com/blog/best-turnstile-alternatives):
+* Legitimate users may be blocked
+* [VPN](https://www.cloudflare.com/learning/access-management/what-is-a-vpn/) users can bypass restrictions
+* SEO visibility can be reduced in blocked regions
+* Spam often continues anyway
 
-* **Machine Learning-Based Spam Prevention:** OOPSpam uses advanced filtering to block spam and suspicious submissions by targeting spammy behavior, not entire regions.
-* **Global Accessibility with Local Security:** Keep your site open to legitimate users worldwide while filtering out unwanted activity.
-* **Seamless Integration:** OOPSpam is easy to connect with platforms like [WordPress](https://www.oopspam.com/wordpress), [Bubble.io](https://help.oopspam.com/other-integrations/bubble-io/), [Zapier](https://zapier.com/apps/oopspam/integrations), and [Make](https://www.make.com/en/register?promo=oopspam-anti-spam-app-partner-program), making it a versatile choice if you want to avoid country-based restrictions.
+This is why many Cloudflare users and security teams consider country blocking a last resort.
 
-With OOPSpam, you can enjoy both global reach and local security without the need for restrictive country blocking tools like [Cloudflare Turnstile](https://www.oopspam.com/blog/cloudflare-turnstile).
+## **A Better Alternative: Stop Spam Without Blocking Countries**
 
-### Frequently Asked Questions (FAQs)
+If your main goal is stopping spam, not restricting access by region, blocking entire countries at the Cloudflare level is usually the wrong tool. A better approach is form-level country control, where only spam submissions are blocked while your website stays accessible. This is exactly what **[OOPSpam](https://www.oopspam.com/)** (that’s us 👋) is designed for.
 
-**1. Is blocking a country a long-term solution?** Blocking certain countries can work for immediate control, but it’s often not ideal for long-term security or reach, especially if you have a global audience.
+Instead of blocking visitors before they even reach your site, OOPSpam filters form submissions only, using behavior-based detection and optional country rules.
 
-**2. Can I block multiple countries on Cloudflare?** Yes! You can set multiple conditions in one rule. Just add each country under the OR option to apply it to several regions.
+## **How to Use OOPSpam for Country Blocking** 
 
-**3. Does country blocking affect SEO?** Absolutely. Blocking regions can reduce search visibility in those areas, so consider how much regional reach matters to you before setting restrictions.
+![OOPSpam ](/blog/assets/posts/oopspam-anti-spam-overview.png "OOPSpam ")
 
-**4. How can I prevent spam without blocking entire countries?** Tools like OOPSpam provide targeted spam filtering. They allow open access to your site while blocking spam effectively, making it a great alternative.
+### **Step 1: Install and Connect OOPSpam**
 
-## Final Thoughts
+Install the **[OOPSpam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/)** plugin (WordPress) and connect via API. 
 
-Blocking countries through Cloudflare is a powerful option for those wanting to secure their site or reduce unwanted activity. However, blocking entire regions may impact SEO, reach, and user experience. If you’re looking for a non-restrictive solution, why not give OOPSpam a try? It’s easy to integrate and offers robust spam protection while keeping your site open to legitimate traffic worldwide!
+![Install and Connect OOPSpam](/blog/assets/posts/oopspam-dashboard-api.png "Install and Connect OOPSpam")
 
-Ready to keep your website open yet spam-free? Explore OOPSpam and discover a smarter way to protect your site!
+Create an account at **[OOPSpam.com](https://app.oopspam.com/Identity/Account/Login)** and copy your API key. Paste it into **OOPSpam → General Settings.**
+
+![OOPSpam General Settings](/blog/assets/posts/oopspam-api-key.png "OOPSpam General Settings")
+
+### **Step 2: Enable Form Protection**
+
+Turn on spam protection for your forms (e.g. WPForms, WS Form, Gravity Forms). This ensures all submissions are checked before being saved.
+
+![Enable Form Protection](/blog/assets/posts/wpforms_activate-spam-protection.png "Enable Form Protection")
+
+### **Step 3: Configure Country Filtering**
+
+Go to **OOPSpam → Settings → Country Filtering** and choose one of the following:
+
+* **Trusted Countries –** Always allow submissions from selected countries and skip spam checks
+   (useful for low-risk regions or where your business operates)
+* **Country Allowlist –** Accept form submissions only from selected countries
+* **Country Blocklist –** Block submissions from selected countries  (Trusted Countries always override this)
+
+![Configure Country Filtering](/blog/assets/posts/country-filtering-settings.png "Configure Country Filtering")
+
+Save your settings once complete.
+
+### **Key advantages:**
+
+* Country allowlists and blocklists at the form level
+* Trusted Countries to prevent false positives
+* VPN, proxy, and TOR blocking
+* [Rate limiting](https://www.oopspam.com/blog/protecting-forms-with-rate-limiting-in-wordpress-using-oopspam) and language filtering
+* [Contextual](https://www.oopspam.com/blog/introducing-contextual-spam-detection), behavior-based spam detection
+* [Logs](https://help.oopspam.com/wordpress/form-entries/) and monitoring for visibility
+
+Your website remains accessible, and only spam submissions are blocked.
+
+## **Final Thoughts**
+
+Blocking countries with Cloudflare is possible, but it’s not the silver bullet many guides make it out to be.
+
+Use country blocking when you truly need it. Use OOPSpam when your goal is stopping spam without blocking real users. If you want a secure site that stays accessible worldwide, focusing on behavior-based spam detection is usually the smarter choice.
