@@ -17,7 +17,7 @@ Blocking access to your website based on a visitor’s country is something Clou
 
 [Cloudflare](https://www.cloudflare.com/) uses WAF Firewall Rules, and country blocking is best used for compliance or temporary risk reduction, not as a primary spam solution. Recent community [discussions](https://community.cloudflare.com/t/firewall-block-country-blocked-country-cf-connection/79833) and Cloudflare documentation clarify that country blocking alone is rarely an effective long-term solution for spam or abuse.
 
-This updated guide explains:
+This guide explains:
 
 * How country blocking actually works in Cloudflare today
 * When country blocking makes sense
