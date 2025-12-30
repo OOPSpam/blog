@@ -33,7 +33,7 @@ Cloudflare does IP-based geolocation, not user identity verification. When a req
 
 Important limitations:
 
-* IP geolocation is not 100% accurate
+* [IP geolocation](https://developers.cloudflare.com/network/ip-geolocation/) is not 100% accurate
 * VPNs, proxies, and Tor can easily change a visitor’s apparent country
 * A “blocked country” does not equal a “blocked attacker”
 
