@@ -15,9 +15,9 @@ tags:
 
 Blocking access to your website based on a visitor’s country is something Cloudflare *can* do, but it’s also one of the most misunderstood and frequently misused security controls.
 
-[Cloudflare](https://www.cloudflare.com/) uses WAF Firewall Rules, and country blocking is best used for compliance or temporary risk reduction, not as a primary spam solution. Recent community [discussions](https://community.cloudflare.com/t/firewall-block-country-blocked-country-cf-connection/79833) and Cloudflare documentation clarify that country blocking alone is rarely an effective long-term solution for spam or abuse.
+Cloudflare’s tooling, terminology, and best practices have changed over time. Many guides (including older ones) still reference “Firewall Rules”, even though Cloudflare has officially moved this functionality into WAF Custom Rules. In addition, recent community [discussions ](https://community.cloudflare.com/t/firewall-block-country-blocked-country-cf-connection/79833)and Cloudflare documentation clarify that country blocking alone is rarely an effective long-term solution for spam or abuse.
 
-This guide explains:
+This guide explains:[](https://www.cloudflare.com/)
 
 * How country blocking actually works in Cloudflare today
 * When country blocking makes sense
@@ -39,6 +39,14 @@ Important limitations:
 
 Because of this, Cloudflare and security professionals generally recommend layered controls, not blanket country bans.
 
+### Important terminology update
+
+> Cloudflare **no longer uses “Firewall Rules”** as a primary feature.
+
+The correct feature is now:  **WAF → Custom Rules**
+
+If a guide tells you to create a “Firewall Rule,” it is using outdated Cloudflare terminology.
+
 ## **When Blocking Countries *Does* Make Sense**
 
 Blocking access by country can be reasonable if:
@@ -49,49 +57,58 @@ Blocking access by country can be reasonable if:
 
 It is not ideal if your main goal is stopping spam.
 
-## **How to Block Countries Using Cloudflare**
+## **How to Block Countries Using WAF Custom Rules**
 
-![How to Block Countries Using Cloudflare](/blog/assets/posts/blocking-countries-in-cloudflare.png "How to Block Countries Using Cloudflare")
+![How to Block Countries Using Cloudflare](/blog/assets/posts/cloudflare-custom-rules.png "How to Block Countries Using Cloudflare")
 
 ### **Step 1: Log in to Cloudflare**
 
-Sign in to your [Cloudflare dashboard](https://dash.cloudflare.com/) and select your website.
+Sign in to your [Cloudflare dashboard](https://dash.cloudflare.com/) and select the website you want to protect.
 
-### **Step 2: Go to WAF Firewall Rule**
+### **Step 2: Go to Security Custom Rules**
 
-Navigate to: **Security → WAF → Firewall Rules**
+Navigate to: **Security → Security Rules → Custom Rules**
 
-### **Step 3: Create a New Rule**
+### **Step 3: Create a Custom Rule**
 
-Click **Create rule** and name it something clear, like: *Block Countries*
+Click **Create rule** and give it a clear name, such as: Block Selected Countries
 
-### **Step 4: Set the Rule Condition**
+### **Step 4: Define the Rule Condition**
 
 In the rule builder:
 
-* **Field:** Country
-* **Operator:** is in
-* **Value:** Select the country you want to block
+* Field: **Country**
+* Operator: **is in**
+* Value: Select the country (or countries) you want to match
 
-To block multiple countries:
+To block multiple countries, use:
 
-* Add **OR** conditions, or
-* Use a country list (if available)
+* **OR** conditions, or
+* The **“is in”** operator (if available)
 
-Behind the scenes, Cloudflare evaluates: ip.src.country
+Behind the scenes, Cloudflare evaluates: `ip.src.country`
 
-### **Step 5: Choose an Action**
+### **Step 5: Choose the Action**
 
-You can choose:
+Available actions include:
 
-* **Block** – completely deny access
-* **Managed Challenge** – CAPTCHA/browser check (often safer)
+* **Block** – hard deny access
+* **Managed Challenge** – CAPTCHA / browser challenge (recommended in many cases)
+* **Log** – observe traffic without blocking
 
-> **Tip:**  For most sites, **Managed Challenge** is better than a hard block.
+> For most sites, **Managed Challenge** is safer than Block.
 
 ### **Step 6: Save and Deploy**
 
-Save the rule. Changes apply globally within seconds.
+Save the rule and allow a few seconds for it to propagate globally.
+
+## **Testing Your Rule (With Caution)**
+
+You can test using a VPN set to the blocked country, but keep in mind:
+
+* VPN IPs are often misclassified
+* Testing from a VPN does not reflect normal user traffic
+* Tor traffic may appear as `T1` (special Cloudflare country code)
 
 ## **The Downsides of Blocking Entire Countries**
 
@@ -104,7 +121,20 @@ Before you rely on country blocking, understand the risks:
 
 This is why many Cloudflare users and security teams consider country blocking a last resort.
 
-## **A Better Alternative: Stop Spam Without Blocking Countries**
+> Cloudflare’s **Managed Challenge** filters automated traffic while allowing humans through.
+
+### Restrict sensitive actions, not your entire site
+
+Apply rules only to:
+
+* Forms
+* Login pages
+* Checkout flows
+* API endpoints
+
+This preserves accessibility while reducing abuse.
+
+## **Advanced Alternative: Stop Spam Without Blocking Countries**
 
 If your main goal is stopping spam, not restricting access by region, blocking entire countries at the Cloudflare level is usually the wrong tool. A better approach is form-level country control, where only spam submissions are blocked while your website stays accessible. This is exactly what **[OOPSpam](https://www.oopspam.com/)** (that’s us 👋) is designed for.
 
