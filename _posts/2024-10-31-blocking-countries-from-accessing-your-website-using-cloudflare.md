@@ -65,9 +65,9 @@ It is not ideal if your main goal is stopping spam.
 
 Sign in to your [Cloudflare dashboard](https://dash.cloudflare.com/) and select the website you want to protect.
 
-### **Step 2: Go to Security Custom Rules**
+### **Step 2: Go to WAF Custom Rules**
 
-Navigate to: **Security → Security Rules → Custom Rules**
+Navigate to: **Security → WAF → Custom Rules**
 
 ### **Step 3: Create a Custom Rule**
 
