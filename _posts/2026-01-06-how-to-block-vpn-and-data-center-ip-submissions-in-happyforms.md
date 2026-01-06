@@ -11,7 +11,7 @@ tags:
 ---
 ![HappyForms](/blog/assets/posts/wordpress-happyforms.png "HappyForms")
 
-HappyForms cannot block VPN or data center IP submissions on its own. To stop this type of spam, you must use a third-party anti-spam plugin like [OOPSpam](https://www.oopspam.com/) or configure Cloudflare security rules.
+[HappyForms](https://happyforms.io/) cannot block VPN or data center IP submissions on its own. To stop this type of spam, you must use a third-party anti-spam plugin like [OOPSpam](https://www.oopspam.com/) or configure Cloudflare security rules.
 
 Spam submissions today are not simple bots. Most form abuse now comes from VPNs, cloud infrastructure, and automated systems designed to look like real users. This is why many [HappyForms users](https://www.oopspam.com/integrations/spam-protection-for-happyforms) still see spam even with honeypots or CAPTCHA enabled.
 
@@ -114,7 +114,6 @@ Example for AWS: (ip.src.asnum eq 16509)
 
 1. Choose an action:
 2. * **Block** to stop traffic completely
-
    * **Managed Challenge** to reduce false positives
 3. Name the rule clearly and deploy it.
 
