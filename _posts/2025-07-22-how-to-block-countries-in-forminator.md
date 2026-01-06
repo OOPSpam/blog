@@ -116,12 +116,12 @@ To do this, you’ll need access to Cloudflare’s Web Application Firewall ([WA
 
 Head over to [cloudflare.com](https://dash.cloudflare.com/login) and log in to your account. Select the site where your Forminator forms are hosted.
 
-**Step 2: Create a Firewall Rule**
+**Step 2: Create a security rule**
 
-![Cloudflare WAF](/blog/assets/posts/blocking-countries-in-cloudflare.png "Cloudflare WAF")
+![Cloudflare WAF](/blog/assets/posts/cloudflare-security-rules.png "Cloudflare WAF")
 
-* ![](<>)Go to **Security > WAF > Firewall Rules**
-* Click **Create Firewall Rule**
+* Go to **Security > Security rules**
+* Click **Create rule**
 * Name it something like “Block Countries”
 * Set the rule to:
 

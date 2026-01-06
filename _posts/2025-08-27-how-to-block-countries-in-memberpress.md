@@ -96,16 +96,16 @@ In these cases, Cloudflare’s Web Application Firewall ([WAF](https://developer
 
 ### **How to Use Cloudflare for Country Blocking**
 
-![How to Use Cloudflare for Country Blocking](/blog/assets/posts/blocking-countries-in-cloudflare.png "How to Use Cloudflare for Country Blocking")
+![How to Use Cloudflare for Country Blocking](/blog/assets/posts/cloudflare-security-rules.png "How to Use Cloudflare for Country Blocking")
 
 **Step 1: Log into Cloudflare**
 
 Go to [cloudflare.com](https://dash.cloudflare.com/login) and select the domain where your MemberPress site is hosted.
 
-**Step 2: Create a Firewall Rule**
+**Step 2: Create a security rule**
 
-* Navigate to **Security > WAF > Firewall Rules**
-* Click **Create Firewall Rule**
+* Navigate to **Security > Security rules**
+* Click **Create rule**
 * Name it something like “Block Countries”
 * Configure as follows:
 

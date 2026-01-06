@@ -71,10 +71,10 @@ If your issue is bigger than spam, use Cloudflare Firewall.
 
 ### **How to Do It**
 
-![Block Entire Countries with Cloudflare](/blog/assets/posts/blocking-countries-in-cloudflare.png "Block Entire Countries with Cloudflare")
+![Block Entire Countries with Cloudflare](/blog/assets/posts/cloudflare-security-rules.png "Block Entire Countries with Cloudflare")
 
 1. Log in to your **Cloudflare account**.
-2. Go to **Security > WAF > Firewall Rules**.
+2. Go to **Security > Security rules**.
 3. Create a new rule and name it **“Block Countries.”**
 4. Set the field to **Country**, operator to **is in**, and select the countries to block.
 5. Choose **Block** as the action, then save.

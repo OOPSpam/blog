@@ -66,10 +66,10 @@ Cloudflare’s Firewall lets you block all requests from [chosen countries](http
 
 ### **Quick setup guide:**
 
-![Using Cloudflare for Site-Wide Blocking](/blog/assets/posts/blocking-countries-in-cloudflare.png "Using Cloudflare for Site-Wide Blocking")
+![Using Cloudflare for Site-Wide Blocking](/blog/assets/posts/cloudflare-security-rules.png "Using Cloudflare for Site-Wide Blocking")
 
 1. Log in to your **Cloudflare account**.
-2. Go to **Security > WAF > Firewall Rules**.
+2. Go to **Security > Security rules**.
 3. Create a new rule (call it “Block Countries”).
 4. Select **Country** as the field, operator **is in**, then choose which countries to block.
 5. Set the action to **Block** and save.

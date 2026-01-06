@@ -66,11 +66,11 @@ If spam is just part of the problem and you’re dealing with brute force logins
 
 ### **Quick Setup in Cloudflare**
 
-![Quick Setup in Cloudflare WAF](/blog/assets/posts/blocking-countries-in-cloudflare.png "Quick Setup in Cloudflare WAF")
+![Quick Setup in Cloudflare WAF](/blog/assets/posts/cloudflare-security-rules.png "Quick Setup in Cloudflare WAF")
 
 1. [Log in](https://dash.cloudflare.com/login) to **Cloudflare**.
-2. Go to **Security > WAF > Firewall Rules**.
-3. Create a new rule named ‘**Block Countries**’.
+2. Go to **Security > Security rules**.
+3. Create a new rule name ‘**Block Countries**’.
 4. Set the field to **Country**, operator **is in**, then select the countries.
 5. Choose **Block** as the action and save.
 

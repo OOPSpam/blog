@@ -84,13 +84,13 @@ Also consider adding Cloudflare Turnstile for modern bot defense. It works with 
 
 Use this only if you must block countries for legal, compliance, or high-volume attack reasons.
 
-![Block Countries Across Your Entire Site (Cloudflare)](/blog/assets/posts/blocking-countries-in-cloudflare.png "Block Countries Across Your Entire Site (Cloudflare)")
+![Block Countries Across Your Entire Site (Cloudflare)](/blog/assets/posts/cloudflare-security-rules.png "Block Countries Across Your Entire Site (Cloudflare)")
 
 ### **Cloudflare steps**
 
 1. Log in to Cloudflare
-2. Go to **Security → WAF → Firewall Rules**
-3. Click **Create Rule**
+2. Go to **Security → Security rules**
+3. Click **Create rule**
 4. Condition: **Country → is in → \[select countries]**
 5. Action: **Block**
 6. Save

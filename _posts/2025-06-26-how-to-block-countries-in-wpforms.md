@@ -80,15 +80,15 @@ One major advantage of using **[OOPSpam](https://www.oopspam.com/)** is the abil
 
 ![Cloudflare](/blog/assets/posts/cloudflare-homepage.png "Cloudflare")
 
-If you want to prevent users from specific countries from accessing your entire site, Cloudflare provides a DNS-level solution through its Web Application Firewall ([WAF](https://www.cloudflare.com/lp/ppc/waf-x/)). This method restricts access based on the visitor's IP location, and it's ideal for broad security and compliance requirements.
+If you want to prevent users from specific countries from accessing your entire site, Cloudflare provides a DNS-level solution through its Web Application Firewall ([WAF](https://developers.cloudflare.com/waf/)). This method restricts access based on the visitor's IP location, and it's ideal for broad security and compliance requirements.
 
 > **Note:** [DNS-level blocking](https://en.wikipedia.org/wiki/DNS_blocking) means your entire site will be inaccessible to users in those countries—not just form submissions.
 
 ### **How to Block Countries in Cloudflare**
 
-Log in to your [Cloudflare dashboard](https://dash.cloudflare.com/). Choose your site and go to **Security > WAF**. Under Firewall Rules, create a new rule. 
+Log in to your [Cloudflare dashboard](https://dash.cloudflare.com/). Choose your site and go to **Security > Security rules**. Under Security rules, create a new rule. 
 
-![How to Block Countries in Cloudflare](/blog/assets/posts/blocking-countries-in-cloudflare.png "How to Block Countries in Cloudflare")
+![How to Block Countries in Cloudflare](/blog/assets/posts/cloudflare-security-rules.png "How to Block Countries in Cloudflare")
 
 1. **Name Your Rule**: Use something like "Block Countries" for easy identification.
 2. **Set the Field** to **`Country`**, and choose **`is in`** from the operator dropdown.

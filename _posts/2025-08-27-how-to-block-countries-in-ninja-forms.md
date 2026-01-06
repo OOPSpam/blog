@@ -113,16 +113,16 @@ This is where Cloudflare’s Web Application Firewall ([WAF](https://developers.
 
 ### **How to Set Up Country Blocking in Cloudflare**
 
-![Set Up Country Blocking in Cloudflare](/blog/assets/posts/blocking-countries-in-cloudflare.png "Set Up Country Blocking in Cloudflare")
+![Set Up Country Blocking in Cloudflare](/blog/assets/posts/cloudflare-security-rules.png "Set Up Country Blocking in Cloudflare")
 
 **Step 1: Log Into Cloudflare**
 
 Go to [cloudflare.com](https://dash.cloudflare.com/login) and log in. Select the site where Ninja Forms is installed.
 
-**Step 2: Create a Firewall Rule**
+**Step 2: Create a security rule**
 
-* Navigate to **Security > WAF > Firewall Rules**
-* Click **Create Firewall Rule**
+* Navigate to **Security > Security rules**
+* Click **Create rule**
 * Name it (e.g., “Block Countries”)
 * Configure the rule:
 * * **Field:** Country

@@ -64,10 +64,10 @@ If spam isn’t your only concern and you’re also dealing with brute force log
 
 ### **Cloudflare Setup in 5 Steps**
 
-![Block Entire Countries from Your Website with Cloudflare](/blog/assets/posts/blocking-countries-in-cloudflare.png "Cloudflare WAF")
+![Block Entire Countries from Your Website with Cloudflare](/blog/assets/posts/cloudflare-security-rules.png "Cloudflare WAF")
 
 1. [Log in](https://dash.cloudflare.com/login) to **Cloudflare**.
-2. Go to **Security > WAF > Firewall Rules**.
+2. Go to **Security > Security rules**.
 3. Create a new rule called ‘**Block Countries**’.
 4. Set the field to **Country**, operator **is in**, then select the countries to block.
 5. Choose **Block** as the action and save.

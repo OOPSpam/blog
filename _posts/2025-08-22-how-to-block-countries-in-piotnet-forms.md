@@ -125,14 +125,14 @@ If your issue goes beyond spam, like brute force logins, scraping, or [DDoS atta
 
 ### **How to Set Up Country Blocking in Cloudflare**
 
-![How to Set Up Country Blocking in Cloudflare](/blog/assets/posts/blocking-countries-in-cloudflare.png "How to Set Up Country Blocking in Cloudflare")
+![How to Set Up Country Blocking in Cloudflare](/blog/assets/posts/cloudflare-security-rules.png "How to Set Up Country Blocking in Cloudflare")
 
 1. **Log Into Cloudflare**
 2. * Go to cloudflare.com, [log in](https://dash.cloudflare.com/login), and select your website.
-3. **Create a Firewall Rule**
-4. * Go to **Security > WAF > Firewall Rules**.
+3. **Create a security rule**
+4. * Go to **Security > Security rules**.
 
-   * Click **Create Firewall Rule**.
+   * Click **Create rule**.
 
    * Name it (e.g. “Block Countries”).
 

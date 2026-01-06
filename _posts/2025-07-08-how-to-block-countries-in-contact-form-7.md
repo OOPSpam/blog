@@ -92,7 +92,7 @@ If the spam you’re receiving is not limited to Contact Form 7 and your entire 
 
 If the spam you're receiving isn't limited to Contact Form 7—and your entire site is being targeted—you can block countries before they reach your server using [Cloudflare](https://www.cloudflare.com/).
 
-Cloudflare’s **Web Application Firewall ([WAF](https://www.cloudflare.com/lp/ppc/waf-x/))** allows you to restrict site access by IP geolocation. This method is ideal for wide-scale abuse or legal compliance needs.
+Cloudflare’s **Web Application Firewall ([WAF](https://developers.cloudflare.com/waf/))** allows you to restrict site access by IP geolocation. This method is ideal for wide-scale abuse or legal compliance needs.
 
 ⚠️ **Important:** This blocks the entire website, not just your form submissions.
 
@@ -100,11 +100,11 @@ Cloudflare’s **Web Application Firewall ([WAF](https://www.cloudflare.com/lp/p
 
 ![Cloudflare](/blog/assets/posts/cloudflare-homepage.png "Cloudflare")
 
-Log in to your **[Cloudflare dashboard](https://dash.cloudflare.com/)** and select your website. Navigate to the **Security** section, then open the **WAF** tab and go to **Firewall Rules**.
+Log in to your **[Cloudflare dashboard](https://dash.cloudflare.com/)** and select your website. Navigate to the **Security** section, then open the **Security rules** tab.
 
 Create a new rule and give it a name like **"Block Countries."**
 
-![Cloudflare dashboard](/blog/assets/posts/blocking-countries-in-cloudflare.png "Cloudflare dashboard")
+![Cloudflare dashboard](/blog/assets/posts/cloudflare-security-rules.png "Cloudflare dashboard")
 
 Set the rule to:
 

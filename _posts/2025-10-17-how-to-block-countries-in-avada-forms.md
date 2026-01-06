@@ -88,10 +88,10 @@ Cloudflare’s Web Application Firewall ([WAF](https://developers.cloudflare.com
 
 ### **How to Set It Up**
 
-![Cloudflare WAF to Block Countries](/blog/assets/posts/blocking-countries-in-cloudflare.png "Cloudflare WAF to Block Countries")
+![Cloudflare WAF to Block Countries](/blog/assets/posts/cloudflare-security-rules.png "Cloudflare WAF to Block Countries")
 
 1. [Log in](https://dash.cloudflare.com/) to your **Cloudflare Dashboard**.
-2. Go to **Security → WAF → Firewall Rules**.
+2. Go to **Security → Security rules**.
 3. Click **Create a new rule** and name it **“Block Countries.”**
 4. Set the field to **Country**, choose the operator **“is in,”** and select the countries you want to block.
 5. Choose **Block** as the action and click **Save** to apply the rule.

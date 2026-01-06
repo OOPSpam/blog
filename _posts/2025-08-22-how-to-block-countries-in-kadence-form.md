@@ -108,16 +108,16 @@ This method is handled via your CDN or hosting firewall, such as [Cloudflare](ht
 
 ### **How to Block Countries with Cloudflare**
 
-![How to Block Countries with Cloudflare](/blog/assets/posts/blocking-countries-in-cloudflare.png "How to Block Countries with Cloudflare")
+![How to Block Countries with Cloudflare](/blog/assets/posts/cloudflare-security-rules.png "How to Block Countries with Cloudflare")
 
 **Step 1: Log In to Cloudflare**
 
 Visit [Cloudflare.com](https://dash.cloudflare.com/login), log in, and select your domain.
 
-**Step 2: Create a Firewall Rule**
+**Step 2: Create a security rule**
 
-1. Navigate to **Security > WAF > Firewall Rules**
-2. Click **Create Firewall Rule**
+1. Navigate to **Security > Security rules**
+2. Click **Create rule**
 3. Name your rule (e.g., “Block Countries”)
 4. Set these conditions:
 

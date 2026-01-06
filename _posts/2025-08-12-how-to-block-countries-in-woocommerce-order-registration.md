@@ -161,12 +161,12 @@ If you’re dealing with fraud, scraping, or server attacks, you may want to blo
 
 ### **How to Set It Up in Cloudflare**
 
-![Cloudflare](/blog/assets/posts/blocking-countries-in-cloudflare.png "Cloudflare")
+![Cloudflare](/blog/assets/posts/cloudflare-security-rules.png "Cloudflare")
 
 1. Log in to[ Cloudflare.com](https://www.cloudflare.com)
 2. Choose your site
-3. Go to **Security > WAF > Firewall Rules**
-4. Click **Create Firewall Rule**
+3. Go to **Security > Security rules**
+4. Click **Create rule**
 5. Set:
 
    * **Field**: **`Country`**

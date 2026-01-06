@@ -90,17 +90,17 @@ If you're dealing with broader abuse, not just form spam and need to block visit
 
 ![Cloudflare](/blog/assets/posts/cloudflare-homepage.png "Cloudflare")
 
-Cloudflare’s Web Application Firewall ([WAF](https://www.cloudflare.com/lp/ppc/waf-x/)) lets you block traffic based on IP geolocation before it ever reaches your WordPress environment.
+Cloudflare’s Web Application Firewall ([WAF](https://developers.cloudflare.com/waf/)) lets you block traffic based on IP geolocation before it ever reaches your WordPress environment.
 
 > **Important:** This blocks your entire site for users from the selected countries. It does not just affect Jetpack Forms.
 
 ### **How to Set It Up**
 
-Log in to your **[Cloudflare dashboard](https://dash.cloudflare.com/)** and select the website you'd like to protect. Go to the **Security** section and open the **WAF** tab.
+Log in to your **[Cloudflare dashboard](https://dash.cloudflare.com/)** and select the website you'd like to protect. Go to the **Security** section and open the **Security rules** tab.
 
-![Cloudflare’s Web Application Firewall (WAF)](/blog/assets/posts/blocking-countries-in-cloudflare.png "Cloudflare’s Web Application Firewall (WAF)")
+![Cloudflare’s Web Application Firewall (WAF)](/blog/assets/posts/cloudflare-security-rules.png "Cloudflare’s Web Application Firewall (WAF)")
 
-Click **Firewall Rules** and create a new rule.
+Click **Create rule**.
 
 * Name the rule something like “Block Countries”
 * Choose **`Country`** as the field

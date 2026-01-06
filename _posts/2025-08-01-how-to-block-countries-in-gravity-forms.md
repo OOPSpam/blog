@@ -155,12 +155,12 @@ If you want to stop all traffic from specific countries not just form entries—
 
 ### **How to Set Up Country Blocking in Cloudflare**
 
-![How to Set Up Country Blocking in Cloudflare](/blog/assets/posts/blocking-countries-in-cloudflare.png "How to Set Up Country Blocking in Cloudflare")
+![How to Set Up Country Blocking in Cloudflare](/blog/assets/posts/cloudflare-security-rules.png "How to Set Up Country Blocking in Cloudflare")
 
 1. Log in to your[ Cloudflare account](https://cloudflare.com/).
 2. Select your website.
-3. Navigate to **Security > WAF > Firewall Rules**.
-4. Click **Create Firewall Rule**.
+3. Navigate to **Security > Security rules**.
+4. Click **Create rule**.
 5. Name the rule (e.g., “Block Countries”).
 6. Set conditions:
 7. * **Field:** **`Country`**

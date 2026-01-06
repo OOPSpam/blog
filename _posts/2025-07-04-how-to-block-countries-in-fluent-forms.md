@@ -121,13 +121,13 @@ If your concerns go beyond form spam and into site-wide abuse, **[Cloudflare](ht
 
 ![Cloudflare](/blog/assets/posts/cloudflare-homepage.png "Cloudflare")
 
-Cloudflare’s **Web Application Firewall ([WAF](https://www.cloudflare.com/lp/ppc/waf-x/))** allows you to create rules based on visitor IP geolocation. This means users from selected countries won’t be able to load your website at all.
+Cloudflare’s **Web Application Firewall ([WAF](https://developers.cloudflare.com/waf/))** allows you to create rules based on visitor IP geolocation. This means users from selected countries won’t be able to load your website at all.
 
 ### **How to Set It Up**
 
-Log into your **[Cloudflare dashboard](https://dash.cloudflare.com/)** and select your site. Go to the **Security** section, then open the **WAF** tab and click on **Firewall Rules**.
+Log into your **[Cloudflare dashboard](https://dash.cloudflare.com/)** and select your site. Go to the **Security** section, then open the **Security rules** tab.
 
-![How to Set Up Country Blocking in Cloudflare WAF](/blog/assets/posts/blocking-countries-in-cloudflare.png "How to Set Up Country Blocking in Cloudflare WAF")
+![How to Set Up Country Blocking in Cloudflare WAF](/blog/assets/posts/cloudflare-security-rules.png "How to Set Up Country Blocking in Cloudflare WAF")
 
 Create a new rule. Give it a name like “Block Countries.” Choose **`Country`** as the field, **`is in`** as the operator, and select the countries to block. Set the action to **`Block`**, save your changes, and deploy the rule.
 

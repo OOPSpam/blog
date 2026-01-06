@@ -147,12 +147,12 @@ Use Elementor’s native geoblocking when:
 
 If your site is behind [Cloudflare](https://www.cloudflare.com/), you can also block countries using its **Web Application Firewall**.
 
-![Use Cloudflare Firewall Rules](/blog/assets/posts/blocking-countries-in-cloudflare.png "Use Cloudflare Firewall Rules")
+![Use Cloudflare Firewall Rules](/blog/assets/posts/cloudflare-security-rules.png "Use Cloudflare Firewall Rules")
 
 Steps:
 
 1. Log in to [Cloudflare.com](https://dash.cloudflare.com/login)
-2. Choose your domain > go to **Security > WAF > Firewall Rules**
+2. Choose your domain > go to **Security > Security rules**
 3. Create a new rule
 4. Set **Field** = **`Country`**, **Operator** = **`is in`**, and choose the countries
 5. Choose **Action** = **`Block`**

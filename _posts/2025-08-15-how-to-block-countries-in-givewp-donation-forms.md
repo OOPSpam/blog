@@ -123,16 +123,16 @@ With Cloudflare’s Web Application Firewall ([WAF](https://developers.cloudflar
 
 ### **How to Set Up Country Blocking in Cloudflare**
 
-![How to Set Up Country Blocking in Cloudflare](/blog/assets/posts/blocking-countries-in-cloudflare.png "How to Set Up Country Blocking in Cloudflare")
+![How to Set Up Country Blocking in Cloudflare](/blog/assets/posts/cloudflare-security-rules.png "How to Set Up Country Blocking in Cloudflare")
 
 **Step 1: Log Into Cloudflare**
 
 Go to [Cloudflare.com](https://www.cloudflare.com), log in, and select your website.
 
-**Step 2: Create a Firewall Rule**
+**Step 2: Create a security rule**
 
-1. Navigate to **Security > WAF > Firewall Rules**
-2. Click **Create Firewall Rule**
+1. Navigate to **Security > Security rules**
+2. Click **Create rule**
 3. Name the rule (e.g., "Block Countries")
 4. Set the rule criteria:
 

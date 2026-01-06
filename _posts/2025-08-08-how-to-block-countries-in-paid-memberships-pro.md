@@ -171,12 +171,12 @@ If you're under active attack or have compliance requirements, you can block cou
 
 ### **Steps to Set Up Country Blocking in Cloudflare**
 
-![Set Up Country Blocking in Cloudflare](/blog/assets/posts/blocking-countries-in-cloudflare.png "Set Up Country Blocking in Cloudflare")
+![Set Up Country Blocking in Cloudflare](/blog/assets/posts/cloudflare-security-rules.png "Set Up Country Blocking in Cloudflare")
 
 1. Log in to[ Cloudflare](https://www.cloudflare.com)
 2. Select your website
-3. Navigate to Security > WAF > Firewall Rules
-4. Click **Create Firewall Rule**
+3. Navigate to Security > Security rules
+4. Click **Create rule**
 5. Set the rule to:
 
    * **Field**: **`Country`**

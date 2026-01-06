@@ -96,13 +96,13 @@ If you're experiencing attacks or high traffic from [certain countries](https://
 
 This method prevents visitors from even loading your website based on their IP geolocation.
 
-![Log into your Cloudflare account](/blog/assets/posts/blocking-countries-in-cloudflare.png "Log into your Cloudflare account")
+![Log into your Cloudflare account](/blog/assets/posts/cloudflare-security-rules.png "Log into your Cloudflare account")
 
 To do this:
 
 * Log into your [Cloudflare account](https://dash.cloudflare.com/).
-* Choose your website and go to **Security > WAF**.
-* Create a new **Firewall Rule**.
+* Choose your website and go to **Security > Security rules**.
+* Create a new **rule**.
 * Set the **Field** to "Country," the **Operator** to "is in," and select the countries you want to block.
 * Set the **Action** to "Block," then save and deploy the rule.
 

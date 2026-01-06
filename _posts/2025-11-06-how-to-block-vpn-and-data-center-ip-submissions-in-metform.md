@@ -93,7 +93,7 @@ OOPSpam works automatically, so you don’t have to maintain IP lists or tune fi
 
 1. [Log in](https://dash.cloudflare.com/login) to Cloudflare
 2. Select your website
-3. Go to **Security → WAF → Custom Rules**
+3. Go to **Security → Security rules**
 4. Click **Create Rule**
 5. Name the rule: Example: **Block AWS ASN 16509**
 6. Rule condition example:

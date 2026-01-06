@@ -59,12 +59,12 @@ For more detail, visit your **OOPSpam Dashboard** to view filtering reports, rea
 
 If your problem is bigger than spam, such as brute force logins, DDoS attacks, or scraping, you can block traffic at the network level with Cloudflare.
 
-![Block Entire Countries with Cloudflare](/blog/assets/posts/blocking-countries-in-cloudflare.png "Block Entire Countries with Cloudflare")
+![Block Entire Countries with Cloudflare](/blog/assets/posts/cloudflare-security-rules.png "Block Entire Countries with Cloudflare")
 
 ### **How to Do It**
 
 1. [Log in](https://dash.cloudflare.com/login) to your Cloudflare account.
-2. Go to **Security > WAF > Firewall Rules**.
+2. Go to **Security > Security rules**.
 3. Create a new rule and name it “Block Countries.”
 4. Set the field to **Country**, the operator to **is in**, and select the countries to block.
 5. Set the action to **Block** and save.

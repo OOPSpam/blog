@@ -132,11 +132,11 @@ If you're experiencing broader abuse (e.g., fake signups, bot traffic, [scraping
 
 ### **How to Block Countries with Cloudflare**
 
-![Block Countries with Cloudflare](/blog/assets/posts/blocking-countries-in-cloudflare.png "Block Countries with Cloudflare")
+![Block Countries with Cloudflare](/blog/assets/posts/cloudflare-security-rules.png "Block Countries with Cloudflare")
 
 1. Log in to[ Cloudflare](https://www.cloudflare.com) and choose your domain
-2. Navigate to **Security > WAF > Firewall Rules**
-3. Click **Create Firewall Rule**
+2. Navigate to **Security > Security rules**
+3. Click **Create rule**
 4. Name it “Block Countries”
 5. Set the criteria:
 

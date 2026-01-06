@@ -119,16 +119,16 @@ If you need heavier protection like if you’re under a [DDoS attack](https://ww
 
 ### **How to Block Countries in Cloudflare**
 
-![How to Block Countries in Cloudflare](/blog/assets/posts/blocking-countries-in-cloudflare.png "How to Block Countries in Cloudflare")
+![How to Block Countries in Cloudflare](/blog/assets/posts/cloudflare-security-rules.png "How to Block Countries in Cloudflare")
 
 #### ![](<>)**Step 1: Log In to Cloudflare**
 
 Visit [Cloudflare.com](https://dash.cloudflare.com/login), log in, and select the domain where Bricks is installed.
 
-#### **Step 2: Create a Firewall Rule**
+#### **Step 2: Create a security rule**
 
-* Go to **Security > WAF > Firewall Rules**
-* Click **Create Firewall Rule**
+* Go to **Security > Security rules**
+* Click **Create rule**
 * Name it something like “Block Countries"
 * Configure the rule:
 

@@ -82,7 +82,7 @@ This visibility helps you strike a balance between protection and accessibility�
 
 ## **2. Block Countries from Accessing Your Entire Site with Cloudflare**
 
-If your issue isn’t limited to form spam, and you want to block all access to your site from certain countries—Cloudflare’s Web Application Firewall ([WAF](https://www.cloudflare.com/lp/ppc/waf-x/)) is a solution. It stops users from ever reaching your site based on their country of origin.
+If your issue isn’t limited to form spam, and you want to block all access to your site from certain countries—Cloudflare’s Web Application Firewall ([WAF](https://developers.cloudflare.com/waf/)) is a solution. It stops users from ever reaching your site based on their country of origin.
 
 ⚠️ **Note:** This blocks the entire website, not just your SureForms submissions.
 
@@ -92,7 +92,7 @@ If your issue isn’t limited to form spam, and you want to block all access to 
 
 Log into your [Cloudflare dashboard ](https://dash.cloudflare.com/)and select the website you want to protect. 
 
-![Cloudflare dashboard](/blog/assets/posts/blocking-countries-in-cloudflare.png "Cloudflare dashboard")
+![Cloudflare dashboard](/blog/assets/posts/cloudflare-security-rules.png "Cloudflare dashboard")
 
 1. Go to the **Security** tab and open the **WAF** (Web Application Firewall) section.
 2. Find the **Rules** **list** and click to **create a new firewall rule**. Give your rule a clear name—for example, “Block Specific Countries.”

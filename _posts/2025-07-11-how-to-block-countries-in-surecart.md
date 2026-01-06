@@ -109,13 +109,13 @@ If your goal is to prevent access to your entire website from [specific countrie
 
 ![Cloudflare](/blog/assets/posts/cloudflare-homepage.png "Cloudflare")
 
-Cloudflare's Web Application Firewall ([WAF](https://www.cloudflare.com/lp/ppc/waf-x/)) lets you block website visitors based on their country.
+Cloudflare's Web Application Firewall ([WAF](https://developers.cloudflare.com/waf/)) lets you block website visitors based on their country.
 
-Here’s how: Log into your **[Cloudflare dashboard](https://dash.cloudflare.com/)** and select your website. Go to the **Security** section and open the **WAF** tab. Click on **Firewall Rules**.
+Here’s how: Log into your **[Cloudflare dashboard](https://dash.cloudflare.com/)** and select your website. Go to the **Security** section and open the **Security rules** tab.
 
 **Create a new rule.** Give it a name (like "Block Countries"). Set the field to **`Country`**, operator to **`is in`**, and then choose the countries to block. Set the action to **`Block`**, save the rule, and deploy.
 
-![Cloudflare WAF](/blog/assets/posts/blocking-countries-in-cloudflare.png "Cloudflare WAF")
+![Cloudflare WAF](/blog/assets/posts/cloudflare-security-rules.png "Cloudflare WAF")
 
 This blocks all requests from those countries, including visits to your homepage, blog, and product pages.
 
