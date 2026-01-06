@@ -68,11 +68,17 @@ Sign in to your [Cloudflare dashboard](https://dash.cloudflare.com/) and select 
 ### **Step 2: Go to Security Rules**
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 Navigate to: **Security → Security rules**
 
 ### **Step 3: Create a New Rule**
 =======
 ![Cloudflare WAF settings for creating a firewall rule to block specific countries.](/blog/assets/posts/cloudflare-security-rules.png "Country Blocking")
+=======
+![Cloudflare WAF settings for creating a firewall rule to block specific countries.](/blog/assets/posts/cloudflare-security-rules.png "Country Blocking")
+
+Once setup is complete, go to your Cloudflare dashboard. From there, navigate to **Security > Security rules**.
+>>>>>>> Stashed changes
 
 Once setup is complete, go to your Cloudflare dashboard. From there, navigate to **Security > Security rules**.
 >>>>>>> Stashed changes
