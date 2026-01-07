@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to block countries in Breakdance Forms?
-date: 2025-07-18T12:02:00.000+08:00
+date: 2026-01-06T11:36:00.000+08:00
 author: chazie
 image: /blog/assets/posts/header_breakdance.jpg
 description: Breakdance Forms can't block countries by default. Use Cloudflare

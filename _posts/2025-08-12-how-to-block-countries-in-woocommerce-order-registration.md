@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to block countries in WooCommerce Order & Registration?
-date: 2025-08-12T10:31:00.000+08:00
+date: 2026-01-06T11:36:00.000+08:00
 author: chazie
 image: /blog/assets/posts/header_woo.png
 description: WooCommerce lets you block orders by country. Use OOPSpam for added

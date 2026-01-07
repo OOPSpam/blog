@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to block countries in Piotnet Forms?
-date: 2025-08-22T06:05:00.000+08:00
+date: 2026-01-06T11:36:00.000+08:00
 author: chazie
 image: /blog/assets/posts/pionet_header.png
 description: Discover how to block countries in Piotnet Forms using OOPSpam for

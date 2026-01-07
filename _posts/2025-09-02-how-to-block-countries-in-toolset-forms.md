@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to block countries in Toolset Forms?
-date: 2025-09-02T04:39:00.000+08:00
+date: 2026-01-06T11:36:00.000+08:00
 author: chazie
 image: /blog/assets/posts/toolset_header.png
 description: Toolset Forms lacks country blocking. Use OOPSpam for form-level

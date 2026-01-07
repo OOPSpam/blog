@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to block countries in Avada Forms?
-date: 2025-10-17T09:01:00.000+08:00
+date: 2026-01-06T11:36:00.000+08:00
 author: chazie
 image: /blog/assets/posts/avada_header.png
 description: Block unwanted submissions in Avada Forms using OOPSpam and

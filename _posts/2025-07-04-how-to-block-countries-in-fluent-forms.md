@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to block countries in Fluent Forms?
-date: 2025-07-04T03:41:00.000Z
+date: 2026-01-06T11:36:00.000+08:00
 author: chazie
 image: /blog/assets/posts/fluentforms-country-block.jpg
 description: Block countries in Fluent Forms with built-in tools, OOPSpam for

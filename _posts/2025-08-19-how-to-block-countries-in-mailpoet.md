@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to block countries in MailPoet?
-date: 2025-08-19T00:20:00.000+08:00
+date: 2026-01-06T11:36:00.000+08:00
 author: chazie
 image: /blog/assets/posts/mailpoet_header.png
 description: MailPoet lacks built-in country blocking, use OOPSpam to filter

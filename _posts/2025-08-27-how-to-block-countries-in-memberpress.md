@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to block countries in MemberPress?
-date: 2025-08-26T21:01:00.000+08:00
+date: 2026-01-06T11:36:00.000+08:00
 author: chazie
 image: /blog/assets/posts/memberpress_header.png
 description: MemberPress lacks country blocking, use OOPSpam for filtering

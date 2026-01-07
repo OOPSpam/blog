@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How to block countries in MC4WP: Mailchimp for WordPress?"
-date: 2025-09-04T05:31:00.000+08:00
+date: 2026-01-06T11:36:00.000+08:00
 author: chazie
 image: /blog/assets/posts/mc4wp_header.png
 description: Mailchimp for WordPress doesn’t block countries by itself. Stop

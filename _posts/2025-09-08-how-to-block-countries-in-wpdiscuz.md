@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to block countries in WPDiscuz?
-date: 2025-09-08T03:10:00.000+08:00
+date: 2026-01-06T11:36:00.000+08:00
 author: chazie
 image: /blog/assets/posts/wpdiscuz_header.png
 description: WPDiscuz doesn’t include country blocking by default. Use OOPSpam

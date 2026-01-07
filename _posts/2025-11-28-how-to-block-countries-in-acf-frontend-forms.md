@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to block countries in  ACF Frontend Forms?
-date: 2025-11-27T14:53:00.000+08:00
+date: 2026-01-06T11:36:00.000+08:00
 author: chazie
 image: /blog/assets/posts/acf_block_countries.jpg
 description: Learn how to block countries in ACF Frontend Forms using OOPSpam,
@@ -95,7 +95,7 @@ Use [Cloudflare](https://www.cloudflare.com/) if you want broader protection. Th
 **Steps:**
 
 1. Log in to Cloudflare.
-2. Go to **Security → WAF → Firewall Rules**.
+2. Go to **Security → Security rules**.
 3. Create a rule:
 4. * Field: **Country**
 

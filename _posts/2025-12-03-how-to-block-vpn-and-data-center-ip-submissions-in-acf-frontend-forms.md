@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to Block VPN and Data Center IP Submissions in ACF Frontend Forms?
-date: 2025-12-02T20:33:00.000+08:00
+date: 2026-01-06T11:36:00.000+08:00
 author: chazie
 image: /blog/assets/posts/acf_block_vpn_cp.jpg
 description: Block spammy VPN and data center traffic in ACF Frontend Forms with
@@ -98,7 +98,7 @@ This gives you precise control when handling borderline or recurring spam submis
 
 1. Go to your Cloudflare dashboard
 2. Select your website
-3. Go to: **Security → WAF → Custom Rules**
+3. Go to: **Security → Security rules**
 4. Click **Create Rule**.
 5. Name the rule. Example: **Block AWS ASN 16509**
 

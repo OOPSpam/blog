@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to Block VPN and Data Center IP Submissions in MetForm?
-date: 2025-11-06T02:32:00.000+08:00
+date: 2026-01-06T11:36:00.000+08:00
 author: chazie
 image: /blog/assets/posts/metform_block_vpn.jpg
 description: Learn how to block VPN and data center IP submissions in MetForm

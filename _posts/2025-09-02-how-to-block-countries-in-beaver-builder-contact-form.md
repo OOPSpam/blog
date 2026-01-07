@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to block countries in Beaver Builder Contact Form?
-date: 2025-09-02T03:24:00.000+08:00
+date: 2026-01-06T11:36:00.000+08:00
 author: chazie
 image: /blog/assets/posts/beaver_header.png
 description: Beaver Builder Contact Form lacks country blocking. Use OOPSpam for

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to block countries in Kadence Form?
-date: 2025-08-22T05:20:00.000+08:00
+date: 2026-01-06T11:36:00.000+08:00
 author: chazie
 image: /blog/assets/posts/kadence_header.png
 description: Learn how to block countries in Kadence Forms using OOPSpam

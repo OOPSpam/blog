@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to block countries in WPForms?
-date: 2025-06-26T01:30:00.000Z
+date: 2026-01-06T11:36:00.000+08:00
 author: chazie
 image: /blog/assets/posts/wpforms-blockcontries.jpg
 description: Learn how to block countries in WPForms using the built-in country

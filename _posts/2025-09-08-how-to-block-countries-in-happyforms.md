@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to block countries in HappyForms?
-date: 2025-09-08T01:05:00.000+08:00
+date: 2026-01-06T11:36:00.000+08:00
 author: chazie
 image: /blog/assets/posts/happyforms_header.png
 description: HappyForms doesn’t include country blocking by default. Use OOPSpam

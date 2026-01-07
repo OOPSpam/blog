@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to block countries in Contact Form 7?
-date: 2025-07-08T04:13:00.000Z
+date: 2026-01-06T11:36:00.000+08:00
 author: chazie
 image: /blog/assets/posts/cf7-block-countries.jpg
 description: Block countries in Contact Form 7 using OOPSpam for smart filtering

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to block countries in MetForm?
-date: 2025-11-04T07:26:00.000+08:00
+date: 2026-01-06T11:36:00.000+08:00
 author: chazie
 image: /blog/assets/posts/metform_block_countries.jpg
 description: Block countries in MetForm with simple steps. Use OOPSpam for

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to Block VPN and Data Center IP Submissions in HappyForms
-date: 2026-01-05T20:50:00.000+08:00
+date: 2026-01-06T11:36:00.000+08:00
 author: chazie
 image: /blog/assets/posts/header_happyforms_block.jpg
 description: Learn how to block VPN and data center IP submissions in HappyForms

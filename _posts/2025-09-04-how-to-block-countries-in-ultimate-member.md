@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to block countries in Ultimate Member?
-date: 2025-09-04T03:22:00.000+08:00
+date: 2026-01-06T11:36:00.000+08:00
 author: chazie
 image: /blog/assets/posts/ultimate_header.png
 description: Ultimate Member doesn’t have built-in country blocking. Use OOPSpam

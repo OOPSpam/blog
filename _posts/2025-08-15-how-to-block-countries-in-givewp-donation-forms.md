@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to block countries in GiveWP Donation Forms?
-date: 2025-08-15T01:01:00.000+08:00
+date: 2026-01-06T11:36:00.000+08:00
 author: chazie
 image: /blog/assets/posts/givewp_header.png
 description: GiveWP lacks native country blocking, use OOPSpam for

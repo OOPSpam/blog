@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to block countries in SureCart?
-date: 2025-07-11T10:04:00.000Z
+date: 2026-01-06T11:36:00.000+08:00
 author: chazie
 image: /blog/assets/posts/header_surecart.jpg
 description: Block countries in SureCart using shipping zones, conditional

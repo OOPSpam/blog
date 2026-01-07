@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to block countries in Jetpack Forms?
-date: 2025-07-09T03:41:00.000Z
+date: 2026-01-06T11:36:00.000+08:00
 author: chazie
 image: /blog/assets/posts/header_jetpack.jpg
 description: Jetpack Forms can’t block countries by default, but OOPSpam adds
