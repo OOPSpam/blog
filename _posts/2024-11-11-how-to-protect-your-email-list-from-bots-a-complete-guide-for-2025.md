@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "How to Protect Your Email List from Bots: A Complete Guide for 2025"
-date: 2024-11-11T02:12:00.000Z
+title: "How to Protect Your Email List from Bots: A Complete Guide for 2026"
+date: 2026-01-22T11:13:00.000Z
 author: chazie
 image: /assets/posts/protect_email_list_header.png
-description: "Defend your email list from spam bots in 2025: practical tips and
+description: "Defend your email list from spam bots in 2026: practical tips and
   tools like OOPSpam to keep subscribers real and data clean."
 tags:
   - email list protection
