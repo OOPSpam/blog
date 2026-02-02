@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to Block VPN and Data Center IP Submissions in MailPoet?
-date: 2026-02-03T00:08:00.000+08:00
+date: 2026-02-02T00:08:00.000+08:00
 author: chazie
 image: /blog/assets/posts/mp_meta.jpg
 description: Learn how to block VPN and data center IP spam in MailPoet using
