@@ -75,7 +75,7 @@ After connecting the API key, open the **General** tab in the OOPSpam settings a
 
 Once the plugin detects the Beaver Builder Contact Form, the form-specific protection options will automatically become available.
 
-### **Step 4: Enable IP Filtering**
+**Step 4: Enable IP Filtering**
 
 ![Enable IP Filtering](/blog/assets/posts/ip-filtering-oopspam.png "Enable IP Filtering")
 
@@ -126,7 +126,6 @@ Blocking an ASN blocks traffic from that entire network.
 5. Set the condition to match **AS Num.** Example: **`(ip.src.asnum eq 16509)`**
 6. Choose an action:
 7. * **Managed Challenge** (recommended starting point)
-
    * **Block** (use only when confident)
 8. Name the rule clearly and deploy it
 
