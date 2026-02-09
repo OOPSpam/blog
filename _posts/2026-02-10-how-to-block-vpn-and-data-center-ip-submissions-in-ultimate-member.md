@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to Block VPN and Data Center IP Submissions in Ultimate Member?
-date: 2026-02-10T10:17:00.000+08:00
+date: 2026-02-09T10:17:00.000+08:00
 author: chazie
 image: /blog/assets/posts/um_meta.jpg
 description: Learn how to block VPN and data center IP submissions in Ultimate
