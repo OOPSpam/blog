@@ -122,10 +122,9 @@ When you block an ASN, you block all traffic from that network.
 2. Select the website you want to protect
 3. Navigate to Security → Security Rules → Custom Rules
 4. Click Create Rule
-5. Set the field to AS Num and enter the ASN. Example: **(ip.geoip.asnum eq 16509)**
+5. Set the field to AS Num and enter the ASN. Example: **`(ip.geoip.asnum eq 16509)`**
 6. Select an action:
 7. * **Managed Challenge** – Best for testing (shows a verification challenge)
-
    * **Block** – Use when you are confident about the rule
 8. Give your rule a clear name and deploy
 
