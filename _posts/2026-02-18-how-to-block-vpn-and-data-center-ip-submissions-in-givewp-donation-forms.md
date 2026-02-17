@@ -1,0 +1,118 @@
+---
+layout: post
+title: How to Block VPN and Data Center IP Submissions in GiveWP Donation Forms?
+date: 2026-02-18T08:07:00.000+08:00
+author: chazie
+image: /blog/assets/posts/givewp_meta.jpg
+description: Block VPN and data center spam in GiveWP donation forms using
+  OOPSpam, Cloudflare, and built-in security tools. Keep fake donations out.
+tags:
+  - GiveWP
+  - GiveWP Donation Forms
+---
+![GiveWP Donation Forms](/blog/assets/posts/givewp-wordpress.png "GiveWP Donation Forms")
+
+[GiveWP](https://givewp.com/) does not filter VPN or data center IPs. Fake donations, card testing attacks, and bot submissions get through unless you add external protection. This guide covers three methods to stop them.
+
+## **The Real Threat to Donation Forms**
+
+Donation forms are a prime target for card testing fraud. Attackers run stolen credit card numbers through small donations to check which ones work. They use cloud servers and VPNs to stay anonymous and avoid simple IP blocks.
+
+GiveWP processes the payment. It does not evaluate where the request came from. That gap is what this guide addresses.
+
+## **Method 1: OOPSpam Anti-Spam**
+
+![OOPSpam Anti-Spam](/blog/assets/posts/oopspam-anti-spam-overview.png "OOPSpam Anti-Spam")
+
+[OOPSpam](https://www.oopspam.com/) (that's us 👋) blocks VPN and cloud IP submissions before GiveWP processes them. It checks against a live database covering over 1,500 cloud providers and known VPN networks.
+
+**Step 1: Install the Plugin**
+
+Go to Plugins → Add New in WordPress. Search for "**OOPSpam Anti-Spam**", install it, and activate.
+
+**Step 2: Add Your API Key**
+
+[Sign up](https://app.oopspam.com/Identity/Account/Login) at the OOPSpam dashboard and copy your API key. 
+
+![OOPSpam dashboard](/blog/assets/posts/oopspam-dashboard-api.png "OOPSpam dashboard")
+
+Go to Settings → OOPSpam Anti-Spam, paste the key, and save.
+
+![Settings OOPSpam Anti-Spam](/blog/assets/posts/oopspam-api-key.png "Settings OOPSpam Anti-Spam")
+
+**Step 3: Enable Protection**
+
+Open the General tab. Turn on Activate Spam Protection. OOPSpam automatically detects GiveWP, no additional setup inside GiveWP is needed.
+
+![Enable Protection for GiveWP](/blog/assets/posts/spam-protection-for-givewp.png "Enable Protection for GiveWP")
+
+**Step 4: Set IP Filtering**
+
+Go to the IP Filtering tab and enable:
+
+* **Block Cloud Providers** – Stops submissions from data centers. Recommended. Most card testing fraud runs through cloud infrastructure.
+* **Block VPNs** – Stops anonymous submissions. Use carefully if your donor base includes privacy-conscious users.
+
+![IP Filtering tab](/blog/assets/posts/ip-filtering-oopspam.png "IP Filtering tab")
+
+Save changes.
+
+### **Manual Moderation**
+
+For persistent abuse that does not come from automated bots, use **OOPSpam's Manual Moderation**. You can block specific IPs, email addresses, or keywords, and whitelist trusted donors to prevent false positives.
+
+![OOPSpam's Manual Moderation](/blog/assets/posts/manual-moderation-settings-oopspam.png "OOPSpam's Manual Moderation")
+
+## **Method 2: Cloudflare Security Rules**
+
+[Cloudflare](https://www.cloudflare.com/) lets you block traffic by [ASN](https://www.cloudflare.com/learning/network-layer/what-is-an-autonomous-system/) (Autonomous System Number) before it reaches your server. Each cloud provider operates under known ASNs. Blocking one stops all traffic from that network.
+
+![Cloudflare Security Rules](/blog/assets/posts/security-cloudflare-block-asn.png "Cloudflare Security Rules")
+
+This is not GiveWP-specific. It applies site-wide.
+
+**Create an ASN Rule:**
+
+1. [Log in](https://dash.cloudflare.com/login) to Cloudflare and select your site
+2. Go to Security → Security Rules → Custom Rules
+3. Click Create Rule
+4. Set the field to AS Num. Example: **(ip.geoip.asnum eq 16509)** for AWS
+5. Set the action to **Managed Challenge** to start, or **Block** if you are confident
+6. Name and deploy the rule
+
+Use this method when attacks are high-volume and persist after form-level filtering. Broad ASN blocking can catch legitimate donors on corporate VPNs or cloud-hosted networks, so monitor closely after deployment.
+
+## **Method 3: GiveWP Built-in Security Tools**
+
+These tools do not block VPN or data center IPs directly, but they stop general bot submissions and reduce fraudulent attempts significantly.
+
+### **Cloudflare Turnstile**
+
+![GiveWP Cloudflare Turnstile](/blog/assets/posts/cloudflare-turnstile-settings-760x307.webp "GiveWP Cloudflare Turnstile")
+
+Turnstile analyzes browser behavior in the background. It blocks bots silently without asking donors to solve a CAPTCHA.
+
+**Install the Add-On:**
+
+Go to Plugins → Add New. Search for "[Give – Cloudflare Turnstile](https://wordpress.org/plugins/give-cloudflare-turnstile/)" and install it.
+
+**Connect it to GiveWP:**
+
+1. Create a free Cloudflare account if you do not have one
+2. In Cloudflare, go to Turnstile and create a widget for your site
+3. Copy the Site Key and Secret Key generated by Cloudflare
+4. In WordPress, go to Donations → Settings → Security → Cloudflare Turnstile
+5. Paste both keys into the appropriate fields
+6. Click Save Changes
+
+Donors see no extra steps. Bots are blocked in the background.
+
+### **Honeypot**
+
+[Honeypot](https://www.oopspam.com/blog/ways-to-stop-spam#honeypot-filter-spam-with-a-hidden-field) adds a hidden field to your forms. Real donors never see it. Bots fill it in automatically and get blocked.
+
+Go to Donations → Settings → Security. Enable Honeypot and save. It runs quietly with no donor-facing impact.
+
+## **Final Takeaway**
+
+GiveWP handles donations well, but fraud protection is not part of its core feature set. Add OOPSpam for IP-level filtering, enable Turnstile and Honeypot for bot protection, and use Cloudflare only if attacks persist at scale. All three together give your donation forms solid, layered defense.
