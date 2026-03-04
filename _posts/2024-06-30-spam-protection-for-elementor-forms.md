@@ -8,9 +8,9 @@ image: /assets/posts/elementor-forms/ef-meta-image.png
 description: Learn how to add spam protection to Elementor Forms with these 5
   different methods in WordPress.
 tags:
-  - WordPress
-  - contact_form
-  - elementor_forms
+  - wordpress
+  - form
+  - elementor
 ---
 <center>
 <img loading="lazy"  width="772" alt="OOPSpam Anti-Spam WordPress Plugin supports Elementor Forms" src="/blog/assets/posts/elementor-forms/ef-blog-header.png">
@@ -103,6 +103,8 @@ If you are looking for a free solution, reCAPTCHA is a good option.
 ## hCAPTCHA
 
 If you're concerned about privacy, you may want to use hCAPTCHA instead of reCAPTCHA. Unfortunately, Elementor Forms doesn't have built-in hCAPTCHA support. There is [an active feature request](https://github.com/orgs/elementor/discussions/21148) to integrate it with Elementor. In the meantime, you can enable hCAPTCHA for your Elementor Forms using [the official hCAPTCHA plugin for WordPress](https://wordpress.org/plugins/hcaptcha-for-forms-and-more/). Check out [How to Add hCAPTCHA to Elementor Forms](https://www.oopspam.com/blog/adding-hcaptcha-elementorform) article for a step-by-step guide.
+
+![](/blog/assets/posts/captcha.webp)
 
 ## Cloudflare
 
