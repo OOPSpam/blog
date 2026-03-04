@@ -27,11 +27,7 @@ To address spam issue in your forms, use the built-in honeypot, reCAPTCHA, or a 
 
 ## OOPSpam WordPress plugin
 
-<center>
-<a href="https://wordpress.org/support/plugin/oopspam-anti-spam/reviews/?filter=5">
-<img loading="lazy"   alt="OOPSpam Anti-Spam WordPress Plugin reviews" src="/blog/assets/posts/elementor-forms/reviews.png">
-</a>
-</center>
+![OOPSpam WP Header](/blog/assets/posts/oopspam-for-spam-protection.png "OOPSpam WP Header")
 
 [OOPSpam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/) (that's us 👋) is another way to stop spam on your Elementor Forms and WordPress comments. The plugin works with OOPSpam API that protects over 3.5M websites daily. While the other two alternatives are free, OOPSPam API is a paid service. But it does come with free 40/month spam checks for you to test and see the difference.
 
@@ -121,7 +117,7 @@ Cloudflare is a good alternative to reCAPTCHA as it's much lighter than reCAPTCH
 
 Once you put your website behind Cloudflare, you have [an option to block countries](https://www.oopspam.com/blog/blocking-countries-from-accessing-your-website-using-cloudflare). Depending from where you are getting spam, you may consider star blocking China and Russia as many spam originates from these countries.
 
-![Blocking Countries in Cloudflare](/blog/assets/posts/elementor-forms/Blocking-Countries-in-Cloudflare.png "Blocking Countries in Cloudflare")
+![Blocking Countries in Cloudflare](/blog/assets/posts/cloudflare-custom-rules.png "Blocking Countries in Cloudflare")
 
 ## Final thoughts
 
