@@ -157,9 +157,7 @@ Inside Make:
 3. Enter your OOPSpam API key.
 4. Map the relevant fields from the Breakdance form:
 5. * Content → Message field
-
    * Email → Email field
-
    * IP Address → IP field (if available)
 
 Providing the IP address improves detection accuracy.
@@ -204,9 +202,9 @@ Start by enabling the Honeypot in Breakdance. It is built-in, easy to activate, 
 
 If you want a free additional layer, add Google reCAPTCHA v3. It analyzes visitor behavior and helps detect suspicious submissions.
 
-If you need more control over spam filtering, use the OOPSpam WordPress plugin. It evaluates message content, email reputation, and IP signals while keeping the impact on your website’s performance low.
+If you need more control over spam filtering, use the OOPSpam WordPress plugin. It evaluates message content, email reputation, and IP signals while keeping the impact on your website’s performance low. 
 
-Using these layers together provides stronger protection against spam.
+You don't need to use reCAPTCHA if you are using OOPSpam WordPress plugin.
 
 ## **Final Thoughts**
 
