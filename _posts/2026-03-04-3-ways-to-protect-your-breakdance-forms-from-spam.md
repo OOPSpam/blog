@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 3 Ways to Protect Your Breakdance Forms from Spam
-date: 2026-03-05T01:06:00.000+08:00
+date: 2026-03-05T11:36:00.000-06:00
 author: chazie
 image: /blog/assets/posts/header_bkdance.png
 description: Learn how to protect Breakdance Forms from spam using Honeypot,
