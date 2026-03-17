@@ -32,38 +32,51 @@ It's likely you have already tried the below options, and they didn't work for y
 2. Keeps your site accessible to all users
 3. Stops both human spammers and bots
 
+   No need to add actions inside Breakdance forms
+
 The plugin's settings page also allows you to adjust how sensitive your spam filter should be. Even leaving the default setting **Sensitivity Level** will help you reduce spam to zero.
 
-![OOPSpam WordPress Plugin Sensitivity level](https://www.oopspam.com/assets/WP_SensitivyLevel.jpg "OOPSpam WordPress Plugin Sensitivity level")
+## How to Activate Spam Protection for Breakdance Forms
 
-In addition, the plugin allows you to set up a filter to accept or block submissions only from certain countries and languages.
+Setting up OOPSpam with Breakdance is simple and does not require editing your form actions.
 
-![OOPSpam WordPress Plugin country & language restrictions](/blog/assets/posts/breakdance/country-language-filter.png "OOPSpam WordPress Plugin country & language restrictions")
+**Step 1: Install the Plugin**
 
-> ✨ Since then, we have also added the **Block messages from these countries** feature.
+![OOPSpam Anti-Spam](/blog/assets/posts/oopspam-anti-spam-overview.png "OOPSpam Anti-Spam")
 
-![OOPSpam WordPress Plugin block countries](https://www.oopspam.com/blog/assets/wp-block-countries.png "OOPSpam WordPress Plugin block countries")
+Go to your WordPress dashboard and navigate to **Plugins → Add New**. Search for **[OOPSpam Anti-Spam](https://www.oopspam.com/wordpress)**, then install and activate the plugin.
 
-Here are a few steps to activate spam protection for Breakdance Forms:
+**Step 2: Get Your API Key**
 
-1. [Subscribe to get an API key](https://app.oopspam.com/Identity/Account/Register) then copy-paste the API key to the plugin's appropriate field under **Settings->OOPSpam Anti-Spam** on your WordPress Admin Dashboard.
+![Get Your API Key](/blog/assets/posts/oopspam-dashboard-api.png "Get Your API Key")
 
-   > ℹ️ Make sure to select OOPSpam Dashboard on the setting page
-2. If you have Breakdance installed then a special section will appear on the OOPSpam Anti-Spam plugin's settings page.
+[Create an OOPSpam account](https://app.oopspam.com/Identity/Account/Login) if you do not already have one. Once logged in, go to your dashboard and copy your API key.
 
-   ![OOPSpam Anti-Spam WordPress Plugin Settings](/blog/assets/posts/breakdance/oopspam-bd-setting.png "OOPSpam Anti-Spam WordPress Plugin Settings")
-3. Now, OOPSpam is activated. You can edit your form and go to **Actions -> Actions After Submission** and select **Check for spam by OOPSpam** action. Make sure **Check for spam by OOPSpam** comes before **Store Submission** action so that OOPSpam checks for spam before a submission is stored.
+**Step 3: Add API Key in WordPress**
 
-   ![OOPSpam spam check action in Breakdance Form setting](/blog/assets/posts/breakdance/spam-check-action.png "OOPSpam spam check action in Breakdance Form setting")
-4. Done!
+![Add API Key in WordPress](/blog/assets/posts/oopspam-api-key.png "Add API Key in WordPress")
 
-### Important Note on Breakdance’s Limitations
+Return to your WordPress dashboard and open **Settings → OOPSpam Anti-Spam**. Paste your API key into the appropriate field, select **OOPSpam Dashboard**, and save your settings.
 
-While OOPSpam effectively blocks spam submissions, Breakdance doesn’t allow plugin developers to intercept certain actions, such as email notifications. As a result, even if OOPSpam blocks spam, Breakdance may still send email notifications.
+**Step 4: Enable Breakdance Spam Protection**
 
-✨ **Recommendation:** To avoid spam emails, remove **Email** from Breakdance Form’s Actions. Instead, manage email notifications at the **[Make integration](https://www.make.com/)** level. Additionally, when configuring **Webhook** in Breakdance Forms, do **not** use Field Map, as it prevents Breakdance from sending the IP to Make.
+![Enable Breakdance Spam Protection](/blog/assets/posts/screenshot_2026-03-04_at_10.35.23_am.png "Enable Breakdance Spam Protection")
 
-For more comprehensive details, check out our guide on combining [Make and OOPSpam to stop spam on Breakdance Forms](https://www.oopspam.com/blog/stop-spam-on-breakdance-forms-using-make-and-oopspam).
+If Breakdance is installed, you will see a **Breakdance Forms section** appear automatically on the settings page. Turn on **Activate Spam Protection**, optionally customize the spam message, and save your changes.
+
+That’s it! 
+
+OOPSpam will now automatically check all Breakdance form submissions and block spam in the background.
+
+### How It Works Now
+
+With the updated integration, OOPSpam works automatically once enabled.
+
+* No need to add actions inside Breakdance forms
+* No need to reorder submission actions
+* No need to modify email settings
+
+Spam submissions are filtered before they are processed. Legitimate submissions continue through your normal workflow without interruption.
 
 ## Honeypot
 
