@@ -88,7 +88,7 @@ This is a better option if your goal is to reduce friction while still filtering
 
 ![hCAPTCHA](/blog/assets/posts/hcaptcha-wpdiscuz.png "hCAPTCHA")
 
-Unlike reCAPTCHA, hCAPTCHA is not built into WPDiscuz. However, you can use the official hCAPTCHA WordPress plugin which supports WPDiscuz. hCAPTCHA and reCAPTCHA work similarly and share the same limitations. The most notable difference is privacy: hCAPTCHA is considered a privacy-friendly alternative to reCAPTCHA. hCAPTCHA integration comes with two types: Visible and Invisible.
+Unlike reCAPTCHA, [hCAPTCHA ](https://www.oopspam.com/hcaptcha-alternative)is not built into WPDiscuz. However, you can use the official hCAPTCHA WordPress plugin which supports WPDiscuz. hCAPTCHA and reCAPTCHA work similarly and share the same limitations. The most notable difference is privacy: hCAPTCHA is considered a privacy-friendly alternative to reCAPTCHA. hCAPTCHA integration comes with two types: Visible and Invisible.
 
 Once the hCAPTCHA plugin is installed, navigate to **hCaptcha → Integration** and enter your Site Key and Secret Key. To obtain these keys, follow these steps:
 
@@ -218,7 +218,7 @@ This is especially useful if you want to manage discussions without constantly n
 
 ## **5. Add OOPSpam for Advanced Filtering** 
 
-WPDiscuz’s built-in tools are a strong start, but modern spam requires smarter detection. This is where OOPSpam comes in. [OOPSpam](https://www.oopspam.com/) (that's us 👋) integrates directly with WPDiscuz and [filters comments automatically](https://www.oopspam.com/blog/spam-protection-for-wpdiscuz).
+WPDiscuz’s built-in tools are a strong start, but modern spam requires smarter detection. This is where OOPSpam comes in. [OOPSpam](https://www.oopspam.com/) (that's us 👋) integrates directly with WPDiscuz and filters comments automatically.
 
 ### **How to set it up**
 
@@ -236,7 +236,7 @@ Go to Settings → OOPSpam and paste the key. 
 
 On the plugin’s settings page, you can also adjust how sensitive you want the spam filter to be. Even keeping the default **Sensitivity level** setting will help you cut spam down to zero. The plugin also allows you to accept submissions only from certain countries and languages — or to block submissions from specific countries entirely.
 
-Enable WPDiscuz protection inside OOPSpam settings Once enabled, it works immediately.
+Enable WPDiscuz protection inside OOPSpam settings. Once enabled, it works immediately.
 
 ![WPDiscuz protection ](/blog/assets/posts/wpdiscuz-protection.png "WPDiscuz protection ")
 
