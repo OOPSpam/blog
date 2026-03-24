@@ -70,6 +70,12 @@ Once enabled, it adds the familiar “I’m not a robot” checkbox to your comm
 
 ![reCAPTCHA](/blog/assets/posts/wpdiscuz-recaptcha.png "reCAPTCHA")
 
+### **Invisible reCAPTCHA (v3)**
+
+WPDiscuz also supports reCAPTCHA v3 via an [addon](https://gvectors.com/product/wpdiscuz-recaptcha/). This version runs in the background and does not require users to interact with a checkbox.
+
+This is a better option if your goal is to reduce friction while still filtering spam effectively.
+
 #### **Should I set up reCAPTCHA v2 or v3?**
 
 reCAPTCHA v2 requires users to solve a challenge, while v3 runs in the background and scores visitors based on behavior (0 = bot, 1 = human).
@@ -77,12 +83,6 @@ reCAPTCHA v2 requires users to solve a challenge, while v3 runs in the backgroun
 v3 offers a smoother user experience, but both versions can be bypassed by advanced bots or captcha farms. They may also add extra scripts that can slow your site slightly.
 
 If you need a free option, reCAPTCHA is still a solid choice. For better usability, go with the invisible version.
-
-### **Invisible reCAPTCHA (v3)**
-
-WPDiscuz also supports reCAPTCHA v3 via an [addon](https://gvectors.com/product/wpdiscuz-recaptcha/). This version runs in the background and does not require users to interact with a checkbox.
-
-This is a better option if your goal is to reduce friction while still filtering spam effectively.
 
 ### **hCAPTCHA**
 
