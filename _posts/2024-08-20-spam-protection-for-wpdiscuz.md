@@ -88,16 +88,11 @@ If you need a free option, reCAPTCHA is still a solid choice. For better usabili
 
 ![hCAPTCHA](/blog/assets/posts/hcaptcha-wpdiscuz.png "hCAPTCHA")
 
-Unlike reCAPTCHA, [hCAPTCHA ](https://www.oopspam.com/hcaptcha-alternative)is not built into WPDiscuz. However, you can use the official hCAPTCHA WordPress plugin which supports WPDiscuz. hCAPTCHA and reCAPTCHA work similarly and share the same limitations. The most notable difference is privacy: hCAPTCHA is considered a privacy-friendly alternative to reCAPTCHA. hCAPTCHA integration comes with two types: Visible and Invisible.
+[hCAPTCHA ](https://www.oopspam.com/hcaptcha-alternative)is not built into WPDiscuz, but you can use the official WordPress plugin, which supports it. It works similarly to reCAPTCHA but is more privacy-friendly and offers visible or invisible options.
 
-Once the hCAPTCHA plugin is installed, navigate to **hCaptcha → Integration** and enter your Site Key and Secret Key. To obtain these keys, follow these steps:
+After installing, go to **hCaptcha → Integration** and add your Site Key and Secret Key from hcaptcha.com (create an account, register your site, and generate the keys).
 
-* Visit the hCAPTCHA website at hcaptcha.com and sign up for an account.
-* Once logged in, navigate to the **Sites** section and click **Register a new site**.
-* Fill in your website name and domain, then choose your hCAPTCHA type: **Checkbox** (visible) or **Invisible**.
-* After completing registration, hCAPTCHA will generate a unique **Site Key** and **Secret Key** for your website. Copy and keep them in a secure location.
-
-If you are still getting spammed after trying reCAPTCHA, it is a good practice to try hCAPTCHA as well. It’s free and easy to set up. In some cases, however, switching between CAPTCHA solutions doesn’t change much, as spammers can bypass both nowadays.
+If reCAPTCHA is not stopping spam, hCAPTCHA is a good free alternative. However, like reCAPTCHA, advanced bots can still bypass it.
 
 ### **Simple CAPTCHA** 
 
