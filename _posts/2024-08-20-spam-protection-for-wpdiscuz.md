@@ -111,7 +111,7 @@ Switching this setting typically resolves compatibility issues on certain hostin
 
 WPDiscuz already includes invisible antispam by default, so CAPTCHA should be treated as an additional layer, not your only defense.
 
-> Adding too many verification steps can reduce real user engagement. The best setup combines CAPTCHA with moderation rules and an advanced filtering tool like OOPSpam for stronger, more balanced protection.
+> Adding too many verification steps can reduce real user engagement. The best setup combines CAPTCHA with moderation rules or an advanced filtering tool like OOPSpam for stronger, more balanced protection.
 
 ## **3. Control Guest Commenting** 
 
