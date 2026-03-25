@@ -197,6 +197,8 @@ This approach keeps your comment section safe while maintaining a smooth experie
 
 ### **Use frontend moderation for better workflow**
 
+![Use frontend moderation for better workflow](/blog/assets/posts/wpdiscuz-use-frontend-moderation.png "Use frontend moderation for better workflow")
+
 For sites with higher comment volume, WPDiscuz offers a [frontend moderation addon](https://gvectors.com/product/wpdiscuz-frontend-moderation/) that makes managing comments faster and more efficient.
 
 It allows you to:
@@ -255,6 +257,6 @@ Spam is not going away. But it can be controlled. 
 
 WPDiscuz already gives you a solid foundation. When you combine it with moderation rules and OOPSpam, you create a system that filters spam before it becomes a problem.
 
-Start with these five steps, then adjust based on how your site grows. That is all! Go on and create your forms.
+Start with these five steps, then adjust based on how your site grows. That is all! 
 
 Happy spam-free day!
