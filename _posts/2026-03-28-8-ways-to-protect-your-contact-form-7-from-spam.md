@@ -120,7 +120,7 @@ A [honeypot](https://www.oopspam.com/blog/ways-to-stop-spam#honeypot-filter-spam
 
 ![Add a Honeypot Field](/blog/assets/posts/honeypot-to-contact-form-7.png "Add a Honeypot Field")
 
-To add one, install the “[Honeypot for Contact Form 7](https://wordpress.org/plugins/contact-form-7-honeypot/)” plugin. Then edit your form under **Contact → Contact Forms** and insert a honeypot tag like: **\[honeypot your-field]**
+To add one, install the “[Honeypot for Contact Form 7](https://wordpress.org/plugins/contact-form-7-honeypot/)” plugin. Then edit your form under **Contact → Contact Forms** and insert a honeypot tag like: **`[honeypot your-field]`**
 
 Save the form, and it will start working in the background.
 
