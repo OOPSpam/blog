@@ -3,7 +3,7 @@ layout: post
 title: 4 Ways to Protect Your Toolset Forms from Spam
 date: 2026-04-02T17:29:00.000+08:00
 author: chazie
-image: /blog/assets/posts/social-media-meta.png
+image: /blog/assets/posts/toolset_meta_header.png
 description: Protect Toolset Forms from spam using reCAPTCHA, honeypots,
   OOPSpam, and firewall protection. Simple steps to reduce spam and improve form
   security.
