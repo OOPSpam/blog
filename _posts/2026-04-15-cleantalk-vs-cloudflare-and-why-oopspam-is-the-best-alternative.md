@@ -129,201 +129,103 @@ OOPSpam handles all four layers through a single API:
 ## **Side-by-Side Comparison**
 
 <style>
-
   table {
-
-\    border: 2px solid black;
-
-\    border-collapse: collapse;
-
-\    width: 100%;
-
+    border: 2px solid black;
+    border-collapse: collapse;
+    width: 100%;
   }
-
   th, td {
-
-\    border: 2px solid black;
-
-\    padding: 12px;
-
-\    text-align: left;
-
-\    vertical-align: top;
-
+    border: 2px solid black;
+    padding: 12px;
+    text-align: left;
+    vertical-align: top;
   }
-
   th {
-
-\    background-color: #f9f9f9;
-
-\    font-weight: bold;
-
+    background-color: #f9f9f9;
+    font-weight: bold;
   }
-
   td:first-child {
-
-\    font-weight: bold;
-
+    font-weight: bold;
   }
-
 </style>
 
-
-
 <table>
-
   <thead>
-
-\    <tr>
-
-\    <th>Feature</th>
-
-\    <th>CleanTalk</th>
-
-\    <th>Cloudflare</th>
-
-\    <th>OOPSpam</th>
-
-\    </tr>
-
+    <tr>
+      <th>Feature</th>
+      <th>CleanTalk</th>
+      <th>Cloudflare</th>
+      <th>OOPSpam</th>
+    </tr>
   </thead>
-
   <tbody>
-
-\    <tr>
-
-\    <td>CAPTCHA-free</td>
-
-\    <td>Yes</td>
-
-\    <td>Yes (Turnstile)</td>
-
-\    <td>Yes</td>
-
-\    </tr>
-
-\    <tr>
-
-\    <td>False positive risk</td>
-
-\    <td>High</td>
-
-\    <td>Low (network level)</td>
-
-\    <td>Low (score-based)</td>
-
-\    </tr>
-
-\    <tr>
-
-\    <td>Content-level spam filter</td>
-
-\    <td>Yes</td>
-
-\    <td>No</td>
-
-\    <td>Yes</td>
-
-\    </tr>
-
-\    <tr>
-
-\    <td>DDoS / network protection</td>
-
-\    <td>No</td>
-
-\    <td>Yes</td>
-
-\    <td>No</td>
-
-\    </tr>
-
-\    <tr>
-
-\    <td>Server-side only</td>
-
-\    <td>Yes</td>
-
-\    <td>No (Turnstile is client-side)</td>
-
-\    <td>Yes</td>
-
-\    </tr>
-
-\    <tr>
-
-\    <td>GDPR compliance</td>
-
-\    <td>Moderate</td>
-
-\    <td>Good</td>
-
-\    <td>Excellent</td>
-
-\    </tr>
-
-\    <tr>
-
-\    <td>Geo-blocking</td>
-
-\    <td>Yes</td>
-
-\    <td>Yes</td>
-
-\    <td>Yes</td>
-
-\    </tr>
-
-\    <tr>
-
-\    <td>Multi-platform API</td>
-
-\    <td>Strong</td>
-
-\    <td>N/A</td>
-
-\    <td>Yes</td>
-
-\    </tr>
-
-\    <tr>
-
-\    <td>In-dashboard spam log</td>
-
-\    <td>No</td>
-
-\    <td>N/A</td>
-
-\    <td>Yes</td>
-
-\    </tr>
-
-\    <tr>
-
-\    <td>Adjustable sensitivity</td>
-
-\    <td>No</td>
-
-\    <td>Partial</td>
-
-\    <td>Yes</td>
-
-\    </tr>
-
-\    <tr>
-
-\    <td>Unlimited sites (one key)</td>
-
-\    <td>No</td>
-
-\    <td>N/A</td>
-
-\    <td>Yes</td>
-
-\    </tr>
-
+    <tr>
+      <td>CAPTCHA-free</td>
+      <td>Yes</td>
+      <td>Yes (Turnstile)</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>False positive risk</td>
+      <td>High</td>
+      <td>Low (network level)</td>
+      <td>Low (score-based)</td>
+    </tr>
+    <tr>
+      <td>Content-level spam filter</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>DDoS / network protection</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Server-side only</td>
+      <td>Yes</td>
+      <td>No (Turnstile is client-side)</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>GDPR compliance</td>
+      <td>Moderate</td>
+      <td>Good</td>
+      <td>Excellent</td>
+    </tr>
+    <tr>
+      <td>Geo-blocking</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Multi-platform API</td>
+      <td>Strong</td>
+      <td>N/A</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>In-dashboard spam log</td>
+      <td>No</td>
+      <td>N/A</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Adjustable sensitivity</td>
+      <td>No</td>
+      <td>Partial</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Unlimited sites (one key)</td>
+      <td>No</td>
+      <td>N/A</td>
+      <td>Yes</td>
+    </tr>
   </tbody>
-
 </table>
 
 ### **The Verdict: Which Tool Do You Actually Need?**
