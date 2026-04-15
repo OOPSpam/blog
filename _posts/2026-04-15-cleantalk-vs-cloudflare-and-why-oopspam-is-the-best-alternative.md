@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "CleanTalk vs. Cloudflare: And Why OOPSpam Is the Best Alternative"
+title: CleanTalk vs. Cloudflare – And Why OOPSpam Is the Best Alternative
 date: 2026-04-15T23:40:00.000+08:00
 author: chazie
 image: /blog/assets/posts/cleantalk_vs_cloudflare_meta-1-.jpg
