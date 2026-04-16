@@ -11,7 +11,7 @@ tags:
   - Cloudflare
   - CleanTalk
 ---
-![CleanTalk vs. Cloudflare: And Why OOPSpam Is the Best Alternative](/blog/assets/posts/cleantalk-akismet.png "CleanTalk vs. Cloudflare: And Why OOPSpam Is the Best Alternative")
+![CleanTalk vs. Cloudflare: And Why OOPSpam Is the Best Alternative](/blog/assets/posts/cleantalk_vs_cloudflare_meta-1-.jpg "CleanTalk vs. Cloudflare: And Why OOPSpam Is the Best Alternative")
 
 If you need content-level spam filtering that won't block real customers, neither CleanTalk nor Cloudflare is the complete answer. 
 
