@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to Block Fake Leads in Unbounce Forms?
-date: 2026-04-20T14:23:00.000+08:00
+date: 2026-04-20T14:26:00.000+08:00
 author: chazie
 image: /blog/assets/posts/unbounce_forms_meta.jpg
 description: Block fake leads in Unbounce with CAPTCHA, honeypots, OOPSpam, IP
@@ -47,8 +47,8 @@ A [honeypot](https://www.oopspam.com/blog/ways-to-stop-spam#honeypot-filter-spam
 
 **To add one in Unbounce:**
 
-* Add a text input field to your form and style it with CSS to hide it from view (**display: none** or **visibility: hidden**).
-* Give it a generic but enticing name like **website** or **phone_extra**.
+* Add a text input field to your form and style it with CSS to hide it from view (**`display: none`** or **`visibility: hidden`**).
+* Give it a generic but enticing name like **`website`** or **`phone_extra`**.
 * In your form-handling workflow (whether via webhook, Zapier, or a CRM integration), add a filter to reject any submission where that hidden field contains a value.
 
 Honeypots are lightweight, add zero friction for real users, and are especially effective against simple bots that fill every form field they detect.
