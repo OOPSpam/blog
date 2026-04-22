@@ -1,11 +1,12 @@
 ---
 layout: post
-title:  "Spam protection for Bubble.io"
+title: Spam protection for Bubble.io
+date: 2026-04-22T10:28:00.000+09:00
 author: onar
 image: /assets/bubble_oopspam.png
-tags: [bubble]
-
-description: "Learn how to add spam protection to your Bubble app forms."
+description: Learn how to add spam protection to your Bubble app forms.
+tags:
+  - bubble
 ---
 <center>
 <a href="https://bubble.io/plugin/oopspam-spam-detection-1582908608700x936823858020745200">
@@ -16,7 +17,7 @@ description: "Learn how to add spam protection to your Bubble app forms."
 
 I love no-code platforms. [Bubble.io](https://bubble.io) is perhaps one of the first and leading no-code solutions out there. It's amazing how fast people can build with these platforms. Our first no-code app was [Integromat app](https://www.integromat.com/en/integrations/oopspam-anti-spam) (now Make) which made it easy to add a spam filter to Integromat automated workflows.
 
-Today, I'm excited to announce our official [Bubble.io plugin](https://bubble.io/plugin/oopspam-spam-detection-1582908608700x936823858020745200). I say "official" because someone already developed [an unofficial OOPSpam plugin for Bubble](https://bubble.io/plugin/spam-detector-1554559198145x811832585896591400) with our API, however, it's not functional as it is not up to date. So we decided to take matters into our hands.
+Today, I'm excited to announce our official [Bubble.io plugin](https://bubble.io/plugin/oopspam-spam-detection-1582908608700x936823858020745200). I say "official" because someone already developed an unofficial OOPSpam plugin for Bubble with our API, however, it's not functional as it is not up to date. So we decided to take matters into our hands.
 
 The plugin can be used to prevent spam in contact forms, review systems, or anywhere where spam messages may come. In this article, we will demonstrate it with a contact form.
 
@@ -35,13 +36,14 @@ Visit your dashboard on Bubble and create a new app. The pop-up would let you qu
 1. Collect all the information from the contact form fields
 2. Show "Thank you" message
 3. Check if the submission is spam
-    1. If spam, Terminate the flow
-    2. If not, Send an email ✉️
+
+   1. If spam, Terminate the flow
+   2. If not, Send an email ✉️
 4. Done 🎉
 
 ## 2. Installing OOPSpam & ipiphy Bubble plugins
 
-[One of the parameters](https://www.oopspam.com/docs/#spam-detection) OOPSpam API allows you to pass is ```senderIP```.  While it is not necessary to send a visitor's IP, it helps with spam detection. For that, we need to install the **ipiphy plugin by Bubble**. It is a simple plugin that would allow us to get a visitor's IP.
+[One of the parameters](https://www.oopspam.com/docs/#spam-detection) OOPSpam API allows you to pass is `senderIP`.  While it is not necessary to send a visitor's IP, it helps with spam detection. For that, we need to install the **[ipiphy plugin by Bubble](https://bubble.io/plugin/ipiphy---ip-geolocation-1574978038763x786941160914944000)**. It is a simple plugin that would allow us to get a visitor's IP.
 
 The second plugin we need to install is our beloved [OOPSpam Spam Detection plugin for Bubble](https://bubble.io/plugin/oopspam-spam-detection-1582908608700x936823858020745200).
 
@@ -51,7 +53,7 @@ Visit the *Plugins* tab in the template editing mode and click *Add plugins*. Se
 
 ipiphy plugin doesn't need any configuration. For the OOPSpam plugin we need get an API key. For that [create a new account](https://app.oopspam.com/Identity/Account/Register) on the OOPSpam dashboard. Once registered and verified our email, we need to click the *Copy* to copy the API key.
 
-![OOPSpam Dashboard](/blog/assets/posts/bubbleio-oopspam/oopspam-dash.png "OOPSpam Dashboard")
+![OOPSpam Dashboard](/blog/assets/posts/oopspam-dashboard-api.png "OOPSpam Dashboard")
 
 Go back to Bubble and navigate to *Plugins->OOPSpam Spam Detection* and paste the API key we just copied.
 
@@ -74,28 +76,34 @@ Now we have to pass all the necessary data to the plugin. Once you add the actio
    "senderIP": <>,
    "email": <>,
    "content": <>,
+   "context": <>,
    "checkForLength": <>,
    "allowedLanguages" : <>,
    "allowedCountries" : <>,
    "blockedCountries": <>,
-   "blockTempEmail": true
+   "blockTempEmail": true,
+   "blockDC": false,
+   "blockVPN": false
 }
 ```
 
-On Bubble, ```<>``` stands for dynamic data. It means we can manually enter data or insert the output from a different plugin.
+On Bubble, `<>` stands for dynamic data. It means we can manually enter data or insert the output from a different plugin.
 
-- ```senderIP```: We add output from the ipiphy plugin. For this, remove ```<>``` and select *Insert dynamic data -> Get data from external API*. From *API provider* dropdown select *Get current user's IP address* and close.
-- ```email```: Select email field value from your sign up or contact forms.
-- ```content```: Here we pass a message we're going to get from our contact form. Again remove ```<>``` and select your message field's value. In our case, it is a Multilineinput element with the title *What would you like to say*
-- ```checkForLength```: Short messages are usually spam. By default, any message shorter than 20 characters will be considered spam. To disable this, just enter ```false``` otherwise leave it as it is or type ```true```.
-- ```allowedLanguages```: Would like to get messages only in English and Italian then enter ```["it","en"]```. Check out [all supported languages](https://www.oopspam.com/docs/#request-body-parameters) in our docs. 
-- ```allowedCountries```: Similar to ```allowedLanguages```, would like to get messages only from Italy and the US then enter two-letter country code ```["it","us"```. Check out [all supported countries](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements).
-- ```blockedCountries```: Block content from a certain country or countries. All you need to do is pass the two-letter country code as an array.
-- ```blockTempEmail```: Block temporary/disposable emails.
-  
-If you don't need ```allowedLanguages```, ```blockedCountries``` or ```allowedCountries``` filters just enter empty array ```[""]```.
+* `senderIP`: We add output from the ipiphy plugin. For this, remove `<>` and select *Insert dynamic data -> Get data from external API*. From *API provider* dropdown select *Get current user's IP address* and close.
+* `email`: Select email field value from your sign up or contact forms.
+* `content`: Here we pass a message we're going to get from our contact form. Again remove `<>` and select your message field's value. In our case, it is a Multilineinput element with the title *What would you like to say*
+* `context` : **Optionally**, if would like to use Contextual spam detection, briefly describe your website's purpose or business. For best results, include what types of submissions you consider spam and what you consider legitimate. For more details, please refer to [the announcement](https://www.oopspam.com/blog/introducing-contextual-spam-detection).
+* `checkForLength`: Short messages are usually spam. By default, any message shorter than 20 characters will be considered spam. To disable this, just enter `false` otherwise leave it as it is or type `true`.
+* `allowedLanguages`: Would like to get messages only in English and Italian then enter `["it","en"]`. Check out [all supported languages](https://www.oopspam.com/docs/#request-body-parameters) in our docs. 
+* `allowedCountries`: Similar to `allowedLanguages`, would like to get messages only from Italy and the US then enter two-letter country code `["it","us"`. Check out [all supported countries](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements).
+* `blockedCountries`: Block content from a certain country or countries. All you need to do is pass the two-letter country code as an array.
+* `blockTempEmail`: Block temporary/disposable emails.
+* `blockDC` : Block Data Center IPs. Filters out submissions from cloud providers.
+* `blockVPN` : Block VPN, Proxy, Tor IPs
 
-> 🚨 In some cases like in sign up forms there is no data to enter into `content` field. In this case, enter an empty value **""** (double-quote) as value. The content field is required (even it is empty) that is why we make sure to have it in our JSON request body. Remember to also set ``checkForLength`` to false to prevent short messages from being marked as spam.
+If you don't need `allowedLanguages`, `blockedCountries` or `allowedCountries` filters just enter empty array `[""]`.
+
+> 🚨 In some cases like in sign up forms there is no data to enter into `content` field. In this case, enter an empty value **""** (double-quote) as value. The content field is required (even it is empty) that is why we make sure to have it in our JSON request body. Remember to also set `checkForLength` to false to prevent short messages from being marked as spam.
 
 After setting up all these fields, you should have something like this:
 
@@ -109,9 +117,9 @@ Let's add a thank you message. For step 2, add a new **Show an element** action 
 
 A spammer/bot will see this conformation and move on to another websites to spam. But we still have work to do. With each contact form submission, an email will be sent to a site owner. To stop overflowing your inbox with a spam message, we need to terminate submission before it sends an email.
 
-> OOPSpam provides a Spam Score (```Score```) for every submission. We recommend terminating flow based on ```Score``` field. This is a number between 0-6. Usually, a score of 3 and above is considered spam.
+> OOPSpam provides a Spam Score (`Score`) for every submission. We recommend terminating flow based on `Score` field. This is a number between 0-6. Usually, a score of 3 and above is considered spam.
 
-For that, we add a new **Terminate this workflow** action then **Result of step 1 (OOPSpam - Check for spam))**. Here grab the value of ```Score``` field and let action know that *if Score is 3 or greater then terminate this flow*.
+For that, we add a new **Terminate this workflow** action then **Result of step 1 (OOPSpam - Check for spam))**. Here grab the value of `Score` field and let action know that *if Score is 3 or greater then terminate this flow*.
 
 ![Terminate this flow](/blog/assets/posts/bubbleio-oopspam/oopspam-terminateflow.png "Terminate this flow")
 
