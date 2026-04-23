@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Spam protection for Bubble.io
-date: 2026-04-22T10:28:00.000+09:00
+date: 2026-04-23T12:50:00.000+09:00
 author: onar
 image: /assets/bubble_oopspam.png
 description: Learn how to add spam protection to your Bubble app forms.
@@ -41,17 +41,19 @@ Visit your dashboard on Bubble and create a new app. The pop-up would let you qu
    2. If not, Send an email ✉️
 4. Done 🎉
 
-## 2. Installing OOPSpam & ipiphy Bubble plugins
+## 2. Installing OOPSpam & IP Geo Bubble plugins
 
-[One of the parameters](https://www.oopspam.com/docs/#spam-detection) OOPSpam API allows you to pass is `senderIP`.  While it is not necessary to send a visitor's IP, it helps with spam detection. For that, we need to install the **[ipiphy plugin by Bubble](https://bubble.io/plugin/ipiphy---ip-geolocation-1574978038763x786941160914944000)**. It is a simple plugin that would allow us to get a visitor's IP.
+[One of the parameters](https://www.oopspam.com/docs/#spam-detection) OOPSpam API allows you to pass is `senderIP`.  While it is not necessary to send a visitor's IP, it helps with spam detection. For that, we need to install the "IP Geo" plugin. Go to *Plugins* and click *Add plugins* and search and install "IP Geo" plugin.
+
+![IP Geo bubble.io plugin](/blog/assets/posts/screenshot-2026-04-23-at-12.06.49 pm.png "IP Geo bubble.io plugin")
 
 The second plugin we need to install is our beloved [OOPSpam Spam Detection plugin for Bubble](https://bubble.io/plugin/oopspam-spam-detection-1582908608700x936823858020745200).
 
-Visit the *Plugins* tab in the template editing mode and click *Add plugins*. Search and install both OOPSpam and ipiphy.
+On the *Add plugins* page, search for "oopspam" and install it.
 
 ![Installing OOPSpam Spam filter to Bubble app](/blog/assets/posts/bubbleio-oopspam/oopspam-plugin.png "Installing OOPSpam Spam filter to Bubble app")
 
-ipiphy plugin doesn't need any configuration. For the OOPSpam plugin we need get an API key. For that [create a new account](https://app.oopspam.com/Identity/Account/Register) on the OOPSpam dashboard. Once registered and verified our email, we need to click the *Copy* to copy the API key.
+"IP Geo" plugin doesn't need any configuration. For the OOPSpam plugin we need get an API key. For that [create a new account](https://app.oopspam.com/Identity/Account/Register) on the OOPSpam dashboard. Once registered and verified our email, we need to click the *Copy* to copy the API key.
 
 ![OOPSpam Dashboard](/blog/assets/posts/oopspam-dashboard-api.png "OOPSpam Dashboard")
 
@@ -69,7 +71,7 @@ Visit *Workflow* tab then select *When Button CONTACT US is clicked*. Let's add 
 
 ![OOPSpam Bubble action](/blog/assets/posts/bubbleio-oopspam/oopspam-action.png "OOPSpam Bubble action")
 
-Now we have to pass all the necessary data to the plugin. Once you add the action a popup appears and allows us to input information. As of now, OOPSpam takes [five inputs](https://www.oopspam.com/docs/#request-body-parameters).
+Now we have to pass all the necessary data to the plugin. Once you add the action a popup appears and allows us to input information. As of now, OOPSpam takes [three main inputs](https://www.oopspam.com/docs): IP, email and content.
 
 ```json
 {
@@ -89,7 +91,9 @@ Now we have to pass all the necessary data to the plugin. Once you add the actio
 
 On Bubble, `<>` stands for dynamic data. It means we can manually enter data or insert the output from a different plugin.
 
-* `senderIP`: We add output from the ipiphy plugin. For this, remove `<>` and select *Insert dynamic data -> Get data from external API*. From *API provider* dropdown select *Get current user's IP address* and close.
+* `senderIP`: We add output from the "IP Geo" plugin. For this, remove `<>` and select *Insert dynamic data -> Get data from external API*. From *API provider* dropdown select *IP Info - Get Geo from IP* and pick *ip*.
+
+  ![IP Info - Get Geo from IP](/blog/assets/posts/screenshot-2026-04-23-at-12.17.00 pm.png "IP Info - Get Geo from IP")
 * `email`: Select email field value from your sign up or contact forms.
 * `content`: Here we pass a message we're going to get from our contact form. Again remove `<>` and select your message field's value. In our case, it is a Multilineinput element with the title *What would you like to say*
 * `context` : **Optionally**, if would like to use Contextual spam detection, briefly describe your website's purpose or business. For best results, include what types of submissions you consider spam and what you consider legitimate. For more details, please refer to [the announcement](https://www.oopspam.com/blog/introducing-contextual-spam-detection).
@@ -107,7 +111,7 @@ If you don't need `allowedLanguages`, `blockedCountries` or `allowedCountries` f
 
 After setting up all these fields, you should have something like this:
 
-![OOPSpam Bubble setup](/blog/assets/posts/bubbleio-oopspam/oopspam-bubblesetup.png "OOPSpam Bubble setup")
+![OOPSpam Bubble setup](/blog/assets/posts/screenshot-2026-04-23-at-12.15.14 pm.png "OOPSpam Bubble setup")
 
 At this point, our plugin is ready to handle upcoming spam. Now we need to show the "Thanks for the submission" message and set up termination flow logic (when not to send an email).
 
