@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 7 ways to stop spam on your website
-date: 2025-05-14T12:08:00.000Z
+date: 2026-05-19T12:01:00.000+08:00
 author: onar
 image: /assets/ways-to-stop-spam.png
 description: Prevent spam on your website with Honeypot, Spam Words, Captcha,
