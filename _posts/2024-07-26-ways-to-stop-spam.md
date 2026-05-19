@@ -89,7 +89,7 @@ While the third option still in use, it is not sufficient anymore. Bots got bett
 
 ![Different CAPTCHA examples](/blog/assets/posts/ways-to-stop-spam/captcha.png "Different CAPTCHA examples")
 
-The most widely used and still somehow reliable approach is to represent an interactive puzzle, game-like captcha. This is a combination of both the first and second CAPTCHA types. There is a good chance you have already seen these types of captchas. The idea behind this is that while you are busy solving a puzzle, the CAPTCHA collects certain information about your behavior like mouse movement on a website and browsing history. The bots don't like to wait for a few seconds. They have to move to the next website and act fast to submit spam as many websites as possible.
+The most widely used and still somehow reliable approach is to represent an interactive puzzle, game-like captcha. This is a combination of both the first and second CAPTCHA types. There is a good chance you have already seen these types of captchas. The idea behind this is that while you are busy solving a puzzle, the [CAPTCHA](https://www.oopspam.com/blog/best-captcha-alternatives) collects certain information about your behavior like mouse movement on a website and browsing history. The bots don't like to wait for a few seconds. They have to move to the next website and act fast to submit spam as many websites as possible.
 
 Combined your website behavior and browsing history information with a couple of seconds waiting time results in the final decision about the user (spam or not).
 
@@ -101,7 +101,7 @@ The most notable CAPTCHA solution is [reCaptcha](https://developers.google.com/r
 
 There are services such as [Spamhaus](https://www.spamhaus.org/) that keep a list of known spammer IPs. Spammers change their IPs often to avoid being blocked. However, blocking based on an IP is still a powerful way to block spam that is because a wide range of websites reports these IPs to these services.
 
-At OOPSpam, we receive thousands of spammer IPs every day. From our experience, over 60% of spam are detected solely based on IP. That being said relying entirely on an IP-based filtering may not be the best protection.
+At OOPSpam, we receive thousands of spammer IPs every day. From our experience, over 60% of spam are detected solely based on IP. That being said relying entirely on an IP-based filtering may not be the best [spam protection](https://www.oopspam.com/blog/the-importance-of-spam-protection-for-lead-generation).
 
 > 🎯 Keep in mind that some legitimate users may use VPNs or proxies which tend to be used by spammers as well. That is why you may unintentionally restrict legitimate visitors.
 
@@ -118,7 +118,7 @@ Both approaches work great but if you want to be open to every country then the 
 
 Another less known way to block spam is by languages. Similar to country restriction, by simply allowing submission in a certain language. If you expect comments on your website to be in English, letting comments only in English through could potentially eliminate unnecessary work.
 
-With OOPSpam API, we implemented three options:
+With [OOPSpam API](https://www.oopspam.com/blog/how-to-filter-spam), we implemented three options:
 
 Allow messages only in selected languages
 Block messages from specific countries
@@ -134,7 +134,7 @@ That being said no matter how good the data set is, spammers also get better at 
 
 ## Rule-based spam filtering
 
-Rule-based spam filtering is static and predefined rules to catch spam. It's one of the simplest forms of spam filtering. This technology has been around since spam started appearing in our email inboxes. One notable example of a rule-based spam filter is Spam Assassin for emails.
+Rule-based spam filtering is static and predefined rules to catch spam. It's one of the simplest forms of [spam filtering](https://www.oopspam.com/blog/why-automated-spam-filtering-is-a-must-for-modern-websites). This technology has been around since spam started appearing in our email inboxes. One notable example of a rule-based spam filter is Spam Assassin for emails.
 
 ![Traffic light](/blog/assets/posts/ways-to-stop-spam/rules.png "Traffic light")
 
@@ -160,9 +160,9 @@ Although not all URL shortening services are malicious. Some shortening services
 
 ![OOPSpam WordPress plugin](/blog/assets/posts/oopspam-anti-spam-overview.png "OOPSpam WordPress plugin")
 
-All the techniques above can help—but none are foolproof. Spam tactics change fast, and what works today might fail tomorrow. That’s why at OOPSpam, we’ve been refining our models since 2017 to keep up.
+All the techniques above can help, but none are foolproof. Spam tactics change fast, and what works today might fail tomorrow. That’s why at OOPSpam, we’ve been refining our models since 2017 to keep up.
 
-Instead of relying on one approach, we combine multiple proven strategies into a single, powerful API. We skip honeypots—modern bots can easily bypass them—and focus on smarter, more reliable protection:
+Instead of relying on one approach, we combine multiple proven strategies into a single, [powerful API](https://www.oopspam.com/blog/how-to-add-spamfilter-to-a-contact-form). We skip honeypots, modern bots can easily bypass them, and focus on smarter, more reliable protection:
 
 * Spam detection that considers key patterns and abuse signals
 * [Contextual analysis](https://www.oopspam.com/blog/introducing-contextual-spam-detection) that helps flag spam when only the message body is available (no IP/email)
