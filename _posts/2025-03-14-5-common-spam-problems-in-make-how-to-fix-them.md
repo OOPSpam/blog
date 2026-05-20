@@ -52,7 +52,7 @@ If your Make automation automatically pushes every form submission into your CRM
 ### **The Fix: Validate Every Lead Before Storing It**
 
 * Use OOPSpam’s email verification feature in Make to detect temporary, disposable, or spam domain emails before they enter your workflows.
-* Check IP reputation before adding leads. OOPSpam can detect submissions from suspicious locations or flagged IP addresses.
+* Check IP reputation before adding leads. OOPSpam can detect submissions from suspicious locations or flagged [IP addresses](https://www.oopspam.com/blog/how-to-block-ips-from-vpn-and-cloud-providers-in-make).
 * Store flagged leads in a separate table (Google Sheets or Airtable) for manual review instead of adding them directly to your CRM.
 
 ## **3. Spam in Google Forms, Airtable, and Other Data Collection Tools**
@@ -71,7 +71,7 @@ Public forms are a magnet for spambots, especially when they don’t require aut
 
 * Connect [OOPSpam](https://www.oopspam.com/) to your Make workflow to analyze responses in real time. If a submission is flagged as spam, it won’t proceed.
 * Enable Google Forms’ built-in validation for emails and required fields.
-* Limit public access to your forms—where possible, require authentication to reduce bot submissions.
+* Limit public access to your forms, where possible, require authentication to reduce bot submissions.
 
 ## **4. Junk Email Notifications Overloading Your Inbox**
 
@@ -111,7 +111,7 @@ Make processes data as-is, meaning phishing links can make their way into Slack,
 
 ## **Integrating OOPSpam with Make**
 
-If you’re using Make for automation, you can easily connect it with OOPSpam’s Make app to filter out spam without needing direct API integration. OOPSpam helps block fake leads, filter out spam form submissions, and prevent malicious content before it disrupts your workflows—all seamlessly within Make.
+If you’re using Make for automation, you can easily connect it with OOPSpam’s Make app to filter out spam without needing direct API integration. OOPSpam helps block fake leads, filter out spam form submissions, and [prevent malicious content](https://www.oopspam.com/blog/stop-off-topic-form-submissions-in-make-with-contextual-spam-detection) before it disrupts your workflows—all seamlessly within Make.
 
 ### **Steps to Integrate OOPSpam in Make**
 
@@ -139,7 +139,6 @@ If you’re using Make for automation, you can easily connect it with OOPSpam’
 
 * After the OOPSpam module, add a **Router** to create two paths:
 * * **Spam submissions** (if spam score > 2).
-
   * **Legitimate submissions** (if spam score ≤ 2).
 
 **5. Handle Spam Submissions**
