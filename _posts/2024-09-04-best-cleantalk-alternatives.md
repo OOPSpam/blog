@@ -29,19 +29,19 @@ While CleanTalk is a popular choice, there are several other options available t
 
 ### Key features:
 
-- AI-powered spam detection
-- Spam Score
-- Block countries
-- Block languages
-- Multi-language support
-- Third-party integrations including [WordPress](https://www.oopspam.com/wordpress)
-- [API integration](https://www.oopspam.com/docs/#introduction)
-- Privacy-friendly
-- Detailed analytics and reporting
+* AI-powered spam detection
+* Spam Score
+* Block countries
+* Block languages
+* Multi-language support
+* Third-party integrations including [WordPress](https://www.oopspam.com/wordpress)
+* [API integration](https://www.oopspam.com/docs/#introduction)
+* Privacy-friendly
+* Detailed analytics and reporting
 
 ### Why do companies use OOPSpam?
 
-1. **It replaces multiple tools**: OOPSpam can replace CleanTalk (WordPress plugin, an API), Cloudflare (blocking countries), Akismet (content blocking), Score based filtering (reCAPTCHA). This simplifies workflows, so you don't have to switch between tools.
+1. **It replaces multiple tools**: OOPSpam can replace [CleanTalk](https://www.oopspam.com/blog/akismet-vs-cleantalk-and-why-oopspam-is-the-best-alternative) (WordPress plugin, an API), [Cloudflare](https://www.oopspam.com/blog/cleantalk-vs-cloudflare-and-why-oopspam-is-the-best-alternative) (blocking countries), Akismet (content blocking), Score based filtering (reCAPTCHA). This simplifies workflows, so you don't have to switch between tools.
 2. **Meets privacy & accessible needs:** It requires minimum data to detect abuse. OOPSpam works in server side, so your visitors don't have to solve any CAPTCHA or answer any questions. Making it accessible for everyone.
 3. **Pricing is transparent and scalable::** All plans come with unlimited websites. The pricing works well for businesses of all sizes.
 
@@ -55,10 +55,10 @@ Akismet is a popular online service that stops spam on websites, especially for 
 
 ### Key features:
 
-- Comment and form spam protection
-- IP and Email blocking
-- Multiple CMS integrations
-- API integration
+* Comment and form spam protection
+* IP and Email blocking
+* Multiple CMS integrations
+* API integration
 
 ### Why do companies use CleanTalk?
 
@@ -69,20 +69,20 @@ Akismet is a popular online service that stops spam on websites, especially for 
 ## 3. Antispam Bee
 
 ### What is Antispam Bee?
-    
-Antispam Bee is a free, open-source WordPress plugin that provides powerful spam protection for the WordPress comment system without relying on external services.
+
+Antispam Bee is a free, open-source [anti-spam WordPress plugin](https://www.oopspam.com/blog/7-best-anti-spam-plugins-for-wordpress) that provides powerful spam protection for the WordPress comment system without relying on external services.
 
 ![Antispam bee Dashboard](/blog/assets/posts/akismet-alt/antispam-bee.png "Antispam bee Dashboard")
 
 ### Key features:
 
-- Local spam checks
-- Customizable spam criteria
-- Privacy-friendly
-- IP and country blocking
-- Language blocking
-- Statistics and charts
-- No external dependencies
+* Local spam checks
+* Customizable spam criteria
+* Privacy-friendly
+* IP and country blocking
+* Language blocking
+* Statistics and charts
+* No external dependencies
 
 ### Why do companies use Antispam Bee?
 
@@ -100,12 +100,12 @@ Turnstile is a user-friendly CAPTCHA alternative developed by Cloudflare that ai
 
 ### Key features:
 
-- Invisible challenges
-- Privacy-preserving design
-- Easy integration
-- Global CDN support
-- Machine learning-powered
-- Free up to 10 websites
+* Invisible challenges
+* Privacy-preserving design
+* Easy integration
+* Global CDN support
+* Machine learning-powered
+* Free up to 10 websites
 
 ### Why do companies use Turnstile?
 
@@ -123,11 +123,11 @@ reCAPTCHA is a popular CAPTCHA service from Google that helps protect websites f
 
 ### Key features:
 
-- Multiple CAPTCHA types (v2, v3, invisible)
-- Risk analysis engine
-- Machine learning-powered
-- Wide integration support
-- Free up to 10 websites
+* Multiple CAPTCHA types (v2, v3, invisible)
+* Risk analysis engine
+* Machine learning-powered
+* Wide integration support
+* Free up to 10 websites
 
 ### Why do companies use reCAPTCHA?
 
@@ -141,8 +141,8 @@ Here's the (short) sales pitch.
 
 We're biased, obviously, but we think OOPSpam is the perfect CleanTalk replacement if:
 
-- You need more powerful spam detection with additional capabilities to quickly respond to ongoing spam and abuse attacks, such as geo-blocking, IP and email blocking, and more.
-- You want a better balance between catching spam and letting legitimate customers through.
-- You need a privacy-friendly alternative.
+* You need more powerful spam detection with additional capabilities to quickly respond to ongoing spam and abuse attacks, such as geo-blocking, IP and email blocking, and more.
+* You want a better balance between catching spam and letting legitimate customers through.
+* You need a privacy-friendly alternative.
 
 Check out our [Homepage](https://www.oopspam.com/) and see all the [Integration](https://www.oopspam.com/integrations/) we offer.
