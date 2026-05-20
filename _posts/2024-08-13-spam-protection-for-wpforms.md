@@ -1,13 +1,15 @@
 ---
 layout: post
-title:  "5 ways to protect your WPForms from spam"
+title: 5 ways to protect your WPForms from spam
+date: 2026-05-21T02:10:00.000+08:00
 author: onar
 image: /assets/posts/social-media-meta.png
-tags: [WordPress, contact_form, wpforms]
-
-
-description: "Learn how to add spam protection to WPForms with these 5 different methods in WordPress."
-# modified: 
+description: Learn how to add spam protection to WPForms with these 5 different
+  methods in WordPress.
+tags:
+  - WordPress
+  - contact_form
+  - wpforms
 ---
 <center>
 <img loading="lazy"  width="600" alt="OOPSpam Anti-Spam WordPress Plugin supports WPForms" src="/blog/assets/posts/wp-forms/intro-wpforms.png">
@@ -18,18 +20,18 @@ description: "Learn how to add spam protection to WPForms with these 5 different
 
 ## Intro
 
-Recently, we added WPForms support to OOPSpam WordPress plugin after one of our customers requested it on [the support forum](https://wordpress.org/support/topic/please-add-more-plugin-support/). No wonder we got this plugin requested as WPForms is one of the most used contact form plugins for WordPress. It comes with free WPForms Lite and WPForms Pro. The main difference between the two versions is access to more field types. Fancy Fields are only available to the Pro version users while the Lite version is limited to Standard fields.
+Recently, we added WPForms support to OOPSpam WordPress plugin after one of our customers requested it on [the support forum](https://wordpress.org/support/topic/please-add-more-plugin-support/). No wonder we got this plugin requested as [WPForms](https://www.oopspam.com/blog/wpforms-block-user) is one of the most used contact form plugins for WordPress. It comes with free WPForms Lite and WPForms Pro. The main difference between the two versions is access to more field types. Fancy Fields are only available to the Pro version users while the Lite version is limited to Standard fields.
 
 WPForms comes with the following built-in anti-spam techniques:
 
-- Token-based spam protection (available in Lite)
-- reCAPTCHA (available in Lite)
-- hCAPTCHA (available in Lite)
-- Custom CAPTCHA (available only in Pro)
+* Token-based spam protection (available in Lite)
+* reCAPTCHA (available in Lite)
+* hCAPTCHA (available in Lite)
+* Custom CAPTCHA (available only in Pro)
 
 ## Token-based spam protection
 
-By default, this protection is on. On the WPForms settings page, it is called __Anti-Spam Protection__. It is important to mention that this method relies on JavaScript. So you need JavaScript to be enabled for this to work. Each time your form loads, a unique token is created and stored on the page and passed along with the form submission. On the backend, WPForms validates this token to make sure it is not being reused. If the token expired, is invalid, or doesn't exist then the submission will be halted. Check [the official WPForms documentation](https://wpforms.com/docs/how-to-prevent-spam-in-wpforms/#anti-spam) to learn how to activate this technique.
+By default, this protection is on. On the WPForms settings page, it is called **Anti-Spam Protection**. It is important to mention that this method relies on JavaScript. So you need JavaScript to be enabled for this to work. Each time your form loads, a unique token is created and stored on the page and passed along with the form submission. On the backend, WPForms validates this token to make sure it is not being reused. If the token expired, is invalid, or doesn't exist then the submission will be halted. Check [the official WPForms documentation](https://wpforms.com/docs/how-to-prevent-spam-in-wpforms/#anti-spam) to learn how to activate this technique.
 
 Token-based spam prevention is effective against basic bots. Unfortunately, they are ineffective against targeted spam, manual spam, and headless browser-based bots.
 
@@ -69,34 +71,31 @@ Another alternative with the custom CAPTCHA is Question and Answer based spam pr
 
 It's likely you have already tried the above options, and they didn't work for you. For you, it could be [a slow website from reCAPTCHA/hCaptcha](https://www.oopspam.com/blog/recaptcha-performance-analyses) or overwhelming spam you are still getting despite implementing the above alternatives. 
 
-What makes OOPSpam different from other solutions is that it doesn't slow your website and is effective against human spammers and bots. There is no challenge to solve. No performance penalty as everything happens in your server instead of client-side. The OOPSpam API uses machine learning models, content analyses, IP reputation, and other rule-based checks to score every contact form submission. A combination of all these analyses returns a single spam score that is how it accurately stops both manual spam and bots.
+What makes OOPSpam different from other solutions is that it doesn't slow your website and is effective against human spammers and bots. There is no challenge to solve. No performance penalty as everything happens in your server instead of client-side. The OOPSpam API uses machine learning models, content analyses, [IP reputation](https://www.oopspam.com/blog/how-to-block-vpn-and-data-center-ip-submissions-in-wpforms), and other rule-based checks to score every contact form submission. A combination of all these analyses returns a single spam score that is how it accurately stops both manual spam and bots.
 
-On the plugin's settings page, you could also adjust how sensitive you want your spam filter to be. Even keeping default __Sensitivity level__ setting will help you cut down spam to zero.
+On the plugin's settings page, you could also adjust how sensitive you want your spam filter to be. Even keeping default **Sensitivity level** setting will help you cut down spam to zero.
 
 ![OOPSpam WordPress Plugin Sensitivity level](https://www.oopspam.com/assets/WP_SensitivyLevel.jpg "OOPSpam WordPress Plugin Sensitivity level")
 
 You can also [block IPs, email and email domains, and keywords](https://www.oopspam.com/blog/wpforms-block-user).
 
-In addition, the plugin allows you to set up a filter to accept submissions only from certain countries and languages.
+In addition, the plugin allows you to set up a filter to accept submissions only from [certain countries](https://www.oopspam.com/blog/how-to-block-countries-in-wpforms) and languages.
 
 ![OOPSpam WordPress Plugin country & language restrictions](https://www.oopspam.com/assets/country-language-filter.png "OOPSpam WordPress Plugin country & language restrictions")
 
-> ✨ Since then, we have also added the __Block messages from these countries__ feature.
+> ✨ Since then, we have also added the **Block messages from these countries** feature.
 
 ![OOPSpam WordPress Plugin block countries](https://www.oopspam.com/blog/assets/wp-block-countries.png "OOPSpam WordPress Plugin block countries")
 
 Here are a few steps to activate spam protection for WPForms:
 
-1. [Subscribe to get an API key](https://app.oopspam.com/Identity/Account/Register) then copy-paste the API key to the plugin's appropriate field under __Settings->OOPSpam Anti-Spam__ on your WordPress Admin Dashboard.
+1. [Subscribe to get an API key](https://app.oopspam.com/Identity/Account/Register) then copy-paste the API key to the plugin's appropriate field under **Settings->OOPSpam Anti-Spam** on your WordPress Admin Dashboard.
 
-    > ℹ️ Make sure to select OOPSpam Dashboard on the setting page
-
+   > ℹ️ Make sure to select OOPSpam Dashboard on the setting page
 2. If you have WPForms installed then a special section will appear on the OOPSpam Anti-Spam plugin's settings page.
 
-    ![OOPSpam Anti-Spam WordPress Plugin Settings](/blog/assets/posts/wp-forms/WPForms-Spam-Protection.png "OOPSpam Anti-Spam WordPress Plugin Settings")
-
+   ![OOPSpam Anti-Spam WordPress Plugin Settings](/blog/assets/posts/wp-forms/WPForms-Spam-Protection.png "OOPSpam Anti-Spam WordPress Plugin Settings")
 3. On this page, you need to activate the spam filtering for WPForms by checking the **Activate Spam Protection** checkbox. You don't have to do anything on your form. Once you activate spam protection on the OOPSpam plugin settings, you are good to go.
-
 4. Don't forget to enter a short message to display when a spam form entry is submitted. Your message will appear at the bottom of the message field.
 
 <center>
