@@ -19,7 +19,7 @@ tags:
 
 [Elementor Page Builder](https://elementor.com/) is one of the most used and popular page builders for WordPress. It comes with generous free and paid Pro versions. You certainly don't need to have a Pro version to build a website. However, the Pro version brings a lot more built-in widgets which help you avoid installing extra plugins. [Elementor Form](https://elementor.com/features/form-builder/) widget is one of these widgets that comes with Elementor Pro.
 
-Every contact form eventually gets spam. If you are using Elementor Forms, you may already have a spam problem. In this article, we are looking into spam protection options for Elementor Forms.
+Every contact form eventually gets spam. If you are using [Elementor Forms](https://www.oopspam.com/blog/elementor-forms-block-user), you may already have a spam problem. In this article, we are looking into spam protection options for Elementor Forms.
 
 To address spam issue in your forms, use the built-in honeypot, reCAPTCHA, or a third-party plugin. An alternative approach is to restrict submissions based on the country of origin and the language of the message.
 
@@ -49,7 +49,7 @@ In addition, the plugin allows you to set up a filter to accept submissions only
 
 ![OOPSpam WordPress Plugin block countries](https://www.oopspam.com/blog/assets/wp-block-countries.png "OOPSpam WordPress Plugin block countries")
 
-> 📌 Using country filtering allows your site to be available worldwide, but only limits who can submit a form.
+> 📌 Using [country filtering](https://www.oopspam.com/blog/how-to-block-countries-in-elementor-forms) allows your site to be available worldwide, but only [limits who can submit a form](https://www.oopspam.com/blog/how-to-limit-form-submissions-in-elementor-forms).
 
 Unlike other premium solutions, OOPSpam is privacy-friendly. We don't store or share your data. All cloud-based spam filtering services in the market require you to send visitors IP addresses which violates GDPR. With OOPSpam, you don't have to.
 
@@ -102,7 +102,7 @@ If you are looking for a free solution, reCAPTCHA is a good option.
 
 ## hCAPTCHA
 
-If you're concerned about privacy, you may want to use hCAPTCHA instead of reCAPTCHA. Unfortunately, Elementor Forms doesn't have built-in hCAPTCHA support. There is [an active feature request](https://github.com/orgs/elementor/discussions/21148) to integrate it with Elementor. In the meantime, you can enable hCAPTCHA for your Elementor Forms using [the official hCAPTCHA plugin for WordPress](https://wordpress.org/plugins/hcaptcha-for-forms-and-more/). Check out [How to Add hCAPTCHA to Elementor Forms](https://www.oopspam.com/blog/adding-hcaptcha-elementorform) article for a step-by-step guide.
+If you're concerned about privacy, you may want to use [hCAPTCHA](https://www.oopspam.com/blog/adding-hcaptcha-elementorform) instead of reCAPTCHA. Unfortunately, Elementor Forms doesn't have built-in hCAPTCHA support. There is [an active feature request](https://github.com/orgs/elementor/discussions/21148) to integrate it with Elementor. In the meantime, you can enable hCAPTCHA for your Elementor Forms using [the official hCAPTCHA plugin for WordPress](https://wordpress.org/plugins/hcaptcha-for-forms-and-more/). Check out [How to Add hCAPTCHA to Elementor Forms](https://www.oopspam.com/blog/adding-hcaptcha-elementorform) article for a step-by-step guide.
 
 ![](/blog/assets/posts/captcha.webp)
 
