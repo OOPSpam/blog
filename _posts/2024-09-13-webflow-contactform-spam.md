@@ -129,6 +129,8 @@ In order to send the email, you need to map the required fields to the data from
 
 Once you have set up the email, test it to see if you receive the first submission. You can also use other email services such as Postmark or Mailgun instead of Email by Zapier.
 
+> Using embedded forms on your website? You can also [add spam protection to embedded forms using OOPSpam and Zapier](https://www.oopspam.com/blog/add-spam-protection-to-embedded-forms-using-oopspam-and-zapier) to stop fake submissions before they reach your workflow.
+
 ## Final thoughts
 
 This was a basic workflow to filter spam in your Webflow contact forms using Zapier. You can also use other platforms to automate the process. Plus, you can add extra steps and conditions to make it more complex, such as sending an automated email response to the visitor confirming successful submission.
