@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Stop Spam on Jotform Using Zapier and OOPSpam
-date: 2025-04-05T07:21:00.000Z
+date: 2026-05-22T02:34:00.000+08:00
 author: chazie
 image: /assets/posts/meta-stop-spam-on-jotform-using-zapier-and-oopspam.png
 description: Stop spam on Jotform by integrating Zapier and OOPSpam. Learn how
@@ -93,6 +93,8 @@ This Jotform, Zapier, and OOPSpam setup works well because:
 * **Low maintenance** – Once set up, it runs in the background
 * **Customizable** – Works with any Jotform and any follow-up action
 * **Better data** – Fewer junk entries in your CRM or reports
+
+Need to secure embedded forms too? Learn how to[ add spam protection to embedded forms using OOPSpam and Zapier](https://www.oopspam.com/blog/add-spam-protection-to-embedded-forms-using-oopspam-and-zapier) and keep your workflows spam-free.
 
 ## **Final thoughts**
 
