@@ -30,10 +30,10 @@ The first and most effective way to block spam on SureForms is by using [OOPSpam
 Here’s what makes OOPSpam the best choice for SureForms users:
 
 * **No CAPTCHAs Required** – Your users won’t have to solve any puzzles or click on images.
-* **Customizable Filtering** – Adjust sensitivity levels, block specific IPs, emails, and keywords.
+* **Customizable Filtering** – Adjust sensitivity levels, [block specific IPs](https://www.oopspam.com/blog/how-to-block-vpn-and-data-center-ip-submissions-in-sureforms), emails, and keywords.
 * **No Performance Impact** – Unlike reCAPTCHA, OOPSpam doesn’t slow down your site.
-* **Country & Language Filtering** – Restrict spam from unwanted locations.
-* **Rate Limiting** – Control [submission rates](https://www.oopspam.com/blog/protecting-forms-with-rate-limiting-in-wordpress-using-oopspam) to prevent abuse and click frauds.
+* **Country & Language Filtering** – Restrict spam from [unwanted locations](https://www.oopspam.com/blog/how-to-block-countries-in-sureforms).
+* **[Rate Limiting](https://www.oopspam.com/blog/how-to-limit-form-submissions-in-sureforms)** – Control [submission rates](https://www.oopspam.com/blog/protecting-forms-with-rate-limiting-in-wordpress-using-oopspam) to prevent abuse and click frauds.
 * **Spam Filtering Sensitivity** – Customize the sensitivity level to ensure important messages aren't missed.
 * **Machine Learning Spam Detection** – Messages are analyzed using advanced machine learning models.
 * **Form Spam Entries Management** – View, delete, send submissions to website admins, or report them.
@@ -104,7 +104,6 @@ SureForms supports Google reCAPTCHA, which helps filter out automated spam by de
 ![Google reCAPTCHA site key and secret key fields with copy and integration options.](/blog/assets/posts/google-recaptcha-site.png "Google reCAPTCHA Site and Secret Key Configuration")
 
 6. Return to SureForms, paste the **Site Key** and **Secret Key** in the required fields.
-
 7. Click **Save Changes** to activate reCAPTCHA.
 
 ### **Limitations of reCAPTCHA**
