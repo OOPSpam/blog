@@ -1,13 +1,15 @@
 ---
 layout: post
-title:  "5 Ways To Prevent Spam On WS Form"
+title: 5 Ways To Prevent Spam On WS Form
+date: 2026-05-22T01:51:00.000+08:00
 author: onar
 image: /assets/posts/ws-form/twitterCard.png
-tags: [WordPress, contact_form, wsform]
-
-
-description: "Learn how to add spam protection to WS Form with these 5 different methods in WordPress."
-# modified: 
+description: Learn how to add spam protection to WS Form with these 5 different
+  methods in WordPress.
+tags:
+  - WordPress
+  - contact_form
+  - wsform
 ---
 <center>
 <img loading="lazy"  width="600" alt="OOPSpam Anti-Spam WordPress Plugin supports WS Form" src="/blog/assets/posts/ws-form/WSForm.png">
@@ -28,35 +30,31 @@ It's likely you have already tried the below options, and they didn't work for y
 2. Keeps your site accessible to all users
 3. Stops both human spammers and bots
 
-On the plugin's settings page, you could also adjust how sensitive you want your spam filter to be. Even keeping (recommended) the default __Sensitivity level__ setting will help you cut down spam to zero.
+On the plugin's settings page, you could also adjust how sensitive you want your spam filter to be. Even keeping (recommended) the default **Sensitivity level** setting will help you cut down spam to zero.
 
 ![OOPSpam WordPress Plugin Sensitivity level](https://www.oopspam.com/assets/WP_SensitivyLevel.jpg "OOPSpam WordPress Plugin Sensitivity level")
 
-In addition, the plugin allows you to set up a filter to accept submissions only from certain countries and languages.
+In addition, the plugin allows you to set up a filter to accept submissions only from [certain countries](https://www.oopspam.com/blog/how-to-block-countries-in-ws-form) and languages.
 
 ![OOPSpam WordPress Plugin country & language restrictions](https://www.oopspam.com/assets/country-language-filter.png "OOPSpam WordPress Plugin country & language restrictions")
 
-> ✨ Since then, we have also added the __Block messages from these countries__ feature.
+> ✨ Since then, we have also added the **Block messages from these countries** feature.
 
 ![OOPSpam WordPress Plugin block countries](https://www.oopspam.com/blog/assets/wp-block-countries.png "OOPSpam WordPress Plugin block countries")
 
 Here are a few steps to activate spam protection for WS Form
 
-1. [Subscribe to get an API key](https://app.oopspam.com/Identity/Account/Register) then copy-paste the API key to the plugin's appropriate field under __Settings->OOPSpam Anti-Spam__ on your WordPress Admin Dashboard.
+1. [Subscribe to get an API key](https://app.oopspam.com/Identity/Account/Register) then copy-paste the API key to the plugin's appropriate field under **Settings->OOPSpam Anti-Spam** on your WordPress Admin Dashboard.
 
-    > ℹ️ Make sure to select OOPSpam Dashboard on the setting page
-
+   > ℹ️ Make sure to select OOPSpam Dashboard on the setting page
 2. If you have WS Form installed then a special section will appear on the OOPSpam Anti-Spam plugin's settings page.
 
-    ![OOPSpam Anti-Spam WordPress Plugin Settings](/blog/assets/posts/ws-form/oopspam.png "OOPSpam Anti-Spam WordPress Plugin Settings")
-
+   ![OOPSpam Anti-Spam WordPress Plugin Settings](/blog/assets/posts/ws-form/oopspam.png "OOPSpam Anti-Spam WordPress Plugin Settings")
 3. On this page, you need to activate the spam filtering for WS Form by checking the **Activate Spam Protection** checkbox.
-
 4. Don't forget to enter a short message to display when a spam form entry is submitted. Your message will appear at the bottom of the message field.
-
 5. We are done with setting up the OOPSpam plugin. 🎉
 
-Now your form is ready to receive submissions. Each submission will be checked by OOPSpam for spam.
+Now your form is ready to receive submissions. [Each submission](https://www.oopspam.com/blog/how-to-limit-form-submissions-in-ws-form) will be checked by OOPSpam for spam.
 
 <center>
 <img loading="lazy"  alt="OOPSpam detected spam on WS Form" src="/blog/assets/posts/ws-form/oopspam-message.png">
@@ -69,7 +67,7 @@ Now your form is ready to receive submissions. Each submission will be checked b
 
 > A honeypot field is a hidden field that is meant to be filled only by bots. Bots scan a website and fill in all the fields, including the hidden field in your form. WS Form will automatically dismiss every submission with an entry in a honeypot field.
 
-WS Form comes with a built-in honeypot field. It is by default disabled, so you need to enable it. I recommend activating the honeypot field as it's an easy and simple way to fool basic bots. 
+[WS Form](https://www.oopspam.com/blog/wsform-block-user) comes with a built-in honeypot field. It is by default disabled, so you need to enable it. I recommend activating the honeypot field as it's an easy and simple way to fool basic bots. 
 
 Follow these steps to add a honeypot field to your WS Forms:
 
@@ -90,7 +88,7 @@ It supports both reCAPTCHA v2 and v3 (Invisible reCAPTCHA). reCAPTCHA is availab
 
 ### Should I use reCAPTCHA v2 or v3?
 
-v3 came after many people complained about accessibility and usability issues with v2. v2 asks visitors to solve a challenge before submitting a form. To address this issue, Google removed the "challenge" part of reCAPTCHA. As a result, with v3, users don't solve any challenges. Instead, it tracks the user's behavior on your website and scores the user from 0 (bot) to 1 (human). It is up to the website owner to determine the threshold. In WS Form, you can control this threshold under _Form Settings -> Spam -> Spam Threshold_.
+v3 came after many people complained about accessibility and usability issues with v2. v2 asks visitors to solve a challenge before submitting a form. To address this issue, Google removed the "challenge" part of reCAPTCHA. As a result, with v3, users don't solve any challenges. Instead, it tracks the user's behavior on your website and scores the user from 0 (bot) to 1 (human). It is up to the website owner to determine the threshold. In WS Form, you can control this threshold under *Form Settings -> Spam -> Spam Threshold*.
 
 Many people are happy with reCAPTCHA. It is effective against simple bots, however, advanced bots can [bypass reCAPTCHA](https://www.oopspam.com/blog/bypassing-captcha). There are also "captcha farms" where people get paid to solve reCAPTCHA. It may also [slow down your website](/blog/recaptcha-performance-analyses) as it loads extra js files into your website.
 
