@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "Stop spam on Netlify Forms using Zapier and OOPSpam"
+title: Stop spam on Netlify Forms using Zapier and OOPSpam
+date: 2026-05-22T02:33:00.000+08:00
 author: onar
 image: /assets/posts/social-media-meta.png
-tags: [zapier, contact_form]
-
-
-description: "Learn how to add spam protection to your Netlify Forms without reCAPTCHA"
-# modified: 
+description: Learn how to add spam protection to your Netlify Forms without reCAPTCHA
+tags:
+  - zapier
+  - contact_form
 ---
 <center>
 <a href="https://zapier.com/apps/email/integrations/netlify/1579593/spam-check-new-netlify-contact-form-submissions-with-oopspam-and-send-outbound-emails">
@@ -17,6 +17,7 @@ description: "Learn how to add spam protection to your Netlify Forms without reC
 <br/>
 
 <script type="module" src="https://cdn.zapier.com/packages/partner-sdk/v0/zapier-elements/zapier-elements.esm.js"></script>
+
 <link rel="stylesheet" href="https://cdn.zapier.com/packages/partner-sdk/v0/zapier-elements/zapier-elements.css"/>
 
 {% include toc.md %}
@@ -27,7 +28,7 @@ description: "Learn how to add spam protection to your Netlify Forms without reC
 
 In this article we will focus on [Netlify Forms](https://www.netlify.com/platform/core/forms/) and its anti-spam features. It is easy to set up Netlify Forms, all you need to do is add its ``netlify'' attribute to an HTML form and it will automatically collect all form data.
 
-By default, all forms are filtered by Akismet. After the submissions go through the spam filter, they are categorized into two lists: not spam entries under _Verified Submissions_ and spam entries under _Spam Submissions_.  Years ago, I had a simple website hosted on Netlify with a form, so I decided to check _Verified Submissions_. To my surprise, I noticed a lot of obvious spam submissions going through. Here are a few of them:
+By default, all forms are filtered by Akismet. After the submissions go through the spam filter, they are categorized into two lists: not spam entries under *Verified Submissions* and spam entries under *Spam Submissions*.  Years ago, I had a simple website hosted on Netlify with a form, so I decided to check *Verified Submissions*. To my surprise, I noticed a lot of obvious spam submissions going through. Here are a few of them:
 
 ![Netlify Form Verified Submissions](/blog/assets/posts/netlify/verified-submissions.png "Netlify Form Verified Submissions")
 
@@ -52,12 +53,13 @@ If you wish to skip the steps below, use [the template](https://zapier.com/apps/
   limit="5"
   presentation="row"
   use-this-zap="show"
-></zapier-zap-templates>
+
+> </zapier-zap-templates>
 
 <br>
 Zapier will walk you through the configuration for all 4 steps: Netlify -> Spam check with OOPSpam -> Filter -> Email by Zapier.
 
-_Filter_ should be configured by default. The filter is simple with only one rule: **Continue processing only if spam score is less than 3**.
+*Filter* should be configured by default. The filter is simple with only one rule: **Continue processing only if spam score is less than 3**.
 
 ## Capturing Netlify form submissions
 
@@ -65,10 +67,10 @@ Our goal is to build a simple automation flow where it checks every form submiss
 
 ![Netlify Zapier](/blog/assets/posts/netlify/netlify-zapier.png "Netlify Zapier")
 
-1. First, add Netlify zap to your flow and under _Event_, select _New Form Submission_. Connect your Netlify account so that it can retrieve available forms from your account.
+1. First, add Netlify zap to your flow and under *Event*, select *New Form Submission*. Connect your Netlify account so that it can retrieve available forms from your account.
    <img loading="lazy"  src="/blog/assets/posts/netlify/Netlify-Trigger.png" alt="Netlify Trigger on Zapier" />
-2. Under _Trigger_, select your _Site_ and _Form_ and click Continue.
-3. In the _Test_ step, your last 3 form submissions will be populated. So make sure you have submitted some test form.
+2. Under *Trigger*, select your *Site* and *Form* and click Continue.
+3. In the *Test* step, your last 3 form submissions will be populated. So make sure you have submitted some test form.
 
 ## Setting up OOPSpam for spam detection
 
@@ -76,19 +78,19 @@ To set up spam filtering in your Zapier flow, follow these steps:
 
 1. Register for an API key on the [OOPSpam Dashboard](https://app.oopspam.com/).
 2. Add the [OOPSpam Zap](https://zapier.com/apps/oopspam/integrations) to your flow
-3. Under OOPSpam's _Event_ select _Check for spam_
-4. To connect your OOPSpam account, enter the API key when prompted on the _Choose Account_ step.
+3. Under OOPSpam's *Event* select *Check for spam*
+4. To connect your OOPSpam account, enter the API key when prompted on the *Choose Account* step.
 5. Map the necessary form information to OOPSpam's fields:
-    - **Content**: This is where the form message goes. Usually called **Data Message**.
-    - **Sender IP**:  This is where the IP of the form submitter goes. Usually called **Data Ip**.
-    - **Email**: This is where the form submitter's email goes. Usually called **Data Email**.
-    - **Language Allowlist**: Select any languages you expect to receive form submissions in.
-    - **Allow messages only from these countries**: Filter submissions by country.
-    - **Block messages from these countries**: Block by country.
+
+   * **Content**: This is where the form message goes. Usually called **Data Message**.
+   * **Sender IP**:  This is where the IP of the form submitter goes. Usually called **Data Ip**.
+   * **Email**: This is where the form submitter's email goes. Usually called **Data Email**.
+   * **Language Allowlist**: Select any languages you expect to receive form submissions in.
+   * **Allow messages only from these countries**: Filter submissions by country.
+   * **Block messages from these countries**: Block by country.
 6. Test the action. We will use the "score" returned by OOPSpam to approve or reject submissions with [Filter Zapier](https://zapier.com/blog/filter-by-zapier-guide/) in the next step.
 
 ![OOPSpam Zapier setup](/blog/assets/posts/netlify/oopspam-zapier.png "OOPSpam Zapier setup")
-
 
 ## Filtering with Filter
 
@@ -102,8 +104,8 @@ In this case, the condition is that the "Score" (or Spam Score) must be less tha
 
 Instead of using the Filter app, you can use the [Paths app](https://zapier.com/features/paths) to take different actions depending on whether the submission is considered spam or not. Here's an example:
 
-- Path A [Not spam]: If the Score is less than 3, then send an email.
-- Path B [Spam]: If the Score is greater than 2, then create a record in Airtable to store the spam submission for later review.
+* Path A \[Not spam]: If the Score is less than 3, then send an email.
+* Path B \[Spam]: If the Score is greater than 2, then create a record in Airtable to store the spam submission for later review.
 
 This alternative approach stores all spam submissions in Airtable for future analysis. You can use another platform such as Google Sheets if you prefer.
 
@@ -119,19 +121,20 @@ The final step is to set up the **Send Outbound Email** to notify yourself of ne
 
 To send the email, you will need to map the required fields to the data from the Netlify contact form submissions. The required fields are:
 
-- **To**: Your email address (up to 5 emails can be added).
-- **Subject**: The name of the form.
-- **Body**: The email body can be in HTML or plain text. In the example, the data points (email, name, message fields) are separated by line breaks using the <p> HTML tag.
-- **Reply To** (optional): This field is not required, but it makes responding to emails more convenient. The sender's email can be added here so that you can simply click the "Reply" button in your email client if you wish to respond to the submission.
+* **To**: Your email address (up to 5 emails can be added).
+* **Subject**: The name of the form.
+* **Body**: The email body can be in HTML or plain text. In the example, the data points (email, name, message fields) are separated by line breaks using the <p> HTML tag.
+* **Reply To** (optional): This field is not required, but it makes responding to emails more convenient. The sender's email can be added here so that you can simply click the "Reply" button in your email client if you wish to respond to the submission.
 
 Once you have the email set up, test it to see if you receive the first submission. You can also use other email services like Postmark or Mailgun instead of Email by Zapier.
 
 ## Configure form submission notifications in Netlify
 
-By default, Netlify sends an email for each verified submission. We need to disable this as we are already sending an email notification to ourselves in our automation. In your website settings on Netlify, go to _Site Configuration -> Notifications -> Emails and Webhooks_, under _Form Submission Notifications_, delete the email notifications.
+By default, Netlify sends an email for each verified submission. We need to disable this as we are already sending an email notification to ourselves in our automation. In your website settings on Netlify, go to *Site Configuration -> Notifications -> Emails and Webhooks*, under *Form Submission Notifications*, delete the email notifications.
 
 ![Form submission notifications in Netlify](/blog/assets/posts/netlify/netlify-setting.png "Form submission notifications in Netlify")
 
+For websites using embedded contact or lead forms, you can also[ add spam protection to embedded forms using OOPSpam and Zapier](https://www.oopspam.com/blog/add-spam-protection-to-embedded-forms-using-oopspam-and-zapier) to reduce spam automatically.
 
 ## Final thoughts
 
