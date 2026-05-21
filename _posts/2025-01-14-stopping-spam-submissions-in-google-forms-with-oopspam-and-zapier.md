@@ -224,6 +224,8 @@ Testing is crucial to ensure the workflow operates as expected.
 1. **Turn on the Zap:** Once everything is working perfectly, publish the Zap to start processing live form submissions.
 2. **Monitor Performance:** Periodically review spam-detection results and adjust settings like spam score thresholds to improve accuracy.
 
+You can apply the same automation approach to embedded forms by following this guide on how to[ add spam protection to embedded forms using OOPSpam and Zapier](https://www.oopspam.com/blog/add-spam-protection-to-embedded-forms-using-oopspam-and-zapier).
+
 ## Final Thoughts
 
 By combining the spam-detection capabilities of OOPSpam with the automation features of Zapier, you can create a highly effective system to filter spam submissions from Google Forms. This setup not only saves time but also ensures that your data is accurate and actionable.
