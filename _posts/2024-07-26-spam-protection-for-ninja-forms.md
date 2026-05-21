@@ -1,11 +1,15 @@
 ---
 layout: post
-title:  "4 ways to protect your Ninja Forms from spam"
+title: 4 ways to protect your Ninja Forms from spam
+date: 2026-05-22T02:02:00.000+08:00
 author: onar
 image: /assets/nj-oopspam-wordpress-plugin.jpg
-tags: [WordPress, contact_form, ninja_forms]
-
-description: "Learn how to add spam protection to Ninja Forms with these 4 different methods in WordPress."
+description: Learn how to add spam protection to Ninja Forms with these 4
+  different methods in WordPress.
+tags:
+  - WordPress
+  - contact_form
+  - ninja_forms
 ---
 <center>
 <img loading="lazy" alt="Ninja Forms homepage screenshot" src="/blog/assets/posts/ninja/header.png">
@@ -30,9 +34,10 @@ Ninja Forms offers another built-in spam protection feature: **the Anti-Spam fie
 
 1. It's a question-answer type field
 2. To set it up:
-   - Add the Anti-Spam field to your form
-   - Click on the field to configure
-   - Enter a question and the correct answer
+
+   * Add the Anti-Spam field to your form
+   * Click on the field to configure
+   * Enter a question and the correct answer
 3. Visitors must provide the correct answer to submit the form
 4. Effective against bots that can't interpret or answer custom questions
 
@@ -58,24 +63,20 @@ Many people are happy with reCAPTCHA. It is effective against simple bots, howev
 
 If you are looking for a free solution, reCAPTCHA is a good option.
 
-
 ## OOPSpam Anti-Spam Plugin
 
-1. [Subscribe to get an API key](https://app.oopspam.com/Identity/Account/Register) then copy-paste the API key to the plugin's appropriate field under __Settings->OOPSpam Anti-Spam__ on your WordPress Admin Dashboard.
+1. [Subscribe to get an API key](https://app.oopspam.com/Identity/Account/Register) then copy-paste the API key to the plugin's appropriate field under **Settings->OOPSpam Anti-Spam** on your WordPress Admin Dashboard.
 
-    > ℹ️ Make sure to select *OOPSpam Dashboard* option on the setting page
-
+   > ℹ️ Make sure to select *OOPSpam Dashboard* option on the setting page
 2. If you have a Ninja Forms installed and activated then a special section will appear on OOPSpam Anti-Spam plugin's setting page.
 
-    ![OOPSpam Anti-Spam WordPress Plugin Settings](/blog/assets/oopspam-nj-settings.png "OOPSpam Anti-Spam WordPress Plugin Settings")
-
+   ![OOPSpam Anti-Spam WordPress Plugin Settings](/blog/assets/oopspam-nj-settings.png "OOPSpam Anti-Spam WordPress Plugin Settings")
 3. On this page, you need to activate spam filtering for Ninja Forms by selecting the **Activate Spam Protection** checkbox.
-
 4. Don't forget to enter a short message to display when a spam Ninja Forms entry is submitted.
 
 That is all! Now go on and create your forms.
 
-In addition, the plugin allows you to set up a filter to accept submissions only from certain countries and languages.
+In addition, the plugin allows you to set up a [filter to accept submissions](https://www.oopspam.com/blog/how-to-limit-form-submissions-in-ninja-forms) only from [certain countries](https://www.oopspam.com/blog/how-to-block-countries-in-ninja-forms) and languages.
 
 ![OOPSpam WordPress Plugin country & language restrictions](https://www.oopspam.com/assets/country-language-filter.png "OOPSpam WordPress Plugin country & language restrictions")
 
