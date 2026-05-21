@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 5 ways to stop spam orders and registrations in WooCommerce
-date: 2025-09-23T13:15:00.000-05:00
+date: 2026-05-22T02:20:00.000+08:00
 author: onar
 image: /assets/posts/woo-header.png
 description: Learn how to prevent fake orders, spam reviews and registrations
@@ -56,7 +56,7 @@ On the plugin's settings page, you could also adjust how sensitive you want your
 
 ![OOPSpam WordPress Plugin Sensitivity level](https://www.oopspam.com/assets/WP_SensitivyLevel.jpg "OOPSpam WordPress Plugin Sensitivity level")
 
-In addition, the plugin allows you to set up a filter to accept orders only from certain countries and languages (for WooCommerce reviews). Country blocking is similar to WooCommerce's *Selling location(s)* settings, however, OOPSpam applies this restriction across the website including product reviews, registration, and orders. As additional protection, the OOPSpam WordPress plugin also adds a honeypot field to all forms so you don't have to install another plugin.
+In addition, the plugin allows you to set up a filter to accept orders only from [certain countries](https://www.oopspam.com/blog/how-to-block-countries-in-woocommerce-order-registration) and languages (for WooCommerce reviews). Country blocking is similar to WooCommerce's *Selling location(s)* settings, however, OOPSpam applies this restriction across the website including product reviews, registration, and orders. As additional protection, the OOPSpam WordPress plugin also adds a honeypot field to all forms so you don't have to install another plugin.
 
 ![OOPSpam WordPress Plugin country & language restrictions](https://www.oopspam.com/assets/country-language-filter.png "OOPSpam WordPress Plugin country & language restrictions")
 
@@ -88,7 +88,7 @@ Here are a few steps to activate spam protection for the WooCommerce-based store
 
 ### Blocking orders from Unknown origin in Woo
 
-If you have origin tracking enabled, you can use OOPSpam to block all orders with an unknown origin attribute. This will effectively stop spam you receive from bots with just one click. In the plugin settings, enable the **Block orders from unknown origin setting**. That is all.
+If you have origin tracking enabled, you can use OOPSpam to [block all orders with an unknown origin](https://www.oopspam.com/blog/how-to-stop-failed-orders-with-unknown-origin-in-woocommerce) attribute. This will effectively stop spam you receive from bots with just one click. In the plugin settings, enable the **Block orders from unknown origin setting**. That is all.
 
 ![Block Unknown Origin orders in WooCommerce](/blog/assets/posts/block-unknown-order-woo.png "Block Unknown Origin orders in WooCommerce")
 
