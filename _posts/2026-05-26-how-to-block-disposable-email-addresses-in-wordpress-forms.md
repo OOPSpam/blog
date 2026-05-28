@@ -3,7 +3,7 @@ layout: post
 title: How to Block Disposable Email Addresses in WordPress Forms
 date: 2026-05-26T23:03:00.000+08:00
 author: chazie
-image: /blog/assets/posts/social-media-meta.png
+image: /blog/assets/posts/block_disposable_meta.png
 description: Block disposable email addresses in WordPress forms with manual
   denylists or OOPSpam’s automated spam protection and domain filtering.
 tags:
