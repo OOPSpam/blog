@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 4 Ways to Stop Spam in Brevo
-date: 2026-06-10T14:46:00.000+08:00
+date: 2026-06-13T14:26:00.000+08:00
 author: chazie
 image: /blog/assets/posts/meta_header_brevo.png
 description: "Learn 4 effective ways to stop spam in Brevo, improve email
@@ -9,7 +9,7 @@ description: "Learn 4 effective ways to stop spam in Brevo, improve email
 tags:
   - Brevo
 ---
-![4 Ways to Stop Spam in Brevo](/blog/assets/posts/meta_header_brevo.png "4 Ways to Stop Spam in Brevo")
+![4 Ways to Stop Spam in Brevo](/blog/assets/posts/brevo-homepage.png "4 Ways to Stop Spam in Brevo")
 
 Spam in [Brevo](https://www.brevo.com/) damages your sender reputation, hurts email deliverability, and wastes your marketing budget. To fix it, you need to clean your contact lists, secure your signup forms, authenticate your domain, manage sending volume, and use a dedicated spam-scanning tool. Here is exactly how to do each one.
 
