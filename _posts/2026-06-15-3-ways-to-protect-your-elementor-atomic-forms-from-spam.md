@@ -125,10 +125,10 @@ Once active, it begins filtering submissions automatically.
 ### **What OOPSpam can filter**
 
 * Submissions from known spam IP addresses and email domains.
-* Traffic originating from [VPNs](https://www.oopspam.com/blog/how-to-block-vpn-and-data-center-ip-submissions-in-elementor-forms), proxies, and data center IPs.
+* Traffic originating from [VPNs](https://www.oopspam.com/blog/how-to-block-vpn-and-data-center-ip-submissions-in-elementor-atomic-forms), proxies, and data center IPs.
 * [Disposable](https://www.oopspam.com/blog/how-to-block-disposable-email-addresses-in-wordpress-forms) or temporary email addresses.
-* Submissions from [specific countries](https://www.oopspam.com/blog/how-to-block-countries-in-elementor-forms) you choose to block.
-* [Repeat submissions](https://www.oopspam.com/blog/protecting-forms-with-rate-limiting-in-wordpress-using-oopspam) from the same IP or email within a set time window.
+* Submissions from [specific countries](https://www.oopspam.com/blog/how-to-block-countries-in-elementor-atomic-forms) you choose to block.
+* [Repeat submissions](https://www.oopspam.com/blog/how-to-limit-form-submissions-in-elementor-atomic-forms) from the same IP or email within a set time window.
 
 OOPSpam also includes a [submission log](https://help.oopspam.com/wordpress/form-entries/) so you can review what is being blocked and fine-tune your settings over time. This is particularly useful when legitimate submissions get caught and you need to adjust sensitivity.
 
