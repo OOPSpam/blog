@@ -60,8 +60,8 @@ This single setting stops the majority of rapid, bot driven form spam on Atomic 
 
 [Rate limiting](https://www.oopspam.com/blog/protecting-forms-with-rate-limiting-in-wordpress-using-oopspam) works best when paired with OOPSpam's other filtering options:
 
-* [VPN](https://www.oopspam.com/blog/how-to-block-vpn-and-data-center-ip-submissions-in-elementor-forms), proxy, and data center IP blocking.
-* Country allow or deny lists.
+* [VPN](https://www.oopspam.com/blog/how-to-block-vpn-and-data-center-ip-submissions-in-elementor-atomic-forms), proxy, and data center IP blocking.
+* [Country allow](https://www.oopspam.com/blog/how-to-block-countries-in-elementor-atomic-forms) or deny lists.
 * [Disposable](https://www.oopspam.com/blog/how-to-block-disposable-email-addresses-in-wordpress-forms) or suspicious email detection.
 * Submission [logs](https://help.oopspam.com/wordpress/form-entries/) so you can review what is being blocked.
 
