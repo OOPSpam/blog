@@ -55,7 +55,7 @@ Set up country filtering under the General Settings tab:
 ![Turn On Extra Filters](/blog/assets/posts/rate-limiting-settings.png "Turn On Extra Filters")
 
 * **Rate Limiting:** Stop rapid, [repeated submissions](https://www.oopspam.com/blog/how-to-limit-form-submissions-in-elementor-atomic-forms) from the same IP or email.
-* **IP Filtering:** Block bad IP addresses, VPNs, and data center traffic.
+* **IP Filtering:** Block bad IP addresses, [VPNs](https://www.oopspam.com/blog/how-to-block-vpn-and-data-center-ip-submissions-in-elementor-atomic-forms), and data center traffic.
 * **Contextual Detection:** Identify hidden or AI-generated spam in message fields.
 
 After setting up your filters, test your Atomic Form by submitting it in Incognito mode. Then check the Spam and Ham [logs](https://help.oopspam.com/wordpress/form-entries/) in WordPress to confirm unwanted submissions are being blocked. You can also review the OOPSpam Dashboard to see which [submissions](https://help.oopspam.com/report/) were filtered and why.
