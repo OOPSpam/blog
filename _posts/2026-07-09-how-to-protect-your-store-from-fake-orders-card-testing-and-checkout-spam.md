@@ -3,7 +3,7 @@ layout: post
 title: How to Protect Your Store from Fake Orders, Card Testing, and Checkout Spam
 date: 2026-07-09T13:55:00.000+08:00
 author: chazie
-image: /blog/assets/posts/social-media-meta.png
+image: /blog/assets/posts/protect_card_testing_meta.png
 description: Protect your store from fake orders, card testing, and checkout
   spam with proven security layers, fraud detection, and WooCommerce best
   practices.
