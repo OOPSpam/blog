@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to Protect Your Store from Fake Orders, Card Testing, and Checkout Spam
-date: 2026-07-09T13:47:00.000+08:00
+date: 2026-07-09T13:53:00.000+08:00
 author: chazie
 image: /blog/assets/posts/social-media-meta.png
 description: Protect your store from fake orders, card testing, and checkout
