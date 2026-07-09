@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to Protect Your Store from Fake Orders, Card Testing, and Checkout Spam
-date: 2026-07-09T13:53:00.000+08:00
+date: 2026-07-09T13:55:00.000+08:00
 author: chazie
 image: /blog/assets/posts/social-media-meta.png
 description: Protect your store from fake orders, card testing, and checkout
@@ -75,7 +75,7 @@ This is where a purpose-built tool earns its keep. **[OOPSpam](https://www.oopsp
 * Add rate limiting through a firewall or a security plugin such as Wordfence.
 * Consider installing [OOPSpam](https://www.oopspam.com/blog/spam-protection-for-woocommerce), since it flags orders with [unknown origin](https://www.oopspam.com/blog/how-to-stop-failed-orders-with-unknown-origin-in-woocommerce) or missing device data on both Classic and Block based Checkout that many fraud plugins miss.
 
-## **Shopify**
+### **Shopify**
 
 ![Use Shopify Flow to auto cancel or hold high risk orders for review.](/blog/assets/posts/shopify-flow.png "Use Shopify Flow to auto cancel or hold high risk orders for review.")
 
@@ -84,14 +84,14 @@ This is where a purpose-built tool earns its keep. **[OOPSpam](https://www.oopsp
 * Confirm AVS and CVV checks are enforced under Shopify Payments settings.
 * Consider connecting [OOPSpam to Shopify Flow](https://www.oopspam.com/blog/how-to-stop-fake-orders-in-shopify) to score orders by IP and email risk and auto flag suspicious ones for review.
 
-## **SureCart**
+### **SureCart**
 
 ![Turn on native Spam Protection under SureCart > Settings > Advanced.](/blog/assets/posts/surecart-spam-protection.webp "Turn on native Spam Protection under SureCart > Settings > Advanced.")
 
 * Turn on native Spam Protection under **SureCart > Settings > Advanced**.
 * Consider installing [OOPSpam alongside SureCart](https://www.oopspam.com/blog/5-ways-to-stop-fake-orders-in-surecart) to add [rate limiting](https://www.oopspam.com/blog/how-to-rate-limit-orders-in-surecart), [country filtering](https://www.oopspam.com/blog/how-to-block-countries-in-surecart), and cloud provider [IP blocking](https://www.oopspam.com/blog/how-to-block-vpn-and-data-center-ip-submissions-in-surecart-forms) on top of SureCart's native protections.
 
-## **MemberPress**
+### **MemberPress**
 
 ![Enable Math CAPTCHA on registration pages under the Account settings tab.](/blog/assets/posts/memberpress-enabling-math-captcha-.webp "Enable Math CAPTCHA on registration pages under the Account settings tab.")
 
