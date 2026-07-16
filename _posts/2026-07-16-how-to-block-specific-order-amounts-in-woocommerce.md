@@ -61,13 +61,9 @@ If you want to enforce order total ranges rather than exact figures, this [WPFac
 ![Order Minimum/Maximum Amount for WooCommerce](/blog/assets/posts/order-min-max-amount.png "Order Minimum/Maximum Amount for WooCommerce")
 
 1. Install and activate **Order Minimum/Maximum Amount for WooCommerce** from your WordPress dashboard.
-
 2. Go to **WooCommerce > Settings > Order Min/Max Amount**.
-
 3. Check **Enable plugin**, then set your **Amount limits** (Minimum, Maximum, or both) and choose an **Amount type** such as Sum for order totals.
-
 4. Enable **Block checkout process** so orders that don't meet the limits can't go through.
-
 5. Go to the **Messages** tab to customize the notice shown to customers on the cart, mini-cart, and checkout pages.
 
 ![A new Order Min/Max Amount box appears there, where you can also set different limits per user role](/blog/assets/posts/order-min-max-amount-2.png "A new Order Min/Max Amount box appears there, where you can also set different limits per user role")
