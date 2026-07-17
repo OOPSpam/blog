@@ -3,7 +3,7 @@ layout: post
 title: How to Block Specific Order Amounts in WooCommerce
 date: 2026-07-16T16:49:00.000+08:00
 author: chazie
-image: /blog/assets/posts/social-media-meta.png
+image: /blog/assets/posts/meta_order_block_by_amount.png
 description: "Learn how to block specific order amounts in WooCommerce to stop
   card testing attacks and fraudulent orders using OOPSpam and other methods. "
 tags:
