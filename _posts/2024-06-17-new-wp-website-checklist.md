@@ -1,12 +1,13 @@
 ---
 layout: post
-title:  "The WordPress Security Checklist Most Developers Wish They Knew Sooner"
+title: The WordPress Security Checklist Most Developers Wish They Knew Sooner
+date: 2026-07-28T20:48:00.000+08:00
 author: onar
 image: /assets/posts/best-wp-form/WordpressForms.png
-tags: [wordpress]
-
-description: "Learn to develop locally, secure forms, update plugins, and implement essential safety measures to keep your website safe from threats"
-# modified: 
+description: Learn to develop locally, secure forms, update plugins, and
+  implement essential safety measures to keep your website safe from threats
+tags:
+  - wordpress
 ---
 <center>
 <img loading="lazy"  alt="" src="/blog/assets/posts/best-wp-form/WordpressForms.png">
@@ -30,6 +31,16 @@ Anything publicly available will be found by bots. For example, if you open your
 ## Secure Your Contact Forms
 
 When you are ready to publish your site, make sure to [secure your contact forms](https://www.oopspam.com/blog/best-wordpress-form-builder-plugins) with spam protection tools like OOPSpam (paid) or Turnstile (free). These tools help prevent spam and protect your site from malicious submissions.
+
+## Scan WordPress for Known Vulnerabilities
+
+![OOPVulns ](/blog/assets/posts/oopvulns.png "OOPVulns ")
+
+Keeping WordPress updated is important, but you should also monitor installed software for known security issues.
+
+[OOPVulns](https://www.oopspam.com/blog/introducing-oopvulns-the-wordpress-vulnerability-scanner-plugin) scans WordPress core, plugins, and themes for known vulnerabilities. It displays findings in your dashboard, shows severity levels, identifies available fixes, and can run automatic daily or weekly scans with email alerts.
+
+Scanning is disabled by default and must be enabled by an administrator. OOPVulns only sends software names and version numbers to the vulnerability API. It does not transmit personal data, user information, or website content.
 
 ## Keep Plugins Up to Date
 
