@@ -34,7 +34,7 @@ When you are ready to publish your site, make sure to [secure your contact forms
 
 ## Scan WordPress for Known Vulnerabilities
 
-![OOPVulns ](/blog/assets/posts/oopvulns.png "OOPVulns ")
+![OOPVulns ](/blog/assets/posts/oopvulns-for-wordpress.png "OOPVulns ")
 
 Keeping WordPress updated is important, but you should also monitor installed software for known security issues.
 
