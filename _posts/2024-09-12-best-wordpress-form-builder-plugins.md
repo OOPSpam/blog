@@ -17,7 +17,6 @@ tags:
 </center>
 <br/>
 
- 
 We've been working with WordPress forms for over five years, mainly integrating the [OOPSpam WordPress anti-spam plugin](https://wordpress.org/plugins/oopspam-anti-spam/) with them. This involves coding, creating forms and testing them.
 
 I also spend a lot of time working on articles like [how to build accessibility forms](https://www.oopspam.com/blog/accessible-forms) and [building a complete contact form](https://www.oopspam.com/blog/contact-form-with-PHP).
@@ -28,12 +27,12 @@ To test accessibility and performance, I'll be using Google's open source [Light
 
 While most of the plugins listed below have a free version, some don't (like Gravity Forms). I will use the free version whenever possible.
 
-__Our testing environment:__
+**Our testing environment:**
 
-- No other plugins except OOPSpam Anti-Spam and the form plugin installed.
-- PHP 8.1.23
-- WordPress 6.4.2
-- Theme enabled: Twenty Twenty-Four
+* No other plugins except OOPSpam Anti-Spam and the form plugin installed.
+* PHP 8.1.23
+* WordPress 6.4.2
+* Theme enabled: Twenty Twenty-Four
 
 The test environment will be reset with each test to ensure a fair comparison between all solutions.
 
@@ -43,12 +42,12 @@ I'll use the default WordPress theme. Our demo page with no form has a performan
 
 In its current state, our simple web page makes 13 requests, transferring 1.2 MB, and the DOMContentLoaded load time is 128 ms.
 
-- 13 requests
-- 1.2 MB transferred
-- 1.3 MB resources
-- Finish: 209 ms
-- DOMContentLoaded: 128 ms
-- Load: 182 ms
+* 13 requests
+* 1.2 MB transferred
+* 1.3 MB resources
+* Finish: 209 ms
+* DOMContentLoaded: 128 ms
+* Load: 182 ms
 
 We'll see how these numbers change as we create a form and add a few fields. Towards the end of the article, I'll include a table to provide an overall comparison of these popular form builders.
 
@@ -74,11 +73,9 @@ There is no noticeable impact on the page load time of our site with WS Form.
 
 When WS Form is enabled, we see a 32% increase in network requests and a 15% increase in page DOM content load time. In general, it's only an additional 10ms to load the entire page.
 
-
 | Before WS Form                                                                                                      | After WS Form                                                                                                       | Increase                               |
 | ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- | -------------------------------------- |
 | 13 requests<br>1.2 MB transferred<br>1.3 MB resources<br>Finish: 209 ms<br>DOMContentLoaded: 128 ms<br>Load: 182 ms | 18 requests<br>1.3 MB transferred<br>1.6 MB resources<br>Finish: 218 ms<br>DOMContentLoaded: 150 ms<br>Load: 192 ms | Requests: 32%<br>DOMContentLoaded: 15% |
-
 
 These numbers look good. Would be interesting to see how other form plugins compare to these numbers.
 
@@ -86,16 +83,16 @@ These numbers look good. Would be interesting to see how other form plugins comp
 
 As we provide spam filtering service for various platforms including WordPress plugins, this topic is very interesting for me personally. As mentioned above, we talk about WS Form's capabilities in terms of spam protection in [another post](https://www.oopspam.com/blog/spam-protection-for-wsform). For both WS Form LITE and PRO we have the following options:
 
-- reCAPTCHA
-- hCAPTCHA
-- Turnstile
-- Honeypot
+* reCAPTCHA
+* hCAPTCHA
+* Turnstile
+* Honeypot
 
 All these solutions are free. Both LITE and PRO versions come with the same spam protection cabailities. I recommend enabling Honeypot in addition to one of the other three options. Keep in mind except for Honeypot, all others will have a negative impact on your website speed (see Performance Impact of [hCaptcha](https://www.oopspam.com/blog/hcaptcha-performance-analyses) and [reCaptcha](https://www.oopspam.com/blog/recaptcha-performance-analyses) posts for detailed analysis). Turnstile is the lightest among them. Let's enable it and see how it compares to our previous numbers:
 
-| Before Turnstile enabled [WS Form]                                                                                  	| After Turnstile enabled [WS Form]                                                                                   	| Increase                                                        	|
-|---------------------------------------------------------------------------------------------------------------------	|---------------------------------------------------------------------------------------------------------------------	|-----------------------------------------------------------------	|
-| 18 requests<br>1.3 MB transferred<br>1.6 MB resources<br>Finish: 218 ms<br>DOMContentLoaded: 150 ms<br>Load: 192 ms 	| 30 requests<br>1.9 MB transferred<br>2.5 MB resources<br>Finish: 4.36 s<br>DOMContentLoaded: 180 ms<br>Load: 337 ms 	| Requests: 50%<br><br><br><br>DOMContentLoaded: 18%<br>Load: 54% 	|
+| Before Turnstile enabled \[WS Form]                                                                                 | After Turnstile enabled \[WS Form]                                                                                  | Increase                                                        |
+| ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------- |
+| 18 requests<br>1.3 MB transferred<br>1.6 MB resources<br>Finish: 218 ms<br>DOMContentLoaded: 150 ms<br>Load: 192 ms | 30 requests<br>1.9 MB transferred<br>2.5 MB resources<br>Finish: 4.36 s<br>DOMContentLoaded: 180 ms<br>Load: 337 ms | Requests: 50%<br><br><br><br>DOMContentLoaded: 18%<br>Load: 54% |
 
 As you can see, after enabling Turnstile, there are 12 additional requests and the load time increases.
 
@@ -121,24 +118,24 @@ The generated form can be navigated using the `Tab` key, and fields have proper 
 
 Our contact form with Fluent Forms increased the number of network requests by 37%. A noticeable but negligible increase is in the time it takes to load DOM content. The form adds 21ms to the load time.
 
-| Before Fluent Forms                                                                                                 	| After Fluent Forms                                                                                                  	| Increase                                           	|
-|---------------------------------------------------------------------------------------------------------------------	|---------------------------------------------------------------------------------------------------------------------	|----------------------------------------------------	|
-| 13 requests<br>1.2 MB transferred<br>1.3 MB resources<br>Finish: 209 ms<br>DOMContentLoaded: 128 ms<br>Load: 182 ms 	| 19 requests<br>1.2 MB transferred<br>1.5 MB resources<br>Finish: 226 ms<br>DOMContentLoaded: 183 ms<br>Load: 203 ms 	| Requests: 37%<br><br><br><br>DOMContentLoaded: 35% 	|
+| Before Fluent Forms                                                                                                 | After Fluent Forms                                                                                                  | Increase                                           |
+| ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------- |
+| 13 requests<br>1.2 MB transferred<br>1.3 MB resources<br>Finish: 209 ms<br>DOMContentLoaded: 128 ms<br>Load: 182 ms | 19 requests<br>1.2 MB transferred<br>1.5 MB resources<br>Finish: 226 ms<br>DOMContentLoaded: 183 ms<br>Load: 203 ms | Requests: 37%<br><br><br><br>DOMContentLoaded: 35% |
 
 ## Spam protection in Fluent Forms
 
 Fluent Forms comes with [a couple of spam filtering options](https://www.oopspam.com/blog/spam-protection-for-fluent-forms) in the free version. These are
 
-- reCAPTCHA
-- hCAPTCHA
-- Turnstile
-- Honeypot
+* reCAPTCHA
+* hCAPTCHA
+* Turnstile
+* Honeypot
 
 We talked about the performance impact of these solutions above in the WS Form section. So, let me enable Turnstile and see how it affects page speed.
 
-| Before Turnstile enabled [Fluent Forms]                                                                             	| After Turnstile enabled [Fluent Forms]                                                                              	| Increase                                                         	|
-|---------------------------------------------------------------------------------------------------------------------	|---------------------------------------------------------------------------------------------------------------------	|------------------------------------------------------------------	|
-| 19 requests<br>1.2 MB transferred<br>1.5 MB resources<br>Finish: 226 ms<br>DOMContentLoaded: 183 ms<br>Load: 203 ms 	| 30 requests<br>1.9 MB transferred<br>2.3 MB resources<br>Finish: 1.84 s<br>DOMContentLoaded: 339 ms<br>Load: 638 ms 	| Requests: 40%<br><br><br><br>DOMContentLoaded: 59%<br>Load: 103% 	|
+| Before Turnstile enabled \[Fluent Forms]                                                                            | After Turnstile enabled \[Fluent Forms]                                                                             | Increase                                                         |
+| ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- |
+| 19 requests<br>1.2 MB transferred<br>1.5 MB resources<br>Finish: 226 ms<br>DOMContentLoaded: 183 ms<br>Load: 203 ms | 30 requests<br>1.9 MB transferred<br>2.3 MB resources<br>Finish: 1.84 s<br>DOMContentLoaded: 339 ms<br>Load: 638 ms | Requests: 40%<br><br><br><br>DOMContentLoaded: 59%<br>Load: 103% |
 
 Here we see a significant increase in the time to load the website from 226 ms to 1.84 s, which is also reflected in the load time with a 103% increase.
 
@@ -158,29 +155,29 @@ The form has proper `aria` attributes and can be navigated using only the `Tab' 
 
 ## Performance impact of WPForms
 
-Surprisingly, the amount of __network requests increased by 55%__. The page load time increased by an additional 137 ms, while the DOM content load time more than doubled.
+Surprisingly, the amount of **network requests increased by 55%**. The page load time increased by an additional 137 ms, while the DOM content load time more than doubled.
 
-| Before WPForms                                                                                                      	| After WPForms                                                                                                       	| Increase                                           	|
-|---------------------------------------------------------------------------------------------------------------------	|---------------------------------------------------------------------------------------------------------------------	|----------------------------------------------------	|
-| 13 requests<br>1.2 MB transferred<br>1.3 MB resources<br>Finish: 209 ms<br>DOMContentLoaded: 128 ms<br>Load: 182 ms 	| 23 requests<br>1.3 MB transferred<br>1.6 MB resources<br>Finish: 292 ms<br>DOMContentLoaded: 246 ms<br>Load: 265 ms 	| Requests: 55%<br><br><br><br>DOMContentLoaded: 63% 	|
+| Before WPForms                                                                                                      | After WPForms                                                                                                       | Increase                                           |
+| ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------- |
+| 13 requests<br>1.2 MB transferred<br>1.3 MB resources<br>Finish: 209 ms<br>DOMContentLoaded: 128 ms<br>Load: 182 ms | 23 requests<br>1.3 MB transferred<br>1.6 MB resources<br>Finish: 292 ms<br>DOMContentLoaded: 246 ms<br>Load: 265 ms | Requests: 55%<br><br><br><br>DOMContentLoaded: 63% |
 
 ## Spam protection in WPForms
 
 [WPForms comes with many spam protection tools already built in for you](https://www.oopspam.com/blog/spam-protection-for-wpforms). It offers more options than others in the Pro version. These are spam filtering tools you have in the free version:
 
-- Token based spam protection
-- hCAPTCHA
-- Turnstile
+* Token based spam protection
+* hCAPTCHA
+* Turnstile
 
 These are available for free in WPForms Lite version, but you can enable custom CAPTCHA features as well as country and keyword filters by upgrading to the Pro version. 
 
 Let's enable the lightest solution Turnstile among the above options and see how it affects our website performance.
 
-| Before Turnstile enabled [WPForms]                                                                                  	| After Turnstile enabled [WPForms]                                                                                   	| Increase                                                       	|
-|---------------------------------------------------------------------------------------------------------------------	|---------------------------------------------------------------------------------------------------------------------	|----------------------------------------------------------------	|
-| 23 requests<br>1.3 MB transferred<br>1.6 MB resources<br>Finish: 292 ms<br>DOMContentLoaded: 246 ms<br>Load: 265 ms 	| 35 requests<br>1.9 MB transferred<br>2.4 MB resources<br>Finish: 1.64 s<br>DOMContentLoaded: 257 ms<br>Load: 445 ms 	| Requests: 41%<br><br><br><br>DOMContentLoaded: 4%<br>Load: 50% 	|
+| Before Turnstile enabled \[WPForms]                                                                                 | After Turnstile enabled \[WPForms]                                                                                  | Increase                                                       |
+| ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- |
+| 23 requests<br>1.3 MB transferred<br>1.6 MB resources<br>Finish: 292 ms<br>DOMContentLoaded: 246 ms<br>Load: 265 ms | 35 requests<br>1.9 MB transferred<br>2.4 MB resources<br>Finish: 1.64 s<br>DOMContentLoaded: 257 ms<br>Load: 445 ms | Requests: 41%<br><br><br><br>DOMContentLoaded: 4%<br>Load: 50% |
 
-One noticeable change is showing resources have increased from 1.6 MB to 2.4 MB and __web page loading time has increased by 50%__.
+One noticeable change is showing resources have increased from 1.6 MB to 2.4 MB and **web page loading time has increased by 50%**.
 
 # 4. Formidable Forms
 
@@ -204,24 +201,24 @@ The generated form can be navigated using the `Tab` key, and fields have proper 
 
 Now that we have created a simple contact form with Formidable Forms, lets see how it affects website speed. It doesn't seem that Formidable Forms has much of an impact on website performance. A slight increase in the number of network requests and an additional delay of 33 ms on the page load time.
 
-| Before Formidable                                                                                                   	| After Formidable                                                                                                    	| Increase                                           	|
-|---------------------------------------------------------------------------------------------------------------------	|---------------------------------------------------------------------------------------------------------------------	|----------------------------------------------------	|
-| 13 requests<br>1.2 MB transferred<br>1.3 MB resources<br>Finish: 209 ms<br>DOMContentLoaded: 128 ms<br>Load: 182 ms 	| 18 requests<br>1.2 MB transferred<br>1.5 MB resources<br>Finish: 235 ms<br>DOMContentLoaded: 198 ms<br>Load: 215 ms 	| Requests: 32%<br><br><br><br>DOMContentLoaded: 16% 	|
+| Before Formidable                                                                                                   | After Formidable                                                                                                    | Increase                                           |
+| ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------- |
+| 13 requests<br>1.2 MB transferred<br>1.3 MB resources<br>Finish: 209 ms<br>DOMContentLoaded: 128 ms<br>Load: 182 ms | 18 requests<br>1.2 MB transferred<br>1.5 MB resources<br>Finish: 235 ms<br>DOMContentLoaded: 198 ms<br>Load: 215 ms | Requests: 32%<br><br><br><br>DOMContentLoaded: 16% |
 
 ## Spam protection in Formidable Forms
 
-[Formidable Forms offers similar anti-spam tools](https://www.oopspam.com/blog/spam-protection-for-formidable). However, it has a unique anti-spam feature others don't. This is blocking spam using [WordPress's built-in _Comment Moderation_](https://www.oopspam.com/blog/spam-protection-for-formidable#using-wordpresss-comment-moderation). Add URLs, IPs or any spam words (per line) to this field in _WordPress Settings -> Discussion Page -> Disallowed Comment Keys_. Formidable Forms will then check each post against this list and block it if it matches.
+[Formidable Forms offers similar anti-spam tools](https://www.oopspam.com/blog/spam-protection-for-formidable). However, it has a unique anti-spam feature others don't. This is blocking spam using [WordPress's built-in *Comment Moderation*](https://www.oopspam.com/blog/spam-protection-for-formidable#using-wordpresss-comment-moderation). Add URLs, IPs or any spam words (per line) to this field in *WordPress Settings -> Discussion Page -> Disallowed Comment Keys*. Formidable Forms will then check each post against this list and block it if it matches.
 
-- reCAPTCHA
-- hCAPTCHA
-- Token-based spam protection
-- Honeypot
+* reCAPTCHA
+* hCAPTCHA
+* Token-based spam protection
+* Honeypot
 
 As you can see from the above list, unfortunately it doesn't support Turnstile. So we will use hCAPTCHA instead. I have already done performance analysis of hCAPTCHA [in another post](https://www.oopspam.com/blog/hcaptcha-performance-analyses) using a simple HTML contact form. On a plain HTML page, hCAPTCHA had a significant impact on page load time. Let's see how it works with WordPress and Formidable Forms.
 
-| Before hCAPTCHA enabled [Formidable Forms]                                                                          	| After hCAPTCHA enabled [Formidable Forms]                                                                           	| Increase                                                                                     	|
-|---------------------------------------------------------------------------------------------------------------------	|---------------------------------------------------------------------------------------------------------------------	|----------------------------------------------------------------------------------------------	|
-| 18 requests<br>1.2 MB transferred<br>1.5 MB resources<br>Finish: 235 ms<br>DOMContentLoaded: 198 ms<br>Load: 215 ms 	| 27 requests<br>2.7 MB transferred<br>3.9 MB resources<br>Finish: 560 ms<br>DOMContentLoaded: 203 ms<br>Load: 468 ms 	| Requests: 40%<br>Transferred: 76%<br>Resources: 88%<br><br>DOMContentLoaded: 2%<br>Load: 74% 	|
+| Before hCAPTCHA enabled \[Formidable Forms]                                                                         | After hCAPTCHA enabled \[Formidable Forms]                                                                          | Increase                                                                                     |
+| ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| 18 requests<br>1.2 MB transferred<br>1.5 MB resources<br>Finish: 235 ms<br>DOMContentLoaded: 198 ms<br>Load: 215 ms | 27 requests<br>2.7 MB transferred<br>3.9 MB resources<br>Finish: 560 ms<br>DOMContentLoaded: 203 ms<br>Load: 468 ms | Requests: 40%<br>Transferred: 76%<br>Resources: 88%<br><br>DOMContentLoaded: 2%<br>Load: 74% |
 
 The DOM content loading time is similar to the number before enabling hCAPTCHA. However, massive increase in loaded resources. Since hCAPTCHA loads several JavaScript files, this is reflected in the increase of data transfers and resources. Both increase by 76% and 88% respectively.
 
@@ -239,27 +236,25 @@ The Lighthouse shows no problems for our Forminator contact form. All fields hav
 
 A noticeable change in the number of network hits. It increased by 63%. Total page speed increased by only 39ms. Forminator seems to have an insignificant performance impact on our site.
 
-| Before Forminator                                                                                                   	| After Forminator                                                                                                    	| Increase                                           	|
-|---------------------------------------------------------------------------------------------------------------------	|---------------------------------------------------------------------------------------------------------------------	|----------------------------------------------------	|
-| 13 requests<br>1.2 MB transferred<br>1.3 MB resources<br>Finish: 209 ms<br>DOMContentLoaded: 128 ms<br>Load: 182 ms 	| 25 requests<br>1.3 MB transferred<br>1.8 MB resources<br>Finish: 248 ms<br>DOMContentLoaded: 170 ms<br>Load: 221 ms 	| Requests: 63%<br><br><br><br>DOMContentLoaded: 28% 	|
+| Before Forminator                                                                                                   | After Forminator                                                                                                    | Increase                                           |
+| ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------- |
+| 13 requests<br>1.2 MB transferred<br>1.3 MB resources<br>Finish: 209 ms<br>DOMContentLoaded: 128 ms<br>Load: 182 ms | 25 requests<br>1.3 MB transferred<br>1.8 MB resources<br>Finish: 248 ms<br>DOMContentLoaded: 170 ms<br>Load: 221 ms | Requests: 63%<br><br><br><br>DOMContentLoaded: 28% |
 
 ## Spam protection in Forminator
 
 Forminator comes with [three built-in options](https://www.oopspam.com/blog/spam-protection-for-forminator). Unfortunately it lacks native support for Turnstile. We will do our performance testing with hCAPTCHA.
 
-- Honeypot
-- hCAPTCHA
-- reCAPTCHA
+* Honeypot
+* hCAPTCHA
+* reCAPTCHA
 
 We know that hCAPTCHA and reCAPTCHA [have a big impact on page speed](https://www.oopspam.com/blog/hcaptcha-performance-analyses). This is expected from client-side solutions because they need to load javascript files, use cookies to track users, perform calculations, and send HTTP requests. Let's add hCAPTCHA to our Forminator form and see the impact.
 
-| Before hCAPTCHA enabled [Forminator]                                                                                	| After hCAPTCHA enabled [Forminator]                                                                                 	| Increase                                                                                      	|
-|---------------------------------------------------------------------------------------------------------------------	|---------------------------------------------------------------------------------------------------------------------	|-----------------------------------------------------------------------------------------------	|
-| 25 requests<br>1.3 MB transferred<br>1.8 MB resources<br>Finish: 248 ms<br>DOMContentLoaded: 170 ms<br>Load: 221 ms 	| 36 requests<br>2.7 MB transferred<br>4.2 MB resources<br>Finish: 870 ms<br>DOMContentLoaded: 328 ms<br>Load: 355 ms 	| Requests: 40%<br>Transferred: 70%<br>Resources: 80%<br><br>DOMContentLoaded: 63%<br>Load: 46% 	|
-
+| Before hCAPTCHA enabled \[Forminator]                                                                               | After hCAPTCHA enabled \[Forminator]                                                                                | Increase                                                                                      |
+| ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
+| 25 requests<br>1.3 MB transferred<br>1.8 MB resources<br>Finish: 248 ms<br>DOMContentLoaded: 170 ms<br>Load: 221 ms | 36 requests<br>2.7 MB transferred<br>4.2 MB resources<br>Finish: 870 ms<br>DOMContentLoaded: 328 ms<br>Load: 355 ms | Requests: 40%<br>Transferred: 70%<br>Resources: 80%<br><br>DOMContentLoaded: 63%<br>Load: 46% |
 
 While the general load time only increased by 46% from 221ms to 355ms, the resources added by the hCAPTCHA integration are massive, from 1.8 MB to 4.2 MB, an increase of 80%. The number of network requests is also nearly doubled.
-
 
 # 6. Gravity Forms
 
@@ -269,33 +264,33 @@ Another popular premium form builder. [Gravity Forms](https://www.gravityforms.c
 
 ## Accessibility in Gravity Forms
 
-Similar to Fluent Forms, Gravity Forms' default contact form fails an accessibility check: Low contrast ratio. As you can see in the screenshot above, some text like _0 of 600 max characters_, _(Required)_, _Please let us know what's on your mind. Got a question for us? Ask away._ are too bright and don't play well with a background color. However, you can change these colors to be more accessible. This text is also too small (13px), [it is recommended](https://accessibility.digital.gov/visual-design/typography/#:~:text=Steps%20to%20take,length%20that%20promotes%20comfortable%20reading) to make the font size 16px or 14px depending on the font family.
+Similar to Fluent Forms, Gravity Forms' default contact form fails an accessibility check: Low contrast ratio. As you can see in the screenshot above, some text like *0 of 600 max characters*, *(Required)*, *Please let us know what's on your mind. Got a question for us? Ask away.* are too bright and don't play well with a background color. However, you can change these colors to be more accessible. This text is also too small (13px), [it is recommended](https://accessibility.digital.gov/visual-design/typography/#:~:text=Steps%20to%20take,length%20that%20promotes%20comfortable%20reading) to make the font size 16px or 14px depending on the font family.
 
 ## Performance impact of Gravity Forms
 
 Once you enable Gravity Forms on your page, the number of network requests increases by 84%, an additional 19 requests. The changes in resources, load time are relatively small.
 
-| Before Gravity Forms                                                                                                	| After Gravity Forms                                                                                                 	| Increase                                           	|
-|---------------------------------------------------------------------------------------------------------------------	|---------------------------------------------------------------------------------------------------------------------	|----------------------------------------------------	|
-| 13 requests<br>1.2 MB transferred<br>1.3 MB resources<br>Finish: 209 ms<br>DOMContentLoaded: 128 ms<br>Load: 182 ms 	| 32 requests<br>1.3 MB transferred<br>2.0 MB resources<br>Finish: 246 ms<br>DOMContentLoaded: 210 ms<br>Load: 225 ms 	| Requests: 84%<br><br><br><br>DOMContentLoaded: 48% 	|
+| Before Gravity Forms                                                                                                | After Gravity Forms                                                                                                 | Increase                                           |
+| ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------- |
+| 13 requests<br>1.2 MB transferred<br>1.3 MB resources<br>Finish: 209 ms<br>DOMContentLoaded: 128 ms<br>Load: 182 ms | 32 requests<br>1.3 MB transferred<br>2.0 MB resources<br>Finish: 246 ms<br>DOMContentLoaded: 210 ms<br>Load: 225 ms | Requests: 84%<br><br><br><br>DOMContentLoaded: 48% |
 
 ## Spam protection in Gravity Forms
 
 This is where Gravity Forms really shines. It [has many options](https://www.oopspam.com/blog/spam-protection-for-gravity-forms) for spam filtering. Although only reCAPTCHA and Honeypot are natively supported. The other options require add-ons to be installed. All spam protection is available under the Basic plan. Here are some of them:
 
-- Honeypot
-- reCAPTCHA
-- Custom CAPTCHA with conditional logic
-- hCAPTCHA (add-on)
-- Turnstile (add-on)
+* Honeypot
+* reCAPTCHA
+* Custom CAPTCHA with conditional logic
+* hCAPTCHA (add-on)
+* Turnstile (add-on)
 
 In [our previous article](https://www.oopspam.com/blog/spam-protection-for-gravity-forms#custom-captcha-using-conditional-logic) we used conditional logic to create a simple custom captcha. This is another approach where you do not need to install an add-on.
 
 Let's configure the invisible version of reCAPTCHA and see how it affects the performance of Gravity Form on our page.
 
-| Before reCAPTCHA enabled [Gravity Forms]                                                                            	| After reCAPTCHA enabled [Gravity Forms]                                                                             	| Increase                                                                                      	|
-|---------------------------------------------------------------------------------------------------------------------	|---------------------------------------------------------------------------------------------------------------------	|-----------------------------------------------------------------------------------------------	|
-| 32 requests<br>1.3 MB transferred<br>2.0 MB resources<br>Finish: 246 ms<br>DOMContentLoaded: 210 ms<br>Load: 225 ms 	| 41 requests<br>2.5 MB transferred<br>4.1 MB resources<br>Finish: 750 ms<br>DOMContentLoaded: 203 ms<br>Load: 398 ms 	| Requests: 24%<br>Transferred: 63%<br>Resources: 68%<br><br>DOMContentLoaded: 63%<br>Load: 55% 	|
+| Before reCAPTCHA enabled \[Gravity Forms]                                                                           | After reCAPTCHA enabled \[Gravity Forms]                                                                            | Increase                                                                                      |
+| ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
+| 32 requests<br>1.3 MB transferred<br>2.0 MB resources<br>Finish: 246 ms<br>DOMContentLoaded: 210 ms<br>Load: 225 ms | 41 requests<br>2.5 MB transferred<br>4.1 MB resources<br>Finish: 750 ms<br>DOMContentLoaded: 203 ms<br>Load: 398 ms | Requests: 24%<br>Transferred: 63%<br>Resources: 68%<br><br>DOMContentLoaded: 63%<br>Load: 55% |
 
 As expected, a large increase in resources of 2.1 MB more resources are loaded. The load time more than doubled. Compared to other form builders, Gravity Forms' reCAPTCHA implementation seems to be better as overall not a huge spike in numbers.
 
@@ -307,9 +302,9 @@ As expected, a large increase in resources of 2.1 MB more resources are loaded. 
 
 ## Accessibility in Ninja Forms
 
-As you can see in our simple Ninja Form above, the text color (_My Name_) has low contrast. It is light gray and difficult to read for many people. This is a default form that comes with Ninja Forms. However, you can change this color and make it more accessible for everyone.
+As you can see in our simple Ninja Form above, the text color (*My Name*) has low contrast. It is light gray and difficult to read for many people. This is a default form that comes with Ninja Forms. However, you can change this color and make it more accessible for everyone.
 
-One major concern is that the form is not fully navigable using the `Tab` key. If you try to navigate the form with the `Tab` key, it will go through the fields but skip the _Submit_ button.
+One major concern is that the form is not fully navigable using the `Tab` key. If you try to navigate the form with the `Tab` key, it will go through the fields but skip the *Submit* button.
 
 That said, unlike others, Ninja Forms has better error handling with green, red icons in additional text based error both under each field and bottom of the form.
 
@@ -319,35 +314,33 @@ That said, unlike others, Ninja Forms has better error handling with green, red 
 
 Ninja Forms doesn't have much of an impact on your website's load time in its raw form. Our basic form increased page content load time by 60ms and increased network requests from 13 to 22.
 
-| Before Ninja Forms                                                                                                  	| After Ninja Forms                                                                                                   	| Increase                                           	|
-|---------------------------------------------------------------------------------------------------------------------	|---------------------------------------------------------------------------------------------------------------------	|----------------------------------------------------	|
-| 13 requests<br>1.2 MB transferred<br>1.3 MB resources<br>Finish: 209 ms<br>DOMContentLoaded: 128 ms<br>Load: 182 ms 	| 22 requests<br>1.3 MB transferred<br>1.8 MB resources<br>Finish: 265 ms<br>DOMContentLoaded: 193 ms<br>Load: 228 ms 	| Requests: 51%<br><br><br><br>DOMContentLoaded: 40% 	|
+| Before Ninja Forms                                                                                                  | After Ninja Forms                                                                                                   | Increase                                           |
+| ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------- |
+| 13 requests<br>1.2 MB transferred<br>1.3 MB resources<br>Finish: 209 ms<br>DOMContentLoaded: 128 ms<br>Load: 182 ms | 22 requests<br>1.3 MB transferred<br>1.8 MB resources<br>Finish: 265 ms<br>DOMContentLoaded: 193 ms<br>Load: 228 ms | Requests: 51%<br><br><br><br>DOMContentLoaded: 40% |
 
 ## Spam protection in Ninja Forms
 
 Ninja Forms comes with a number of options, but it is also missing a couple of important integrations. Ninja Forms offers the following anti-spam features:
 
-- Honeypot
-- reCAPTCHA
-- Question - Answer
+* Honeypot
+* reCAPTCHA
+* Question - Answer
 
 This is it. There is no Turnstile, hCAPTCHA support. However, you can install the official hCAPTCHA WordPress plugin. It supports Ninja Forms. 
 
 Lets enable reCAPTCHA and see how Ninja Forms performs.
 
-| Before reCAPTCHA enabled [Ninja Forms]                                                                              	| After reCAPTCHA enabled [Ninja Forms]                                                                               	| Increase                                                                                     	|
-|---------------------------------------------------------------------------------------------------------------------	|---------------------------------------------------------------------------------------------------------------------	|----------------------------------------------------------------------------------------------	|
-| 22 requests<br>1.3 MB transferred<br>1.8 MB resources<br>Finish: 265 ms<br>DOMContentLoaded: 193 ms<br>Load: 228 ms 	| 32 requests<br>2.5 MB transferred<br>3.9 MB resources<br>Finish: 994 ms<br>DOMContentLoaded: 195 ms<br>Load: 599 ms 	| Requests: 37%<br>Transferred: 63%<br>Resources: 73%<br><br>DOMContentLoaded: 1%<br>Load: 89% 	|
+| Before reCAPTCHA enabled \[Ninja Forms]                                                                             | After reCAPTCHA enabled \[Ninja Forms]                                                                              | Increase                                                                                     |
+| ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| 22 requests<br>1.3 MB transferred<br>1.8 MB resources<br>Finish: 265 ms<br>DOMContentLoaded: 193 ms<br>Load: 228 ms | 32 requests<br>2.5 MB transferred<br>3.9 MB resources<br>Finish: 994 ms<br>DOMContentLoaded: 195 ms<br>Load: 599 ms | Requests: 37%<br>Transferred: 63%<br>Resources: 73%<br><br>DOMContentLoaded: 1%<br>Load: 89% |
 
 After activating reCAPTCHA v3, we can see the increase in resources. It increased by 63%. Another noticeable change is increase in loading time of a website by 89%. This added additional 371 ms to the website speed.
-
 
 # 8. Contact Form 7
 
 The most popular contact form builder for WordPress. It has over 5 million active installations. Contact Form 7 is easy to use and a great choice for a simple form. If all you need is a simple form where you get submissions via email, then this is the plugin you are looking for.
 
 It doesn't store submissions, doesn't integrate with external services, and doesn't use cookies. I expect the plugin to be super fast considering our minimum requirements. However, you can add spam protection, store submissions via third party plugins. Some integrations like Stripe, reCAPTCHA, Akismet are built in, but you have to set them up.
-
 
 ![Contact Form 7 Lighthouse Performance and Accessibility Result](/blog/assets/posts/best-wp-form/cf7-lighthouse.png "Contact Form 7 Lighthouse Performance and Accessibility Result")
 
@@ -359,10 +352,9 @@ As expected, Contact Form 7 achieves a perfect score with 26 out of 26 passed ac
 
 Because Contact Form 7 is the simplest, minimalist, fastest form builder you can get. This is also reflected when I did the test.
 
-| Before Contact Form 7                                                                                               	| After Contact Form 7                                                                                                	| Increase                                           	|
-|---------------------------------------------------------------------------------------------------------------------	|---------------------------------------------------------------------------------------------------------------------	|----------------------------------------------------	|
-| 13 requests<br>1.2 MB transferred<br>1.3 MB resources<br>Finish: 209 ms<br>DOMContentLoaded: 128 ms<br>Load: 182 ms 	| 17 requests<br>1.2 MB transferred<br>1.3 MB resources<br>Finish: 208 ms<br>DOMContentLoaded: 165 ms<br>Load: 183 ms 	| Requests: 26%<br><br><br><br>DOMContentLoaded: 25% 	|
-
+| Before Contact Form 7                                                                                               | After Contact Form 7                                                                                                | Increase                                           |
+| ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------- |
+| 13 requests<br>1.2 MB transferred<br>1.3 MB resources<br>Finish: 209 ms<br>DOMContentLoaded: 128 ms<br>Load: 182 ms | 17 requests<br>1.2 MB transferred<br>1.3 MB resources<br>Finish: 208 ms<br>DOMContentLoaded: 165 ms<br>Load: 183 ms | Requests: 26%<br><br><br><br>DOMContentLoaded: 25% |
 
 No additional resources are required. Only 25% increase in content loading time. The number of network requests also increases slightly from 13 to 17.
 
@@ -370,18 +362,16 @@ No additional resources are required. Only 25% increase in content loading time.
 
 While you can use third-party anti-spam plugins to protect your Contact Form 7, it natively supports only the following solutions
 
-- Akismet
-- reCAPTCHA
+* Akismet
+* reCAPTCHA
 
 Let's add reCAPTCHA to our form and see how our basic form performs.
 
-| Before reCAPTCHA enabled [Contact Form 7]                                                                           	| After reCAPTCHA enabled [Contact Form 7]                                                                            	| Increase                                                                                      	|
-|---------------------------------------------------------------------------------------------------------------------	|---------------------------------------------------------------------------------------------------------------------	|-----------------------------------------------------------------------------------------------	|
-| 17 requests<br>1.2 MB transferred<br>1.3 MB resources<br>Finish: 208 ms<br>DOMContentLoaded: 165 ms<br>Load: 183 ms 	| 31 requests<br>2.4 MB transferred<br>3.5 MB resources<br>Finish: 827 ms<br>DOMContentLoaded: 197 ms<br>Load: 495 ms 	| Requests: 58%<br>Transferred: 66%<br>Resources: 91%<br><br>DOMContentLoaded: 17%<br>Load: 92% 	|
+| Before reCAPTCHA enabled \[Contact Form 7]                                                                          | After reCAPTCHA enabled \[Contact Form 7]                                                                           | Increase                                                                                      |
+| ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
+| 17 requests<br>1.2 MB transferred<br>1.3 MB resources<br>Finish: 208 ms<br>DOMContentLoaded: 165 ms<br>Load: 183 ms | 31 requests<br>2.4 MB transferred<br>3.5 MB resources<br>Finish: 827 ms<br>DOMContentLoaded: 197 ms<br>Load: 495 ms | Requests: 58%<br>Transferred: 66%<br>Resources: 91%<br><br>DOMContentLoaded: 17%<br>Load: 92% |
 
-
-Unfortunately, after adding reCAPTCHA to Contact Form 7, it looks worse than other plugins. The biggest increases were in resources and load time. Both increased by 91%. Another noticeable increase was in the time (_Finish_) the browser needed to make requests and handle resources. reCAPTCHA added an additional 619 ms.
-
+Unfortunately, after adding reCAPTCHA to Contact Form 7, it looks worse than other plugins. The biggest increases were in resources and load time. Both increased by 91%. Another noticeable increase was in the time (*Finish*) the browser needed to make requests and handle resources. reCAPTCHA added an additional 619 ms.
 
 # Result
 
@@ -391,19 +381,18 @@ Now that we have all the numbers, let's put them together and draw some conclusi
 
 General performance metrics with a simple three field form. No spam protection, third party plugins enabled.
 
-| Form builder     	| Network request 	| Transferred data 	| Resources 	| Finished 	| DOMContentLoaded 	| Loaded 	|
-|------------------	|-----------------	|------------------	|-----------	|----------	|------------------	|--------	|
-| WS Form          	| 18              	| 1.3 MB           	| 1.6 MB    	| 218 ms   	| 150 ms           	| 192 ms 	|
-| Fluent Forms     	| 19              	| 1.2 MB           	| 1.5 MB    	| 226 ms   	| 183 ms           	| 203 ms 	|
-| WPForms          	| 23              	| 1.3 MB           	| 1.6 MB    	| 292 ms   	| 246 ms           	| 265 ms 	|
-| Formidable Forms 	| 18              	| 1.2 MB           	| 1.5 MB    	| 235 ms   	| 198 ms           	| 215 ms 	|
-| Forminator       	| 25              	| 1.3 MB           	| 1.8 MB    	| 248 ms   	| 170 ms           	| 221 ms 	|
-| Gravity Forms    	| 32              	| 1.3 MB           	| 2.0 MB    	| 246 ms   	| 210 ms           	| 225 ms 	|
-| Ninja Forms      	| 22              	| 1.3 MB           	| 1.8 MB    	| 265 ms   	| 193 ms           	| 228 ms 	|
-| Contact Form 7   	| 17              	| 1.2 MB           	| 1.3 MB    	| 208 ms   	| 165 ms           	| 183 ms 	|
+| Form builder     | Network request | Transferred data | Resources | Finished | DOMContentLoaded | Loaded |
+| ---------------- | --------------- | ---------------- | --------- | -------- | ---------------- | ------ |
+| WS Form          | 18              | 1.3 MB           | 1.6 MB    | 218 ms   | 150 ms           | 192 ms |
+| Fluent Forms     | 19              | 1.2 MB           | 1.5 MB    | 226 ms   | 183 ms           | 203 ms |
+| WPForms          | 23              | 1.3 MB           | 1.6 MB    | 292 ms   | 246 ms           | 265 ms |
+| Formidable Forms | 18              | 1.2 MB           | 1.5 MB    | 235 ms   | 198 ms           | 215 ms |
+| Forminator       | 25              | 1.3 MB           | 1.8 MB    | 248 ms   | 170 ms           | 221 ms |
+| Gravity Forms    | 32              | 1.3 MB           | 2.0 MB    | 246 ms   | 210 ms           | 225 ms |
+| Ninja Forms      | 22              | 1.3 MB           | 1.8 MB    | 265 ms   | 193 ms           | 228 ms |
+| Contact Form 7   | 17              | 1.2 MB           | 1.3 MB    | 208 ms   | 165 ms           | 183 ms |
 
-
-According to the table above, the fastest form builder is __Contact Form 7__. But considering that you may need more features, your second best option is __WS Form__ and __Formidable Forms__.
+According to the table above, the fastest form builder is **Contact Form 7**. But considering that you may need more features, your second best option is **WS Form** and **Formidable Forms**.
 
 Result:
 
@@ -415,17 +404,16 @@ Overall result with spam protection enabled (reCaptcha, hCAPTCHA or Turnstile)
 
 > Turnstile is relatively lighter than reCAPTCHA and hCAPTCHA.
 
-| Form builder     	| Spam Protection solution 	| Network request 	| Transferred data 	| Resources 	| Finished 	| DOMContentLoaded 	| Loaded 	|
-|------------------	|--------------------------	|-----------------	|------------------	|-----------	|----------	|------------------	|--------	|
-| WS Form          	| Turnstile                	| 30              	| 1.9 MB           	| 2.5 MB    	| 4.36 s   	| 180 ms           	| 337 ms 	|
-| Fluent Forms     	| Turnstile                	| 30              	| 1.9 MB           	| 2.3 MB    	| 1.84 s   	| 339 ms           	| 638 ms 	|
-| WPForms          	| Turnstile                	| 35              	| 1.9 MB           	| 2.4 MB    	| 1.6 s    	| 257 ms           	| 445 ms 	|
-| Formidable Forms 	| hCAPTCHA                 	| 27              	| 2.7 MB           	| 3.9 MB    	| 560 ms   	| 203 ms           	| 468 ms 	|
-| Forminator       	| hCAPTCHA                 	| 36              	| 12.7 MB          	| 4.2 MB    	| 870 ms   	| 328 ms           	| 355 ms 	|
-| Gravity Forms    	| reCAPTCHA                	| 41              	| 2.5 MB           	| 4.1 MB    	| 750 ms   	| 203 ms           	| 398 ms 	|
-| Ninja Forms      	| reCAPTCHA                	| 32              	| 2.5 MB           	| 3.9 MB    	| 994 ms   	| 195 ms           	| 599 ms 	|
-| Contact Form 7   	| reCAPTCHA                	| 31              	| 2.4 MB           	| 2.5 MB    	| 827 ms   	| 197 ms           	| 495 ms 	|
-
+| Form builder     | Spam Protection solution | Network request | Transferred data | Resources | Finished | DOMContentLoaded | Loaded |
+| ---------------- | ------------------------ | --------------- | ---------------- | --------- | -------- | ---------------- | ------ |
+| WS Form          | Turnstile                | 30              | 1.9 MB           | 2.5 MB    | 4.36 s   | 180 ms           | 337 ms |
+| Fluent Forms     | Turnstile                | 30              | 1.9 MB           | 2.3 MB    | 1.84 s   | 339 ms           | 638 ms |
+| WPForms          | Turnstile                | 35              | 1.9 MB           | 2.4 MB    | 1.6 s    | 257 ms           | 445 ms |
+| Formidable Forms | hCAPTCHA                 | 27              | 2.7 MB           | 3.9 MB    | 560 ms   | 203 ms           | 468 ms |
+| Forminator       | hCAPTCHA                 | 36              | 12.7 MB          | 4.2 MB    | 870 ms   | 328 ms           | 355 ms |
+| Gravity Forms    | reCAPTCHA                | 41              | 2.5 MB           | 4.1 MB    | 750 ms   | 203 ms           | 398 ms |
+| Ninja Forms      | reCAPTCHA                | 32              | 2.5 MB           | 3.9 MB    | 994 ms   | 195 ms           | 599 ms |
+| Contact Form 7   | reCAPTCHA                | 31              | 2.4 MB           | 2.5 MB    | 827 ms   | 197 ms           | 495 ms |
 
 In general, the fastest form builder with at least one anti-spam feature is WPForms. Here are the overall rankings:
 
@@ -439,8 +427,17 @@ Considering that Turnstile is a bit lighter than reCAPTCHA and hCAPTCHA. If we g
 2. Ninja Forms
 3. Contact Form 7
 
-
 This concludes our performance analysis. Before we close this article, let's look at some questions.
+
+### Check Plugins for Known Vulnerabilities
+
+![OOPVulns ](/blog/assets/posts/oopvulns-for-wordpress.png "OOPVulns ")
+
+Performance isn't the only thing to consider when choosing WordPress plugins, security matters too. Outdated plugins and themes can contain known vulnerabilities that put your website at risk.
+
+[OOPVulns](https://www.oopspam.com/blog/introducing-oopvulns-the-wordpress-vulnerability-scanner-plugin) scans your WordPress core, plugins, and themes for known security vulnerabilities. It highlights affected components, shows severity levels, and can automatically notify you when new vulnerabilities are detected, making it easier to update or replace risky software before it becomes a problem.
+
+This complements performance testing by helping you choose plugins that are both efficient and secure.
 
 # What is the best form plugin for Wordpress?
 
@@ -457,7 +454,6 @@ WPForms is the fastest when used with Turnstile. Other lightweight plugins are F
 # What is the fastest spam protection for WordPress?
 
 All client-side spam protection solutions including reCAPTCHA, hCAPTCHA, Turnstile will [slow down your website](https://www.oopspam.com/blog/recaptcha-performance-analyses). This is because they load JavaScript files, use cookies. If you need to use one of them, Turnstile has slightly less impact on your site. To avoid this problem, use a backend based spam protection like [OOPSpam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/) (that's us 👋). OOPSpam has zero impact on your site speed. More about Turnstile check out: [What No One Tells You About Cloudflare Turnstile](https://www.oopspam.com/blog/cloudflare-turnstile).
-
 
 <style>
 table, th, td {
