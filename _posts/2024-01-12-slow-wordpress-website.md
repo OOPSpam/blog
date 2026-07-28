@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "You're Doing WordPress Performance WRONG. Here's Why."
+title: You're Doing WordPress Performance WRONG. Here's Why.
+date: 2026-07-28T21:05:00.000+08:00
 author: onar
 image: /assets/posts/slow-wordpress/meta.png
-tags: [wordpress]
-
-
-description: "Let's take a look at what's slowing down your WordPress website and what you can do to fix it."
-# modified: 
+description: Let's take a look at what's slowing down your WordPress website and
+  what you can do to fix it.
+tags:
+  - wordpress
 ---
 <center>
 <img loading="lazy"  width="600" alt="WordPress logo" src="/blog/assets/posts/slow-wordpress/wp.png">
@@ -16,11 +16,11 @@ description: "Let's take a look at what's slowing down your WordPress website an
 
 Slow websites are a big concern because they have a huge impact on your website and business. Here are some of them:
 
-- Bad SEO
-- Bad user experience
-- Inaccessibility
-- Loss of revenue
-- Harm to your business reputation
+* Bad SEO
+* Bad user experience
+* Inaccessibility
+* Loss of revenue
+* Harm to your business reputation
 
 In our previous articles we discussed [reCaptcha](https://www.oopspam.com/blog/recaptcha-performance-analyses) and [hCaptcha](https://www.oopspam.com/blog/hcaptcha-performance-analyses) performance analysis and detailed how they affect the loading time of your website.
 
@@ -58,9 +58,18 @@ To give an example from our experience working with anti-spam solutions at [OOPS
 
 If you must use a plugin for a task, look for a performance optimized one. While you are at it, go through every plugin you have on your website and see which ones are unnecessary or inactive, remove them. Remember, an inactive plugin can still slow down your site.
 
+### Check Plugins for Known Vulnerabilities
+
+![OOPVulns ](/blog/assets/posts/oopvulns-for-wordpress.png "OOPVulns ")
+
+Plugins can affect more than performance. Outdated or abandoned plugins may also contain known security vulnerabilities.
+
+[OOPVulns](https://wordpress.org/plugins/oopvulns-vulnerability-scanner/) scans WordPress core, plugins, and themes for known vulnerabilities. It shows severity levels, available fixes, and can run automatic daily or weekly scans with email alerts.
+
+This makes it easier to identify vulnerable plugins that should be updated, replaced, or removed.
+
 ## Other tips: Image optimization, HTTP2
 
 Caching will help with image loading time, but it won't be able to optimize large images well. Make sure images are smaller, compressed so you don't load massive images on your site. Popular plugins for image optimization and compression are [ShortPixel](https://wordpress.org/plugins/shortpixel-image-optimiser/) and [TinyPNG](https://wordpress.org/plugins/tiny-compress-images/).
-
 
 It is hard to imagine modern websites without SSL (also known as TLS, HTTPS) these days. Almost all hosting companies offer free SSL. Before settling on a hosting company, check if they offer HTTP2, which is much faster than the previous HTTP1.1.
