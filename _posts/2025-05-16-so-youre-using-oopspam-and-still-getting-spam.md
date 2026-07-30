@@ -1,7 +1,7 @@
 ---
 layout: post
 title: So, you're using OOPSpam and still getting spam?
-date: 2025-05-16T16:43:00.000Z
+date: 2026-07-30T11:25:00.000+04:00
 author: onar
 image: /assets/posts/header-oopspam.png
 description: Learn how to make the most of the OOPSpam features, such as
@@ -53,9 +53,13 @@ Real people rarely use throwaway emails to submit a form or sign up for a platfo
 
 Use this feature to block them and only keep valid emails. This is great for lead forms where you only want valid domains.
 
-## Maybe Block VPNs/Proxy/Tor
+## Block Cloud Providers and Maybe Block VPNs/Proxy/Tor
 
-Many people use VPNs or other privacy tools to avoid being tracked. Enabling this feature may block legitimate users, so keep that in mind. If you aren't concerned about that, go ahead and enable it.
+Blocking submissions or [e-commerce orders](https://www.oopspam.com/blog/the-larget-card-testing-attack) from data centers can prevent a significant amount of spam. You can enable this feature through [the API](https://www.oopspam.com/docs/#spam-detection) using the \`blockDC\` parameter, or in the [WordPress plugin](https://help.oopspam.com/wordpress/configuration/#ip-filtering) and other integrations by enabling the \*\*Block Cloud Providers\*\* setting.
+
+![WordPress Block VPN and Cloud Providers setting](/blog/assets/posts/ip-filtering-oopspam.png "WordPress Block VPN and Cloud Providers setting")
+
+About VPN providers, many people use VPNs or other privacy tools to avoid being tracked. Enabling \`blockVPN\` may block legitimate users, so keep that in mind. If you aren't concerned about that, go ahead and enable it.
 
 In some cases, such as surveys or voting forms, where you don't want people to submit multiple entries from different IP addresses, blocking VPNs can be helpful.
 
