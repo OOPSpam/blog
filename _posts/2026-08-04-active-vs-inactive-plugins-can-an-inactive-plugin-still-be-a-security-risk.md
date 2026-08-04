@@ -27,7 +27,7 @@ This is exactly what automated scanners are built to find. Bots don't check your
 
 ![The Update Blind Spot](/blog/assets/posts/wordpress-plugin-patch.png "The Update Blind Spot")
 
-Active plugins get attention because they show up in your daily workflow. Inactive ones don't. Most site owners stop checking version numbers on anything they've turned off, so when a new vulnerability is disclosed for that plugin, the patch sits unapplied indefinitely. Auto-updates can help, but many hosts and setups only apply them to active plugins by default.
+Active plugins get attention because they show up in your daily workflow. Inactive ones don't. Most site owners stop checking version numbers on anything they've turned off, so when a [new vulnerability is disclosed](https://www.oopspam.com/blog/vulnerability-found-in-a-wordpress-plugin-what-should-you-do-next) for that plugin, the patch sits unapplied indefinitely. Auto-updates can help, but many hosts and setups only apply them to active plugins by default.
 
 ## **Active vs Inactive: Where the Risk Actually Sits**
 
