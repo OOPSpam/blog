@@ -13,7 +13,7 @@ tags:
 ---
 ![Breakdance ](/blog/assets/posts/breakdance-home.png "Breakdance ")
 
-Breakdance Forms doesn’t include a built-in feature to block countries or IP addresses, but you can easily do it using the OOPSpam WordPress plugin. With OOPSpam, you can filter form submissions based on country, IP, language, and other criteria—all without writing any code.
+Breakdance Forms doesn’t include a built-in feature to [block countries](https://www.oopspam.com/blog/how-to-block-countries-from-your-website-the-complete-guide) or IP addresses, but you can easily do it using the OOPSpam WordPress plugin. With OOPSpam, you can filter form submissions based on country, IP, language, and other criteria—all without writing any code.
 
 Here’s how to get started.
 
