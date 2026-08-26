@@ -15,7 +15,7 @@ tags:
 
 Spam submissions from specific countries can flood your inbox, waste resources, and compromise user experience. If you're using [Contact Form 7](https://contactform7.com/), it's important to know that while it’s one of the most popular form plugins for WordPress, it does not offer built-in country or IP blocking out of the box.
 
-But that doesn’t mean you’re stuck. You can still protect your forms by integrating with tools that bring smart spam filtering and regional blocking features to the table.
+But that doesn’t mean you’re stuck. You can still protect your forms by integrating with tools that bring smart spam filtering and [regional blocking](https://www.oopspam.com/blog/how-to-block-countries-from-your-website-the-complete-guide) features to the table.
 
 In this guide, I’ll show you how to:
 
