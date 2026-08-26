@@ -18,7 +18,7 @@ After doing some research, we realized there isn't much you can do to truly secu
 
 There are two sides to this story. On the one hand, you are not responsible for card testing attacks or spam protection as you are with WooCommerce. On the other hand, if you are receiving these threats, [as many people are](https://www.reddit.com/r/shopify/comments/1dnjd1m/high_velocity_card_testing_issue/), then you cannot do much.
 
-People have started looking for an app for their Shopify store that can block access from certain countries, VPNs, proxies, and data centers. There are [nearly 90 apps](https://apps.shopify.com/categories/store-management-security-fraud/all), most of which offer IP, VPN, proxy, and country blocking in the fraud category.
+People have started looking for an app for their Shopify store that can block access from certain countries, VPNs, proxies, and data centers. There are [nearly 90 apps](https://apps.shopify.com/categories/store-management-security-fraud/all), most of which offer IP, VPN, proxy, and [country blocking](https://www.oopspam.com/blog/how-to-block-countries-from-your-website-the-complete-guide) in the fraud category.
 
 After seeing these apps, we thought about offering our API as a way to validate and block spam and card testing attacks, but apparently, all these apps do is inject JavaScript into the front end. When a visitor or bot visits a website, the app validates the country of origin.
 
@@ -27,8 +27,6 @@ After seeing these apps, we thought about offering our API as a way to validate 
 This means that if you prevent an app's JavaScript from loading, it should not be able to block access.
 
 Here is a simple way to bypass all these apps. For this demonstration, I used the popular app [Blockify Fraud Filter Blocker](https://apps.shopify.com/blockify). All other apps work the same way.
-
-
 
 1. Access the demo website by going to the app’s page in the Shopify App Store and clicking on "View demo store”.
 
@@ -40,13 +38,9 @@ Here is a simple way to bypass all these apps. For this demonstration, I used th
 
    ![Unblocking a website in Shopify App](/blog/assets/posts/screenshot-2025-06-02-at-6.20.51 pm.png "Unblocking a website in Shopify App")
 
-
-
 All the apps in this category work the same way, and bypassing them is as simple as it looks.  Due to Shopify’s limitations, it seems there is no backend validation.
 
 Most bots nowadays are smarter, and any serious bot will be able to bypass this type of blocking. That said, the dumb ones will likely be blocked.
-
-
 
 ### Wrap Up
 
