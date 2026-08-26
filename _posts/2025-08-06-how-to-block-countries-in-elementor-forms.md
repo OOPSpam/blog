@@ -25,7 +25,7 @@ Let’s go through both methods step-by-step.
 
 ![OOPSpam Anti-Spam](/blog/assets/posts/oopspam-anti-spam-overview.png "OOPSpam Anti-Spam")
 
-If your Elementor forms are getting spammed, especially from certain countries, **[OOPSpam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/)** (that’s us 👋) is the easiest and most precise solution. It adds reliable spam filtering, country-based blocking, and [submission logs](https://help.oopspam.com/wordpress/form-entries/) without affecting your website’s accessibility.
+If your Elementor forms are getting spammed, especially from certain countries, **[OOPSpam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/)** (that’s us 👋) is the easiest and most precise solution. It adds reliable spam filtering, [country-based blocking](https://www.oopspam.com/blog/how-to-block-countries-from-your-website-the-complete-guide), and [submission logs](https://help.oopspam.com/wordpress/form-entries/) without affecting your website’s accessibility.
 
 ### **Does Elementor Support Native Country Filtering?**
 
