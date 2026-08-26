@@ -12,7 +12,7 @@ tags:
 ---
 ![Ultimate Member](/blog/assets/posts/ultimate-member.png "Ultimate Member")
 
-Ultimate Member does not support country blocking on its own. To stop unwanted registrations, spam, or abusive traffic, you’ll need to use a third-party tool. The easiest solution is the [OOPSpam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/) plugin (that’s us 👋), which lets you block specific countries at the form level. For wider protection beyond Ultimate Member, you can use [Cloudflare Firewall Rules](https://developers.cloudflare.com/firewall/) to block traffic from entire countries before they reach your site.
+Ultimate Member does not support [country blocking](https://www.oopspam.com/blog/how-to-block-countries-from-your-website-the-complete-guide) on its own. To stop unwanted registrations, spam, or abusive traffic, you’ll need to use a third-party tool. The easiest solution is the [OOPSpam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/) plugin (that’s us 👋), which lets you block specific countries at the form level. For wider protection beyond Ultimate Member, you can use [Cloudflare Firewall Rules](https://developers.cloudflare.com/firewall/) to block traffic from entire countries before they reach your site.
 
 ### **Why Ultimate Member Doesn’t Do This Directly**
 
