@@ -15,7 +15,7 @@ tags:
 
 Blocking access to your website based on a visitor’s country is something Cloudflare *can* do, but it’s also one of the most misunderstood and frequently misused security controls.
 
-Cloudflare’s tooling, terminology, and best practices have changed over time. Many guides (including older ones) still reference “Firewall Rules”, even though Cloudflare has officially moved this functionality into Security Rules. In addition, recent community [discussions ](https://community.cloudflare.com/t/firewall-block-country-blocked-country-cf-connection/79833)and Cloudflare documentation clarify that country blocking alone is rarely an effective long-term solution for spam or abuse.
+Cloudflare’s tooling, terminology, and best practices have changed over time. Many guides (including older ones) still reference “Firewall Rules”, even though Cloudflare has officially moved this functionality into Security Rules. In addition, recent community [discussions ](https://community.cloudflare.com/t/firewall-block-country-blocked-country-cf-connection/79833)and Cloudflare documentation clarify that [country blocking](https://www.oopspam.com/blog/how-to-block-countries-from-your-website-the-complete-guide) alone is rarely an effective long-term solution for spam or abuse.
 
 This guide explains:[](https://www.cloudflare.com/)
 
