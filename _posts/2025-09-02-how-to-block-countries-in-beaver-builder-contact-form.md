@@ -12,7 +12,7 @@ tags:
 ---
 ![Beaver Builder](/blog/assets/posts/beaver-builder-wordpress.png "Beaver Builder")
 
-[Beaver Builder](https://www.wpbeaverbuilder.com/) Contact Form does not support country blocking by default. To stop spam or unwanted traffic, you can use [OOPSpam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/) (that’s us 👋)  to filter submissions by region or set up [Cloudflare Firewall Rules](https://developers.cloudflare.com/firewall/) to block visitors from entire countries before they reach your site.
+[Beaver Builder](https://www.wpbeaverbuilder.com/) Contact Form does not support [country blocking](https://www.oopspam.com/blog/how-to-block-countries-from-your-website-the-complete-guide) by default. To stop spam or unwanted traffic, you can use [OOPSpam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/) (that’s us 👋)  to filter submissions by region or set up [Cloudflare Firewall Rules](https://developers.cloudflare.com/firewall/) to block visitors from entire countries before they reach your site.
 
 ## **Option 1: Block Countries in Beaver Builder Contact Form with OOPSpam**
 
