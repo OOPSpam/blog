@@ -19,7 +19,7 @@ No. [WPDiscuz](https://wpdiscuz.com/) focuses on user engagement, threaded comme
 
 ## **What’s the Easiest Way to Block Spam Comments by Country?**
 
-Use [OOPSpam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/) (that’s us 👋). It integrates directly with WordPress and adds country-level filtering to your comment forms.
+Use [OOPSpam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/) (that’s us 👋). It integrates directly with WordPress and adds [country-level filtering](https://www.oopspam.com/blog/how-to-block-countries-from-your-website-the-complete-guide) to your comment forms.
 
 ### **How to Set It Up**
 
