@@ -12,7 +12,7 @@ tags:
 ---
 ![Paid Memberships Pro](/blog/assets/posts/paid-memberships-pro-home.png "Paid Memberships Pro")
 
-Do you want to prevent users from certain countries from signing up for your membership site? If you're using [Paid Memberships Pro (PMPro)](https://www.paidmembershipspro.com/), there’s no built-in setting to block countries, but you can still do it effectively.
+Do you want to [prevent users from certain countries](https://www.oopspam.com/blog/how-to-block-countries-from-your-website-the-complete-guide) from signing up for your membership site? If you're using [Paid Memberships Pro (PMPro)](https://www.paidmembershipspro.com/), there’s no built-in setting to block countries, but you can still do it effectively.
 
 In this guide, we’ll show you two methods:
 
