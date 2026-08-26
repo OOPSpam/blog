@@ -13,7 +13,7 @@ tags:
 ---
 ![Gravity Forms](/blog/assets/posts/gravity-forms-plugin-homepage.png "Gravity Forms")
 
-[Gravity Forms](https://www.gravityforms.com/) doesn’t have a built-in feature to block submissions by country or IP address, but there are effective ways to achieve country-level restrictions. Whether you want to limit the countries users can select in your forms or block spam entirely, this guide covers it all.
+[Gravity Forms](https://www.gravityforms.com/) doesn’t have a built-in feature to block submissions by country or IP address, but there are effective ways to achieve [country-level restrictions](https://www.oopspam.com/blog/how-to-block-countries-from-your-website-the-complete-guide). Whether you want to limit the countries users can select in your forms or block spam entirely, this guide covers it all.
 
 ### **No Built-In Country Blocking in Gravity Forms**
 
@@ -164,9 +164,7 @@ If you want to stop all traffic from specific countries not just form entries—
 5. Name the rule (e.g., “Block Countries”).
 6. Set conditions:
 7. * **Field:** **`Country`**
-
    * **Operator:** **`is in`**
-
    * **Value:** Select the countries to block.
 8. Action: **`Block`** and save the rule.
 
