@@ -19,7 +19,7 @@ No. [HappyForms](https://happyforms.io/) is designed for building user-friendly 
 
 ## **Block Spam Submissions by Country using OOPSpam**
 
-The fastest way to add country-level blocking to HappyForms is with the [OOPSpam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/) (that’s us 👋). It works silently in the background, preventing unwanted entries before they’re delivered to you.
+The fastest way to add [country-level blocking](https://www.oopspam.com/blog/how-to-block-countries-from-your-website-the-complete-guide) to HappyForms is with the [OOPSpam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/) (that’s us 👋). It works silently in the background, preventing unwanted entries before they’re delivered to you.
 
 ### **What OOPSpam Can Do**
 
