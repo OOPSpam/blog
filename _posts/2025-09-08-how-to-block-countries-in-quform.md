@@ -25,7 +25,7 @@ That means if spam or abuse is coming from specific regions, you’ll need to ad
 
 ### **What You Gain with OOPSpam**
 
-* Country filtering to allow or block submissions.
+* [Country filtering](https://www.oopspam.com/blog/how-to-block-countries-from-your-website-the-complete-guide) to allow or block submissions.
 * Language filtering to stop unwanted text.
 * [Rate limiting](https://www.oopspam.com/blog/protecting-forms-with-rate-limiting-in-wordpress-using-oopspam) to prevent form floods.
 * Machine learning-powered spam detection that blocks bots.
