@@ -15,7 +15,7 @@ tags:
 
 Running a membership site with [MemberPress](https://memberpress.com/) often means handling sensitive user data, subscription sign-ups, and payment forms. But what if a flood of spam registrations or unwanted traffic keeps coming from certain regions?
 
-Unfortunately, MemberPress does not include built-in tools to block countries or filter users by their location. But you still have two ways to do it:
+Unfortunately, MemberPress does not include built-in tools to [block countries](https://www.oopspam.com/blog/how-to-block-countries-from-your-website-the-complete-guide) or filter users by their location. But you still have two ways to do it:
 
 1. Add OOPSpam Anti-Spam to MemberPress for form-level filtering.
 2. Use Cloudflare’s Web Application Firewall (WAF) to block access site-wide.
