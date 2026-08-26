@@ -17,7 +17,7 @@ Spam orders and fraudulent submissions from certain regions can impact revenue, 
 
 This guide explains:
 
-* How to block countries using SureCart's built-in tools
+* How to [block countries](https://www.oopspam.com/blog/how-to-block-countries-from-your-website-the-complete-guide) using SureCart's built-in tools
 * How to enhance protection using the OOPSpam Anti-Spam plugin
 * How to block entire countries at the DNS level using Cloudflare
 
