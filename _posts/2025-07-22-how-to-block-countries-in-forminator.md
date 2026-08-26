@@ -52,11 +52,15 @@ Create an account on [OOPSpam.com](https://app.oopspam.com/Identity/Account/Regi
 
 ![Generate your API key](/blog/assets/posts/oopspam-dashboard-api.png "Generate your API key")
 
-![](<>)Then return to your WordPress dashboard and go to **OOPSpam Anti-Spam > Settings**.
+![](<>)
+
+Then return to your WordPress dashboard and go to **OOPSpam Anti-Spam > Settings**.
 
 ![Paste your API key in the designated field.](/blog/assets/posts/oopspam-api-key.png "Paste your API key in the designated field.")
 
-![](<>)Paste your **API key** in the designated field.
+![](<>)
+
+Paste your **API key** in the designated field.
 
 **Step 3: Enable Forminator Protection**
 
@@ -64,7 +68,9 @@ Scroll to the “Forminator” section and activate [spam protection for Formina
 
 ![Enable Forminator Protection](/blog/assets/posts/formidable-forms-spam-protection.png "Enable Forminator Protection")
 
-![](<>)**Step 4: Block Countries**
+![](<>)
+
+**Step 4: Block Countries**
 
 Head to the **Country Filtering** section. You’ll see two dropdown options:
 
@@ -74,7 +80,9 @@ Head to the **Country Filtering** section. You’ll see two dropdown options:
 
 ![Country Filtering section](/blog/assets/posts/country-filtering-settings.png "Country Filtering section")
 
-![](<>)Choose one approach, select the countries accordingly, and save your settings.
+![](<>)
+
+Choose one approach, select the countries accordingly, and save your settings.
 
 OOPSpam will now automatically block form submissions coming from those regions without blocking access to your site as a whole.
 
@@ -94,19 +102,25 @@ You can track which form submissions were blocked or allowed in two places:
 
 ![WordPress Dashboard ](/blog/assets/posts/form-spam-entries-oopspam.png "WordPress Dashboard ")
 
-![](<>)**2. OOPSpam Dashboard logs** — providing more detailed information and filtering tools for a deeper review.
+![](<>)
+
+**2. OOPSpam Dashboard logs** — providing more detailed information and filtering tools for a deeper review.
 
 ![OOPSpam Dashboard logs](/blog/assets/posts/screenshot-1.png "OOPSpam Dashboard logs")
 
-![](<>)This makes it easier to spot patterns of abuse, fine-tune your filtering over time, and manually recover legitimate leads if necessary.
+![](<>)
+
+This makes it easier to spot patterns of abuse, fine-tune your filtering over time, and manually recover legitimate leads if necessary.
 
 ## **2. Block Entire Countries from Your Website with Cloudflare**
 
-If you’re facing broader security issues beyond just form spam such as DDoS attacks, brute-force login attempts, or scraping—then it may make sense to block countries at the network level using [Cloudflare](https://www.cloudflare.com/).
+If you’re facing broader security issues beyond just form spam such as DDoS attacks, brute-force login attempts, or scraping—then it may make sense to [block countries](https://www.oopspam.com/blog/how-to-block-countries-from-your-website-the-complete-guide) at the network level using [Cloudflare](https://www.cloudflare.com/).
 
 ![Cloudflare](/blog/assets/posts/cloudflare-homepage.png "Cloudflare")
 
-> ![](<>)⚠️ **Important:** This method blocks users from accessing your entire website, not just Forminator forms.
+> ![](<>)
+>
+> ⚠️ **Important:** This method blocks users from accessing your entire website, not just Forminator forms.
 
 ### **How to Set Up Country Blocking in Cloudflare**
 
