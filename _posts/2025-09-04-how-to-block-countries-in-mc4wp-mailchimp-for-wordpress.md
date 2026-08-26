@@ -13,7 +13,7 @@ tags:
 ---
 ![MC4WP: Mailchimp for WordPress](/blog/assets/posts/mc4wp-mailchimp.png "MC4WP: Mailchimp for WordPress")
 
-The short answer: [MC4WP](https://www.mc4wp.com/) doesn’t include country blocking. If you’re dealing with spam signups or traffic from unwanted regions, you’ll need to add another layer of protection. The quickest fix is to use the [OOPSpam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/) plugin (that’s us 👋), which filters submissions before they reach your Mailchimp list. For a stronger defense across your entire site, enable [Cloudflare Firewall Rules](https://developers.cloudflare.com/firewall/) to block traffic from specific countries at the network level.
+The short answer: [MC4WP](https://www.mc4wp.com/) doesn’t include [country blocking](https://www.oopspam.com/blog/how-to-block-countries-from-your-website-the-complete-guide). If you’re dealing with spam signups or traffic from unwanted regions, you’ll need to add another layer of protection. The quickest fix is to use the [OOPSpam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/) plugin (that’s us 👋), which filters submissions before they reach your Mailchimp list. For a stronger defense across your entire site, enable [Cloudflare Firewall Rules](https://developers.cloudflare.com/firewall/) to block traffic from specific countries at the network level.
 
 ### **Why This Gap Exists in MC4WP?**
 
