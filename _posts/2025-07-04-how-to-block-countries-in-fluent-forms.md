@@ -13,7 +13,7 @@ tags:
 ---
 ![Fluent Forms](/blog/assets/posts/fluent-forms-site.png "Fluent Forms")
 
-Spam submissions from certain regions can overwhelm your inbox, waste resources, and lead to security issues. If you're using **[Fluent Forms](https://fluentforms.com/)**, you have multiple ways to restrict or block form submissions based on a user’s location. In this guide, we'll cover:
+[Spam submissions from certain regions](https://www.oopspam.com/blog/how-to-block-countries-from-your-website-the-complete-guide) can overwhelm your inbox, waste resources, and lead to security issues. If you're using **[Fluent Forms](https://fluentforms.com/)**, you have multiple ways to restrict or block form submissions based on a user’s location. In this guide, we'll cover:
 
 1. Fluent Forms’ built-in country-based restriction feature.
 2. OOPSpam plugin for advanced filtering and logging.
