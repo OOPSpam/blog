@@ -13,7 +13,7 @@ tags:
 ---
 ![Jetpack Forms](/blog/assets/posts/jetpack-home.png "Jetpack Forms")
 
-Spam form submissions from certain countries can clog your inbox, disrupt workflows, and open the door to abuse. If you're using [Jetpack Forms](https://jetpack.com/) on your WordPress site, you may be wondering whether there's a built-in way to block countries or filter submissions by location.
+Spam form submissions from certain countries can clog your inbox, disrupt workflows, and open the door to abuse. If you're using [Jetpack Forms](https://jetpack.com/) on your WordPress site, you may be wondering whether there's a built-in way to [block countries](https://www.oopspam.com/blog/how-to-block-countries-from-your-website-the-complete-guide) or filter submissions by location.
 
 The short answer is: Jetpack Forms does not currently include any native country-blocking or IP-based filtering feature.
 
