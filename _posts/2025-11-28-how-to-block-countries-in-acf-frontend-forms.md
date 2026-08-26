@@ -14,7 +14,7 @@ tags:
 ---
 ![Advanced Custom Fields](/blog/assets/posts/acf-advanced-custom-fields.png "Advanced Custom Fields")
 
-[Advanced Custom Fields](https://www.advancedcustomfields.com/) (ACF) Frontend Forms cannot block countries on their own. To filter submissions by location, you must use a third-party anti-spam plugin like OOPSpam or apply network-level rules through tools like Cloudflare. The simplest and most effective method is OOPSpam because it blocks only the form, not your entire website.
+[Advanced Custom Fields](https://www.advancedcustomfields.com/) (ACF) Frontend Forms cannot [block countries](https://www.oopspam.com/blog/how-to-block-countries-from-your-website-the-complete-guide) on their own. To filter submissions by location, you must use a third-party anti-spam plugin like OOPSpam or apply network-level rules through tools like Cloudflare. The simplest and most effective method is OOPSpam because it blocks only the form, not your entire website.
 
 You need country blocking in ACF because spam attacks now rely heavily on VPNs, proxies, and automated bots. This guide explains each method clearly and shows the easiest approach for ACF users.
 
@@ -98,9 +98,7 @@ Use [Cloudflare](https://www.cloudflare.com/) if you want broader protection. Th
 2. Go to **Security → Security rules**.
 3. Create a rule:
 4. * Field: **Country**
-
    * Operator: **is in**
-
    * Action: **Block**
 5. Save and deploy.
 
