@@ -13,7 +13,7 @@ tags:
 ---
 ![MetForm](/blog/assets/posts/metform.png "MetForm")
 
-[MetForm](https://wpmet.com/plugin/metform/) does not have built-in country blocking. To block countries, you must use a third-party tool like [OOPSpam](https://www.oopspam.com/) or your firewall (Cloudflare). Blocking by country protects your forms from spam and unwanted regions. It also keeps your site fast, secure, and focused on real leads.
+[MetForm](https://wpmet.com/plugin/metform/) does not have built-in country blocking. To block countries, you must use a third-party tool like [OOPSpam](https://www.oopspam.com/) or your firewall (Cloudflare). [Blocking by country](https://www.oopspam.com/blog/how-to-block-countries-from-your-website-the-complete-guide) protects your forms from spam and unwanted regions. It also keeps your site fast, secure, and focused on real leads.
 
 This guide shows the fastest way to do it, without breaking your website or hurting SEO.
 
