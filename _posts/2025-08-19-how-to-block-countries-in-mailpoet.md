@@ -14,7 +14,7 @@ tags:
 ---
 ![MailPoet ](/blog/assets/posts/mailpoet-home.png "MailPoet ")
 
-If you’re using [MailPoet](https://www.mailpoet.com/) to send emails or manage subscriptions, you might want to block signups or email delivery from certain countries. While MailPoet doesn’t offer a built-in way to do this, there are effective ways to manage it. This guide covers several methods, including plugin-based filtering, subscriber segmentation, and server-level country blocking.
+If you’re using [MailPoet](https://www.mailpoet.com/) to send emails or manage subscriptions, you might want to block signups or email delivery from certain countries. While MailPoet doesn’t offer a built-in way to do this, there are effective ways to manage it. This guide covers several methods, including plugin-based filtering, subscriber segmentation, and server-level [country blocking](https://www.oopspam.com/blog/how-to-block-countries-from-your-website-the-complete-guide).
 
 ### **Does MailPoet Have Built-In Country Blocking?**
 
