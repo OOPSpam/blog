@@ -17,7 +17,7 @@ tags:
 
 ## **Why You Might Need Country Blocking**
 
-Blocking certain countries can reduce spam, fake leads, or automated submissions. Avada Forms usually sends data through `/wp-admin/admin-ajax.php` or a custom submission path. Because it lacks a built-in geo filter, you’ll need an external tool to restrict submissions by country.
+[Blocking certain countries](https://www.oopspam.com/blog/how-to-block-countries-from-your-website-the-complete-guide) can reduce spam, fake leads, or automated submissions. Avada Forms usually sends data through `/wp-admin/admin-ajax.php` or a custom submission path. Because it lacks a built-in geo filter, you’ll need an external tool to restrict submissions by country.
 
 You can either:
 
