@@ -12,7 +12,7 @@ tags:
 ---
 ![Toolset Forms](/blog/assets/posts/toolset-forms.png "Toolset Forms")
 
-[Toolset Forms](https://toolset.com/home/cred/) does not include built-in country blocking. To stop spam or unwanted traffic, you need two options:
+[Toolset Forms](https://toolset.com/home/cred/) does not include built-in [country blocking](https://www.oopspam.com/blog/how-to-block-countries-from-your-website-the-complete-guide). To stop spam or unwanted traffic, you need two options:
 
 1. Use [OOPSpam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/) (that’s us 👋) for form-level filtering.
 2. Use [Cloudflare Firewall Rules](https://developers.cloudflare.com/firewall/) to block entire countries at the network level.
