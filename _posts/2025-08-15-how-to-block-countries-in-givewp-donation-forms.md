@@ -26,7 +26,7 @@ However, there are two main workarounds:
 * Use a third-party plugin like [OOPSpam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/) (that’s us 👋) to block submissions based on country or language
 * Use Cloudflare’s Web Application Firewall (WAF) to block access to your entire website from selected countries
 
-GiveWP has an [open feature request](https://wordpress.org/support/topic/set-default-country-in-form/) for the ability to [limit countries in the billing address](https://givewp.featureos.app/p/ability-to-limit-countries-in-the-billing-address-block?b=forms) dropdown. This indicates that native country-blocking functionality may be introduced in the future. If this feature would help your workflow, you can upvote the request on GiveWP’s official feature request platform to show your support. You’re also encouraged to submit your own request if you believe this feature is critical to your use case.
+GiveWP has an [open feature request](https://wordpress.org/support/topic/set-default-country-in-form/) for the ability to [limit countries in the billing address](https://givewp.featureos.app/p/ability-to-limit-countries-in-the-billing-address-block?b=forms) dropdown. This indicates that native [country-blocking](https://www.oopspam.com/blog/how-to-block-countries-from-your-website-the-complete-guide) functionality may be introduced in the future. If this feature would help your workflow, you can upvote the request on GiveWP’s official feature request platform to show your support. You’re also encouraged to submit your own request if you believe this feature is critical to your use case.
 
 Let’s walk through the available solutions for now.
 
