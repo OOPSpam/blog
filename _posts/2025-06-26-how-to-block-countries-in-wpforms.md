@@ -16,7 +16,7 @@ If you're dealing with spam or form abuse from specific regions, blocking countr
 
 ## **1. Using WPForms Built-in Country Filter**
 
-WPForms Pro includes a built-in feature to filter form submissions by country. It uses IP geolocation to detect where the submission is coming from. This is the most direct method for blocking countries at the form level. No extra plugins or services are needed.
+WPForms Pro includes a built-in feature to filter form submissions by country. It uses IP geolocation to detect where the submission is coming from. This is the most direct [method for blocking countries](https://www.oopspam.com/blog/how-to-block-countries-from-your-website-the-complete-guide) at the form level. No extra plugins or services are needed.
 
 ### **How to Enable Country Blocking in WPForms**
 
