@@ -12,7 +12,7 @@ tags:
 ---
 ![SureForms homepage](/blog/assets/posts/sureforms-ai-form-builder.png "SureForms homepage")
 
-Are you getting spam or suspicious submissions from certain countries through your SureForms? While [SureForms](https://sureforms.com/) doesn't offer built-in geolocation blocking, you can still protect your forms by using smarter tools and external services.
+Are you getting spam or suspicious submissions from certain countries through your SureForms? While [SureForms](https://sureforms.com/) doesn't offer built-in [geolocation blocking](https://www.oopspam.com/blog/how-to-block-countries-from-your-website-the-complete-guide), you can still protect your forms by using smarter tools and external services.
 
 This guide outlines two effective ways to block form submissions by country—using OOPSpam for advanced filtering, applying Cloudflare firewall rules for site-wide access control, and clarifying what SureForms actually offers and what it doesn’t.
 
