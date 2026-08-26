@@ -16,7 +16,7 @@ tags:
 
 [Bricks Builder](https://bricksbuilder.io/) is known for its clean, visual interface—but when it comes to form security, you may run into limitations. If you’re using Bricks Forms and are seeing spam entries from specific countries, here’s the honest truth:
 
-[Bricks Forms](https://bricksbuilder.io/forms/) currently does not offer built-in country-based blocking for form submissions. But don’t worry, there’s a solution that doesn’t require complex coding or server-side tweaks.
+[Bricks Forms](https://bricksbuilder.io/forms/) currently does not offer built-in [country-based blocking](https://www.oopspam.com/blog/how-to-block-countries-from-your-website-the-complete-guide) for form submissions. But don’t worry, there’s a solution that doesn’t require complex coding or server-side tweaks.
 
 With the help of the **[OOPSpam Anti-Spam plugin](https://wordpress.org/plugins/oopspam-anti-spam/)** or a network-level tool like Cloudflare, you can add country-level blocking and stronger spam protection to any Bricks Form on your site.
 
@@ -60,14 +60,18 @@ Return to your WordPress dashboard:
 
 ![Paste your API key into the designated field](/blog/assets/posts/oopspam-api-key.png "Paste your API key into the designated field")
 
-* ![](<>)Go to **OOPSpam Anti-Spam > Settings**
+* ![](<>)
+
+  Go to **OOPSpam Anti-Spam > Settings**
 * **Paste your API key** into the designated field
 
 #### **Step 3: Enable Bricks Forms Protection**
 
 ![Enable Bricks Forms Protection](/blog/assets/posts/activate-spam-protection-bricks-forms.png "Enable Bricks Forms Protection")
 
-![](<>)Inside OOPSpam settings, scroll to the **Bricks Forms** section and** toggle it on**.
+![](<>)
+
+Inside OOPSpam settings, scroll to the **Bricks Forms** section and **toggle it on**.
 
 This will activate spam protection on all forms created with Bricks Builder.
 
@@ -80,7 +84,9 @@ In the **Country Filtering** section, choose one of two options:
 
 ![Country Filtering section](/blog/assets/posts/country-filtering-settings.png "Country Filtering section")
 
-![](<>)Select the countries, save your settings, and you're done!
+![](<>)
+
+Select the countries, save your settings, and you're done!
 
 Form submissions from blocked regions will be rejected silently without impacting your [site's accessibility](https://www.oopspam.com/blog/slow-bricks-builder-website).
 
@@ -103,11 +109,15 @@ Blocked and accepted [entries](https://help.oopspam.com/wordpress/form-entries/)
 
 ![Form Spam Entries / Ham Entries in your WordPress admin](/blog/assets/posts/form-spam-entries-oopspam.png "Form Spam Entries / Ham Entries in your WordPress admin")
 
-* ![](<>)The **OOPSpam Dashboard**, for more advanced filtering and reporting
+* ![](<>)
+
+  The **OOPSpam Dashboard**, for more advanced filtering and reporting
 
 ![OOPSpam Dashboard](/blog/assets/posts/screenshot-1.png "OOPSpam Dashboard")
 
-![](<>)This level of transparency helps you fine-tune spam filters and restore legitimate entries if needed.
+![](<>)
+
+This level of transparency helps you fine-tune spam filters and restore legitimate entries if needed.
 
 ## **2. Block Entire Countries from Your Website with Cloudflare**
 
@@ -115,7 +125,9 @@ If you need heavier protection like if you’re under a [DDoS attack](https://ww
 
 ![Cloudflare](/blog/assets/posts/cloudflare-homepage.png "Cloudflare")
 
-> ![](<>)⚠️ **Important Note**: This method blocks users from accessing your entire site, not just Bricks form submissions.
+> ![](<>)
+>
+> ⚠️ **Important Note**: This method blocks users from accessing your entire site, not just Bricks form submissions.
 
 ### **How to Block Countries in Cloudflare**
 
@@ -198,7 +210,6 @@ In most cases, it’s best to keep your site open and apply form-level restricti
     </tr>
   </tbody>
 </table>
-
 
 ## **Final thoughts**
 
