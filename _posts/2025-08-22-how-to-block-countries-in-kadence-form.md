@@ -15,7 +15,7 @@ tags:
 
 Seeing unwanted or spam submissions from certain countries through your [Kadence Forms](https://www.kadencewp.com/)? While Kadence Blocks offers a flexible form builder, it currently does not include built-in support for blocking submissions by country. The form block doesn’t provide IP-based or geo-location filtering natively.
 
-That said, you can still manage this with the right tools. By integrating with a plugin like [OOPSpam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/) (that’s us 👋), you can enable country-level filtering for your forms. For broader protection, you can also apply server-level country blocks using Cloudflare.
+That said, you can still manage this with the right tools. By integrating with a plugin like [OOPSpam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/) (that’s us 👋), you can enable [country-level filtering](https://www.oopspam.com/blog/how-to-block-countries-from-your-website-the-complete-guide) for your forms. For broader protection, you can also apply server-level country blocks using Cloudflare.
 
 ### **No Built-In Country Blocking in Kadence Forms**
 
