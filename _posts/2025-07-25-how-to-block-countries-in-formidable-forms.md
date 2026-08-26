@@ -15,7 +15,7 @@ tags:
 
 [Formidable Forms](https://formidableforms.com/) doesn’t offer a built-in way to block submissions by country, but you still have effective options to prevent unwanted entries.
 
-This guide walks you through two ways to block countries:
+This guide walks you through two ways to [block countries:](https://www.oopspam.com/blog/how-to-block-countries-from-your-website-the-complete-guide)
 
 * Using the **[OOPSpam Anti-Spam plugin](https://wordpress.org/plugins/oopspam-anti-spam/)** for precise, form-level filtering
 * Blocking entire countries with Cloudflare firewall rules
@@ -149,9 +149,7 @@ Go to [Cloudflare.com](https://dash.cloudflare.com/login), sign in, and choose t
 3. Name your rule something like "Block Countries"
 4. Set conditions:
 5. * **Field:** **`Country`**
-
    * **Operator:** **`is in`**
-
    * **Value:** Select countries you want to block
 6. Choose action: **`Block`**
 7. Save and deploy
