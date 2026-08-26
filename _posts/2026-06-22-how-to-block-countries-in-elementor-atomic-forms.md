@@ -18,7 +18,7 @@ Blocking certain countries can reduce spam, fake leads, and automated submission
 You can either:
 
 * Filter countries at the form level using [OOPSpam](https://www.oopspam.com/) (that's us 👋).
-* Restrict countries at the edge level using Cloudflare's WAF (Web Application Firewall).
+* [Restrict countries](https://www.oopspam.com/blog/how-to-block-countries-from-your-website-the-complete-guide) at the edge level using Cloudflare's WAF (Web Application Firewall).
 
 ## **Method 1: Use OOPSpam for Form-Level Country Filtering**
 
