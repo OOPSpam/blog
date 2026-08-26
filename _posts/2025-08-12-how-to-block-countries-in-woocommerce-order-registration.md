@@ -19,7 +19,7 @@ Here’s how to set it up effectively.
 
 ## **Built-In Country Blocking in WooCommerce**
 
-Unlike some form builders, WooCommerce includes native country restriction options right in its settings. You can:
+Unlike some form builders, WooCommerce includes native [country restriction](https://www.oopspam.com/blog/how-to-block-countries-from-your-website-the-complete-guide) options right in its settings. You can:
 
 * Sell to all countries
 * Sell to all countries except for…
