@@ -12,7 +12,7 @@ tags:
 ---
 ![Piotnet Forms](/blog/assets/posts/piotnet-forms.png "Piotnet Forms")
 
-If you’re using [Piotnet Forms](https://piotnetforms.com/), there’s no native option to block countries directly. But you still have reliable solutions to filter unwanted traffic and keep your forms clean.
+If you’re using [Piotnet Forms](https://piotnetforms.com/), there’s no native option to [block countries](https://www.oopspam.com/blog/how-to-block-countries-from-your-website-the-complete-guide) directly. But you still have reliable solutions to filter unwanted traffic and keep your forms clean.
 
 This guide explains how you can achieve country-based blocking with OOPSpam Anti-Spam (for form-level filtering) or Cloudflare Firewall Rules (for site-wide blocking).
 
@@ -131,19 +131,13 @@ If your issue goes beyond spam, like brute force logins, scraping, or [DDoS atta
 2. * Go to cloudflare.com, [log in](https://dash.cloudflare.com/login), and select your website.
 3. **Create a security rule**
 4. * Go to **Security > Security rules**.
-
    * Click **Create rule**.
-
    * Name it (e.g. “Block Countries”).
-
    * Set conditions:
-
    * **Field:** Country
    * **Operator:** is in
    * **Value:** Select the countries you want blocked
-
    * Action: **Block**
-
    * Save and deploy.
 
 From that point, traffic from those [countries](https://www.oopspam.com/blog/blocking-countries-from-accessing-your-website-using-cloudflare) won’t even reach your server.
