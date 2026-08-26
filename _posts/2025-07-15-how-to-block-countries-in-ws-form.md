@@ -17,7 +17,7 @@ Spam entries from certain countries can quickly overwhelm your forms and lead to
 
 ## **Does WS Form Have Built-In Country Blocking?**
 
-WS Form doesn't include a direct country-blocking feature out of the box. However, it does allow you to block specific IP addresses using its IP Blocklist. This can be useful for blocking repeat offenders or known spam IPs, but isn’t ideal for wide-scale geographic restrictions like blocking entire countries.
+WS Form doesn't include a direct [country-blocking](https://www.oopspam.com/blog/how-to-block-countries-from-your-website-the-complete-guide) feature out of the box. However, it does allow you to block specific IP addresses using its IP Blocklist. This can be useful for blocking repeat offenders or known spam IPs, but isn’t ideal for wide-scale geographic restrictions like blocking entire countries.
 
 If you're looking for true country-level control, skip to the OOPSpam section below. But if you're just trying to block a few problem IPs, here’s how to do it in WS Form:
 
