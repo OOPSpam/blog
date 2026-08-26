@@ -15,7 +15,7 @@ tags:
 
 If you’re using [Ninja Forms](https://ninjaforms.com/), you may have noticed there’s no built-in option to block form entries by country or IP address. That doesn’t mean you’re stuck with spam, you can still filter unwanted submissions with the right tools.
 
-Below, I’ll walk you through two effective ways to block countries in Ninja Forms:
+Below, I’ll walk you through [two effective ways to block countries](https://www.oopspam.com/blog/how-to-block-countries-from-your-website-the-complete-guide) in Ninja Forms:
 
 1. Using OOPSpam Anti-Spam for country-based form filtering
 2. Using Cloudflare Firewall Rules to block entire countries from your website
@@ -126,11 +126,8 @@ Go to [cloudflare.com](https://dash.cloudflare.com/login) and log in. Select the
 * Name it (e.g., “Block Countries”)
 * Configure the rule:
 * * **Field:** Country
-
   * **Operator:** *is in*
-
   * **Value:** Select the countries to block
-
   * **Action:** Block
 * Save and deploy
 
