@@ -55,18 +55,17 @@ OOPSpam's [Domain Reputation Watch](https://www.oopspam.com/blog/domain-reputati
 
 **How to do it:**
 
-1. Log in to your [OOPSpam dashboard](https://app.oopspam.com/DomainWatcher) (paid plans).
-2. Open Domain Reputation Watch.
+Log in to your [OOPSpam dashboard](https://app.oopspam.com/DomainWatcher) (paid plans). Open Domain Reputation Watch.
 
 ![Open Domain Reputation Watch](/blog/assets/posts/do-watch-screenshot.png "Open Domain Reputation Watch")
 
-3. Click Add domain.
+Click Add domain.
 
 ![Click Add domain.](/blog/assets/posts/do-add-domain.png "Click Add domain.")
 
-4. Enter the domain you want to monitor. Repeat for any client or additional domains your plan allows.
+Enter the domain you want to monitor. Repeat for any client or additional domains your plan allows.
 
-5. That's it! OOPSpam checks every Monday and only emails you if a domain gets flagged, so your inbox stays quiet until something needs attention.
+That's it! OOPSpam checks every Monday and only emails you if a domain gets flagged, so your inbox stays quiet until something needs attention.
 
 ### **3. Check your authentication records**
 
