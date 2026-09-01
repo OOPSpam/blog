@@ -17,7 +17,7 @@ Mailchimp gives you a raw HTML/JS snippet to paste into a page. This is called a
 
 This creates three specific weak points:
 
-1. **WordPress never sees the submission.** Any plugin that filters spam by hooking into WordPress form handling (**`admin-post.php`**,** `wp_ajax`**, or a form builder's own submission hook) simply never fires. The request skips WordPress entirely.
+1. **WordPress never sees the submission.** Any plugin that filters spam by hooking into WordPress form handling (**`admin-post.php`, `wp_ajax`,** or a form builder's own submission hook) simply never fires. The request skips WordPress entirely.
 2. **Single opt-in is the default.** If your Mailchimp audience uses a single opt-in, any email a bot submits is added to your list immediately. No confirmation step, no friction.
 3. **The form endpoint is public.** Bots scan page source for form action URLs. Once they find one, they can fire POST requests directly at it, with no need to render the page or run JavaScript.
 
