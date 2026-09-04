@@ -54,22 +54,22 @@ Turning either option on adds extra checks to the scan, so expect it to take a b
 
 ## **Step 6: Filter by IP Address (optional)**
 
-Further down the same screen, IP-based filters let you flag contacts by where and how they signed up. This section only appears if your provider exposes each contact’s IP address, for example Mailchimp.
+Further down the same screen, IP-based filters let you flag contacts by where and how they signed up. This section only appears if your provider exposes each contact’s IP address.
 
 * **Block VPN / Proxy / Tor IPs** flags signups that came through anonymizing services, a common pattern for fake or scraped addresses.
 * **Block data center IPs** flags signups originating from server infrastructure rather than a real person’s device.
 
-You can also set Allowed countries and Blocked countries to restrict scans to the regions you actually market to. Like the risk criteria above, IP-based filtering adds extra checks and can slow down scan time.
+You can also set **Allowed countries** and **Blocked countries** to restrict scans to the regions you actually market to. Like the risk criteria above, IP-based filtering adds extra checks and can slow down scan time.
 
 ![IP-based filters](/blog/assets/posts/ip-based-filters.png "IP-based filters")
 
 ## **Step 7: Let the Scan Run in the Background**
 
-Once you click Scan All Emails, the scan now runs entirely in the background, which is especially handy for large lists. You can close the tab and keep working; OOPSpam emails you the moment the scan finishes.
+Once you click **Scan All Emails**, the scan now runs entirely in the background, which is especially handy for large lists. You can close the tab and keep working; OOPSpam emails you the moment the scan finishes.
 
 ![Step 7: Let the Scan Run in the Background](/blog/assets/posts/scanning-emails.png "Step 7: Let the Scan Run in the Background")
 
-You can track progress at any time from Integrations → Scan Jobs, which shows whether a scan is running, completed, or cancelled, along with how many emails have been scanned and how many were flagged as risky.
+You can track progress at any time from **Integrations → Scan Jobs**, which shows whether a scan is running, completed, or cancelled, along with how many emails have been scanned and how many were flagged as risky.
 
 ![scan is running](/blog/assets/posts/scan-running.png "scan is running")
 
