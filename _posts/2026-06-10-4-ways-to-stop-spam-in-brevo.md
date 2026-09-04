@@ -43,6 +43,20 @@ For each risky contact, you can **Unsubscribe** (removes from the list only) or 
 
 This single step alone can reduce bounces and spam complaints before your next campaign goes out. Note that scanning consumes OOPSpam API credits, so plan scans before major sends.
 
+OOPSpam recently added a few new options worth turning on:
+
+* **Flag soft bounces** - contacts whose most recent send came back as a soft bounce get flagged as risky.
+* **Flag non-openers** - contacts who haven’t opened your last 3 emails get flagged. This needs open tracking enabled in Brevo and can be less reliable.
+
+![Flag soft bounces](/blog/assets/posts/additional-risk-criteria.png "Flag soft bounces")
+
+* **Filter by IP** - block VPN/proxy/Tor or data center addresses, or restrict scans to specific countries, wherever your provider exposes contact IPs.
+
+![block VPN/proxy/Tor or data center addresses](/blog/assets/posts/ip-based-filters.png "block VPN/proxy/Tor or data center addresses")
+
+Larger scans now run entirely in the background, so you can close the tab and get an email when results are ready. These additional features checks add a bit of scan time.
+
+
 ## **2. Protect Signup Forms from Bot Abuse**
 
 Bots are a primary source of [fake signups](https://www.oopspam.com/blog/stop-bot-signups). They automatically fill out your Brevo forms with fraudulent or stolen email addresses, polluting your list from the moment someone signs up. Use a combination of these three defenses:
