@@ -49,7 +49,40 @@ Once all contacts are loaded, **Step 2 of 2** begins scanning each email against
 
 ***Note:*** scanning uses your OOPSpam API credits.
 
-## **Step 5: Review Results and Take Action**
+## **Step 5: Adjust the Additional Risk Criteria**
+
+Right on the same screen as the contact preview, an **Additional risk criteria** panel lets you widen what counts as risky before you commit to a scan. Two checkboxes live here:
+
+* **Flag contacts that have soft bounced** - catches addresses whose most recent send already struggled to land.
+* **Flag contacts that never opened the last 3 emails** - catches subscribers who've stopped engaging. EmailOctopus needs open tracking enabled for this to register anything, and the checkbox itself notes the results may not be accurate without it.
+
+![Step 5: Adjust the Additional Risk Criteria](/blog/assets/posts/additional-risk-criteria.png "Step 5: Adjust the Additional Risk Criteria")
+
+Switching either of these on gives the scan more to check per contact, so expect it to run a little slower than usual.
+
+## **Step 6: Set IP-Based Filters**
+
+Below the risk criteria, an **IP-based filters** section appears if EmailOctopus exposes subscriber IP addresses to OOPSpam. From here you can:
+
+* **Block VPN / Proxy / Tor IPs**
+* **Block data center IPs**
+* Set **Allowed countries** and **Blocked countries** to limit results to the regions your business actually serves.
+
+![Step 6: Set IP-Based Filters](/blog/assets/posts/ip-based-filters.png "Step 6: Set IP-Based Filters")
+
+Like the risk criteria above, these filters mean more work per address, which can add to the total scan time.
+
+## **Step 7: Let It Run in the Background**
+
+Once you click **Scan All Emails**, there's no need to babysit the process. Scans now run in the background from start to finish, so you're free to close the tab; OOPSpam sends an email the moment results are ready.
+
+![background scan progress bar](/blog/assets/posts/scanning-emails.png "background scan progress bar")
+
+To check in before that email arrives, head to **Integrations → Scan Jobs**. It lists every scan's status, whether **Running**, **Completed**, or **Cancelled**, along with a live count of emails scanned and risky contacts found so far.
+
+![Scan Jobs tab](/blog/assets/posts/scan-running.png "Scan Jobs tab")
+
+## **Step 8: Review Results and Take Action**
 
 When the scan completes, you'll see a summary at the top:
 
@@ -57,7 +90,7 @@ When the scan completes, you'll see a summary at the top:
 * **Clean** - addresses that are safe to keep
 * **Risky** - addresses flagged as suspicious or harmful
 
-![Step 5: Review Results and Take Action](/blog/assets/posts/step5-emailoctopus.png "Step 5: Review Results and Take Action")
+![Step 8: Review Results and Take Action](/blog/assets/posts/step5-emailoctopus.png "Step 8: Review Results and Take Action")
 
 All risky subscribers are listed below with individual action buttons:
 
@@ -71,11 +104,11 @@ To act on multiple contacts at once, use the bulk buttons:
 
 Use **Select All** to select every risky contact at once, or pick them individually.
 
-## **Step 6: Done! Your List Is Clean**
+## **Step 9: Done! Your List Is Clean**
 
 Once you've taken action, the risky count drops to 0 and a confirmation message appears. In this example, 77 contacts were permanently deleted from the account.
 
-![Step 6: Done! Your List Is Clean](/blog/assets/posts/step6-emailoctopus.png "Step 6: Done! Your List Is Clean")
+![Step 9: Done! Your List Is Clean](/blog/assets/posts/step6-emailoctopus.png "Step 9: Done! Your List Is Clean")
 
 ## **What Makes an Email "Risky"?**
 
