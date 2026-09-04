@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to verify and clean up your Brevo email list?
-date: 2026-06-08T04:30:00.000+08:00
+date: 2026-09-04T20:33:00.000+08:00
 author: chazie
 image: /blog/assets/posts/brevo_meta.jpg
 description: Learn how to verify and clean your Brevo email list with OOPSpam to
@@ -41,7 +41,39 @@ Click **Scan All Emails** when ready. For larger lists, the scan runs in two ste
 
 *Note:* scanning uses your OOPSpam API credits.
 
-## **Step 5: Review and Act on Risky Contacts**
+## **Step 5: Fine-Tune What Counts as Risky (optional)**
+
+Before you scan, you can flag two additional situations under **Additional risk criteria**. Both are optional and sit on the same screen as the contact preview.
+
+* **Soft bounced** flags any contact whose most recent send came back as a soft bounce, since repeated soft bounces are an early warning sign of a dying address.
+* **Never opened the last 3 emails** flags contacts who haven’t opened your last three campaigns. This needs open tracking to be enabled in Brevo, and without it the results may not be accurate.
+
+Turning either option on adds extra checks to the scan, so expect it to take a bit longer than a standard scan.
+
+![Additional risk criteria](/blog/assets/posts/additional-risk-criteria.png "Additional risk criteria")
+
+## **Step 6: Filter by IP Address (optional)**
+
+Further down the same screen, IP-based filters let you flag contacts by where and how they signed up. This section only appears if your provider exposes each contact’s IP address, for example Mailchimp.
+
+* **Block VPN / Proxy / Tor IPs** flags signups that came through anonymizing services, a common pattern for fake or scraped addresses.
+* **Block data center IPs** flags signups originating from server infrastructure rather than a real person’s device.
+
+You can also set Allowed countries and Blocked countries to restrict scans to the regions you actually market to. Like the risk criteria above, IP-based filtering adds extra checks and can slow down scan time.
+
+![IP-based filters](/blog/assets/posts/ip-based-filters.png "IP-based filters")
+
+## **Step 7: Let the Scan Run in the Background**
+
+Once you click Scan All Emails, the scan now runs entirely in the background, which is especially handy for large lists. You can close the tab and keep working; OOPSpam emails you the moment the scan finishes.
+
+![Step 7: Let the Scan Run in the Background](/blog/assets/posts/scanning-emails.png "Step 7: Let the Scan Run in the Background")
+
+You can track progress at any time from Integrations → Scan Jobs, which shows whether a scan is running, completed, or cancelled, along with how many emails have been scanned and how many were flagged as risky.
+
+![scan is running](/blog/assets/posts/scan-running.png "scan is running")
+
+## **Step 8: Review and Act on Risky Contacts**
 
 Once the scan finishes, results are displayed in three summary cards:
 
@@ -49,7 +81,7 @@ Once the scan finishes, results are displayed in three summary cards:
 * **Clean** - addresses that passed
 * **Risky** - addresses flagged as suspicious or harmful
 
-![Step 5.1: Review and Act on Risky Contacts](/blog/assets/posts/brevo-5.png "Step 5.1: Review and Act on Risky Contacts")
+![Step 8.1: Review and Act on Risky Contacts](/blog/assets/posts/brevo-5.png "Step 8.1: Review and Act on Risky Contacts")
 
 All risky contacts appear in the list below with individual action buttons. For each one you can:
 
@@ -61,11 +93,11 @@ To handle them in bulk, use the buttons at the top of the list:
 * **Unsubscribe Selected** - unsubscribes all checked contacts from the list
 * **Delete Selected** - permanently deletes all checked contacts from your account
 
-![Step 5.2: Review and Act on Risky Contacts](/blog/assets/posts/brevo-6.png "Step 5.2: Review and Act on Risky Contacts")
+![Step 8.2: Review and Act on Risky Contacts](/blog/assets/posts/brevo-6.png "Step 8.2: Review and Act on Risky Contacts")
 
 Before bulk actions are applied, Brevo will show a confirmation dialog to make sure you intended the action. Click **OK** to proceed.
 
-## **Step 6: Done! List Cleaned**
+## **Step 9: Done! List Cleaned**
 
 After confirming, the risky count drops to 0 and a success message appears. In this example, 4 contacts were successfully unsubscribed from the list.
 
