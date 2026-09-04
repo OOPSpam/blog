@@ -47,7 +47,40 @@ Click **Scan All Emails** to start the scan. *Note:* scanning uses your OOPSpam 
 
 ![Step 4: Review Contacts and Start Scanning](/blog/assets/posts/step4-edited.png "Step 4: Review Contacts and Start Scanning")
 
-## **Step 5: Review Scan Results and Take Action**
+## **Step 5: Turn on Additional Risk Criteria**
+
+Before clicking that button, it's worth glancing at the **Additional risk criteria** section on the same screen. Two checkboxes here let OOPSpam catch things a standard scan wouldn't:
+
+* **Flag contacts that have soft bounced** - picks out addresses that already failed to deliver on a recent send.
+* **Flag contacts that never opened the last 3 emails** - picks out subscribers who've gone cold. This requires open tracking to be turned on in ActiveCampaign, and the option itself flags that results can be unreliable without it.
+
+![additional risk criteria (soft bounce / non-opener checkboxes](/blog/assets/posts/additional-risk-criteria.png "additional risk criteria (soft bounce / non-opener checkboxes")
+
+Both checks add extra work per contact, so turning them on will stretch out how long the scan takes.
+
+## **Step 6: Apply IP-Based Filters**
+
+Underneath, an **IP-based filters** section shows up whenever ActiveCampaign passes subscriber IP data along to OOPSpam. It gives you a few extra dials:
+
+* **Block VPN / Proxy / Tor IPs**
+* **Block data center IPs**
+* **Allowed countries** and **Blocked countries** to keep results focused on, or away from, particular regions.
+
+![IP-based filters (VPN/proxy/Tor, data center, allowed/blocked countries](/blog/assets/posts/ip-based-filters.png "IP-based filters (VPN/proxy/Tor, data center, allowed/blocked countries")
+
+As with the risk criteria, enabling these filters adds a bit more time to the scan.
+
+## **Step 7: Walk Away While It Scans**
+
+Scans no longer require you to sit and wait. Once you click **Scan All Emails**, everything happens in the background, and OOPSpam emails you as soon as it's done.
+
+![background scan progress bar](/blog/assets/posts/scanning-emails.png "background scan progress bar")
+
+If you want to check sooner, open **Integrations → Scan Jobs**. It shows each scan's current state (**Running**, **Completed**, or **Cancelled**) plus a running tally of emails scanned and risky contacts found.
+
+![Scan Jobs tab](/blog/assets/posts/scan-running.png "Scan Jobs tab")
+
+## **Step 8: Review Scan Results and Take Action**
 
 After scanning, OOPSpam shows a breakdown of your results:
 
@@ -55,7 +88,7 @@ After scanning, OOPSpam shows a breakdown of your results:
 * **Clean** - emails that passed and are safe to keep
 * **Risky** - suspicious emails you should act on
 
-![Step 5: Review Scan Results and Take Action](/blog/assets/posts/step5.png "Step 5: Review Scan Results and Take Action")
+![Step 8: Review Scan Results and Take Action](/blog/assets/posts/step5.png "Step 8: Review Scan Results and Take Action")
 
 All risky subscribers are listed with individual action buttons. You have two options for each contact:
 
@@ -73,7 +106,7 @@ Use **Select All** to check all risky contacts at once, or select them individua
 
 Once you've taken action, the risky count drops to 0 and you'll see a confirmation message showing how many contacts were unsubscribed or deleted.
 
-![Step 6: Done! Your List Is Clean](/blog/assets/posts/step6.png "Step 6: Done! Your List Is Clean")
+![Step 9: Done! Your List Is Clean](/blog/assets/posts/step6.png "Step 9: Done! Your List Is Clean")
 
 ## **Why Clean Your Email List?**
 
