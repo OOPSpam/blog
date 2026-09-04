@@ -32,6 +32,29 @@ Select the list you want to scan and click **Scan All Emails**.
 
 ![Select the list you want to scan and click Scan All Emails.](/blog/assets/posts/step4-edited.png "Select the list you want to scan and click Scan All Emails.")
 
+Before you click that button, take a look at the options sitting just above it. OOPSpam has expanded what a scan can check for, and it's worth switching a few of these on.
+
+Under **Additional risk criteria**, two checkboxes let you widen the net:
+
+* **Flag contacts that have soft bounced** - surfaces addresses that already struggled to deliver on a recent send.
+* **Flag contacts that never opened the last 3 emails** - surfaces subscribers who've stopped engaging. ActiveCampaign needs open tracking turned on for this to work, and the tool itself notes the results may not be fully accurate without it.
+
+![Additional risk criteria](/blog/assets/posts/additional-risk-criteria.png "Additional risk criteria")
+
+A separate **IP-based filters** panel goes a step further and looks at where signups actually came from:
+
+* **Block VPN / Proxy / Tor IPs**
+* **Block data center IPs**
+* **Allowed countries** / **Blocked countries** - narrow results to the regions that matter to your business, or rule out ones that don't.
+
+This panel only appears when your provider makes subscriber IP data available to OOPSpam.
+
+![IP-based filters](/blog/assets/posts/ip-based-filters.png "IP-based filters")
+
+Worth knowing: checking either box under Additional risk criteria means more work per contact, so larger lists will take a little longer to finish.
+
+> One more change: scans no longer tie up the page while they run. Hit **Scan All Emails** and OOPSpam works through the list in the background, sending you an email as soon as it's finished. Progress is visible anytime from the **Scan Jobs** tab back in Integrations, along with each job's status (running, completed, or cancelled).
+
 OOPSpam will flag each address as **Clean** or **Risky**. For risky contacts, choose to **Unsubscribe** (removes from the list) or **Delete** (removes from your entire account), individually or in bulk.
 
 ![OOPSpam will flag each address as Clean or Risky.](/blog/assets/posts/step5.png "OOPSpam will flag each address as Clean or Risky.")
