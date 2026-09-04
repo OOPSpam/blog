@@ -33,6 +33,25 @@ OOPSpam will fetch all your lists with subscriber counts. Click the list you wan
 
 The scan runs in two steps: first it loads all contacts, then it checks each email against OOPSpam's spam database. Note that scanning uses your OOPSpam API credits.
 
+Before you hit scan, it's worth knowing about a few newer OOPSpam settings that make the results more thorough. Under **Additional risk criteria**, you'll find:
+
+* **Flag contacts that have soft bounced** - catches addresses whose last send came back as a soft bounce, an early sign the address is on its way out.
+* **Flag contacts that never opened the last 3 emails** - flags subscribers who've gone quiet on your recent sends. This only works if open tracking is switched on in EmailOctopus, and the label itself warns that results can be off if tracking isn't enabled.
+
+![Flag contacts that have soft bounced](/blog/assets/posts/additional-risk-criteria.png "Flag contacts that have soft bounced")
+
+Further down, under **IP-based filters**, you can screen signups by where and how they connected:
+
+* **Block VPN / Proxy / Tor IPs** - catches signups routed through anonymizing services.
+* **Block data center IPs** - catches signups coming from server infrastructure instead of a real device.
+* **Allowed countries** and **Blocked countries** - let you restrict results to (or exclude) specific regions. This section only shows up if your provider hands over subscriber IPs in the first place.
+
+![IP-based filters](/blog/assets/posts/ip-based-filters.png "IP-based filters")
+
+Heads up: turning on either risk-criteria checkbox means the scan has more to verify, so it'll take somewhat longer to finish.
+
+> On top of that, scans now run entirely in the background, which matters most for big lists. Once you click **Scan All Emails**, you can close the tab and keep working; OOPSpam emails you the moment it's done. You can check in anytime from the **Scan Jobs** tab under Integrations, which shows whether a scan is running, completed, or cancelled.
+
 ![The scan runs in two steps: first it loads all contacts, then it checks each email against OOPSpam's spam database.](/blog/assets/posts/step4_2-emailoctopus.png "The scan runs in two steps: first it loads all contacts, then it checks each email against OOPSpam's spam database.")
 
 Once complete, you will see a summary showing **Total Scanned**, **Clean**, and **Risky** contacts.
