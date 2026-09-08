@@ -10,13 +10,13 @@ description: "Learn 5 ways to stop spam in Mailchimp, from scanning your
 tags:
   - Mailchimp
 ---
-To stop spam in [Mailchimp](https://mailchimp.com/), scan your audience for risky and fake addresses, turn on double opt-in, authenticate your sending domain with SPF, DKIM, and DMARC, remove spam-trigger content from your emails, and never import a purchased list. 
-
-OOPSpam now connects directly to Mailchimp and checks every contact against a database of over 200 million blocked emails, one of the largest in the market, so you can scan an entire audience for spam signups in a few clicks. Here is exactly how to do each one.
+To stop spam in [Mailchimp](https://mailchimp.com/), scan your audience for fake or risky emails, enable double opt-in, authenticate your domain with SPF, DKIM, and DMARC, avoid spam-triggering content, and never use purchased lists. OOPSpam integrates directly with Mailchimp to scan contacts against over 200 million blocked email addresses. Here’s how to apply each method.
 
 ## **1. Scan and Clean Your Audience with OOPSpam**
 
-Spam signups and fake addresses sit quietly in your audience until a campaign goes out, bounces, and drags down your sender score. The fastest fix is to check every contact against a spam database before that happens.[ **OOPSpam**](https://www.oopspam.com/) (that is us) just added a native Mailchimp integration that does exactly this. Here is the workflow:
+Spam signups and fake addresses sit quietly in your audience until a campaign goes out, bounces, and drags down your sender score. The fastest fix is to check every contact against a spam database before that happens.[ **OOPSpam**](https://www.oopspam.com/) (that is us) just added a native Mailchimp integration that does exactly this. 
+
+Here is the workflow:
 
 Go to your [OOPSpam Dashboard](https://app.oopspam.com/Identity/Account/Register) and click **Integrations** in the left sidebar. Click **Connect** on the Mailchimp card.
 
