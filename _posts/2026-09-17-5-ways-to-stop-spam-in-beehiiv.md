@@ -94,7 +94,9 @@ Spam filters also score the content itself. Watch for:
 * Image-heavy posts with little real text
 * A reply-to address that does not match your sending domain, or links that redirect somewhere unexpected
 
-Also monitor your domain reputation, separate from complaints. Check it from your[ OOPSpam dashboard](https://www.oopspam.com/blog/how-to-check-your-domain-reputation-and-what-to-do-if-its-bad), or run a free scan with[ Domain Reputation Checker](https://domainreputationcheck.com/). A drop here often shows up before complaints do.
+Also [monitor your domain reputation](https://www.oopspam.com/blog/how-to-check-your-domain-reputation-and-what-to-do-if-its-bad), separate from complaints. Check it from your[ OOPSpam dashboard](https://www.oopspam.com/blog/how-to-check-your-domain-reputation-and-what-to-do-if-its-bad), or run a free scan with[ Domain Reputation Checker](https://domainreputationcheck.com/). A drop here often shows up before complaints do.
+
+![OOPSpam Domain Reputation Watch](/blog/assets/posts/do-watch-screenshot.png "OOPSpam Domain Reputation Watch")
 
 Run new subject lines through[ Spam Word Checker](https://spamwordchecker.com/) before you send. It takes five minutes and protects months of reputation.
 
