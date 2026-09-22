@@ -1,9 +1,9 @@
 ---
 layout: post
 title: 5 Ways to Stop Spam in Mailchimp
-date: 2026-09-09T05:49:00.000+08:00
+date: 2026-09-22T12:05:00.000+04:00
 author: chazie
-image: /blog/assets/posts/meta_mailchimp_5ways.png
+image: /blog/assets/posts/email_stopspam_mailchimp.jpg
 description: "Learn 5 ways to stop spam in Mailchimp, from scanning your
   audience with OOPSpam to double opt-in, domain authentication, and clean
   sending habits. "
