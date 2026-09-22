@@ -3,7 +3,7 @@ layout: post
 title: 4 ways to stop spam in EmailOctopus
 date: 2026-05-15T04:38:00.000+08:00
 author: chazie
-image: /blog/assets/posts/header_emailoctopus_meta.png
+image: /blog/assets/posts/email_stopspam_emailoctopus.jpg
 description: Reduce spam in EmailOctopus with list cleaning, SPF, DKIM, DMARC,
   double opt-in, and subscriber cleanup tips to improve deliverability.
 tags:
