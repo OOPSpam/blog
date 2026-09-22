@@ -1,9 +1,9 @@
 ---
 layout: post
 title: 5 Ways to Stop Spam in beehiiv
-date: 2026-09-18T01:46:00.000+08:00
+date: 2026-09-22T12:05:00.000+04:00
 author: chazie
-image: /blog/assets/posts/cleanup_beehiiv_meta.png
+image: /blog/assets/posts/email_stopspam_beehiiv.jpg
 description: Learn 5 ways to stop spam in beehiiv, from scanning your
   subscribers with OOPSpam to double opt-in, domain authentication, and clean
   sending habits.
