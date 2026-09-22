@@ -3,7 +3,7 @@ layout: post
 title: How to verify and clean up your Brevo email list?
 date: 2026-09-04T20:33:00.000+08:00
 author: chazie
-image: /blog/assets/posts/brevo_meta.jpg
+image: /blog/assets/posts/email_list_brevo.jpg
 description: Learn how to verify and clean your Brevo email list with OOPSpam to
   remove risky contacts, improve deliverability, and boost engagement.
 tags:
