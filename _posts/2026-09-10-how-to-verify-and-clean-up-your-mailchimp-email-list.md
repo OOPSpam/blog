@@ -1,9 +1,9 @@
 ---
 layout: post
 title: How to verify and clean up your Mailchimp email list?
-date: 2026-09-10T17:51:00.000+08:00
+date: 2026-09-22T12:04:00.000+04:00
 author: chazie
-image: /blog/assets/posts/meta_verify_cleanup_mailchimp.jpg
+image: /blog/assets/posts/email_list_mailchimp.jpg
 description: Learn how to verify and clean your Mailchimp email list with
   OOPSpam to remove risky contacts, improve deliverability, and boost
   engagement.
