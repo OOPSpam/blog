@@ -1,21 +1,21 @@
 ---
 layout: post
-title: Stopping Spam Submissions in Google Forms with oopspam and Zapier
+title: How to Stop Google Forms Spam with Zapier or Make
 date: 2025-01-14T04:32:00.000Z
+last_modified_at: 2026-10-07T12:00:00.000+04:00
 author: chazie
 image: /assets/posts/header-stopping-spam-submissions-in-google-forms-with-oopspam-and-zapier.jpg
-description: Stop spam in Google Forms with oopspam and Zapier! Learn to
-  automate spam filtering, save time, and manage clean, reliable submissions
-  effortlessly.
+description: "Stop spam in Google Forms by checking every response with oopspam in Zapier or Make. Step-by-step setup that keeps only real responses."
 tags:
   - Zapier
+  - Make
   - Google Forms
 ---
 ![Stopping Spam Submissions in Google Forms with oopspam and Zapier](/blog/assets/posts/header-stopping-spam-submissions-in-google-forms-with-oopspam-and-zapier.jpg "Stopping Spam Submissions in Google Forms with oopspam and Zapier")
 
 Spam submissions in Google Forms can be a significant issue, especially if you rely on forms for lead generation, surveys, or data collection. These submissions not only distort your data but also waste time and resources. The good news? There’s an efficient, automated way to filter out spam while ensuring legitimate responses are handled effectively—by integrating [oopspam](https://www.oopspam.com/) with [Zapier](https://zapier.com/).
 
-This guide will walk you through the process of connecting Google Forms, oopspam, and Zapier to create a seamless spam-free workflow. With this setup, you’ll have more time to focus on what matters: actionable insights from clean, reliable data.
+This guide will walk you through the process of connecting Google Forms, oopspam, and Zapier to create a seamless spam-free workflow. Using Make instead of Zapier? The same workflow works there too: jump to [the Make setup](#make). With this setup, you’ll have more time to focus on what matters: actionable insights from clean, reliable data.
 
 ## Why You Should Care About Spam Prevention in Google Forms
 
@@ -226,9 +226,50 @@ Testing is crucial to ensure the workflow operates as expected.
 
 You can apply the same automation approach to embedded forms by following this guide on how to[ add spam protection to embedded forms using oopspam and Zapier](https://www.oopspam.com/blog/add-spam-protection-to-embedded-forms-using-oopspam-and-zapier).
 
+## Using Make instead of Zapier {#make}
+
+The same workflow takes about 10 minutes in [Make](https://www.make.com/). You need a Make account, an [oopspam API key](https://app.oopspam.com/Identity/Account/Register) and the Google Form from Step 1.
+
+![Workflow integration showing Google Forms, oopspam Anti-Spam, and Google Sheets modules.](/blog/assets/posts/integration-workflow.png "Integration Workflow: Google Forms to Google Sheets via oopspam")
+
+### 1. Watch new Google Forms responses
+
+1. In Make, click **Create a new scenario**.
+2. Add the **Google Forms - Watch Responses** module, connect your Google account and select your form.
+3. Set **Limit** to **1** so the scenario processes one response at a time.
+
+![Google Forms "Watch Responses" settings with connection, form ID, and limit fields.](/blog/assets/posts/google-forms-watch-responses.png "Google Forms Watch Responses Configuration")
+
+### 2. Check each response with oopspam
+
+1. Click **+** and add the **oopspam Anti-Spam** module.
+2. Create a connection with your oopspam API key.
+3. Map the fields:
+   * **Sender IP:** leave blank (Google Forms doesn't share IP addresses).
+   * **Email:** the **Respondent Email** field.
+   * **Content:** your main message field.
+4. Under advanced settings, set **Ignore Short Content** to **No** so short genuine answers aren't blocked. Turn on **Block Disposable Emails**, and use the language filters if you only accept certain languages.
+
+![oopspam Anti-Spam module settings with input fields for email and content.](/blog/assets/posts/oopspam-anti-spam-module-configuration.png "oopspam Anti-Spam Module Configuration")
+
+### 3. Keep real responses, set spam aside
+
+1. Add a filter after the oopspam module so only responses with a **Spam Score** of 2 or lower continue.
+2. Add **Google Sheets - Add a Row** (or an email or Slack module) and map the fields you want to keep.
+3. Optionally, add a second route for responses with a **Spam Score** above 2 that logs them to a separate "Spam" sheet for review.
+
+![Google Sheets showing spam submissions with columns for Name, Email, Message, and Spam Score.](/blog/assets/posts/spam-submissions-in-google-sheets.png "Spam Submissions in Google Sheets with Spam Score")
+
+### 4. Test and activate
+
+1. Click **Run once**, then submit one genuine and one spammy test response.
+2. Check that each went down the right route, then click **Activate** to run the scenario automatically.
+
+For more Make fixes, see [5 common spam problems in Make and how to fix them](https://www.oopspam.com/blog/5-common-spam-problems-in-make-how-to-fix-them).
+
 ## Final Thoughts
 
-By combining the spam-detection capabilities of oopspam with the automation features of Zapier, you can create a highly effective system to filter spam submissions from Google Forms. This setup not only saves time but also ensures that your data is accurate and actionable.
+By combining the spam-detection capabilities of oopspam with the automation features of Zapier or Make, you can create a highly effective system to filter spam submissions from Google Forms. This setup not only saves time but also ensures that your data is accurate and actionable.
 
 Whether you’re using Google Forms for lead generation, surveys, or event registrations, this workflow is your ultimate solution for managing submissions effortlessly. Get started with [oopspam and Zapier](https://zapier.com/apps/oopspam/integrations) today, and say goodbye to unwanted submissions for good!
 

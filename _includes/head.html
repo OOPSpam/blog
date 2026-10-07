@@ -2,7 +2,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  {% seo %}
+  {% comment %}
+    Page title: "<post title> | oopspam" when that fits in 60 characters, otherwise just the post
+    title, so Google doesn't cut it off. jekyll-seo-tag still writes the description, canonical,
+    Open Graph tags and structured data.
+  {% endcomment %}
+  {% if page.title %}
+    {% assign seo_page_title = page.title | strip_html | strip %}
+    {% assign seo_full_title = seo_page_title | append: " | oopspam" %}
+    {% if seo_full_title.size <= 60 %}{% assign seo_page_title = seo_full_title %}{% endif %}
+  {% else %}
+    {% assign seo_page_title = site.title %}
+    {% if paginator and paginator.page > 1 %}{% assign seo_page_title = seo_page_title | append: " – Page " | append: paginator.page %}{% endif %}
+  {% endif %}
+  <title>{{ seo_page_title | escape }}</title>
+  {% seo title=false %}
 
   <!-- CSS -->
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">

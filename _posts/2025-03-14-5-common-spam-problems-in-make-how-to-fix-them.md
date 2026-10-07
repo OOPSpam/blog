@@ -61,7 +61,7 @@ If your Make automation automatically pushes every form submission into your CRM
 
 ### **The Problem**
 
-Using [Google Forms](https://www.oopspam.com/blog/stopping-spam-submissions-in-google-forms-with-oopspam-and-make), Airtable, or Typeform for data collection can attract spam. Fake survey responses skew your data, bots flood open registration forms with junk, and spam submissions corrupt reports and analytics, making it harder to extract meaningful insights.
+Using [Google Forms](https://www.oopspam.com/blog/stopping-spam-submissions-in-google-forms-with-oopspam-and-zapier#make), Airtable, or Typeform for data collection can attract spam. Fake survey responses skew your data, bots flood open registration forms with junk, and spam submissions corrupt reports and analytics, making it harder to extract meaningful insights.
 
 ### **How It Happens**
 

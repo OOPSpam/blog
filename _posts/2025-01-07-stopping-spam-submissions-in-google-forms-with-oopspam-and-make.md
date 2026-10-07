@@ -1,4 +1,7 @@
 ---
+# Merged into the Zapier post ("Using Make instead of Zapier" section) on 7 Oct 2026.
+# The old URL is redirected to that post in Cloudflare.
+published: false
 layout: post
 title: Stopping Spam Submissions in Google Forms with oopspam and Make
 date: 2025-01-07T00:40:00.000Z
