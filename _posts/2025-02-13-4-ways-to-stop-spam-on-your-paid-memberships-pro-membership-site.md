@@ -207,3 +207,8 @@ Spam can be frustrating, but stopping it is easier than you think. Here’s the 
 * **Add CAPTCHA or Cloudflare Turnstile** – CAPTCHA-free spam prevention.
 
 By implementing these four spam-blocking techniques, your PMPro membership site will remain secure, clean, and easy to manage. If you have [any questions](https://www.oopspam.com/#contact) or need extra guidance, OOPSpam’s support team is always here to help. You can also explore our [documentation](https://www.oopspam.com/help) for detailed setup instructions.
+
+## Related guides
+
+- [How to Limit Form Submissions in Paid Memberships Pro (PMPro)](https://www.oopspam.com/blog/how-to-limit-form-submissions-in-paid-memberships-pro-pmpro)
+- [How to Block VPN and Data Center IP Submissions in Paid Memberships Pro?](https://www.oopspam.com/blog/how-to-block-vpn-and-data-center-ip-submissions-in-paid-memberships-pro)

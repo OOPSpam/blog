@@ -71,7 +71,7 @@ Turnstile is perfect for sites that want strong bot protection without forcing u
 
 ![Akismet Anti-spam plugin with the tagline 'Spam shall not pass,' providing spam protection for WordPress sites, with a download option.](/blog/assets/posts/akismet.png "Akismet")
 
-Akismet is one of the most widely used anti-spam plugins, designed specifically for WordPress. It works by automatically filtering out spam from comments, form submissions, and trackbacks. Akismet’s massive global database makes it extremely accurate at identifying spam.
+Akismet is one of the most widely used anti-spam plugins, designed specifically for WordPress. It works by automatically filtering out spam from comments, form submissions, and trackbacks. Akismet’s massive global database makes it extremely accurate at identifying spam. It's free only for personal sites, though; businesses need a paid plan (see how it compares on our [Akismet alternative](https://www.oopspam.com/akismet-alternative) page).
 
 **Key Benefits:**
 
@@ -149,3 +149,7 @@ Spam is an ongoing issue, but with the right plugin, you can keep your WordPress
 Whether you need an effective, AI-driven filtering like OOPSpam, privacy-focused protection from hCaptcha, or user-friendly solutions like Turnstile, there’s an anti-spam plugin that fits your needs.The key is to balance protection with performance and user experience. 
 
 Have you tried any of these plugins yet? Install one today and enjoy a spam-free WordPress site that’s safe, fast, and user-friendly!
+
+## Related guides
+
+- [How to Protect Your WordPress Website from Internal Search Spam](https://www.oopspam.com/blog/how-to-protect-your-wordpress-website-from-internal-search-spam)

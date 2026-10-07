@@ -102,3 +102,7 @@ This is where a purpose-built tool earns its keep. **[OOPSpam](https://www.oopsp
 ## **Final Takeaway**
 
 No single tool stops every fake order or card testing attempt. The stores that hold up best combine a firewall at the network level, CAPTCHA or OOPSpam at the form level, AVS and CVV at the payment level, and a checkout and spam protection plugin like OOPSpam watching the checkout itself. Layer these together, keep an eye on which tactics are trending, and stick with tools that have a real track record behind them.
+
+## Related guides
+
+- [How to Block Orders by Billing Address in WooCommerce](https://www.oopspam.com/blog/how-to-block-orders-by-billing-address-in-woocommerce)

@@ -180,3 +180,11 @@ There isn't a single solution for the spam problem. Spam messages on the web are
 Most of these tactics we already use at [OOPSpam](https://www.oopspam.com) and found them very effective when used in combination.
 
 Happy spam-free day!
+
+## Related guides
+
+- [3 top open-source comment systems and their anti-spam capabilities](https://www.oopspam.com/blog/open-source-comment-systems-their-anti-spam-capabilities)
+- [How to Protect Your WordPress Website from Internal Search Spam](https://www.oopspam.com/blog/how-to-protect-your-wordpress-website-from-internal-search-spam)
+- [So, you're using oopspam and still getting spam?](https://www.oopspam.com/blog/so-youre-using-oopspam-and-still-getting-spam)
+- [Why Legitimate Form Submissions Get Flagged as Spam and How to Reduce](https://www.oopspam.com/blog/why-legitimate-form-submissions-get-flagged-as-spam-and-how-to-reduce-false-positives)
+- [How to Block Foreign-Language Spam in WordPress Forms](https://www.oopspam.com/blog/how-to-block-foreign-language-spam-in-wordpress-forms)

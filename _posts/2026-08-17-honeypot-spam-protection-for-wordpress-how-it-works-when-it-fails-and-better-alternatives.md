@@ -132,3 +132,7 @@ That's it! OOPSpam runs in the background from that point on, no code changes re
 ## **Final thoughts**
 
 Honeypots are a good first line of defense: cheap, invisible, and effective against basic bots. They're not enough on their own against modern scrapers or anyone targeting your site specifically. Pair one with Turnstile, reCAPTCHA v3, or OOPSpam depending on your traffic and risk level.
+
+## Related guides
+
+- [Why Legitimate Form Submissions Get Flagged as Spam and How to Reduce](https://www.oopspam.com/blog/why-legitimate-form-submissions-get-flagged-as-spam-and-how-to-reduce-false-positives)

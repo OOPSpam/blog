@@ -99,3 +99,8 @@ Here are a few steps to activate spam protection for Ultimate Member:
 All websites eventually get hit by spammers. As a website grows and gets more traffic it attracts more serious spammers with advance bots. Both honeypot and reCAPTCHA will protect your website to a certain degree but they are not enough for targeted spam attacks, manual spam and sophisticated bots. I hope this article helps you find a solution for your spam problem.
 
 Happy spam-free day!
+
+## Related guides
+
+- [How to Limit Form Submissions in Ultimate Member](https://www.oopspam.com/blog/how-to-limit-form-submissions-in-ultimate-member)
+- [How to Block VPN and Data Center IP Submissions in Ultimate Member?](https://www.oopspam.com/blog/how-to-block-vpn-and-data-center-ip-submissions-in-ultimate-member)

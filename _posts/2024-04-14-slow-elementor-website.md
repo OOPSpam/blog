@@ -120,3 +120,7 @@ When choosing a hosting provider, make sure to also check if they support HTTP/2
 By combining image optimization techniques, leveraging caching, and ensuring your website uses the latest HTTP/2 protocol, you can significantly improve the overall performance of your Elementor-powered website, providing a smooth and efficient experience for your users.
 
 In addition to the tips and tricks discussed above, check out the official Elementor speed optimization [article](https://elementor.com/help/speed-up-a-slow-site/) and [videos](https://www.youtube.com/playlist?list=PLZyp9H25CboFg7tA0J3ksRf7gjOsrW1Ot).
+
+## Related guides
+
+- [Bricks vs Elementor: Which WordPress Page Builder Should You Choose?](https://www.oopspam.com/blog/bricks-vs-elementor-which-wordpress-page-builder-should-you-choose)

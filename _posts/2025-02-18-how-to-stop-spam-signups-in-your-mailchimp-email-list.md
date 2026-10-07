@@ -205,3 +205,8 @@ By integrating OOPSpam and Zapier, you create an automated spam filtering system
 [Try OOPSpam](https://app.oopspam.com/Identity/Account/Register): Sign up for OOPSpam’s Anti-Spam API and integrate it with Mailchimp for automatic spam filtering. By taking these proactive steps, you can focus on real subscribers, improve engagement, and maximize your email marketing success. 
 
 If you have [any questions](https://www.oopspam.com/#contact) or need extra guidance, reach out to us for assistance, or explore our [detailed documentation](https://www.oopspam.com/help) for step-by-step setup instructions.
+
+## Related guides
+
+- [5 Ways to Stop Spam in Mailchimp](https://www.oopspam.com/blog/5-ways-to-stop-spam-in-mailchimp)
+- [How to verify and clean up your Mailchimp email list?](https://www.oopspam.com/blog/how-to-verify-and-clean-up-your-mailchimp-email-list)

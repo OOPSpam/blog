@@ -30,3 +30,7 @@ That's where a solution like [OOPSpam](https://www.oopspam.com/) comes in. Unlik
 So, while it might seem counterintuitive, loading reCAPTCHA v3 on every page is actually Google's recommended approach for getting the most accurate interaction scoring and site protection. But to avoid any performance hits (or privacy concerns), a server-side solution like OOPSpam can help.
 
 Just some food for thought as you're optimizing your website's security and performance.
+
+## Related guides
+
+- [How to Hide the reCAPTCHA Badge?](https://www.oopspam.com/blog/recaptcha-badge)

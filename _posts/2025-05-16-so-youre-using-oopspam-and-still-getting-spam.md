@@ -76,3 +76,7 @@ Currently, this feature does not take IP or email reputation into account, even 
 I’d say this is one of our greatest features! We offer live chat and email support. We will look into the issue you are having and help protect you from spam and fraud attacks. This is how we have discovered many new types of spam campaigns. Recently, many WooCommerce sites started getting unusual card testing attacks (sometimes up to 1,000 daily), and no solution could stop them because the attacks were launched from regular people’s devices that had been compromised. We mitigated this attack by analyzing common patterns and implementing a new setting overnight.
 
 If you are having an issue with one of our integrations or are still getting spam despite implementing the above features, we are here to help.
+
+## Related guides
+
+- [Why Legitimate Form Submissions Get Flagged as Spam and How to Reduce](https://www.oopspam.com/blog/why-legitimate-form-submissions-get-flagged-as-spam-and-how-to-reduce-false-positives)

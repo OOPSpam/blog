@@ -124,3 +124,7 @@ All websites eventually get hit by spammers. As a website grows and gets more tr
 That is all! Go on and create your forms.
 
 Happy spam-free day!
+
+## Related guides
+
+- [3 Ways to Protect Your Breakdance Forms from Spam](https://www.oopspam.com/blog/3-ways-to-protect-your-breakdance-forms-from-spam)

@@ -105,3 +105,7 @@ From this point on, every submission is checked before it reaches Mailchimp. Spa
 ## **Which fix should you use?**
 
 Layer them. Start with Mailchimp's double opt-in and reCAPTCHA since they're free and take minutes. Add Cloudflare if you're getting volume-based attacks. If you want the embedded form itself to stop letting bots through, that requires switching off the raw embed and onto a WordPress form connected to Mailchimp, protected with OOPSpam.
+
+## Related guides
+
+- [5 Ways to Stop Spam in Mailchimp](https://www.oopspam.com/blog/5-ways-to-stop-spam-in-mailchimp)

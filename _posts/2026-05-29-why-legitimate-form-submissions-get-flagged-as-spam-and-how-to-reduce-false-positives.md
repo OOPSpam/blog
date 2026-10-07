@@ -142,3 +142,7 @@ False positives are an unavoidable side effect of any spam protection system, bu
 The goal is not to eliminate spam filtering. It is to tune it so that real users always get through while automated abuse does not. With the right tools and a habit of reviewing flagged entries, you can get false positives down to near zero.
 
 If you are using OOPSpam and a legitimate submission was blocked, do not wait. Check the reason, mark it as Not Spam, and reach out to support if needed. Every report helps the system improve, for you and for every other site relying on it.
+
+## Related guides
+
+- [So, you're using oopspam and still getting spam?](https://www.oopspam.com/blog/so-youre-using-oopspam-and-still-getting-spam)

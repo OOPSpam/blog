@@ -126,3 +126,7 @@ Toolset Forms do not block VPN or data center IPs by default. That is expected.
 If you want reliable protection, you must add the right layer in the right place. Form-level filtering with OOPSpam gives you control without collateral damage. Network-level blocking should be reserved for extreme cases.
 
 This layered approach blocks modern spam without harming real users.
+
+## Related guides
+
+- [4 Ways to Protect Your Toolset Forms from Spam](https://www.oopspam.com/blog/4-ways-to-protect-your-toolset-forms-from-spam)

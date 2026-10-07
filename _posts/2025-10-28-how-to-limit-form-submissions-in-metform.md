@@ -118,3 +118,8 @@ MetForm’s Limit Total Entries feature is ideal for basic submission control. F
 * Doesn’t slow down your website.
 
 Together, MetForm and OOPSpam create a reliable, layered defense, one that controls both the volume and quality of form submissions.
+
+## Related guides
+
+- [How to block countries in MetForm?](https://www.oopspam.com/blog/how-to-block-countries-in-metform)
+- [How to Block VPN and Data Center IP Submissions in MetForm?](https://www.oopspam.com/blog/how-to-block-vpn-and-data-center-ip-submissions-in-metform)

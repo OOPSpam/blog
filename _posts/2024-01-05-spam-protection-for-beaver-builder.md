@@ -99,3 +99,8 @@ All websites eventually get hit by spammers. As a website grows and gets more tr
 That is all! Go on and create your forms.
 
 Happy spam-free day!
+
+## Related guides
+
+- [How to Limit Form Submissions in Beaver Builder Contact Form](https://www.oopspam.com/blog/how-to-limit-form-submissions-in-beaver-builder-contact-form)
+- [How to Block VPN and Data Center IP Submissions in Beaver Builder Contact Form?](https://www.oopspam.com/blog/how-to-block-vpn-and-data-center-ip-submissions-in-beaver-builder-contact-form)

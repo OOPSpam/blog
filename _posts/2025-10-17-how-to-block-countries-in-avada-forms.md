@@ -116,3 +116,7 @@ The best way to block countries in Avada Forms is to use OOPSpam for precision a
 * [Cloudflare](https://www.cloudflare.com/) stops malicious requests before they reach your site.
 
 Together, they create a layered defense, your Avada Forms stay clean, your site stays visible, and only legitimate users can submit.
+
+## Related guides
+
+- [How to Limit Form Submissions in Avada Forms?](https://www.oopspam.com/blog/how-to-limit-form-submissions-in-avada-forms)

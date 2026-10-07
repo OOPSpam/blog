@@ -141,3 +141,9 @@ Use the optional **Super Forms Spam Message** field to tell blocked visitors how
 ## **Final thoughts**
 
 Use the built-in lockers to control who can submit and how many entries you accept. Use OOPSpam rate limiting to control how fast anyone can submit. Keep in mind that attackers spreading requests across many IPs can stay under per-IP limits, so combine rate limiting with content filtering. Keep Super Forms updated to version 6.3.314 or later, which patched a critical file upload vulnerability.
+
+## Related guides
+
+- [5 Ways to Protect Your Super Forms From Spam](https://www.oopspam.com/blog/5-ways-to-protect-your-super-forms-from-spam)
+- [How to Block Countries in Super Forms?](https://www.oopspam.com/blog/how-to-block-countries-in-super-forms)
+- [How to Block VPN and Data Center IP Submissions in Super Forms](https://www.oopspam.com/blog/how-to-block-vpn-and-data-center-ip-submissions-in-super-forms)

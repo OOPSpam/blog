@@ -116,3 +116,7 @@ Go to Donations → Settings → Security. Enable Honeypot and save. It runs qui
 ## **Final Takeaway**
 
 GiveWP handles donations well, but fraud protection is not part of its core feature set. Add OOPSpam for IP-level filtering, enable Turnstile and Honeypot for bot protection, and use Cloudflare only if attacks persist at scale. All three together give your donation forms solid, layered defense.
+
+## Related guides
+
+- [How to Limit Form Submissions in GiveWP Donation Forms?](https://www.oopspam.com/blog/how-to-limit-form-submissions-in-givewp-donation-forms)

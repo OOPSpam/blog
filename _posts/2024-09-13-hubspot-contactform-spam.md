@@ -128,3 +128,7 @@ Additionally, you can use other email service apps such as Postmark or Mailgun i
 ## Final thoughts
 
 This was a basic workflow to filter spam with OOPSpam in your HubSpot forms using Zapier. You can also use other platforms to automate the process. Plus, you can add extra steps and conditions to make it more complex, such as sending an automated email response to the visitor confirming successful submission after the spam check or storing submissions in Google Sheets instead of sending an email.
+
+## Related guides
+
+- [How to Block Fake Leads in Unbounce Forms?](https://www.oopspam.com/blog/how-to-block-fake-leads-in-unbounce-forms)

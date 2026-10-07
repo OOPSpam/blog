@@ -85,3 +85,7 @@ Finally, click **Save Changes**. Test by attempting multiple [submissions](https
 ## **Final thoughts**
 
 Formidable Forms gives you the tools to control how many entries a form accepts and when. By adding OOPSpam’s rate-limiting on top, you can [block spam](https://www.oopspam.com/integrations/spam-protection-for-formidable), stop duplicate entries, and keep submissions under control.
+
+## Related guides
+
+- [How to Block VPN and Data Center IP Submissions in Formidable Forms](https://www.oopspam.com/blog/how-to-block-vpn-and-data-center-ip-submissions-in-formidable-forms)

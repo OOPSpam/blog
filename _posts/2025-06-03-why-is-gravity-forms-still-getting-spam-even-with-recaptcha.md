@@ -146,3 +146,7 @@ If you're still getting spam through Gravity Forms—even with reCAPTCHA—you'r
 By switching to a layered, context-aware system like OOPSpam, you significantly reduce spam without affecting real users. The setup is simple, the filtering is accurate, and your paid traffic will no longer be a spammer’s playground.
 
 Ready to stop form spam at the source? You can install [OOPSpam](https://www.oopspam.com/wordpress) directly from the official WordPress plugin repository. It's a simple setup that adds reliable spam filtering to your Gravity Forms—no API configuration needed.
+
+## Related guides
+
+- [So, you're using oopspam and still getting spam?](https://www.oopspam.com/blog/so-youre-using-oopspam-and-still-getting-spam)

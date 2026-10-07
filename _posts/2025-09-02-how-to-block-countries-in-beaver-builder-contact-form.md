@@ -78,3 +78,8 @@ Beaver Builder Contact Form alone cannot stop submissions from specific countrie
 If the issue extends beyond form spam and affects your whole site, Cloudflare Firewall can block traffic from unwanted countries at the server level.
 
 Together, these tools give you both form-level control and site-wide security.
+
+## Related guides
+
+- [How to Limit Form Submissions in Beaver Builder Contact Form](https://www.oopspam.com/blog/how-to-limit-form-submissions-in-beaver-builder-contact-form)
+- [How to Block VPN and Data Center IP Submissions in Beaver Builder Contact Form?](https://www.oopspam.com/blog/how-to-block-vpn-and-data-center-ip-submissions-in-beaver-builder-contact-form)

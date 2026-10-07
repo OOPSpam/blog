@@ -103,3 +103,7 @@ This only enforces a minimum total. Blocking exact figures requires custom array
 * **Comfortable maintaining code for a simple minimum?** The PHP snippet works, but you'll need to maintain it yourself.
 
 For most stores facing the classic "same odd total, over and over" pattern, OOPSpam offers a fairly complete solution with minimal setup effort.
+
+## Related guides
+
+- [How to Block Orders by Billing Address in WooCommerce](https://www.oopspam.com/blog/how-to-block-orders-by-billing-address-in-woocommerce)

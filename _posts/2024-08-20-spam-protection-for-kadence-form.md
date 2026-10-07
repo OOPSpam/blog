@@ -109,3 +109,7 @@ All websites eventually get hit by spammers. As a website grows and gets more tr
 That is all! Go on and create your forms.
 
 Happy spam-free day!
+
+## Related guides
+
+- [How to Limit Form Submissions in Kadence Form?](https://www.oopspam.com/blog/how-to-limit-form-submissions-in-kadence-form)

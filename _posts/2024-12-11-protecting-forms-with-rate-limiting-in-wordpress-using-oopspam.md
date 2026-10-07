@@ -177,3 +177,15 @@ Protecting your forms from spam and abuse is easier with OOPSpam. Its advanced f
 Whether you’re running a small blog or a large e-commerce site, OOPSpam is a valuable tool to keep your data clean and your users happy. Setting it up is simple, and the benefits are immediate.
 
 Take control of your form security today by integrating OOPSpam into your WordPress site. [Download the OOPSpam WordPress plugin](https://www.oopspam.com/wordpress) now and explore its features.
+
+## Related guides
+
+- [How Targeted Form Spam Can Drain Your Google Ads Budget](https://www.oopspam.com/blog/how-targeted-form-spam-can-drain-your-google-ads-budget)
+- [How to Limit Form Submissions in Kadence Form?](https://www.oopspam.com/blog/how-to-limit-form-submissions-in-kadence-form)
+- [How to Limit Form Submissions in Paid Memberships Pro (PMPro)](https://www.oopspam.com/blog/how-to-limit-form-submissions-in-paid-memberships-pro-pmpro)
+- [How to Limit Form Submissions in Jetpack Forms?](https://www.oopspam.com/blog/how-to-limit-form-submissions-in-jetpack-forms)
+- [How to Limit Form Submissions in Avada Forms?](https://www.oopspam.com/blog/how-to-limit-form-submissions-in-avada-forms)
+- [How to Limit Form Submissions in Ultimate Member](https://www.oopspam.com/blog/how-to-limit-form-submissions-in-ultimate-member)
+- [How to Limit Form Submissions in Beaver Builder Contact Form](https://www.oopspam.com/blog/how-to-limit-form-submissions-in-beaver-builder-contact-form)
+- [How to Limit Form Submissions in GiveWP Donation Forms?](https://www.oopspam.com/blog/how-to-limit-form-submissions-in-givewp-donation-forms)
+- [How to Limit Form Submissions in Super Forms?](https://www.oopspam.com/blog/how-to-limit-form-submissions-in-super-forms)

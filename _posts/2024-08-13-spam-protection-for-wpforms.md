@@ -110,3 +110,7 @@ All websites eventually get hit by spammers. As a website grows and gets more tr
 That is all! Go on and create your forms.
 
 Happy spam-free day!
+
+## Related guides
+
+- [Troubleshooting WPForms Not Sending Email Notifications](https://www.oopspam.com/blog/wpforms-notification-issue)

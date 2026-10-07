@@ -255,3 +255,7 @@ While Translate by Zapier offers a basic way to filter spam based on language, i
 Try OOPSpam’s Zapier app today and take back control of your forms. Whether you have questions about setup, need troubleshooting tips, or want to fine-tune your spam filtering settings, OOPSpam’s [support team](https://www.oopspam.com/#contact) is always available to assist you. 
 
 Let’s keep your inbox spam-free together!
+
+## Related guides
+
+- [How to Block Foreign-Language Spam in WordPress Forms](https://www.oopspam.com/blog/how-to-block-foreign-language-spam-in-wordpress-forms)

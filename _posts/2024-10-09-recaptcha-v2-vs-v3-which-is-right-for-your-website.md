@@ -121,7 +121,7 @@ reCAPTCHA V3 offers a smoother, less intrusive approach, but like anything, it h
 
 ![OOPSpam dashboard displaying API usage statistics, average response time, and a verified API key, with navigation options on the left including logs, domain watch, and knowledge base.](/blog/assets/posts/image4.png "OOPSpam dashboard displaying API usage statistics, average response time, and a verified API key, with navigation options on the left including logs, domain watch, and knowledge base.")
 
-If you’re not thrilled about the friction of V2 or the tuning required for V3, **OOPSpam** (that’s us 👋) is the [best alternative](https://www.oopspam.com/blog/best-captcha-alternatives). Unlike reCAPTCHA, it blocks spam without the need for user interaction. Here's why it’s worth considering:
+If you’re not thrilled about the friction of V2 or the tuning required for V3, **OOPSpam** (that’s us 👋) is the [best alternative](https://www.oopspam.com/blog/best-captcha-alternatives). Unlike reCAPTCHA, it blocks spam without the need for user interaction (see the full [reCAPTCHA alternative](https://www.oopspam.com/recaptcha-alternative) comparison). Here's why it’s worth considering:
 
 * **No Puzzles, No Friction**: OOPSpam offers server-side spam filtering that doesn’t rely on puzzles or user behavior tracking.
 * **Privacy-First:** Unlike many spam filters, OOPSpam doesn’t collect or store data, making it fully GDPR-compliant.
@@ -183,3 +183,7 @@ Each solution has its strengths and weaknesses, so assess your site's specific n
 For those who want strong protection with minimal hassle, OOPSpam offers an alternative to traditional CAPTCHA solutions, providing effective spam blocking without the need for puzzles or behavioral tracking. 
 
 Remember, the right balance between security and user experience will not only protect your site but also ensure that legitimate users aren’t turned away.
+
+## Related guides
+
+- [How to Hide the reCAPTCHA Badge?](https://www.oopspam.com/blog/recaptcha-badge)

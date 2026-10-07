@@ -82,3 +82,7 @@ From now on, traffic from those regions will never reach your forms or your site
 * **Use Cloudflare** – When you need site-wide blocking against traffic from entire countries.
 
 QuForm is excellent for building powerful forms, but it isn’t built for country-level security. Pairing it with [OOPSpam](https://www.oopspam.com/) or Cloudflare keeps your forms open for real users while shutting out spam and abuse.
+
+## Related guides
+
+- [3 Ways to Protect Your QuForm from Spam](https://www.oopspam.com/blog/3-ways-to-protect-your-quform-from-spam)

@@ -80,3 +80,7 @@ From then on, traffic from those countries won’t reach your forms or any part 
 * **Cloudflare** – Best if you need site-wide blocking against unwanted or abusive traffic.
 
 HappyForms is great for building forms but isn’t designed for security. Pair it with OOPSpam and Cloudflare for complete spam protection. Together, they keep your forms open to genuine users while blocking spam and abuse at multiple levels.
+
+## Related guides
+
+- [How to Block VPN and Data Center IP Submissions in HappyForms](https://www.oopspam.com/blog/how-to-block-vpn-and-data-center-ip-submissions-in-happyforms)

@@ -134,3 +134,7 @@ These features create layered protection and reduce false positives.
 Limiting form submissions in MailPoet is simple when you apply the right controls. With these layers in place, your MailPoet forms remain clean, manageable, and focused on real subscribers instead of spam.
 
 A smaller, verified list always performs better than a large, polluted one. Protect your forms early and you avoid cleanup later.
+
+## Related guides
+
+- [3 Ways to Protect Your MailPoet from Spam](https://www.oopspam.com/blog/3-ways-to-protect-your-mailpoet-from-spam)

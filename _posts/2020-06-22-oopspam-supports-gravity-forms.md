@@ -40,3 +40,7 @@ In addition to Gravity Forms integration, we added a setting "Consider short mes
 Go ahead [get an OOPSpam Anti-Spam key](https://app.oopspam.com/Identity/Account/Register) and install the [OOPSpam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/).
 
 Have a spam-free day!
+
+## Related guides
+
+- [oopspam Anti-Spam WordPress Plugin is here](https://www.oopspam.com/blog/oopspam-antispam-wordpress-plugin)

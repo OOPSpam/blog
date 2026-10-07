@@ -260,3 +260,7 @@ WPDiscuz already gives you a solid foundation. When you combine it with moderati
 Start with these five steps, then adjust based on how your site grows. That is all! 
 
 Happy spam-free day!
+
+## Related guides
+
+- [3 top open-source comment systems and their anti-spam capabilities](https://www.oopspam.com/blog/open-source-comment-systems-their-anti-spam-capabilities)

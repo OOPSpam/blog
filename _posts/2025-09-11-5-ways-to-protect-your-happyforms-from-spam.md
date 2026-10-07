@@ -107,3 +107,7 @@ By combining these filters, you can prevent irrelevant traffic, keep spammy term
 ## **Final thoughts**
 
 Spam is constantly evolving. One solution isn’t enough. Combine HappyForms’ built-in honeypot, plus reCAPTCHA or hCaptcha, and advanced OOPSpam filtering to create a layered defense. Update your plugins often to stay ahead of new threats.
+
+## Related guides
+
+- [How to Block VPN and Data Center IP Submissions in HappyForms](https://www.oopspam.com/blog/how-to-block-vpn-and-data-center-ip-submissions-in-happyforms)

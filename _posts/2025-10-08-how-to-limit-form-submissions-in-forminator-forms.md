@@ -96,3 +96,7 @@ Together, they help you get accurate entries, fewer duplicates, and a more stabl
 Forminator doesn’t include submission limits by default, but you don’t have to leave your forms wide open. By combining OOPSpam’s filtering with Cloudflare’s firewall rules, you can prevent repeated entries, block abuse, and maintain reliable form data.
 
 This way, you keep control of your forms while making the experience smoother for genuine visitors.
+
+## Related guides
+
+- [3 Ways to Protect Your Forminator from Spam](https://www.oopspam.com/blog/3-ways-to-protect-your-forminator-from-spam)

@@ -181,3 +181,8 @@ These methods work, but they require coding, testing, and ongoing maintenance.
 ACF Frontend Forms don’t include native spam protection, so you must add it yourself. If you want a hands-off, accurate, and easy solution, OOPSpam alone is enough. It covers all the major spam threats with one plugin and a few settings.
 
 If you prefer to implement protection yourself, you can combine honeypots, CAPTCHA, and server-side validation to build your own layered setup, but it requires more work.
+
+## Related guides
+
+- [How to block countries in  ACF Frontend Forms?](https://www.oopspam.com/blog/how-to-block-countries-in-acf-frontend-forms)
+- [How to Block VPN and Data Center IP Submissions in ACF Frontend Forms?](https://www.oopspam.com/blog/how-to-block-vpn-and-data-center-ip-submissions-in-acf-frontend-forms)

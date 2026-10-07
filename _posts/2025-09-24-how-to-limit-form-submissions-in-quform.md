@@ -96,3 +96,7 @@ QuForm supports [reCAPTCHA](https://www.quform.com/2019/04/quform-2-8-0-released
 QuForm lets you cap total submissions, restrict users by IP, and schedule form availability with just a few clicks. For stronger spam and abuse protection, combine QuForm with OOPSpam and modern [CAPTCHA](https://www.oopspam.com/blog/best-captcha-alternatives) services. Add Cloudflare [WAF rules](https://developers.cloudflare.com/waf/rate-limiting-rules/) if you need network-level control.
 
 Set up these layers once, and you’ll save time, stop spam, and protect the integrity of your forms.
+
+## Related guides
+
+- [3 Ways to Protect Your QuForm from Spam](https://www.oopspam.com/blog/3-ways-to-protect-your-quform-from-spam)

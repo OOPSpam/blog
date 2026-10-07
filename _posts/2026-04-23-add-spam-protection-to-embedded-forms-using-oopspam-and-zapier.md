@@ -180,3 +180,7 @@ This is especially valuable for B2B teams where missing a single enterprise lead
 This four-step Zap is one of the most effective, user-friendly spam protection setups available for embedded forms. It requires no code, no CAPTCHA, and no ongoing maintenance once it is live. OOPSpam's machine learning handles the detection work, Zapier handles the routing, and your team only sees the submissions that matter.
 
 Set it up once, and let it run quietly in the background while your forms stay clean.
+
+## Related guides
+
+- [How to Block Fake Leads in Unbounce Forms?](https://www.oopspam.com/blog/how-to-block-fake-leads-in-unbounce-forms)

@@ -81,3 +81,7 @@ Once you get a response to your request, you are ready to flag messages. While i
 Check out [OOPSpam API docs](https://www.oopspam.com/docs/#introduction) for more information.
 
 Happy spam-free day!
+
+## Related guides
+
+- [Adding Spam Protection To ASP.NET Core Web App Forms Using C#](https://www.oopspam.com/blog/spam-protection-for-netcore)

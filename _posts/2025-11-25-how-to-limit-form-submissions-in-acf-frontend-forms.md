@@ -154,3 +154,8 @@ Testing ensures that legitimate users do not get blocked while abusive patterns 
 ## **Final Thoughts**
 
 ACF gives you control over custom fields, but it does not manage form security or submission limits. Adding limits prevents spam, protects your site, and ensures your forms work as intended. Whether you choose Advanced Forms Pro, [OOPSpam](https://www.oopspam.com/wordpress), or a custom PHP solution, each method gives you reliable control over how your ACF frontend forms behave.
+
+## Related guides
+
+- [How to block countries in  ACF Frontend Forms?](https://www.oopspam.com/blog/how-to-block-countries-in-acf-frontend-forms)
+- [How to Block VPN and Data Center IP Submissions in ACF Frontend Forms?](https://www.oopspam.com/blog/how-to-block-vpn-and-data-center-ip-submissions-in-acf-frontend-forms)

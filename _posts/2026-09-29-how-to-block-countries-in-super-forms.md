@@ -127,3 +127,8 @@ Test the form in an Incognito window. Then check the OOPSpam [spam and ham logs]
 ## **Final thoughts**
 
 Super Forms has no native country filter, so use an external tool. OOPSpam is the most direct option because it filters at the form level and leaves your site open. Add Cloudflare if you need a hard block across the whole site.
+
+## Related guides
+
+- [5 Ways to Protect Your Super Forms From Spam](https://www.oopspam.com/blog/5-ways-to-protect-your-super-forms-from-spam)
+- [How to Limit Form Submissions in Super Forms?](https://www.oopspam.com/blog/how-to-limit-form-submissions-in-super-forms)

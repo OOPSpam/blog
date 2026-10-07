@@ -81,3 +81,8 @@ Limit the number of login attempts to prevent brute force attacks. In addition t
 ## Use HTTPS
 
 Make sure your site uses HTTPS by installing an SSL certificate. This will encrypt data between your website and its visitors, protecting sensitive information. You can put your website behind Cloudflare to enable SSL certification, and make sure to use the [Always Use HTTPS](https://developers.cloudflare.com/ssl/edge-certificates/additional-options/always-use-https/) feature to redirect all non-HTTP requests to HTTPS.
+
+## Related guides
+
+- [How to Remove the 'Deceptive Site Ahead' Browser Warning](https://www.oopspam.com/blog/google-blocked-website)
+- [How to Protect Your WordPress Website from Internal Search Spam](https://www.oopspam.com/blog/how-to-protect-your-wordpress-website-from-internal-search-spam)

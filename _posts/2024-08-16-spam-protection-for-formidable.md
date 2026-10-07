@@ -123,3 +123,7 @@ All websites eventually get hit by spammers. As a website grows and gets more tr
 That is all! Go on and create your forms.
 
 Happy spam-free day!
+
+## Related guides
+
+- [How to Block VPN and Data Center IP Submissions in Formidable Forms](https://www.oopspam.com/blog/how-to-block-vpn-and-data-center-ip-submissions-in-formidable-forms)

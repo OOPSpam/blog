@@ -128,3 +128,7 @@ If you are using Piotnet Forms and dealing with spam from VPNs or data centers, 
 Enable OOPSpam. Turn on **Block Cloud Providers**. Monitor results. Add **Block VPNs** only if needed.
 
 Use Cloudflare rules only when form-level protection is not enough. This layered approach keeps Piotnet Forms usable for real users while stopping the traffic that does not belong there.
+
+## Related guides
+
+- [4 Ways to Protect Your Piotnet Forms from Spam](https://www.oopspam.com/blog/4-ways-to-protect-your-piotnet-forms-from-spam)

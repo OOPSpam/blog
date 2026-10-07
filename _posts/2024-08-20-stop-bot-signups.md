@@ -141,3 +141,7 @@ All websites get hit by spammers eventually. As a site grows and gets more traff
 I hope this article helps you find a solution to your bot signup problem.
 
 Have a spam-free day!
+
+## Related guides
+
+- [Adding Spam Protection To ASP.NET Core Web App Forms Using C#](https://www.oopspam.com/blog/spam-protection-for-netcore)

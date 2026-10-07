@@ -79,3 +79,7 @@ A beehiiv list does not stay clean on its own. A few reasons to check it on a sc
 * **Engagement metrics stop meaning anything** once a chunk of your list can't or won't open a post, which makes it harder to tell what content actually works.
 
 A clean list means your posts reach real readers and your open rate reflects reality. Connect OOPSpam to beehiiv once, and run a scan whenever your publication needs it.
+
+## Related guides
+
+- [5 Ways to Stop Spam in beehiiv](https://www.oopspam.com/blog/5-ways-to-stop-spam-in-beehiiv)

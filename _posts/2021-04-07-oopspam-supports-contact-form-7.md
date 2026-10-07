@@ -42,3 +42,7 @@ Today, we released a new version with the following changes:
 That's all for now.
 
 Happy spam-free day!
+
+## Related guides
+
+- [oopspam Anti-Spam WordPress Plugin is here](https://www.oopspam.com/blog/oopspam-antispam-wordpress-plugin)

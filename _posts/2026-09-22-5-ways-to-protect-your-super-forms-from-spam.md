@@ -99,3 +99,9 @@ This is a blunt tool. Use it only when the pattern is clear and real visitors wo
 ## **Final thoughts**
 
 Layer your defenses. Start with OOPSpam for automatic filtering, add reCAPTCHA for bot verification, and use duplicate blocking, custom rules, or Cloudflare for specific patterns. Keep Super Forms updated to 6.3.314 or later, which patched a critical file upload vulnerability.
+
+## Related guides
+
+- [How to Limit Form Submissions in Super Forms?](https://www.oopspam.com/blog/how-to-limit-form-submissions-in-super-forms)
+- [How to Block Countries in Super Forms?](https://www.oopspam.com/blog/how-to-block-countries-in-super-forms)
+- [How to Block VPN and Data Center IP Submissions in Super Forms](https://www.oopspam.com/blog/how-to-block-vpn-and-data-center-ip-submissions-in-super-forms)

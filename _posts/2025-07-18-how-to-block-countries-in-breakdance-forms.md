@@ -114,3 +114,7 @@ To do this:
 Breakdance doesn’t include native IP or country filtering, but with OOPSpam, you can add those protections and more in just a few clicks. If you’re dealing with spam or want more control over who submits your forms, this integration is a reliable and simple solution.
 
 Visit [OOPSpam documentation](https://www.oopspam.com/help) for setup guides or support. OOPSpam integrates with [WS Form](https://www.oopspam.com/blog/how-to-block-countries-in-ws-form), [Jetpack Forms](https://www.oopspam.com/blog/how-to-block-countries-in-jetpack-forms), [Contact Form 7](https://www.oopspam.com/blog/how-to-block-countries-in-contact-form-7), [Fluent Forms](https://www.oopspam.com/blog/how-to-block-countries-in-fluent-forms), and more.
+
+## Related guides
+
+- [3 Ways to Protect Your Breakdance Forms from Spam](https://www.oopspam.com/blog/3-ways-to-protect-your-breakdance-forms-from-spam)

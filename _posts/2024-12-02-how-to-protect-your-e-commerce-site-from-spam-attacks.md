@@ -155,4 +155,8 @@ Spam attacks are an inevitable part of running an e-commerce site, but they don�
 
 This holiday season, take proactive steps to safeguard your site so you can focus on delivering a seamless shopping experience to your customers. Invest in tools like OOPSpam Anti-Spam API or consult with a cybersecurity expert to audit your site’s vulnerabilities. 
 
-Reach out to us for personalized assistance. We’re here to help! 🎁
+Reach out to us for personalized assistance. We’re here to help! 
+
+## Related guides
+
+- [What are Overpayment scams, and how to protect yourself?](https://www.oopspam.com/blog/overpayment-scams)

@@ -188,3 +188,8 @@ The most reliable way to protect MetForm from spam is through a layered approach
 * Sustainable long-term spam prevention
 
 This combination prevents both automated and human-generated spam while maintaining accessibility and user experience.
+
+## Related guides
+
+- [How to block countries in MetForm?](https://www.oopspam.com/blog/how-to-block-countries-in-metform)
+- [How to Block VPN and Data Center IP Submissions in MetForm?](https://www.oopspam.com/blog/how-to-block-vpn-and-data-center-ip-submissions-in-metform)

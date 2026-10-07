@@ -48,7 +48,7 @@ CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Ap
 
 ### Why do companies use OOPSpam?
 
-1. **It replaces multiple tools**: OOPSpam can [replace Turnstile](https://www.oopspam.com/blog/best-turnstile-alternatives) (privacy-friendly CAPTCHA), reCAPTCHA (score based filtering), [Cloudflare](https://www.oopspam.com/blog/cloudflare-turnstile) (blocking countries), Akismet (content blocking). This simplifies workflows, so you don't have to switch between tools.
+1. **It replaces multiple tools**: OOPSpam can [replace Turnstile](https://www.oopspam.com/blog/best-turnstile-alternatives) (privacy-friendly CAPTCHA; see our [Turnstile alternative](https://www.oopspam.com/turnstile-alternative) page), [reCAPTCHA](https://www.oopspam.com/recaptcha-alternative) (score based filtering), [Cloudflare](https://www.oopspam.com/blog/cloudflare-turnstile) (blocking countries), Akismet (content blocking). This simplifies workflows, so you don't have to switch between tools.
 2. **Meets privacy & accessible needs:** It requires minimum data to detect abuse. OOPSpam works in server side, so your visitors don't have to solve any CAPTCHA or answer any questions. Making it [accessible for everyone](https://www.oopspam.com/blog/accessible-forms).
 3. **Pricing is transparent and scalable::** All plans come with unlimited websites. The pricing works well for businesses of all sizes.
 

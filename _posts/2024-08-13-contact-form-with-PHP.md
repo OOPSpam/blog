@@ -613,3 +613,7 @@ function sendEmail($submission) {
 A contact form on your website is a great way to connect with your visitors. Unfortunately, it also attracts unwanted attention from spammers and bad actors (aka hackers). To safeguard ourselves we implemented data validation & sanitization with anti-spam capabilities in our contact form. This article was for people who want to build safe and secure contact forms on their own. If you are a WordPress user, you could use one of the popular contact form plugins and install [OOPSpam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/) (that's us 👋) for spam protection.
 
 Happy spam-free day!
+
+## Related guides
+
+- [Adding Spam Protection To ASP.NET Core Web App Forms Using C#](https://www.oopspam.com/blog/spam-protection-for-netcore)

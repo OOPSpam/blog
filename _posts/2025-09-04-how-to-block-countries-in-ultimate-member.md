@@ -89,3 +89,8 @@ The main takeaway is this:
 * Cloudflare Firewall provides site-wide security, stopping abusive traffic before it hits your server.
 
 Together, these tools give you the flexibility and protection that Ultimate Member alone cannot provide, keeping your site safer while still letting the right users in.
+
+## Related guides
+
+- [How to Limit Form Submissions in Ultimate Member](https://www.oopspam.com/blog/how-to-limit-form-submissions-in-ultimate-member)
+- [How to Block VPN and Data Center IP Submissions in Ultimate Member?](https://www.oopspam.com/blog/how-to-block-vpn-and-data-center-ip-submissions-in-ultimate-member)

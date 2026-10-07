@@ -85,3 +85,7 @@ Cloudflare will now block all visitors from those countries before they ever rea
 Toolset Forms does not have built-in country blocking. But with [OOPSpam](https://www.oopspam.com/), you can filter submissions by region and keep your forms clean. For stronger protection, layer Cloudflare Firewall rules to block entire countries at the network level.
 
 This combination gives you control, flexibility, and security,  without disrupting legitimate visitors.
+
+## Related guides
+
+- [4 Ways to Protect Your Toolset Forms from Spam](https://www.oopspam.com/blog/4-ways-to-protect-your-toolset-forms-from-spam)

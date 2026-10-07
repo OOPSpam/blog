@@ -128,4 +128,9 @@ OOPSpam allows you to adjust spam sensitivity and set parameters for detecting s
 
 Spam protection isn’t just a “nice-to-have” for lead generation; it’s essential. 
 
-By investing in a robust solution like OOPSpam, you can maintain lead quality, protect your brand reputation, and increase operational efficiency. From machine-learning detection to privacy-focused features, OOPSpam provides the comprehensive protection you need without compromising user experience. 🛡️
+By investing in a robust solution like OOPSpam, you can maintain lead quality, protect your brand reputation, and increase operational efficiency. From machine-learning detection to privacy-focused features, OOPSpam provides the comprehensive protection you need without compromising user experience.
+
+## Related guides
+
+- [How Targeted Form Spam Can Drain Your Google Ads Budget](https://www.oopspam.com/blog/how-targeted-form-spam-can-drain-your-google-ads-budget)
+- [How to Block Fake Leads in Unbounce Forms?](https://www.oopspam.com/blog/how-to-block-fake-leads-in-unbounce-forms)

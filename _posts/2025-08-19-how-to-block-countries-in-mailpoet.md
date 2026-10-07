@@ -229,3 +229,7 @@ This dual approach allows you to:
 ## **Final thoughts**
 
 MailPoet doesn’t include built-in country-blocking for subscriptions, but that doesn’t mean you’re stuck. Using OOPSpam Anti-Spam, you can block form submissions from specific countries or languages. Pair it with MailPoet’s WooCommerce segmentation and Cloudflare’s firewall for full control over who can access your forms and receive your emails.
+
+## Related guides
+
+- [3 Ways to Protect Your MailPoet from Spam](https://www.oopspam.com/blog/3-ways-to-protect-your-mailpoet-from-spam)

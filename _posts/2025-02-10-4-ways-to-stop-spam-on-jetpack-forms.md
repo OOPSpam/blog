@@ -179,3 +179,8 @@ Here’s a quick recap of the best ways to stop spam on Jetpack Forms:
 * **hCaptcha** – Privacy-friendly CAPTCHA alternative, but requires user interaction.
 
 For the best balance of security, speed, and user experience, OOPSpam is the top recommendation. If you have any questions or need extra guidance, [OOPSpam’s support team](https://www.oopspam.com/#contact) is always here to help.
+
+## Related guides
+
+- [How to Limit Form Submissions in Jetpack Forms?](https://www.oopspam.com/blog/how-to-limit-form-submissions-in-jetpack-forms)
+- [How to Block VPN and Data Center IP Submissions in Jetpack Forms?](https://www.oopspam.com/blog/how-to-block-vpn-and-data-center-ip-submissions-in-jetpack-forms)

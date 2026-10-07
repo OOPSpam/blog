@@ -96,3 +96,7 @@ All websites eventually get hit by spammers. As a website grows and gets more tr
 That is all! Go on and create your forms.
 
 Happy spam-free day!
+
+## Related guides
+
+- [Troubleshooting Fluent Forms Not Sending Email Notifications](https://www.oopspam.com/blog/fluent-forms-notification-issue)

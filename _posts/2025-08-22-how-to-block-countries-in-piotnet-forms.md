@@ -160,3 +160,7 @@ Piotnet Forms doesn’t include country blocking by default, but with the right 
 Together, they give you flexible, layered defense against unwanted traffic.
 
 OOPSpam integrates with many other form builders as well, including [MailPoet](https://www.oopspam.com/blog/how-to-block-countries-in-mailpoet), [GiveWP Donation Forms](https://www.oopspam.com/blog/how-to-block-countries-in-givewp-donation-forms), [Paid Memberships Pro](https://www.oopspam.com/blog/how-to-block-countries-in-paid-memberships-pro), [Elementor Forms](https://www.oopspam.com/blog/how-to-block-countries-in-elementor-forms), and [more](https://wordpress.org/plugins/oopspam-anti-spam/#:~:text=Supported%20form%20%26%20comment%20solutions%3A), so if you switch platforms in the future, you won’t lose protection.
+
+## Related guides
+
+- [4 Ways to Protect Your Piotnet Forms from Spam](https://www.oopspam.com/blog/4-ways-to-protect-your-piotnet-forms-from-spam)

@@ -145,3 +145,8 @@ All websites eventually get hit by spammers. As a store grows and gets more traf
 That is all! Go on and create your forms.
 
 Happy spam-free day!
+
+## Related guides
+
+- [WooCommerce vs SureCart: Which Plugin Should You Use?](https://www.oopspam.com/blog/woocommerce-vs-surecart-which-plugin-should-you-use)
+- [How to Block Orders by Billing Address in WooCommerce](https://www.oopspam.com/blog/how-to-block-orders-by-billing-address-in-woocommerce)

@@ -202,6 +202,10 @@ With OOPSpam, you can ensure your website stays clean, secure, and user-friendly
 
 ## Final Thoughts
 
-Spam might seem like a small problem, but it can create big headaches—slowing down your site, annoying your users, and even risking your security. 😟 But with automated spam filtering, you can tackle these issues head-on. 
+Spam might seem like a small problem, but it can create big headaches—slowing down your site, annoying your users, and even risking your security. But with automated spam filtering, you can tackle these issues head-on. 
 
 With tools like OOPSpam, you can enhance user trust, improve security, and ensure smooth website operations. Try the [OOPSpam API for free](https://app.oopspam.com/Identity/Account/Register) and discover how it can transform your spam management while keeping your website secure and professional.
+
+## Related guides
+
+- [How spammers abuse GitHub, Microsoft, and Google](https://www.oopspam.com/blog/abused-by-spammers)

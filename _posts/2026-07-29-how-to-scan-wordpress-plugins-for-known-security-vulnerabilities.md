@@ -95,3 +95,7 @@ Good fit if you already use the WPScan database or CLI on other sites and want t
 ## **Final thoughts**
 
 Scan plugins on a fixed schedule, not just when something feels wrong. OOPVulns is the strongest starting point because it covers both disclosed vulnerabilities and plugins likely to become a problem before a CVE ever exists. Pair it with prompt patching, and you close off most of the paths attackers use against WordPress sites.
+
+## Related guides
+
+- [Why Updating a WordPress Plugin Is Not Always Enough](https://www.oopspam.com/blog/why-updating-a-wordpress-plugin-is-not-always-enough)

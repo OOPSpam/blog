@@ -243,3 +243,8 @@ While Paid Memberships Pro doesn’t offer built-in country restrictions, you st
 * Pair both with Cloudflare firewall rules if you need to block entire countries from accessing your website.
 
 Need help implementing these? Visit the OOPSpam [documentation](https://www.oopspam.com/help) or reach out to support.
+
+## Related guides
+
+- [How to Limit Form Submissions in Paid Memberships Pro (PMPro)](https://www.oopspam.com/blog/how-to-limit-form-submissions-in-paid-memberships-pro-pmpro)
+- [How to Block VPN and Data Center IP Submissions in Paid Memberships Pro?](https://www.oopspam.com/blog/how-to-block-vpn-and-data-center-ip-submissions-in-paid-memberships-pro)

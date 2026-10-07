@@ -191,3 +191,7 @@ Kadence Forms don’t have a built-in way to block countries. OOPSpam Anti-Spam 
 For broader protection, Cloudflare lets you block entire regions from reaching your site altogether. Together, they give you the flexibility to filter traffic and protect your forms from abuse, without sacrificing legitimate engagement.
 
 Need help getting started? Check out the OOPSpam [documentation](https://www.oopspam.com/help) or [contact the team](https://www.oopspam.com/#contact) for setup support.
+
+## Related guides
+
+- [How to Limit Form Submissions in Kadence Form?](https://www.oopspam.com/blog/how-to-limit-form-submissions-in-kadence-form)

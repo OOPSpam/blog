@@ -95,3 +95,7 @@ Build your audience only from people who subscribed through your own forms, and 
 ## **Final takeaway**
 
 Stopping spam in Mailchimp is not a one-time fix. Scan your audience regularly, keep double opt-in on, authenticate your domain, write clean content, and only ever grow your list organically. Each layer makes your account harder for spam to reach and your campaigns more likely to land in the inbox.
+
+## Related guides
+
+- [How to verify and clean up your Mailchimp email list?](https://www.oopspam.com/blog/how-to-verify-and-clean-up-your-mailchimp-email-list)

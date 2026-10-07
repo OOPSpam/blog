@@ -115,3 +115,7 @@ Turnstile improves UX, avoids Google dependencies, and works seamlessly with Ava
 The most reliable way to protect Avada Forms from spam is to layer protection: Use Honeypot for invisible defense, Turnstile or reCAPTCHA for real-user verification, and OOPSpam for advanced, machine learning-powered filtering.
 
 Together, these tools keep your website clean, your inbox manageable, and your users’ experience smooth, without compromising on speed or privacy.
+
+## Related guides
+
+- [How to Limit Form Submissions in Avada Forms?](https://www.oopspam.com/blog/how-to-limit-form-submissions-in-avada-forms)

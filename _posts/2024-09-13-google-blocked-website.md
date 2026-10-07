@@ -41,3 +41,7 @@ Once you've cleaned up your site and fixed any issues with your SSL Certificate,
 ### Step 5: Prevent Future Warnings
 
 To avoid future Google warnings, it's important to keep your website up to date and secure. This means regularly scanning your site for malware, keeping all software and plugins up-to-date, [setting up automated domain reputation monitoring](https://www.oopspam.com/blog/domain-reputation), and using strong passwords for all accounts associated with your website.
+
+## Related guides
+
+- [How spammers abuse GitHub, Microsoft, and Google](https://www.oopspam.com/blog/abused-by-spammers)

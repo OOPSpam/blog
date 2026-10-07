@@ -111,3 +111,7 @@ All websites eventually get hit by spammers. As a website grows and gets more tr
 That is all! Go on and create your forms.
 
 Happy spam-free day!
+
+## Related guides
+
+- [How to Limit Form Submissions in GiveWP Donation Forms?](https://www.oopspam.com/blog/how-to-limit-form-submissions-in-givewp-donation-forms)

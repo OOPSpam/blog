@@ -122,3 +122,7 @@ Not every bad address looks obviously fake. OOPSpam flags several types:
 Letting these accumulate quietly raises your bounce rate and can get your domain flagged by email providers, even if your campaigns themselves are legitimate.
 
 Scanning regularly keeps your EmailOctopus list healthy and your campaigns performing the way they should. No exports, no third-party tools, no manual cleanup. Just connect and scan.
+
+## Related guides
+
+- [4 ways to stop spam in EmailOctopus](https://www.oopspam.com/blog/4-ways-to-stop-spam-in-emailoctopus)

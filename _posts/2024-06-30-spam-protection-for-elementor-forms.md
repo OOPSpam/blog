@@ -126,3 +126,7 @@ Once you put your website behind Cloudflare, you have [an option to block countr
 All websites eventually get hit by spammers. As a website grows and gets more traffic it attracts more serious spammers with advance bots. Both honeypot and reCAPTCHA will protect your website to a certain degree but they are not enough for targeted spam attacks, manual spam and sophisticated bots. I hope this article helps you find a solution for your spam problem.
 
 That is all!
+
+## Related guides
+
+- [Troubleshooting Elementor Forms Not Sending Email Notifications](https://www.oopspam.com/blog/elementorforms-notification-issue)

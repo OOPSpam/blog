@@ -87,3 +87,7 @@ To implement this, use the *"Language Allowlist"* filter to limit submissions to
 ## Final thoughts
 
 Nowadays spamming forms is seen as a marketing channel by many people. All form builders, including Elementor Forms, get spam, and limiting Elementor Forms submissions can be a effective tool to combat this. Tools like OOPSpam can help to automatically limit submissions to your users only, but you also have the option to manually block unwanted messages.
+
+## Related guides
+
+- [Troubleshooting Elementor Forms Not Sending Email Notifications](https://www.oopspam.com/blog/elementorforms-notification-issue)

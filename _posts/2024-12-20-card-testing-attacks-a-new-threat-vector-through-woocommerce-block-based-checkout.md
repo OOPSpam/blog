@@ -70,3 +70,7 @@ Blocked entries will be listed under the Form Spam Entries.
 For store owners using Block-based Checkout, it's crucial to understand that traditional security solutions may need to be supplemented with specific measures targeting the Store API endpoints. Regular monitoring of order patterns and implementing the suggested security measures can help protect your store from these sophisticated attacks. To wrap things up on a positive note, here's a store with no failed orders—definitely a good mood moment!
 
 ![Processing orders in Woo](/blog/assets/posts/legitorders.jpg "Processing orders in Woo")
+
+## Related guides
+
+- [What are Overpayment scams, and how to protect yourself?](https://www.oopspam.com/blog/overpayment-scams)

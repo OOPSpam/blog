@@ -164,3 +164,10 @@ Many sites use both: Cloudflare for broad network-level security, and OOPSpam fo
 ## **Final thoughts**
 
 [Block countries with Cloudflare](https://www.oopspam.com/blog/blocking-countries-from-accessing-your-website-using-cloudflare) when you need to restrict access to your whole site for legal or security reasons. Use OOPSpam when your actual goal is stopping spam: it lets you filter by country at the form level without shutting real visitors out of your site. For most businesses fighting spam rather than compliance issues, OOPSpam is the more precise, less disruptive choice.
+
+## Related guides
+
+- [How to block countries in MetForm?](https://www.oopspam.com/blog/how-to-block-countries-in-metform)
+- [How to block countries in  ACF Frontend Forms?](https://www.oopspam.com/blog/how-to-block-countries-in-acf-frontend-forms)
+- [How to Block Foreign-Language Spam in WordPress Forms](https://www.oopspam.com/blog/how-to-block-foreign-language-spam-in-wordpress-forms)
+- [How to Block Countries in Super Forms?](https://www.oopspam.com/blog/how-to-block-countries-in-super-forms)

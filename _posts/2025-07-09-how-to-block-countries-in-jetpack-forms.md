@@ -181,3 +181,8 @@ Jetpack Forms is a simple tool, but when it comes to spam protection, you’ll n
 * You gain insight into blocked entries through logs
 
 OOPSpam integrates smoothly with, [WPForms](https://www.oopspam.com/blog/how-to-block-countries-in-wpforms), [Contact Form 7](https://www.oopspam.com/blog/how-to-block-countries-in-contact-form-7), [Fluent Forms](https://www.oopspam.com/blog/how-to-block-countries-in-fluent-forms), [SureForms](https://www.oopspam.com/blog/how-to-block-countries-in-sureforms), and more.
+
+## Related guides
+
+- [How to Limit Form Submissions in Jetpack Forms?](https://www.oopspam.com/blog/how-to-limit-form-submissions-in-jetpack-forms)
+- [How to Block VPN and Data Center IP Submissions in Jetpack Forms?](https://www.oopspam.com/blog/how-to-block-vpn-and-data-center-ip-submissions-in-jetpack-forms)
