@@ -5,7 +5,7 @@ date: 2026-04-02T17:29:00.000+08:00
 author: chazie
 image: /blog/assets/posts/toolset_meta_header.png
 description: Protect Toolset Forms from spam using reCAPTCHA, honeypots,
-  OOPSpam, and firewall protection. Simple steps to reduce spam and improve form
+  oopspam, and firewall protection. Simple steps to reduce spam and improve form
   security.
 tags:
   - Toolset Forms
@@ -15,7 +15,7 @@ tags:
 
 If you’re seeing spam in your [Toolset Forms](https://toolset.com/home/cred/), the best approach is to build protection in layers. Start by enabling Google reCAPTCHA and adding a honeypot field to block most automated submissions early.
 
-From there, strengthen your setup with a filtering tool like OOPSpam or a firewall to catch more advanced or persistent spam. These methods are easy to manage and provide solid protection for most Toolset websites.
+From there, strengthen your setup with a filtering tool like oopspam or a firewall to catch more advanced or persistent spam. These methods are easy to manage and provide solid protection for most Toolset websites.
 
 ### **Why Toolset Forms Get Spam**
 
@@ -61,32 +61,32 @@ Why this works well:
 
 Honeypots are lightweight and effective, but they only stop basic spam. They should be used alongside other methods, not on their own.
 
-## **3. Add OOPSpam for Advanced Filtering**
+## **3. Add oopspam for Advanced Filtering**
 
-[OOPSpam](https://www.oopspam.com/) (that's us 👋) adds a stronger layer of protection by analyzing each submission instead of relying on user challenges. Unlike [CAPTCHA](https://www.oopspam.com/blog/best-captcha-alternatives), it does not ask users to complete anything. It runs in the background and evaluates signals such as:
+[oopspam](https://www.oopspam.com/) (that's us 👋) adds a stronger layer of protection by analyzing each submission instead of relying on user challenges. Unlike [CAPTCHA](https://www.oopspam.com/blog/best-captcha-alternatives), it does not ask users to complete anything. It runs in the background and evaluates signals such as:
 
 * Message content and patterns
 * IP reputation and behavior
 * Repeated submissions from the same source
 * Use of [VPNs](https://www.oopspam.com/blog/how-to-block-vpn-and-data-center-ip-submissions-in-toolset-forms), proxies, or disposable emails
-* [Create an account](https://app.oopspam.com/Identity/Account/Login) on the OOPSpam website
+* [Create an account](https://app.oopspam.com/Identity/Account/Login) on the oopspam website
 
 This makes it effective against spam that looks more like real user activity.
 
 ### **How to set it up for Toolset Forms**
 
-Start by installing the plugin. Go to **Plugins → Add New**, search for **“[OOPSpam Anti-Spam](https://www.oopspam.com/wordpress)”**, then install and activate it.
+Start by installing the plugin. Go to **Plugins → Add New**, search for **“[oopspam Anti-Spam](https://www.oopspam.com/wordpress)”**, then install and activate it.
 
-![Add OOPSpam for Advanced Filtering](/blog/assets/posts/oopspam-anti-spam-overview.png "Add OOPSpam for Advanced Filtering")
+![Add oopspam for Advanced Filtering](/blog/assets/posts/oopspam-anti-spam-overview.png "Add oopspam for Advanced Filtering")
 
 Once activated, connect your website using an API key:
 
-* [Create an account](https://app.oopspam.com/Identity/Account/Login) on the OOPSpam website
+* [Create an account](https://app.oopspam.com/Identity/Account/Login) on the oopspam website
 * Copy your API key from the dashboard
 
 ![Copy your API key from the dashboard](/blog/assets/posts/oopspam-dashboard-api.png "Copy your API key from the dashboard")
 
-Then in WordPress, go to **Settings → OOPSpam** and paste your API key and save.
+Then in WordPress, go to **Settings → oopspam** and paste your API key and save.
 
 ![Paste your API key and save](/blog/assets/posts/oopspam-api-key.png "Paste your API key and save")
 
@@ -94,7 +94,7 @@ After connecting, scroll through the settings and enable spam protection for **T
 
 ![Enable spam protection for Toolset Forms](/blog/assets/posts/toolset-forms-protection.png "Enable spam protection for Toolset Forms")
 
-Once enabled, OOPSpam will begin filtering submissions automatically.
+Once enabled, oopspam will begin filtering submissions automatically.
 
 ### **Adjusting your settings**
 
@@ -111,11 +111,11 @@ If needed, you can fine-tune:
 
 If unsure, keep the default “moderate” setting and adjust based on your results.
 
-### **How OOPSpam Improves Spam Filtering**
+### **How oopspam Improves Spam Filtering**
 
-OOPSpam focuses on behavior and content, not just form interaction. This helps detect spam that basic tools may miss.
+oopspam focuses on behavior and content, not just form interaction. This helps detect spam that basic tools may miss.
 
-For many Toolset Forms setups, OOPSpam can handle most of the filtering on its own. You do not need to rely on reCAPTCHA if it is already working effectively.
+For many Toolset Forms setups, oopspam can handle most of the filtering on its own. You do not need to rely on reCAPTCHA if it is already working effectively.
 
 ## **4. Use a Firewall or Web Application Firewall (WAF)**
 
@@ -142,7 +142,7 @@ A firewall is especially useful if your site receives high traffic and sees repe
 
 Toolset Forms spam is manageable once you apply the right layers.
 
-Start with reCAPTCHA to handle basic bots. Then add OOPSpam to filter more advanced submissions. If needed, use a firewall to block unwanted traffic before it reaches your site.
+Start with reCAPTCHA to handle basic bots. Then add oopspam to filter more advanced submissions. If needed, use a firewall to block unwanted traffic before it reaches your site.
 
 Spam patterns change over time, so it helps to review your form activity regularly. Check logs, look for repeated patterns, and adjust your settings as needed.
 

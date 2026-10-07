@@ -5,14 +5,14 @@ date: 2025-11-17T13:50:00.000+08:00
 author: chazie
 image: /blog/assets/posts/mp_rt.jpg
 description: Learn how to limit form submissions in MemberPress using its
-  Registration Restrictions add-on and OOPSpam for advanced spam protection.
+  Registration Restrictions add-on and oopspam for advanced spam protection.
 tags:
   - MemberPress
   - Rate-limiting
 ---
 ![MemberPress](/blog/assets/posts/memberpress-homepage.png "MemberPress")
 
-Limiting form submissions in [MemberPress](https://memberpress.com/) helps you control registrations, stop spam, and keep your membership site healthy. The best methods include using the Membership Registration Restrictions add-on for core membership control and **OOPSpam Anti-Spam** for advanced submission limits and rate-limiting features. Together, these tools help you prevent abuse, reduce fake signups, and keep real members engaged.
+Limiting form submissions in [MemberPress](https://memberpress.com/) helps you control registrations, stop spam, and keep your membership site healthy. The best methods include using the Membership Registration Restrictions add-on for core membership control and **oopspam Anti-Spam** for advanced submission limits and rate-limiting features. Together, these tools help you prevent abuse, reduce fake signups, and keep real members engaged.
 
 ## **Method 1: Use MemberPress Registration Restrictions Add-On**
 
@@ -71,19 +71,19 @@ If you apply restrictions on individual memberships, those will override global 
 
 You can also set restrictions for coupons and corporate accounts, giving full flexibility to control how members and sub-accounts register.
 
-## **Method 2: Add OOPSpam for Advanced Control**
+## **Method 2: Add oopspam for Advanced Control**
 
-If you want to block spam and [rate-limit submissions](https://www.oopspam.com/blog/protecting-forms-with-rate-limiting-in-wordpress-using-oopspam) beyond MemberPress’s native options, use **[OOPSpam](https://www.oopspam.com/)** (that’s us 👋). It adds machine-learning spam detection and rate-limiting to your WordPress forms.
+If you want to block spam and [rate-limit submissions](https://www.oopspam.com/blog/protecting-forms-with-rate-limiting-in-wordpress-using-oopspam) beyond MemberPress’s native options, use **[oopspam](https://www.oopspam.com/)** (that’s us 👋). It adds machine-learning spam detection and rate-limiting to your WordPress forms.
 
-![OOPSpam ](/blog/assets/posts/oopspam-anti-spam-overview.png "OOPSpam ")
+![oopspam ](/blog/assets/posts/oopspam-anti-spam-overview.png "oopspam ")
 
-### **Install and Activate OOPSpam**
+### **Install and Activate oopspam**
 
-Go to **Plugins → Add New**, search for **[OOPSpam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/)**, and install it. [Create an account](https://app.oopspam.com/Identity/Account/Login) at **OOPSpam.com** and copy your **API Key**.
+Go to **Plugins → Add New**, search for **[oopspam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/)**, and install it. [Create an account](https://app.oopspam.com/Identity/Account/Login) at **oopspam.com** and copy your **API Key**.
 
-![OOPSpam Dashboard](/blog/assets/posts/oopspam-dashboard-api.png "OOPSpam Dashboard")
+![oopspam Dashboard](/blog/assets/posts/oopspam-dashboard-api.png "oopspam Dashboard")
 
-In WordPress, go to **OOPSpam → General Settings** and **paste your API key**.
+In WordPress, go to **oopspam → General Settings** and **paste your API key**.
 
 ![Paste your API key](/blog/assets/posts/oopspam-api-key.png "Paste your API key")
 
@@ -93,7 +93,7 @@ Activate spam protection for MemberPress forms. Click **Save Changes.**
 
 ### **Enable Rate Limiting**
 
-Open the **Rate Limiting** tab in OOPSpam settings and toggle **Enable Rate Limiting** ON.
+Open the **Rate Limiting** tab in oopspam settings and toggle **Enable Rate Limiting** ON.
 
 ![Enable Rate Limiting](/blog/assets/posts/enabled-rate-limiting-settings.png "Enable Rate Limiting")
 
@@ -108,7 +108,7 @@ Click **Save Changes** when done.
 
 ### **Strengthen Spam Filtering**
 
-For stronger protection, turn on these OOPSpam filters:
+For stronger protection, turn on these oopspam filters:
 
 * VPN, Proxy, or TOR blocking
 * [Country-based filtering](https://www.oopspam.com/blog/how-to-block-countries-in-memberpress)
@@ -123,9 +123,9 @@ These filters ensure that only legitimate users can access your forms while keep
 1. Always review your error messages for clarity.
 2. Regularly update blocked IPs and email domains.
 3. Combine global restrictions with membership-specific limits for better precision.
-4. Use [OOPSpam logs](https://help.oopspam.com/wordpress/form-entries/) to monitor failed or abusive attempts.
+4. Use [oopspam logs](https://help.oopspam.com/wordpress/form-entries/) to monitor failed or abusive attempts.
 5. Test your signup form after every configuration change.
 
 ## **Final thoughts**
 
-Start by enabling the Membership Registration Restrictions add-on to control how many users can sign up, and integrate OOPSpam Anti-Spam for rate-limiting and spam protection. This simple setup keeps your membership system efficient, secure, and fair for real users, so you can focus on growth, not cleanup.
+Start by enabling the Membership Registration Restrictions add-on to control how many users can sign up, and integrate oopspam Anti-Spam for rate-limiting and spam protection. This simple setup keeps your membership system efficient, secure, and fair for real users, so you can focus on growth, not cleanup.

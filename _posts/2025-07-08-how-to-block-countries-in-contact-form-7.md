@@ -5,7 +5,7 @@ date: 2025-07-08T04:13:00.000Z
 last_modified_at: 2026-01-06T11:36:00.000+08:00
 author: chazie
 image: /blog/assets/posts/cf7-block-countries.jpg
-description: Block countries in Contact Form 7 using OOPSpam for smart filtering
+description: Block countries in Contact Form 7 using oopspam for smart filtering
   and logs, or Cloudflare for full-site blocking. Stop regional spam before it
   reaches you.
 tags:
@@ -20,22 +20,22 @@ But that doesn’t mean you’re stuck. You can still protect your forms by inte
 
 In this guide, I’ll show you how to:
 
-* Use OOPSpam for advanced, intelligent country filtering in Contact Form 7.
+* Use oopspam for advanced, intelligent country filtering in Contact Form 7.
 * Set up Cloudflare firewall rules to block access to your entire site from specific countries.
 
 ### **Contact Form 7 Has No Built-In Country Blocking (But Here's What You Can Do)**
 
 By default, Contact Form 7 does not include any native options for blocking form submissions by country or IP address. There's no setting in the form builder that lets you restrict submissions based on geolocation, language, or source.
 
-If you’re experiencing spam from a specific country or region, you’ll need an anti-spam plugin like **[OOPSpam](https://www.oopspam.com/)** (that’s us 👋) to extend Contact Form 7's capabilities.
+If you’re experiencing spam from a specific country or region, you’ll need an anti-spam plugin like **[oopspam](https://www.oopspam.com/)** (that’s us 👋) to extend Contact Form 7's capabilities.
 
-## **1. Block Countries in Contact Form 7 Using OOPSpam**
+## **1. Block Countries in Contact Form 7 Using oopspam**
 
-![OOPSpam Anti-Spam](/blog/assets/posts/oopspam-anti-spam-overview.png "OOPSpam Anti-Spam")
+![oopspam Anti-Spam](/blog/assets/posts/oopspam-anti-spam-overview.png "oopspam Anti-Spam")
 
-**[OOPSpam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/)** is one of the tools you can use to [protect Contact Form 7 from spam](https://www.oopspam.com/spam-filter-for-contactform7)—especially when it comes from rotating IPs, bots using VPNs, or anonymized servers. It offers real-time, machine learning-backed filtering with advanced options for country-based restrictions.
+**[oopspam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/)** is one of the tools you can use to [protect Contact Form 7 from spam](https://www.oopspam.com/spam-filter-for-contactform7)—especially when it comes from rotating IPs, bots using VPNs, or anonymized servers. It offers real-time, machine learning-backed filtering with advanced options for country-based restrictions.
 
-### **What OOPSpam Adds to Contact Form 7**
+### **What oopspam Adds to Contact Form 7**
 
 * **Country Filtering**: Block or allow submissions from specific countries.
 * **Machine Learning-Based Filtering**: Detects spam using machine learning and behavior patterns.
@@ -43,17 +43,17 @@ If you’re experiencing spam from a specific country or region, you’ll need a
 * **Block by Language**: Filter out submissions written in unwanted languages.
 * **Block VPNs, Tor, Proxies, and Server-Based Spam**: Automatically block anonymized or bot-driven sources.
 
-These features are not possible with Contact Form 7 alone—but become available instantly through OOPSpam integration.
+These features are not possible with Contact Form 7 alone—but become available instantly through oopspam integration.
 
 ### **How to Set It Up**
 
-![OOPSpam dashboard ](/blog/assets/posts/oopspam-dashboard-api.png "OOPSpam dashboard ")
+![oopspam dashboard ](/blog/assets/posts/oopspam-dashboard-api.png "oopspam dashboard ")
 
-First, install the **OOPSpam Anti-Spam plugin** from the WordPress Plugin Directory. Once activated, open your WordPress dashboard and go to **OOPSpam Anti-Spam > Settings**.
+First, install the **oopspam Anti-Spam plugin** from the WordPress Plugin Directory. Once activated, open your WordPress dashboard and go to **oopspam Anti-Spam > Settings**.
 
 ![Enter your API key](/blog/assets/posts/oopspam-api-key.png "Enter your API key")
 
-Enter your **API key** (you can get this from your [OOPSpam account](https://app.oopspam.com/Identity/Account/Register)). Once added, **Activate** **Spam Protection**.
+Enter your **API key** (you can get this from your [oopspam account](https://app.oopspam.com/Identity/Account/Register)). Once added, **Activate** **Spam Protection**.
 
 ![Activate Spam Protection in Contact Form 7](/blog/assets/posts/activate-contact-form-7.png "Activate Spam Protection in Contact Form 7")
 
@@ -61,11 +61,11 @@ Scroll down to the **Country Filtering** section. You can choose to either **blo
 
 ![Country Filtering section](/blog/assets/posts/country-filtering-settings.png "Country Filtering section")
 
-Pick the countries from the dropdown list, save your settings, and you’re all set. OOPSpam now filters every submission through Contact Form 7 in real time—without affecting your site's accessibility.
+Pick the countries from the dropdown list, save your settings, and you’re all set. oopspam now filters every submission through Contact Form 7 in real time—without affecting your site's accessibility.
 
 ### **Review Blocked Submissions**
 
-Unlike [Contact Form 7](https://www.oopspam.com/blog/oopspam-supports-contact-form-7), which offers no built-in spam reporting, **OOPSpam gives you full visibility into your [submission logs](https://help.oopspam.com/wordpress/form-entries/)**—both directly in your WordPress dashboard and in the OOPSpam web dashboard.
+Unlike [Contact Form 7](https://www.oopspam.com/blog/oopspam-supports-contact-form-7), which offers no built-in spam reporting, **oopspam gives you full visibility into your [submission logs](https://help.oopspam.com/wordpress/form-entries/)**—both directly in your WordPress dashboard and in the oopspam web dashboard.
 
 In your WordPress admin, you can view:
 
@@ -81,9 +81,9 @@ Each log entry shows you:
 * Filtering reasons
 * Timestamp and response metadata
 
-For deeper insights, you can also visit your OOPSpam dashboard, where logs are displayed in a more detailed format. Here’s an example:
+For deeper insights, you can also visit your oopspam dashboard, where logs are displayed in a more detailed format. Here’s an example:
 
-![OOPSpam submission logs](/blog/assets/posts/screenshot-1.png "OOPSpam submission logs")
+![oopspam submission logs](/blog/assets/posts/screenshot-1.png "oopspam submission logs")
 
 These insights help you catch patterns, fine-tune your filtering rules, and make data-backed decisions on how to handle future submissions.
 
@@ -169,7 +169,7 @@ From now on, traffic from those countries will be denied access to your entire s
       <td>Not suitable for country-level filtering</td>
     </tr>
     <tr>
-      <td><span class="underline">OOPSpam Plugin</span></td>
+      <td><span class="underline">oopspam Plugin</span></td>
       <td>Form submissions only</td>
       <td>Yes</td>
       <td>Advanced spam filtering, country/language/IP control</td>
@@ -185,6 +185,6 @@ From now on, traffic from those countries will be denied access to your entire s
 
 ## **Final Thoughts**
 
-Contact Form 7 doesn’t include country-based filtering on its own, but that doesn’t mean you can’t protect your forms. OOPSpam fills in the gaps by offering machine learning-based spam detection, [rate limiting](https://www.oopspam.com/blog/how-to-limit-form-submissions-in-contact-form-7), [IP filtering](https://www.oopspam.com/blog/how-to-block-vpn-and-data-center-ip-submissions-in-contact-form-7), country blocking, and full submission logging.
+Contact Form 7 doesn’t include country-based filtering on its own, but that doesn’t mean you can’t protect your forms. oopspam fills in the gaps by offering machine learning-based spam detection, [rate limiting](https://www.oopspam.com/blog/how-to-limit-form-submissions-in-contact-form-7), [IP filtering](https://www.oopspam.com/blog/how-to-block-vpn-and-data-center-ip-submissions-in-contact-form-7), country blocking, and full submission logging.
 
-OOPSpam also supports [WPForms](https://www.oopspam.com/blog/how-to-block-countries-in-wpforms), [Fluent Forms](https://www.oopspam.com/blog/how-to-block-countries-in-fluent-forms), Elementor Forms, [SureForms](https://www.oopspam.com/blog/how-to-block-countries-in-sureforms), and more.
+oopspam also supports [WPForms](https://www.oopspam.com/blog/how-to-block-countries-in-wpforms), [Fluent Forms](https://www.oopspam.com/blog/how-to-block-countries-in-fluent-forms), Elementor Forms, [SureForms](https://www.oopspam.com/blog/how-to-block-countries-in-sureforms), and more.

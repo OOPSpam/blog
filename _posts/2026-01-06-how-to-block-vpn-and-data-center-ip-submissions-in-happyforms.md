@@ -5,13 +5,13 @@ date: 2026-01-06T11:36:00.000+08:00
 author: chazie
 image: /blog/assets/posts/header_happyforms_block.jpg
 description: Learn how to block VPN and data center IP submissions in HappyForms
-  using OOPSpam or Cloudflare to reduce spam and protect form entries.
+  using oopspam or Cloudflare to reduce spam and protect form entries.
 tags:
   - HappyForms
 ---
 ![HappyForms](/blog/assets/posts/wordpress-happyforms.png "HappyForms")
 
-[HappyForms](https://happyforms.io/) cannot block VPN or data center IP submissions on its own. To stop this type of spam, you must use a third-party anti-spam plugin like [OOPSpam](https://www.oopspam.com/) or configure Cloudflare security rules.
+[HappyForms](https://happyforms.io/) cannot block VPN or data center IP submissions on its own. To stop this type of spam, you must use a third-party anti-spam plugin like [oopspam](https://www.oopspam.com/) or configure Cloudflare security rules.
 
 Spam submissions today are not simple bots. Most form abuse now comes from VPNs, cloud infrastructure, and automated systems designed to look like real users. This is why many [HappyForms users](https://www.oopspam.com/integrations/spam-protection-for-happyforms) still see spam even with honeypots or CAPTCHA enabled.
 
@@ -29,33 +29,33 @@ These submissions often:
 
 Without network-level detection, HappyForms cannot tell these submissions apart from real users.
 
-## **Method 1: Block VPN and Data Center IPs Using OOPSpam** 
+## **Method 1: Block VPN and Data Center IPs Using oopspam** 
 
-[OOPSpam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/) (that’s us 👋) adds VPN, proxy, TOR, and cloud IP detection directly to HappyForms. OOPSpam integrates with HappyForms and filters spam before submissions are stored. 
+[oopspam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/) (that’s us 👋) adds VPN, proxy, TOR, and cloud IP detection directly to HappyForms. oopspam integrates with HappyForms and filters spam before submissions are stored. 
 
 > Full integration requires HappyForms Pro.
 
 This method is recommended because it works at the form level, avoids user friction, and provides detailed control.
 
-### **Step-by-Step: Enable OOPSpam for HappyForms**
+### **Step-by-Step: Enable oopspam for HappyForms**
 
-![OOPSpam ](/blog/assets/posts/oopspam-anti-spam-overview.png "OOPSpam ")
+![oopspam ](/blog/assets/posts/oopspam-anti-spam-overview.png "oopspam ")
 
 **Step 1: Install the Plugin**
 
-Install and activate the **OOPSpam Anti-Spam** plugin from the WordPress Plugin Repository.
+Install and activate the **oopspam Anti-Spam** plugin from the WordPress Plugin Repository.
 
-**Step 2: Create an OOPSpam Account**
+**Step 2: Create an oopspam Account**
 
-![Create an OOPSpam Account](/blog/assets/posts/oopspam-dashboard-api.png "Create an OOPSpam Account")
+![Create an oopspam Account](/blog/assets/posts/oopspam-dashboard-api.png "Create an oopspam Account")
 
-[Create an account](https://app.oopspam.com/Identity/Account/Login) in the OOPSpam dashboard and generate your API key.
+[Create an account](https://app.oopspam.com/Identity/Account/Login) in the oopspam dashboard and generate your API key.
 
 **Step 3: Connect the API Key**
 
 ![Connect the API Key](/blog/assets/posts/oopspam-api-key.png "Connect the API Key")
 
-Go to **OOPSpam → General Settings**, paste your API key, and save.
+Go to **oopspam → General Settings**, paste your API key, and save.
 
 **Step 4: Enable HappyForms Protection**
 
@@ -80,7 +80,7 @@ Save your changes. No configuration inside HappyForms is required.
 
 Manual moderation gives you precise control over repeat or borderline abuse.
 
-In **OOPSpam → Manual Moderation**, you can:
+In **oopspam → Manual Moderation**, you can:
 
 * **Block specific IP addresses or full IP ranges** - This is useful for stopping a known abusive cloud provider or hosting network.
 * **Block email addresses** - Prevent repeat offenders from submitting forms again.
@@ -89,9 +89,9 @@ In **OOPSpam → Manual Moderation**, you can:
 
 This option is especially useful when spam is persistent but not fully automated.
 
-### **What Happens After OOPSpam Is Enabled**
+### **What Happens After oopspam Is Enabled**
 
-Once enabled, submissions from VPNs and cloud infrastructure are filtered automatically. [Spam never reaches your HappyForms](https://www.oopspam.com/blog/5-ways-to-protect-your-happyforms-from-spam) entries or inbox. You can review blocked submissions in the [OOPSpam logs](https://help.oopspam.com/wordpress/form-entries/) if needed.
+Once enabled, submissions from VPNs and cloud infrastructure are filtered automatically. [Spam never reaches your HappyForms](https://www.oopspam.com/blog/5-ways-to-protect-your-happyforms-from-spam) entries or inbox. You can review blocked submissions in the [oopspam logs](https://help.oopspam.com/wordpress/form-entries/) if needed.
 
 For most HappyForms users, this method offers the best balance between security and usability.
 
@@ -129,4 +129,4 @@ Because of this, Cloudflare rules should be monitored closely and used carefully
 
 HappyForms is a reliable form builder, but it cannot block VPN or data center spam on its own. If you want fewer fake leads, cleaner submissions, and less time wasted reviewing spam, you need external protection.
 
-For most HappyForms users, OOPSpam is the simplest and safest solution. Cloudflare adds another layer when traffic volume or abuse becomes severe. Use the right tool for the right layer, and your forms will stay clean.
+For most HappyForms users, oopspam is the simplest and safest solution. Cloudflare adds another layer when traffic volume or abuse becomes severe. Use the right tool for the right layer, and your forms will stay clean.

@@ -5,7 +5,7 @@ date: 2025-08-08T09:39:00.000+08:00
 last_modified_at: 2026-01-06T11:36:00.000+08:00
 author: chazie
 image: /blog/assets/posts/header_pmp.png
-description: Paid Memberships Pro lacks native country blocking, use OOPSpam for
+description: Paid Memberships Pro lacks native country blocking, use oopspam for
   advanced filtering or custom code and Cloudflare for broader access control.
 tags:
   - Paid Memberships Pro
@@ -18,7 +18,7 @@ Do you want to [prevent users from certain countries](https://www.oopspam.com/bl
 In this guide, we’ll show you two methods:
 
 * A custom code recipe that restricts registration by country for specific membership levels
-* A plugin-based approach using **[OOPSpam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/)** (that’s us 👋), ideal for blocking form submissions and spammy registrations
+* A plugin-based approach using **[oopspam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/)** (that’s us 👋), ideal for blocking form submissions and spammy registrations
 
 ### **No Built-In Country Blocking in PMPro**
 
@@ -85,11 +85,11 @@ add_filter('pmpro_registration_checks', 'my_pmpro_registration_checks', 10, 3);
 
 Once added, try registering with a billing address from a restricted country. The error message “Sorry, registration is not allowed from your country” should appear.
 
-## **2. Filter Registrations Using OOPSpam Anti-Spam**
+## **2. Filter Registrations Using oopspam Anti-Spam**
 
-If your registration forms are being spammed by bots or fake accounts, especially from specific regions, OOPSpam Anti-Spam can help.
+If your registration forms are being spammed by bots or fake accounts, especially from specific regions, oopspam Anti-Spam can help.
 
-![OOPSpam Anti-Spam](/blog/assets/posts/oopspam-anti-spam-overview.png "OOPSpam Anti-Spam")
+![oopspam Anti-Spam](/blog/assets/posts/oopspam-anti-spam-overview.png "oopspam Anti-Spam")
 
 This plugin integrates with **Paid Memberships Pro** and other form systems to [provide advanced filtering](https://www.oopspam.com/blog/4-ways-to-stop-spam-on-your-paid-memberships-pro-membership-site) based on:
 
@@ -100,25 +100,25 @@ This plugin integrates with **Paid Memberships Pro** and other form systems to [
 * Rate limiting per form
 * Submission logging for transparency
 
-### **How to Set Up OOPSpam with Paid Memberships Pro**
+### **How to Set Up oopspam with Paid Memberships Pro**
 
-**Step 1: Install OOPSpam Anti-Spam**
+**Step 1: Install oopspam Anti-Spam**
 
 From your dashboard, go to:
 
-**Plugins > Add New > Search: OOPSpam Anti-Spam**
+**Plugins > Add New > Search: oopspam Anti-Spam**
 
 Install and activate the plugin.
 
 **Step 2: Get Your API Key**
 
-Go to[ OOPSpam.com](https://www.oopspam.com), sign up, and generate your API key.
+Go to[ oopspam.com](https://www.oopspam.com), sign up, and generate your API key.
 
 ![Get Your API Key](/blog/assets/posts/oopspam-dashboard-api.png "Get Your API Key")
 
 Return to WordPress, and go to:
 
-`OOPSpam Anti-Spam > Settings`
+`oopspam Anti-Spam > Settings`
 
 Paste your API key in the provided field.
 
@@ -143,7 +143,7 @@ Pick your preferred method and select the countries you want to restrict.
 
 ### **Bonus: Review Blocked Entries**
 
-OOPSpam gives you submission logs that include:
+oopspam gives you submission logs that include:
 
 * IP address
 * Country
@@ -158,9 +158,9 @@ You can view this from:
 
 ![WordPress dashboard (Form Spam Entries / Form Ham Entries)](/blog/assets/posts/form-spam-entries-oopspam.png "WordPress dashboard (Form Spam Entries / Form Ham Entries)")
 
-* OOPSpam Dashboard (for more details)
+* oopspam Dashboard (for more details)
 
-![OOPSpam Dashboard logs](/blog/assets/posts/screenshot-1.png "OOPSpam Dashboard logs")
+![oopspam Dashboard logs](/blog/assets/posts/screenshot-1.png "oopspam Dashboard logs")
 
 This is ideal for monitoring attacks and fine-tuning your filters without losing valuable data.
 
@@ -223,7 +223,7 @@ If you're under active attack or have compliance requirements, you can block cou
       <td>Precise control over who can register, level-by-level</td>
     </tr>
     <tr>
-      <td>OOPSpam Anti-Spam Plugin</td>
+      <td>oopspam Anti-Spam Plugin</td>
       <td>Form submissions only</td>
       <td>Spam filtering and country-based form protection</td>
     </tr>
@@ -240,10 +240,10 @@ If you're under active attack or have compliance requirements, you can block cou
 While Paid Memberships Pro doesn’t offer built-in country restrictions, you still have options:
 
 * Use a custom code filter to prevent users from restricted countries from joining specific membership levels.
-* Add OOPSpam for an easier, plugin-based approach to stop spam and filter form submissions by country.
+* Add oopspam for an easier, plugin-based approach to stop spam and filter form submissions by country.
 * Pair both with Cloudflare firewall rules if you need to block entire countries from accessing your website.
 
-Need help implementing these? Visit the OOPSpam [documentation](https://www.oopspam.com/help) or reach out to support.
+Need help implementing these? Visit the oopspam [documentation](https://www.oopspam.com/help) or reach out to support.
 
 ## Related guides
 

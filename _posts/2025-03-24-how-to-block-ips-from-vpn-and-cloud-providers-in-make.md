@@ -4,7 +4,7 @@ title: How to Block IPs from VPN and Cloud Providers in Make
 date: 2025-03-24T02:18:00.000Z
 author: chazie
 image: /assets/posts/how-to-block-ips-from-vpn-and-cloud-providers-in-make.jpg
-description: Block VPN and cloud provider IPs in Make with OOPSpam to reduce
+description: Block VPN and cloud provider IPs in Make with oopspam to reduce
   spam and maintain clean data. Improve workflows while keeping real users
   engaged!
 tags:
@@ -16,7 +16,7 @@ tags:
 
 Dealing with [spam submissions can be a challenge](https://www.oopspam.com/blog/5-common-spam-problems-in-make-how-to-fix-them) for anyone managing online forms. Whether you're running a business website, an online community, or handling customer inquiries, spam can quickly overwhelm your system. Spammers often exploit VPNs (Virtual Private Networks) and cloud provider servers to mask their identity, making it difficult to detect and block them.
 
-Luckily, [OOPSpam’s Make integration](https://www.make.com/en/integrations/oopspam-anti-spam) offers a solution. With two new settings, you can effectively reduce spam and maintain clean, reliable data:
+Luckily, [oopspam’s Make integration](https://www.make.com/en/integrations/oopspam-anti-spam) offers a solution. With two new settings, you can effectively reduce spam and maintain clean, reliable data:
 
 * **Block VPN, Proxy, Tor IPs:** Prevents spam from IPs linked to VPN services, proxies, and Tor networks.
 * **Block IP addresses from Cloud Providers:** Blocks IPs commonly associated with automated spam bots hosted on cloud servers.
@@ -43,11 +43,11 @@ Cloud hosting services like AWS, DigitalOcean, and Google Cloud are powerful too
 
 VPN and cloud provider IP addresses are often dynamic, making it challenging to maintain a manual blacklist. Spammers take advantage of this by frequently changing IPs, allowing them to dodge traditional spam filters.
 
-## **How OOPSpam’s Make Integration Helps**
+## **How oopspam’s Make Integration Helps**
 
-![How OOPSpam’s Make Integration Helps](/blog/assets/posts/oopspam’s-make-integration-helps.png "OOPSpam’s Make Integration")
+![How oopspam’s Make Integration Helps](/blog/assets/posts/oopspam’s-make-integration-helps.png "oopspam’s Make Integration")
 
-The [OOPSpam integration with Make](https://help.oopspam.com/other-integrations/make/) allows you to automatically block spam from VPNs and cloud providers, keeping your forms secure and clean. Here’s how the two key settings work:
+The [oopspam integration with Make](https://help.oopspam.com/other-integrations/make/) allows you to automatically block spam from VPNs and cloud providers, keeping your forms secure and clean. Here’s how the two key settings work:
 
 ### **Block VPNs**
 
@@ -65,31 +65,31 @@ This setting prevents spam submissions from IPs linked to over 2,000 cloud provi
 * Real users rarely submit forms from cloud servers, making this setting generally safe to enable.
 * Occasionally, legitimate IPs might get blocked if they are reassigned or repurposed.
 
-OOPSpam’s IP database is continuously updated to ensure accurate detection and reduce false positives. By enabling these settings in [Make](https://www.make.com/en), you minimize spam while maintaining a smooth and efficient workflow.
+oopspam’s IP database is continuously updated to ensure accurate detection and reduce false positives. By enabling these settings in [Make](https://www.make.com/en), you minimize spam while maintaining a smooth and efficient workflow.
 
 ## **Step-by-Step: How to Block VPN and Cloud Provider IPs in Make?**
 
-Setting up VPN and cloud provider blocking in Make with [OOPSpam](https://www.oopspam.com/) is straightforward. Here’s how you can do it:
+Setting up VPN and cloud provider blocking in Make with [oopspam](https://www.oopspam.com/) is straightforward. Here’s how you can do it:
 
-### **Step 1: Add OOPSpam to Your Make Scenario**
+### **Step 1: Add oopspam to Your Make Scenario**
 
-![Search for "OOPSpam Anti-Spam" and select "Check for Spam" from the list of actions.](/blog/assets/posts/add-oopspam-to-your-make-scenario.png "Add OOPSpam to Your Make Scenario")
+![Search for "oopspam Anti-Spam" and select "Check for Spam" from the list of actions.](/blog/assets/posts/add-oopspam-to-your-make-scenario.png "Add oopspam to Your Make Scenario")
 
 1. Open your Make dashboard and navigate to your desired workflow.
 2. Click the **"+" button** to add a new module.
-3. Search for **"OOPSpam Anti-Spam"** and select **"Check for Spam"** from the list of actions.
+3. Search for **"oopspam Anti-Spam"** and select **"Check for Spam"** from the list of actions.
 
-### **Step 2: Create an OOPSpam Connection**
+### **Step 2: Create an oopspam Connection**
 
-![Enter your OOPSpam API key (found in your OOPSpam dashboard).](/blog/assets/posts/create-an-oopspam-connection.png "Create an OOPSpam Connection")
+![Enter your oopspam API key (found in your oopspam dashboard).](/blog/assets/posts/create-an-oopspam-connection.png "Create an oopspam Connection")
 
 1. Click **"Add"** to establish a new connection.
-2. Enter your **OOPSpam API key** (found in your [OOPSpam dashboard](https://app.oopspam.com/Identity/Account/Register)).
+2. Enter your **oopspam API key** (found in your [oopspam dashboard](https://app.oopspam.com/Identity/Account/Register)).
 3. Confirm and save the connection settings.
 
-### **Step 3: Map the Form Fields to OOPSpam**
+### **Step 3: Map the Form Fields to oopspam**
 
-![To enhance spam detection, map your form fields correctly.](/blog/assets/posts/spam-settings.png "Map the Form Fields to OOPSpam")
+![To enhance spam detection, map your form fields correctly.](/blog/assets/posts/spam-settings.png "Map the Form Fields to oopspam")
 
 To enhance spam detection, map your form fields correctly:
 
@@ -112,7 +112,7 @@ To enhance spam detection, map your form fields correctly:
 Once you’ve configured the settings, it’s important to test their effectiveness. Follow these steps to ensure everything is working correctly:
 
 1. **Run a Test Submission:** Submit a test form from a VPN connection and from a cloud server if possible.
-2. **Check Spam Detection:** Verify that the submission is blocked and appears in your OOPSpam logs.
+2. **Check Spam Detection:** Verify that the submission is blocked and appears in your oopspam logs.
 3. **Monitor Legitimate Users:** Keep an eye on user feedback to ensure legitimate visitors are not accidentally blocked.
 
 > **Troubleshooting Tip:** If legitimate users report being blocked, consider temporarily disabling VPN blocking while keeping cloud provider blocking active. Use [IP reputation checking tools](https://ipreputationcheck.com/) to cross-verify blocked IPs and adjust your settings accordingly.
@@ -136,7 +136,7 @@ Blocking VPN and cloud provider IPs can reduce spam, but may also impact legitim
 
 ## **Best Practices for Using Blocking Features** 
 
-To get the most out of OOPSpam’s Make integration, follow these tips:
+To get the most out of oopspam’s Make integration, follow these tips:
 
 * **Monitor Submissions:** Regularly check your logs for blocked IPs to ensure no legitimate users are mistakenly flagged.
 * **Use IP Checking Tools:** Before making drastic changes, verify IPs using a reputation check.
@@ -145,8 +145,8 @@ To get the most out of OOPSpam’s Make integration, follow these tips:
 
 ## **Final thoughts**
 
-Automated spam can quickly clog your workflows and disrupt your operations. By leveraging OOPSpam’s Make integration to block VPN and cloud provider IPs, you take a proactive approach to spam management. These settings help ensure that your submissions come from real users rather than automated bots.
+Automated spam can quickly clog your workflows and disrupt your operations. By leveraging oopspam’s Make integration to block VPN and cloud provider IPs, you take a proactive approach to spam management. These settings help ensure that your submissions come from real users rather than automated bots.
 
 Take some time to monitor how the changes impact your form submissions. Adjust your settings as needed to balance security and accessibility. With the right configuration, you’ll keep your forms spam-free while maintaining a positive user experience.
 
-Try it out and [experience the difference OOPSpam can make](https://app.oopspam.com/Identity/Account/Register) in your Make workflows! [Let us know](https://www.oopspam.com/#contact) if you need further assistance or guidance on setting up your spam protection.
+Try it out and [experience the difference oopspam can make](https://app.oopspam.com/Identity/Account/Register) in your Make workflows! [Let us know](https://www.oopspam.com/#contact) if you need further assistance or guidance on setting up your spam protection.

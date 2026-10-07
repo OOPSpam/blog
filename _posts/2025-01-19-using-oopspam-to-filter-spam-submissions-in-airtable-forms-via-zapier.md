@@ -1,21 +1,21 @@
 ---
 layout: post
-title: Using OOPSpam to Filter Spam Submissions in Airtable Forms via Zapier
+title: Using oopspam to Filter Spam Submissions in Airtable Forms via Zapier
 date: 2025-01-19T07:02:00.000Z
 author: chazie
 image: /assets/posts/header_airtable_oopspam.jpg
-description: Keep Airtable forms spam-free with OOPSpam and Zapier. Automate
+description: Keep Airtable forms spam-free with oopspam and Zapier. Automate
   filtering, save time, and manage submissions with clean, reliable data
   effortlessly.
 tags:
   - Zapier
   - Airtable
 ---
-![Using OOPSpam to Filter Spam Submissions in Airtable Forms via Zapier](/blog/assets/posts/header_airtable_oopspam.jpg "Using OOPSpam to Filter Spam Submissions in Airtable Forms via Zapier")
+![Using oopspam to Filter Spam Submissions in Airtable Forms via Zapier](/blog/assets/posts/header_airtable_oopspam.jpg "Using oopspam to Filter Spam Submissions in Airtable Forms via Zapier")
 
 Spam submissions can be a real headache. Whether you’re collecting leads, feedback, or registrations, they can quickly clutter your Airtable forms, waste your time, and make it harder to focus on what matters. Wouldn’t it be great if you could handle them automatically?
 
-With [OOPSpam](https://www.oopspam.com/) and [Zapier](https://zapier.com/), you can. This easy-to-set-up system filters out spam for you, leaving your Airtable forms clean and ready for real, useful submissions. In this guide, we’ll walk you through how to set it up step by step, so you can save time and focus on what’s truly important.
+With [oopspam](https://www.oopspam.com/) and [Zapier](https://zapier.com/), you can. This easy-to-set-up system filters out spam for you, leaving your Airtable forms clean and ready for real, useful submissions. In this guide, we’ll walk you through how to set it up step by step, so you can save time and focus on what’s truly important.
 
 ## Why Airtable Forms Need Spam Prevention
 
@@ -25,26 +25,26 @@ With [OOPSpam](https://www.oopspam.com/) and [Zapier](https://zapier.com/), you 
 2. **Saving Time:** Manually sifting through spam submissions is tedious and takes focus away from other important tasks.
 3. **Enhancing Productivity:** Automated workflows ensure that only valid submissions are processed, helping you focus on legitimate leads.
 
-Integrating OOPSpam into your Airtable form workflow via Zapier offers a seamless and efficient way to eliminate spam, allowing you to concentrate on what truly matters.
+Integrating oopspam into your Airtable form workflow via Zapier offers a seamless and efficient way to eliminate spam, allowing you to concentrate on what truly matters.
 
-### Key Features of Airtable, OOPSpam, and Zapier
+### Key Features of Airtable, oopspam, and Zapier
 
 Before we get into the setup process, let’s briefly highlight the role of each tool:
 
 1. **Airtable:** A versatile database that allows you to collect and organize form submissions with customizable fields and views.
-2. **OOPSpam:** A machine learning spam detection tool that analyzes submissions based on multiple factors, including message content, email validity, and spam trends.
-3. **Zapier:** An automation platform that connects Airtable and OOPSpam, enabling real-time spam detection and response workflows.
+2. **oopspam:** A machine learning spam detection tool that analyzes submissions based on multiple factors, including message content, email validity, and spam trends.
+3. **Zapier:** An automation platform that connects Airtable and oopspam, enabling real-time spam detection and response workflows.
 
 ### Using Zapier’s Copilot for an Easy Start
 
 Zapier has introduced a new feature called [Copilot](https://zapier.com/blog/zapier-copilot-guide/), which simplifies setting up workflows. With Copilot, you can describe your workflow in natural language, and it will create the foundational steps for you. 
 
-![Zapier Copilot interface showing steps for setting up a Zap to filter spam submissions in Airtable using OOPSpam.](/blog/assets/posts/zapier-copilot-setup.png "Zapier Copilot Setup for Spam Filtering")
+![Zapier Copilot interface showing steps for setting up a Zap to filter spam submissions in Airtable using oopspam.](/blog/assets/posts/zapier-copilot-setup.png "Zapier Copilot Setup for Spam Filtering")
 
 > For example, I just copy-pasted the title of this article into Copilot, and it instantly created a Zap with the following steps:
 
 1. New Record in Airtable (trigger)
-2. Check for Spam in OOPSpam (action)
+2. Check for Spam in oopspam (action)
 3. Update Record in Airtable (action)
 
 ## Step 1: Setting Up Your Airtable Base and Form
@@ -77,25 +77,25 @@ Airtable is the foundation of this workflow. To get started:
 2. **Add Necessary Fields:** Include fields like Name, Email, and Message to capture essential data.
 3. **Enable Public Sharing:** Share the form link with your audience or embed it on your website.
 
-## Step 2: Preparing Zapier and OOPSpam for Integration
+## Step 2: Preparing Zapier and oopspam for Integration
 
 ### Set Up Zapier
 
 ![Zapier login page with multiple sign-in options.](/blog/assets/posts/zapier-login.png "Zapier Login Page")
 
-Zapier acts as the bridge between Airtable and OOPSpam. Here’s how to prepare:
+Zapier acts as the bridge between Airtable and oopspam. Here’s how to prepare:
 
 1. **Sign Up for Zapier:** Create a free account at [Zapier](https://zapier.com/sign-up).
 2. **Familiarize Yourself with Zaps:** A "[Zap](https://help.zapier.com/hc/en-us/articles/8496309697421-What-is-a-Zap)" is an automated workflow that connects two or more apps.
 
-### Set Up OOPSpam
+### Set Up oopspam
 
-![OOPSpam Dashboard Overview with API Usage and Testing Features](/blog/assets/posts/oopspam-dashboard-.png "OOPSpam Dashboard Overview with API Usage and Testing Features")
+![oopspam Dashboard Overview with API Usage and Testing Features](/blog/assets/posts/oopspam-dashboard-.png "oopspam Dashboard Overview with API Usage and Testing Features")
 
-OOPSpam’s robust spam-detection capabilities ensure accurate results.
+oopspam’s robust spam-detection capabilities ensure accurate results.
 
-1. **Sign Up for OOPSpam:** Visit OOPSpam and [create an account](https://app.oopspam.com/Identity/Account/Register).
-2. **Retrieve Your API Key:** Log into your dashboard and copy your unique API Key. This will be used to connect [OOPSpam to Zapier](https://zapier.com/apps/oopspam/integrations).
+1. **Sign Up for oopspam:** Visit oopspam and [create an account](https://app.oopspam.com/Identity/Account/Register).
+2. **Retrieve Your API Key:** Log into your dashboard and copy your unique API Key. This will be used to connect [oopspam to Zapier](https://zapier.com/apps/oopspam/integrations).
 
 ## Step 3: Building the Workflow in Zapier
 
@@ -123,47 +123,47 @@ OOPSpam’s robust spam-detection capabilities ensure accurate results.
 
 **5. Test the Trigger:** Submit a sample form entry and confirm that Zapier retrieves the data correctly.
 
-### Add OOPSpam to Analyze Submissions
+### Add oopspam to Analyze Submissions
 
-![Zapier integration setup showing Airtable and OOPSpam spam check configuration.](/blog/assets/posts/filter-airtable-spam-zapier.png "Zapier Workflow: Airtable Integration with OOPSpam")
+![Zapier integration setup showing Airtable and oopspam spam check configuration.](/blog/assets/posts/filter-airtable-spam-zapier.png "Zapier Workflow: Airtable Integration with oopspam")
 
-**1. Add OOPSpam as the Action**
+**1. Add oopspam as the Action**
 
-* Click the "**+**" button in your Zap and search for **OOPSpam**.
+* Click the "**+**" button in your Zap and search for **oopspam**.
 * Select the action event "**Check for Spam**".
 
-**2. Connect OOPSpam**
+**2. Connect oopspam**
 
 * Enter your **API Key** to authenticate the connection.
 
-**3. Map Airtable Fields to OOPSpam**
+**3. Map Airtable Fields to oopspam**
 
-![OOPSpam configuration in Zapier for spam filtering with specific content and email settings.](/blog/assets/posts/configuring-spam-check-in-oopspam.png "Configuring Spam Check in OOPSpam via Zapier")
+![oopspam configuration in Zapier for spam filtering with specific content and email settings.](/blog/assets/posts/configuring-spam-check-in-oopspam.png "Configuring Spam Check in oopspam via Zapier")
 
-Map the data fields from your Airtable trigger to OOPSpam’s input fields:
+Map the data fields from your Airtable trigger to oopspam’s input fields:
 
 * **Content:** Map the "**Message**" field from Airtable. This is the text you want to check for spam (e.g., customer messages or form responses).
 * **Sender IP:** Leave this field empty, as Airtable forms do not collect IP addresses.
-* **Email:** Map the "**Email**" field from Airtable. This will help OOPSpam verify if the email is valid and not disposable.
+* **Email:** Map the "**Email**" field from Airtable. This will help oopspam verify if the email is valid and not disposable.
 
 **4. Configure Spam Detection Settings** 
 
-Fine-tune OOPSpam’s settings to customize how spam is detected:
+Fine-tune oopspam’s settings to customize how spam is detected:
 
 * **Consider Short Messages as Spam:** Set to **False**, unless you expect your message field to contain a sentence with at least 20 characters. This ensures short but legitimate responses are not flagged as spam unnecessarily.
-* **Log Submissions to OOPSpam:** Set to **False**, unless you want to store all submissions for further analysis in your OOPSpam dashboard.
+* **Log Submissions to oopspam:** Set to **False**, unless you want to store all submissions for further analysis in your oopspam dashboard.
 * **Block Temporary/Disposable Emails:** Set to **True** to filter out submissions from temporary or fake email addresses.
 
 ### Handle Submissions with Spam Scores in Airtable
 
-After setting up the OOPSpam action, the next step is to ensure that every submission is updated in Airtable with its corresponding spam score. This allows you to review and filter submissions directly within Airtable, leveraging its intuitive filtering and sorting tools.
+After setting up the oopspam action, the next step is to ensure that every submission is updated in Airtable with its corresponding spam score. This allows you to review and filter submissions directly within Airtable, leveraging its intuitive filtering and sorting tools.
 
 #### Update Airtable with Spam Scores
 
-![Zapier workflow integrating Airtable and OOPSpam for spam checking and record updating.](/blog/assets/posts/airtable-and-oopspam-integration.png "Airtable and OOPSpam Integration Workflow")
+![Zapier workflow integrating Airtable and oopspam for spam checking and record updating.](/blog/assets/posts/airtable-and-oopspam-integration.png "Airtable and oopspam Integration Workflow")
 
 1. **Add Airtable as the Action App:** Select [Airtable](https://airtable.com/) and choose "**Update Record**."
-2. **Map OOPSpam Results to Airtable:** Map the spam score from OOPSpam back to the "Spam Score" field in Airtable.
+2. **Map oopspam Results to Airtable:** Map the spam score from oopspam back to the "Spam Score" field in Airtable.
 
    * **Spam Score Guide:**
    * **1-2:** Not spam
@@ -226,6 +226,6 @@ With this setup, Airtable becomes your central hub for submission management, he
 
 ## Final Thoughts
 
-Managing spam submissions doesn’t have to be a time-consuming hassle. With Airtable, OOPSpam, and Zapier working together, you can create a robust workflow that keeps your data clean, saves you time, and boosts your productivity. Whether you’re collecting leads, running surveys, or processing registrations, this integration ensures you’re only dealing with genuine submissions.
+Managing spam submissions doesn’t have to be a time-consuming hassle. With Airtable, oopspam, and Zapier working together, you can create a robust workflow that keeps your data clean, saves you time, and boosts your productivity. Whether you’re collecting leads, running surveys, or processing registrations, this integration ensures you’re only dealing with genuine submissions.
 
-If you have any questions or need extra guidance, [OOPSpam’s support team](https://www.oopspam.com/#contact) is always here to help, and you can [explore our documentation](https://help.oopspam.com/) for detailed instructions. Let us know how we can make your spam-fighting journey even easier!
+If you have any questions or need extra guidance, [oopspam’s support team](https://www.oopspam.com/#contact) is always here to help, and you can [explore our documentation](https://help.oopspam.com/) for detailed instructions. Let us know how we can make your spam-fighting journey even easier!

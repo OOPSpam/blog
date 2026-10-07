@@ -5,7 +5,7 @@ date: 2026-03-16T15:26:00.000+08:00
 author: chazie
 image: /blog/assets/posts/formintor_header.png
 description: Protect your Forminator forms from spam with Honeypot, CAPTCHA, and
-  OOPSpam. Learn 3 effective ways to block bots and reduce spam submissions in
+  oopspam. Learn 3 effective ways to block bots and reduce spam submissions in
   WordPress.
 tags:
   - Forminator
@@ -95,11 +95,11 @@ Some website owners prefer hCaptcha because it offers a privacy-friendly alterna
 
 Unlike traditional CAPTCHA systems, Turnstile often works without requiring users to solve puzzles.
 
-## **3. Add Advanced Spam Filtering with OOPSpam**
+## **3. Add Advanced Spam Filtering with oopspam**
 
 For websites that receive frequent spam submissions, a dedicated spam filtering service can provide stronger protection.
 
-[OOPSpam](https://www.oopspam.com/) (that's us 👋) is an API-based spam detection system that analyzes submissions before they reach your inbox.
+[oopspam](https://www.oopspam.com/) (that's us 👋) is an API-based spam detection system that analyzes submissions before they reach your inbox.
 
 Instead of relying only on [CAPTCHA](https://www.oopspam.com/blog/best-captcha-alternatives), it evaluates signals such as:
 
@@ -110,23 +110,23 @@ Instead of relying only on [CAPTCHA](https://www.oopspam.com/blog/best-captcha-a
 
 This helps detect more [advanced spam attempts](https://www.oopspam.com/blog/spam-protection-for-forminator).
 
-## **Steps to Add OOPSpam to WordPress**
+## **Steps to Add oopspam to WordPress**
 
 ### **Step 1: Install the Plugin**
 
-![OOPSpam Plugin](/blog/assets/posts/oopspam-anti-spam-overview.png "OOPSpam Plugin")
+![oopspam Plugin](/blog/assets/posts/oopspam-anti-spam-overview.png "oopspam Plugin")
 
-In your WordPress dashboard go to: **Plugins → Add New.** Search for: **[OOPSpam Anti-Spam](https://www.oopspam.com/wordpress).** Install and activate the plugin.
+In your WordPress dashboard go to: **Plugins → Add New.** Search for: **[oopspam Anti-Spam](https://www.oopspam.com/wordpress).** Install and activate the plugin.
 
 ### **Step 2: Get Your API Key**
 
 ![Get Your API Key](/blog/assets/posts/oopspam-dashboard-api.png "Get Your API Key")
 
-[Create an account](https://app.oopspam.com/Identity/Account/Login) on the OOPSpam website. After logging in, go to your dashboard and copy your API key. This key connects your website to the OOPSpam spam detection system.
+[Create an account](https://app.oopspam.com/Identity/Account/Login) on the oopspam website. After logging in, go to your dashboard and copy your API key. This key connects your website to the oopspam spam detection system.
 
 ### **Step 3: Add the API Key in WordPress**
 
-Return to your WordPress dashboard and navigate to: **Settings → OOPSpam Anti-Spam**
+Return to your WordPress dashboard and navigate to: **Settings → oopspam Anti-Spam**
 
 ![Add the API Key in WordPress](/blog/assets/posts/oopspam-api-key.png "Add the API Key in WordPress ")
 
@@ -134,17 +134,17 @@ Paste your API key into the API key field and save the settings.
 
 ### **Step 4: Enable Protection for Forminator**
 
-Inside the OOPSpam settings page: Enable **Activate Spam Protection** for Forminator.
+Inside the oopspam settings page: Enable **Activate Spam Protection** for Forminator.
 
 ![Enable Protection for Forminator](/blog/assets/posts/formidable-forms-spam-protection.png "Enable Protection for Forminator")
 
-Once enabled, OOPSpam will automatically monitor submissions coming from Forminator forms.
+Once enabled, oopspam will automatically monitor submissions coming from Forminator forms.
 
 No additional configuration is required in the Forminator builder.
 
-### **Optional OOPSpam Advanced Filters**
+### **Optional oopspam Advanced Filters**
 
-For stronger protection, OOPSpam also provides additional filtering options such as:
+For stronger protection, oopspam also provides additional filtering options such as:
 
 * [Rate limiting](https://www.oopspam.com/blog/how-to-limit-form-submissions-in-forminator-forms) to block repeated submissions from the same IP
 * [VPN](https://www.oopspam.com/blog/how-to-block-vpn-and-data-center-ip-submissions-in-forminator), proxy, and TOR blocking
@@ -170,6 +170,6 @@ A recommended setup for most Forminator websites includes:
 
 * Honeypot enabled
 * CAPTCHA or Turnstile enabled
-* OOPSpam filtering
+* oopspam filtering
 
 This layered approach helps block both basic bots and more sophisticated spam attempts while keeping forms usable for real visitors.

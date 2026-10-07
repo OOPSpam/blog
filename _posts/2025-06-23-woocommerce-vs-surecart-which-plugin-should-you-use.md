@@ -193,13 +193,13 @@ Your [eCommerce site](https://www.oopspam.com/blog/how-to-protect-your-e-commerc
 * Security depends on plugins and server configuration
 * Needs additional layers for strong bot protection
 
-## **How to Set Up OOPSpam in WooCommerce and SureCart**
+## **How to Set Up oopspam in WooCommerce and SureCart**
 
-**[OOPSpam](https://www.oopspam.com/)** (that’s us 👋) adds another layer of protection to your self-hosted checkout forms, especially important if you're seeing bot-driven coupon abuse or fake orders. Integration is simple and doesn’t slow your site down.
+**[oopspam](https://www.oopspam.com/)** (that’s us 👋) adds another layer of protection to your self-hosted checkout forms, especially important if you're seeing bot-driven coupon abuse or fake orders. Integration is simple and doesn’t slow your site down.
 
-![OOPSpam dashboard](/blog/assets/posts/oopspam-dashboard-api.png "OOPSpam dashboard")
+![oopspam dashboard](/blog/assets/posts/oopspam-dashboard-api.png "oopspam dashboard")
 
-To get started, install the **[OOPSpam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/)** and generate your API key from [oopspam.com](https://app.oopspam.com/Identity/Account/Register). Then go to **Settings > OOPSpam Anti-Spam** and paste your key.
+To get started, install the **[oopspam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/)** and generate your API key from [oopspam.com](https://app.oopspam.com/Identity/Account/Register). Then go to **Settings > oopspam Anti-Spam** and paste your key.
 
 ![Paste your API key](/blog/assets/posts/my-api-key-field.png "Paste your API key")
 
@@ -211,14 +211,14 @@ Depending on your needs, consider enabling:
 
 * [Block VPNs and Cloud Providers](https://www.oopspam.com/blog/how-to-block-vpn-and-data-center-ip-submissions-in-surecart-forms) to reduce threats from anonymous sources
 * Manual Rules to block specific IPs, emails, or keywords
-* Consider enabling country blocking in OOPSpam too
+* Consider enabling country blocking in oopspam too
 * [Submission Limits](https://www.oopspam.com/blog/protecting-forms-with-rate-limiting-in-wordpress-using-oopspam) per IP or email address
 
-OOPSpam automatically filters known bad actors and stores a log of blocked entries, helping you monitor trends and tweak protection over time.
+oopspam automatically filters known bad actors and stores a log of blocked entries, helping you monitor trends and tweak protection over time.
 
 This setup works seamlessly on both [WooCommerce](https://www.oopspam.com/blog/spam-protection-for-woocommerce) and [SureCart](https://www.oopspam.com/blog/5-ways-to-stop-fake-orders-in-surecart) checkout forms.
 
-> **Why OOPSpam?** Because it checks every order’s email and IP against daily updated blocklists. It also monitors for card testing attacks and blocks them before they’re processed. The plugin is updated frequently to keep up with new spam tactics.
+> **Why oopspam?** Because it checks every order’s email and IP against daily updated blocklists. It also monitors for card testing attacks and blocks them before they’re processed. The plugin is updated frequently to keep up with new spam tactics.
 
 ## **Support and Documentation**
 
@@ -237,7 +237,7 @@ If you're a creator, coach, or business looking for a fast, reliable, and secure
 
 If you're managing a large catalog, need complex workflows, or already have WordPress development experience, WooCommerce gives you unmatched control—but expect a steeper setup and maintenance curve.
 
-Either way, don’t skip spam protection. Both platforms can integrate with OOPSpam, giving you protection where it counts. Whether you choose SureCart or WooCommerce, keeping your store secure from spam and abuse should be a top priority.
+Either way, don’t skip spam protection. Both platforms can integrate with oopspam, giving you protection where it counts. Whether you choose SureCart or WooCommerce, keeping your store secure from spam and abuse should be a top priority.
 
 ## Related guides
 

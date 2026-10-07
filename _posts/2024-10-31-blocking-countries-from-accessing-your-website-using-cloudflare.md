@@ -127,23 +127,23 @@ Rules apply globally within seconds.
 
 If your goal is stopping spam (especially form spam), form-level filtering is usually the better option.
 
-## **Alternative: Control Countries and Stop Spam with OOPSpam**
+## **Alternative: Control Countries and Stop Spam with oopspam**
 
-**[OOPSpam](<>)** (that’s us 👋) lets you restrict countries where it matters (forms) while also blocking spam using behavioral and contextual detection. Unlike Cloudflare’s site-wide country blocking, OOPSpam combines country controls with advanced spam filtering, so you don’t have to choose one or the other.
+**[oopspam](<>)** (that’s us 👋) lets you restrict countries where it matters (forms) while also blocking spam using behavioral and contextual detection. Unlike Cloudflare’s site-wide country blocking, oopspam combines country controls with advanced spam filtering, so you don’t have to choose one or the other.
 
-## **How to Use OOPSpam for Country Blocking** 
+## **How to Use oopspam for Country Blocking** 
 
-![OOPSpam ](/blog/assets/posts/oopspam-anti-spam-overview.png "OOPSpam ")
+![oopspam ](/blog/assets/posts/oopspam-anti-spam-overview.png "oopspam ")
 
-### **Step 1: Install and Connect OOPSpam**
+### **Step 1: Install and Connect oopspam**
 
-Install the **[OOPSpam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/)** plugin (WordPress) and connect via API. 
+Install the **[oopspam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/)** plugin (WordPress) and connect via API. 
 
-![Install and Connect OOPSpam](/blog/assets/posts/oopspam-dashboard-api.png "Install and Connect OOPSpam")
+![Install and Connect oopspam](/blog/assets/posts/oopspam-dashboard-api.png "Install and Connect oopspam")
 
-Create an account at **[OOPSpam.com](https://app.oopspam.com/Identity/Account/Login)** and copy your API key. Paste it into **OOPSpam → General Settings.**
+Create an account at **[oopspam.com](https://app.oopspam.com/Identity/Account/Login)** and copy your API key. Paste it into **oopspam → General Settings.**
 
-![OOPSpam General Settings](/blog/assets/posts/oopspam-api-key.png "OOPSpam General Settings")
+![oopspam General Settings](/blog/assets/posts/oopspam-api-key.png "oopspam General Settings")
 
 ### **Step 2: Enable Form Protection**
 
@@ -153,7 +153,7 @@ Turn on spam protection for your forms (e.g. WPForms, WS Form, Gravity Forms). T
 
 ### **Step 3: Configure Country Filtering**
 
-Go to **OOPSpam → Settings → Country Filtering** and choose one of the following:
+Go to **oopspam → Settings → Country Filtering** and choose one of the following:
 
 * **Trusted Countries –** Always allow submissions from selected countries and skip spam checks
    (useful for low-risk regions or where your business operates)
@@ -179,4 +179,4 @@ Your website remains accessible, and only spam submissions are blocked.
 
 Blocking countries with Cloudflare is possible, but it’s not the silver bullet many guides make it out to be.
 
-Use country blocking when you truly need it. Use OOPSpam when your goal is stopping spam without blocking real users. If you want a secure site that stays accessible worldwide, focusing on behavior-based spam detection is usually the smarter choice.
+Use country blocking when you truly need it. Use oopspam when your goal is stopping spam without blocking real users. If you want a secure site that stays accessible worldwide, focusing on behavior-based spam detection is usually the smarter choice.

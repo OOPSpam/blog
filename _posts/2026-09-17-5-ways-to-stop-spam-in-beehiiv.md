@@ -6,28 +6,28 @@ last_modified_at: 2026-09-22T12:05:00.000+04:00
 author: chazie
 image: /blog/assets/posts/email_stopspam_beehiiv.jpg
 description: Learn 5 ways to stop spam in beehiiv, from scanning your
-  subscribers with OOPSpam to double opt-in, domain authentication, and clean
+  subscribers with oopspam to double opt-in, domain authentication, and clean
   sending habits.
 tags:
   - beehiiv
 ---
-Stop spam in [beehiiv](https://www.beehiiv.com/) with five steps: scan subscribers for risky addresses, turn on double opt-in, authenticate your sending domain, prune inactive contacts, and track your complaint rate. [OOPSpam](https://www.oopspam.com/)'s native beehiiv integration handles the first step. It scans your publication against a spam database in a few clicks, no CSV exports needed.
+Stop spam in [beehiiv](https://www.beehiiv.com/) with five steps: scan subscribers for risky addresses, turn on double opt-in, authenticate your sending domain, prune inactive contacts, and track your complaint rate. [oopspam](https://www.oopspam.com/)'s native beehiiv integration handles the first step. It scans your publication against a spam database in a few clicks, no CSV exports needed.
 
-## **1. Scan and Clean Subscribers With OOPSpam**
+## **1. Scan and Clean Subscribers With oopspam**
 
-Every beehiiv publication picks up fake and disposable signups over time, especially once you run Boosts or a referral program. They sit quietly on your list until a send goes out and bounces spike. OOPSpam's (that is us) beehiiv integration checks every subscriber against a spam database directly from your dashboard.
+Every beehiiv publication picks up fake and disposable signups over time, especially once you run Boosts or a referral program. They sit quietly on your list until a send goes out and bounces spike. oopspam's (that is us) beehiiv integration checks every subscriber against a spam database directly from your dashboard.
 
-Open your[ OOPSpam Dashboard](https://app.oopspam.com/Identity/Account/Register), click **Integrations**, and click **Connect** on the Beehiiv card.
+Open your[ oopspam Dashboard](https://app.oopspam.com/Identity/Account/Register), click **Integrations**, and click **Connect** on the Beehiiv card.
 
-![1. Scan and Clean Subscribers With OOPSpam](/blog/assets/posts/1-beehiiv-integration.png "1. Scan and Clean Subscribers With OOPSpam")
+![1. Scan and Clean Subscribers With oopspam](/blog/assets/posts/1-beehiiv-integration.png "1. Scan and Clean Subscribers With oopspam")
 
 Paste your beehiiv API key. In beehiiv, go to **Settings → Integrations → API** and [create a key](https://developers.beehiiv.com/welcome/create-an-api-key) with read and write access to subscriptions.
 
 ![Settings → Integrations → API ](/blog/assets/posts/2.5-connect-beehiiv-api-key.png "Settings → Integrations → API ")
 
-Pick the publication you want to scan. OOPSpam shows each one alongside its subscriber count.
+Pick the publication you want to scan. oopspam shows each one alongside its subscriber count.
 
-![OOPSpam pick the publication](/blog/assets/posts/3-pick-a-publication-to-scan.png "OOPSpam pick the publication")
+![oopspam pick the publication](/blog/assets/posts/3-pick-a-publication-to-scan.png "oopspam pick the publication")
 
 Preview the contacts, then turn on any of these optional filters before you scan:
 
@@ -36,7 +36,7 @@ Preview the contacts, then turn on any of these optional filters before you scan
 
 ![Preview the contacts](/blog/assets/posts/4-beehiiv-additional-risk-criteria.png "Preview the contacts")
 
-Click **Scan All Emails**. Scanning uses OOPSpam API credits, so run it before a big send rather than after.
+Click **Scan All Emails**. Scanning uses oopspam API credits, so run it before a big send rather than after.
 
 ![Review the totals](/blog/assets/posts/6-beehiiv-total-results.png "Review the totals")
 
@@ -54,7 +54,7 @@ beehiiv ships single opt-in by default: a visitor submits an email and starts re
 
 Go to **Settings → Emails → Preset Emails**, scroll to **Double Opt-In**, and toggle it on. Subscribers land in **Pending** status until they confirm, and pending subscribers never receive a post or a welcome email, so a mistyped or fake address never counts against your open rate or bounce rate.
 
-Turn on **Smart Nudge** at the same time. It automatically re-sends the confirmation email once, 48 hours after the first attempt, which lifts confirmation rates without any manual follow-up. Double opt-in will not stop a subscriber using a disposable inbox that can still receive and click a link, so pair it with a periodic OOPSpam scan rather than relying on it alone.
+Turn on **Smart Nudge** at the same time. It automatically re-sends the confirmation email once, 48 hours after the first attempt, which lifts confirmation rates without any manual follow-up. Double opt-in will not stop a subscriber using a disposable inbox that can still receive and click a link, so pair it with a periodic oopspam scan rather than relying on it alone.
 
 ### **Also Watch Your Referral Program and Boosts**
 
@@ -83,7 +83,7 @@ beehiiv tracks four subscriber statuses: Active, Inactive, Pending, and (on the 
 
 Build a segment for subscribers with zero opens across your last several sends, review it manually, and unsubscribe or delete the ones who never engage. Do this on a recurring schedule, not just after deliverability drops, since inbox providers weight recent engagement more heavily than list size.
 
-> This is where an OOPSpam scan and manual pruning cover different ground: OOPSpam catches invalid, disposable, and spam-flagged addresses the moment they land on your list, while engagement-based pruning catches real addresses that simply stopped opening your posts. Run both.
+> This is where an oopspam scan and manual pruning cover different ground: oopspam catches invalid, disposable, and spam-flagged addresses the moment they land on your list, while engagement-based pruning catches real addresses that simply stopped opening your posts. Run both.
 
 ## **5. Monitor Spam Complaints and Clean Up Your Content**
 
@@ -95,9 +95,9 @@ Spam filters also score the content itself. Watch for:
 * Image-heavy posts with little real text
 * A reply-to address that does not match your sending domain, or links that redirect somewhere unexpected
 
-Also [monitor your domain reputation](https://www.oopspam.com/blog/how-to-check-your-domain-reputation-and-what-to-do-if-its-bad), separate from complaints. Check it from your[ OOPSpam dashboard](https://www.oopspam.com/blog/how-to-check-your-domain-reputation-and-what-to-do-if-its-bad), or run a free scan with[ Domain Reputation Checker](https://domainreputationcheck.com/). A drop here often shows up before complaints do.
+Also [monitor your domain reputation](https://www.oopspam.com/blog/how-to-check-your-domain-reputation-and-what-to-do-if-its-bad), separate from complaints. Check it from your[ oopspam dashboard](https://www.oopspam.com/blog/how-to-check-your-domain-reputation-and-what-to-do-if-its-bad), or run a free scan with[ Domain Reputation Checker](https://domainreputationcheck.com/). A drop here often shows up before complaints do.
 
-![OOPSpam Domain Reputation Watch](/blog/assets/posts/do-watch-screenshot.png "OOPSpam Domain Reputation Watch")
+![oopspam Domain Reputation Watch](/blog/assets/posts/do-watch-screenshot.png "oopspam Domain Reputation Watch")
 
 Run new subject lines through[ Spam Word Checker](https://spamwordchecker.com/) before you send. It takes five minutes and protects months of reputation.
 

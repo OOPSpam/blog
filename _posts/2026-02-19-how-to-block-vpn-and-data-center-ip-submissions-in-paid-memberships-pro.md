@@ -5,15 +5,15 @@ date: 2026-02-19T13:09:00.000+08:00
 author: chazie
 image: /blog/assets/posts/meta_pmp.jpg
 description: Block VPN and data center IP spam in Paid Memberships Pro using
-  OOPSpam, Cloudflare, and built-in checkout spam protection. Stop fake signups.
+  oopspam, Cloudflare, and built-in checkout spam protection. Stop fake signups.
 tags:
   - Paid Memberships Pro
-  - OOPSpam
+  - oopspam
   - Cloudflare
 ---
 ![Paid Memberships Pro](/blog/assets/posts/paid-memberships-pro-home.png "Paid Memberships Pro (PMPro)")
 
-[Paid Memberships Pro](https://www.paidmembershipspro.com/) does not block VPN or data center IPs by default. But it does have a built-in checkout protection feature that most site owners overlook. Combined with OOPSpam and Cloudflare, you get solid coverage against fake registrations and automated abuse.
+[Paid Memberships Pro](https://www.paidmembershipspro.com/) does not block VPN or data center IPs by default. But it does have a built-in checkout protection feature that most site owners overlook. Combined with oopspam and Cloudflare, you get solid coverage against fake registrations and automated abuse.
 
 ## **What Makes Membership Checkouts a Target**
 
@@ -21,29 +21,29 @@ Automated bots treat membership checkout forms the same way they treat any signu
 
 Paid Memberships Pro processes the checkout. It does not evaluate the IP reputation behind the request. That is the gap you need to fill.
 
-## **Method 1: OOPSpam Anti-Spam**
+## **Method 1: oopspam Anti-Spam**
 
-![OOPSpam Anti-Spam](/blog/assets/posts/oopspam-anti-spam-overview.png "OOPSpam Anti-Spam")
+![oopspam Anti-Spam](/blog/assets/posts/oopspam-anti-spam-overview.png "oopspam Anti-Spam")
 
-[OOPSpam](https://www.oopspam.com/) (that's us 👋) filters submissions at the form level before Paid Memberships Pro processes them. It checks every checkout attempt against a real-time database of VPN ranges and over 1,500 cloud providers.
+[oopspam](https://www.oopspam.com/) (that's us 👋) filters submissions at the form level before Paid Memberships Pro processes them. It checks every checkout attempt against a real-time database of VPN ranges and over 1,500 cloud providers.
 
 **Step 1: Install the Plugin**
 
-In WordPress, go to Plugins → Add New. Search for "**[OOPSpam Anti-Spam](https://www.oopspam.com/wordpress)**", install, and activate.
+In WordPress, go to Plugins → Add New. Search for "**[oopspam Anti-Spam](https://www.oopspam.com/wordpress)**", install, and activate.
 
 **Step 2: Add Your API Key**
 
-Create a [free account](https://app.oopspam.com/Identity/Account/Login) at the OOPSpam dashboard. Copy the API key.
+Create a [free account](https://app.oopspam.com/Identity/Account/Login) at the oopspam dashboard. Copy the API key.
 
-![OOPSpam dashboard](/blog/assets/posts/oopspam-dashboard-api.png "OOPSpam dashboard")
+![oopspam dashboard](/blog/assets/posts/oopspam-dashboard-api.png "oopspam dashboard")
 
-Go to Settings → OOPSpam Anti-Spam, paste the key, and save.
+Go to Settings → oopspam Anti-Spam, paste the key, and save.
 
-![OOPSpam Anti-Spam Settings ](/blog/assets/posts/oopspam-api-key.png "OOPSpam Anti-Spam Settings ")
+![oopspam Anti-Spam Settings ](/blog/assets/posts/oopspam-api-key.png "oopspam Anti-Spam Settings ")
 
 **Step 3: Enable Protection**
 
-Open the General tab. Turn on Activate Spam Protection. OOPSpam detects Paid Memberships Pro automatically.
+Open the General tab. Turn on Activate Spam Protection. oopspam detects Paid Memberships Pro automatically.
 
 ![Enable Protection](/blog/assets/posts/paid-memberships-pro-spam-protection-settings.png "Enable Protection")
 
@@ -60,7 +60,7 @@ Save changes. Nothing else needs to be configured inside Paid Memberships Pro.
 
 ### **Manual Moderation**
 
-For targeted abuse that slips through automated filters, use **OOPSpam's Manual Moderation**. Block specific IPs, email addresses, or keywords. Whitelist known members to prevent false positives.
+For targeted abuse that slips through automated filters, use **oopspam's Manual Moderation**. Block specific IPs, email addresses, or keywords. Whitelist known members to prevent false positives.
 
 ![Manual Moderation](/blog/assets/posts/manual-moderation-settings-oopspam.png "Manual Moderation")
 
@@ -100,4 +100,4 @@ Save changes. That is all it takes.
 
 ## **Final Takeaway**
 
-Paid Memberships Pro gives you a head start with its built-in checkout spam protection. Enable it first, it is free and requires no setup beyond a single toggle. Then layer OOPSpam on top for IP-level filtering and use Cloudflare only if attacks persist at scale.
+Paid Memberships Pro gives you a head start with its built-in checkout spam protection. Enable it first, it is free and requires no setup beyond a single toggle. Then layer oopspam on top for IP-level filtering and use Cloudflare only if attacks persist at scale.

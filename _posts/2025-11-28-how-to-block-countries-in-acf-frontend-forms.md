@@ -5,7 +5,7 @@ date: 2025-11-27T14:53:00.000+08:00
 last_modified_at: 2026-01-06T11:36:00.000+08:00
 author: chazie
 image: /blog/assets/posts/acf_block_countries.jpg
-description: Learn how to block countries in ACF Frontend Forms using OOPSpam,
+description: Learn how to block countries in ACF Frontend Forms using oopspam,
   Cloudflare, and security tools. Simple steps to keep spam out while keeping
   real users in.
 tags:
@@ -15,13 +15,13 @@ tags:
 ---
 ![Advanced Custom Fields](/blog/assets/posts/acf-advanced-custom-fields.png "Advanced Custom Fields")
 
-[Advanced Custom Fields](https://www.advancedcustomfields.com/) (ACF) Frontend Forms cannot [block countries](https://www.oopspam.com/blog/how-to-block-countries-from-your-website-the-complete-guide) on their own. To filter submissions by location, you must use a third-party anti-spam plugin like OOPSpam or apply network-level rules through tools like Cloudflare. The simplest and most effective method is OOPSpam because it blocks only the form, not your entire website.
+[Advanced Custom Fields](https://www.advancedcustomfields.com/) (ACF) Frontend Forms cannot [block countries](https://www.oopspam.com/blog/how-to-block-countries-from-your-website-the-complete-guide) on their own. To filter submissions by location, you must use a third-party anti-spam plugin like oopspam or apply network-level rules through tools like Cloudflare. The simplest and most effective method is oopspam because it blocks only the form, not your entire website.
 
 You need country blocking in ACF because spam attacks now rely heavily on VPNs, proxies, and automated bots. This guide explains each method clearly and shows the easiest approach for ACF users.
 
-## **Method 1: Use OOPSpam Anti-Spam (Form-Level Country Blocking)**
+## **Method 1: Use oopspam Anti-Spam (Form-Level Country Blocking)**
 
-**[OOPSpam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/)** is the [strongest option for ACF forms](https://www.oopspam.com/blog/4-ways-to-protect-your-acf-frontend-forms-from-spam). It blocks spam before [WordPress](https://www.oopspam.com/wordpress) saves the submission. It offers:
+**[oopspam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/)** is the [strongest option for ACF forms](https://www.oopspam.com/blog/4-ways-to-protect-your-acf-frontend-forms-from-spam). It blocks spam before [WordPress](https://www.oopspam.com/wordpress) saves the submission. It offers:
 
 * Country allowlists
 * Country blocklists
@@ -33,39 +33,39 @@ You need country blocking in ACF because spam attacks now rely heavily on VPNs, 
 
 This method targets **only** the form. Your site stays accessible.
 
-## **How to Set Up OOPSpam for ACF Frontend Forms**
+## **How to Set Up oopspam for ACF Frontend Forms**
 
 Below is the full, simple process based on the provided instructions.
 
 ### **1. Install the Plugin**
 
-![OOPSpam Anti-Spam plugin](/blog/assets/posts/oopspam-anti-spam-overview.png "OOPSpam Anti-Spam plugin")
+![oopspam Anti-Spam plugin](/blog/assets/posts/oopspam-anti-spam-overview.png "oopspam Anti-Spam plugin")
 
-Go to **Plugins → Add New** and search for **OOPSpam Anti-Spam**. Install and activate it.
+Go to **Plugins → Add New** and search for **oopspam Anti-Spam**. Install and activate it.
 
-### **2. Create Your OOPSpam Account**
+### **2. Create Your oopspam Account**
 
-![OOPSpam dashboard](/blog/assets/posts/oopspam-dashboard-api.png "OOPSpam Dashboard")
+![oopspam dashboard](/blog/assets/posts/oopspam-dashboard-api.png "oopspam Dashboard")
 
-Go to **OOPSpam.com** and [create an account](https://app.oopspam.com/Identity/Account/Login). Copy your **API key** from your dashboard.
+Go to **oopspam.com** and [create an account](https://app.oopspam.com/Identity/Account/Login). Copy your **API key** from your dashboard.
 
 ### **3. Paste the API Key in WordPress**
 
 ![Paste the API Key in WordPress](/blog/assets/posts/oopspam-api-key.png "Paste the API Key in WordPress")
 
-Go to **OOPSpam → General Settings**. Paste your API key into the “My API Key” field. Adjust the sensitivity slider. Moderate is recommended.
+Go to **oopspam → General Settings**. Paste your API key into the “My API Key” field. Adjust the sensitivity slider. Moderate is recommended.
 
 ### **4. Enable ACF Form Protection**
 
 ![Turn on spam protection for ACF Frontend Forms](/blog/assets/posts/acf-spam-protection.png "Turn on spam protection for ACF Frontend Forms")
 
-Inside OOPSpam settings, **turn on spam protection for ACF Frontend Forms**. This ensures all ACF forms are screened.
+Inside oopspam settings, **turn on spam protection for ACF Frontend Forms**. This ensures all ACF forms are screened.
 
 ### **5. Set Up Country Filtering**
 
 ![Set Up Country Filtering](/blog/assets/posts/country-filtering-settings.png "Set Up Country Filtering")
 
-Under **OOPSpam → Settings**, scroll down to **Country Filtering**. You’ll see three options:
+Under **oopspam → Settings**, scroll down to **Country Filtering**. You’ll see three options:
 
 * **Trusted Countries** — always allow submissions from these locations and skip all spam checks. Use this for regions where your business operates or for low-risk markets. This prevents blocking legitimate users and reduces false positives.
 * **Country Allowlist** — allow submissions **only** from selected countries. Leave this empty if you do not want strict country-only access.
@@ -73,7 +73,7 @@ Under **OOPSpam → Settings**, scroll down to **Country Filtering**. You’ll s
 
 Select the countries you want to allow or block, then click **Save changes**.
 
-[OOPSpam](https://www.oopspam.com/) will now filter ACF Frontend Form submissions using IP geolocation, spam signals, and behavior patterns.
+[oopspam](https://www.oopspam.com/) will now filter ACF Frontend Form submissions using IP geolocation, spam signals, and behavior patterns.
 
 ### **6. Strengthen Protection (Highly Recommended)**
 
@@ -124,4 +124,4 @@ They are useful only if you need simple, broad blocking.
 
 ## **Final Thoughts**
 
-If you use ACF Frontend Forms, the most effective setup is: Use OOPSpam Anti-Spam for form-level filtering + Use Cloudflare Firewall Rules for network-level protections. This two-layer approach matches today’s spam trends. It gives clean submissions, strong security, and minimal impact on real users.
+If you use ACF Frontend Forms, the most effective setup is: Use oopspam Anti-Spam for form-level filtering + Use Cloudflare Firewall Rules for network-level protections. This two-layer approach matches today’s spam trends. It gives clean submissions, strong security, and minimal impact on real users.

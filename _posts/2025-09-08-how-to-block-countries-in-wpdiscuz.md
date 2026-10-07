@@ -5,7 +5,7 @@ date: 2025-09-08T03:10:00.000+08:00
 last_modified_at: 2026-01-06T11:36:00.000+08:00
 author: chazie
 image: /blog/assets/posts/wpdiscuz_header.png
-description: WPDiscuz doesn’t include country blocking by default. Use OOPSpam
+description: WPDiscuz doesn’t include country blocking by default. Use oopspam
   to filter comments by region or Cloudflare Firewall to block traffic
   site-wide.
 tags:
@@ -16,27 +16,27 @@ tags:
 
 ### **Can WPDiscuz Block Countries on Its Own?**
 
-No. [WPDiscuz](https://wpdiscuz.com/) focuses on user engagement, threaded comments, and voting, not security filtering. If spam or abusive comments are coming from certain regions, you’ll need to add tools like [OOPSpam](https://www.oopspam.com/) or Cloudflare.
+No. [WPDiscuz](https://wpdiscuz.com/) focuses on user engagement, threaded comments, and voting, not security filtering. If spam or abusive comments are coming from certain regions, you’ll need to add tools like [oopspam](https://www.oopspam.com/) or Cloudflare.
 
 ## **What’s the Easiest Way to Block Spam Comments by Country?**
 
-Use [OOPSpam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/) (that’s us 👋). It integrates directly with WordPress and adds [country-level filtering](https://www.oopspam.com/blog/how-to-block-countries-from-your-website-the-complete-guide) to your comment forms.
+Use [oopspam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/) (that’s us 👋). It integrates directly with WordPress and adds [country-level filtering](https://www.oopspam.com/blog/how-to-block-countries-from-your-website-the-complete-guide) to your comment forms.
 
 ### **How to Set It Up**
 
-Install and activate the **OOPSpam Anti-Spam plugin**. Sign up at **[OOPSpam.com](https://app.oopspam.com/Identity/Account/Login)** to get your API key.
+Install and activate the **oopspam Anti-Spam plugin**. Sign up at **[oopspam.com](https://app.oopspam.com/Identity/Account/Login)** to get your API key.
 
-![OOPSpam Anti-Spam ](/blog/assets/posts/oopspam-dashboard-api.png "OOPSpam Anti-Spam")
+![oopspam Anti-Spam ](/blog/assets/posts/oopspam-dashboard-api.png "oopspam Anti-Spam")
 
-In WordPress, go to **Settings > OOPSpam Anti-Spam** and paste the key.
+In WordPress, go to **Settings > oopspam Anti-Spam** and paste the key.
 
-![OOPSpam Anti-Spam and paste the key](/blog/assets/posts/oopspam-api-key.png "OOPSpam Anti-Spam and paste the key")
+![oopspam Anti-Spam and paste the key](/blog/assets/posts/oopspam-api-key.png "oopspam Anti-Spam and paste the key")
 
 Enable [spam protection for **WPDiscuz** ](https://www.oopspam.com/blog/spam-protection-for-wpdiscuz)forms.
 
 ![Enable spam protection for WPDiscuz forms](/blog/assets/posts/wpdiscuz-protection.png "Enable spam protection for WPDiscuz forms")
 
-Use the **Country Filtering** under the **General Settings** tab in OOPSpam to select which countries to block or allow.
+Use the **Country Filtering** under the **General Settings** tab in oopspam to select which countries to block or allow.
 
 ![Country Filtering](/blog/assets/posts/country-filtering-settings.png "Country Filtering")
 
@@ -44,13 +44,13 @@ Save and review results in **Spam & Ham logs** inside WordPress.
 
 ![Spam & Ham logs inside WordPress](/blog/assets/posts/form-spam-entries-oopspam.png "Spam & Ham logs inside WordPress")
 
-For more detailed tracking, you can also use the **OOPSpam Dashboard**, where you’ll find filtering reports, reasons for blocking, and patterns over time.
+For more detailed tracking, you can also use the **oopspam Dashboard**, where you’ll find filtering reports, reasons for blocking, and patterns over time.
 
-![OOPSpam Dashboard logs](/blog/assets/posts/screenshot-1.png "OOPSpam Dashboard logs")
+![oopspam Dashboard logs](/blog/assets/posts/screenshot-1.png "oopspam Dashboard logs")
 
 With this, only real comments from allowed regions will appear.
 
-### **What OOPSpam Can Do**
+### **What oopspam Can Do**
 
 * Block or allow comments by country.
 * Stop unwanted text with language filtering.
@@ -77,7 +77,7 @@ Now, all traffic from those countries will be stopped at the network level.
 
 ## **Which Option Should You Choose?**
 
-* **OOPSpam** - Best for keeping WPDiscuz comments clean without blocking access to your site.
+* **oopspam** - Best for keeping WPDiscuz comments clean without blocking access to your site.
 * **Cloudflare** -  Best for stopping broader attacks or when abusive traffic is overwhelming.
 
-WPDiscuz doesn’t replace security tools, it enhances discussions. Pairing it with OOPSpam gives you comment-level protection. Adding Cloudflare gives you site-wide blocking. Together, they keep your community open to real voices while shutting out spam and abuse.
+WPDiscuz doesn’t replace security tools, it enhances discussions. Pairing it with oopspam gives you comment-level protection. Adding Cloudflare gives you site-wide blocking. Together, they keep your community open to real voices while shutting out spam and abuse.

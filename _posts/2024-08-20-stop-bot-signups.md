@@ -122,15 +122,15 @@ Anything you add to your site's HTML will negatively impact your site's performa
 
 You are not alone. Captchas are effective against simple bots, but advanced bots can [bypass reCAPTCHA](https://github.com/ultrafunkamsterdam/undetected-chromedriver). There are also "captcha farms" (e.g. 2Captcha) where people are paid to solve reCAPTCHA at low cost.
 
-This is where we come in. Another way to protect your sign-up forms without using CAPTCHA solution is to use server-side solution [OOPSpam](https://www.oopspam.com/). To put it simply, your registration form will have no challenge, no javascript or cookies, so no accessibility issues, no slow website. 
+This is where we come in. Another way to protect your sign-up forms without using CAPTCHA solution is to use server-side solution [oopspam](https://www.oopspam.com/). To put it simply, your registration form will have no challenge, no javascript or cookies, so no accessibility issues, no slow website. 
 
-We already have [WordPress](https://wordpress.org/plugins/oopspam-anti-spam/), [Bubble](https://bubble.io/plugin/oopspam-spam-detection-1582908608700x936823858020745200), [Make](https://www.make.com/en/integrations/oopspam-anti-spam) and [Zapier](https://zapier.com/apps/oopspam/integrations) applications, so no need to implement. But if you are building a custom site, use the [OOPSpam API](https://www.oopspam.com/docs/#introduction) to reject or allow new users before confirming or sending a welcome email. For more implementation tips, see [Building a complete contact form with PHP & HTML](https://www.oopspam.com/blog/contact-form-with-PHP).
+We already have [WordPress](https://wordpress.org/plugins/oopspam-anti-spam/), [Bubble](https://bubble.io/plugin/oopspam-spam-detection-1582908608700x936823858020745200), [Make](https://www.make.com/en/integrations/oopspam-anti-spam) and [Zapier](https://zapier.com/apps/oopspam/integrations) applications, so no need to implement. But if you are building a custom site, use the [oopspam API](https://www.oopspam.com/docs/#introduction) to reject or allow new users before confirming or sending a welcome email. For more implementation tips, see [Building a complete contact form with PHP & HTML](https://www.oopspam.com/blog/contact-form-with-PHP).
 
-## Complete protection: Cloudflare + OOPSpam + Honeypot
+## Complete protection: Cloudflare + oopspam + Honeypot
 
-Best of both worlds, we can combine Cloudflare with OOPSpam and Honeypot to increase our chances against fake account creation and just get a clean sign-up form without all the errors and frustrated users.
+Best of both worlds, we can combine Cloudflare with oopspam and Honeypot to increase our chances against fake account creation and just get a clean sign-up form without all the errors and frustrated users.
 
-__OOPSpam__: Process your submissions with OOPSpam on your server. This is your last line of defense against bots and manual spammers.
+__OOPSpam__: Process your submissions with oopspam on your server. This is your last line of defense against bots and manual spammers.
 
 __Cloudflare__: We recommend using DNS level protection with Cloudflare. You get the same benefit as Turnstile without the website performance and accessibility issues. More about Turnstile check out: [What No One Tells You About Cloudflare Turnstile](https://www.oopspam.com/blog/cloudflare-turnstile).
 

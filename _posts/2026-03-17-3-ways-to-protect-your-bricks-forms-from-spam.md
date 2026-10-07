@@ -5,7 +5,7 @@ date: 2026-03-18T03:09:00.000+08:00
 author: chazie
 image: /blog/assets/posts/bricks_header.png
 description: Protect Bricks Forms from spam using honeypots, CAPTCHA, validation
-  rules, and OOPSpam. Simple steps to block bots and improve lead quality.
+  rules, and oopspam. Simple steps to block bots and improve lead quality.
 tags:
   - CAPTCHA
   - Bricks
@@ -129,37 +129,37 @@ add_filter( 'bricks/form/validate', function( $errors, $form ) {
 
 This type of validation helps prevent low-quality or suspicious submissions from being processed. It is especially useful for filtering out AI-generated spam that looks legitimate at first glance.
 
-## **3. Add Advanced Filtering with OOPSpam**
+## **3. Add Advanced Filtering with oopspam**
 
 Even with CAPTCHA and validation in place, some spam will still pass through. This is because advanced bots can mimic human behavior and generate realistic content.
 
-[OOPSpam](https://www.oopspam.com/) (that's us 👋) adds another layer of protection by analyzing submissions in real time. It evaluates content, IP reputation, and behavioral signals to determine whether a submission is spam.
+[oopspam](https://www.oopspam.com/) (that's us 👋) adds another layer of protection by analyzing submissions in real time. It evaluates content, IP reputation, and behavioral signals to determine whether a submission is spam.
 
 Unlike CAPTCHA, it works silently in the background and does not interrupt users.
 
-### **How to Add OOPSpam to Bricks Forms**
+### **How to Add oopspam to Bricks Forms**
 
-Install the plugin from your WordPress dashboard by going to Plugins → Add New and searching for “**[OOPSpam Anti-Spam](https://www.oopspam.com/wordpress)**.” Once installed, activate it.
+Install the plugin from your WordPress dashboard by going to Plugins → Add New and searching for “**[oopspam Anti-Spam](https://www.oopspam.com/wordpress)**.” Once installed, activate it.
 
-![OOPSpam Anti-Spam](/blog/assets/posts/oopspam-anti-spam-overview.png "OOPSpam Anti-Spam")
+![oopspam Anti-Spam](/blog/assets/posts/oopspam-anti-spam-overview.png "oopspam Anti-Spam")
 
-[Create an account](https://app.oopspam.com/Identity/Account/Login) on the OOPSpam website, then log in to your dashboard and copy your API key.
+[Create an account](https://app.oopspam.com/Identity/Account/Login) on the oopspam website, then log in to your dashboard and copy your API key.
 
-![OOPSpam dashboard](/blog/assets/posts/oopspam-dashboard-api.png "OOPSpam dashboard")
+![oopspam dashboard](/blog/assets/posts/oopspam-dashboard-api.png "oopspam dashboard")
 
-Go back to WordPress and navigate to Settings → OOPSpam Anti-Spam. Paste your API key and save the settings.
+Go back to WordPress and navigate to Settings → oopspam Anti-Spam. Paste your API key and save the settings.
 
-![OOPSpam Anti-Spam. Paste your API key](/blog/assets/posts/oopspam-api-key.png "OOPSpam Anti-Spam. Paste your API key")
+![oopspam Anti-Spam. Paste your API key](/blog/assets/posts/oopspam-api-key.png "oopspam Anti-Spam. Paste your API key")
 
-If Bricks is installed, you’ll see a **Bricks Forms spam protection option** inside OOPSpam settings. Enable it.
+If Bricks is installed, you’ll see a **Bricks Forms spam protection option** inside oopspam settings. Enable it.
 
 ![Bricks Forms spam protection](/blog/assets/posts/activate-spam-protection-bricks-forms.png "Bricks Forms spam protection")
 
-Once activated, OOPSpam will automatically monitor and filter all Bricks form submissions, no changes needed inside the form builder.
+Once activated, oopspam will automatically monitor and filter all Bricks form submissions, no changes needed inside the form builder.
 
 ### **Advanced Filtering Options**
 
-OOPSpam also provides additional controls that can [improve protection](https://www.oopspam.com/blog/spam-protection-for-bricks) further. These include:
+oopspam also provides additional controls that can [improve protection](https://www.oopspam.com/blog/spam-protection-for-bricks) further. These include:
 
 * [Rate limiting](https://www.oopspam.com/blog/how-to-limit-form-submissions-in-bricks-forms) to block repeated submissions
 * [Country filtering](https://www.oopspam.com/blog/how-to-block-countries-in-bricks-forms) (allow/deny specific regions)
@@ -175,6 +175,6 @@ These features are particularly useful for websites that receive a high volume o
 
 The most effective way to protect Bricks Forms is to use a layered approach. No single tool can stop all spam.
 
-Start with Bricks’ built-in features. Add validation to control data quality. Then use a service like OOPSpam to filter advanced threats.
+Start with Bricks’ built-in features. Add validation to control data quality. Then use a service like oopspam to filter advanced threats.
 
 When done correctly, you will not just reduce spam. You will also [improve the quality](https://www.oopspam.com/blog/slow-bricks-builder-website) of the submissions you receive.

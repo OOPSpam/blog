@@ -13,7 +13,7 @@ tags:
   - elementor
 ---
 <center>
-<img loading="lazy"  width="772" alt="OOPSpam Anti-Spam WordPress Plugin supports Elementor Forms" src="/blog/assets/posts/elementor-forms/ef-blog-header.png">
+<img loading="lazy"  width="772" alt="oopspam Anti-Spam WordPress Plugin supports Elementor Forms" src="/blog/assets/posts/elementor-forms/ef-blog-header.png">
 </center>
 <br/>
 
@@ -25,13 +25,13 @@ To address spam issue in your forms, use the built-in honeypot, reCAPTCHA, or a 
 
 {% include toc.md %}
 
-## OOPSpam WordPress plugin
+## oopspam WordPress plugin
 
-![OOPSpam WP Header](/blog/assets/posts/oopspam-for-spam-protection.png "OOPSpam WP Header")
+![oopspam WP Header](/blog/assets/posts/oopspam-for-spam-protection.png "oopspam WP Header")
 
-[OOPSpam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/) (that's us 👋) is another way to stop spam on your Elementor Forms and WordPress comments. The plugin works with OOPSpam API that protects over 3.5M websites daily. While the other two alternatives are free, OOPSPam API is a paid service. But it does come with free 40/month spam checks for you to test and see the difference.
+[oopspam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/) (that's us 👋) is another way to stop spam on your Elementor Forms and WordPress comments. The plugin works with oopspam API that protects over 3.5M websites daily. While the other two alternatives are free, OOPSPam API is a paid service. But it does come with free 40/month spam checks for you to test and see the difference.
 
-It's likely you have already tried the below options, and they didn't work for you. It could be a [slow website from reCAPTCHA](https://www.oopspam.com/blog/recaptcha-performance-analyses) or overwhelming spam you are still getting despite implementing the below alternatives. These are benefits OOPSpam has over other alternative:
+It's likely you have already tried the below options, and they didn't work for you. It could be a [slow website from reCAPTCHA](https://www.oopspam.com/blog/recaptcha-performance-analyses) or overwhelming spam you are still getting despite implementing the below alternatives. These are benefits oopspam has over other alternative:
 
 1. Doesn't slow down your website
 2. Keeps your site accessible to all users
@@ -39,29 +39,29 @@ It's likely you have already tried the below options, and they didn't work for y
 
 On the plugin's settings page, you could also adjust how sensitive you want your spam filter to be. Even keeping default **Sensitivity level** setting will help you cut down spam to zero.
 
-![OOPSpam WordPress Plugin Sensitivity level](https://www.oopspam.com/assets/WP_SensitivyLevel.jpg "OOPSpam WordPress Plugin Sensitivity level")
+![oopspam WordPress Plugin Sensitivity level](https://www.oopspam.com/assets/WP_SensitivyLevel.jpg "oopspam WordPress Plugin Sensitivity level")
 
 In addition, the plugin allows you to set up a filter to accept submissions only from certain countries and languages.
 
-![OOPSpam WordPress Plugin country & language restrictions](https://www.oopspam.com/assets/country-language-filter.png "OOPSpam WordPress Plugin country & language restrictions")
+![oopspam WordPress Plugin country & language restrictions](https://www.oopspam.com/assets/country-language-filter.png "oopspam WordPress Plugin country & language restrictions")
 
 > ✨ Since then, we have also added the **Block messages from these countries** feature.
 
-![OOPSpam WordPress Plugin block countries](https://www.oopspam.com/blog/assets/wp-block-countries.png "OOPSpam WordPress Plugin block countries")
+![oopspam WordPress Plugin block countries](https://www.oopspam.com/blog/assets/wp-block-countries.png "oopspam WordPress Plugin block countries")
 
 > 📌 Using [country filtering](https://www.oopspam.com/blog/how-to-block-countries-in-elementor-forms) allows your site to be available worldwide, but only [limits who can submit a form](https://www.oopspam.com/blog/how-to-limit-form-submissions-in-elementor-forms).
 
-Unlike other premium solutions, OOPSpam is privacy-friendly. We don't store or share your data. All cloud-based spam filtering services in the market require you to send visitors IP addresses which violates GDPR. With OOPSpam, you don't have to.
+Unlike other premium solutions, oopspam is privacy-friendly. We don't store or share your data. All cloud-based spam filtering services in the market require you to send visitors IP addresses which violates GDPR. With oopspam, you don't have to.
 
 Here are a few steps to activate spam protection for Elementor Forms:
 
-1. [Subscribe to get an API key](https://app.oopspam.com/Identity/Account/Register) then copy-paste the API key to the plugin's appropriate field under **Settings->OOPSpam Anti-Spam** on your WordPress Admin Dashboard.
+1. [Subscribe to get an API key](https://app.oopspam.com/Identity/Account/Register) then copy-paste the API key to the plugin's appropriate field under **Settings->oopspam Anti-Spam** on your WordPress Admin Dashboard.
 
-   > ℹ️ Make sure to select OOPSpam Dashboard on the setting page
-2. If you have Elementor and Elementor Pro installed then a special section will appear on the OOPSpam Anti-Spam plugin's settings page.
+   > ℹ️ Make sure to select oopspam Dashboard on the setting page
+2. If you have Elementor and Elementor Pro installed then a special section will appear on the oopspam Anti-Spam plugin's settings page.
 
-   ![OOPSpam Anti-Spam WordPress Plugin Settings](/blog/assets/posts/elementor-forms/oopspam-ef-settings.png "OOPSpam Anti-Spam WordPress Plugin Settings")
-3. On this page, you need to activate the spam filter for Elementor Forms by checking the **Activate Spam Protection** checkbox. You don't have to do anything on your form. Once you activate spam protection on the OOPSpam plugin settings, you are good to go.
+   ![oopspam Anti-Spam WordPress Plugin Settings](/blog/assets/posts/elementor-forms/oopspam-ef-settings.png "oopspam Anti-Spam WordPress Plugin Settings")
+3. On this page, you need to activate the spam filter for Elementor Forms by checking the **Activate Spam Protection** checkbox. You don't have to do anything on your form. Once you activate spam protection on the oopspam plugin settings, you are good to go.
 4. Don't forget to enter a short message to display when a spam form entry is submitted. Your message will appear at the bottom of the message field.
 
 #### **(Optional) IP Filtering**
@@ -71,10 +71,10 @@ Go to the **IP Filtering** tab. Toggle on:
 * **Block VPNs** – [stops spam from proxy or VPN users](https://www.oopspam.com/blog/how-to-block-vpn-and-data-center-ip-submissions-in-elementor-forms)
 * **Block Cloud Providers** – filters IPs from 2,000+ data centers (recommended)
 
-Hit **Save Changes** and you're done! OOPSpam will now filter spam silently in the background.
+Hit **Save Changes** and you're done! oopspam will now filter spam silently in the background.
 
 <center>
-<img loading="lazy"  alt="OOPSpam detected spam on Elementor Forms" src="/blog/assets/posts/elementor-forms/ef-spam-detected.png">
+<img loading="lazy"  alt="oopspam detected spam on Elementor Forms" src="/blog/assets/posts/elementor-forms/ef-spam-detected.png">
 </center>
 <br/>
 

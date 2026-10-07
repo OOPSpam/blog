@@ -6,7 +6,7 @@ last_modified_at: 2026-01-06T11:36:00.000+08:00
 author: chazie
 image: /blog/assets/posts/mc4wp_header.png
 description: Mailchimp for WordPress doesn’t block countries by itself. Stop
-  spam signups with OOPSpam or block traffic entirely using Cloudflare Firewall.
+  spam signups with oopspam or block traffic entirely using Cloudflare Firewall.
 tags:
   - MC4WP
   - Mailchimp
@@ -14,7 +14,7 @@ tags:
 ---
 ![MC4WP: Mailchimp for WordPress](/blog/assets/posts/mc4wp-mailchimp.png "MC4WP: Mailchimp for WordPress")
 
-The short answer: [MC4WP](https://www.mc4wp.com/) doesn’t include [country blocking](https://www.oopspam.com/blog/how-to-block-countries-from-your-website-the-complete-guide). If you’re dealing with spam signups or traffic from unwanted regions, you’ll need to add another layer of protection. The quickest fix is to use the [OOPSpam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/) plugin (that’s us 👋), which filters submissions before they reach your Mailchimp list. For a stronger defense across your entire site, enable [Cloudflare Firewall Rules](https://developers.cloudflare.com/firewall/) to block traffic from specific countries at the network level.
+The short answer: [MC4WP](https://www.mc4wp.com/) doesn’t include [country blocking](https://www.oopspam.com/blog/how-to-block-countries-from-your-website-the-complete-guide). If you’re dealing with spam signups or traffic from unwanted regions, you’ll need to add another layer of protection. The quickest fix is to use the [oopspam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/) plugin (that’s us 👋), which filters submissions before they reach your Mailchimp list. For a stronger defense across your entire site, enable [Cloudflare Firewall Rules](https://developers.cloudflare.com/firewall/) to block traffic from specific countries at the network level.
 
 ### **Why This Gap Exists in MC4WP?**
 
@@ -22,9 +22,9 @@ Mailchimp for WordPress is built to connect forms to your Mailchimp account. Its
 
 Instead, think of MC4WP as the marketing bridge, and pair it with security tools designed to handle filtering, blocking, and protection.
 
-## **Option 1: Using OOPSpam for Form-Level Protection**
+## **Option 1: Using oopspam for Form-Level Protection**
 
-[OOPSpam](https://www.oopspam.com/) adds the missing filter to your Mailchimp forms. You get to decide which countries can submit, and it blocks spam before it ever reaches Mailchimp.
+[oopspam](https://www.oopspam.com/) adds the missing filter to your Mailchimp forms. You get to decide which countries can submit, and it blocks spam before it ever reaches Mailchimp.
 
 ### **Why it works:**
 
@@ -37,13 +37,13 @@ Instead, think of MC4WP as the marketing bridge, and pair it with security tools
 
 ### **Setup in a few steps:**
 
-Install the **OOPSpam Anti-Spam plugin** in WordPress. Create an account at **[OOPSpam.com](https://app.oopspam.com/Identity/Account/Login)** and generate an API key.
+Install the **oopspam Anti-Spam plugin** in WordPress. Create an account at **[oopspam.com](https://app.oopspam.com/Identity/Account/Login)** and generate an API key.
 
-![OOPSpam Anti-Spam](/blog/assets/posts/oopspam-dashboard-api.png "OOPSpam Anti-Spam")
+![oopspam Anti-Spam](/blog/assets/posts/oopspam-dashboard-api.png "oopspam Anti-Spam")
 
-Go to **Settings > OOPSpam Anti-Spam** in your dashboard and paste the key.
+Go to **Settings > oopspam Anti-Spam** in your dashboard and paste the key.
 
-![Settings > OOPSpam Anti-Spam](/blog/assets/posts/oopspam-api-key.png "Settings > OOPSpam Anti-Spam")
+![Settings > oopspam Anti-Spam](/blog/assets/posts/oopspam-api-key.png "Settings > oopspam Anti-Spam")
 
 Enable protection for **MC4WP forms**.
 
@@ -81,7 +81,7 @@ From now on, your website will be inaccessible to visitors from those regions, p
 
 Here’s the bottom line:
 
-* Use OOPSpam if you want targeted, form-level filtering in MC4WP.
+* Use oopspam if you want targeted, form-level filtering in MC4WP.
 * Use Cloudflare Firewall if you need site-wide protection against bad traffic.
 
 Neither tool replaces MC4WP’s job, they extend it. They give you the control and security Mailchimp for WordPress doesn’t have on its own.

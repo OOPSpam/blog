@@ -5,7 +5,7 @@ date: 2025-12-13T22:06:00.000+08:00
 author: chazie
 image: /blog/assets/posts/limitform_bbcf.jpg
 description: Learn how to limit Beaver Builder Contact Form submissions using
-  OOPSpam and third-party form plugins to prevent spam and control entries.
+  oopspam and third-party form plugins to prevent spam and control entries.
 tags:
   - Beaver Builder
   - Beaver Builder Contact Form
@@ -14,7 +14,7 @@ tags:
 
 [Beaver Builder](https://www.wpbeaverbuilder.com/)’s Contact Form does not support submission limits. To control spam, abuse, and repeated entries, you must add a third-party solution.
 
-The most reliable options are OOPSpam for rate limiting and advanced form plugins like Gravity Forms for hard entry caps. If you are receiving too many submissions, fake messages, or bot abuse, this guide shows the exact fixes that work.
+The most reliable options are oopspam for rate limiting and advanced form plugins like Gravity Forms for hard entry caps. If you are receiving too many submissions, fake messages, or bot abuse, this guide shows the exact fixes that work.
 
 ## **Why Beaver Builder Contact Forms Get Spam**
 
@@ -30,23 +30,23 @@ There is no way to cap submissions by IP, email address, or user. There is also 
 
 When spam starts arriving, the problem is not Beaver Builder itself. The problem is the missing protection layer.
 
-## **Option 1: Use OOPSpam for Rate Limiting and Spam Control**
+## **Option 1: Use oopspam for Rate Limiting and Spam Control**
 
-**[OOPSpam](https://www.oopspam.com/)** (that’s us 👋) integrates directly with Beaver Builder Contact Forms and adds the missing protection layer. It focuses on [preventing repeated abuse](https://www.oopspam.com/blog/spam-protection-for-beaver-builder) without adding friction for real users.
+**[oopspam](https://www.oopspam.com/)** (that’s us 👋) integrates directly with Beaver Builder Contact Forms and adds the missing protection layer. It focuses on [preventing repeated abuse](https://www.oopspam.com/blog/spam-protection-for-beaver-builder) without adding friction for real users.
 
-### **Step 1: Install and connect OOPSpam**
+### **Step 1: Install and connect oopspam**
 
-![Install and connect OOPSpam](/blog/assets/posts/oopspam-anti-spam-overview.png "Install and connect OOPSpam")
+![Install and connect oopspam](/blog/assets/posts/oopspam-anti-spam-overview.png "Install and connect oopspam")
 
-Go to **Plugins → Add New**, search for **[OOPSpam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/)**, then install and activate it.
+Go to **Plugins → Add New**, search for **[oopspam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/)**, then install and activate it.
 
-Next, [create an account](https://app.oopspam.com/Identity/Account/Login) at OOPSpam and copy your API key.
+Next, [create an account](https://app.oopspam.com/Identity/Account/Login) at oopspam and copy your API key.
 
-![OOPSpam dashboard](/blog/assets/posts/oopspam-dashboard-api.png "OOPSpam Dashboard")
+![oopspam dashboard](/blog/assets/posts/oopspam-dashboard-api.png "oopspam Dashboard")
 
-In WordPress, go to **OOPSpam → General Settings**, paste the API key, and save your changes.
+In WordPress, go to **oopspam → General Settings**, paste the API key, and save your changes.
 
-![In WordPress, go to OOPSpam → General Settings, paste the API key, and save your changes.](/blog/assets/posts/oopspam-api-key.png "In WordPress, go to OOPSpam → General Settings, paste the API key, and save your changes.")
+![In WordPress, go to oopspam → General Settings, paste the API key, and save your changes.](/blog/assets/posts/oopspam-api-key.png "In WordPress, go to oopspam → General Settings, paste the API key, and save your changes.")
 
 ### **Step 2: Enable protection for Beaver Builder**
 
@@ -120,6 +120,6 @@ This makes Gravity Forms useful for controlled registrations, preorders, or memb
 
 Beaver Builder Contact Forms are intentionally simple. They are not designed for advanced submission control.
 
-The right solution depends on your goal. Use OOPSpam if you receive repeated spam submissions and you want protection without changing forms. Add a form plugin when you want user-based or time-based limits.
+The right solution depends on your goal. Use oopspam if you receive repeated spam submissions and you want protection without changing forms. Add a form plugin when you want user-based or time-based limits.
 
 That is the correct and scalable way to limit form submissions in Beaver Builder.

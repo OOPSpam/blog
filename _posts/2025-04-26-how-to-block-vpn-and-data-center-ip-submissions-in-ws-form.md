@@ -5,7 +5,7 @@ date: 2025-04-28T05:50:00.000Z
 author: chazie
 image: /assets/posts/how-to-block-vpn-and-data-center-ip-submissions-in-ws-form.jpg
 description: Stop spam in WS Form submissions by blocking VPN and cloud traffic.
-  Learn how to set up protection with OOPSpam plugin to secure your WordPress
+  Learn how to set up protection with oopspam plugin to secure your WordPress
   forms.
 tags:
   - WS Form
@@ -16,7 +16,7 @@ tags:
 
 [WS Form](https://wsform.com/) is a powerhouse when it comes to building complex, dynamic forms in WordPress. But no matter how advanced your setup is, spam can still sneak through—especially when bots are using VPNs and cloud-hosted servers to submit junk entries.
 
-This guide will walk you through why blocking these traffic sources matters for WS Form, and show you two effective ways to do it—manually through Cloudflare or automatically using the OOPSpam plugin.
+This guide will walk you through why blocking these traffic sources matters for WS Form, and show you two effective ways to do it—manually through Cloudflare or automatically using the oopspam plugin.
 
 ## **Why VPN and Cloud Provider IPs Are a Problem for WS Form Users**
 
@@ -62,22 +62,22 @@ Each network provider has an [ASN](https://en.wikipedia.org/wiki/Autonomous_syst
 
 This approach is powerful but best suited for technically advanced users managing large or high-risk websites.
 
-## **Method 2: Automatically Block VPN and Cloud IPs in WS Form with OOPSpam**
+## **Method 2: Automatically Block VPN and Cloud IPs in WS Form with oopspam**
 
-![OOPSpam WordPress plugin](/blog/assets/posts/oopspam-anti-spam-overview.png "OOPSpam WordPress plugin")
+![oopspam WordPress plugin](/blog/assets/posts/oopspam-anti-spam-overview.png "oopspam WordPress plugin")
 
-If you want something more automated and beginner-friendly, the **[OOPSpam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/)** (that’s us 👋) is a fantastic solution. It works seamlessly with WS Form and only takes a few clicks to get started.
+If you want something more automated and beginner-friendly, the **[oopspam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/)** (that’s us 👋) is a fantastic solution. It works seamlessly with WS Form and only takes a few clicks to get started.
 
-OOPSpam now includes two toggles under IP Filtering:
+oopspam now includes two toggles under IP Filtering:
 
 * Block VPNs
 * Block Cloud Providers
 
 Once these are enabled, the plugin filters out spam before it even reaches your WS Form entries.
 
-### **Why OOPSpam Is an Ideal Match for WS Form**
+### **Why oopspam Is an Ideal Match for WS Form**
 
-Unlike basic honeypot or [CAPTCHA](https://www.oopspam.com/blog/best-captcha-alternatives) setups, OOPSpam connects to a real-time, constantly updated threat database that includes:
+Unlike basic honeypot or [CAPTCHA](https://www.oopspam.com/blog/best-captcha-alternatives) setups, oopspam connects to a real-time, constantly updated threat database that includes:
 
 * IPs from over 2,000 cloud infrastructure providers
 * Known VPN and proxy networks
@@ -85,9 +85,9 @@ Unlike basic honeypot or [CAPTCHA](https://www.oopspam.com/blog/best-captcha-alt
 
 That means it not only stops known spam IPs, but also blocks emerging threats that haven’t yet made it to blocklists.
 
-OOPSpam is lightweight, privacy-focused, and compatible with WS Form’s powerful features without affecting performance.
+oopspam is lightweight, privacy-focused, and compatible with WS Form’s powerful features without affecting performance.
 
-## **How to Enable VPN and Cloud IP Blocking in WS Form Using OOPSpam**
+## **How to Enable VPN and Cloud IP Blocking in WS Form Using oopspam**
 
 ![Install the Plugin](/blog/assets/posts/oopspam-dashboard-api.png "Install the Plugin")
 
@@ -95,16 +95,16 @@ OOPSpam is lightweight, privacy-focused, and compatible with WS Form’s powerfu
 
 * Go to your WordPress dashboard
 * Navigate to **Plugins > Add New**
-* Search for **OOPSpam Anti-Spam**, install and activate it
+* Search for **oopspam Anti-Spam**, install and activate it
 
-Then head over to[ OOPSpam Dashboard](https://app.oopspam.com/Identity/Account/Login) to create a free account and copy your API key.
+Then head over to[ oopspam Dashboard](https://app.oopspam.com/Identity/Account/Login) to create a free account and copy your API key.
 
 ### **Step 2: Connect Your API Key**
 
 ![Connect Your API Key](/blog/assets/posts/my-api-key-field.png "Connect Your API Key")
 
-* Go to **Settings > OOPSpam Anti-Spam**
-* In the **General** tab, choose **OOPSpam Dashboard** as your source
+* Go to **Settings > oopspam Anti-Spam**
+* In the **General** tab, choose **oopspam Dashboard** as your source
 * Paste your API key into the **My API Key** field
 
 Once WS Form is installed, spam protection settings will become available.
@@ -123,13 +123,13 @@ Switch to the **IP Filtering** tab and turn on:
 
 ![Enable IP Filtering](/blog/assets/posts/ip-filtering-tab-block-vpn.png "Enable IP Filtering")
 
-Click **Save Changes** and you're all set. No additional WS Form configuration is needed—OOPSpam filters traffic automatically in the background.
+Click **Save Changes** and you're all set. No additional WS Form configuration is needed—oopspam filters traffic automatically in the background.
 
 ## **Tips for Getting the Best Results with WS Form**
 
 * **Check submissions regularly:** Monitor your spam folder for false positives
-* **Layer your defenses:** Use OOPSpam alongside WS Form’s own validation rules or custom logic
-* **Explore additional OOPSpam features**:
+* **Layer your defenses:** Use oopspam alongside WS Form’s own validation rules or custom logic
+* **Explore additional oopspam features**:
 * * Country-based filtering
 
   * [Rate limiting](https://www.oopspam.com/blog/how-to-limit-form-submissions-in-ws-form)
@@ -144,7 +144,7 @@ These tools help you create a smarter, more targeted defense against spam.
 
 WS Form gives you full control over form design and logic—but that power means little if your forms are getting hammered with junk submissions.
 
-By blocking traffic from VPNs and cloud data centers, you shut down the most common entry points for spam—before it even hits your inbox. The OOPSpam plugin gives you this power with almost no setup time.
+By blocking traffic from VPNs and cloud data centers, you shut down the most common entry points for spam—before it even hits your inbox. The oopspam plugin gives you this power with almost no setup time.
 
 Whether you’re running contact forms, job applications, or eCommerce checkouts with WS Form, adding this [extra layer of spam protection](https://www.oopspam.com/blog/spam-protection-for-wsform) can save time, improve data quality, and help you focus on what matters.
 

@@ -5,7 +5,7 @@ date: 2025-08-22T05:20:00.000+08:00
 last_modified_at: 2026-01-06T11:36:00.000+08:00
 author: chazie
 image: /blog/assets/posts/kadence_header.png
-description: Learn how to block countries in Kadence Forms using OOPSpam
+description: Learn how to block countries in Kadence Forms using oopspam
   Anti-Spam and Cloudflare for stronger spam protection and cleaner form
   submissions.
 tags:
@@ -16,25 +16,25 @@ tags:
 
 Seeing unwanted or spam submissions from certain countries through your [Kadence Forms](https://www.kadencewp.com/)? While Kadence Blocks offers a flexible form builder, it currently does not include built-in support for blocking submissions by country. The form block doesn’t provide IP-based or geo-location filtering natively.
 
-That said, you can still manage this with the right tools. By integrating with a plugin like [OOPSpam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/) (that’s us 👋), you can enable [country-level filtering](https://www.oopspam.com/blog/how-to-block-countries-from-your-website-the-complete-guide) for your forms. For broader protection, you can also apply server-level country blocks using Cloudflare.
+That said, you can still manage this with the right tools. By integrating with a plugin like [oopspam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/) (that’s us 👋), you can enable [country-level filtering](https://www.oopspam.com/blog/how-to-block-countries-from-your-website-the-complete-guide) for your forms. For broader protection, you can also apply server-level country blocks using Cloudflare.
 
 ### **No Built-In Country Blocking in Kadence Forms**
 
 Kadence Forms are part of the [Kadence Blocks](https://www.kadencewp.com/kadence-blocks/) plugin suite, offering lightweight yet functional form-building capabilities. However, as of now, there’s no native setting to filter or restrict form entries by country, IP, or language.
 
-That means you’ll need to turn to an external solution to [block spam](https://www.oopspam.com/blog/spam-protection-for-kadence-form) and filter submissions from specific regions. Let’s explore how to do that using [OOPSpam](https://www.oopspam.com/) and Cloudflare.
+That means you’ll need to turn to an external solution to [block spam](https://www.oopspam.com/blog/spam-protection-for-kadence-form) and filter submissions from specific regions. Let’s explore how to do that using [oopspam](https://www.oopspam.com/) and Cloudflare.
 
-## **1. Block Countries in Kadence Forms Using OOPSpam**
+## **1. Block Countries in Kadence Forms Using oopspam**
 
-![OOPSpam Anti-Spam plugin](/blog/assets/posts/oopspam-anti-spam-overview.png "OOPSpam Anti-Spam plugin")
+![oopspam Anti-Spam plugin](/blog/assets/posts/oopspam-anti-spam-overview.png "oopspam Anti-Spam plugin")
 
-If you’re getting spam submissions, especially from specific countries, OOPSpam Anti-Spam is the easiest way to fix it. This plugin offers advanced spam filtering and integrates smoothly with Kadence Forms.
+If you’re getting spam submissions, especially from specific countries, oopspam Anti-Spam is the easiest way to fix it. This plugin offers advanced spam filtering and integrates smoothly with Kadence Forms.
 
 It doesn’t require you to modify your forms, add hidden fields, or write code. Once installed, you just toggle Kadence Forms protection on, select which countries to block, and you’re done!
 
-### **What OOPSpam Adds to Kadence Forms**
+### **What oopspam Adds to Kadence Forms**
 
-Here’s what you unlock by using OOPSpam with Kadence:
+Here’s what you unlock by using oopspam with Kadence:
 
 * **Country Filtering** – Block or allow form submissions from specific countries
 * **Language Filtering** – Reject submissions written in certain languages
@@ -45,23 +45,23 @@ Here’s what you unlock by using OOPSpam with Kadence:
 
 ### **How to Set It Up**
 
-Follow these steps to connect OOPSpam to your Kadence Forms:
+Follow these steps to connect oopspam to your Kadence Forms:
 
-**Step 1: Install the OOPSpam Plugin**
+**Step 1: Install the oopspam Plugin**
 
 In your WordPress dashboard:
 
 * Go to **Plugins > Add New**
-* Search for “OOPSpam Anti-Spam”
+* Search for “oopspam Anti-Spam”
 * Click **Install Now**, then **Activate**
 
 **Step 2: Add Your API Key**
 
-Create an account at [OOPSpam.com](https://app.oopspam.com/Identity/Account/Login) and generate your API key.
+Create an account at [oopspam.com](https://app.oopspam.com/Identity/Account/Login) and generate your API key.
 
-![OOPSpam dashboard displaying API usage, average response time, and API key.](/blog/assets/posts/oopspam-dashboard-api.png "OOPSpam Dashboard")
+![oopspam dashboard displaying API usage, average response time, and API key.](/blog/assets/posts/oopspam-dashboard-api.png "oopspam Dashboard")
 
-Go to **OOPSpam Anti-Spam > Settings** in your WordPress dashboard and paste the API key in the appropriate field.
+Go to **oopspam Anti-Spam > Settings** in your WordPress dashboard and paste the API key in the appropriate field.
 
 ![Paste the API key in the appropriate field](/blog/assets/posts/oopspam-api-key.png "Paste the API key in the appropriate field")
 
@@ -84,7 +84,7 @@ Your forms will now be protected automatically, no manual adjustments needed per
 
 ### **Reviewing Blocked Entries**
 
-OOPSpam gives you access to detailed submission [logs](https://help.oopspam.com/wordpress/form-entries/), allowing you to:
+oopspam gives you access to detailed submission [logs](https://help.oopspam.com/wordpress/form-entries/), allowing you to:
 
 * View spam scores
 * See timestamps and IP addresses
@@ -95,9 +95,9 @@ These logs are visible in both your WordPress dashboard
 
 ![WordPress dashboard](/blog/assets/posts/form-spam-entries-oopspam.png "WordPress dashboard")
 
-and the OOPSpam online dashboard.
+and the oopspam online dashboard.
 
-![OOPSpam online dashboard](/blog/assets/posts/screenshot-1.png "OOPSpam online dashboard")
+![oopspam online dashboard](/blog/assets/posts/screenshot-1.png "oopspam online dashboard")
 
 ## **2. Block Countries Entirely Using Cloudflare**
 
@@ -173,7 +173,7 @@ Once saved, users from the [blocked countries](https://www.oopspam.com/blog/bloc
       <td>No native functionality for country filtering</td>
     </tr>
     <tr>
-      <td>OOPSpam Plugin</td>
+      <td>oopspam Plugin</td>
       <td>Form submissions</td>
       <td>Preventing unwanted entries while preserving access</td>
     </tr>
@@ -187,11 +187,11 @@ Once saved, users from the [blocked countries](https://www.oopspam.com/blog/bloc
 
 ## **Final thoughts**
 
-Kadence Forms don’t have a built-in way to block countries. OOPSpam Anti-Spam fills the gap by offering advanced spam filtering, country and language blocking, and detailed logs, all without altering your forms. 
+Kadence Forms don’t have a built-in way to block countries. oopspam Anti-Spam fills the gap by offering advanced spam filtering, country and language blocking, and detailed logs, all without altering your forms. 
 
 For broader protection, Cloudflare lets you block entire regions from reaching your site altogether. Together, they give you the flexibility to filter traffic and protect your forms from abuse, without sacrificing legitimate engagement.
 
-Need help getting started? Check out the OOPSpam [documentation](https://www.oopspam.com/help) or [contact the team](https://www.oopspam.com/#contact) for setup support.
+Need help getting started? Check out the oopspam [documentation](https://www.oopspam.com/help) or [contact the team](https://www.oopspam.com/#contact) for setup support.
 
 ## Related guides
 

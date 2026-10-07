@@ -10,7 +10,7 @@ description: "Check your domain reputation in minutes. Learn how to identify
 tags:
   - Domain Reputation
 ---
-Domain reputation is the trust score mailbox providers and browsers assign to your domain based on spam complaints, blocklist status, and authentication. Check it in seconds with [OOPSpam's free Domain Reputation Checker](https://domainreputationcheck.com/), which scans your domain against 35+ blocklists at once. If your score is bad, fix your SPF, DKIM, and DMARC records, clean your email list, and request delisting from any blocklist that flags you.
+Domain reputation is the trust score mailbox providers and browsers assign to your domain based on spam complaints, blocklist status, and authentication. Check it in seconds with [oopspam's free Domain Reputation Checker](https://domainreputationcheck.com/), which scans your domain against 35+ blocklists at once. If your score is bad, fix your SPF, DKIM, and DMARC records, clean your email list, and request delisting from any blocklist that flags you.
 
 ## **What Is Domain Reputation?**
 
@@ -33,7 +33,7 @@ Reputation is built from real signals, not a fixed formula:
 
 ![Run a free domain reputation check](/blog/assets/posts/domain-reputation-checker.png "Run a free domain reputation check")
 
-The fastest way to check your domain is a dedicated scanner. [OOPSpam's Domain Reputation Checker](https://domainreputationcheck.com/) is free and checks your domain against more than 35 blocklists, including Spamhaus DBL, SURBL, SORBS, and phishing and malware lists, in one pass.
+The fastest way to check your domain is a dedicated scanner. [oopspam's Domain Reputation Checker](https://domainreputationcheck.com/) is free and checks your domain against more than 35 blocklists, including Spamhaus DBL, SURBL, SORBS, and phishing and malware lists, in one pass.
 
 **How to do it:**
 
@@ -51,11 +51,11 @@ No signup is required, and it takes under a minute.
 
 A one-time check only tells you about today. Reputation problems often start quietly, weeks before you notice bounces or complaints piling up.
 
-OOPSpam's [Domain Reputation Watch](https://www.oopspam.com/blog/domain-reputation) solves this by monitoring your domains automatically. It runs weekly checks against major browsers, search engines, and email providers, and emails you the moment a domain gets flagged.
+oopspam's [Domain Reputation Watch](https://www.oopspam.com/blog/domain-reputation) solves this by monitoring your domains automatically. It runs weekly checks against major browsers, search engines, and email providers, and emails you the moment a domain gets flagged.
 
 **How to do it:**
 
-Log in to your [OOPSpam dashboard](https://app.oopspam.com/DomainWatcher) (paid plans). Open Domain Reputation Watch.
+Log in to your [oopspam dashboard](https://app.oopspam.com/DomainWatcher) (paid plans). Open Domain Reputation Watch.
 
 ![Open Domain Reputation Watch](/blog/assets/posts/do-watch-screenshot.png "Open Domain Reputation Watch")
 
@@ -65,7 +65,7 @@ Click Add domain.
 
 Enter the domain you want to monitor. Repeat for any client or additional domains your plan allows.
 
-That's it! OOPSpam checks every Monday and only emails you if a domain gets flagged, so your inbox stays quiet until something needs attention.
+That's it! oopspam checks every Monday and only emails you if a domain gets flagged, so your inbox stays quiet until something needs attention.
 
 ### **3. Check your authentication records**
 
@@ -114,14 +114,14 @@ Correct your SPF, DKIM, and DMARC DNS records before anything else. These record
 
 Stop sending to unengaged contacts, old lists, and invalid addresses. High bounce rates are one of the fastest ways to damage a domain. Keep bounces under 2%.
 
-**How to do it (using OOPSpam):**
+**How to do it (using oopspam):**
 
 ![Clean your email list](/blog/assets/posts/step5.png "Clean your email list")
 
-1. Log in to your [OOPSpam dashboard](https://app.oopspam.com) and open Integrations.
+1. Log in to your [oopspam dashboard](https://app.oopspam.com) and open Integrations.
 2. Connect your email platform, such as ActiveCampaign or [EmailOctopus](https://www.oopspam.com/blog/how-to-verify-and-clean-up-your-emailoctopus-email-list).
 3. Select the list you want to scan.
-4. Let OOPSpam scan every contact for spam traps, disposable addresses, and invalid emails.
+4. Let oopspam scan every contact for spam traps, disposable addresses, and invalid emails.
 5. Delete or unsubscribe the flagged contacts before your next send.
 
 If you manage lists in ActiveCampaign, [see the full walkthrough](https://www.oopspam.com/blog/how-to-verify-and-clean-up-your-activecampaign-email-list). If leads flow into your CRM through Zapier, you can also [block disposable and fake emails](https://www.oopspam.com/blog/how-to-block-disposable-and-fake-emails-from-entering-your-crm-via-zapier) before they ever reach your list.
@@ -132,7 +132,7 @@ If a scan shows your domain on a blocklist, stop the source of the problem first
 
 **How to do it:**
 
-1. Confirm which blocklist flagged you (from your OOPSpam scan results).
+1. Confirm which blocklist flagged you (from your oopspam scan results).
 2. Fix the root cause first, such as a compromised account, a dirty list, or a volume spike.
 3. Go to that specific blocklist's website and find its removal or delisting form.
 4. Submit the request with your domain and a brief explanation of the fix.
@@ -144,7 +144,7 @@ Skipping straight to a delisting request without fixing the cause usually gets y
 
 Checking your domain once and hoping for the best is not a strategy. The senders who avoid deliverability disasters check regularly and get alerted the moment something changes.
 
-Start with a free scan at [domainreputationcheck.com](https://domainreputationcheck.com/) to see where your domain stands right now. Then set up OOPSpam's Domain Reputation Watch so you're notified automatically if a domain you manage ever gets flagged, instead of finding out from a client or a spike in bounces.
+Start with a free scan at [domainreputationcheck.com](https://domainreputationcheck.com/) to see where your domain stands right now. Then set up oopspam's Domain Reputation Watch so you're notified automatically if a domain you manage ever gets flagged, instead of finding out from a client or a spike in bounces.
 
 Pair that with clean sending practices: verified lists, proper authentication, and steady send volume. Reputation problems are much easier to prevent than to repair.
 

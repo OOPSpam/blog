@@ -12,7 +12,7 @@ tags:
   - contact_form
 ---
 <center>
-<img loading="lazy"  width="772" style="height: 200px;object-fit: cover;" alt="OOPSpam illustration" src="/blog/assets/ways-to-stop-spam.png">
+<img loading="lazy"  width="772" style="height: 200px;object-fit: cover;" alt="oopspam illustration" src="/blog/assets/ways-to-stop-spam.png">
 </center>
 <br/>
 
@@ -20,7 +20,7 @@ Feeling overwhelmed by the amount of spam you are getting on your website? You'r
 
 This article doesn't list every spam detection strategy under the sun.
 
-Instead, it lists some of the tactics we use at [OOPSpam](https://www.oopspam.com) and many more proven to work ones. These are methods that stopped over 3.5M spam with 99.8% accuracy.
+Instead, it lists some of the tactics we use at [oopspam](https://www.oopspam.com) and many more proven to work ones. These are methods that stopped over 3.5M spam with 99.8% accuracy.
 
 Let's get to it
 
@@ -55,7 +55,7 @@ and here is one way to do it:
 
 <p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="html,result" data-user="oopspam" data-slug-hash="YzZOaYv" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Contact Form with honeypot">
   <span>See the Pen <a href="https://codepen.io/oopspam/pen/YzZOaYv">
-  Contact Form with honeypot</a> by OOPSpam (<a href="https://codepen.io/oopspam">@oopspam</a>)
+  Contact Form with honeypot</a> by oopspam (<a href="https://codepen.io/oopspam">@oopspam</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
@@ -74,7 +74,7 @@ In our experience, it depends on how you implement it. It is important that:
 2. Consider a threshold for the number of spam words in the content.
 3. Consider the frequency of spam word in a content
 
-Take a look at some of the spam words [we published](https://github.com/OOPSpam/spam-words).
+Take a look at some of the spam words [we published](https://github.com/oopspam/spam-words).
 
 ## Captcha: Solve an interactive problem
 
@@ -102,7 +102,7 @@ The most notable CAPTCHA solution is [reCaptcha](https://developers.google.com/r
 
 There are services such as [Spamhaus](https://www.spamhaus.org/) that keep a list of known spammer IPs. Spammers change their IPs often to avoid being blocked. However, blocking based on an IP is still a powerful way to block spam that is because a wide range of websites reports these IPs to these services.
 
-At OOPSpam, we receive thousands of spammer IPs every day. From our experience, over 60% of spam are detected solely based on IP. That being said relying entirely on an IP-based filtering may not be the best [spam protection](https://www.oopspam.com/blog/the-importance-of-spam-protection-for-lead-generation).
+At oopspam, we receive thousands of spammer IPs every day. From our experience, over 60% of spam are detected solely based on IP. That being said relying entirely on an IP-based filtering may not be the best [spam protection](https://www.oopspam.com/blog/the-importance-of-spam-protection-for-lead-generation).
 
 > 🎯 Keep in mind that some legitimate users may use VPNs or proxies which tend to be used by spammers as well. That is why you may unintentionally restrict legitimate visitors.
 
@@ -119,7 +119,7 @@ Both approaches work great but if you want to be open to every country then the 
 
 Another less known way to block spam is by languages. Similar to country restriction, by simply allowing submission in a certain language. If you expect comments on your website to be in English, letting comments only in English through could potentially eliminate unnecessary work.
 
-With [OOPSpam API](https://www.oopspam.com/blog/how-to-filter-spam), we implemented three options:
+With [oopspam API](https://www.oopspam.com/blog/how-to-filter-spam), we implemented three options:
 
 Allow messages only in selected languages
 Block messages from specific countries
@@ -157,11 +157,11 @@ Although not all URL shortening services are malicious. Some shortening services
 
 > 🎯 A rule-based spam filtering is a powerful alternative to stop spam. It has been used for decades, but make sure you reconsider your rules once in a while to avoid flagging legitimate messages.
 
-## **OOPSpam: A Smarter Combination of All**
+## **oopspam: A Smarter Combination of All**
 
-![OOPSpam WordPress plugin](/blog/assets/posts/oopspam-anti-spam-overview.png "OOPSpam WordPress plugin")
+![oopspam WordPress plugin](/blog/assets/posts/oopspam-anti-spam-overview.png "oopspam WordPress plugin")
 
-All the techniques above can help, but none are foolproof. Spam tactics change fast, and what works today might fail tomorrow. That’s why at OOPSpam, we’ve been refining our models since 2017 to keep up.
+All the techniques above can help, but none are foolproof. Spam tactics change fast, and what works today might fail tomorrow. That’s why at oopspam, we’ve been refining our models since 2017 to keep up.
 
 Instead of relying on one approach, we combine multiple proven strategies into a single, [powerful API](https://www.oopspam.com/blog/how-to-add-spamfilter-to-a-contact-form). We skip honeypots, modern bots can easily bypass them, and focus on smarter, more reliable protection:
 
@@ -178,7 +178,7 @@ It’s automatic. It’s accurate. And it works quietly in the background. You w
 
 There isn't a single solution for the spam problem. Spam messages on the web are different from spam in emails. To encounter them we need to use multiple approaches.
 
-Most of these tactics we already use at [OOPSpam](https://www.oopspam.com) and found them very effective when used in combination.
+Most of these tactics we already use at [oopspam](https://www.oopspam.com) and found them very effective when used in combination.
 
 Happy spam-free day!
 

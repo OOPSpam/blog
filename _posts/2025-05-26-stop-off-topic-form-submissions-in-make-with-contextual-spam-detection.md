@@ -4,7 +4,7 @@ title: Stop Off-Topic Form Submissions in Make with Contextual Spam Detection
 date: 2025-05-26T11:25:00.000Z
 author: chazie
 image: /assets/posts/common-spam-problems-in-make.jpg
-description: Stop off-topic form submissions in Make by using OOPSpam’s
+description: Stop off-topic form submissions in Make by using oopspam’s
   Contextual Spam Detection. Filter irrelevant messages and keep your workflows
   clean.
 tags:
@@ -15,7 +15,7 @@ tags:
 
 If you automate form submissions through Make (formerly Integromat), you might still notice off-topic or irrelevant messages slipping through—even with filters in place. Why? Most form apps integrated with Make don’t transmit user metadata like IP addresses, making traditional spam filters less effective.
 
-That’s where contextual spam detection steps in. With [OOPSpam’s Context-Aware Spam Detection](https://www.oopspam.com/blog/introducing-contextual-spam-detection), you can block messages that simply don’t match the purpose of your form or business.
+That’s where contextual spam detection steps in. With [oopspam’s Context-Aware Spam Detection](https://www.oopspam.com/blog/introducing-contextual-spam-detection), you can block messages that simply don’t match the purpose of your form or business.
 
 ## **What is Contextual Spam Detection?**
 
@@ -37,7 +37,7 @@ This approach is especially valuable in automation platforms like [Make](https:/
 
 ## **How to Use Contextual Spam Detection in Make**
 
-We’ll show you how to [integrate OOPSpam with Make](https://help.oopspam.com/other-integrations/make/) to filter out off-topic or misleading form messages.
+We’ll show you how to [integrate oopspam with Make](https://help.oopspam.com/other-integrations/make/) to filter out off-topic or misleading form messages.
 
 ### **Step 1: Set Up Your Form Module**
 
@@ -49,15 +49,15 @@ Start with a form submission trigger. For example, use [Jotform](https://www.oop
 
 This module will pull in every new submission as a bundle of data.
 
-### **Step 2: Add the OOPSpam Module**
+### **Step 2: Add the oopspam Module**
 
-After your form trigger, add the “**Check for Spam**” module from **OOPSpam Anti-Spam** (that’s us! 👋).
+After your form trigger, add the “**Check for Spam**” module from **oopspam Anti-Spam** (that’s us! 👋).
 
-![Add the OOPSpam Module](/blog/assets/posts/add-the-oopspam-module-make.png "Add the OOPSpam Module")
+![Add the oopspam Module](/blog/assets/posts/add-the-oopspam-module-make.png "Add the oopspam Module")
 
 This is a verified module on Make and makes integration fast and straightforward.
 
-![OOPSpam Anti-Spam - Context Settings](/blog/assets/posts/oopspam-anti-spam-context.png "OOPSpam Anti-Spam - Context Settings")
+![oopspam Anti-Spam - Context Settings](/blog/assets/posts/oopspam-anti-spam-context.png "oopspam Anti-Spam - Context Settings")
 
 You’ll need to map:
 
@@ -68,7 +68,7 @@ The machine learning will match the message to your context and return a spam sc
 
 ### **Step 3: Define Your Context**
 
-This is where the smart filtering happens. Your **context** helps OOPSpam understand what kind of messages are appropriate.
+This is where the smart filtering happens. Your **context** helps oopspam understand what kind of messages are appropriate.
 
 ![Define Your Context](/blog/assets/posts/define-your-context-make.png "Define Your Context")
 
@@ -80,7 +80,7 @@ Here are a few examples:
 
 ### **Step 4: Add a Router or Filter Module (Optional)**
 
-Now that OOPSpam returns a **spam score**, you’ll want to filter your data to route only the clean messages through your workflow—and isolate the spam.
+Now that oopspam returns a **spam score**, you’ll want to filter your data to route only the clean messages through your workflow—and isolate the spam.
 
 In [Make](https://www.oopspam.com/blog/5-common-spam-problems-in-make-how-to-fix-them), this is done using a **Router module** with two paths:
 
@@ -112,10 +112,10 @@ This dual-routing method gives you full control over how each message is handled
 
 ## **Supported Platforms**
 
-OOPSpam’s Contextual Spam Detection is available via:
+oopspam’s Contextual Spam Detection is available via:
 
 * [Make](https://www.make.com/en/register?promo=oopspam-anti-spam-app-partner-program) (as shown above)
-* [OOPSpam WordPress Plugin](https://wordpress.org/plugins/oopspam-anti-spam/)
+* [oopspam WordPress Plugin](https://wordpress.org/plugins/oopspam-anti-spam/)
 * [Direct REST API](https://www.oopspam.com/)
 * [Zapier](https://zapier.com/apps/oopspam/integrations)
 * [Bubble.io](https://www.oopspam.com/blog/spam-protection-for-bubble.io)
@@ -128,6 +128,6 @@ If you're tired of unwanted form entries making their way into your Make automat
 
 Contextual spam detection is especially useful in Make, since most form tools don’t provide rich sender metadata. With just your message and a clear context, you can keep your workflows clean and relevant.
 
-Ready to test it out? Head to OOPSpam to [get your API key](https://app.oopspam.com/Identity/Account/Register) or [reach out](https://www.oopspam.com/#contact) if you have questions.
+Ready to test it out? Head to oopspam to [get your API key](https://app.oopspam.com/Identity/Account/Register) or [reach out](https://www.oopspam.com/#contact) if you have questions.
 
 Stay context-aware, stay spam-free!

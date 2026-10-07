@@ -64,14 +64,14 @@ Many people are happy with reCAPTCHA. It is effective against simple bots, howev
 
 If you are looking for a free solution, reCAPTCHA is a good option.
 
-## OOPSpam Anti-Spam Plugin
+## oopspam Anti-Spam Plugin
 
-1. [Subscribe to get an API key](https://app.oopspam.com/Identity/Account/Register) then copy-paste the API key to the plugin's appropriate field under **Settings->OOPSpam Anti-Spam** on your WordPress Admin Dashboard.
+1. [Subscribe to get an API key](https://app.oopspam.com/Identity/Account/Register) then copy-paste the API key to the plugin's appropriate field under **Settings->oopspam Anti-Spam** on your WordPress Admin Dashboard.
 
-   > ℹ️ Make sure to select *OOPSpam Dashboard* option on the setting page
-2. If you have a Ninja Forms installed and activated then a special section will appear on OOPSpam Anti-Spam plugin's setting page.
+   > ℹ️ Make sure to select *oopspam Dashboard* option on the setting page
+2. If you have a Ninja Forms installed and activated then a special section will appear on oopspam Anti-Spam plugin's setting page.
 
-   ![OOPSpam Anti-Spam WordPress Plugin Settings](/blog/assets/oopspam-nj-settings.png "OOPSpam Anti-Spam WordPress Plugin Settings")
+   ![oopspam Anti-Spam WordPress Plugin Settings](/blog/assets/oopspam-nj-settings.png "oopspam Anti-Spam WordPress Plugin Settings")
 3. On this page, you need to activate spam filtering for Ninja Forms by selecting the **Activate Spam Protection** checkbox.
 4. Don't forget to enter a short message to display when a spam Ninja Forms entry is submitted.
 
@@ -79,16 +79,16 @@ That is all! Now go on and create your forms.
 
 In addition, the plugin allows you to set up a [filter to accept submissions](https://www.oopspam.com/blog/how-to-limit-form-submissions-in-ninja-forms) only from [certain countries](https://www.oopspam.com/blog/how-to-block-countries-in-ninja-forms) and languages.
 
-![OOPSpam WordPress Plugin country & language restrictions](https://www.oopspam.com/assets/country-language-filter.png "OOPSpam WordPress Plugin country & language restrictions")
+![oopspam WordPress Plugin country & language restrictions](https://www.oopspam.com/assets/country-language-filter.png "oopspam WordPress Plugin country & language restrictions")
 
-![OOPSpam WordPress Plugin block countries](https://www.oopspam.com/blog/assets/wp-block-countries.png "OOPSpam WordPress Plugin block countries")
+![oopspam WordPress Plugin block countries](https://www.oopspam.com/blog/assets/wp-block-countries.png "oopspam WordPress Plugin block countries")
 
 > 📌 Using country filtering allows your site to be available worldwide, but only limits who can submit a form.
 
 Once spam detected your message will appear at the bottom of the message field.
 
 <center>
-<img loading="lazy"  alt="OOPSpam detected spam on Ninja Forms" src="/blog/assets/nj-spam-detected.png">
+<img loading="lazy"  alt="oopspam detected spam on Ninja Forms" src="/blog/assets/nj-spam-detected.png">
 </center>
 <br/>
 

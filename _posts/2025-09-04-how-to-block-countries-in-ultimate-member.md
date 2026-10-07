@@ -5,7 +5,7 @@ date: 2025-09-04T03:22:00.000+08:00
 last_modified_at: 2026-01-06T11:36:00.000+08:00
 author: chazie
 image: /blog/assets/posts/ultimate_header.png
-description: Ultimate Member doesn’t have built-in country blocking. Use OOPSpam
+description: Ultimate Member doesn’t have built-in country blocking. Use oopspam
   for form-level protection or Cloudflare Firewall for site-wide blocking.
 tags:
   - Ultimate Member
@@ -13,7 +13,7 @@ tags:
 ---
 ![Ultimate Member](/blog/assets/posts/ultimate-member.png "Ultimate Member")
 
-Ultimate Member does not support [country blocking](https://www.oopspam.com/blog/how-to-block-countries-from-your-website-the-complete-guide) on its own. To stop unwanted registrations, spam, or abusive traffic, you’ll need to use a third-party tool. The easiest solution is the [OOPSpam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/) plugin (that’s us 👋), which lets you block specific countries at the form level. For wider protection beyond Ultimate Member, you can use [Cloudflare Firewall Rules](https://developers.cloudflare.com/firewall/) to block traffic from entire countries before they reach your site.
+Ultimate Member does not support [country blocking](https://www.oopspam.com/blog/how-to-block-countries-from-your-website-the-complete-guide) on its own. To stop unwanted registrations, spam, or abusive traffic, you’ll need to use a third-party tool. The easiest solution is the [oopspam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/) plugin (that’s us 👋), which lets you block specific countries at the form level. For wider protection beyond Ultimate Member, you can use [Cloudflare Firewall Rules](https://developers.cloudflare.com/firewall/) to block traffic from entire countries before they reach your site.
 
 ### **Why Ultimate Member Doesn’t Do This Directly**
 
@@ -23,9 +23,9 @@ It focuses on creating profiles, handling registrations, and restricting content
 
 Most importantly, this means you’ll need a separate plugin or a network-level firewall to block spam or access from unwanted countries.
 
-## **Option 1: Block Countries in Ultimate Member Forms with OOPSpam**
+## **Option 1: Block Countries in Ultimate Member Forms with oopspam**
 
-[OOPSpam](https://www.oopspam.com/) gives you direct control over form submissions.
+[oopspam](https://www.oopspam.com/) gives you direct control over form submissions.
 
 It integrates with WordPress forms, including Ultimate Member, and lets you decide which countries can submit registrations or login attempts.
 
@@ -40,13 +40,13 @@ It integrates with WordPress forms, including Ultimate Member, and lets you deci
 
 ### **How to Set It Up**
 
-Install the **OOPSpam Anti-Spam plugin** from your WordPress dashboard. Create an account at **[OOPSpam.com](https://app.oopspam.com/Identity/Account/Login)** and generate an API key.
+Install the **oopspam Anti-Spam plugin** from your WordPress dashboard. Create an account at **[oopspam.com](https://app.oopspam.com/Identity/Account/Login)** and generate an API key.
 
-![OOPSpam Anti-Spam](/blog/assets/posts/oopspam-dashboard-api.png "OOPSpam Anti-Spam")
+![oopspam Anti-Spam](/blog/assets/posts/oopspam-dashboard-api.png "oopspam Anti-Spam")
 
-Go to **OOPSpam Anti-Spam > Settings** and paste your API key.
+Go to **oopspam Anti-Spam > Settings** and paste your API key.
 
-![OOPSpam Anti-Spam > Settings](/blog/assets/posts/oopspam-api-key.png "OOPSpam Anti-Spam > Settings")
+![oopspam Anti-Spam > Settings](/blog/assets/posts/oopspam-api-key.png "oopspam Anti-Spam > Settings")
 
 Enable protection for **Ultimate Member forms** in the settings.
 
@@ -60,9 +60,9 @@ Save changes and review blocked entries under **Spam & Ham logs** in WordPress.
 
 ![Spam & Ham logs in WordPress](/blog/assets/posts/form-spam-entries-oopspam.png "Spam & Ham logs in WordPress")
 
-For deeper insights, visit the **OOPSpam Dashboard** where you’ll see reports, blocking reasons, and spam trends over time.
+For deeper insights, visit the **oopspam Dashboard** where you’ll see reports, blocking reasons, and spam trends over time.
 
-![OOPSpam dashboard logs](/blog/assets/posts/screenshot-1.png "OOPSpam dashboard logs")
+![oopspam dashboard logs](/blog/assets/posts/screenshot-1.png "oopspam dashboard logs")
 
 ## **Option 2: Block Entire Countries with Cloudflare**
 
@@ -86,7 +86,7 @@ Visitors from those countries will now be denied access to your entire site, not
 
 The main takeaway is this:
 
-* OOPSpam gives you form-level control, letting you block spam registrations by country inside Ultimate Member.
+* oopspam gives you form-level control, letting you block spam registrations by country inside Ultimate Member.
 * Cloudflare Firewall provides site-wide security, stopping abusive traffic before it hits your server.
 
 Together, these tools give you the flexibility and protection that Ultimate Member alone cannot provide, keeping your site safer while still letting the right users in.

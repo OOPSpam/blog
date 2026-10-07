@@ -5,14 +5,14 @@ date: 2025-06-06T08:49:00.000Z
 author: chazie
 image: /blog/assets/posts/header_form_ads.jpg
 description: Targeted form spam can drain your Google Ads budget fast. Learn how
-  to detect, prevent, and stop spam on WordPress forms with tools like OOPSpam.
+  to detect, prevent, and stop spam on WordPress forms with tools like oopspam.
 tags:
   - Google Ads
   - WordPress
 ---
 ![How Targeted Form Spam Can Drain Your Google Ads Budget](/blog/assets/posts/header_form_ads.jpg "How Targeted Form Spam Can Drain Your Google Ads Budget")
 
-Form spam isn’t just annoying—it can waste serious ad spend. If you're running Google Ads, especially for lead generation, targeted form spam can inflate conversion data, clutter your CRM, and disrupt your sales pipeline. In this guide, we’ll break down how it happens, what signs to look for, and how tools like OOPSpam can help protect your WordPress site.
+Form spam isn’t just annoying—it can waste serious ad spend. If you're running Google Ads, especially for lead generation, targeted form spam can inflate conversion data, clutter your CRM, and disrupt your sales pipeline. In this guide, we’ll break down how it happens, what signs to look for, and how tools like oopspam can help protect your WordPress site.
 
 ## **What Is Targeted Form Spam?**
 
@@ -65,35 +65,35 @@ PMax campaigns automate ad placement across Google’s ecosystem—including Dis
 
 ## **How to Protect Your Budget and Data From Form Spam**
 
-A layered approach works best. **[OOPSpam](https://www.oopspam.com/)** (that’s us 👋) is a privacy-first, WordPress-compatible spam filter that works with popular form builders.
+A layered approach works best. **[oopspam](https://www.oopspam.com/)** (that’s us 👋) is a privacy-first, WordPress-compatible spam filter that works with popular form builders.
 
-### **Why OOPSpam Works for WordPress Users**
+### **Why oopspam Works for WordPress Users**
 
-![OOPSpam WordPress plugin ](/blog/assets/posts/oopspam-anti-spam-overview.png "OOPSpam WordPress plugin")
+![oopspam WordPress plugin ](/blog/assets/posts/oopspam-anti-spam-overview.png "oopspam WordPress plugin")
 
 * No CAPTCHA required
 * Blocks by IP reputation, [content analysis](https://www.oopspam.com/blog/introducing-contextual-spam-detection), and patterns
 * Supports major form plugins ([Gravity Forms](https://www.oopspam.com/blog/spam-protection-for-gravity-forms), [WPForms](https://www.oopspam.com/blog/spam-protection-for-wpforms), [Contact Form 7](https://www.oopspam.com/spam-filter-for-contactform7), etc.)
 * GDPR-compliant and user-friendly
 
-## **Step-by-Step: Using OOPSpam to Block Targeted Spam**
+## **Step-by-Step: Using oopspam to Block Targeted Spam**
 
 ### **Step 1: Install the Plugin and Get Your API Key**
 
 ![Get Your API Key](/blog/assets/posts/oopspam-dashboard-api.png "Get Your API Key")
 
 * Go to **Plugins > Add New**
-* Search for “**[OOPSpam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/)**”
+* Search for “**[oopspam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/)**”
 * Click **Install Now** > **Activate**
-* Visit OOPSpam, [create an account](https://app.oopspam.com/Identity/Account/Register), and copy your API key
+* Visit oopspam, [create an account](https://app.oopspam.com/Identity/Account/Register), and copy your API key
 
 ### **Step 2: Paste Your API Key**
 
-In your WordPress dashboard, go to **OOPSpam > General Settings** and paste your API key to activate filtering.
+In your WordPress dashboard, go to **oopspam > General Settings** and paste your API key to activate filtering.
 
 ![Paste Your API Key](/blog/assets/posts/my-api-key-field.png "Paste Your API Key")
 
-### **Step 3: Enable OOPSpam in Your Form Plugin**
+### **Step 3: Enable oopspam in Your Form Plugin**
 
 Supported plugins include:
 
@@ -103,9 +103,9 @@ Supported plugins include:
 * [Formidable Forms](https://www.oopspam.com/blog/spam-protection-for-formidable)
 * And [more](https://wordpress.org/plugins/oopspam-anti-spam/)
 
-Go to your form’s settings and toggle on **“Activate Spam Protection”** under OOPSpam.
+Go to your form’s settings and toggle on **“Activate Spam Protection”** under oopspam.
 
-![OOPSpam Activate Spam Protection](/blog/assets/posts/gravity-forms-spam-protection-activate.png "OOPSpam Activate Spam Protection")
+![oopspam Activate Spam Protection](/blog/assets/posts/gravity-forms-spam-protection-activate.png "oopspam Activate Spam Protection")
 
 ### **Step 4: Adjust Your Settings (Optional)**
 
@@ -113,7 +113,7 @@ Customize protection based on your needs:
 
 * Adjust **Sensitivity Level** (moderate works for most sites)
 
-![OOPSpam Sensitivity Level](/blog/assets/posts/oopspam-sensitivity-level.png "OOPSpam Sensitivity Level")
+![oopspam Sensitivity Level](/blog/assets/posts/oopspam-sensitivity-level.png "oopspam Sensitivity Level")
 
 * Enable IP/content filtering
 
@@ -127,7 +127,7 @@ Customize protection based on your needs:
 
 ![Restrict submissions per Google Ads lead](/blog/assets/posts/rate-limiting-google-ads.png "Restrict submissions per Google Ads lead")
 
-> OOPSpam's “Restrict submissions per Google Ads lead” setting in the Rate Limiting tab allows you to enforce this protection without enabling global rate limiting.
+> oopspam's “Restrict submissions per Google Ads lead” setting in the Rate Limiting tab allows you to enforce this protection without enabling global rate limiting.
 
 * Allow/block certain domains, keywords, or IPs
 
@@ -144,13 +144,13 @@ After setup, watch your form submissions. You should see a drop in spam. For ext
 
 ### **1. Add CAPTCHA or Cloudflare Turnstile**
 
-Though OOPSpam doesn’t require it, Turnstile offers a user-friendly [CAPTCHA alternative](https://www.oopspam.com/blog/best-captcha-alternatives) for added defense.
+Though oopspam doesn’t require it, Turnstile offers a user-friendly [CAPTCHA alternative](https://www.oopspam.com/blog/best-captcha-alternatives) for added defense.
 
 ### **2. Validate Conversions With GCLID**
 
 Use Google Click ID ([GCLID](https://support.google.com/google-ads/answer/9744275?hl=en)) or offline conversion tracking to ensure you're only reporting qualified leads in Google Ads.
 
-> If you're using OOPSpam, there's a built-in setting to restrict how many submissions can be made per GCLID. This helps prevent abuse by ensuring the same ad click (i.e., one GCLID) can't generate multiple form submissions. You can set the limit to 1 or more, depending on your workflow. See the screenshot above.
+> If you're using oopspam, there's a built-in setting to restrict how many submissions can be made per GCLID. This helps prevent abuse by ensuring the same ad click (i.e., one GCLID) can't generate multiple form submissions. You can set the limit to 1 or more, depending on your workflow. See the screenshot above.
 
 ### **3. Review Placement Reports**
 
@@ -164,8 +164,8 @@ Filter traffic or form access by location, especially if you only serve a specif
 
 Targeted form spam isn’t just noise—it directly affects your budget, lead quality, and campaign performance. If you’re running Google Ads and seeing suspicious conversions, take action.
 
-Adding a tool like [OOPSpam to your WordPress](https://www.oopspam.com/wordpress) site is a practical step to reduce fake leads and maintain clean data.
+Adding a tool like [oopspam to your WordPress](https://www.oopspam.com/wordpress) site is a practical step to reduce fake leads and maintain clean data.
 
-You can install the plugin directly from the official WordPress repository. For setup instructions and additional tips, visit the [documentation](https://www.oopspam.com/help) at OOPSpam.
+You can install the plugin directly from the official WordPress repository. For setup instructions and additional tips, visit the [documentation](https://www.oopspam.com/help) at oopspam.
 
 Happy spam-free day!

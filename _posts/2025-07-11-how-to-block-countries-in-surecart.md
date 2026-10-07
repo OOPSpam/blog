@@ -6,7 +6,7 @@ last_modified_at: 2026-01-06T11:36:00.000+08:00
 author: chazie
 image: /blog/assets/posts/header_surecart.jpg
 description: Block countries in SureCart using shipping zones, conditional
-  blocks, OOPSpam for advanced spam filtering, or Cloudflare for full-site
+  blocks, oopspam for advanced spam filtering, or Cloudflare for full-site
   protection by region.
 tags:
   - SureCart
@@ -19,7 +19,7 @@ Spam orders and fraudulent submissions from certain regions can impact revenue, 
 This guide explains:
 
 * How to [block countries](https://www.oopspam.com/blog/how-to-block-countries-from-your-website-the-complete-guide) using SureCart's built-in tools
-* How to enhance protection using the OOPSpam Anti-Spam plugin
+* How to enhance protection using the oopspam Anti-Spam plugin
 * How to block entire countries at the DNS level using Cloudflare
 
 ## **1. Blocking Countries Using SureCart's Built-In Features**
@@ -50,15 +50,15 @@ Open **SureCart > Checkout Forms**, then select the form you want to edit. Add a
 
 You can now display a custom message, hide payment options, or even block checkout entirely based on the customer's location. This is useful if you only want to restrict access to specific payment gateways or discounts for certain regions.
 
-## **2. Advanced Country Blocking in SureCart Using OOPSpam**
+## **2. Advanced Country Blocking in SureCart Using oopspam**
 
-![OOPSpam Anti-Spam plugin](/blog/assets/posts/oopspam-anti-spam-overview.png "OOPSpam Anti-Spam plugin")
+![oopspam Anti-Spam plugin](/blog/assets/posts/oopspam-anti-spam-overview.png "oopspam Anti-Spam plugin")
 
-If you're facing bot attacks, spam orders, or automated abuse from specific regions, the **[OOPSpam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/)** plugin is a robust option.
+If you're facing bot attacks, spam orders, or automated abuse from specific regions, the **[oopspam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/)** plugin is a robust option.
 
-**[OOPSpam](https://www.oopspam.com/)** (that’s us 👋) integrates with SureCart to help filter out unwanted form submissions and purchases before they reach your inbox or payment processor.
+**[oopspam](https://www.oopspam.com/)** (that’s us 👋) integrates with SureCart to help filter out unwanted form submissions and purchases before they reach your inbox or payment processor.
 
-### **What OOPSpam Adds to SureCart**
+### **What oopspam Adds to SureCart**
 
 * **Country Filtering**: Block or allow submissions based on the user's country.
 * **Language Filtering**: Reject messages written in specific languages.
@@ -67,13 +67,13 @@ If you're facing bot attacks, spam orders, or automated abuse from specific regi
 
 ### **How to Set It Up**
 
-Install the **OOPSpam Anti-Spam** plugin from your WordPress dashboard. Once active, go to **OOPSpam Anti-Spam > Settings**.
+Install the **oopspam Anti-Spam** plugin from your WordPress dashboard. Once active, go to **oopspam Anti-Spam > Settings**.
 
-![OOPSpam API key](/blog/assets/posts/oopspam-api-key.png "OOPSpam API key")
+![oopspam API key](/blog/assets/posts/oopspam-api-key.png "oopspam API key")
 
-Paste your **API key** from your [OOPSpam account](https://app.oopspam.com/Identity/Account/Register) to activate protection. 
+Paste your **API key** from your [oopspam account](https://app.oopspam.com/Identity/Account/Register) to activate protection. 
 
-![OOPSpam account dashboard](/blog/assets/posts/oopspam-dashboard-api.png "OOPSpam account dashbaord")
+![oopspam account dashboard](/blog/assets/posts/oopspam-dashboard-api.png "oopspam account dashbaord")
 
 Then, scroll to the **Country Filtering section** and choose the countries you want to block or allow.
 
@@ -83,11 +83,11 @@ Next, **Activate Spam Protection** by switching the toggle to the "**on**" posit
 
 ![SureCart Activate Spam Protection](/blog/assets/posts/surecart-active-spam-protection.png "SureCart Activate Spam Protection")
 
-Once saved, OOPSpam will filter submissions in the background, blocking unwanted entries while keeping the rest of your website accessible.
+Once saved, oopspam will filter submissions in the background, blocking unwanted entries while keeping the rest of your website accessible.
 
 ### **Monitoring and Logs**
 
-Unlike SureCart's built-in shipping or form controls, OOPSpam offers [detailed logs](https://help.oopspam.com/wordpress/form-entries/) for each blocked or accepted submission. Each entry includes:
+Unlike SureCart's built-in shipping or form controls, oopspam offers [detailed logs](https://help.oopspam.com/wordpress/form-entries/) for each blocked or accepted submission. Each entry includes:
 
 * [Country](https://www.oopspam.com/blog/filter-spam-by-country) and IP address
 * Spam score
@@ -96,9 +96,9 @@ Unlike SureCart's built-in shipping or form controls, OOPSpam offers [detailed l
 
 In your [WordPress](https://www.oopspam.com/wordpress) admin panel, you’ll find sections for **Form Spam Entries** (blocked) and **Form Ham Entries** (clean).
 
-Over in your OOPSpam dashboard, you’ll see detailed logs that include submission content, IP address, spam score, timestamp, and other useful data.
+Over in your oopspam dashboard, you’ll see detailed logs that include submission content, IP address, spam score, timestamp, and other useful data.
 
-Here’s an example of what the log view looks like in your OOPSpam account:
+Here’s an example of what the log view looks like in your oopspam account:
 
 ![Monitoring and Logs](/blog/assets/posts/screenshot-1.png "Monitoring and Logs")
 
@@ -157,7 +157,7 @@ This blocks all requests from those countries, including visits to your homepage
       <td>Regional sales restrictions or legal compliance</td>
     </tr>
     <tr>
-      <td>OOPSpam Anti-Spam</td>
+      <td>oopspam Anti-Spam</td>
       <td>Form submissions & orders</td>
       <td>Spam filtering, language or IP blocking</td>
     </tr>
@@ -171,6 +171,6 @@ This blocks all requests from those countries, including visits to your homepage
 
 ## **Final thoughts**
 
-SureCart gives you flexible tools to restrict purchases based on country, but it doesn't filter out spam or bot activity. For a deeper layer of protection, OOPSpam integrates directly with SureCart and can block spammy or suspicious entries based on location, [rate limiting](https://www.oopspam.com/blog/how-to-rate-limit-orders-in-surecart), [IP filtering](https://www.oopspam.com/blog/how-to-block-vpn-and-data-center-ip-submissions-in-surecart-forms), language, and more.
+SureCart gives you flexible tools to restrict purchases based on country, but it doesn't filter out spam or bot activity. For a deeper layer of protection, oopspam integrates directly with SureCart and can block spammy or suspicious entries based on location, [rate limiting](https://www.oopspam.com/blog/how-to-rate-limit-orders-in-surecart), [IP filtering](https://www.oopspam.com/blog/how-to-block-vpn-and-data-center-ip-submissions-in-surecart-forms), language, and more.
 
-If you're dealing with targeted abuse or bot attacks, consider adding OOPSpam and optionally Cloudflare rules for broader security.
+If you're dealing with targeted abuse or bot attacks, consider adding oopspam and optionally Cloudflare rules for broader security.

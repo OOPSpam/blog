@@ -5,7 +5,7 @@ date: 2025-04-23T03:35:00.000Z
 author: chazie
 image: /assets/posts/how-to-block-vpn-and-data-center-ip-traffic-in-your-woocommerce-shop.jpg
 description: Protect your WooCommerce shop from spam and fake orders. Learn how
-  to block VPN and data center traffic using OOPSpam plugin for better security.
+  to block VPN and data center traffic using oopspam plugin for better security.
 tags:
   - WooCommerce
   - VPN
@@ -14,7 +14,7 @@ tags:
 
 Running a [WooCommerce](https://woocommerce.com/) shop means you're not just managing products and sales—you’re also dealing with bots, fake signups, fraudulent orders, and spam. A major cause of these unwanted activities? Traffic from VPNs and cloud-hosted servers.
 
-In this blog, we’ll explain why these IP sources are problematic and how to block them—either manually with Cloudflare or automatically with the OOPSpam plugin for WordPress.
+In this blog, we’ll explain why these IP sources are problematic and how to block them—either manually with Cloudflare or automatically with the oopspam plugin for WordPress.
 
 ## **Why You Should Block VPN and Cloud IPs on WooCommerce**
 
@@ -72,11 +72,11 @@ Each major hosting or VPN provider is assigned a unique [ASN](https://en.wikiped
 
 This method is best for advanced users or those managing high-volume stores with active threat monitoring.
 
-## **Method 2: Automatically Block VPN and Cloud IPs in WooCommerce Using the OOPSpam Plugin**
+## **Method 2: Automatically Block VPN and Cloud IPs in WooCommerce Using the oopspam Plugin**
 
-![OOPSpam WordPress plugin ](/blog/assets/posts/oopspam-anti-spam-overview.png "OOPSpam WordPress plugin ")
+![oopspam WordPress plugin ](/blog/assets/posts/oopspam-anti-spam-overview.png "oopspam WordPress plugin ")
 
-If you prefer an easier, low-maintenance solution, the **[OOPSpam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/)** (that’s us 👋) offers one-click [spam protection for WooCommerce](https://www.oopspam.com/blog/spam-protection-for-woocommerce).
+If you prefer an easier, low-maintenance solution, the **[oopspam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/)** (that’s us 👋) offers one-click [spam protection for WooCommerce](https://www.oopspam.com/blog/spam-protection-for-woocommerce).
 
 We’ve added two important settings under IP Filtering:
 
@@ -85,9 +85,9 @@ We’ve added two important settings under IP Filtering:
 
 These toggles allow you to automatically block the most common spam and fraud sources without needing to touch IP lists or research ASNs.
 
-## **Why OOPSpam Works So Well for WooCommerce**
+## **Why oopspam Works So Well for WooCommerce**
 
-Unlike basic spam plugins that just flag suspicious behavior, OOPSpam actively blocks harmful traffic using a continuously updated database that includes:
+Unlike basic spam plugins that just flag suspicious behavior, oopspam actively blocks harmful traffic using a continuously updated database that includes:
 
 * IPs from over 2,000+ data centers worldwide
 * Ranges used by popular VPN and proxy providers
@@ -97,23 +97,23 @@ This makes it perfect for protecting your WooCommerce checkout forms, account re
 
 It also works with many common WooCommerce extensions and themes—and the protections apply even if you’re using additional plugins or integrations.
 
-## **How to Enable VPN and Cloud IP Blocking for WooCommerce with OOPSpam**
+## **How to Enable VPN and Cloud IP Blocking for WooCommerce with oopspam**
 
 Getting started is quick and easy:
 
-### **Step 1: Install the OOPSpam Plugin**
+### **Step 1: Install the oopspam Plugin**
 
-Go to your WordPress dashboard and navigate to **Plugins > Add New**. Search for **OOPSpam Anti-Spam**, install, and activate the latest version.
+Go to your WordPress dashboard and navigate to **Plugins > Add New**. Search for **oopspam Anti-Spam**, install, and activate the latest version.
 
-![Create an account at the OOPSpam Dashboard and copy your API key.](/blog/assets/posts/oopspam-dashboard-api.png "OOPSpam Dashboard")
+![Create an account at the oopspam Dashboard and copy your API key.](/blog/assets/posts/oopspam-dashboard-api.png "oopspam Dashboard")
 
-Create an account at the[ OOPSpam Dashboard](https://app.oopspam.com/Identity/Account/Login) and copy your API key.
+Create an account at the[ oopspam Dashboard](https://app.oopspam.com/Identity/Account/Login) and copy your API key.
 
 ### **Step 2: Connect Your API Key**
 
-Head to **Settings > OOPSpam Anti-Spam** in your WordPress admin panel.
+Head to **Settings > oopspam Anti-Spam** in your WordPress admin panel.
 
-* In the **General** tab, choose “OOPSpam Dashboard” as your source
+* In the **General** tab, choose “oopspam Dashboard” as your source
 * Paste your API key in the “**My API Key**” field
 
 ![Paste your API key in the “My API Key” field](/blog/assets/posts/my-api-key-field.png "Connect Your API Key")
@@ -136,13 +136,13 @@ Navigate to the **IP Filtering** tab to access the new spam defense options:
 * **Block VPNs** – Stops access from anonymized IPs (use thoughtfully)
 * **Block Cloud Providers** – Blocks IPs linked to major server farms (recommended)
 
-Toggle the settings you want to enable and click **Save Changes**. From here, OOPSpam begins filtering harmful traffic from your WooCommerce pages silently in the background.
+Toggle the settings you want to enable and click **Save Changes**. From here, oopspam begins filtering harmful traffic from your WooCommerce pages silently in the background.
 
 ## **Tips for Balancing Security and User Experience**
 
 * If you serve international or privacy-focused shoppers, consider the impact of VPN blocking carefully
 * Monitor blocked submissions or orders to identify any false positives
-* Use additional [OOPSpam](https://www.oopspam.com/) filters such as:
+* Use additional [oopspam](https://www.oopspam.com/) filters such as:
 * * Language detection
 
   * Country-based restrictions
@@ -157,6 +157,6 @@ These options help you layer your defenses and catch spam without impacting sale
 
 Fake orders, bogus accounts, and spam reviews don’t just waste your time—they can also harm your brand’s reputation and skew your store data. By blocking VPN and cloud IPs, you can dramatically reduce spam and fraudulent activity on your WooCommerce store.
 
-With OOPSpam, it only takes a few clicks. It’s reliable, up-to-date, and requires no complex technical steps. Just turn on the settings, and let the plugin filter the traffic you don’t want—so you can focus on running your shop.
+With oopspam, it only takes a few clicks. It’s reliable, up-to-date, and requires no complex technical steps. Just turn on the settings, and let the plugin filter the traffic you don’t want—so you can focus on running your shop.
 
 Need assistance with the setup or want to explore how this works with other supported form plugins like [Ninja Forms](https://www.oopspam.com/blog/how-to-block-vpn-and-data-center-ip-submissions-in-ninja-forms), [Contact Form 7](https://www.oopspam.com/blog/how-to-block-vpn-and-data-center-ip-submissions-in-contact-form-7), and [Gravity Forms](https://www.oopspam.com/blog/how-to-block-vpn-and-data-center-ip-submissions-in-gravity-forms)? [Contact us](https://www.oopspam.com/#contact)—we’re here to help.

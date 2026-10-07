@@ -5,7 +5,7 @@ date: 2026-01-18T11:22:00.000+08:00
 author: chazie
 image: /blog/assets/posts/header_jp_block.jpg
 description: Learn how to block VPN and data center spam in Jetpack Forms using
-  OOPSpam, Cloudflare, and Jetpack’s firewall.
+  oopspam, Cloudflare, and Jetpack’s firewall.
 tags:
   - Jetpack
   - Jetpack Forms
@@ -46,15 +46,15 @@ Jetpack Forms cannot:
 
 This distinction matters. VPN and data center IPs change constantly. Manual lists do not scale.
 
-## **Method 1: Use OOPSpam for Jetpack Forms**
+## **Method 1: Use oopspam for Jetpack Forms**
 
 This is the most practical solution if your goal is to [stop spam submissions](https://www.oopspam.com/blog/4-ways-to-stop-spam-on-jetpack-forms) while keeping your website accessible to real users.
 
-[OOPSpam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/) (that’s us 👋) works at the form submission level. It evaluates each Jetpack Forms submission before it is saved and checks it against continuously updated threat intelligence. Legitimate visitors can still browse your site normally.
+[oopspam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/) (that’s us 👋) works at the form submission level. It evaluates each Jetpack Forms submission before it is saved and checks it against continuously updated threat intelligence. Legitimate visitors can still browse your site normally.
 
-### **Why OOPSpam Works Well with Jetpack Forms**
+### **Why oopspam Works Well with Jetpack Forms**
 
-OOPSpam fills the exact gap Jetpack leaves open.
+oopspam fills the exact gap Jetpack leaves open.
 
 It detects and filters:
 
@@ -64,21 +64,21 @@ It detects and filters:
 
 Because filtering happens when the form is submitted, spam never reaches your Jetpack Forms inbox.
 
-### **How to Set Up OOPSpam with Jetpack Forms**
+### **How to Set Up oopspam with Jetpack Forms**
 
 The setup is straightforward and does not require custom code.
 
-![OOPSpam ](/blog/assets/posts/oopspam-anti-spam-overview.png "OOPSpam ")
+![oopspam ](/blog/assets/posts/oopspam-anti-spam-overview.png "oopspam ")
 
-First, install and activate **OOPSpam Anti-Spam** from the WordPress Plugin Repository.
+First, install and activate **oopspam Anti-Spam** from the WordPress Plugin Repository.
 
-![OOPSpam dashboard](/blog/assets/posts/oopspam-dashboard-api.png "OOPSpam Dashboard")
+![oopspam dashboard](/blog/assets/posts/oopspam-dashboard-api.png "oopspam Dashboard")
 
-Next, [create an account on the OOPSpam](https://app.oopspam.com/Identity/Account/Login) and generate an API key from your dashboard.
+Next, [create an account on the oopspam](https://app.oopspam.com/Identity/Account/Login) and generate an API key from your dashboard.
 
 ![Paste the API key](/blog/assets/posts/oopspam-api-key.png "Paste the API key")
 
-Then, go to **OOPSpam → General Settings** in your WordPress admin. Paste your API key and save.
+Then, go to **oopspam → General Settings** in your WordPress admin. Paste your API key and save.
 
 ![Jetpack Form Protection](/blog/assets/posts/jetpack-form-activate-spam-protection.png "Jetpack Form Protection")
 
@@ -97,9 +97,9 @@ This approach requires no IP list maintenance and no ongoing rule updates.
 
 ### **Optional: Use Manual Moderation for Repeat Abuse**
 
-![OOPSpam Manual Moderation](/blog/assets/posts/manual-moderation-settings-oopspam.png "OOPSpam Manual Moderation")
+![oopspam Manual Moderation](/blog/assets/posts/manual-moderation-settings-oopspam.png "oopspam Manual Moderation")
 
-Inside **OOPSpam → Manual Moderation**, you can take targeted action without tightening global rules or risking false positives.
+Inside **oopspam → Manual Moderation**, you can take targeted action without tightening global rules or risking false positives.
 
 You can manually:
 
@@ -145,7 +145,7 @@ This works when you already know which IPs are abusive. It does not automaticall
 
 ## **Choosing the Right Approach for Jetpack Forms**
 
-* If your priority is form spam prevention without site disruption, use OOPSpam.
+* If your priority is form spam prevention without site disruption, use oopspam.
 * If your priority is maximum perimeter control, use Cloudflare with care.
 * If your priority is quick reaction to known abusers, [Jetpack’s WAF](https://jetpack.com/support/jetpack-waf/) is sufficient.
 
@@ -153,6 +153,6 @@ This works when you already know which IPs are abusive. It does not automaticall
 
 Jetpack Forms alone cannot stop VPN and data center spam. That protection lives outside its core feature set.
 
-The safest and most targeted solution is to add a form-level IP intelligence plugin like OOPSpam. It blocks abusive infrastructure without locking out real visitors. Network-level tools like Cloudflare are powerful, but they should be applied deliberately.
+The safest and most targeted solution is to add a form-level IP intelligence plugin like oopspam. It blocks abusive infrastructure without locking out real visitors. Network-level tools like Cloudflare are powerful, but they should be applied deliberately.
 
 When spam evolves, static defenses fall behind. Automated reputation-based filtering is what keeps Jetpack Forms usable long term.

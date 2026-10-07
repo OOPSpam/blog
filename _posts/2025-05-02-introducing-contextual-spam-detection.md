@@ -6,7 +6,7 @@ date: 2025-05-02T16:24:00.000Z
 last_modified_at: 2025-11-07T13:53:00.000-06:00
 author: onar
 image: /assets/posts/header_contextual.png
-description: Introducing Contextual Spam Detection. Learn how to use the OOPSpam
+description: Introducing Contextual Spam Detection. Learn how to use the oopspam
   API to detect spam within your website context.
 tags:
   - spam
@@ -51,11 +51,11 @@ The feature is currently available through our [API](https://www.oopspam.com/doc
 
 In WordPress, you can find and enable this feature in the Contextual Detection tab of our plugin settings.
 
-![The Contextual Spam Detection the OOPSpam WordPress Plugin](/blog/assets/posts/screenshot-2025-05-02-at-4.01.02 pm.png "The Contextual Spam Detection the OOPSpam WordPress Plugin")
+![The Contextual Spam Detection the oopspam WordPress Plugin](/blog/assets/posts/screenshot-2025-05-02-at-4.01.02 pm.png "The Contextual Spam Detection the oopspam WordPress Plugin")
 
 For API integration, please refer to our [API documentation](https://www.oopspam.com/docs/?shell#spam-detection).
 
-Here's a simple example demonstrating how to use Contextual Spam Detection via the OOPSpam API:
+Here's a simple example demonstrating how to use Contextual Spam Detection via the oopspam API:
 
 Request body:
 

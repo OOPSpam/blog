@@ -13,27 +13,27 @@ tags:
 
 If your EmailOctopus campaigns keep landing in spam folders, it can hurt open rates, damage your sender reputation, and waste your email efforts. The good news is that most spam issues can be fixed. This guide covers four ways to reduce spam in EmailOctopus and improve email deliverability.
 
-## **1. Scan and Clean Your List with OOPSpam**
+## **1. Scan and Clean Your List with oopspam**
 
-Before anything else, your email list needs to be clean. Fake signups, disposable addresses, and spam traps quietly destroy your sender reputation over time, causing emails to land in junk folders and skewing your analytics. [OOPSpam](https://www.oopspam.com/) (that’s us 👋) connects directly to your EmailOctopus account so you can [identify and remove risky contacts](https://www.oopspam.com/blog/how-to-verify-and-clean-up-your-emailoctopus-email-list) without switching tools.
+Before anything else, your email list needs to be clean. Fake signups, disposable addresses, and spam traps quietly destroy your sender reputation over time, causing emails to land in junk folders and skewing your analytics. [oopspam](https://www.oopspam.com/) (that’s us 👋) connects directly to your EmailOctopus account so you can [identify and remove risky contacts](https://www.oopspam.com/blog/how-to-verify-and-clean-up-your-emailoctopus-email-list) without switching tools.
 
 ### **How to set it up:**
 
-Log in to your[ OOPSpam Dashboard](https://app.oopspam.com/) and go to **Integrations** in the left menu. Find the **EmailOctopus** card and click **Connect**.
+Log in to your[ oopspam Dashboard](https://app.oopspam.com/) and go to **Integrations** in the left menu. Find the **EmailOctopus** card and click **Connect**.
 
-![Scan and Clean Your List with OOPSpam](/blog/assets/posts/emailoctopus-step-1.png "Scan and Clean Your List with OOPSpam")
+![Scan and Clean Your List with oopspam](/blog/assets/posts/emailoctopus-step-1.png "Scan and Clean Your List with oopspam")
 
 When prompted, enter your EmailOctopus API key. You can create one in EmailOctopus under **Developer > API Keys**. Paste the key and click **Connect**.
 
 ![Enter your EmailOctopus API key](/blog/assets/posts/step-2-emailoctopus.png "Enter your EmailOctopus API key")
 
-OOPSpam will fetch all your lists with subscriber counts. Click the list you want to scan.
+oopspam will fetch all your lists with subscriber counts. Click the list you want to scan.
 
 ![Click the list you want to scan.](/blog/assets/posts/step3-emailoctopus.png "Click the list you want to scan.")
 
-The scan runs in two steps: first it loads all contacts, then it checks each email against OOPSpam's spam database. Note that scanning uses your OOPSpam API credits.
+The scan runs in two steps: first it loads all contacts, then it checks each email against oopspam's spam database. Note that scanning uses your oopspam API credits.
 
-Before you hit scan, it's worth knowing about a few newer OOPSpam settings that make the results more thorough. Under **Additional risk criteria**, you'll find:
+Before you hit scan, it's worth knowing about a few newer oopspam settings that make the results more thorough. Under **Additional risk criteria**, you'll find:
 
 * **Flag contacts that have soft bounced** - catches addresses whose last send came back as a soft bounce, an early sign the address is on its way out.
 * **Flag contacts that never opened the last 3 emails** - flags subscribers who've gone quiet on your recent sends. This only works if open tracking is switched on in EmailOctopus, and the label itself warns that results can be off if tracking isn't enabled.
@@ -50,9 +50,9 @@ Further down, under **IP-based filters**, you can screen signups by where and ho
 
 Heads up: turning on either risk-criteria checkbox means the scan has more to verify, so it'll take somewhat longer to finish.
 
-> On top of that, scans now run entirely in the background, which matters most for big lists. Once you click **Scan All Emails**, you can close the tab and keep working; OOPSpam emails you the moment it's done. You can check in anytime from the **Scan Jobs** tab under Integrations, which shows whether a scan is running, completed, or cancelled.
+> On top of that, scans now run entirely in the background, which matters most for big lists. Once you click **Scan All Emails**, you can close the tab and keep working; oopspam emails you the moment it's done. You can check in anytime from the **Scan Jobs** tab under Integrations, which shows whether a scan is running, completed, or cancelled.
 
-![The scan runs in two steps: first it loads all contacts, then it checks each email against OOPSpam's spam database.](/blog/assets/posts/step4_2-emailoctopus.png "The scan runs in two steps: first it loads all contacts, then it checks each email against OOPSpam's spam database.")
+![The scan runs in two steps: first it loads all contacts, then it checks each email against oopspam's spam database.](/blog/assets/posts/step4_2-emailoctopus.png "The scan runs in two steps: first it loads all contacts, then it checks each email against oopspam's spam database.")
 
 Once complete, you will see a summary showing **Total Scanned**, **Clean**, and **Risky** contacts.
 
@@ -126,6 +126,6 @@ Keeping your list lean improves your open rate, reduces spam complaints, and pro
 
 ## **Final Thoughts**
 
-Stopping spam in EmailOctopus comes down to three things: a clean list, a verified domain, and well-crafted content. Start by scanning your list with OOPSpam to remove risky contacts immediately. Then lock in your technical setup with SPF, DKIM, and DMARC. From there, protect your list quality with double opt-in and regular pruning, and make sure every email you send passes basic content checks.
+Stopping spam in EmailOctopus comes down to three things: a clean list, a verified domain, and well-crafted content. Start by scanning your list with oopspam to remove risky contacts immediately. Then lock in your technical setup with SPF, DKIM, and DMARC. From there, protect your list quality with double opt-in and regular pruning, and make sure every email you send passes basic content checks.
 
 Done consistently, these four steps will move your emails out of spam folders and back into inboxes where they belong.

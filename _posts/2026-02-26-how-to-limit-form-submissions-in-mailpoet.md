@@ -5,7 +5,7 @@ date: 2026-02-26T10:40:00.000+08:00
 author: chazie
 image: /blog/assets/posts/maipoet_meta.jpg
 description: Learn how to limit form submissions in MailPoet using list
-  controls, signup settings, and OOPSpam rate limiting to reduce spam and abuse.
+  controls, signup settings, and oopspam rate limiting to reduce spam and abuse.
 tags:
   - MailPoet
 ---
@@ -13,7 +13,7 @@ tags:
 
 MailPoet does not include built-in submission throttling. That means bots can submit forms repeatedly, use disposable emails, and inflate your subscriber count. Over time, this affects deliverability and engagement rates. The solution is to control validation first, then control frequency.
 
-To limit form submissions in [MailPoet](https://www.mailpoet.com/), enable double opt-in, restrict how your forms are displayed, and add rate limiting with OOPSpam. These three steps prevent fake signups, reduce list pollution, and protect your sender reputation.
+To limit form submissions in [MailPoet](https://www.mailpoet.com/), enable double opt-in, restrict how your forms are displayed, and add rate limiting with oopspam. These three steps prevent fake signups, reduce list pollution, and protect your sender reputation.
 
 Below is the exact setup.
 
@@ -66,31 +66,31 @@ This reduces unnecessary visibility and lowers automated scanning. You can also 
 
 Display control reduces surface area. It does not stop bots entirely.
 
-## **3. Add Rate Limiting with OOPSpam**
+## **3. Add Rate Limiting with oopspam**
 
 MailPoet does not include per-IP or per-email rate limits by default. Without [rate limiting](https://www.oopspam.com/blog/protecting-forms-with-rate-limiting-in-wordpress-using-oopspam), a bot can submit your signup form many times within minutes.
 
-[OOPSpam](https://www.oopspam.com/) (that's us 👋) adds this control. It checks submissions before MailPoet processes them and blocks repeated abuse automatically.
+[oopspam](https://www.oopspam.com/) (that's us 👋) adds this control. It checks submissions before MailPoet processes them and blocks repeated abuse automatically.
 
-### **Step 1: Install OOPSpam**
+### **Step 1: Install oopspam**
 
-Go to **Plugins → Add New**. Search for **[OOPSpam Anti-Spam](https://www.oopspam.com/wordpress)**. Install and activate the plugin.
+Go to **Plugins → Add New**. Search for **[oopspam Anti-Spam](https://www.oopspam.com/wordpress)**. Install and activate the plugin.
 
-![OOPSpam](/blog/assets/posts/oopspam-anti-spam-overview.png "OOPSpam")
+![oopspam](/blog/assets/posts/oopspam-anti-spam-overview.png "oopspam")
 
-[Create an account](https://app.oopspam.com/Identity/Account/Login) at OOPSpam.com and copy your API key.
+[Create an account](https://app.oopspam.com/Identity/Account/Login) at oopspam.com and copy your API key.
 
-![OOPSpam account ](/blog/assets/posts/oopspam-dashboard-api.png "OOPSpam account ")
+![oopspam account ](/blog/assets/posts/oopspam-dashboard-api.png "oopspam account ")
 
-In WordPress, go to **OOPSpam → General Settings**, paste your API key, and save.
+In WordPress, go to **oopspam → General Settings**, paste your API key, and save.
 
-![OOPSpam - General Settings](/blog/assets/posts/oopspam-api-key.png "OOPSpam - General Settings")
+![oopspam - General Settings](/blog/assets/posts/oopspam-api-key.png "oopspam - General Settings")
 
 Your site is now connected.
 
 ### **Step 2: Enable Protection for MailPoet Forms**
 
-In OOPSpam settings, enable spam protection for MailPoet or general WordPress forms.
+In oopspam settings, enable spam protection for MailPoet or general WordPress forms.
 
 ![Enable Protection for MailPoet Forms](/blog/assets/posts/enable-spam-protection-for-mailpoet.png "Enable Protection for MailPoet Forms")
 
@@ -115,7 +115,7 @@ This stops rapid bot-driven signups.
 
 ## **Strengthen Protection with Advanced Filters**
 
-OOPSpam also provides additional controls:
+oopspam also provides additional controls:
 
 * [VPN](https://www.oopspam.com/blog/how-to-block-vpn-and-data-center-ip-submissions-in-givewp-donation-forms), proxy, and TOR blocking
 * [Country allow](https://www.oopspam.com/blog/how-to-block-countries-in-givewp-donation-forms) or deny lists
@@ -125,7 +125,7 @@ OOPSpam also provides additional controls:
 
 You can also use manual moderation to block specific emails, IP addresses, or keywords, and allow trusted users to bypass checks.
 
-![OOPSpam manual moderation](/blog/assets/posts/manual-moderation-settings-oopspam.png "OOPSpam manual moderation")
+![oopspam manual moderation](/blog/assets/posts/manual-moderation-settings-oopspam.png "oopspam manual moderation")
 
 These features create layered protection and reduce false positives.
 

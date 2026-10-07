@@ -6,22 +6,22 @@ last_modified_at: 2026-09-22T12:05:00.000+04:00
 author: chazie
 image: /blog/assets/posts/email_stopspam_mailchimp.jpg
 description: "Learn 5 ways to stop spam in Mailchimp, from scanning your
-  audience with OOPSpam to double opt-in, domain authentication, and clean
+  audience with oopspam to double opt-in, domain authentication, and clean
   sending habits. "
 tags:
   - Mailchimp
 ---
-To stop spam in [Mailchimp](https://mailchimp.com/), scan your audience for fake or risky emails, enable double opt-in, authenticate your domain with SPF, DKIM, and DMARC, avoid spam-triggering content, and never use purchased lists. OOPSpam integrates directly with Mailchimp to scan contacts against over 200 million blocked email addresses. Here’s how to apply each method.
+To stop spam in [Mailchimp](https://mailchimp.com/), scan your audience for fake or risky emails, enable double opt-in, authenticate your domain with SPF, DKIM, and DMARC, avoid spam-triggering content, and never use purchased lists. oopspam integrates directly with Mailchimp to scan contacts against over 200 million blocked email addresses. Here’s how to apply each method.
 
-## **1. Scan and Clean Your Audience with OOPSpam**
+## **1. Scan and Clean Your Audience with oopspam**
 
-Spam signups and fake addresses sit quietly in your audience until a campaign goes out, bounces, and drags down your sender score. The fastest fix is to check every contact against a spam database before that happens.[ **OOPSpam**](https://www.oopspam.com/) (that is us) just added a native Mailchimp integration that does exactly this. 
+Spam signups and fake addresses sit quietly in your audience until a campaign goes out, bounces, and drags down your sender score. The fastest fix is to check every contact against a spam database before that happens.[ **oopspam**](https://www.oopspam.com/) (that is us) just added a native Mailchimp integration that does exactly this. 
 
 Here is the workflow:
 
-Go to your [OOPSpam Dashboard](https://app.oopspam.com/Identity/Account/Register) and click **Integrations** in the left sidebar. Click **Connect** on the Mailchimp card.
+Go to your [oopspam Dashboard](https://app.oopspam.com/Identity/Account/Register) and click **Integrations** in the left sidebar. Click **Connect** on the Mailchimp card.
 
-![Go to your OOPSpam Dashboard and click Integrations in the left sidebar.](/blog/assets/posts/1-mailchimp-email-list.png "Go to your OOPSpam Dashboard and click Integrations in the left sidebar.")
+![Go to your oopspam Dashboard and click Integrations in the left sidebar.](/blog/assets/posts/1-mailchimp-email-list.png "Go to your oopspam Dashboard and click Integrations in the left sidebar.")
 
 Enter your Mailchimp API key. You can create one in Mailchimp under **Account → Extras → API keys**.
 
@@ -39,7 +39,7 @@ Preview your contacts, then turn on any optional filters before you scan:
 
 ![Turn on any optional filters before you scan](/blog/assets/posts/4-mailchimp-email-list.png "Turn on any optional filters before you scan")
 
-Click **Scan All Emails**. Note that scanning consumes OOPSpam API credits, so plan scans before major sends.
+Click **Scan All Emails**. Note that scanning consumes oopspam API credits, so plan scans before major sends.
 
 Review your results across three categories: **Total Scanned**, **Clean**, and **Risky**. Each risky subscriber shows a **Spam** tag.
 
@@ -49,7 +49,7 @@ Select the contacts you want to act on, then **Unsubscribe** (removes them from 
 
 This single scan can remove a meaningful chunk of the fake and risky addresses sitting in your audience before your next send, without touching Zapier or a third-party automation.
 
-> If you'd rather catch spam signups automatically as they come in instead of scanning in batches, see our guide on [how to stop spam signups in your Mailchimp email list using OOPSpam and Zapier](https://www.oopspam.com/blog/how-to-stop-spam-signups-in-your-mailchimp-email-list). It's a good complement to the native integration above for accounts that add new subscribers continuously.
+> If you'd rather catch spam signups automatically as they come in instead of scanning in batches, see our guide on [how to stop spam signups in your Mailchimp email list using oopspam and Zapier](https://www.oopspam.com/blog/how-to-stop-spam-signups-in-your-mailchimp-email-list). It's a good complement to the native integration above for accounts that add new subscribers continuously.
 
 ## **2. Turn on Double Opt-In**
 
@@ -91,7 +91,7 @@ Mailchimp's built-in content checker flags some of these before you send. You ca
 
 Buying an email list violates[ Mailchimp's policy against purchased lists](https://mailchimp.com/help/how-legitimate-marketers-can-prevent-spam-complaints/) and is one of the fastest ways to spike spam complaints and get your account suspended. People on a purchased list never opted in, so they mark your mail as spam at a much higher rate than people who signed up directly.
 
-Build your audience only from people who subscribed through your own forms, and scan it periodically with OOPSpam to catch anything that slipped through.
+Build your audience only from people who subscribed through your own forms, and scan it periodically with oopspam to catch anything that slipped through.
 
 ## **Final takeaway**
 

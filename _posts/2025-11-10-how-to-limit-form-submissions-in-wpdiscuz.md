@@ -5,7 +5,7 @@ date: 2025-11-10T01:04:00.000+08:00
 author: chazie
 image: /blog/assets/posts/wp_rt.jpg
 description: Learn how to limit form submissions in WPDiscuz. Use built-in
-  comment limits and advanced rate-limiting with OOPSpam to block spam and
+  comment limits and advanced rate-limiting with oopspam to block spam and
   abuse.
 tags:
   - WPDiscuz
@@ -13,7 +13,7 @@ tags:
 ---
 ![WPDiscuz](/blog/assets/posts/wpdiscuz.png "WPDiscuz")
 
-Use [WPDiscuz](https://wpdiscuz.com/)’s built-in Limit Comments per User setting to restrict how many comments someone can post. For hourly or daily limits and spam control, add OOPSpam. This combination stops spam, prevents repeat abuse, and keeps comment engagement healthy.
+Use [WPDiscuz](https://wpdiscuz.com/)’s built-in Limit Comments per User setting to restrict how many comments someone can post. For hourly or daily limits and spam control, add oopspam. This combination stops spam, prevents repeat abuse, and keeps comment engagement healthy.
 
 This guide gives steps to control comment volume, block bots, and protect your site without hurting real users.
 
@@ -59,11 +59,11 @@ Some sites need hourly, daily, or behavior-based limits, especially when:
 
 In these cases, WPDiscuz alone is not enough. You need a tool that understands behavior, IP patterns, and repeated attempts.
 
-## **Method 2: Advanced Rate Limiting With OOPSpam**
+## **Method 2: Advanced Rate Limiting With oopspam**
 
-**[OOPSpam](https://www.oopspam.com/)** (that’s us 👋) adds intelligent rate-limiting and [spam filtering](https://www.oopspam.com/blog/spam-protection-for-wpdiscuz) to WordPress. It blocks abuse before comments reach your moderation queue.
+**[oopspam](https://www.oopspam.com/)** (that’s us 👋) adds intelligent rate-limiting and [spam filtering](https://www.oopspam.com/blog/spam-protection-for-wpdiscuz) to WordPress. It blocks abuse before comments reach your moderation queue.
 
-### **What OOPSpam can do**
+### **What oopspam can do**
 
 * [Limit submissions](https://www.oopspam.com/blog/protecting-forms-with-rate-limiting-in-wordpress-using-oopspam) per IP or email per hour/day
 * Block VPN, proxy, and TOR traffic
@@ -74,19 +74,19 @@ In these cases, WPDiscuz alone is not enough. You need a tool that understands b
 
 This stops automated spam, human-click spam, and residential proxy attacks, the kind WPDiscuz alone cannot detect.
 
-### **How to Set Up OOPSpam for WPDiscuz**
+### **How to Set Up oopspam for WPDiscuz**
 
-Go to **Plugins → Add New** and search for **[OOPSpam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/).** Install and activate.
+Go to **Plugins → Add New** and search for **[oopspam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/).** Install and activate.
 
-![OOPSpam Anti-Spam](/blog/assets/posts/oopspam-anti-spam-overview.png "OOPSpam Anti-Spam")
+![oopspam Anti-Spam](/blog/assets/posts/oopspam-anti-spam-overview.png "oopspam Anti-Spam")
 
-[Create an account](https://app.oopspam.com/Identity/Account/Login) at **OOPSpam.com** and copy your **API Key.**
+[Create an account](https://app.oopspam.com/Identity/Account/Login) at **oopspam.com** and copy your **API Key.**
 
-![OOPSpam dashboard ](/blog/assets/posts/oopspam-dashboard-api.png "OOPSpam dashboard")
+![oopspam dashboard ](/blog/assets/posts/oopspam-dashboard-api.png "oopspam dashboard")
 
-In WordPress, go to **OOPSpam → General Settings** and **paste the API key**.
+In WordPress, go to **oopspam → General Settings** and **paste the API key**.
 
-![OOPSpam General Settings](/blog/assets/posts/oopspam-api-key.png "OOPSpam General Settings")
+![oopspam General Settings](/blog/assets/posts/oopspam-api-key.png "oopspam General Settings")
 
 Activate **WPDiscuz Spam Protection** and click **Save Changes.**
 
@@ -152,7 +152,7 @@ This keeps spam low and real engagement high.
       <td>Simple lifetime comment limit</td>
     </tr>
     <tr>
-      <td>OOPSpam rate limiting</td>
+      <td>oopspam rate limiting</td>
       <td>Hourly/day limits + real anti-spam</td>
     </tr>
     <tr>
@@ -164,6 +164,6 @@ This keeps spam low and real engagement high.
 
 ## **Final thoughts**
 
-Managing comment submissions in WPDiscuz should be simple. Start with the plugin’s built-in Limit Comments per User tool. If you need real-time protection and hourly or daily limits, add OOPSpam.
+Managing comment submissions in WPDiscuz should be simple. Start with the plugin’s built-in Limit Comments per User tool. If you need real-time protection and hourly or daily limits, add oopspam.
 
 This layered setup protects your site, helps your moderation team, and keeps real users happy.

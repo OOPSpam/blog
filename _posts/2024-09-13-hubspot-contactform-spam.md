@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Stop spam on HubSpot contact forms using Zapier and OOPSpam
+title: Stop spam on HubSpot contact forms using Zapier and oopspam
 date: 2023-04-13
 last_modified_at: 2026-05-22T02:31:00.000+08:00
 author: onar
@@ -24,7 +24,7 @@ tags:
 
 [HubSpot](https://hubspot.com/) is a popular CRM solution that offers many different tools for businesses, including form creation. HubSpot's forms can be used as contact forms, support tickets, or to generate leads, but they can also be targeted by spammers. To prevent spam, HubSpot offers built-in solutions such as [reCaptcha](https://knowledge.hubspot.com/forms/prevent-spam-form-submissions#enable-captcha) and the ability to [block specific email domains or free email providers](https://knowledge.hubspot.com/forms/prevent-spam-form-submissions#block-specific-email-domains-or-free-email-providers). These settings can be accessed in Form editing mode under *Marketing->Forms*.
 
-If you are still receiving spam submissions despite enabling the built-in spam prevention options in HubSpot, an alternative solution involves using automation tools like [Zapier](https://zapier.com/) or [Make](https://www.make.com) to capture form submissions, filter them through with OOPSpam, and then send a filtered email notification to yourself. This approach can help further reduce the amount of spam you receive through your HubSpot contact forms.
+If you are still receiving spam submissions despite enabling the built-in spam prevention options in HubSpot, an alternative solution involves using automation tools like [Zapier](https://zapier.com/) or [Make](https://www.make.com) to capture form submissions, filter them through with oopspam, and then send a filtered email notification to yourself. This approach can help further reduce the amount of spam you receive through your HubSpot contact forms.
 
 ## Choose your automation tools (Zapier, Make, etc.)
 
@@ -42,7 +42,7 @@ If you wish to skip the steps below, use [the template](https://zapier.com/apps/
 > </zapier-zap-templates>
 
 <br>
-Zapier will walk you through the configuration for all 4 steps: HubSpot -> Spam check with OOPSpam -> Filter -> Email by Zapier.
+Zapier will walk you through the configuration for all 4 steps: HubSpot -> Spam check with oopspam -> Filter -> Email by Zapier.
 
 *Filter* should be configured by default. The filter is straightforward with just one rule: **continue processing only if the Spam Score is less than 3**.
 
@@ -66,13 +66,13 @@ To set up HubSpot with the Form Submission event, follow these steps:
 
 ![HubSpot Zapier set up](/blog/assets/posts/hubspot-contact-form/hubspot-zapier.gif "HubSpot Zapier set up")
 
-## Checking for spam with OOPSpam
+## Checking for spam with oopspam
 
 To set up spam protection, follow these steps:
 
-1. Register for an API key on the [OOPSpam dashboard](https://app.oopspam.com/).
+1. Register for an API key on the [oopspam dashboard](https://app.oopspam.com/).
 2. In Zapier, enter the API key when prompted on the "Choose Account" step.
-3. Map necessary form information to OOPSpam's fields:
+3. Map necessary form information to oopspam's fields:
 
    * **Content**: This is where the form message goes.
    * **Sender IP**: Leave blank.
@@ -83,7 +83,7 @@ To set up spam protection, follow these steps:
 
 See the GIF below for a visual guide.
 
-![OOPSpam Zapier set up](/blog/assets/posts/hubspot-contact-form/zapier-oopspam.gif "OOPSpam Zapier set up")
+![oopspam Zapier set up](/blog/assets/posts/hubspot-contact-form/zapier-oopspam.gif "oopspam Zapier set up")
 
 ## Filtering with Filter
 
@@ -123,11 +123,11 @@ Testing the email notification is an important step to ensure that you receive t
 
 Additionally, you can use other email service apps such as Postmark or Mailgun instead of *Email by Zapier* to send the emails. These services can offer better deliverability, additional features and customization options such as email templates and analytic.
 
-> If you’re using embedded forms on your website, you can also[ add spam protection to embedded forms using OOPSpam and Zapier](https://www.oopspam.com/blog/add-spam-protection-to-embedded-forms-using-oopspam-and-zapier) to automatically filter fake submissions.
+> If you’re using embedded forms on your website, you can also[ add spam protection to embedded forms using oopspam and Zapier](https://www.oopspam.com/blog/add-spam-protection-to-embedded-forms-using-oopspam-and-zapier) to automatically filter fake submissions.
 
 ## Final thoughts
 
-This was a basic workflow to filter spam with OOPSpam in your HubSpot forms using Zapier. You can also use other platforms to automate the process. Plus, you can add extra steps and conditions to make it more complex, such as sending an automated email response to the visitor confirming successful submission after the spam check or storing submissions in Google Sheets instead of sending an email.
+This was a basic workflow to filter spam with oopspam in your HubSpot forms using Zapier. You can also use other platforms to automate the process. Plus, you can add extra steps and conditions to make it more complex, such as sending an automated email response to the visitor confirming successful submission after the spam check or storing submissions in Google Sheets instead of sending an email.
 
 ## Related guides
 

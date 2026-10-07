@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Stop spam on Netlify Forms using Zapier and OOPSpam
+title: Stop spam on Netlify Forms using Zapier and oopspam
 date: 2023-10-21
 last_modified_at: 2026-05-22T02:33:00.000+08:00
 author: onar
@@ -42,7 +42,7 @@ The hidden honeypot field will not be visible to humans, but bots will consider 
 
 However, [reCAPTCHA](https://www.oopspam.com/blog/best-recaptcha-alternatives) and other [CAPTCHA](https://www.oopspam.com/blog/best-captcha-alternatives) solutions are becoming irrelevant due to the availability of low-cost services to solve them.
 
-If you are still getting spam with the options available to you through Netlify, this article will look at an alternative solution to prevent spam submissions to Netlify contact forms. The approach is to use automation tools such as [Zapier](https://zapier.com/) or [Make](https://www.make.com) to capture form submissions, then filter them through a spam filter (using [OOPSpam](https://www.oopspam.com/)) before finally sending an email notification to yourself.
+If you are still getting spam with the options available to you through Netlify, this article will look at an alternative solution to prevent spam submissions to Netlify contact forms. The approach is to use automation tools such as [Zapier](https://zapier.com/) or [Make](https://www.make.com) to capture form submissions, then filter them through a spam filter (using [oopspam](https://www.oopspam.com/)) before finally sending an email notification to yourself.
 
 I'll be using Zapier for this tutorial, but you can do this with Make or any other automation platforms.
 
@@ -58,13 +58,13 @@ If you wish to skip the steps below, use [the template](https://zapier.com/apps/
 > </zapier-zap-templates>
 
 <br>
-Zapier will walk you through the configuration for all 4 steps: Netlify -> Spam check with OOPSpam -> Filter -> Email by Zapier.
+Zapier will walk you through the configuration for all 4 steps: Netlify -> Spam check with oopspam -> Filter -> Email by Zapier.
 
 *Filter* should be configured by default. The filter is simple with only one rule: **Continue processing only if spam score is less than 3**.
 
 ## Capturing Netlify form submissions
 
-Our goal is to build a simple automation flow where it checks every form submission with OOPSpam and sends an email to us.
+Our goal is to build a simple automation flow where it checks every form submission with oopspam and sends an email to us.
 
 ![Netlify Zapier](/blog/assets/posts/netlify/netlify-zapier.png "Netlify Zapier")
 
@@ -73,15 +73,15 @@ Our goal is to build a simple automation flow where it checks every form submiss
 2. Under *Trigger*, select your *Site* and *Form* and click Continue.
 3. In the *Test* step, your last 3 form submissions will be populated. So make sure you have submitted some test form.
 
-## Setting up OOPSpam for spam detection
+## Setting up oopspam for spam detection
 
 To set up spam filtering in your Zapier flow, follow these steps:
 
-1. Register for an API key on the [OOPSpam Dashboard](https://app.oopspam.com/).
-2. Add the [OOPSpam Zap](https://zapier.com/apps/oopspam/integrations) to your flow
-3. Under OOPSpam's *Event* select *Check for spam*
-4. To connect your OOPSpam account, enter the API key when prompted on the *Choose Account* step.
-5. Map the necessary form information to OOPSpam's fields:
+1. Register for an API key on the [oopspam Dashboard](https://app.oopspam.com/).
+2. Add the [oopspam Zap](https://zapier.com/apps/oopspam/integrations) to your flow
+3. Under oopspam's *Event* select *Check for spam*
+4. To connect your oopspam account, enter the API key when prompted on the *Choose Account* step.
+5. Map the necessary form information to oopspam's fields:
 
    * **Content**: This is where the form message goes. Usually called **Data Message**.
    * **Sender IP**:  This is where the IP of the form submitter goes. Usually called **Data Ip**.
@@ -89,9 +89,9 @@ To set up spam filtering in your Zapier flow, follow these steps:
    * **Language Allowlist**: Select any languages you expect to receive form submissions in.
    * **Allow messages only from these countries**: Filter submissions by country.
    * **Block messages from these countries**: Block by country.
-6. Test the action. We will use the "score" returned by OOPSpam to approve or reject submissions with [Filter Zapier](https://zapier.com/blog/filter-by-zapier-guide/) in the next step.
+6. Test the action. We will use the "score" returned by oopspam to approve or reject submissions with [Filter Zapier](https://zapier.com/blog/filter-by-zapier-guide/) in the next step.
 
-![OOPSpam Zapier setup](/blog/assets/posts/netlify/oopspam-zapier.png "OOPSpam Zapier setup")
+![oopspam Zapier setup](/blog/assets/posts/netlify/oopspam-zapier.png "oopspam Zapier setup")
 
 ## Filtering with Filter
 
@@ -135,8 +135,8 @@ By default, Netlify sends an email for each verified submission. We need to disa
 
 ![Form submission notifications in Netlify](/blog/assets/posts/netlify/netlify-setting.png "Form submission notifications in Netlify")
 
-For websites using embedded contact or lead forms, you can also[ add spam protection to embedded forms using OOPSpam and Zapier](https://www.oopspam.com/blog/add-spam-protection-to-embedded-forms-using-oopspam-and-zapier) to reduce spam automatically.
+For websites using embedded contact or lead forms, you can also[ add spam protection to embedded forms using oopspam and Zapier](https://www.oopspam.com/blog/add-spam-protection-to-embedded-forms-using-oopspam-and-zapier) to reduce spam automatically.
 
 ## Final thoughts
 
-This was a basic workflow for filtering spam in your Netlify forms using Zapier and OOPSpam. You can also use other platforms to automate this process. You can also add additional steps and conditions to make it more complex, such as sending an automated email response to the visitor confirming successful submission.
+This was a basic workflow for filtering spam in your Netlify forms using Zapier and oopspam. You can also use other platforms to automate this process. You can also add additional steps and conditions to make it more complex, such as sending an automated email response to the visitor confirming successful submission.

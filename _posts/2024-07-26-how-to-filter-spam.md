@@ -8,17 +8,17 @@ image: /assets/posts/social-media-meta.png
 tags: [oopspam, spam]
 
 
-description: "Learn how to use OOPSpam API to protect your website from spam."
+description: "Learn how to use oopspam API to protect your website from spam."
 # modified: 
 ---
 <center><a title="Stefan Bellini [CC0], via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:No_JunkMail_Valletta.JPG"><img loading="lazy"  width="512" alt="No JunkMail Valletta" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/No_JunkMail_Valletta.JPG/512px-No_JunkMail_Valletta.JPG"></a></center>
 <br/>
 
-If you have ever owned a website with a contact form or a blog with a comment section then you've probably experienced a huge amount of spam almost daily.  You are not alone. In 2017, we decided to do something about it and built [OOPSpam API](https://www.oopspam.com/).
+If you have ever owned a website with a contact form or a blog with a comment section then you've probably experienced a huge amount of spam almost daily.  You are not alone. In 2017, we decided to do something about it and built [oopspam API](https://www.oopspam.com/).
 
 > ✨ Check out the latest API documentation: [https://www.oopspam.com/docs/#introduction](https://www.oopspam.com/docs/#introduction)
 
-Deciding which content is spam solely based on content is a difficult problem. Even well-trained machine learning algorithms have a good chance of making a false positive. The better approach would be to analyze multiple factors and produce a single output such as a score. OOPSpam API allows you to pass the following values to make a better decision:
+Deciding which content is spam solely based on content is a difficult problem. Even well-trained machine learning algorithms have a good chance of making a false positive. The better approach would be to analyze multiple factors and produce a single output such as a score. oopspam API allows you to pass the following values to make a better decision:
 
 ```json
 {
@@ -35,7 +35,7 @@ Deciding which content is spam solely based on content is a difficult problem. E
 
 Let's see how the API makes a decision and which fields are important even though passing all values increase accuracy greatly.
 
-* `senderIP` (optional): Represents the IP address of the content submitter. Whether you receive a contact form submission or a comment on your blog, capture the sender's IP and pass it to the OOPSpam API via this parameter. Although optional, including this field improves accuracy. The API checks the IP against multiple lists of known spam IPs. If the IP is present in any of these lists, it's likely the sender is a spammer.
+* `senderIP` (optional): Represents the IP address of the content submitter. Whether you receive a contact form submission or a comment on your blog, capture the sender's IP and pass it to the oopspam API via this parameter. Although optional, including this field improves accuracy. The API checks the IP against multiple lists of known spam IPs. If the IP is present in any of these lists, it's likely the sender is a spammer.
 
 * `email` (optional): Represents the email address of the content submitter. The API checks this field against multiple email blocklists that have previously detected spam. While optional, we strongly recommend including this field to enhance spam detection accuracy.
 
@@ -49,13 +49,13 @@ Let's see how the API makes a decision and which fields are important even thoug
 
 ### What is ```allowedLanguages```  and how it helps to prevent spam?
 
-Well, let's say you have a website in English and you serve your content (article, news, service, etc.) in English. It would make sense that you expect your comments to be in English. In this case, you pass ```en```  (short for English ISO 639-1 two-letter code) to ```allowedLanguages``` parameter as an array (```["en"]```). OOPSpam API has built-in Language Detection algorithm which will check the comment and determine whether it's actually in English or not. A content in a different language other than English will be marked as spam.  In addition, say you expect your content to be in English and Italian then your ```allowedLanguages```  would look like  ```["en", "it"]```.
+Well, let's say you have a website in English and you serve your content (article, news, service, etc.) in English. It would make sense that you expect your comments to be in English. In this case, you pass ```en```  (short for English ISO 639-1 two-letter code) to ```allowedLanguages``` parameter as an array (```["en"]```). oopspam API has built-in Language Detection algorithm which will check the comment and determine whether it's actually in English or not. A content in a different language other than English will be marked as spam.  In addition, say you expect your content to be in English and Italian then your ```allowedLanguages```  would look like  ```["en", "it"]```.
 
 * ```allowedCountries``` is an _optional_ parameter. Similar to ```allowedLanguages```, it allows you to filter by a country or countries. instead of language. All you need to do is pass [the two-letter country code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements) as an array. This field requires ```senderIP``` to be included in the request body. 
 
 * ```blockedCountries``` is an _optional_ parameter. It allows you to block by a country or countries. All you need to do is pass [the two-letter country code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements) as an array. This field requires ```senderIP``` to be included in the request body. 
 
-OOPSpam API will returns ```Score``` along with a detailed report to let you know why it's spam or not. Here the all possible value you will get:
+oopspam API will returns ```Score``` along with a detailed report to let you know why it's spam or not. Here the all possible value you will get:
 
 ```json
 {
@@ -80,7 +80,7 @@ If you are a big fan of Postman like myself, here is Postman embed button that w
 
 Once you get a response to your request, you are ready to flag messages. While it depends on the use case, we recommend considering ```Score``` 3 and above as spam.
 
-Check out [OOPSpam API docs](https://www.oopspam.com/docs/#introduction) for more information.
+Check out [oopspam API docs](https://www.oopspam.com/docs/#introduction) for more information.
 
 Happy spam-free day!
 

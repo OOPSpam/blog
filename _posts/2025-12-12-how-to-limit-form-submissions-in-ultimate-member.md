@@ -4,7 +4,7 @@ title: How to Limit Form Submissions in Ultimate Member
 date: 2025-12-11T07:11:00.000+08:00
 author: chazie
 image: /blog/assets/posts/limitform_um.jpg
-description: Learn how to limit Ultimate Member form submissions with OOPSpam
+description: Learn how to limit Ultimate Member form submissions with oopspam
   and built-in tools that reduce spam, repeated attempts, and abusive
   registrations.
 tags:
@@ -13,7 +13,7 @@ tags:
 ---
 ![Ultimate Member](/blog/assets/posts/ultimate-member-header.png "Ultimate Member")
 
-Ultimate Member cannot limit form submissions by itself. To control repeated registrations, spam attempts, or abusive activity, you must add rate limiting, spam detection, or a third-party form plugin. The easiest method is using OOPSpam with Ultimate Member.
+Ultimate Member cannot limit form submissions by itself. To control repeated registrations, spam attempts, or abusive activity, you must add rate limiting, spam detection, or a third-party form plugin. The easiest method is using oopspam with Ultimate Member.
 
 ## **Ultimate Member Does Not Offer Form Submission Limits**
 
@@ -32,7 +32,7 @@ These tools help reduce low-quality signups, but they do not stop repeated or au
 
 Spam bots often submit the registration form many times within minutes. Since UM cannot block these repeated attempts, a layer of rate limiting and spam scoring is necessary.
 
-**[OOPSpam](https://www.oopspam.com/)** (that’s us 👋) provides:
+**[oopspam](https://www.oopspam.com/)** (that’s us 👋) provides:
 
 * [Spam detection](https://www.oopspam.com/blog/spam-protection-for-ultimate-member)
 * Rate limiting
@@ -41,23 +41,23 @@ Spam bots often submit the registration form many times within minutes. Since UM
 
 This gives you full control over how often the form can be submitted.
 
-## **How to Set Up OOPSpam for Ultimate Member**
+## **How to Set Up oopspam for Ultimate Member**
 
-![OOPSpam](/blog/assets/posts/oopspam-anti-spam-overview.png "OOPSpam")
+![oopspam](/blog/assets/posts/oopspam-anti-spam-overview.png "oopspam")
 
 ### **Step 1 — Install the Plugin**
 
-Go to **Plugins → Add New**, search for **[OOPSpam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/)**, install, and activate.
+Go to **Plugins → Add New**, search for **[oopspam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/)**, install, and activate.
 
 ### **Step 2 — Connect Your API Key**
 
-Create an account at [OOPSpam.com](https://app.oopspam.com/Identity/Account/Login). Copy your API key.
+Create an account at [oopspam.com](https://app.oopspam.com/Identity/Account/Login). Copy your API key.
 
 ![Connect Your API Key](/blog/assets/posts/oopspam-dashboard-api.png "Connect Your API Key")
 
-In WordPress, open **OOPSpam → General Settings**, paste your key, and save.
+In WordPress, open **oopspam → General Settings**, paste your key, and save.
 
-![OOPSpam General Settings](/blog/assets/posts/oopspam-api-key.png "OOPSpam General Settings")
+![oopspam General Settings](/blog/assets/posts/oopspam-api-key.png "oopspam General Settings")
 
 ### **Step 3 — Enable Ultimate Member Protection**
 
@@ -67,7 +67,7 @@ Toggle **Ultimate Member Form Spam Protection** on. This ensures every registrat
 
 ### **Step 4 — Turn On Rate Limiting (The Feature UM Lacks)**
 
-Open **OOPSpam → Rate Limiting** tab and toggle **Enable Rate Limiting** on.
+Open **oopspam → Rate Limiting** tab and toggle **Enable Rate Limiting** on.
 
 ![Turn On Rate Limiting](/blog/assets/posts/enabled-rate-limiting-settings.png "Turn On Rate Limiting")
 
@@ -75,14 +75,14 @@ Set limits such as:
 
 * **Max submissions per IP per hour** — Limits how many times the same IP address can submit within an hour.
 * **Max submissions per email per hour** — Prevents one email address from sending multiple repeated submissions.
-* **Block duration (hours)** — Sets how long OOPSpam will block an IP or email after it reaches the limit.
+* **Block duration (hours)** — Sets how long oopspam will block an IP or email after it reaches the limit.
 * **Data cleanup schedule** — Automatically removes old submission records to keep rate limiting running smoothly.
 
 These settings stop rapid-fire form submissions from bots and abusive users. Save your changes to apply the limits.
 
 ## **Strengthen Your Protection Further**
 
-OOPSpam includes advanced filters that reduce false positives and catch sophisticated bots. Useful settings include:
+oopspam includes advanced filters that reduce false positives and catch sophisticated bots. Useful settings include:
 
 * VPN / Proxy / TOR blocking
 * [Country allow/deny list](https://www.oopspam.com/blog/how-to-block-countries-in-ultimate-member)
@@ -92,13 +92,13 @@ OOPSpam includes advanced filters that reduce false positives and catch sophisti
 
 These features create a layered defense that Ultimate Member does not provide.
 
-## **If You Are Using OOPSpam**
+## **If You Are Using oopspam**
 
-If OOPSpam is installed, you do **not** need to rely on Ultimate Member’s manual blocking tools. 
+If oopspam is installed, you do **not** need to rely on Ultimate Member’s manual blocking tools. 
 
-![OOPSpam Manual Moderation](/blog/assets/posts/manual-moderation.png "OOPSpam Manual Moderation")
+![oopspam Manual Moderation](/blog/assets/posts/manual-moderation.png "oopspam Manual Moderation")
 
-OOPSpam allows you to manually control submissions before they reach Ultimate Member. From the **Manual Moderation** tab, you can:
+oopspam allows you to manually control submissions before they reach Ultimate Member. From the **Manual Moderation** tab, you can:
 
 * Block email addresses to stop known spam sources
 * Block IP addresses that repeatedly abuse registration or login forms
@@ -107,9 +107,9 @@ OOPSpam allows you to manually control submissions before they reach Ultimate Me
 
 These rules are applied before Ultimate Member processes the form, which makes them more effective than UM’s built-in manual blocking.
 
-## **If You Are Not Using OOPSpam**
+## **If You Are Not Using oopspam**
 
-If OOPSpam is not installed, Ultimate Member’s built-in options can still help reduce low-quality registrations. You can use:
+If oopspam is not installed, Ultimate Member’s built-in options can still help reduce low-quality registrations. You can use:
 
 ### **Blocked Email Addresses**
 
@@ -143,6 +143,6 @@ These plugins handle submission limits, while Ultimate Member handles user roles
 
 ## **Final Thoughts**
 
-Ultimate Member does not offer submission limits. To protect your registration and login forms from repeated attempts, you need [rate limiting](https://www.oopspam.com/blog/protecting-forms-with-rate-limiting-in-wordpress-using-oopspam) and advanced spam filtering. OOPSpam provides this through IP and email caps, country filtering, proxy blocking, and contextual detection. Ultimate Member’s built-in settings help reinforce your defenses.
+Ultimate Member does not offer submission limits. To protect your registration and login forms from repeated attempts, you need [rate limiting](https://www.oopspam.com/blog/protecting-forms-with-rate-limiting-in-wordpress-using-oopspam) and advanced spam filtering. oopspam provides this through IP and email caps, country filtering, proxy blocking, and contextual detection. Ultimate Member’s built-in settings help reinforce your defenses.
 
 Together, these tools keep your membership site clean, secure, and free from automated abuse.

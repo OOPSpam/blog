@@ -6,7 +6,7 @@ last_modified_at: 2026-01-06T11:36:00.000+08:00
 author: chazie
 image: /blog/assets/posts/acf_block_vpn_cp.jpg
 description: Block spammy VPN and data center traffic in ACF Frontend Forms with
-  OOPSpam and Cloudflare using simple steps, layered defenses, and clear control
+  oopspam and Cloudflare using simple steps, layered defenses, and clear control
   now.
 tags:
   - ACF Frontend Forms
@@ -25,31 +25,31 @@ This matters because most automated spam, lead abuse, and bot traffic now origin
 
 To block these high-risk IP types, you must use an external service or network-level filtering solution that provides IP intelligence. Below are the two most effective methods.
 
-## **Method 1: Block VPN & Data Center IPs with OOPSpam**
+## **Method 1: Block VPN & Data Center IPs with oopspam**
 
-[OOPSpam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/) (that’s us 👋)  filters VPN, proxy, cloud provider, and malicious IP traffic before ACF processes form data. It uses IP intelligence, machine learning, [rate limiting](https://www.oopspam.com/blog/how-to-limit-form-submissions-in-acf-frontend-forms), and behavior checks to [block bad submissions](https://www.oopspam.com/blog/4-ways-to-protect-your-acf-frontend-forms-from-spam). This is the most reliable solution because ACF cannot detect anonymous IPs on its own.
+[oopspam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/) (that’s us 👋)  filters VPN, proxy, cloud provider, and malicious IP traffic before ACF processes form data. It uses IP intelligence, machine learning, [rate limiting](https://www.oopspam.com/blog/how-to-limit-form-submissions-in-acf-frontend-forms), and behavior checks to [block bad submissions](https://www.oopspam.com/blog/4-ways-to-protect-your-acf-frontend-forms-from-spam). This is the most reliable solution because ACF cannot detect anonymous IPs on its own.
 
-### **Step 1: Install OOPSpam Anti-Spam**
+### **Step 1: Install oopspam Anti-Spam**
 
-![OOPSpam Anti-Spam](/blog/assets/posts/oopspam-anti-spam-overview.png "OOPSpam Anti-Spam")
+![oopspam Anti-Spam](/blog/assets/posts/oopspam-anti-spam-overview.png "oopspam Anti-Spam")
 
-Go to **Plugins → Add New**, search **OOPSpam Anti-Spam.** Click **Install** then **Activate**
+Go to **Plugins → Add New**, search **oopspam Anti-Spam.** Click **Install** then **Activate**
 
-### **Step 2: Create an OOPSpam Account and Get Your API Key**
+### **Step 2: Create an oopspam Account and Get Your API Key**
 
-![Create an OOPSpam Account and Get Your API Key](/blog/assets/posts/oopspam-dashboard-api.png "Create an OOPSpam Account and Get Your API Key")
+![Create an oopspam Account and Get Your API Key](/blog/assets/posts/oopspam-dashboard-api.png "Create an oopspam Account and Get Your API Key")
 
-Create an account in the [OOPSpam dashboard](https://app.oopspam.com/Identity/Account/Login) and copy your **API Key.** 
+Create an account in the [oopspam dashboard](https://app.oopspam.com/Identity/Account/Login) and copy your **API Key.** 
 
-### **Step 3: Connect OOPSpam to WordPress**
+### **Step 3: Connect oopspam to WordPress**
 
-![Connect OOPSpam to WordPress](/blog/assets/posts/oopspam-api-key.png "Connect OOPSpam to WordPress")
+![Connect oopspam to WordPress](/blog/assets/posts/oopspam-api-key.png "Connect oopspam to WordPress")
 
-Go to **WordPress Admin → OOPSpam → General Settings an**d paste your API key. Save your changes. Your site can now filter high-risk traffic through OOPSpam.
+Go to **WordPress Admin → oopspam → General Settings an**d paste your API key. Save your changes. Your site can now filter high-risk traffic through oopspam.
 
 ### **Step 4: Enable ACF Frontend Forms Protection**
 
-In **OOPSpam → General Settings**, scroll to form integrations and turn ON **ACF Frontend Forms Spam Protection.** Save.
+In **oopspam → General Settings**, scroll to form integrations and turn ON **ACF Frontend Forms Spam Protection.** Save.
 
 ![Enable ACF Frontend Forms Protection](/blog/assets/posts/acf-spam-protection.png "Enable ACF Frontend Forms Protection")
 
@@ -57,7 +57,7 @@ This ensures every ACF submission passes through spam and IP checks before savin
 
 ### **Step 5: Turn On VPN and Cloud Provider Blocking**
 
-Go to **OOPSpam → IP Filtering** tab. Enable:
+Go to **oopspam → IP Filtering** tab. Enable:
 
 * Block VPNs
 * Block Cloud Providers
@@ -66,7 +66,7 @@ Click **Save Changes**.
 
 ![Turn On VPN and Cloud Provider Blocking](/blog/assets/posts/ip-filtering-oopspam.png "Turn On VPN and Cloud Provider Blocking")
 
-[OOPSpam](https://www.oopspam.com/) will now:
+[oopspam](https://www.oopspam.com/) will now:
 
 * Block VPN submissions
 * Block cloud server IPs from AWS, Google Cloud, Azure, and others
@@ -78,9 +78,9 @@ This is the simplest way to stop anonymous IP spam on ACF forms.
 
 ### **Step 6: Optional — Use Manual Moderation**
 
-![Use OOPSpam Manual Moderation](/blog/assets/posts/manual-moderation.png "Use OOPSpam Manual Moderation")
+![Use oopspam Manual Moderation](/blog/assets/posts/manual-moderation.png "Use oopspam Manual Moderation")
 
-In **OOPSpam → Manual Moderation** tab, you can also:
+In **oopspam → Manual Moderation** tab, you can also:
 
 * **Block specific IPs or entire IP ranges** — helpful when you want to block a single abusive IP or a full range belonging to a cloud provider or hosting company.
 * **Block emails** — stop repeat offenders using the same address.
@@ -123,7 +123,7 @@ Cloudflare now blocks requests from those data centers before they reach ACF.
 
 ## **Which Method Should You Choose?**
 
-If you want the easiest and accurate solution, use OOPSpam. It requires no maintenance and works directly inside [WordPress](https://www.oopspam.com/wordpress) with ACF.
+If you want the easiest and accurate solution, use oopspam. It requires no maintenance and works directly inside [WordPress](https://www.oopspam.com/wordpress) with ACF.
 
 If you want added security, use Cloudflare for edge-level filtering. 
 
@@ -131,6 +131,6 @@ The strongest setup uses both methods.
 
 ## **Final Recommendation**
 
-ACF Frontend Forms are powerful, but they need extra protection from VPN and data center spam. You can fix this by adding IP intelligence. OOPSpam provides automatic, accurate filtering without manual rule updates. Cloudflare adds network-level blocking that stops bots before they reach your server.
+ACF Frontend Forms are powerful, but they need extra protection from VPN and data center spam. You can fix this by adding IP intelligence. oopspam provides automatic, accurate filtering without manual rule updates. Cloudflare adds network-level blocking that stops bots before they reach your server.
 
 Together, they give you a complete layered defense for your ACF forms.

@@ -1,9 +1,9 @@
 # Site settings
-title:          OOPSpam Blog
+title:          oopspam Blog
 description:    "Learn how to protect your website from spam bots & manual spam."
 url:            "https://www.oopspam.com"
 baseurl:        "/blog"
-copyright: "OOPSpam LLC"
+copyright: "oopspam LLC"
 logo: "https://www.oopspam.com/blog/assets/favicon-32x32.png"
 
 # JSON-LD
@@ -15,7 +15,7 @@ google_analytics: 11111
 
 # Author
 author:
-  name:         OOPSpam
+  name:         oopspam
   url:          https://www.oopspam.com
   email:        contact@oopspam.com
   twitter:      oopspamapi

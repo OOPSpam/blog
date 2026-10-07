@@ -5,7 +5,7 @@ date: 2026-06-25T17:53:00.000+08:00
 author: chazie
 image: /blog/assets/posts/header_elementor_atomic_vpn.jpg
 description: Learn how to block VPN and data center IP submissions in Elementor
-  Atomic Forms using OOPSpam and Cloudflare Security Rules to stop bots and
+  Atomic Forms using oopspam and Cloudflare Security Rules to stop bots and
   anonymous abuse.
 tags:
   - Elementor Atomic Forms
@@ -19,29 +19,29 @@ Most automated spam does not come from a residential address. It comes from clou
 
 Atomic Forms processes whatever is submitted. It does not evaluate where the request originated. That is the gap these two methods address.
 
-## **Method 1: Use OOPSpam Anti-Spam**
+## **Method 1: Use oopspam Anti-Spam**
 
-[OOPSpam](https://www.oopspam.com/) (that's us 👋) blocks VPN and data center IP submissions before [Elementor Atomic Forms](https://www.oopspam.com/blog/3-ways-to-protect-your-elementor-atomic-forms-from-spam) processes them. It checks against a live database covering over 1,500 cloud providers and known VPN networks, stopping the abuse before it reaches your form entries or triggers your email notifications.
+[oopspam](https://www.oopspam.com/) (that's us 👋) blocks VPN and data center IP submissions before [Elementor Atomic Forms](https://www.oopspam.com/blog/3-ways-to-protect-your-elementor-atomic-forms-from-spam) processes them. It checks against a live database covering over 1,500 cloud providers and known VPN networks, stopping the abuse before it reaches your form entries or triggers your email notifications.
 
 ### **Step 1: Install the Plugin**
 
-Go to **Plugins > Add New** in WordPress. Search for **[OOPSpam Anti-Spam](https://www.oopspam.com/wordpress)**, install it, and activate.
+Go to **Plugins > Add New** in WordPress. Search for **[oopspam Anti-Spam](https://www.oopspam.com/wordpress)**, install it, and activate.
 
 ![Step 1: Install the Plugin](/blog/assets/posts/oopspam-anti-spam-overview.png "Step 1: Install the Plugin")
 
 ### **Step 2: Add Your API Key**
 
-Sign up at[ OOPSpam.com](https://app.oopspam.com/Identity/Account/Login) and copy your API key from the dashboard.
+Sign up at[ oopspam.com](https://app.oopspam.com/Identity/Account/Login) and copy your API key from the dashboard.
 
 ![Step 2: Add Your API Key](/blog/assets/posts/oopspam-dashboard-api.png "Step 2: Add Your API Key")
 
-Go to **Settings > OOPSpam Anti-Spam**, paste the key, and save.
+Go to **Settings > oopspam Anti-Spam**, paste the key, and save.
 
-![Go to Settings > OOPSpam Anti-Spam, paste the key, and save.](/blog/assets/posts/oopspam-api-key.png "Go to Settings > OOPSpam Anti-Spam, paste the key, and save.")
+![Go to Settings > oopspam Anti-Spam, paste the key, and save.](/blog/assets/posts/oopspam-api-key.png "Go to Settings > oopspam Anti-Spam, paste the key, and save.")
 
 ### **Step 3: Enable Protection for Atomic Forms**
 
-In the OOPSpam settings, find the **Elementor Atomic Forms** section and toggle on **Activate Spam Protection**. OOPSpam will now check every submission automatically.
+In the oopspam settings, find the **Elementor Atomic Forms** section and toggle on **Activate Spam Protection**. oopspam will now check every submission automatically.
 
 ![Step 3: Enable Protection for Atomic Forms](/blog/assets/posts/elementor-atomic-forms-spam-protection.png "Step 3: Enable Protection for Atomic Forms")
 
@@ -58,7 +58,7 @@ Save changes.
 
 ### **Manual Moderation**
 
-For persistent abuse that does not come from automated bots, use OOPSpam's Manual Moderation. You can block specific IP addresses, email addresses, or keywords, and whitelist trusted users to prevent false positives. This is useful when the same source keeps finding ways around automated filters.
+For persistent abuse that does not come from automated bots, use oopspam's Manual Moderation. You can block specific IP addresses, email addresses, or keywords, and whitelist trusted users to prevent false positives. This is useful when the same source keeps finding ways around automated filters.
 
 ![Manual Moderation](/blog/assets/posts/manual-moderation.png "Manual Moderation")
 
@@ -85,6 +85,6 @@ Repeat this for other major cloud providers as needed. Common ASNs to consider i
 
 ## **Final Thoughts**
 
-Elementor Atomic Forms handles form building well, but filtering where submissions come from is not part of what it does yet. OOPSpam fills that gap at the form level by checking IP reputation, VPN usage, and data center traffic before a submission is processed. Cloudflare adds a second layer at the network edge for high-volume threats that need to be stopped earlier.
+Elementor Atomic Forms handles form building well, but filtering where submissions come from is not part of what it does yet. oopspam fills that gap at the form level by checking IP reputation, VPN usage, and data center traffic before a submission is processed. Cloudflare adds a second layer at the network edge for high-volume threats that need to be stopped earlier.
 
-Set up OOPSpam first. Add Cloudflare rules if attacks persist at scale. The combination keeps your Atomic Forms clean without adding any friction for legitimate users.
+Set up oopspam first. Add Cloudflare rules if attacks persist at scale. The combination keeps your Atomic Forms clean without adding any friction for legitimate users.

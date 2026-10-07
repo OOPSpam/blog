@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Stop spam on Typeform using Zapier and OOPSpam
+title: Stop spam on Typeform using Zapier and oopspam
 date: 2023-06-29
 last_modified_at: 2026-05-22T02:33:00.000+08:00
 author: onar
@@ -25,7 +25,7 @@ tags:
 
 It's likely that you are experiencing spam issues on Typeform, just like many others in the community ([source 1](https://community.typeform.com/build-your-typeform-7/my-typeform-got-hit-by-a-spam-robot-1633), [source 2](https://community.typeform.com/build-your-typeform-7/stop-multiple-visits-from-same-ip-bot-606), and [more](https://community.typeform.com/manage-your-typeform-account-48/a-bot-hijacked-my-typeform-7516)). The methods mentioned earlier may no longer be sufficient to protect your forms from spam, as spammers are becoming more sophisticated and use advanced tools.
 
-An alternative solution involves leveraging automation tools such as [Zapier](https://zapier.com/) or [Make](https://www.make.com) to capture form submissions, filter them using OOPSpam, and then receive filtered email notifications or simple store them. By implementing this approach, you can further mitigate the amount of spam received through your Typeform forms. 
+An alternative solution involves leveraging automation tools such as [Zapier](https://zapier.com/) or [Make](https://www.make.com) to capture form submissions, filter them using oopspam, and then receive filtered email notifications or simple store them. By implementing this approach, you can further mitigate the amount of spam received through your Typeform forms. 
 
 {% include toc.md %}
 
@@ -46,7 +46,7 @@ If you prefer to skip the following steps and get started quickly, we have creat
 
 <br>
 
-Zapier will guide you through the configuration process for all four steps: *Typeform -> Spam check with OOPSpam -> Filter -> Email by Zapier*.
+Zapier will guide you through the configuration process for all four steps: *Typeform -> Spam check with oopspam -> Filter -> Email by Zapier*.
 
 *The Filter* step should be pre-configured with a simple rule: **continue processing only if the Spam Score is less than 3**.
 
@@ -76,13 +76,13 @@ Follow these steps to set up Typeform with the New Entry event:
 
 ![Typeform Zapier set up](/blog/assets/posts/typeform/typeform-zapier.png "Typeform Zapier set up")
 
-## Checking for spam with OOPSpam
+## Checking for spam with oopspam
 
 To set up spam protection, follow these steps:
 
-1. Register for an API key on the [OOPSpam dashboard](https://app.oopspam.com/).
+1. Register for an API key on the [oopspam dashboard](https://app.oopspam.com/).
 2. In Zapier, enter the API key when prompted in the "Choose Account" step.
-3. Map the necessary form fields to OOPSpam's fields:
+3. Map the necessary form fields to oopspam's fields:
 
    * **Content**: Map any message longer than 20 characters to this field.
    * **Sender IP**: Leave blank as Typeform doesn't provide IP.
@@ -93,7 +93,7 @@ To set up spam protection, follow these steps:
 
 Refer to the GIF below for a visual guide.
 
-![OOPSpam Zapier set up](/blog/assets/posts/typeform/zapier-oopspam.gif "OOPSpam Zapier set up")
+![oopspam Zapier set up](/blog/assets/posts/typeform/zapier-oopspam.gif "oopspam Zapier set up")
 
 ## Storing spam and non-spam submissions
 
@@ -102,7 +102,7 @@ There are a few ways to handle this. You can either use [Filter by Zapier](https
 In this case, we will store the submissions in an Airtable table. Let's create a table to store the form field values. In addition to the form fields, we will add two more fields: **Is it spam** and **Spam Score** and map values:
 
 * **Is it spam?**: This field will store either "spam" or "not spam." You can use this field to filter and organize your submissions.
-* **spam score**: OOPSpam Zap will return a spam score, which we will pass to this field. This provides useful information for potential issues and reviews.
+* **spam score**: oopspam Zap will return a spam score, which we will pass to this field. This provides useful information for potential issues and reviews.
 
 ![Airtable table](/blog/assets/posts/typeform/typeform-airtable.png "Airtable table")
 
@@ -138,8 +138,8 @@ Testing the email notification is an important step to ensure that you receive t
 
 Additionally, you can use other email service apps such as Postmark or Mailgun instead of *Email by Zapier* to send the emails. These services can offer better deliverability, additional features, and customization options such as email templates and analytics.
 
-> Running embedded forms instead of Typeform? Here’s how to[ add spam protection to embedded forms using OOPSpam and Zapier](https://www.oopspam.com/blog/add-spam-protection-to-embedded-forms-using-oopspam-and-zapier) for cleaner submissions.
+> Running embedded forms instead of Typeform? Here’s how to[ add spam protection to embedded forms using oopspam and Zapier](https://www.oopspam.com/blog/add-spam-protection-to-embedded-forms-using-oopspam-and-zapier) for cleaner submissions.
 
 ## Final thoughts
 
-This was a simple workflow to filter spam with OOPSpam in your Typeform forms using Zapier. You can also use other platforms to automate the process. Plus, you can add extra steps and conditions to make it more complex, such as sending an automated email response to the visitor confirming successful submission after the spam check or storing submissions in Google Sheets. The possibilities are endless, and you can customize the workflow according to your specific needs and preferences.
+This was a simple workflow to filter spam with oopspam in your Typeform forms using Zapier. You can also use other platforms to automate the process. Plus, you can add extra steps and conditions to make it more complex, such as sending an automated email response to the visitor confirming successful submission after the spam check or storing submissions in Google Sheets. The possibilities are endless, and you can customize the workflow according to your specific needs and preferences.

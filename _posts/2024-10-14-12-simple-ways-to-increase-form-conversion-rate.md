@@ -90,7 +90,7 @@ By reducing the reliance on CAPTCHAs, you can provide a smoother, more user-frie
 
 ## 5. Implement Seamless Spam Protection
 
-![OOPSpam dashboard showing API usage, response time, and API key, with options to test data and view logs, along with navigation menu on the left.](/blog/assets/posts/unnamed-4-.png "OOPSpam dashboard showing API usage, response time, and API key, with options to test data and view logs, along with navigation menu on the left.")
+![oopspam dashboard showing API usage, response time, and API key, with options to test data and view logs, along with navigation menu on the left.](/blog/assets/posts/unnamed-4-.png "oopspam dashboard showing API usage, response time, and API key, with options to test data and view logs, along with navigation menu on the left.")
 
 Spam protection is essential for maintaining the integrity of your forms, but it doesn't have to come at the expense of user experience. 
 
@@ -102,7 +102,7 @@ Traditional methods like CAPTCHAs or complicated verification steps can discoura
 * It silently blocks spam and bot submissions, ensuring you only receive genuine leads.
 * It improves conversion rates by reducing form abandonment caused by intrusive security measures.
 
-At **[OOPSpam](https://www.oopspam.com/)** (that’s us 👋), we make sure your forms are protected from spam without annoying your users. 
+At **[oopspam](https://www.oopspam.com/)** (that’s us 👋), we make sure your forms are protected from spam without annoying your users. 
 
 Our spam filter works quietly in the background, so visitors don’t have to deal with extra steps or challenges. It's all about keeping things smooth and easy! 
 
@@ -122,7 +122,7 @@ Slow-loading forms frustrate users and give them plenty of time to reconsider th
 
 Choosing the right hosting provider is also [essential for speed](https://www.oopspam.com/blog/slow-wordpress-website). Popular shared hosting providers like GoDaddy or Bluehost can really slow things down. Managed hosting services like [Cloudways ](https://www.cloudways.com/en/?id=863506&data1=blog1&data2=blog2)or [SiteGround](https://world.siteground.com/) offer much better performance and faster load times.
 
-Also, using a caching service like Cloudflare helps by reducing server load and delivering content faster. And instead of using heavy solutions like reCAPTCHA, try a lighter, server-side option like OOPSpam to keep your forms fast and secure without slowing things down.
+Also, using a caching service like Cloudflare helps by reducing server load and delivering content faster. And instead of using heavy solutions like reCAPTCHA, try a lighter, server-side option like oopspam to keep your forms fast and secure without slowing things down.
 
 Regularly test your form’s speed using tools like [Google PageSpeed Insights](https://pagespeed.web.dev/) or [GTmetrix](https://gtmetrix.com/) to ensure optimal performance across devices.
 
@@ -210,6 +210,6 @@ Thank you pages are a simple but effective way to leave a positive impression an
 
 Learning how to increase form conversion rate is all about making the process smoother, faster, and more secure for users. By applying these 12 strategies, you'll reduce friction, create a more engaging experience, and see improved results. Whether it's simplifying your forms, optimizing for mobile, or testing different elements, these tips will help you understand what works best for your audience.
 
-And as you optimize, don’t forget about security. Protect your forms from spam without adding extra steps for users. OOPSpam offers seamless spam protection, ensuring that your forms stay clean and secure while keeping the user experience simple.
+And as you optimize, don’t forget about security. Protect your forms from spam without adding extra steps for users. oopspam offers seamless spam protection, ensuring that your forms stay clean and secure while keeping the user experience simple.
 
 So, which tip will you try first?

@@ -5,7 +5,7 @@ date: 2026-03-16T14:59:00.000+08:00
 author: chazie
 image: /blog/assets/posts/quform_headers.png
 description: Protect Quform from spam using built-in tools, Turnstile, hCaptcha,
-  submission limits, and OOPSpam advanced filtering.
+  submission limits, and oopspam advanced filtering.
 tags:
   - Quform
   - Turnstile
@@ -128,47 +128,47 @@ You can also control when the form opens and closes. Go to **Settings → Genera
 
 Submission limits help prevent repeated bot submissions and form flooding. Even if spam bots [bypass CAPTCHA](https://www.oopspam.com/blog/bypassing-captcha), these controls can still stop large volumes of automated submissions.
 
-## **3. Use OOPSpam for Advanced Spam Filtering**
+## **3. Use oopspam for Advanced Spam Filtering**
 
-Quform’s built-in protections stop many bots, but some spam can still get through. [OOPSpam](https://www.oopspam.com/) (that's us 👋) adds an additional layer of protection by analyzing the actual content of form submissions using machine learning.
+Quform’s built-in protections stop many bots, but some spam can still get through. [oopspam](https://www.oopspam.com/) (that's us 👋) adds an additional layer of protection by analyzing the actual content of form submissions using machine learning.
 
-OOPSpam evaluates signals such as message content, IP reputation, and behavior patterns. This helps detect more sophisticated spam that traditional methods may miss.
+oopspam evaluates signals such as message content, IP reputation, and behavior patterns. This helps detect more sophisticated spam that traditional methods may miss.
 
-### **Steps to Add OOPSpam to Your WordPress Site**
+### **Steps to Add oopspam to Your WordPress Site**
 
-**Step 1: Install the OOPSpam Plugin**
+**Step 1: Install the oopspam Plugin**
 
-![OOPSpam Plugin](/blog/assets/posts/oopspam-anti-spam-overview.png "OOPSpam Plugin")
+![oopspam Plugin](/blog/assets/posts/oopspam-anti-spam-overview.png "oopspam Plugin")
 
-Go to your WordPress dashboard and navigate to **Plugins → Add New**. Search for **[OOPSpam Anti-Spam](https://www.oopspam.com/wordpress)**, then install and activate the plugin.
+Go to your WordPress dashboard and navigate to **Plugins → Add New**. Search for **[oopspam Anti-Spam](https://www.oopspam.com/wordpress)**, then install and activate the plugin.
 
 **Step 2: Get Your API Key**
 
 ![Get Your API Key](/blog/assets/posts/oopspam-dashboard-api.png "Get Your API Key")
 
-[Create an account](https://app.oopspam.com/Identity/Account/Login) on the OOPSpam website. After logging in, go to your **dashboard** and copy your **API key**.
+[Create an account](https://app.oopspam.com/Identity/Account/Login) on the oopspam website. After logging in, go to your **dashboard** and copy your **API key**.
 
-This key connects your website to OOPSpam’s spam detection service.
+This key connects your website to oopspam’s spam detection service.
 
 **Step 3: Add the API Key in WordPress**
 
 ![Add the API Key in WordPress](/blog/assets/posts/oopspam-api-key.png "Add the API Key in WordPress")
 
-Return to your WordPress dashboard and go to **Settings → OOPSpam Anti-Spam**.
+Return to your WordPress dashboard and go to **Settings → oopspam Anti-Spam**.
 
-Paste your API key into the appropriate field, select **OOPSpam Dashboard** as the key source, and save your settings.
+Paste your API key into the appropriate field, select **oopspam Dashboard** as the key source, and save your settings.
 
 **Step 4: Enable Spam Protection**
 
 ![Enable Spam Protection](/blog/assets/posts/spam-protection-for-quform.png "Enable Spam Protection")
 
-In the OOPSpam settings page, turn on **Activate Spam Protection** forQuform. You can also customize the message shown when a submission is flagged as spam. Once saved, OOPSpam will begin monitoring form submissions automatically.
+In the oopspam settings page, turn on **Activate Spam Protection** forQuform. You can also customize the message shown when a submission is flagged as spam. Once saved, oopspam will begin monitoring form submissions automatically.
 
 No additional configuration is required inside the Quform builder.
 
-### **Optional OOPSpam Advanced Filters**
+### **Optional oopspam Advanced Filters**
 
-For stronger protection, OOPSpam also offers additional filters such as:
+For stronger protection, oopspam also offers additional filters such as:
 
 * [Rate limiting](https://www.oopspam.com/blog/protecting-forms-with-rate-limiting-in-wordpress-using-oopspam) to restrict repeated submissions from the same IP
 * [VPN](https://www.oopspam.com/blog/how-to-block-vpn-and-data-center-ip-submissions-in-quform), proxy, and TOR blocking
@@ -184,6 +184,6 @@ These tools help detect more advanced abuse patterns. For example, [contextual d
 
 Spam prevention does not need to be complicated. Quform already provides several powerful tools to protect forms from automated submissions.
 
-Start by enabling the built-in protections. Then control how often forms can be submitted. Finally, add a dedicated spam detection service such as OOPSpam for deeper filtering.
+Start by enabling the built-in protections. Then control how often forms can be submitted. Finally, add a dedicated spam detection service such as oopspam for deeper filtering.
 
 With these three steps in place, your Quform forms will remain clean, reliable, and easier to manage, allowing you to focus on real messages instead of spam.

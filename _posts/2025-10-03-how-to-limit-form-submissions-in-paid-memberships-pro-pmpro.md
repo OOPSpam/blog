@@ -5,14 +5,14 @@ date: 2025-10-03T04:38:00.000+08:00
 author: chazie
 image: /blog/assets/posts/pmp_rt.jpg
 description: Learn how to limit form submissions in Paid Memberships Pro using
-  add-ons, WS Form integration, and OOPSpam for spam protection and rate limits.
+  add-ons, WS Form integration, and oopspam for spam protection and rate limits.
 tags:
   - Paid Memberships Pro
   - WS Form
 ---
 ![Paid Memberships Pro (PMPro)](/blog/assets/posts/paid-memberships-pro-home.png "Paid Memberships Pro (PMPro)")
 
-Limiting form submissions in [Paid Memberships Pro (PMPro)](https://www.paidmembershipspro.com/) helps protect your site from spam, manage member access, and control how often users can submit content. You can achieve this with PMPro’s official add-ons, and integrations with form builders like [WS Form](https://www.oopspam.com/integrations/spam-protection-for-ws-form). For advanced protection, pairing with **[OOPSpam](https://www.oopspam.com/)** adds rate-limiting, country filtering, and spam detection.
+Limiting form submissions in [Paid Memberships Pro (PMPro)](https://www.paidmembershipspro.com/) helps protect your site from spam, manage member access, and control how often users can submit content. You can achieve this with PMPro’s official add-ons, and integrations with form builders like [WS Form](https://www.oopspam.com/integrations/spam-protection-for-ws-form). For advanced protection, pairing with **[oopspam](https://www.oopspam.com/)** adds rate-limiting, country filtering, and spam detection.
 
 ## **Use the Limit Post Views Add-On**
 
@@ -60,11 +60,11 @@ You can also control form visibility using PMPro’s **membership shortcodes**.
 
 This ensures only members of a specific level can see and submit the form.
 
-## **Advanced Submission Control with OOPSpam**
+## **Advanced Submission Control with oopspam**
 
-For [advanced abuse prevention](https://www.oopspam.com/blog/4-ways-to-stop-spam-on-your-paid-memberships-pro-membership-site), integrate **[OOPSpam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/)** (that’s us 👋) with your form workflow. This adds features beyond PMPro’s core.
+For [advanced abuse prevention](https://www.oopspam.com/blog/4-ways-to-stop-spam-on-your-paid-memberships-pro-membership-site), integrate **[oopspam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/)** (that’s us 👋) with your form workflow. This adds features beyond PMPro’s core.
 
-### **Key Features of OOPSpam for PMPro Forms**
+### **Key Features of oopspam for PMPro Forms**
 
 * Rate-limits by IP/email (e.g., max 3 submissions per hour).
 * [Country allow/deny](https://www.oopspam.com/blog/how-to-block-countries-in-paid-memberships-pro) lists to block high-risk regions.
@@ -74,13 +74,13 @@ For [advanced abuse prevention](https://www.oopspam.com/blog/4-ways-to-stop-spam
 
 ### **Setup Steps**
 
-Install and activate **OOPSpam Anti-Spam** from the WordPress repository. Create an [OOPSpam account](https://app.oopspam.com/Identity/Account/Login) and get your API key.
+Install and activate **oopspam Anti-Spam** from the WordPress repository. Create an [oopspam account](https://app.oopspam.com/Identity/Account/Login) and get your API key.
 
-![OOPSpam Anti-Spam](/blog/assets/posts/oopspam-dashboard-api.png "OOPSpam Anti-Spam")
+![oopspam Anti-Spam](/blog/assets/posts/oopspam-dashboard-api.png "oopspam Anti-Spam")
 
-Enter the key in **OOPSpam → General Settings**.
+Enter the key in **oopspam → General Settings**.
 
-![Enter the key in OOPSpam → General Settings.](/blog/assets/posts/oopspam-api-key.png "Enter the key in OOPSpam → General Settings.")
+![Enter the key in oopspam → General Settings.](/blog/assets/posts/oopspam-api-key.png "Enter the key in oopspam → General Settings.")
 
 Enable **Spam Protection** for your chosen form plugin (e.g., PMPro).
 
@@ -99,4 +99,4 @@ This ensures that even if a member gains form access, they cannot overwhelm the 
 
 ## **Final Thoughts**
 
-Paid Memberships Pro gives you strong membership and access control, but it doesn’t directly manage form submissions. By combining PMPro settings, the Limit Post Views Add-On, and WS Form integration, you can enforce submission rules that suit your site. Adding OOPSpam on top ensures that only real members, not bots or spammers, get through.
+Paid Memberships Pro gives you strong membership and access control, but it doesn’t directly manage form submissions. By combining PMPro settings, the Limit Post Views Add-On, and WS Form integration, you can enforce submission rules that suit your site. Adding oopspam on top ensures that only real members, not bots or spammers, get through.

@@ -11,14 +11,14 @@ tags:
 ---
 <center>
 <a href="https://bubble.io/plugin/oopspam-spam-detection-1582908608700x936823858020745200">
-<img loading="lazy"  width="772" style="height: 200px;object-fit: cover;" alt="Bubble.io and OOPSpam" src="/blog/assets/bubble_oopspam.png">
+<img loading="lazy"  width="772" style="height: 200px;object-fit: cover;" alt="Bubble.io and oopspam" src="/blog/assets/bubble_oopspam.png">
 </a>
 </center>
 <br/>
 
 I love no-code platforms. [Bubble.io](https://bubble.io) is perhaps one of the first and leading no-code solutions out there. It's amazing how fast people can build with these platforms. Our first no-code app was [Integromat app](https://www.integromat.com/en/integrations/oopspam-anti-spam) (now Make) which made it easy to add a spam filter to Integromat automated workflows.
 
-Today, I'm excited to announce our official [Bubble.io plugin](https://bubble.io/plugin/oopspam-spam-detection-1582908608700x936823858020745200). I say "official" because someone already developed an unofficial OOPSpam plugin for Bubble with our API, however, it's not functional as it is not up to date. So we decided to take matters into our hands.
+Today, I'm excited to announce our official [Bubble.io plugin](https://bubble.io/plugin/oopspam-spam-detection-1582908608700x936823858020745200). I say "official" because someone already developed an unofficial oopspam plugin for Bubble with our API, however, it's not functional as it is not up to date. So we decided to take matters into our hands.
 
 The plugin can be used to prevent spam in contact forms, review systems, or anywhere where spam messages may come. In this article, we will demonstrate it with a contact form.
 
@@ -42,23 +42,23 @@ Visit your dashboard on Bubble and create a new app. The pop-up would let you qu
    2. If not, Send an email ✉️
 4. Done 🎉
 
-## 2. Installing OOPSpam & IP Geo Bubble plugins
+## 2. Installing oopspam & IP Geo Bubble plugins
 
-[One of the parameters](https://www.oopspam.com/docs/#spam-detection) OOPSpam API allows you to pass is `senderIP`.  While it is not necessary to send a visitor's IP, it helps with spam detection. For that, we need to install the "IP Geo" plugin. Go to *Plugins* and click *Add plugins* and search and install "IP Geo" plugin.
+[One of the parameters](https://www.oopspam.com/docs/#spam-detection) oopspam API allows you to pass is `senderIP`.  While it is not necessary to send a visitor's IP, it helps with spam detection. For that, we need to install the "IP Geo" plugin. Go to *Plugins* and click *Add plugins* and search and install "IP Geo" plugin.
 
 ![IP Geo bubble.io plugin](/blog/assets/posts/screenshot-2026-04-23-at-12.06.49 pm.png "IP Geo bubble.io plugin")
 
-The second plugin we need to install is our beloved [OOPSpam Spam Detection plugin for Bubble](https://bubble.io/plugin/oopspam-spam-detection-1582908608700x936823858020745200).
+The second plugin we need to install is our beloved [oopspam Spam Detection plugin for Bubble](https://bubble.io/plugin/oopspam-spam-detection-1582908608700x936823858020745200).
 
 On the *Add plugins* page, search for "oopspam" and install it.
 
-![Installing OOPSpam Spam filter to Bubble app](/blog/assets/posts/bubbleio-oopspam/oopspam-plugin.png "Installing OOPSpam Spam filter to Bubble app")
+![Installing oopspam Spam filter to Bubble app](/blog/assets/posts/bubbleio-oopspam/oopspam-plugin.png "Installing oopspam Spam filter to Bubble app")
 
-"IP Geo" plugin doesn't need any configuration. For the OOPSpam plugin we need get an API key. For that [create a new account](https://app.oopspam.com/Identity/Account/Register) on the OOPSpam dashboard. Once registered and verified our email, we need to click the *Copy* to copy the API key.
+"IP Geo" plugin doesn't need any configuration. For the oopspam plugin we need get an API key. For that [create a new account](https://app.oopspam.com/Identity/Account/Register) on the oopspam dashboard. Once registered and verified our email, we need to click the *Copy* to copy the API key.
 
-![OOPSpam Dashboard](/blog/assets/posts/oopspam-dashboard-api.png "OOPSpam Dashboard")
+![oopspam Dashboard](/blog/assets/posts/oopspam-dashboard-api.png "oopspam Dashboard")
 
-Go back to Bubble and navigate to *Plugins->OOPSpam Spam Detection* and paste the API key we just copied.
+Go back to Bubble and navigate to *Plugins->oopspam Spam Detection* and paste the API key we just copied.
 
 We are done with a plugin setup. Time to move on adding spam filtering functionality to our contact form.
 
@@ -70,9 +70,9 @@ Here is the flow we'd like to achieve:
 
 Visit *Workflow* tab then select *When Button CONTACT US is clicked*. Let's add our first step action by clicking *Click here to add an action* and selecting *Check for Spam* action from the Plugins category.
 
-![OOPSpam Bubble action](/blog/assets/posts/bubbleio-oopspam/oopspam-action.png "OOPSpam Bubble action")
+![oopspam Bubble action](/blog/assets/posts/bubbleio-oopspam/oopspam-action.png "oopspam Bubble action")
 
-Now we have to pass all the necessary data to the plugin. Once you add the action a popup appears and allows us to input information. As of now, OOPSpam takes [three main inputs](https://www.oopspam.com/docs): IP, email and content.
+Now we have to pass all the necessary data to the plugin. Once you add the action a popup appears and allows us to input information. As of now, oopspam takes [three main inputs](https://www.oopspam.com/docs): IP, email and content.
 
 ```json
 {
@@ -112,7 +112,7 @@ If you don't need `allowedLanguages`, `blockedCountries` or `allowedCountries` f
 
 After setting up all these fields, you should have something like this:
 
-![OOPSpam Bubble setup](/blog/assets/posts/screenshot-2026-04-23-at-12.15.14 pm.png "OOPSpam Bubble setup")
+![oopspam Bubble setup](/blog/assets/posts/screenshot-2026-04-23-at-12.15.14 pm.png "oopspam Bubble setup")
 
 At this point, our plugin is ready to handle upcoming spam. Now we need to show the "Thanks for the submission" message and set up termination flow logic (when not to send an email).
 
@@ -122,9 +122,9 @@ Let's add a thank you message. For step 2, add a new **Show an element** action 
 
 A spammer/bot will see this conformation and move on to another websites to spam. But we still have work to do. With each contact form submission, an email will be sent to a site owner. To stop overflowing your inbox with a spam message, we need to terminate submission before it sends an email.
 
-> OOPSpam provides a Spam Score (`Score`) for every submission. We recommend terminating flow based on `Score` field. This is a number between 0-6. Usually, a score of 3 and above is considered spam.
+> oopspam provides a Spam Score (`Score`) for every submission. We recommend terminating flow based on `Score` field. This is a number between 0-6. Usually, a score of 3 and above is considered spam.
 
-For that, we add a new **Terminate this workflow** action then **Result of step 1 (OOPSpam - Check for spam))**. Here grab the value of `Score` field and let action know that *if Score is 3 or greater then terminate this flow*.
+For that, we add a new **Terminate this workflow** action then **Result of step 1 (oopspam - Check for spam))**. Here grab the value of `Score` field and let action know that *if Score is 3 or greater then terminate this flow*.
 
 ![Terminate this flow](/blog/assets/posts/bubbleio-oopspam/oopspam-terminateflow.png "Terminate this flow")
 

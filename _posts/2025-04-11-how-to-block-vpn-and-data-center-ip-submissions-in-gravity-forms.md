@@ -5,14 +5,14 @@ date: 2025-04-11T05:06:00.000Z
 author: chazie
 image: /assets/posts/how-to-block-vpn-and-data-center-ip-submissions-in-gravity-forms.jpg
 description: Stop spam in Gravity Forms fast. Learn how to block VPN and data
-  center IP submissions using OOPSpam or Cloudflare. Boost your Gravity Forms
+  center IP submissions using oopspam or Cloudflare. Boost your Gravity Forms
   security with ease.
 tags:
   - Gravity Forms
 ---
 ![How to Block VPN and Data Center IP Submissions in Gravity Forms](/blog/assets/posts/wp-gravity-forms.png "Gravity Forms")
 
-If you're seeing fake leads or strange submissions in your [Gravity Forms](https://www.gravityforms.com/), chances are they're coming from VPNs or cloud-based servers. These sources are popular among spambots for staying anonymous. This guide shows you how to block them—either manually or instantly with the OOPSpam plugin.
+If you're seeing fake leads or strange submissions in your [Gravity Forms](https://www.gravityforms.com/), chances are they're coming from VPNs or cloud-based servers. These sources are popular among spambots for staying anonymous. This guide shows you how to block them—either manually or instantly with the oopspam plugin.
 
 ## **Why Block VPN and Cloud Provider IPs in Gravity Forms?**
 
@@ -51,11 +51,11 @@ Use [ASN](https://en.wikipedia.org/wiki/Autonomous_system_(Internet)) (Autonomou
 
 Unless you have a tech team, this method can be a hassle. That’s why a plugin solution is often a better choice.
 
-## **Method 2: Block VPN and Cloud IPs in Gravity Forms Using the OOPSpam WordPress Plugin**
+## **Method 2: Block VPN and Cloud IPs in Gravity Forms Using the oopspam WordPress Plugin**
 
-![OOPSpam WordPress plugin](/blog/assets/posts/oopspam-anti-spam-overview.png "OOPSpam WordPress plugin")
+![oopspam WordPress plugin](/blog/assets/posts/oopspam-anti-spam-overview.png "oopspam WordPress plugin")
 
-If you want a simple, automated way to filter VPN and cloud IPs from your Gravity Forms, the **[OOPSpam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/)** (that’s us 👋) makes it super easy.
+If you want a simple, automated way to filter VPN and cloud IPs from your Gravity Forms, the **[oopspam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/)** (that’s us 👋) makes it super easy.
 
 We’ve built in two toggles under IP Filtering:
 
@@ -64,7 +64,7 @@ We’ve built in two toggles under IP Filtering:
 
 These options work with Gravity Forms and block spam at the source—without you needing to manage IPs or firewall settings.
 
-### **Why OOPSpam Works So Well**
+### **Why oopspam Works So Well**
 
 Our plugin uses a constantly updated database that includes:
 
@@ -72,25 +72,25 @@ Our plugin uses a constantly updated database that includes:
 * VPN and proxy service IPs
 * Real-time updates and reputation tracking
 
-That means your [Gravity Forms spam protection](https://www.oopspam.com/blog/spam-protection-for-gravity-forms) is always up-to-date and highly accurate. These features also work across other platforms if you're using [OOPSpam API](https://www.oopspam.com/docs/#introduction) integrations or other form plugins.
+That means your [Gravity Forms spam protection](https://www.oopspam.com/blog/spam-protection-for-gravity-forms) is always up-to-date and highly accurate. These features also work across other platforms if you're using [oopspam API](https://www.oopspam.com/docs/#introduction) integrations or other form plugins.
 
-## **How to Enable VPN and Cloud Blocking in Gravity Forms (Using OOPSpam)**
+## **How to Enable VPN and Cloud Blocking in Gravity Forms (Using oopspam)**
 
 Here’s how to set it up in minutes:
 
-### **Step 1: Install or Update the OOPSpam Plugin**
+### **Step 1: Install or Update the oopspam Plugin**
 
-![Sign up at the OOPSpam Dashboard to get your API key. ](/blog/assets/posts/oopspam-dashboard-api.png "OOPSpam dashboard")
+![Sign up at the oopspam Dashboard to get your API key. ](/blog/assets/posts/oopspam-dashboard-api.png "oopspam dashboard")
 
-Go to your WordPress dashboard, search for **OOPSpam Anti-Spam**, and install the latest version. [Sign up at the OOPSpam Dashboard](https://app.oopspam.com/Identity/Account/Login) to get your API key. Paste this into the plugin settings.
+Go to your WordPress dashboard, search for **oopspam Anti-Spam**, and install the latest version. [Sign up at the oopspam Dashboard](https://app.oopspam.com/Identity/Account/Login) to get your API key. Paste this into the plugin settings.
 
 ### **Step 2: Add API Key & Activate Gravity Forms Spam Protection**
 
 ![Add API Key & Activate Gravity Forms Spam Protection](/blog/assets/posts/my-api-key-field.png "Add API Key ")
 
-Go to **Settings > OOPSpam Anti-Spam** in your WordPress Admin. Under the **General** tab:
+Go to **Settings > oopspam Anti-Spam** in your WordPress Admin. Under the **General** tab:
 
-* Choose *OOPSpam Dashboard* as your source
+* Choose *oopspam Dashboard* as your source
 * Paste your API key into the "**My API Key**" field
 
 If Gravity Forms is active on your site, a **Gravity Forms** section will appear.
@@ -111,18 +111,18 @@ There, you’ll find two main options:
 * **Block VPNs:** Stops form submissions from known VPN or proxy IPs (use cautiously)
 * **Block Cloud Providers:** Blocks IPs from major cloud platforms—this is the recommended setting for most users
 
-Toggle on what fits your needs and hit **Save Changes**. You’re done—no extra form setup required. OOPSpam now works quietly in the background to block unwanted traffic from hitting your Gravity Forms.
+Toggle on what fits your needs and hit **Save Changes**. You’re done—no extra form setup required. oopspam now works quietly in the background to block unwanted traffic from hitting your Gravity Forms.
 
 ## **Best Practices for Gravity Forms Spam Protection**
 
 * Be careful with VPN blocking if your audience includes remote teams or privacy-focused users
 * Regularly review flagged submissions to avoid false positives
-* Use additional **[OOPSpam](https://www.oopspam.com/)** features like language detection and country blocking for a layered defense
+* Use additional **[oopspam](https://www.oopspam.com/)** features like language detection and country blocking for a layered defense
 
 ## **Final Thoughts**
 
-You don’t need to waste time filtering spam submissions manually. Whether you’re using Gravity Forms for contact forms, lead generation, or client intake—OOPSpam gives you powerful tools to cut out junk submissions.
+You don’t need to waste time filtering spam submissions manually. Whether you’re using Gravity Forms for contact forms, lead generation, or client intake—oopspam gives you powerful tools to cut out junk submissions.
 
 By simply enabling Block VPNs and Block Cloud Providers, you gain fast, proactive spam protection in just a few clicks. It's a smart upgrade for any site using Gravity Forms.
 
-Need help with setup or want to try it with another form builder? OOPSpam also supports Contact Form 7, [Elementor](https://www.oopspam.com/blog/how-to-block-vpn-and-data-center-ip-submissions-in-elementor-forms), WS Form, and more—just [reach out to our team](https://www.oopspam.com/#contact).
+Need help with setup or want to try it with another form builder? oopspam also supports Contact Form 7, [Elementor](https://www.oopspam.com/blog/how-to-block-vpn-and-data-center-ip-submissions-in-elementor-forms), WS Form, and more—just [reach out to our team](https://www.oopspam.com/#contact).

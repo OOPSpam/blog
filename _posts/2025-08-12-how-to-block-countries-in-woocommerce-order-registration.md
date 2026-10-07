@@ -5,7 +5,7 @@ date: 2025-08-12T10:31:00.000+08:00
 last_modified_at: 2026-01-06T11:36:00.000+08:00
 author: chazie
 image: /blog/assets/posts/header_woo.png
-description: WooCommerce lets you block orders by country. Use OOPSpam for added
+description: WooCommerce lets you block orders by country. Use oopspam for added
   spam protection, or Cloudflare to block full site access from selected
   regions.
 tags:
@@ -14,7 +14,7 @@ tags:
 ---
 ![WooCommerce](/blog/assets/posts/woocommerce-homepage.png "WooCommerce")
 
-If you’re selling online with [WooCommerce](https://woocommerce.com/), you may need to block orders or customer registrations from certain countries. This could be for compliance, fraud prevention, or logistical reasons. WooCommerce includes built-in settings to control which countries you sell to — plus, you can use additional tools like [OOPSpam Anti-Spam](https://www.oopspam.com/) and Cloudflare for extra protection against fake registrations and spam.
+If you’re selling online with [WooCommerce](https://woocommerce.com/), you may need to block orders or customer registrations from certain countries. This could be for compliance, fraud prevention, or logistical reasons. WooCommerce includes built-in settings to control which countries you sell to — plus, you can use additional tools like [oopspam Anti-Spam](https://www.oopspam.com/) and Cloudflare for extra protection against fake registrations and spam.
 
 Here’s how to set it up effectively.
 
@@ -86,13 +86,13 @@ Go to your checkout page and confirm that only your allowed countries appear in 
 * Cannot block specific products by country without custom code or plugins
 * Doesn’t [prevent spam](https://www.oopspam.com/woocommerce) from contact or registration forms — only checkout-related actions
 
-## **2. Filter Orders and Registrations with OOPSpam Anti-Spam**
+## **2. Filter Orders and Registrations with oopspam Anti-Spam**
 
-While WooCommerce’s built-in settings handle location-based selling rules, they don’t protect you from [spam orders](https://www.oopspam.com/blog/spam-protection-for-woocommerce), fake signups, or abusive form submissions. This is where **[OOPSpam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/)** (that’s us 👋) comes in.
+While WooCommerce’s built-in settings handle location-based selling rules, they don’t protect you from [spam orders](https://www.oopspam.com/blog/spam-protection-for-woocommerce), fake signups, or abusive form submissions. This is where **[oopspam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/)** (that’s us 👋) comes in.
 
-![OOPSpam Anti-Spam](/blog/assets/posts/oopspam-anti-spam-overview.png "OOPSpam Anti-Spam")
+![oopspam Anti-Spam](/blog/assets/posts/oopspam-anti-spam-overview.png "oopspam Anti-Spam")
 
-### **What OOPSpam Adds to WooCommerce**
+### **What oopspam Adds to WooCommerce**
 
 * **Country Filtering** – Block or allow form and checkout submissions from specific countries
 * **Language Filtering** – Stop spam written in certain languages
@@ -101,25 +101,25 @@ While WooCommerce’s built-in settings handle location-based selling rules, the
 * **Rate Limiting** – Control how often your [forms can be submitted](https://www.oopspam.com/blog/protecting-forms-with-rate-limiting-in-wordpress-using-oopspam)
 * **Detailed Submission Logs** – See exactly what was blocked and why
 
-### **How to Set Up OOPSpam with WooCommerce**
+### **How to Set Up oopspam with WooCommerce**
 
 **Step 1: Install the Plugin**
 
 From your WordPress dashboard:
 
-Plugins > Add New > Search: OOPSpam Anti-Spam
+Plugins > Add New > Search: oopspam Anti-Spam
 
 Install and activate.
 
 **Step 2: Get Your API Key**
 
-Go to [OOPSpam.com](https://app.oopspam.com/Identity/Account/Login), sign up, and copy your API key.
+Go to [oopspam.com](https://app.oopspam.com/Identity/Account/Login), sign up, and copy your API key.
 
-![OOPSpam dashboard](/blog/assets/posts/oopspam-dashboard-api.png "OOPSpam dashboard")
+![oopspam dashboard](/blog/assets/posts/oopspam-dashboard-api.png "oopspam dashboard")
 
 **Step 3: Enable WooCommerce Protection**
 
-Go to: **OOPSpam Anti-Spam > Settings** and paste your API key.
+Go to: **oopspam Anti-Spam > Settings** and paste your API key.
 
 ![Paste your API key](/blog/assets/posts/oopspam-api-key.png "Paste your API key")
 
@@ -144,13 +144,13 @@ If WooCommerce is installed, toggle **Activate Spam Protection** ON, add a custo
 
 You can see [logs](https://help.oopspam.com/wordpress/form-entries/) for blocked orders or signups via:
 
-* WordPress Dashboard → OOPSpam → Form Spam Entries / Form Ham Entries
+* WordPress Dashboard → oopspam → Form Spam Entries / Form Ham Entries
 
 ![Form Spam Entries / Form Ham Entries](/blog/assets/posts/form-spam-entries-oopspam.png "Form Spam Entries / Form Ham Entries")
 
-* OOPSpam.com Dashboard (with additional details)
+* oopspam.com Dashboard (with additional details)
 
-![OOPSpam.com Dashboard](/blog/assets/posts/screenshot-1.png "OOPSpam.com Dashboard")
+![oopspam.com Dashboard](/blog/assets/posts/screenshot-1.png "oopspam.com Dashboard")
 
 This transparency lets you fine-tune your rules and rescue legitimate entries if needed.
 
@@ -213,7 +213,7 @@ If you’re dealing with fraud, scraping, or server attacks, you may want to blo
       <td>Simple selling restrictions by country</td>
     </tr>
     <tr>
-      <td>OOPSpam Plugin</td>
+      <td>oopspam Plugin</td>
       <td>Spammy orders &amp; registrations</td>
       <td>Extra protection against bots and targeted abuse</td>
     </tr>
@@ -227,8 +227,8 @@ If you’re dealing with fraud, scraping, or server attacks, you may want to blo
 
 ## **Final thoughts**
 
-WooCommerce gives you native tools to control which countries can place orders, perfect for quick compliance and fraud prevention. But for advanced filtering and anti-spam protection, pairing it with OOPSpam Anti-Spam is the best approach.
+WooCommerce gives you native tools to control which countries can place orders, perfect for quick compliance and fraud prevention. But for advanced filtering and anti-spam protection, pairing it with oopspam Anti-Spam is the best approach.
 
 If you need site-wide blocking, Cloudflare firewall rules are an option, but use them carefully to avoid blocking legitimate visitors.
 
-Need help setting this up? You can check OOPSpam’s [documentation](https://www.oopspam.com/help) or [contact our support team](https://www.oopspam.com/#contact) for guidance.
+Need help setting this up? You can check oopspam’s [documentation](https://www.oopspam.com/help) or [contact our support team](https://www.oopspam.com/#contact) for guidance.

@@ -5,7 +5,7 @@ date: 2026-04-11T01:43:00.000+08:00
 author: chazie
 image: /blog/assets/posts/mc4wp_header_meta.png
 description: "Protect your MC4WP: Mailchimp for WordPress forms from spam with 4
-  proven methods, including double opt-in, CAPTCHA, OOPSpam, and Cloudflare
+  proven methods, including double opt-in, CAPTCHA, oopspam, and Cloudflare
   WAF."
 tags:
   - "MC4WP: Mailchimp for WordPress"
@@ -47,27 +47,27 @@ Once enabled, Mailchimp will send a confirmation email every time someone signs 
 
 You may get fewer signups, but they’ll be real, engaged users. That’s what protects your list long-term.
 
-## **2. Add a Dedicated Anti-Spam Layer (OOPSpam)**
+## **2. Add a Dedicated Anti-Spam Layer (oopspam)**
 
 Double opt-in helps, but it doesn’t stop everything, especially bots that repeatedly hit your MC4WP form or trigger Mailchimp API requests.
 
 That’s where a dedicated anti-spam layer becomes important.
 
-[OOPSpam](https://www.oopspam.com/) (that's us 👋) filters submissions before they are sent to Mailchimp. This means spam is blocked early, without affecting your audience or API usage. Unlike CAPTCHA-based tools, it runs in the background, so users don’t need to solve puzzles or take extra steps.
+[oopspam](https://www.oopspam.com/) (that's us 👋) filters submissions before they are sent to Mailchimp. This means spam is blocked early, without affecting your audience or API usage. Unlike CAPTCHA-based tools, it runs in the background, so users don’t need to solve puzzles or take extra steps.
 
 ### **How to set it up**
 
-Go to **Plugins → Add New** in WordPress. Search for **“[OOPSpam Anti-Spam](https://www.oopspam.com/wordpress)”**, then install and activate.
+Go to **Plugins → Add New** in WordPress. Search for **“[oopspam Anti-Spam](https://www.oopspam.com/wordpress)”**, then install and activate.
 
-![OOPSpam Anti-Spam](/blog/assets/posts/oopspam-anti-spam-overview.png "OOPSpam Anti-Spam")
+![oopspam Anti-Spam](/blog/assets/posts/oopspam-anti-spam-overview.png "oopspam Anti-Spam")
 
-[Create an account](https://app.oopspam.com/Identity/Account/Login) on the OOPSpam website and copy your API key.
+[Create an account](https://app.oopspam.com/Identity/Account/Login) on the oopspam website and copy your API key.
 
-![OOPSpam dashboard](/blog/assets/posts/oopspam-dashboard-api.png "OOPSpam dashboard")
+![oopspam dashboard](/blog/assets/posts/oopspam-dashboard-api.png "oopspam dashboard")
 
-Go to **Settings → OOPSpam** and paste your API key.
+Go to **Settings → oopspam** and paste your API key.
 
-![OOPSpam Settings](/blog/assets/posts/oopspam-api-key.png "OOPSpam Settings")
+![oopspam Settings](/blog/assets/posts/oopspam-api-key.png "oopspam Settings")
 
 Once connected, enable protection for your MC4WP. The plugin will start filtering submissions automatically.
 
@@ -75,7 +75,7 @@ Once connected, enable protection for your MC4WP. The plugin will start filterin
 
 ### **What it helps with**
 
-OOPSpam gives you more control over how form submissions are handled:
+oopspam gives you more control over how form submissions are handled:
 
 * Blocks known [spam IPs and bot networks](https://www.oopspam.com/blog/how-to-block-vpn-and-data-center-ip-submissions-in-mc4wp-mailchimp-for-wordpress)
 * Filters VPN, proxy, and data center traffic

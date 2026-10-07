@@ -4,14 +4,14 @@ title: How to Block Disposable and Fake Emails from Entering Your CRM via Zapier
 date: 2026-04-28T15:46:00.000+08:00
 author: chazie
 image: /blog/assets/posts/fake_emails_zapier.png
-description: Block fake and disposable emails with OOPSpam and Zapier. Filter
+description: Block fake and disposable emails with oopspam and Zapier. Filter
   spam in real time and keep your CRM clean and reliable.
 tags:
   - Zapier
 ---
 ![How to Block Disposable and Fake Emails from Entering Your CRM via Zapier](/blog/assets/posts/fake_emails_zapier.png "How to Block Disposable and Fake Emails from Entering Your CRM via Zapier")
 
-Disposable and fake emails contaminate your CRM, inflating metrics and wasting resources. By integrating OOPSpam into your [Zapier](https://zapier.com/) workflow, you can block these addresses in real-time before they pollute your customer database. This three-step setup analyzes form submissions, assigns spam scores, and filters out bad data automatically.
+Disposable and fake emails contaminate your CRM, inflating metrics and wasting resources. By integrating oopspam into your [Zapier](https://zapier.com/) workflow, you can block these addresses in real-time before they pollute your customer database. This three-step setup analyzes form submissions, assigns spam scores, and filters out bad data automatically.
 
 ## **Why Disposable Emails Threaten Your CRM**
 
@@ -26,11 +26,11 @@ The financial impact is severe. Bad data costs U.S. businesses [$3.1 trillion](h
 
 B2B contact data decays by [22.5% each year](https://www.hubspot.com/database-decay), and disposable emails speed up this decline, making your CRM less reliable for forecasting and decision-making.
 
-## **How OOPSpam Detects Fake Emails**
+## **How oopspam Detects Fake Emails**
 
-![OOPSpam ](/blog/assets/posts/oopspam-homepage.png "OOPSpam ")
+![oopspam ](/blog/assets/posts/oopspam-homepage.png "oopspam ")
 
-[OOPSpam](https://www.oopspam.com/) (that’s us 👋) uses machine learning combined with real-time database checks to identify spam at multiple levels. The system performs IP reputation checks to block known spammers, disposable email filtering to prevent fake signups using temporary email addresses, and spam score analysis to detect common spam patterns.
+[oopspam](https://www.oopspam.com/) (that’s us 👋) uses machine learning combined with real-time database checks to identify spam at multiple levels. The system performs IP reputation checks to block known spammers, disposable email filtering to prevent fake signups using temporary email addresses, and spam score analysis to detect common spam patterns.
 
 The detection engine maintains an updated database of known disposable email domains while using pattern recognition to catch new services. Machine learning analyzes patterns and classifies spam with high accuracy, while flagging submissions from IPs associated with spam or bot activity.
 
@@ -49,28 +49,28 @@ Start by creating a new Zap and selecting your form application as the trigger. 
 3. Connect your account and select the specific form to monitor
 4. Test the trigger to confirm data flows correctly
 
-### **Step 2: Add OOPSpam Spam Detection**
+### **Step 2: Add oopspam Spam Detection**
 
-After your trigger, add the OOPSpam Anti-Spam app to analyze each submission.
+After your trigger, add the oopspam Anti-Spam app to analyze each submission.
 
-![Add OOPSpam Spam Detection](/blog/assets/posts/oopspam-api-key-zapier.png "Add OOPSpam Spam Detection")
+![Add oopspam Spam Detection](/blog/assets/posts/oopspam-api-key-zapier.png "Add oopspam Spam Detection")
 
-1. Search for "OOPSpam Anti-Spam" in the Zapier app directory
+1. Search for "oopspam Anti-Spam" in the Zapier app directory
 2. Select "Check for Spam" as the action
-3. Connect your OOPSpam account using your API key
-4. Map the form fields to OOPSpam parameters:
+3. Connect your oopspam account using your API key
+4. Map the form fields to oopspam parameters:
 
-![Map the form fields to OOPSpam parameters](/blog/assets/posts/zapier-oopspam-fields.png "Map the form fields to OOPSpam parameters")
+![Map the form fields to oopspam parameters](/blog/assets/posts/zapier-oopspam-fields.png "Map the form fields to oopspam parameters")
 
 * **Email:** Map the email field from your form (required for disposable email detection)
 * **Content:** Map the message or comment field (optional - adds content-based spam analysis) 
 * **Sender IP:** Map the IP address if your form captures it (optional - enables geographic and IP-based filtering) 
 
-**Note:** For email-only forms (like newsletter signups or simple contact forms without message fields), you only need to map the Email field. OOPSpam will still detect disposable email domains effectively.
+**Note:** For email-only forms (like newsletter signups or simple contact forms without message fields), you only need to map the Email field. oopspam will still detect disposable email domains effectively.
 
 ### **Step 3: Configure Advanced Filtering Options**
 
-OOPSpam provides several additional options to help fine-tune spam filtering, including blocking temporary/disposable emails, filtering out emails from throwaway domains, blocking IP addresses from cloud providers to stop submissions from cloud-based bots, and blocking IP addresses from VPN providers.
+oopspam provides several additional options to help fine-tune spam filtering, including blocking temporary/disposable emails, filtering out emails from throwaway domains, blocking IP addresses from cloud providers to stop submissions from cloud-based bots, and blocking IP addresses from VPN providers.
 
 Critical settings to enable:
 
@@ -88,7 +88,7 @@ Critical settings to enable:
 
 ## **Understanding Spam Scores**
 
-OOPSpam outputs a Spam Score you can use to make decisions using [Filter by Zapier](https://zapier.com/apps/filter/integrations), which allows you to set conditions for your automation flow. The scoring system ranges from 0 (legitimate) to 6 (definite spam).
+oopspam outputs a Spam Score you can use to make decisions using [Filter by Zapier](https://zapier.com/apps/filter/integrations), which allows you to set conditions for your automation flow. The scoring system ranges from 0 (legitimate) to 6 (definite spam).
 
 Recommended thresholds:
 
@@ -98,12 +98,12 @@ Recommended thresholds:
 
 ### **Filtering Leads Based on Score**
 
-Add a "Filter by Zapier" step immediately after the OOPSpam check.
+Add a "Filter by Zapier" step immediately after the oopspam check.
 
 ![Filtering Leads Based on Score](/blog/assets/posts/filter-by-zapier.png "Filtering Leads Based on Score")
 
-1. Insert the Filter step between OOPSpam and your CRM
-2. Set the condition: "Spam Score" (from OOPSpam) must be "Less than 3"
+1. Insert the Filter step between oopspam and your CRM
+2. Set the condition: "Spam Score" (from oopspam) must be "Less than 3"
 3. Only submissions passing this filter continue to your CRM
 
 For more sophisticated routing, use "[Paths by Zapier](https://zapier.com/blog/zapier-paths-conditional-workflows/)" to handle different score ranges:
@@ -120,14 +120,14 @@ Add your CRM as the final step after filtering. Supported platforms include [Hub
 
 ## **Advanced Protection Strategies**
 
-* **IP Reputation Analysis:** OOPSpam automatically checks IPs and emails against millions of malicious lists, preventing known spammers from reaching your workflows.
+* **IP Reputation Analysis:** oopspam automatically checks IPs and emails against millions of malicious lists, preventing known spammers from reaching your workflows.
 * **Monitoring and Optimization:** Review [logs](https://help.oopspam.com/wordpress/form-entries/) regularly and track false positive rates, false negative rates, and score distribution. Adjust your spam threshold based on results.
 
 ## **WordPress Integration for Earlier Blocking**
 
-![OOPSpam Anti-Spam plugin](/blog/assets/posts/oopspam-anti-spam-overview.png "OOPSpam Anti-Spam plugin")
+![oopspam Anti-Spam plugin](/blog/assets/posts/oopspam-anti-spam-overview.png "oopspam Anti-Spam plugin")
 
-If you use WordPress, install the [OOPSpam Anti-Spam plugin](https://www.oopspam.com/wordpress) to filter submissions before they reach Zapier. This reduces task usage and works with [WPForms](https://www.oopspam.com/blog/spam-protection-for-wpforms), [Gravity Forms](https://www.oopspam.com/blog/spam-protection-for-gravity-forms), and [Contact Form 7](https://www.oopspam.com/blog/8-ways-to-protect-your-contact-form-7-from-spam).
+If you use WordPress, install the [oopspam Anti-Spam plugin](https://www.oopspam.com/wordpress) to filter submissions before they reach Zapier. This reduces task usage and works with [WPForms](https://www.oopspam.com/blog/spam-protection-for-wpforms), [Gravity Forms](https://www.oopspam.com/blog/spam-protection-for-gravity-forms), and [Contact Form 7](https://www.oopspam.com/blog/8-ways-to-protect-your-contact-form-7-from-spam).
 
 ### **Cost and Performance Benefits**
 
@@ -142,4 +142,4 @@ Blocking spam at the Zapier level [saves money](https://www.oopspam.com/blog/how
 
 ## **Key Takeaways**
 
-The three-step approach (trigger → OOPSpam check → filter → CRM) ensures only legitimate leads consume resources. Combined with geographic filtering, language restrictions, and IP reputation analysis, this system provides comprehensive protection against form spam. Prevention costs less than remediation, making real-time filtering essential for modern CRM hygiene.
+The three-step approach (trigger → oopspam check → filter → CRM) ensures only legitimate leads consume resources. Combined with geographic filtering, language restrictions, and IP reputation analysis, this system provides comprehensive protection against form spam. Prevention costs less than remediation, making real-time filtering essential for modern CRM hygiene.

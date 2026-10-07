@@ -5,7 +5,7 @@ date: 2025-04-15T01:30:00.000Z
 author: chazie
 image: /assets/posts/how-to-block-vpn-and-data-center-ip-submissions-in-fluent-forms.jpg
 description: Block spam in Fluent Forms fast. Learn how to stop VPN and data
-  center IPs using OOPSpam plugin. Protect your site with a smart, easy-to-use
+  center IPs using oopspam plugin. Protect your site with a smart, easy-to-use
   solution.
 tags:
   - Fluent Forms
@@ -14,7 +14,7 @@ tags:
 ---
 ![Block VPN and Cloud IPs in Fluent Forms](/blog/assets/posts/fluent-forms-site.png "Fluent Forms")
 
-Getting bombarded with spam through your Fluent Forms? A common source of these annoying, fake submissions is traffic coming from VPNs and cloud data centers. These IPs are often used by bots to bypass filters and flood your inbox with junk. In this guide, we’ll show you how to block those submissions manually through Cloudflare or automatically using the OOPSpam plugin for WordPress.
+Getting bombarded with spam through your Fluent Forms? A common source of these annoying, fake submissions is traffic coming from VPNs and cloud data centers. These IPs are often used by bots to bypass filters and flood your inbox with junk. In this guide, we’ll show you how to block those submissions manually through Cloudflare or automatically using the oopspam plugin for WordPress.
 
 ## **Why Block VPN and Cloud IPs in Fluent Forms?**
 
@@ -62,11 +62,11 @@ While this method is effective, it’s also:
 
 This method is best for developers or businesses with technical resources and high-traffic sites.
 
-## **Method 2: Block VPN and Cloud IPs in Fluent Forms with OOPSpam (One-Click Solution)**
+## **Method 2: Block VPN and Cloud IPs in Fluent Forms with oopspam (One-Click Solution)**
 
-![Block VPN and Cloud IPs in Fluent Forms with OOPSpam](/blog/assets/posts/oopspam-anti-spam-overview.png "OOPSpam WordPress plugin")
+![Block VPN and Cloud IPs in Fluent Forms with oopspam](/blog/assets/posts/oopspam-anti-spam-overview.png "oopspam WordPress plugin")
 
-Don’t want to deal with firewall rules and research? The **[OOPSpam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/)** (that’s us 👋) offers a one-click solution to block VPN and data center IPs for Fluent Forms.
+Don’t want to deal with firewall rules and research? The **[oopspam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/)** (that’s us 👋) offers a one-click solution to block VPN and data center IPs for Fluent Forms.
 
 ### **New Features for IP Filtering**
 
@@ -77,7 +77,7 @@ The plugin now includes two powerful toggles:
 
 Once enabled, these features instantly filter spam from two major sources—without needing to update IP lists or worry about ASNs.
 
-### **Why OOPSpam Works So Well**
+### **Why oopspam Works So Well**
 
 The plugin is powered by a real-time database that’s constantly updated and maintained. It includes:
 
@@ -87,23 +87,23 @@ The plugin is powered by a real-time database that’s constantly updated and ma
 
 This gives your Fluent Forms accurate, real-time protection without slowing down your site or requiring hands-on maintenance.
 
-These filters also extend to [OOPSpam’s API](https://www.oopspam.com/docs/#introduction) and integrations with other form builders—so you’re covered across platforms.
+These filters also extend to [oopspam’s API](https://www.oopspam.com/docs/#introduction) and integrations with other form builders—so you’re covered across platforms.
 
-## **How to Enable VPN and Cloud Blocking for Fluent Forms Using OOPSpam**
+## **How to Enable VPN and Cloud Blocking for Fluent Forms Using oopspam**
 
 Setting up takes just a few steps:
 
-### **Step 1: Install OOPSpam Plugin**
+### **Step 1: Install oopspam Plugin**
 
-Go to **Plugins > Add New** in your WordPress dashboard. Search for **[OOPSpam Anti-Spam](https://www.oopspam.com/wordpress)** and install the latest version.
+Go to **Plugins > Add New** in your WordPress dashboard. Search for **[oopspam Anti-Spam](https://www.oopspam.com/wordpress)** and install the latest version.
 
-![Sign up for an account at the OOPSpam Dashboard, and copy your API key.](/blog/assets/posts/oopspam-dashboard-api.png "OOPSpam Dashboard")
+![Sign up for an account at the oopspam Dashboard, and copy your API key.](/blog/assets/posts/oopspam-dashboard-api.png "oopspam Dashboard")
 
-[Sign up for an account](https://app.oopspam.com/Identity/Account/Login) at the OOPSpam Dashboard, and **copy your API key**.
+[Sign up for an account](https://app.oopspam.com/Identity/Account/Login) at the oopspam Dashboard, and **copy your API key**.
 
 ### **Step 2: Configure Plugin Settings**
 
-Navigate to **Settings > OOPSpam Anti-Spam** in your WordPress admin panel. Under the **General** tab, select “OOPSpam Dashboard” as the source. Paste your API key in the “**My API Key**” field.
+Navigate to **Settings > oopspam Anti-Spam** in your WordPress admin panel. Under the **General** tab, select “oopspam Dashboard” as the source. Paste your API key in the “**My API Key**” field.
 
 ![Paste your API key in the “My API Key” field.](/blog/assets/posts/my-api-key-field.png "My API Key field")
 
@@ -125,7 +125,7 @@ You’ll see two options:
 * **Block VPNs:** Stops form entries from anonymized VPN connections
 * **Block Cloud Providers:** Blocks known spam sources from 2,000+ data centers
 
-Toggle them on based on your risk tolerance, then click **Save Changes**. That’s it—OOPSpam will now handle the filtering in the background for Fluent Forms.
+Toggle them on based on your risk tolerance, then click **Save Changes**. That’s it—oopspam will now handle the filtering in the background for Fluent Forms.
 
 ## **Balancing Spam Protection with User Experience**
 
@@ -133,12 +133,12 @@ Blocking VPN and cloud traffic is effective—but it’s important to apply thes
 
 * If your users are global, consider the impact of blocking VPNs
 * Monitor flagged submissions regularly to identify any false positives
-* Combine this with [OOPSpam’s other features](https://www.oopspam.com/) (like country filtering or language detection) for a layered anti-spam strategy
+* Combine this with [oopspam’s other features](https://www.oopspam.com/) (like country filtering or language detection) for a layered anti-spam strategy
 
 ## **Final Thoughts**
 
 Fluent Forms is excellent for building forms on WordPress—but like any form plugin, it’s vulnerable to spam. VPNs and cloud-hosted bots are the primary tools used by modern spambots, and blocking them can give your site a major security boost.
 
-Whether you’re managing contact forms, surveys, newsletter sign-ups, or booking forms—[OOPSpam + Fluent Forms](https://www.oopspam.com/blog/fluentforms-block-user) gives you an easy way to take back control of your inbox. Enable the VPN and Cloud IP blocking today and enjoy peace of mind.
+Whether you’re managing contact forms, surveys, newsletter sign-ups, or booking forms—[oopspam + Fluent Forms](https://www.oopspam.com/blog/fluentforms-block-user) gives you an easy way to take back control of your inbox. Enable the VPN and Cloud IP blocking today and enjoy peace of mind.
 
-*Need help?* The OOPSpam team is [happy to assist](https://www.oopspam.com/#contact) and answer any questions about setup or compatibility with other form plugins like Contact Form 7, [Elementor Forms](https://www.oopspam.com/blog/how-to-block-vpn-and-data-center-ip-submissions-in-elementor-forms), or [Gravity Forms](https://www.oopspam.com/blog/how-to-block-vpn-and-data-center-ip-submissions-in-gravity-forms).
+*Need help?* The oopspam team is [happy to assist](https://www.oopspam.com/#contact) and answer any questions about setup or compatibility with other form plugins like Contact Form 7, [Elementor Forms](https://www.oopspam.com/blog/how-to-block-vpn-and-data-center-ip-submissions-in-elementor-forms), or [Gravity Forms](https://www.oopspam.com/blog/how-to-block-vpn-and-data-center-ip-submissions-in-gravity-forms).

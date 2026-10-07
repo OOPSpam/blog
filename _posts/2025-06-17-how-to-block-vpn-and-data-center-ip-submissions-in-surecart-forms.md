@@ -5,13 +5,13 @@ date: 2025-06-17T09:58:00.000Z
 author: chazie
 image: /blog/assets/posts/surecart_vpn.jpg
 description: Stop spam in SureCart forms by blocking VPNs and data center IPs.
-  Learn how to enable powerful filtering with OOPSpam in just a few clicks.
+  Learn how to enable powerful filtering with oopspam in just a few clicks.
 tags:
   - SureCart
 ---
 ![SureCart ](/blog/assets/posts/surecart-homepage.png "SureCart ")
 
-If you're running a SureCart-powered store and noticing spammy checkouts or fake submissions, there's a good chance VPNs or cloud-hosted IPs are behind them. This guide explains why those sources are a problem and how you can block them automatically using OOPSpam.
+If you're running a SureCart-powered store and noticing spammy checkouts or fake submissions, there's a good chance VPNs or cloud-hosted IPs are behind them. This guide explains why those sources are a problem and how you can block them automatically using oopspam.
 
 ## **Why Are VPN and Cloud IPs a Problem in SureCart?**
 
@@ -33,7 +33,7 @@ Let’s break this down further:
 * **Blocking VPNs:** Many spam scripts use commercial VPN services or tools like Tor to spoof locations and avoid detection. Blocking them helps reduce this loophole—but keep in mind: some real users (remote workers, privacy-focused buyers) may also use VPNs.
 * **Blocking Cloud Provider IPs:** Data centers are where most automated spam lives. If an IP belongs to a known server farm, it’s more likely bot traffic. Blocking these is a safer move, especially on eCommerce forms like SureCart where conversions matter.
 
-Traditional spam filters rely on whether an IP has been flagged in the past. But with OOPSpam’s cloud and VPN blocking, you also catch new IPs *before* they show a spammy history.
+Traditional spam filters rely on whether an IP has been flagged in the past. But with oopspam’s cloud and VPN blocking, you also catch new IPs *before* they show a spammy history.
 
 You can use tools like **[IP Reputation Check](https://ipreputationcheck.com/)** to determine whether a specific IP address is associated with a VPN or data center.
 
@@ -55,11 +55,11 @@ However, this approach comes with limitations:
 
 This method works, but it’s more suited for technical teams or larger operations with dedicated security resources.
 
-## **Better Option: Use OOPSpam’s One-Click IP Filtering**
+## **Better Option: Use oopspam’s One-Click IP Filtering**
 
-![OOPSpam WordPress plugin](/blog/assets/posts/oopspam-anti-spam-overview.png "OOPSpam WordPress plugin")
+![oopspam WordPress plugin](/blog/assets/posts/oopspam-anti-spam-overview.png "oopspam WordPress plugin")
 
-For SureCart users, there’s an easier way. The **[OOPSpam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/)** (that’s us 👋) supports SureCart and includes powerful IP filtering built right in.
+For SureCart users, there’s an easier way. The **[oopspam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/)** (that’s us 👋) supports SureCart and includes powerful IP filtering built right in.
 
 We added two toggles under the **IP Filtering** tab:
 
@@ -70,7 +70,7 @@ With just a few clicks, you can filter out traffic from thousands of spam-heavy 
 
 ### **What Makes It Effective?** 
 
-OOPSpam uses a constantly updated IP reputation database, which includes:
+oopspam uses a constantly updated IP reputation database, which includes:
 
 * Over 1,500+ data centers and cloud IPs
 * Known proxy and VPN ranges
@@ -78,21 +78,21 @@ OOPSpam uses a constantly updated IP reputation database, which includes:
 
 These filters work silently in the background, keeping your SureCart submissions clean and trustworthy.
 
-## **How to Enable IP Filtering for SureCart in OOPSpam**
+## **How to Enable IP Filtering for SureCart in oopspam**
 
 You can set it up in minutes:
 
-### **Step 1: Install and Activate OOPSpam Plugin** 
+### **Step 1: Install and Activate oopspam Plugin** 
 
-In your WordPress dashboard, search for **[OOPSpam Anti-Spam](https://www.oopspam.com/wordpress)** under Plugins. Click install, then activate it to get started.
+In your WordPress dashboard, search for **[oopspam Anti-Spam](https://www.oopspam.com/wordpress)** under Plugins. Click install, then activate it to get started.
 
 ### **Step 2: Add Your API Key** 
 
 ![API Key ](/blog/assets/posts/oopspam-dashboard-api.png "API Key ")
 
-Navigate to **Settings > OOPSpam Anti-Spam**. Under the General tab, choose **OOPSpam Dashboard** as the data source. Paste in your API key, which you can generate from your [OOPSpam Dashboard](https://app.oopspam.com/Identity/Account/Login).
+Navigate to **Settings > oopspam Anti-Spam**. Under the General tab, choose **oopspam Dashboard** as the data source. Paste in your API key, which you can generate from your [oopspam Dashboard](https://app.oopspam.com/Identity/Account/Login).
 
-![OOPSpam Dashboard](/blog/assets/posts/my-api-key-field.png "OOPSpam Dashboard")
+![oopspam Dashboard](/blog/assets/posts/my-api-key-field.png "oopspam Dashboard")
 
 ### **Step 3: Activate SureCart Protection**
 
@@ -108,20 +108,20 @@ Open the **IP Filtering** tab in the plugin settings. To block anonymous or high
 
 Click **Save Changes** and you’re done!
 
-There’s no need to touch your SureCart settings. **[OOPSpam](https://www.oopspam.com/)** works directly with your form submissions, filtering in the background without disrupting the checkout process.
+There’s no need to touch your SureCart settings. **[oopspam](https://www.oopspam.com/)** works directly with your form submissions, filtering in the background without disrupting the checkout process.
 
 ## **Balancing Spam Blocking with Real User Access**
 
 Before enabling both toggles, think about your audience:
 
 * Selling globally? Some users may rely on VPNs for access.
-* Have repeat issues from certain countries or networks? Consider enabling **country blocking** in OOPSpam too.
+* Have repeat issues from certain countries or networks? Consider enabling **country blocking** in oopspam too.
 * Monitor spam logs occasionally to adjust filters if needed.
 
 ## **Final thoughts**
 
 Spam through SureCart checkouts and support forms isn’t just annoying, it costs time, ad budget, and customer trust. Blocking VPN and cloud IPs is one of the most effective ways to stop it before it reaches your inbox.
 
-OOPSpam makes that process simple. You don’t have to manage complex firewall rules or monitor IP reputation yourself. Just enable two toggles—and your SureCart store has a smarter, quieter defense.
+oopspam makes that process simple. You don’t have to manage complex firewall rules or monitor IP reputation yourself. Just enable two toggles—and your SureCart store has a smarter, quieter defense.
 
 Need help setting it up or want to see how these filters work with your other tools?[ Let us know](https://www.oopspam.com/#contact)!

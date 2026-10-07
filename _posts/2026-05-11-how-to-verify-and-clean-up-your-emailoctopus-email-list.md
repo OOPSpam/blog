@@ -5,20 +5,20 @@ date: 2026-05-11T21:37:00.000+08:00
 last_modified_at: 2026-09-22T12:02:00.000+04:00
 author: chazie
 image: /blog/assets/posts/email_list_emailoctopus.jpg
-description: Clean your EmailOctopus list with OOPSpam. Scan and remove risky
+description: Clean your EmailOctopus list with oopspam. Scan and remove risky
   emails, spam traps, and fake signups to improve deliverability fast.
 tags:
   - EmailOctopus
 ---
 ![How to verify and clean up your EmailOctopus email list?](/blog/assets/posts/header_emailoctopus.jpg "How to verify and clean up your EmailOctopus email list?")
 
-An unclean email list quietly works against you. Fake signups, disposable addresses, and spam traps all damage your sender reputation over time, leading to lower inbox placement and skewed analytics. If you're using[ EmailOctopus](https://emailoctopus.com/), OOPSpam now connects directly to your account so you can scan and remove risky contacts without leaving the dashboard.
+An unclean email list quietly works against you. Fake signups, disposable addresses, and spam traps all damage your sender reputation over time, leading to lower inbox placement and skewed analytics. If you're using[ EmailOctopus](https://emailoctopus.com/), oopspam now connects directly to your account so you can scan and remove risky contacts without leaving the dashboard.
 
 Here's how to set it up.
 
 ## **Step 1: Open the Integrations Page**
 
-Log in to your[ OOPSpam Dashboard](https://app.oopspam.com/) and select **Integrations** from the left menu. You'll see both ActiveCampaign and EmailOctopus listed. Click **Connect** on the EmailOctopus card.
+Log in to your[ oopspam Dashboard](https://app.oopspam.com/) and select **Integrations** from the left menu. You'll see both ActiveCampaign and EmailOctopus listed. Click **Connect** on the EmailOctopus card.
 
 ![Step 1: Open the Integrations Page](/blog/assets/posts/emailoctopus-step-1.png "Step 1: Open the Integrations Page")
 
@@ -32,23 +32,23 @@ Paste your key into the field and click **Connect**.
 
 ## **Step 3: Select a List to Scan**
 
-Once connected, OOPSpam fetches all your EmailOctopus lists along with their subscriber counts. Click on the list you want to scan.
+Once connected, oopspam fetches all your EmailOctopus lists along with their subscriber counts. Click on the list you want to scan.
 
 ![Step 3: Select a List to Scan](/blog/assets/posts/step3-emailoctopus.png "Step 3: Select a List to Scan")
 
 ## **Step 4: Load Contacts and Start Scanning**
 
-For larger lists, OOPSpam runs the process in two steps: you'll see the progress at the bottom of the screen.
+For larger lists, oopspam runs the process in two steps: you'll see the progress at the bottom of the screen.
 
 **Step 1 of 2** loads all your contacts from EmailOctopus:
 
 ![Step 4: Load Contacts ](/blog/assets/posts/step4_1-emailoctopus.png "Step 4: Load Contacts ")
 
-Once all contacts are loaded, **Step 2 of 2** begins scanning each email against OOPSpam's spam database:
+Once all contacts are loaded, **Step 2 of 2** begins scanning each email against oopspam's spam database:
 
 ![Step 4: Start Scanning](/blog/assets/posts/step4_2-emailoctopus.png "Step 4: Start Scanning")
 
-***Note:*** scanning uses your OOPSpam API credits.
+***Note:*** scanning uses your oopspam API credits.
 
 ## **Step 5: Adjust the Additional Risk Criteria**
 
@@ -63,7 +63,7 @@ Switching either of these on gives the scan more to check per contact, so expect
 
 ## **Step 6: Set IP-Based Filters**
 
-Below the risk criteria, an **IP-based filters** section appears if EmailOctopus exposes subscriber IP addresses to OOPSpam. From here you can:
+Below the risk criteria, an **IP-based filters** section appears if EmailOctopus exposes subscriber IP addresses to oopspam. From here you can:
 
 * **Block VPN / Proxy / Tor IPs**
 * **Block data center IPs**
@@ -75,7 +75,7 @@ Like the risk criteria above, these filters mean more work per address, which ca
 
 ## **Step 7: Let It Run in the Background**
 
-Once you click **Scan All Emails**, there's no need to babysit the process. Scans now run in the background from start to finish, so you're free to close the tab; OOPSpam sends an email the moment results are ready.
+Once you click **Scan All Emails**, there's no need to babysit the process. Scans now run in the background from start to finish, so you're free to close the tab; oopspam sends an email the moment results are ready.
 
 ![background scan progress bar](/blog/assets/posts/scanning-emails.png "background scan progress bar")
 
@@ -113,10 +113,10 @@ Once you've taken action, the risky count drops to 0 and a confirmation message 
 
 ## **What Makes an Email "Risky"?**
 
-Not every bad address looks obviously fake. OOPSpam flags several types:
+Not every bad address looks obviously fake. oopspam flags several types:
 
 * **Disposable emails** - temporary inboxes used to bypass sign-up forms
-* **Known spam addresses** - emails tied to spam activity in OOPSpam's database
+* **Known spam addresses** - emails tied to spam activity in oopspam's database
 * **Invalid domains** - addresses where the domain doesn't exist or can't receive mail
 * **Spam traps** - addresses used by inbox providers to catch senders with poor list hygiene
 

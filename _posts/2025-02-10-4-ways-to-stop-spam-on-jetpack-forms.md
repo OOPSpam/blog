@@ -4,7 +4,7 @@ title: 4 Ways to Stop Spam on Jetpack Forms
 date: 2025-02-10T04:42:00.000Z
 author: chazie
 image: /assets/posts/header-jetpack-forms.png
-description: Stop spam on Jetpack Forms with OOPSpam, Akismet, reCAPTCHA, or
+description: Stop spam on Jetpack Forms with oopspam, Akismet, reCAPTCHA, or
   hCaptcha. Get advanced machine learning filtering and block bots & manual spam
   effectively.
 tags:
@@ -15,21 +15,21 @@ tags:
 
 Spam submissions are one of the biggest frustrations for website owners using Jetpack Forms. If you've noticed an influx of spammy contact form submissions, fake user registrations, or irrelevant messages flooding your inbox, you're not alone.
 
-While [Jetpack Forms](https://jetpack.com/forms/) is a solid form builder that comes bundled with the Jetpack plugin, its built-in spam protection is limited. Out of the box, it only supports Akismet, which, while helpful, isn’t always enough to filter out sophisticated spam attacks. If you want to stop spam on Jetpack Forms effectively, you'll need additional tools like OOPSpam, reCAPTCHA, or hCaptcha to reinforce your defenses.
+While [Jetpack Forms](https://jetpack.com/forms/) is a solid form builder that comes bundled with the Jetpack plugin, its built-in spam protection is limited. Out of the box, it only supports Akismet, which, while helpful, isn’t always enough to filter out sophisticated spam attacks. If you want to stop spam on Jetpack Forms effectively, you'll need additional tools like oopspam, reCAPTCHA, or hCaptcha to reinforce your defenses.
 
-In this guide, we’ll explore four highly effective ways to stop spam on Jetpack Forms, starting with OOPSpam—the best AI-powered spam filtering solution.
+In this guide, we’ll explore four highly effective ways to stop spam on Jetpack Forms, starting with oopspam—the best AI-powered spam filtering solution.
 
-## **1. Implement OOPSpam for Advanced Protection**
+## **1. Implement oopspam for Advanced Protection**
 
-![OOPSpam Anti-Spam plugin banner with tagline "Automate your Spam and Abuse Detection."](/blog/assets/posts/oopspam-anti-spam-overview.png "OOPSpam Anti-Spam Plugin Overview")
+![oopspam Anti-Spam plugin banner with tagline "Automate your Spam and Abuse Detection."](/blog/assets/posts/oopspam-anti-spam-overview.png "oopspam Anti-Spam Plugin Overview")
 
 One of the biggest challenges in stopping spam is dealing with both automated bots and human spammers. CAPTCHA-based solutions like reCAPTCHA and hCaptcha can help against bots, but they don’t stop manual spam and can sometimes hurt user experience.
 
-That’s where OOPSpam comes in. Unlike CAPTCHA solutions, OOPSpam uses machine learning spam filtering that works in the background without disrupting your users.
+That’s where oopspam comes in. Unlike CAPTCHA solutions, oopspam uses machine learning spam filtering that works in the background without disrupting your users.
 
-### **How OOPSpam Works with Jetpack Forms**
+### **How oopspam Works with Jetpack Forms**
 
-[OOPSpam](https://www.oopspam.com/) (that’s us! 👋) is a server-side spam filtering tool, meaning it does not rely on browser-side scripts that slow down your site. Instead, it scans form submissions using a combination of:
+[oopspam](https://www.oopspam.com/) (that’s us! 👋) is a server-side spam filtering tool, meaning it does not rely on browser-side scripts that slow down your site. Instead, it scans form submissions using a combination of:
 
 * **Machine Learning Analysis** – Utilizes advanced algorithms to assess message content and identify spam patterns.
 * **Extensive Database** – Cross-references submissions with a comprehensive list of known spam IPs and emails.
@@ -38,36 +38,36 @@ That’s where OOPSpam comes in. Unlike CAPTCHA solutions, OOPSpam uses machine 
 * **Manual Moderation** – Provides options to manually block specific emails, IPs, or keywords.
 * **Rate Limiting** – Controls [submission rates](https://www.oopspam.com/blog/protecting-forms-with-rate-limiting-in-wordpress-using-oopspam) to prevent abuse and click frauds, ensuring that spam bots cannot overwhelm your forms with multiple rapid submissions.
 
-This makes OOPSpam an effective [alternative to reCAPTCHA](https://www.oopspam.com/recaptcha-alternative) and other spam-blocking solutions. It does not require user interaction, making it ideal for improving form accessibility and user experience.
+This makes oopspam an effective [alternative to reCAPTCHA](https://www.oopspam.com/recaptcha-alternative) and other spam-blocking solutions. It does not require user interaction, making it ideal for improving form accessibility and user experience.
 
-### **How to Set Up OOPSpam on Jetpack Forms**
+### **How to Set Up oopspam on Jetpack Forms**
 
-To integrate OOPSpam with Jetpack Forms, follow these steps:
+To integrate oopspam with Jetpack Forms, follow these steps:
 
-#### **1. Get an OOPSpam API Key**
+#### **1. Get an oopspam API Key**
 
-![OOPSpam dashboard displaying API usage, average response time, and API key.](/blog/assets/posts/oopspam-dashboard-.png "OOPSpam Dashboard Overview")
+![oopspam dashboard displaying API usage, average response time, and API key.](/blog/assets/posts/oopspam-dashboard-.png "oopspam Dashboard Overview")
 
-1. **Visit** OOPSpam.com and **[sign up](https://app.oopspam.com/Identity/Account/Register)** for an account.
-2. Once registered, **copy your API key** from the OOPSpam dashboard.
+1. **Visit** oopspam.com and **[sign up](https://app.oopspam.com/Identity/Account/Register)** for an account.
+2. Once registered, **copy your API key** from the oopspam dashboard.
 
-#### **2. Install and Activate the OOPSpam Plugin**
+#### **2. Install and Activate the oopspam Plugin**
 
 1. Log in to your **WordPress dashboard**.
 2. Go to **Plugins > Add New**.
-3. Search for **[OOPSpam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/)**.
+3. Search for **[oopspam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/)**.
 4. Click **Install Now**, then **Activate**.
 
-#### **3. Configure OOPSpam Settings for Jetpack Forms**
+#### **3. Configure oopspam Settings for Jetpack Forms**
 
-![OOPSpam General Settings page showing API key input and sensitivity level adjustment.](/blog/assets/posts/oopspam-general-settings-page.png "OOPSpam General Settings Configuration")
+![oopspam General Settings page showing API key input and sensitivity level adjustment.](/blog/assets/posts/oopspam-general-settings-page.png "oopspam General Settings Configuration")
 
-1. In WordPress, go to **Settings > OOPSpam Anti-Spam**.
+1. In WordPress, go to **Settings > oopspam Anti-Spam**.
 2. Paste your **API key** into the designated field.
 3. Set the spam detection sensitivity to **Moderate** (the recommended setting). This level provides a balanced approach, effectively blocking spam without risking legitimate submissions.
 4. Enable **Rate Limiting** to **prevent abuse and click fraud**:
 
-![Rate limiting settings configuration in OOPSpam.](/blog/assets/posts/rate-limiting-settings.png "OOPSpam Rate Limiting Settings")
+![Rate limiting settings configuration in oopspam.](/blog/assets/posts/rate-limiting-settings.png "oopspam Rate Limiting Settings")
 
 * Restrict how frequently the same **email** and **IP address** can submit forms.
 * Block spam bots that attempt rapid form submissions.
@@ -78,17 +78,17 @@ To integrate OOPSpam with Jetpack Forms, follow these steps:
 
 * Block specific **IPs, email addresses, and keywords**.
 
-#### **4. Enable OOPSpam Spam Protection for Jetpack Forms**
+#### **4. Enable oopspam Spam Protection for Jetpack Forms**
 
 ![Jetpack Form settings with spam protection activated and custom spam message input.](/blog/assets/posts/jetpack-form-spam-protection.png "Jetpack Form Spam Protection Settings")
 
-1. Still in **OOPSpam Anti-Spam settings**, scroll to supported plugins.
+1. Still in **oopspam Anti-Spam settings**, scroll to supported plugins.
 2. Look for **Jetpack Forms** in the list of supported plugins.
 3. Toggle the **Activate Spam Protection** switch to the **ON** position.
 
-✅ Once activated, OOPSpam will start blocking spam immediately—without slowing down your site or requiring user interaction.
+✅ Once activated, oopspam will start blocking spam immediately—without slowing down your site or requiring user interaction.
 
-### **Why Choose OOPSpam Over Other Spam Solutions?**
+### **Why Choose oopspam Over Other Spam Solutions?**
 
 * **Blocks both bots and manual spam** (unlike CAPTCHA solutions).
 * **No impact on website speed** (works server-side).
@@ -96,7 +96,7 @@ To integrate OOPSpam with Jetpack Forms, follow these steps:
 * **Country and language restrictions** (only accept form submissions from certain locations).
 * **No user friction** (visitors don’t have to solve a CAPTCHA).
 
-If you’re looking for a hassle-free, highly effective way to stop spam on Jetpack Forms, OOPSpam is the best choice.
+If you’re looking for a hassle-free, highly effective way to stop spam on Jetpack Forms, oopspam is the best choice.
 
 ## **2. Enable Akismet for Spam Protection**
 
@@ -124,7 +124,7 @@ While Akismet is useful, it’s not perfect:
 * Does not block manual spam (it only works against bots).
 * Not 100% reliable against advanced spam bots.
 
-For [better spam protection](https://www.oopspam.com/akismet-alternative), OOPSpam offers a more feature-rich solution [compared to Akismet](https://www.oopspam.com/blog/oopspam-vs-akismet-why-users-switch-to-oopspam).
+For [better spam protection](https://www.oopspam.com/akismet-alternative), oopspam offers a more feature-rich solution [compared to Akismet](https://www.oopspam.com/blog/oopspam-vs-akismet-why-users-switch-to-oopspam).
 
 ## **3. Add Google reCAPTCHA to Jetpack Forms**
 
@@ -145,7 +145,7 @@ Unlike other popular form builders like [WPForms](https://www.oopspam.com/blog/s
 * Privacy concerns (tracks user behavior).
 * Not always user-friendly (CAPTCHA challenges can frustrate visitors).
 
-If speed and user experience are priorities, OOPSpam is a better alternative to reCAPTCHA.
+If speed and user experience are priorities, oopspam is a better alternative to reCAPTCHA.
 
 ## **4. Add hCaptcha for Privacy-Focused Spam Protection**
 
@@ -173,12 +173,12 @@ Jetpack Forms is a great tool, but it needs additional spam protection to keep y
 
 Here’s a quick recap of the best ways to stop spam on Jetpack Forms:
 
-* **OOPSpam** – machine-learning filtering, no CAPTCHAs, blocks bots and manual spam.
+* **oopspam** – machine-learning filtering, no CAPTCHAs, blocks bots and manual spam.
 * **Akismet** – Basic bot filtering (but limited against advanced spam).
 * **Google reCAPTCHA** – Good bot protection, but can slow your site.
 * **hCaptcha** – Privacy-friendly CAPTCHA alternative, but requires user interaction.
 
-For the best balance of security, speed, and user experience, OOPSpam is the top recommendation. If you have any questions or need extra guidance, [OOPSpam’s support team](https://www.oopspam.com/#contact) is always here to help.
+For the best balance of security, speed, and user experience, oopspam is the top recommendation. If you have any questions or need extra guidance, [oopspam’s support team](https://www.oopspam.com/#contact) is always here to help.
 
 ## Related guides
 

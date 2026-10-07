@@ -6,7 +6,7 @@ last_modified_at: 2026-09-22T12:02:00.000+04:00
 author: chazie
 image: /blog/assets/posts/email_stopspam_activecampaign.jpg
 description: Stop spam in ActiveCampaign with 5 proven methods. Learn how to use
-  OOPSpam, CAPTCHA, double opt-in, and more to protect your list and
+  oopspam, CAPTCHA, double opt-in, and more to protect your list and
   deliverability.
 tags:
   - ActiveCampaign
@@ -15,15 +15,15 @@ Spam contacts, fake sign-ups, and bot-generated leads silently damage your sende
 
 Here are five ways to protect your ActiveCampaign account from spam.
 
-## **1. Scan and Verify Existing Contacts with OOPSpam**
+## **1. Scan and Verify Existing Contacts with oopspam**
 
-[OOPSpam](https://www.oopspam.com/) (that’s us 👋) connects directly to your [ActiveCampaign](https://www.activecampaign.com/) account and [scans your existing contacts](https://www.oopspam.com/blog/how-to-verify-and-clean-up-your-activecampaign-email-list) for risky or invalid email addresses in real time, no manual exports required.
+[oopspam](https://www.oopspam.com/) (that’s us 👋) connects directly to your [ActiveCampaign](https://www.activecampaign.com/) account and [scans your existing contacts](https://www.oopspam.com/blog/how-to-verify-and-clean-up-your-activecampaign-email-list) for risky or invalid email addresses in real time, no manual exports required.
 
 **How to set it up:**
 
-Go to your **[OOPSpam Dashboard](https://app.oopspam.com/)** and navigate to **Integrations**. Click **Connect** on the ActiveCampaign card.
+Go to your **[oopspam Dashboard](https://app.oopspam.com/)** and navigate to **Integrations**. Click **Connect** on the ActiveCampaign card.
 
-![Scan and Verify Existing Contacts with OOPSpam](/blog/assets/posts/step1-done.png "Scan and Verify Existing Contacts with OOPSpam")
+![Scan and Verify Existing Contacts with oopspam](/blog/assets/posts/step1-done.png "Scan and Verify Existing Contacts with oopspam")
 
 Enter your **ActiveCampaign Account URL** and **API Token** (found under **Settings > Developer** in ActiveCampaign).
 
@@ -33,7 +33,7 @@ Select the list you want to scan and click **Scan All Emails**.
 
 ![Select the list you want to scan and click Scan All Emails.](/blog/assets/posts/step4-edited.png "Select the list you want to scan and click Scan All Emails.")
 
-Before you click that button, take a look at the options sitting just above it. OOPSpam has expanded what a scan can check for, and it's worth switching a few of these on.
+Before you click that button, take a look at the options sitting just above it. oopspam has expanded what a scan can check for, and it's worth switching a few of these on.
 
 Under **Additional risk criteria**, two checkboxes let you widen the net:
 
@@ -48,19 +48,19 @@ A separate **IP-based filters** panel goes a step further and looks at where sig
 * **Block data center IPs**
 * **Allowed countries** / **Blocked countries** - narrow results to the regions that matter to your business, or rule out ones that don't.
 
-This panel only appears when your provider makes subscriber IP data available to OOPSpam.
+This panel only appears when your provider makes subscriber IP data available to oopspam.
 
 ![IP-based filters](/blog/assets/posts/ip-based-filters.png "IP-based filters")
 
 Worth knowing: checking either box under Additional risk criteria means more work per contact, so larger lists will take a little longer to finish.
 
-> One more change: scans no longer tie up the page while they run. Hit **Scan All Emails** and OOPSpam works through the list in the background, sending you an email as soon as it's finished. Progress is visible anytime from the **Scan Jobs** tab back in Integrations, along with each job's status (running, completed, or cancelled).
+> One more change: scans no longer tie up the page while they run. Hit **Scan All Emails** and oopspam works through the list in the background, sending you an email as soon as it's finished. Progress is visible anytime from the **Scan Jobs** tab back in Integrations, along with each job's status (running, completed, or cancelled).
 
-OOPSpam will flag each address as **Clean** or **Risky**. For risky contacts, choose to **Unsubscribe** (removes from the list) or **Delete** (removes from your entire account), individually or in bulk.
+oopspam will flag each address as **Clean** or **Risky**. For risky contacts, choose to **Unsubscribe** (removes from the list) or **Delete** (removes from your entire account), individually or in bulk.
 
-![OOPSpam will flag each address as Clean or Risky.](/blog/assets/posts/step5.png "OOPSpam will flag each address as Clean or Risky.")
+![oopspam will flag each address as Clean or Risky.](/blog/assets/posts/step5.png "oopspam will flag each address as Clean or Risky.")
 
-OOPSpam processes contact data in real time and does not store it on its servers. This tool is especially useful before sending a major campaign or as part of your routine list hygiene. It takes only a few minutes and saves your sender reputation from contacts that should not be there.
+oopspam processes contact data in real time and does not store it on its servers. This tool is especially useful before sending a major campaign or as part of your routine list hygiene. It takes only a few minutes and saves your sender reputation from contacts that should not be there.
 
 ## **2. Enable CAPTCHA on Your Forms**
 
@@ -118,7 +118,7 @@ Make it clear on your sign-up form exactly what content they will receive. Setti
 
 ## **Final Takeaway**
 
-Spam in ActiveCampaign is manageable when you act at every stage of the subscriber lifecycle. Enable CAPTCHA and double opt-in to stop bad contacts at entry. Use honeypot fields and OOPSpam to catch what slips through. Clean your list regularly to stay ahead of spam traps. And never compromise your list quality by importing unverified contacts.
+Spam in ActiveCampaign is manageable when you act at every stage of the subscriber lifecycle. Enable CAPTCHA and double opt-in to stop bad contacts at entry. Use honeypot fields and oopspam to catch what slips through. Clean your list regularly to stay ahead of spam traps. And never compromise your list quality by importing unverified contacts.
 
 If your sender reputation has already taken a hit from spam complaints, expect a recovery window of 30 to 60 days. During that period, make your unsubscribe link easy to find at both the top and bottom of every email. Giving users a simple way to opt out is far better than having them hit the spam button.
 

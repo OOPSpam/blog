@@ -5,14 +5,14 @@ date: 2026-01-12T09:14:00.000+08:00
 author: chazie
 image: /blog/assets/posts/header_quform_block.jpg
 description: Learn how to block VPN and data center IP submissions in QuForm
-  using OOPSpam or Cloudflare to stop spam without blocking real users.
+  using oopspam or Cloudflare to stop spam without blocking real users.
 tags:
   - QuForm
   - Cloudflare
 ---
 ![QuForm](/blog/assets/posts/quform.png "QuForm")
 
-[QuForm](https://www.quform.com/) does not natively identify or block VPN or data center IP addresses. To stop this type of spam, you must add an external IP-intelligence layer. The most effective options are OOPSpam for form-level filtering and Cloudflare for network-level blocking.
+[QuForm](https://www.quform.com/) does not natively identify or block VPN or data center IP addresses. To stop this type of spam, you must add an external IP-intelligence layer. The most effective options are oopspam for form-level filtering and Cloudflare for network-level blocking.
 
 This guide explains both methods. You will understand when to use each one, how to set them up correctly, and how to avoid blocking legitimate submissions.
 
@@ -22,31 +22,31 @@ Modern spam does not come from random home connections. It usually comes from cl
 
 [CAPTCHA](https://www.oopspam.com/blog/best-captcha-alternatives) and honeypots help, but they are no longer enough on their own. Blocking by IP reputation is now required to meaningfully reduce abuse.
 
-## **Method 1: Block VPN And Cloud IPs Using OOPSpam**
+## **Method 1: Block VPN And Cloud IPs Using oopspam**
 
-[OOPSpam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/) (that’s us 👋) integrates directly with [WordPress](https://www.oopspam.com/wordpress) and evaluates each submission using real-time IP intelligence. It detects VPN services, proxy networks, and cloud infrastructure commonly used for automated abuse. Filtering happens before the submission becomes a QuForm entry.
+[oopspam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/) (that’s us 👋) integrates directly with [WordPress](https://www.oopspam.com/wordpress) and evaluates each submission using real-time IP intelligence. It detects VPN services, proxy networks, and cloud infrastructure commonly used for automated abuse. Filtering happens before the submission becomes a QuForm entry.
 
 This method is recommended for most QuForm users because it is lightweight and easy to maintain.
 
-### **How To Enable VPN And Cloud IP Blocking With OOPSpam**
+### **How To Enable VPN And Cloud IP Blocking With oopspam**
 
-![OOPSpam](/blog/assets/posts/oopspam-anti-spam-overview.png "OOPSpam")
+![oopspam](/blog/assets/posts/oopspam-anti-spam-overview.png "oopspam")
 
 **Step 1: Install The Plugin**
 
-From your WordPress dashboard, go to Plugins, add a new plugin, search for **OOPSpam Anti-Spam**, then install and activate it.
+From your WordPress dashboard, go to Plugins, add a new plugin, search for **oopspam Anti-Spam**, then install and activate it.
 
 **Step 2: Get Your API Key**
 
-![OOPSpam dashboard](/blog/assets/posts/oopspam-dashboard-api.png "OOPSpam dashboard")
+![oopspam dashboard](/blog/assets/posts/oopspam-dashboard-api.png "oopspam dashboard")
 
-[Create an account](https://app.oopspam.com/Identity/Account/Login) in the OOPSpam dashboard and **copy your API key**.
+[Create an account](https://app.oopspam.com/Identity/Account/Login) in the oopspam dashboard and **copy your API key**.
 
-**Step 3: Connect OOPSpam To WordPress**
+**Step 3: Connect oopspam To WordPress**
 
-![Connect OOPSpam To WordPress](/blog/assets/posts/oopspam-api-key.png "Connect OOPSpam To WordPress")
+![Connect oopspam To WordPress](/blog/assets/posts/oopspam-api-key.png "Connect oopspam To WordPress")
 
-Open Settings, then OOPSpam Anti-Spam. In the General tab, **paste your API key** into the “**My API Key**” field and select “**OOPSpam Dashboard**” as the source.
+Open Settings, then oopspam Anti-Spam. In the General tab, **paste your API key** into the “**My API Key**” field and select “**oopspam Dashboard**” as the source.
 
 **Step 4: Enable QuForm Protection**
 
@@ -69,13 +69,13 @@ This activates automatic filtering for known VPN networks and hosting providers.
 
 Save your changes and test your form from a normal connection and a VPN connection to confirm that filtering is working as expected.
 
-### **Optional Step: Use Manual Moderation In OOPSpam**
+### **Optional Step: Use Manual Moderation In oopspam**
 
-If you need more precision, OOPSpam includes a **Manual Moderation** tab. This is useful when automated blocking is not enough or when you want to handle specific patterns.
+If you need more precision, oopspam includes a **Manual Moderation** tab. This is useful when automated blocking is not enough or when you want to handle specific patterns.
 
 ![Manual Moderation tab](/blog/assets/posts/manual-moderation-settings-oopspam.png "Manual Moderation tab")
 
-In **OOPSpam → Manual Moderation**, you can:
+In **oopspam → Manual Moderation**, you can:
 
 * Block specific IPs or entire IP ranges, which is helpful for persistent abuse from a single source or hosting provider
 * Block email addresses to stop repeat offenders
@@ -84,9 +84,9 @@ In **OOPSpam → Manual Moderation**, you can:
 
 This option is ideal for handling edge cases and recurring spam without tightening global rules.
 
-### **Why OOPSpam Works Well With QuForm**
+### **Why oopspam Works Well With QuForm**
 
-OOPSpam does not change your form layout, validation rules, or user experience. It runs quietly in the background, blocks spam before entries are created, and requires no ongoing IP maintenance. This makes it a strong long-term solution for QuForm-based sites.
+oopspam does not change your form layout, validation rules, or user experience. It runs quietly in the background, blocks spam before entries are created, and requires no ongoing IP maintenance. This makes it a strong long-term solution for QuForm-based sites.
 
 ## **Method 2: Block VPN And Cloud IPs Using Cloudflare**
 
@@ -115,6 +115,6 @@ For this reason, Managed Challenge should be your default choice. Escalate to fu
 
 ## **Final Takeaway**
 
-QuForm needs external IP intelligence to block VPN and data center IP submissions effectively. OOPSpam is the safest and most accurate option for form-level protection, while Cloudflare adds a strong network-level layer when traffic volume is high.
+QuForm needs external IP intelligence to block VPN and data center IP submissions effectively. oopspam is the safest and most accurate option for form-level protection, while Cloudflare adds a strong network-level layer when traffic volume is high.
 
 Use these tools thoughtfully, test regularly, and focus on stopping abuse without blocking legitimate leads.

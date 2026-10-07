@@ -11,7 +11,7 @@ tags:
   - SureCart
   - FluentCart
 ---
-Choose [SureCart](https://surecart.com/) if you want a managed, cloud-based checkout with growth tools built in and no server tuning. Choose [FluentCart](https://fluentcart.com/) if you want a fully self-hosted store that keeps every order inside your own WordPress database with zero transaction fees on any plan. Whichever you pick, add OOPSpam to block fake orders and card testing.
+Choose [SureCart](https://surecart.com/) if you want a managed, cloud-based checkout with growth tools built in and no server tuning. Choose [FluentCart](https://fluentcart.com/) if you want a fully self-hosted store that keeps every order inside your own WordPress database with zero transaction fees on any plan. Whichever you pick, add oopspam to block fake orders and card testing.
 
 ## **Quick Comparison**
 
@@ -222,7 +222,7 @@ FluentCart uses indexed custom tables built for orders and subscriptions. It sta
 
 ## **Spam Protection and Security**
 
-Online stores attract bots. [Fake orders](https://www.oopspam.com/blog/how-to-protect-your-store-from-fake-orders-card-testing-and-checkout-spam), fake accounts, coupon abuse, and [card testing attacks](https://www.oopspam.com/blog/card-testing-attacks-a-new-threat-vector-through-woocommerce-block-based-checkout) cost you payment processor fees, chargebacks, and account standing. According to [OOPSpam's 2025 Annual Spam Report](https://www.oopspam.com/2025-spam-report), eCommerce spam rose to 22% of all tracked spam, up from 15% the year before. Card testing drove most of that growth.
+Online stores attract bots. [Fake orders](https://www.oopspam.com/blog/how-to-protect-your-store-from-fake-orders-card-testing-and-checkout-spam), fake accounts, coupon abuse, and [card testing attacks](https://www.oopspam.com/blog/card-testing-attacks-a-new-threat-vector-through-woocommerce-block-based-checkout) cost you payment processor fees, chargebacks, and account standing. According to [oopspam's 2025 Annual Spam Report](https://www.oopspam.com/2025-spam-report), eCommerce spam rose to 22% of all tracked spam, up from 15% the year before. Card testing drove most of that growth.
 
 ### **SureCart security**
 
@@ -247,21 +247,21 @@ Go to **SureCart > Settings > Advanced > Spam Protection & Security** to enable:
 
 [CAPTCHA](https://www.oopspam.com/blog/captcha-and-accessibility-why-your-forms-might-be-breaking-the-law-in-2026) and [honeypots](https://www.oopspam.com/blog/honeypot-spam-protection-for-wordpress-how-it-works-when-it-fails-and-better-alternatives) stop simple bots. They do not stop human spammers, CAPTCHA-solving services, or card testers who rotate VPNs and cloud IPs. Neither plugin checks an order's IP and email against a reputation database. Neither offers country blocking or per-IP rate limiting at checkout. That gap is where most fake orders get through.
 
-## **How to Protect SureCart and FluentCart with OOPSpam**
+## **How to Protect SureCart and FluentCart with oopspam**
 
-**[OOPSpam](https://www.oopspam.com/)** supports both [SureCart](https://www.oopspam.com/blog/5-ways-to-stop-fake-orders-in-surecart) and FluentCart through the same WordPress plugin. It runs in the background with no CAPTCHA, so real customers check out without friction.
+**[oopspam](https://www.oopspam.com/)** supports both [SureCart](https://www.oopspam.com/blog/5-ways-to-stop-fake-orders-in-surecart) and FluentCart through the same WordPress plugin. It runs in the background with no CAPTCHA, so real customers check out without friction.
 
-![Install the OOPSpam Anti-Spam plugin from WordPress.org.](/blog/assets/posts/oopspam-anti-spam-overview.png "Install the OOPSpam Anti-Spam plugin from WordPress.org.")
+![Install the oopspam Anti-Spam plugin from WordPress.org.](/blog/assets/posts/oopspam-anti-spam-overview.png "Install the oopspam Anti-Spam plugin from WordPress.org.")
 
-Install the [OOPSpam Anti-Spam plugin](https://wordpress.org/plugins/oopspam-anti-spam/) from [WordPress.org](http://wordpress.org).
+Install the [oopspam Anti-Spam plugin](https://wordpress.org/plugins/oopspam-anti-spam/) from [WordPress.org](http://wordpress.org).
 
 ![Create a free account and copy your API key.](/blog/assets/posts/oopspam-dashboard-api.png "Create a free account and copy your API key.")
 
 [Create a free account](https://app.oopspam.com/Identity/Account/Register) and copy your API key.
 
-![Go to Settings > OOPSpam Anti-Spam and paste the key. Set the Sensitivity Level. "Moderate" works for most stores.](/blog/assets/posts/oopspam-api-key.png "Go to Settings > OOPSpam Anti-Spam and paste the key. Set the Sensitivity Level. \"Moderate\" works for most stores.")
+![Go to Settings > oopspam Anti-Spam and paste the key. Set the Sensitivity Level. "Moderate" works for most stores.](/blog/assets/posts/oopspam-api-key.png "Go to Settings > oopspam Anti-Spam and paste the key. Set the Sensitivity Level. \"Moderate\" works for most stores.")
 
-Go to **Settings > OOPSpam Anti-Spam** and paste the key. Set the Sensitivity Level. "Moderate" works for most stores.
+Go to **Settings > oopspam Anti-Spam** and paste the key. Set the Sensitivity Level. "Moderate" works for most stores.
 
 ![Find the SureCart section and toggle on Activate Spam Protection.](/blog/assets/posts/surecart-protection.png "Find the SureCart section and toggle on Activate Spam Protection.")
 
@@ -269,7 +269,7 @@ Go to **Settings > OOPSpam Anti-Spam** and paste the key. Set the Sensitivity Le
 
 Find the **SureCart** or **FluentCart** section and toggle on **Activate Spam Protection**.
 
-![OOPSpam settings](/blog/assets/posts/oopspam-settings.png "OOPSpam settings")
+![oopspam settings](/blog/assets/posts/oopspam-settings.png "oopspam settings")
 
 Then tighten protection with:
 
@@ -279,7 +279,7 @@ Then tighten protection with:
 * Manual rules to block specific IPs, emails, or keywords
 * Spam and valid entry [logs](https://help.oopspam.com/wordpress/form-entries/) to see why each order was blocked
 
-OOPSpam checks every submission against a database of 500M+ malicious IPs and emails. One API key covers unlimited sites, which suits agencies running SureCart and FluentCart stores side by side. Logs stay in your WordPress database, and IP and email analysis can be turned off for stricter privacy needs.
+oopspam checks every submission against a database of 500M+ malicious IPs and emails. One API key covers unlimited sites, which suits agencies running SureCart and FluentCart stores side by side. Logs stay in your WordPress database, and IP and email analysis can be turned off for stricter privacy needs.
 
 ## **Which One Should You Choose?**
 
@@ -301,4 +301,4 @@ OOPSpam checks every submission against a database of 500M+ malicious IPs and em
 
 SureCart wins on convenience. FluentCart wins on ownership and cost. Both are strong choices.
 
-Your store still needs protection either way. Built-in honeypots, reCAPTCHA, and Turnstile only stop basic bots. OOPSpam adds IP and email reputation checks, VPN blocking, country filtering, and rate limiting to both SureCart and FluentCart checkouts, without adding a CAPTCHA to your checkout.
+Your store still needs protection either way. Built-in honeypots, reCAPTCHA, and Turnstile only stop basic bots. oopspam adds IP and email reputation checks, VPN blocking, country filtering, and rate limiting to both SureCart and FluentCart checkouts, without adding a CAPTCHA to your checkout.

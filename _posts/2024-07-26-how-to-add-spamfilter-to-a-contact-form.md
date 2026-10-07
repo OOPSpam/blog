@@ -35,9 +35,9 @@ Besides all this madness, bots are improving and [overcoming spam prevention tec
 
 So, it makes sense not to rely on user behavior (reCAPTCHA) or on the chance that the bot is too dumb to figure which field is hidden (honeypot). 
 
-[OOPSpam API](https://www.oopspam.com/) is an alternative to above solutions. It built with privacy in mind. It is accurate and accessible as it stays in your backend and flags messages silently.
+[oopspam API](https://www.oopspam.com/) is an alternative to above solutions. It built with privacy in mind. It is accurate and accessible as it stays in your backend and flags messages silently.
 
-## How to integrate a contact form with OOPSpam API
+## How to integrate a contact form with oopspam API
 
 Let's assume we run a digital agency website in English and your target market is in the US. You got a contact form in your homepage:
 
@@ -62,7 +62,7 @@ Handling contact form submissions in the server is different in various language
 2. The user gets Success message no matter what (spam or not)
 3. You receive contact form information in your backend
 4. Get the user's IP address
-5. Send the user's IP and the contact form message to the OOPSpam API
+5. Send the user's IP and the contact form message to the oopspam API
 6. The API returns a spam score
 7. Forward contact form information to your email or ignore based on the spam score.
 8. Done! 💪🏼
@@ -71,7 +71,7 @@ We are going to use [Node.js](https://nodejs.org/) with [Nodemailer](https://nod
 
 > 🚧 Make sure you get user's IP in the server-side. Don't assign the API to a form field since a spammer (or bot) may alter IP address.
 
-To get started quickly, I'm going to fork [one of the contact form example projects](https://github.com/germancutraro/Contact-Form-nodejs) from GitHub and add OOPSpam API integration to it.
+To get started quickly, I'm going to fork [one of the contact form example projects](https://github.com/germancutraro/Contact-Form-nodejs) from GitHub and add oopspam API integration to it.
 As mentioned above, we have to get a user's IP in the server-side. This is done differently in every language.
 In Node.js with express framework environment it would be as simple as checking under ```req.ip```.
 
@@ -97,7 +97,7 @@ string ipAddress = Request.UserHostAddress;
 
 It is usually easy and straightforward.
 
-Once you have the user's IP,  you are ready to make an HTTP request to OOPSpam API and forward legit contact form submission to your email. To request OOPSpam API, you have to have an API key. You get an API key by registering on [OOPSpam Dashboard](https://app.oopspam.com/Identity/Account/Register). 
+Once you have the user's IP,  you are ready to make an HTTP request to oopspam API and forward legit contact form submission to your email. To request oopspam API, you have to have an API key. You get an API key by registering on [oopspam Dashboard](https://app.oopspam.com/Identity/Account/Register). 
 
 > 🗂 Check out [the documentation](https://www.oopspam.com/docs) to learn more about the API.
 
@@ -164,6 +164,6 @@ With all cases, you will get a JSON object with an error ```code``` and ```messa
 ````
 
 Check out [the documentation](https://www.oopspam.com/docs) to learn in detail about response parameters and much more.
-You can also access the example project code on [Github](https://github.com/OOPSpam/Contact-Form-nodejs).
+You can also access the example project code on [Github](https://github.com/oopspam/Contact-Form-nodejs).
 
 [Let us know](https://www.oopspam.com/#contact) if you have any questions.

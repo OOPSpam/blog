@@ -5,7 +5,7 @@ date: 2025-11-25T03:00:00.000+08:00
 author: chazie
 image: /blog/assets/posts/acf_header_rt.jpg
 description: Learn how to limit form submissions in ACF Frontend Forms using
-  Advanced Forms Pro, OOPSpam rate limiting, or custom PHP for full control.
+  Advanced Forms Pro, oopspam rate limiting, or custom PHP for full control.
 tags:
   - Advanced Custom Fields (ACF)
   - Advanced Forms Pro
@@ -14,7 +14,7 @@ tags:
 
 ![Advanced Custom Fields (ACF)](/blog/assets/posts/acf-advanced-custom-fields.png "Advanced Custom Fields (ACF)")
 
-[Advanced Custom Fields](https://www.advancedcustomfields.com/) (ACF) does not include built-in submission limits. To control how often users can submit your ACF frontend forms, you must use a third-party plugin or write custom PHP. The three best options are Advanced Forms Pro, OOPSpam Anti-Spam, and custom validation code.
+[Advanced Custom Fields](https://www.advancedcustomfields.com/) (ACF) does not include built-in submission limits. To control how often users can submit your ACF frontend forms, you must use a third-party plugin or write custom PHP. The three best options are Advanced Forms Pro, oopspam Anti-Spam, and custom validation code.
 
 ### **Why You Need Submission Limits in ACF Forms**
 
@@ -47,15 +47,15 @@ These settings apply immediately because the plugin manages form rendering and p
 
 Advanced Forms Pro is useful when you want simple limits without coding. It works well for small campaigns, event registrations, or any form with low-volume submissions.
 
-## **Use OOPSpam for Strong Spam Filtering and Advanced Rate Limiting**
+## **Use oopspam for Strong Spam Filtering and Advanced Rate Limiting**
 
-**[OOPSpam](https://www.oopspam.com/)** (that’s us 👋) is the best option for controlling ACF form submissions because it combines spam filtering, rate limiting, country rules, and detailed logs. It protects your forms at a deeper level than simple submission caps. 
+**[oopspam](https://www.oopspam.com/)** (that’s us 👋) is the best option for controlling ACF form submissions because it combines spam filtering, rate limiting, country rules, and detailed logs. It protects your forms at a deeper level than simple submission caps. 
 
-OOPSpam works with ACF Frontend Forms automatically once enabled. You do not need custom code.
+oopspam works with ACF Frontend Forms automatically once enabled. You do not need custom code.
 
-### **Why OOPSpam Works Better**
+### **Why oopspam Works Better**
 
-ACF forms are often targeted by bots because they do not include built-in spam protection or throttling. OOPSpam fills that gap with:
+ACF forms are often targeted by bots because they do not include built-in spam protection or throttling. oopspam fills that gap with:
 
 * Machine-learning [spam detection](https://www.oopspam.com/blog/4-ways-to-protect-your-acf-frontend-forms-from-spam)
 * VPN, Proxy, and TOR blocking
@@ -65,33 +65,33 @@ ACF forms are often targeted by bots because they do not include built-in spam p
 
 This gives you both quality filtering and submission control at the same time.
 
-### **Install OOPSpam**
+### **Install oopspam**
 
-![OOPSpam ](/blog/assets/posts/oopspam-anti-spam-overview.png "OOPSpam ")
+![oopspam ](/blog/assets/posts/oopspam-anti-spam-overview.png "oopspam ")
 
-Go to **Plugins → Add New** and search for **[OOPSpam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/)**. Install and activate the plugin.
+Go to **Plugins → Add New** and search for **[oopspam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/)**. Install and activate the plugin.
 
 ### **Connect Your API Key**
 
 ![Connect Your API Key](/blog/assets/posts/oopspam-dashboard-api.png "Connect Your API Key")
 
-[Create an account](https://app.oopspam.com/Identity/Account/Login) on **OOPSpam.com** and copy your API key. 
+[Create an account](https://app.oopspam.com/Identity/Account/Login) on **oopspam.com** and copy your API key. 
 
 ![Paste your key into the API field](/blog/assets/posts/oopspam-api-key.png "Paste your key into the API field")
 
-In WordPress, go to **OOPSpam → General Settings**. Paste your key into the API field. Save settings.
+In WordPress, go to **oopspam → General Settings**. Paste your key into the API field. Save settings.
 
 ### **Enable ACF Form Protection**
 
 ![Enable ACF Form Protection](/blog/assets/posts/acf-spam-protection.png "Enable ACF Form Protection")
 
-In the OOPSpam settings, make sure **ACF Frontend Forms spam protection** is turned ON. 
+In the oopspam settings, make sure **ACF Frontend Forms spam protection** is turned ON. 
 
 ### **Turn On Rate Limiting**
 
 ![Turn On Rate Limiting](/blog/assets/posts/enabled-rate-limiting-settings.png "Turn On Rate Limiting")
 
-Go to **OOPSpam → Rate Limiting** tab and toggle **Enable Rate Limiting** to ON.
+Go to **oopspam → Rate Limiting** tab and toggle **Enable Rate Limiting** to ON.
 
 Configure your limits:
 
@@ -146,14 +146,14 @@ This option is best when you need custom rules like per-user quotas, tiered acce
 1. Submit the form multiple times from the same IP.
 2. Try different emails.
 3. Use an incognito window to simulate another user.
-4. [Review logs](https://help.oopspam.com/wordpress/form-entries/) (OOPSpam) to confirm blocks.
+4. [Review logs](https://help.oopspam.com/wordpress/form-entries/) (oopspam) to confirm blocks.
 5. Confirm custom error messages appear correctly.
 
 Testing ensures that legitimate users do not get blocked while abusive patterns are stopped.
 
 ## **Final Thoughts**
 
-ACF gives you control over custom fields, but it does not manage form security or submission limits. Adding limits prevents spam, protects your site, and ensures your forms work as intended. Whether you choose Advanced Forms Pro, [OOPSpam](https://www.oopspam.com/wordpress), or a custom PHP solution, each method gives you reliable control over how your ACF frontend forms behave.
+ACF gives you control over custom fields, but it does not manage form security or submission limits. Adding limits prevents spam, protects your site, and ensures your forms work as intended. Whether you choose Advanced Forms Pro, [oopspam](https://www.oopspam.com/wordpress), or a custom PHP solution, each method gives you reliable control over how your ACF frontend forms behave.
 
 ## Related guides
 

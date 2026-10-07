@@ -5,7 +5,7 @@ author: onar
 image: /assets/posts/connected_world.png
 
 
-description: "Block countries with OOPSpam"
+description: "Block countries with oopspam"
 # modified: 
 ---
 <center>
@@ -13,10 +13,10 @@ description: "Block countries with OOPSpam"
 </center>
 <br/>
 
-Up until now, OOPSpam API could spam score messages based on language, Machine Learning models, IP, content & URL analyses, and many more custom rules.
+Up until now, oopspam API could spam score messages based on language, Machine Learning models, IP, content & URL analyses, and many more custom rules.
 Today, we are excited to announce a new shiny feature, Country Restrictions. 
 
-Let's say you are only interested in getting messages from people in the United States and Canada, you can pass a two-letter country code to ```allowedCountries``` parameter along with ```senderIP```. OOPSpam will return a maximum Spam Score 6 if the message sender's IP isn't originated from one of those countries in ```allowedCountries```.
+Let's say you are only interested in getting messages from people in the United States and Canada, you can pass a two-letter country code to ```allowedCountries``` parameter along with ```senderIP```. oopspam will return a maximum Spam Score 6 if the message sender's IP isn't originated from one of those countries in ```allowedCountries```.
 
 Check out [the official documentation](https://www.oopspam.com/docs) for example request and how to use the feature.
 

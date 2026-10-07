@@ -5,7 +5,7 @@ date: 2025-10-15T12:15:00.000+08:00
 author: chazie
 image: /blog/assets/posts/header_avada.png
 description: Protect your Avada Forms from spam using Honeypot, reCAPTCHA,
-  Turnstile, and OOPSpam for stronger and seamless form security.
+  Turnstile, and oopspam for stronger and seamless form security.
 tags:
   - Avada Forms
   - Honeypot
@@ -14,7 +14,7 @@ tags:
 ---
 ![Avada Forms](/blog/assets/posts/avada-for-wordpress.png "Avada Forms")
 
-Spam submissions waste time, flood inboxes, and slow websites. The best way to protect your [Avada Forms](https://avada.com/feature/form-builder/) is to use the built-in Honeypot, reCAPTCHA, or Cloudflare Turnstile elements,  then layer an advanced external filter like [OOPSpam](https://www.oopspam.com/) for advanced protection.
+Spam submissions waste time, flood inboxes, and slow websites. The best way to protect your [Avada Forms](https://avada.com/feature/form-builder/) is to use the built-in Honeypot, reCAPTCHA, or Cloudflare Turnstile elements,  then layer an advanced external filter like [oopspam](https://www.oopspam.com/) for advanced protection.
 
 Each method below builds upon the last, combining front-end and back-end defense to stop both basic bots and smarter human-assisted spam.
 
@@ -47,19 +47,19 @@ The Avada [reCAPTCHA Field](https://avada.com/documentation/recaptcha-field-elem
 
 Use v3 for smoother UX and v2 for high-risk forms (like quote or contact requests). If your submit button disappears, exclude reCAPTCHA scripts from JS minification in your cache plugin.
 
-## **3. Strengthen Protection with OOPSpam** 
+## **3. Strengthen Protection with oopspam** 
 
-Even with [CAPTCHA](https://www.oopspam.com/blog/best-captcha-alternatives) tools, human-assisted and machine learning-driven spam can slip through. That’s where **[OOPSpam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/)** comes in.
+Even with [CAPTCHA](https://www.oopspam.com/blog/best-captcha-alternatives) tools, human-assisted and machine learning-driven spam can slip through. That’s where **[oopspam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/)** comes in.
 
-OOPSpam blocks spam before it reaches your inbox by analyzing content, IP reputation, and submission patterns using machine learning. It protects all your forms, including Avada Forms.
+oopspam blocks spam before it reaches your inbox by analyzing content, IP reputation, and submission patterns using machine learning. It protects all your forms, including Avada Forms.
 
 **How to set it up:**
 
-Install and activate **OOPSpam Anti-Spam plugin** from your WordPress dashboard. **[Create an account](https://app.oopspam.com/Identity/Account/Login)** and get your **API key**.
+Install and activate **oopspam Anti-Spam plugin** from your WordPress dashboard. **[Create an account](https://app.oopspam.com/Identity/Account/Login)** and get your **API key**.
 
-![Strengthen Protection with OOPSpam](/blog/assets/posts/oopspam-dashboard-api.png "OOPSpam ")
+![Strengthen Protection with oopspam](/blog/assets/posts/oopspam-dashboard-api.png "oopspam ")
 
-Go to **WordPress → OOPSpam → General Settings** and **paste your API key**.
+Go to **WordPress → oopspam → General Settings** and **paste your API key**.
 
 ![General Settings and paste your API key](/blog/assets/posts/oopspam-api-key.png "General Settings and paste your API key")
 
@@ -74,7 +74,7 @@ Enable extra protections under these tabs:
 * **Contextual Detection:** Catch hidden text or obfuscated spam.
 * **Logs:** View blocked entries and reasons for transparency.
 
-**Why OOPSpam is worth adding:**
+**Why oopspam is worth adding:**
 
 * Blocks spam from bots, VPNs, and proxy traffic.
 * Uses machine learning to analyze message content, not just user behavior.
@@ -84,7 +84,7 @@ Enable extra protections under these tabs:
 
 > **Pro Tip:** Start with moderate sensitivity, review your logs after one week, then fine-tune.
 
-This combination, Avada’s built-in spam protection plus OOPSpam, stops almost all automated and human-assisted spam attacks.
+This combination, Avada’s built-in spam protection plus oopspam, stops almost all automated and human-assisted spam attacks.
 
 ## **4. Use Cloudflare Turnstile Field Element**
 
@@ -108,11 +108,11 @@ Turnstile improves UX, avoids Google dependencies, and works seamlessly with Ava
 * Always test forms in an Incognito browser after setup.
 * Exclude CAPTCHA or Turnstile scripts from JS minify/defer in cache plugins.
 * Review blocked logs weekly to adjust sensitivity and catch edge cases.
-* Add rate-limit rules in OOPSpam or [Cloudflare](https://developers.cloudflare.com/waf/rate-limiting-rules/) for high-traffic and public forms.
+* Add rate-limit rules in oopspam or [Cloudflare](https://developers.cloudflare.com/waf/rate-limiting-rules/) for high-traffic and public forms.
 
 ## **Final Takeaway**
 
-The most reliable way to protect Avada Forms from spam is to layer protection: Use Honeypot for invisible defense, Turnstile or reCAPTCHA for real-user verification, and OOPSpam for advanced, machine learning-powered filtering.
+The most reliable way to protect Avada Forms from spam is to layer protection: Use Honeypot for invisible defense, Turnstile or reCAPTCHA for real-user verification, and oopspam for advanced, machine learning-powered filtering.
 
 Together, these tools keep your website clean, your inbox manageable, and your users’ experience smooth, without compromising on speed or privacy.
 

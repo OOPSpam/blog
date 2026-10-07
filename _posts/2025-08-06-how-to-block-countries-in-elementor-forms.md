@@ -5,7 +5,7 @@ date: 2025-08-05T21:06:00.000+08:00
 last_modified_at: 2026-01-06T11:36:00.000+08:00
 author: chazie
 image: /blog/assets/posts/header_elementor.jpg
-description: Elementor Forms lack native country blocking, use OOPSpam for
+description: Elementor Forms lack native country blocking, use oopspam for
   advanced form filtering or apply site-wide blocks with Elementor Hosting or
   Cloudflare.
 tags:
@@ -17,24 +17,24 @@ tags:
 
 Getting spam or unwanted traffic from specific countries? If you're using [Elementor Forms](https://elementor.com/pages/form-builder/), there are two ways to block form submissions based on visitor location, even though Elementor doesn’t offer built-in geoblocking on its forms alone. In this guide, we’ll walk you through both:
 
-* Blocking form spam using OOPSpam Anti-Spam
+* Blocking form spam using oopspam Anti-Spam
 * Blocking entire countries using Cloudflare or Elementor Hosting’s built-in traffic controls
 
 Let’s go through both methods step-by-step.
 
-## **1. Block Countries in Elementor Forms Using OOPSpam**
+## **1. Block Countries in Elementor Forms Using oopspam**
 
-![OOPSpam Anti-Spam](/blog/assets/posts/oopspam-anti-spam-overview.png "OOPSpam Anti-Spam")
+![oopspam Anti-Spam](/blog/assets/posts/oopspam-anti-spam-overview.png "oopspam Anti-Spam")
 
-If your Elementor forms are getting spammed, especially from certain countries, **[OOPSpam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/)** (that’s us 👋) is the easiest and most precise solution. It adds reliable spam filtering, [country-based blocking](https://www.oopspam.com/blog/how-to-block-countries-from-your-website-the-complete-guide), and [submission logs](https://help.oopspam.com/wordpress/form-entries/) without affecting your website’s accessibility.
+If your Elementor forms are getting spammed, especially from certain countries, **[oopspam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/)** (that’s us 👋) is the easiest and most precise solution. It adds reliable spam filtering, [country-based blocking](https://www.oopspam.com/blog/how-to-block-countries-from-your-website-the-complete-guide), and [submission logs](https://help.oopspam.com/wordpress/form-entries/) without affecting your website’s accessibility.
 
 ### **Does Elementor Support Native Country Filtering?**
 
 No, Elementor Forms do not include a built-in country or IP blocking feature. That means you’ll need an external anti-spam plugin to filter form submissions based on location.
 
-### **Why OOPSpam Works Great With Elementor Forms**
+### **Why oopspam Works Great With Elementor Forms**
 
-Once **[OOPSpam](https://www.oopspam.com/)** is activated, it works in the background to scan every form submission before it reaches your inbox. You get:
+Once **[oopspam](https://www.oopspam.com/)** is activated, it works in the background to scan every form submission before it reaches your inbox. You get:
 
 * **Country Filtering** – Block or allow form entries from specific countries.
 * **Language Filtering** – Exclude spam in specific languages.
@@ -43,21 +43,21 @@ Once **[OOPSpam](https://www.oopspam.com/)** is activated, it works in the backg
 * **Rate Limiting** – [Limit how often](https://www.oopspam.com/blog/how-to-limit-form-submissions-in-elementor-forms) your form can be submitted.
 * **Submission Logs** – Review blocked vs. accepted entries in real time.
 
-### **How to Set Up OOPSpam with Elementor**
+### **How to Set Up oopspam with Elementor**
 
-#### **Step 1: Install the OOPSpam Plugin**
+#### **Step 1: Install the oopspam Plugin**
 
-From your WordPress Dashboard, go to **Plugins > Add New**, search for **“OOPSpam Anti-Spam”**, then install and activate it.
+From your WordPress Dashboard, go to **Plugins > Add New**, search for **“oopspam Anti-Spam”**, then install and activate it.
 
-![OOPSpam dashboard displaying API usage, average response time, and API key.](/blog/assets/posts/oopspam-dashboard-api.png "OOPSpam Dashboard")
+![oopspam dashboard displaying API usage, average response time, and API key.](/blog/assets/posts/oopspam-dashboard-api.png "oopspam Dashboard")
 
-Create an account on [OOPSpam.com](https://app.oopspam.com/Identity/Account/Register) and **generate your API key**.
+Create an account on [oopspam.com](https://app.oopspam.com/Identity/Account/Register) and **generate your API key**.
 
 #### **Step 2: Connect Your API Key**
 
 ![Connect Your API Key](/blog/assets/posts/oopspam-api-key.png "Connect Your API Key")
 
-Back in your WordPress admin, go to **OOPSpam Anti-Spam > Settings**, and **paste the API key** into the designated field.
+Back in your WordPress admin, go to **oopspam Anti-Spam > Settings**, and **paste the API key** into the designated field.
 
 #### **Step 3: Enable Elementor Support**
 
@@ -65,7 +65,7 @@ Scroll to the **Elementor Forms** section in the plugin settings and **activate 
 
 ![Activate spam protection in Elementor Forms](/blog/assets/posts/elementor-spam-protection-settings.png "Activate spam protection in Elementor Forms")
 
-Once activated, all Elementor Forms on your site will start [filtering submissions](https://www.oopspam.com/blog/spam-protection-for-elementor-forms) based on your OOPSpam rules.
+Once activated, all Elementor Forms on your site will start [filtering submissions](https://www.oopspam.com/blog/spam-protection-for-elementor-forms) based on your oopspam rules.
 
 #### **Step 4: Block Countries**
 
@@ -83,7 +83,7 @@ That’s it! Spammy form entries from restricted countries will be filtered sile
 
 ### **Review Blocked Submissions from Elementor**
 
-With OOPSpam, you’ll always know what’s been filtered and why. You can check:
+With oopspam, you’ll always know what’s been filtered and why. You can check:
 
 * Submission content
 * IP address
@@ -93,13 +93,13 @@ With OOPSpam, you’ll always know what’s been filtered and why. You can check
 
 Access this via:
 
-* WordPress Admin > OOPSpam > Form Spam Entries / Form Ham Entries
+* WordPress Admin > oopspam > Form Spam Entries / Form Ham Entries
 
 ![Form Spam Entries / Form Ham Entries](/blog/assets/posts/form-spam-entries-oopspam.png "Form Spam Entries / Form Ham Entries")
 
-* OOPSpam Dashboard (for enhanced filtering and export)
+* oopspam Dashboard (for enhanced filtering and export)
 
-![OOPSpam Dashboard logs](/blog/assets/posts/screenshot-1.png "OOPSpam Dashboard logs")
+![oopspam Dashboard logs](/blog/assets/posts/screenshot-1.png "oopspam Dashboard logs")
 
 This gives you clarity and control, especially helpful if you’re trying to fine-tune [Elementor forms spam filters](https://www.oopspam.com/blog/elementor-forms-block-user) or rescue false positives.
 
@@ -198,7 +198,7 @@ Steps:
       <td>Geoblocking for security or business restrictions</td>
     </tr>
     <tr>
-      <td>OOPSpam Plugin</td>
+      <td>oopspam Plugin</td>
       <td>Form submissions only</td>
       <td>Spam filtering and per-form country blocking</td>
     </tr>
@@ -212,8 +212,8 @@ Steps:
 
 ## **Final thoughts**
 
-Elementor Forms don’t offer native country filtering but you’re not stuck. With OOPSpam Anti-Spam, you get advanced, form-level spam protection and region-based filtering without blocking legitimate traffic to your site.
+Elementor Forms don’t offer native country filtering but you’re not stuck. With oopspam Anti-Spam, you get advanced, form-level spam protection and region-based filtering without blocking legitimate traffic to your site.
 
 Pair it with Elementor Hosting's built-in geoblocking or Cloudflare rules if you need stricter site-wide controls.
 
-Need help setting this up? You can check OOPSpam’s [documentation](https://www.oopspam.com/help), or [contact our team](https://www.oopspam.com/#contact) anytime.
+Need help setting this up? You can check oopspam’s [documentation](https://www.oopspam.com/help), or [contact our team](https://www.oopspam.com/#contact) anytime.

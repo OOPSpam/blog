@@ -4,7 +4,7 @@ title: "Defending WooCommerce: How we blocked 450,000 card testing attempts in o
 date: 2025-09-26T13:09:00.000-05:00
 author: onar
 image: /assets/posts/largest-card-testing-attack-Woo.png
-description: How OOPSpam blocked 450,000 card testing attempts targeting WooCommerce stores across PayPal, credit, and debit gateways in seven days.
+description: How oopspam blocked 450,000 card testing attempts targeting WooCommerce stores across PayPal, credit, and debit gateways in seven days.
 tags:
   - Woo
   - WooCommerce
@@ -18,7 +18,7 @@ tags:
 
 We recently stopped the largest WooCommerce card testing attack we've seen. Attackers targeted PayPal, credit, and debit card processors across multiple stores, creating thousands of failed orders marked with Origin = "Unknown."
 
-Merchants using OOPSpam's protection settings were already covered. Our systems blocked over 450,000 attack attempts in one week.
+Merchants using oopspam's protection settings were already covered. Our systems blocked over 450,000 attack attempts in one week.
 
 > This attack was broader than previous campaigns that mainly targeted PayPal through Block-based Checkout. For background, see our earlier posts:
 > - [Card testing through Block‑based Checkout](https://www.oopspam.com/blog/card-testing-attacks-a-new-threat-vector-through-woocommerce-block-based-checkout)
@@ -65,7 +65,7 @@ Our mitigations combine attribution‑aware rules with IP/email reputation. All 
 - Minimum session page views (new)
   - Blocks orders if the session’s page views fall below a threshold. Card‑testing bots commonly show the exact same low page‑view count across attempts.
 
-![WooCommerce setting in the OOPSpam WordPress plugin](/blog/assets/posts/oopspam-woo.png "WooCommerce setting in the OOPSpam WordPress plugin")
+![WooCommerce setting in the oopspam WordPress plugin](/blog/assets/posts/oopspam-woo.png "WooCommerce setting in the oopspam WordPress plugin")
 
 Blocked entries appear under Form Spam Entries for review.
 
@@ -114,14 +114,14 @@ In parallel, our IP and email reputation engines blocked over 450,000 attempts d
   
   [Block countries you don’t sell to at Cloudflare WAF](https://www.oopspam.com/blog/blocking-countries-from-accessing-your-website-using-cloudflare).
 
-  Or use OOPSpam’s country restrictions to prevent order placement from selected countries while keeping the site accessible.
+  Or use oopspam’s country restrictions to prevent order placement from selected countries while keeping the site accessible.
 
 ![Country and language filter settings for message restrictions.](/blog/assets/posts/country-language-filter.png "Country and Language Filtering Settings")
 
 - (Optional) **Disable WooCommerce checkout via REST API**
-  If you have no third‑party integrations that rely on REST (for example, Amazon, marketplaces, or custom apps), you can enable OOPSpam’s “Disable WooCommerce checkout via REST API.” Our data indicates this wave wasn’t primarily using REST endpoints, so treat this as a defense‑in‑depth option only when safe to enable.
+  If you have no third‑party integrations that rely on REST (for example, Amazon, marketplaces, or custom apps), you can enable oopspam’s “Disable WooCommerce checkout via REST API.” Our data indicates this wave wasn’t primarily using REST endpoints, so treat this as a defense‑in‑depth option only when safe to enable.
 
-## For teams already using OOPSpam
+## For teams already using oopspam
 
 Merchants with “Block orders from unknown origin” enabled were already protected during this campaign. We have since:
 

@@ -4,7 +4,7 @@ title: 4 Ways to Protect Your Piotnet Forms from Spam
 date: 2026-04-05T21:29:00.000+08:00
 author: chazie
 image: /blog/assets/posts/header_meta_pf.png
-description: Protect Piotnet Forms from spam using OOPSpam, reCAPTCHA, honeypot,
+description: Protect Piotnet Forms from spam using oopspam, reCAPTCHA, honeypot,
   and WAF. Simple steps to reduce spam and keep your forms secure.
 tags:
   - Piotnet Forms
@@ -13,7 +13,7 @@ tags:
 ---
 ![Piotnet Forms](/blog/assets/posts/piotnet-forms.png "Piotnet Forms")
 
-If your [Piotnet Forms](https://piotnetforms.com/) are getting spam, start with two things: enable reCAPTCHA and install OOPSpam. These handle most automated and repeated submissions right away. Then add a honeypot field and, if needed, a firewall to block unwanted traffic before it reaches your site.
+If your [Piotnet Forms](https://piotnetforms.com/) are getting spam, start with two things: enable reCAPTCHA and install oopspam. These handle most automated and repeated submissions right away. Then add a honeypot field and, if needed, a firewall to block unwanted traffic before it reaches your site.
 
 ### **Why Piotnet Forms Get Spam**
 
@@ -23,23 +23,23 @@ Bots scan websites for active forms and attempt to submit links, fake details, o
 
 Without proper protection, even a well-built form can become a source of spam.
 
-## **1. Use OOPSpam for Filtering and Limits**
+## **1. Use oopspam for Filtering and Limits**
 
-[OOPSpam](https://www.oopspam.com/) (that's us 👋) is one of the most effective ways to control spam in Piotnet Forms. It filters submissions in the background and gives you control over how forms are used. It does more than just block bots. It also helps manage repeated submissions and suspicious traffic.
+[oopspam](https://www.oopspam.com/) (that's us 👋) is one of the most effective ways to control spam in Piotnet Forms. It filters submissions in the background and gives you control over how forms are used. It does more than just block bots. It also helps manage repeated submissions and suspicious traffic.
 
 ### **How to set it up**
 
-Start by installing the plugin. Go to **Plugins → Add New**, search for **“[OOPSpam Anti-Spam](https://www.oopspam.com/wordpress),”** then install and activate it.
+Start by installing the plugin. Go to **Plugins → Add New**, search for **“[oopspam Anti-Spam](https://www.oopspam.com/wordpress),”** then install and activate it.
 
-![OOPSpam ](/blog/assets/posts/oopspam-anti-spam-overview.png "OOPSpam ")
+![oopspam ](/blog/assets/posts/oopspam-anti-spam-overview.png "oopspam ")
 
-Next, [create an account](https://app.oopspam.com/Identity/Account/Login) on OOPSpam and copy your **API key** from the dashboard.
+Next, [create an account](https://app.oopspam.com/Identity/Account/Login) on oopspam and copy your **API key** from the dashboard.
 
-![Create an account on OOPSpam](/blog/assets/posts/oopspam-dashboard-api.png "Create an account on OOPSpam")
+![Create an account on oopspam](/blog/assets/posts/oopspam-dashboard-api.png "Create an account on oopspam")
 
-Go back to WordPress, open **Settings → OOPSpam**, paste your API key, and save.
+Go back to WordPress, open **Settings → oopspam**, paste your API key, and save.
 
-![OOPSpam Settings](/blog/assets/posts/oopspam-api-key.png "OOPSpam Settings")
+![oopspam Settings](/blog/assets/posts/oopspam-api-key.png "oopspam Settings")
 
 Scroll through the settings page and **activate** **Piotnet Forms spam protection**. Once enabled, filtering starts immediately.
 
@@ -47,7 +47,7 @@ Scroll through the settings page and **activate** **Piotnet Forms spam protectio
 
 ### **What you can control**
 
-OOPSpam gives you full control over how form submissions are handled. It does more than block spam, it lets you adjust how strict your filtering should be based on your needs.
+oopspam gives you full control over how form submissions are handled. It does more than block spam, it lets you adjust how strict your filtering should be based on your needs.
 
 You can manage key settings such as:
 
@@ -124,6 +124,6 @@ A firewall is especially useful if your site receives high traffic or forms that
 
 ## **Final Thoughts**
 
-Piotnet Forms spam is manageable with the right setup. Start with OOPSpam or reCAPTCHA to handle most of the filtering. Then add a honeypot for simple bot protection. If needed, use a firewall to block unwanted traffic before it reaches your site.
+Piotnet Forms spam is manageable with the right setup. Start with oopspam or reCAPTCHA to handle most of the filtering. Then add a honeypot for simple bot protection. If needed, use a firewall to block unwanted traffic before it reaches your site.
 
 With these steps in place, you can reduce spam significantly while keeping your forms easy to use.

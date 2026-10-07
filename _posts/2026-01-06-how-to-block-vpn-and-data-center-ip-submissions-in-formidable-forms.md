@@ -5,13 +5,13 @@ date: 2026-01-07T01:20:00.000+08:00
 author: chazie
 image: /blog/assets/posts/header_ff_block.jpg
 description: Learn how to block VPN and data center IP submissions in Formidable
-  Forms using OOPSpam and Cloudflare, with clear steps and best practices.
+  Forms using oopspam and Cloudflare, with clear steps and best practices.
 tags:
   - Formidable Forms
 ---
 ![Formidable Forms](/blog/assets/posts/formidable-forms-home.png "Formidable Forms")
 
-[Formidable Forms](https://formidableforms.com/) does not have a built-in way to block VPN or data center IP submissions. If you want to stop this type of spam reliably, you must add a third-party layer. The two options are [OOPSpam](https://www.oopspam.com/) and Cloudflare Security Rules. This guide shows you exactly how to use both, step by step, with Formidable Forms in mind.
+[Formidable Forms](https://formidableforms.com/) does not have a built-in way to block VPN or data center IP submissions. If you want to stop this type of spam reliably, you must add a third-party layer. The two options are [oopspam](https://www.oopspam.com/) and Cloudflare Security Rules. This guide shows you exactly how to use both, step by step, with Formidable Forms in mind.
 
 ## **Why VPN and Data Center Spam Gets Through Formidable Forms**
 
@@ -27,15 +27,15 @@ That type of detection requires constantly updated IP databases and reputation s
 
 This is why VPN-based and data center spam keeps getting through.
 
-## **Method 1: Automatically Block VPN and Cloud IPs in Formidable Forms With OOPSpam**
+## **Method 1: Automatically Block VPN and Cloud IPs in Formidable Forms With oopspam**
 
-[OOPSpam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/) (that’s us 👋) integrates with Formidable Forms and evaluates each submission before it is saved. It checks the IP against known VPN networks, cloud providers, and proxy infrastructure.
+[oopspam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/) (that’s us 👋) integrates with Formidable Forms and evaluates each submission before it is saved. It checks the IP against known VPN networks, cloud providers, and proxy infrastructure.
 
 [Spam is filtered](https://www.oopspam.com/blog/spam-protection-for-formidable) before it reaches your Formidable entries.
 
-### **Why OOPSpam Works Well With Formidable Forms**
+### **Why oopspam Works Well With Formidable Forms**
 
-It solves the [exact gap Formidable Forms has](https://www.oopspam.com/integrations/spam-protection-for-formidable). OOPSpam uses:
+It solves the [exact gap Formidable Forms has](https://www.oopspam.com/integrations/spam-protection-for-formidable). oopspam uses:
 
 * IPs from thousands of cloud infrastructure providers
 * Known VPN and proxy networks
@@ -44,25 +44,25 @@ It solves the [exact gap Formidable Forms has](https://www.oopspam.com/integrati
 
 This means it blocks both known and emerging spam sources. You do not need to maintain IP lists manually.
 
-### **Step-by-Step: Enable VPN and Data Center Blocking With OOPSpam**
+### **Step-by-Step: Enable VPN and Data Center Blocking With oopspam**
 
-![OOPSpam](/blog/assets/posts/oopspam-anti-spam-overview.png "OOPSpam")
+![oopspam](/blog/assets/posts/oopspam-anti-spam-overview.png "oopspam")
 
 **Step 1: Install the plugin**
 
-Go to **WordPress Dashboard → Plugins → Add New** and search for **OOPSpam Anti-Spam.** Install and activate the plugin.
+Go to **WordPress Dashboard → Plugins → Add New** and search for **oopspam Anti-Spam.** Install and activate the plugin.
 
 **Step 2: Get your API key**
 
-![OOPSpam API key](/blog/assets/posts/oopspam-dashboard-api.png "OOPSpam API key")
+![oopspam API key](/blog/assets/posts/oopspam-dashboard-api.png "oopspam API key")
 
-[Create an account](https://app.oopspam.com/Identity/Account/Login) on the OOPSpam website and generate an API key from the dashboard.
+[Create an account](https://app.oopspam.com/Identity/Account/Login) on the oopspam website and generate an API key from the dashboard.
 
-**Step 3: Connect OOPSpam to WordPress**
+**Step 3: Connect oopspam to WordPress**
 
-![Connect OOPSpam to WordPress](/blog/assets/posts/oopspam-api-key.png "Connect OOPSpam to WordPress")
+![Connect oopspam to WordPress](/blog/assets/posts/oopspam-api-key.png "Connect oopspam to WordPress")
 
-Go to **OOPSpam Anti-Spam → Settings.** In the **General** tab, paste your API key and click **Save Changes.**
+Go to **oopspam Anti-Spam → Settings.** In the **General** tab, paste your API key and click **Save Changes.**
 
 **Step 4: Enable Formidable Forms protection**
 
@@ -83,13 +83,13 @@ Click **Save Changes.**
 
 Once enabled, Formidable Forms submissions from VPNs and cloud providers are blocked automatically.
 
-### **Optional: Use OOPSpam Manual Moderation for Extra Control**
+### **Optional: Use oopspam Manual Moderation for Extra Control**
 
 Some spam is persistent but not fully automated. Manual moderation gives you precision without turning off automation.
 
-![OOPSpam Manual Moderation](/blog/assets/posts/manual-moderation.png "OOPSpam Manual Moderation")
+![oopspam Manual Moderation](/blog/assets/posts/manual-moderation.png "oopspam Manual Moderation")
 
-In **OOPSpam → Manual Moderation**, you can:
+In **oopspam → Manual Moderation**, you can:
 
 * Block specific IP addresses
 * Block email addresses used repeatedly for spam
@@ -129,4 +129,4 @@ You can repeat this process for other cloud providers if needed.
 
 ## **Final Takeaway**
 
-Blocking VPN and data center spam in Formidable Forms requires an extra layer. For most Formidable Forms users, OOPSpam Anti-Spam is the fastest and safest solution. Cloudflare is a strong complement when used carefully.
+Blocking VPN and data center spam in Formidable Forms requires an extra layer. For most Formidable Forms users, oopspam Anti-Spam is the fastest and safest solution. Cloudflare is a strong complement when used carefully.

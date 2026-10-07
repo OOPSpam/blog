@@ -5,7 +5,7 @@ date: 2025-09-02T03:24:00.000+08:00
 last_modified_at: 2026-01-06T11:36:00.000+08:00
 author: chazie
 image: /blog/assets/posts/beaver_header.png
-description: Beaver Builder Contact Form lacks country blocking. Use OOPSpam for
+description: Beaver Builder Contact Form lacks country blocking. Use oopspam for
   form-level filtering or Cloudflare Firewall to block traffic site-wide.
 tags:
   - Beaver Builder
@@ -13,11 +13,11 @@ tags:
 ---
 ![Beaver Builder](/blog/assets/posts/beaver-builder-wordpress.png "Beaver Builder")
 
-[Beaver Builder](https://www.wpbeaverbuilder.com/) Contact Form does not support [country blocking](https://www.oopspam.com/blog/how-to-block-countries-from-your-website-the-complete-guide) by default. To stop spam or unwanted traffic, you can use [OOPSpam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/) (that’s us 👋)  to filter submissions by region or set up [Cloudflare Firewall Rules](https://developers.cloudflare.com/firewall/) to block visitors from entire countries before they reach your site.
+[Beaver Builder](https://www.wpbeaverbuilder.com/) Contact Form does not support [country blocking](https://www.oopspam.com/blog/how-to-block-countries-from-your-website-the-complete-guide) by default. To stop spam or unwanted traffic, you can use [oopspam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/) (that’s us 👋)  to filter submissions by region or set up [Cloudflare Firewall Rules](https://developers.cloudflare.com/firewall/) to block visitors from entire countries before they reach your site.
 
-## **Option 1: Block Countries in Beaver Builder Contact Form with OOPSpam**
+## **Option 1: Block Countries in Beaver Builder Contact Form with oopspam**
 
-[OOPSpam](https://www.oopspam.com/) works directly with Beaver Builder forms. It lets you choose which countries can submit your forms and [blocks spam entries](https://www.oopspam.com/blog/spam-protection-for-beaver-builder) from regions you don’t want.
+[oopspam](https://www.oopspam.com/) works directly with Beaver Builder forms. It lets you choose which countries can submit your forms and [blocks spam entries](https://www.oopspam.com/blog/spam-protection-for-beaver-builder) from regions you don’t want.
 
 ### **Key Features**
 
@@ -30,11 +30,11 @@ tags:
 
 ### **How to Set It Up**
 
-Install the **OOPSpam Anti-Spam** plugin from your WordPress dashboard. Create an account at[ OOPSpam.com](https://app.oopspam.com/Identity/Account/Login) and generate an API key.
+Install the **oopspam Anti-Spam** plugin from your WordPress dashboard. Create an account at[ oopspam.com](https://app.oopspam.com/Identity/Account/Login) and generate an API key.
 
-![OOPSpam Anti-Spam dashboard](/blog/assets/posts/oopspam-dashboard-api.png "OOPSpam Anti-Spam dashboard")
+![oopspam Anti-Spam dashboard](/blog/assets/posts/oopspam-dashboard-api.png "oopspam Anti-Spam dashboard")
 
-Go to **OOPSpam Anti-Spam > Settings** in WordPress and paste your API key.
+Go to **oopspam Anti-Spam > Settings** in WordPress and paste your API key.
 
 ![Paste your API key](/blog/assets/posts/oopspam-api-key.png "Paste your API key")
 
@@ -52,9 +52,9 @@ You can see blocked and approved entries inside WordPress under **Spam & Ham log
 
 ![WordPress under Spam & Ham logs](/blog/assets/posts/form-spam-entries-oopspam.png "WordPress under Spam & Ham logs")
 
-For more detail, visit your **OOPSpam Dashboard** to view filtering reports, reasons for blocking, and patterns over time.
+For more detail, visit your **oopspam Dashboard** to view filtering reports, reasons for blocking, and patterns over time.
 
-![OOPSpam Dashboard logs](/blog/assets/posts/screenshot-1.png "OOPSpam dashboard logs")
+![oopspam Dashboard logs](/blog/assets/posts/screenshot-1.png "oopspam dashboard logs")
 
 ## **Option 2: Block Entire Countries with Cloudflare**
 
@@ -74,7 +74,7 @@ Visitors from those countries will now be denied access to your entire site.
 
 ## **Final thoughts**
 
-Beaver Builder Contact Form alone cannot stop submissions from specific countries. The easiest fix is to use OOPSpam to filter form entries by region. This gives you targeted control over who can submit your forms.
+Beaver Builder Contact Form alone cannot stop submissions from specific countries. The easiest fix is to use oopspam to filter form entries by region. This gives you targeted control over who can submit your forms.
 
 If the issue extends beyond form spam and affects your whole site, Cloudflare Firewall can block traffic from unwanted countries at the server level.
 

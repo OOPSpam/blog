@@ -5,14 +5,14 @@ date: 2025-11-12T07:52:00.000+08:00
 author: chazie
 image: /blog/assets/posts/tf_rt.jpg
 description: Learn how to limit form submissions in Toolset Forms using Access
-  Control and OOPSpam rate limiting for better spam prevention.
+  Control and oopspam rate limiting for better spam prevention.
 tags:
   - Toolset Forms
   - rate limiting
 ---
 ![Toolset Forms](/blog/assets/posts/toolset-forms.png "Toolset Forms")
 
-[Toolset Forms](https://toolset.com/home/cred/) helps users create and edit posts or register accounts on your website. But without submission limits, you risk spam, duplicates, or abuse. This guide explains how to limit form submissions in Toolset Forms using built-in access controls and third-party spam protection like **[OOPSpam](https://www.oopspam.com/)** (that’s us 👋). 
+[Toolset Forms](https://toolset.com/home/cred/) helps users create and edit posts or register accounts on your website. But without submission limits, you risk spam, duplicates, or abuse. This guide explains how to limit form submissions in Toolset Forms using built-in access controls and third-party spam protection like **[oopspam](https://www.oopspam.com/)** (that’s us 👋). 
 
 ## **Why Limit Form Submissions?**
 
@@ -23,7 +23,7 @@ Too many form submissions, especially from bots, can slow down your site and flo
 * Easier moderation
 * More accurate data
 
-Toolset doesn’t have a direct “limit entries per user” setting. But you can combine Access Control and OOPSpam’s rate limiting to achieve the same result.
+Toolset doesn’t have a direct “limit entries per user” setting. But you can combine Access Control and oopspam’s rate limiting to achieve the same result.
 
 ## **Method 1: Control Who Can Submit Forms**
 
@@ -49,21 +49,21 @@ Tick or untick boxes to define who can:
 
 Use this table to prevent unauthorized or repeated form use. For example, let “Authors” create posts but block “Subscribers” from submitting.
 
-## **Method 2: Use OOPSpam for Advanced Rate Limiting**
+## **Method 2: Use oopspam for Advanced Rate Limiting**
 
-Toolset doesn’t include hourly or per-IP rate limits. That’s where OOPSpam Anti-Spam comes in.
+Toolset doesn’t include hourly or per-IP rate limits. That’s where oopspam Anti-Spam comes in.
 
 ### **Install and Connect**
 
-![OOPSpam ](/blog/assets/posts/oopspam-anti-spam-overview.png "OOPSpam ")
+![oopspam ](/blog/assets/posts/oopspam-anti-spam-overview.png "oopspam ")
 
-Go to **Plugins → Add New** and install **[OOPSpam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/)**. Create an account at [OOPSpam.com](https://app.oopspam.com/Identity/Account/Login) and copy your **API key**.
+Go to **Plugins → Add New** and install **[oopspam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/)**. Create an account at [oopspam.com](https://app.oopspam.com/Identity/Account/Login) and copy your **API key**.
 
-![OOPSpam Anti-Spam dashboard](/blog/assets/posts/oopspam-dashboard-api.png "OOPSpam Anti-Spam dashboard")
+![oopspam Anti-Spam dashboard](/blog/assets/posts/oopspam-dashboard-api.png "oopspam Anti-Spam dashboard")
 
-In WordPress, open **OOPSpam → General Settings** and **paste your API key**.
+In WordPress, open **oopspam → General Settings** and **paste your API key**.
 
-![OOPSpam General Settings](/blog/assets/posts/oopspam-api-key.png "OOPSpam General Settings")
+![oopspam General Settings](/blog/assets/posts/oopspam-api-key.png "oopspam General Settings")
 
 Enable Toolset Forms spam protection, and click **Save Changes**.
 
@@ -98,4 +98,4 @@ These keep spam low and genuine engagement high.
 
 ## **Final thoughts**
 
-The best way to manage Toolset Forms is to combine access control and rate limiting. You don’t need complex code, just clear settings. Use Toolset Access to define who can submit and OOPSpam to manage [how often submissions](https://www.oopspam.com/blog/protecting-forms-with-rate-limiting-in-wordpress-using-oopspam) are allowed. Together, these create a secure, balanced system that keeps your forms clean and your website running smoothly.
+The best way to manage Toolset Forms is to combine access control and rate limiting. You don’t need complex code, just clear settings. Use Toolset Access to define who can submit and oopspam to manage [how often submissions](https://www.oopspam.com/blog/protecting-forms-with-rate-limiting-in-wordpress-using-oopspam) are allowed. Together, these create a secure, balanced system that keeps your forms clean and your website running smoothly.

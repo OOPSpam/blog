@@ -6,16 +6,16 @@ last_modified_at: 2026-09-22T12:04:00.000+04:00
 author: chazie
 image: /blog/assets/posts/email_list_mailchimp.jpg
 description: Learn how to verify and clean your Mailchimp email list with
-  OOPSpam to remove risky contacts, improve deliverability, and boost
+  oopspam to remove risky contacts, improve deliverability, and boost
   engagement.
 tags:
   - Mailchimp
 ---
-To verify and clean a Mailchimp email list, connect [OOPSpam](https://www.oopspam.com/) to your Mailchimp account, scan your audience against OOPSpam's spam database, and unsubscribe or delete whatever comes back flagged as risky. OOPSpam's Mailchimp integration does this directly inside your audience, with no CSV exports and no manual cross-referencing.
+To verify and clean a Mailchimp email list, connect [oopspam](https://www.oopspam.com/) to your Mailchimp account, scan your audience against oopspam's spam database, and unsubscribe or delete whatever comes back flagged as risky. oopspam's Mailchimp integration does this directly inside your audience, with no CSV exports and no manual cross-referencing.
 
 ## **Step 1: Find the Mailchimp Integration**
 
-From your[ OOPSpam Dashboard](https://app.oopspam.com/), click **Integrations** in the left sidebar. Mailchimp is listed alongside the other available integrations. Click **Connect** on the Mailchimp card.
+From your[ oopspam Dashboard](https://app.oopspam.com/), click **Integrations** in the left sidebar. Mailchimp is listed alongside the other available integrations. Click **Connect** on the Mailchimp card.
 
 ![Step 1: Find the Mailchimp Integration](/blog/assets/posts/1-mailchimp-email-list.png "Step 1: Find the Mailchimp Integration")
 
@@ -29,13 +29,13 @@ Paste it into the field and click **Connect**.
 
 ## **Step 3: Pick an Audience to Scan**
 
-After connecting, OOPSpam fetches your Mailchimp audiences along with their subscriber counts. Click the audience you want to check.
+After connecting, oopspam fetches your Mailchimp audiences along with their subscriber counts. Click the audience you want to check.
 
 ![Step 3: Pick an Audience to Scan](/blog/assets/posts/3-mailchimp-email-list.png "Step 3: Pick an Audience to Scan")
 
 ## **Step 4: Fine-Tune What Counts as Risky (optional)**
 
-You'll see a preview of the contacts in your selected audience before the scan runs. OOPSpam checks each address against its spam database to identify risky emails.
+You'll see a preview of the contacts in your selected audience before the scan runs. oopspam checks each address against its spam database to identify risky emails.
 
 Before you scan, you can flag extra situations under **Additional risk criteria**. Both sit on the same screen as the contact preview and are optional.
 
@@ -59,7 +59,7 @@ Click **Scan All Emails** when ready. Turning other options on adds extra checks
 
 For larger audiences, the scan runs in two steps: first loading all contacts, then scanning them. Either way, the process runs automatically.
 
-*Note:* scanning uses your OOPSpam API credits.
+*Note:* scanning uses your oopspam API credits.
 
 ## **Step 6: Review and Act on Risky Contacts**
 
@@ -97,4 +97,4 @@ Most email problems do not announce themselves. They build up quietly. A few rea
 * Engagement metrics become unreliable when a chunk of your audience cannot or will not open anything.
 * Mailchimp charges by contact count, so removing dead contacts keeps your costs in check.
 
-A [clean list](https://www.oopspam.com/blog/how-to-stop-spam-signups-in-your-mailchimp-email-list) means your campaigns reach real people and your stats reflect reality. Connect OOPSpam to Mailchimp once, and run a scan whenever your audience needs it. No imports, no spreadsheets, no manual cross-referencing.
+A [clean list](https://www.oopspam.com/blog/how-to-stop-spam-signups-in-your-mailchimp-email-list) means your campaigns reach real people and your stats reflect reality. Connect oopspam to Mailchimp once, and run a scan whenever your audience needs it. No imports, no spreadsheets, no manual cross-referencing.

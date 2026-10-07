@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Stop spam on Webflow forms using Zapier and OOPSpam
+title: Stop spam on Webflow forms using Zapier and oopspam
 date: 2023-02-01
 last_modified_at: 2024-10-22T21:29:00.000Z
 author: onar
 image: /assets/posts/social-media-meta.png
 description: Learn how to protect Webflow forms from spam without CAPTCHA.
-  Step-by-step guide to integrate OOPSpam with Zapier or Make for better spam
+  Step-by-step guide to integrate oopspam with Zapier or Make for better spam
   protection.
 tags:
   - zapier
@@ -48,7 +48,7 @@ If you wish to skip the steps below, use [the template](https://zapier.com/apps/
 > </zapier-zap-templates>
 
 <br>
-Zapier will walk you through the configuration for all 4 steps: Webflow -> Spam check with OOPSpam -> Filter -> Email by Zapier.
+Zapier will walk you through the configuration for all 4 steps: Webflow -> Spam check with oopspam -> Filter -> Email by Zapier.
 
 *Filter* should be configured by default. The filter is straightforward with just one rule: **continue processing only if the Spam Score is less than 3**.
 
@@ -74,13 +74,13 @@ The first submission will also appear as test data when you set up Webflow for t
 
 ![Webflow Zapier set up](/blog/assets/posts/webflow-contact-form/webflow-zapier.gif "Webflow Zapier set up")
 
-## Checking for spam with OOPSpam
+## Checking for spam with oopspam
 
 To set up spam protection, follow these steps:
 
-1. Register for an API key on the [OOPSpam dashboard](https://app.oopspam.com/).
+1. Register for an API key on the [oopspam dashboard](https://app.oopspam.com/).
 2. In Zapier, enter the API key when prompted on the "Choose Account" step.
-3. Map necessary form information to OOPSpam's fields:
+3. Map necessary form information to oopspam's fields:
 
    * **Content**: This is where the form message goes.
    * **Sender IP**: Leave blank. Or [follow these steps](https://discourse.webflow.com/t/how-to-track-ip-address-of-people-who-fill-out-a-form/67026/2) to capture an IP and map it to this field.
@@ -92,7 +92,7 @@ To set up spam protection, follow these steps:
 
 See the GIF below for a visual guide.
 
-![OOPSpam Zapier set up](/blog/assets/posts/webflow-contact-form/zapier-oopspam.gif "OOPSpam Zapier set up")
+![oopspam Zapier set up](/blog/assets/posts/webflow-contact-form/zapier-oopspam.gif "oopspam Zapier set up")
 
 ## Filtering with Filter
 
@@ -130,7 +130,7 @@ In order to send the email, you need to map the required fields to the data from
 
 Once you have set up the email, test it to see if you receive the first submission. You can also use other email services such as Postmark or Mailgun instead of Email by Zapier.
 
-> Using embedded forms on your website? You can also [add spam protection to embedded forms using OOPSpam and Zapier](https://www.oopspam.com/blog/add-spam-protection-to-embedded-forms-using-oopspam-and-zapier) to stop fake submissions before they reach your workflow.
+> Using embedded forms on your website? You can also [add spam protection to embedded forms using oopspam and Zapier](https://www.oopspam.com/blog/add-spam-protection-to-embedded-forms-using-oopspam-and-zapier) to stop fake submissions before they reach your workflow.
 
 ## Final thoughts
 

@@ -48,11 +48,11 @@ That combination means bot traffic increasingly looks like normal shopper traffi
 
 ## **Step 3: Prevent Fake Orders and Chargebacks**
 
-![OOPSpam](/blog/assets/posts/oopspam-1.png "OOPSpam")
+![oopspam](/blog/assets/posts/oopspam-1.png "oopspam")
 
 ### **Add a dedicated fraud or spam detection layer.** 
 
-This is where a purpose-built tool earns its keep. **[OOPSpam](https://www.oopspam.com/)** (that's us) is worth a close look because it offers:
+This is where a purpose-built tool earns its keep. **[oopspam](https://www.oopspam.com/)** (that's us) is worth a close look because it offers:
 
 1. WooCommerce checkout protection alongside form and comment spam filtering in a single plugin.
 2. [Contextual and behavioral detection](https://www.oopspam.com/blog/introducing-contextual-spam-detection) instead of relying solely on IP reputation, a significant advantage now that residential proxies can bypass traditional geo and IP-based blocking.
@@ -73,7 +73,7 @@ This is where a purpose-built tool earns its keep. **[OOPSpam](https://www.oopsp
 * Disable guest checkout under **Settings > Accounts & Privacy**.
 * Install a WooCommerce focused anti-fraud plugin and enable [reCAPTCHA](https://www.oopspam.com/recaptcha-alternative) v2 (it tends to hold up better at checkout than v3).
 * Add rate limiting through a firewall or a security plugin such as Wordfence.
-* Consider installing [OOPSpam](https://www.oopspam.com/blog/spam-protection-for-woocommerce), since it flags orders with [unknown origin](https://www.oopspam.com/blog/how-to-stop-failed-orders-with-unknown-origin-in-woocommerce) or missing device data on both Classic and Block based Checkout that many fraud plugins miss.
+* Consider installing [oopspam](https://www.oopspam.com/blog/spam-protection-for-woocommerce), since it flags orders with [unknown origin](https://www.oopspam.com/blog/how-to-stop-failed-orders-with-unknown-origin-in-woocommerce) or missing device data on both Classic and Block based Checkout that many fraud plugins miss.
 
 ### **Shopify**
 
@@ -82,14 +82,14 @@ This is where a purpose-built tool earns its keep. **[OOPSpam](https://www.oopsp
 * Use [Shopify Flow](https://apps.shopify.com/flow) to auto cancel or hold high risk orders for review.
 * Install the built in Shopify Fraud Filter app to block known bad IPs, emails, and repeat offenders.
 * Confirm AVS and CVV checks are enforced under Shopify Payments settings.
-* Consider connecting [OOPSpam to Shopify Flow](https://www.oopspam.com/blog/how-to-stop-fake-orders-in-shopify) to score orders by IP and email risk and auto flag suspicious ones for review.
+* Consider connecting [oopspam to Shopify Flow](https://www.oopspam.com/blog/how-to-stop-fake-orders-in-shopify) to score orders by IP and email risk and auto flag suspicious ones for review.
 
 ### **SureCart**
 
 ![Turn on native Spam Protection under SureCart > Settings > Advanced.](/blog/assets/posts/surecart-spam-protection.webp "Turn on native Spam Protection under SureCart > Settings > Advanced.")
 
 * Turn on native Spam Protection under **SureCart > Settings > Advanced**.
-* Consider installing [OOPSpam alongside SureCart](https://www.oopspam.com/blog/5-ways-to-stop-fake-orders-in-surecart) to add [rate limiting](https://www.oopspam.com/blog/how-to-rate-limit-orders-in-surecart), [country filtering](https://www.oopspam.com/blog/how-to-block-countries-in-surecart), and cloud provider [IP blocking](https://www.oopspam.com/blog/how-to-block-vpn-and-data-center-ip-submissions-in-surecart-forms) on top of SureCart's native protections.
+* Consider installing [oopspam alongside SureCart](https://www.oopspam.com/blog/5-ways-to-stop-fake-orders-in-surecart) to add [rate limiting](https://www.oopspam.com/blog/how-to-rate-limit-orders-in-surecart), [country filtering](https://www.oopspam.com/blog/how-to-block-countries-in-surecart), and cloud provider [IP blocking](https://www.oopspam.com/blog/how-to-block-vpn-and-data-center-ip-submissions-in-surecart-forms) on top of SureCart's native protections.
 
 ### **MemberPress**
 
@@ -97,11 +97,11 @@ This is where a purpose-built tool earns its keep. **[OOPSpam](https://www.oopsp
 
 * Enable **Math CAPTCHA** on registration pages under the **Account** settings tab.
 * Require email verification before granting access to paid content.
-* Consider installing [OOPSpam for MemberPress](https://www.oopspam.com/blog/spam-protection-for-memberpress) to add [rate limiting](https://www.oopspam.com/blog/how-to-limit-form-submissions-in-memberpress) and [country filtering](https://www.oopspam.com/blog/how-to-block-countries-in-memberpress), VPN detection, and cloud provider [IP blocking](https://www.oopspam.com/blog/how-to-block-vpn-and-data-center-ip-submissions-in-memberpress) for registration and contact forms.
+* Consider installing [oopspam for MemberPress](https://www.oopspam.com/blog/spam-protection-for-memberpress) to add [rate limiting](https://www.oopspam.com/blog/how-to-limit-form-submissions-in-memberpress) and [country filtering](https://www.oopspam.com/blog/how-to-block-countries-in-memberpress), VPN detection, and cloud provider [IP blocking](https://www.oopspam.com/blog/how-to-block-vpn-and-data-center-ip-submissions-in-memberpress) for registration and contact forms.
 
 ## **Final Takeaway**
 
-No single tool stops every fake order or card testing attempt. The stores that hold up best combine a firewall at the network level, CAPTCHA or OOPSpam at the form level, AVS and CVV at the payment level, and a checkout and spam protection plugin like OOPSpam watching the checkout itself. Layer these together, keep an eye on which tactics are trending, and stick with tools that have a real track record behind them.
+No single tool stops every fake order or card testing attempt. The stores that hold up best combine a firewall at the network level, CAPTCHA or oopspam at the form level, AVS and CVV at the payment level, and a checkout and spam protection plugin like oopspam watching the checkout itself. Layer these together, keep an eye on which tactics are trending, and stick with tools that have a real track record behind them.
 
 ## Related guides
 

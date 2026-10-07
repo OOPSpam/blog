@@ -4,7 +4,7 @@ title: How to Block VPN and Data Center IP Submissions in MemberPress?
 date: 2026-02-13T05:25:00.000+08:00
 author: chazie
 image: /blog/assets/posts/meta_mp.jpg
-description: Block VPN and data center spam in MemberPress using OOPSpam,
+description: Block VPN and data center spam in MemberPress using oopspam,
   Cloudflare, or built-in restrictions. Protect memberships from fake signups.
 tags:
   - MemberPress
@@ -12,7 +12,7 @@ tags:
 ---
 ![MemberPress](/blog/assets/posts/memberpress-homepage.png "MemberPress")
 
-[MemberPress](https://memberpress.com/) does not automatically block VPN or data center IPs. To protect your membership site from automated spam registrations, you need additional layers of protection. This guide covers three approaches: OOPSpam (form-level), Cloudflare (network-level), and MemberPress built-in restrictions.
+[MemberPress](https://memberpress.com/) does not automatically block VPN or data center IPs. To protect your membership site from automated spam registrations, you need additional layers of protection. This guide covers three approaches: oopspam (form-level), Cloudflare (network-level), and MemberPress built-in restrictions.
 
 If you are seeing fake registrations, disposable emails, or payment card testing attacks, this guide shows exactly how to stop them.
 
@@ -28,9 +28,9 @@ Modern spam and fraud operations use cloud infrastructure to launch automated at
 
 This is why IP-based filtering must happen at a different layer.
 
-## **Method 1: Using OOPSpam Anti-Spam**
+## **Method 1: Using oopspam Anti-Spam**
 
-[OOPSpam](https://www.oopspam.com/) (that’s us 👋) filters MemberPress registrations in real-time before accounts are created. It analyzes every submission against a continuously updated threat database that includes:
+[oopspam](https://www.oopspam.com/) (that’s us 👋) filters MemberPress registrations in real-time before accounts are created. It analyzes every submission against a continuously updated threat database that includes:
 
 * VPN and proxy IP ranges
 * Over 1,500+ cloud hosting providers and data centers
@@ -38,27 +38,27 @@ This is why IP-based filtering must happen at a different layer.
 
 This approach blocks fraudulent registrations without affecting legitimate visitors browsing your site.
 
-**Step-by-Step: Set Up OOPSpam for MemberPress**
+**Step-by-Step: Set Up oopspam for MemberPress**
 
-![OOPSpam Anti-Spam](/blog/assets/posts/oopspam-anti-spam-overview.png "OOPSpam Anti-Spam")
+![oopspam Anti-Spam](/blog/assets/posts/oopspam-anti-spam-overview.png "oopspam Anti-Spam")
 
 **Step 1: Install the Plugin**
 
-Log in to WordPress and navigate to Plugins → Add New. Search for "[OOPSpam Anti-Spam](https://www.oopspam.com/wordpress)" and click Install. Activate the plugin after installation completes.
+Log in to WordPress and navigate to Plugins → Add New. Search for "[oopspam Anti-Spam](https://www.oopspam.com/wordpress)" and click Install. Activate the plugin after installation completes.
 
 **Step 2: Connect Your API Key**
 
-Create a [free account](https://app.oopspam.com/Identity/Account/Login) at the OOPSpam dashboard. Copy your API key from the account settings.
+Create a [free account](https://app.oopspam.com/Identity/Account/Login) at the oopspam dashboard. Copy your API key from the account settings.
 
-![OOPSpam dashboard](/blog/assets/posts/oopspam-dashboard-api.png "OOPSpam dashboard")
+![oopspam dashboard](/blog/assets/posts/oopspam-dashboard-api.png "oopspam dashboard")
 
-In WordPress, go to Settings → OOPSpam Anti-Spam. Paste your API key into the field provided and save.
+In WordPress, go to Settings → oopspam Anti-Spam. Paste your API key into the field provided and save.
 
-![Settings OOPSpam Anti-Spam](/blog/assets/posts/oopspam-api-key.png "Settings OOPSpam Anti-Spam")
+![Settings oopspam Anti-Spam](/blog/assets/posts/oopspam-api-key.png "Settings oopspam Anti-Spam")
 
 **Step 3: Enable Spam Protection**
 
-Open the General tab in OOPSpam settings. Turn on Activate Spam Protection for MemberPress.
+Open the General tab in oopspam settings. Turn on Activate Spam Protection for MemberPress.
 
 ![Enable Spam Protection for MemberPress](/blog/assets/posts/memberpress-spam-protection.png "Enable Spam Protection for MemberPress")
 
@@ -77,7 +77,7 @@ Enable the filters that match your security needs and save changes.
 
 ### **Manual Moderation for Targeted Abuse**
 
-Some fraudulent registrations are not fully automated. Attackers may manually create accounts using rotating IPs or craft profiles that appear legitimate. OOPSpam provides Manual Moderation tools for these situations.
+Some fraudulent registrations are not fully automated. Attackers may manually create accounts using rotating IPs or craft profiles that appear legitimate. oopspam provides Manual Moderation tools for these situations.
 
 ![Manual Moderation](/blog/assets/posts/manual-moderation-settings-oopspam.png "Manual Moderation")
 
@@ -142,9 +142,9 @@ You can enable:
 * **Email Address Restriction** – Block specific email addresses tied to fraudulent accounts.
 * **Age Restriction** – Require users to meet minimum age requirements.
 
-> Most of these restrictions can also be enforced using OOPSpam Manual Moderation. You can block individual IP addresses, email addresses, and entire domains, as well as whitelist trusted users.
+> Most of these restrictions can also be enforced using oopspam Manual Moderation. You can block individual IP addresses, email addresses, and entire domains, as well as whitelist trusted users.
 
-The only control that cannot be replicated inside OOPSpam is the Age Restriction, which is handled directly by MemberPress during registration.
+The only control that cannot be replicated inside oopspam is the Age Restriction, which is handled directly by MemberPress during registration.
 
 **Global vs Membership-Level Restrictions**
 
@@ -162,7 +162,7 @@ MemberPress provides powerful membership management, but it was not designed to 
 
 For complete protection:
 
-* Use OOPSpam for intelligent, form-level filtering that targets fraudulent registrations
+* Use oopspam for intelligent, form-level filtering that targets fraudulent registrations
 * Enable MemberPress built-in restrictions to block specific IPs, domains, and prevent card testing
 * Add Cloudflare rules only when facing serious, sustained attacks from specific networks
 

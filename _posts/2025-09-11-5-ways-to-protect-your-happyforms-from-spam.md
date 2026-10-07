@@ -5,7 +5,7 @@ date: 2025-09-11T06:15:00.000+08:00
 author: chazie
 image: /blog/assets/posts/header_hf.png
 description: Stop spam in HappyForms with built-in honeypots, reCAPTCHA, and
-  OOPSpam. Block bots, filter by country, and keep your forms clean and secure.
+  oopspam. Block bots, filter by country, and keep your forms clean and secure.
 tags:
   - HappyForms
   - reCAPTCHA
@@ -13,7 +13,7 @@ tags:
 ---
 ![HappyForms ](/blog/assets/posts/happyforms.jpg "HappyForms ")
 
-Spam submissions clog your inbox, pollute your CRM, and waste your time. If you use [HappyForms](https://happyforms.io/) on WordPress, there are simple but effective ways to stop them. The bottom line: turn on built-in protections, then layer in advanced filtering with a [WordPress plugin](https://www.oopspam.com/blog/7-best-anti-spam-plugins-for-wordpress) like OOPSpam. 
+Spam submissions clog your inbox, pollute your CRM, and waste your time. If you use [HappyForms](https://happyforms.io/) on WordPress, there are simple but effective ways to stop them. The bottom line: turn on built-in protections, then layer in advanced filtering with a [WordPress plugin](https://www.oopspam.com/blog/7-best-anti-spam-plugins-for-wordpress) like oopspam. 
 
 This blog walks you through five essential steps.
 
@@ -29,23 +29,23 @@ HappyForms adds a hidden field called a [honeypot](https://www.oopspam.com/blog/
 
 ## **3. Install an Anti-Spam Plugin (Pro Users)**
 
-If you use **HappyForms Pro**, you can integrate **[OOPSpam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/)** (that’s us 👋) for stronger protection. It blocks spam before it reaches your inbox.
+If you use **HappyForms Pro**, you can integrate **[oopspam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/)** (that’s us 👋) for stronger protection. It blocks spam before it reaches your inbox.
 
 ### **How to set it up:**
 
-Install and activate the OOPSpam plugin. [Create an account](https://app.oopspam.com/Identity/Account/Login) to get an API key.
+Install and activate the oopspam plugin. [Create an account](https://app.oopspam.com/Identity/Account/Login) to get an API key.
 
 ![Get an API key](/blog/assets/posts/oopspam-dashboard-api.png "Get an API key")
 
-Enter the API key in the WordPress dashboard under **OOPSpam - General Settings** tab.
+Enter the API key in the WordPress dashboard under **oopspam - General Settings** tab.
 
-![OOPSpam - General Settings tab](/blog/assets/posts/oopspam-api-key.png "OOPSpam - General Settings tab")
+![oopspam - General Settings tab](/blog/assets/posts/oopspam-api-key.png "oopspam - General Settings tab")
 
 Activate spam protection for HappyForms.
 
 ![Activate spam protection for HappyForms](/blog/assets/posts/spam-protection-for-happyforms.png "Activate spam protection for HappyForms")
 
-### **What OOPSpam can do for you:**
+### **What oopspam can do for you:**
 
 * Block or allow submissions by [country](https://www.oopspam.com/blog/how-to-block-countries-in-happyforms) to stop irrelevant traffic.
 * Filter text by language so you only get entries in the languages you want.
@@ -55,7 +55,7 @@ Activate spam protection for HappyForms.
 * Use [contextual analysis](https://www.oopspam.com/blog/introducing-contextual-spam-detection) to flag spam even when only the message body is available (no IP or email).
 * Log every [submission](https://help.oopspam.com/wordpress/form-entries/) so you can see what was blocked and why.
 
-With these features, [OOPSpam](https://www.oopspam.com/) gives you control and visibility, making sure only legitimate leads reach your forms.
+With these features, [oopspam](https://www.oopspam.com/) gives you control and visibility, making sure only legitimate leads reach your forms.
 
 ## **4. Add reCAPTCHA or hCaptcha**
 
@@ -75,7 +75,7 @@ This creates a visible challenge that filters out automated abuse.
 
 ## **5. Configure Keyword, Country, and IP Filters**
 
-OOPSpam gives you [precise control](https://www.oopspam.com/integrations/spam-protection-for-happyforms) over what submissions to allow or block. You can filter by keywords, countries, languages, emails, and IPs.
+oopspam gives you [precise control](https://www.oopspam.com/integrations/spam-protection-for-happyforms) over what submissions to allow or block. You can filter by keywords, countries, languages, emails, and IPs.
 
 ### **Country and Language Controls**
 
@@ -88,7 +88,7 @@ OOPSpam gives you [precise control](https://www.oopspam.com/integrations/spam-pr
 
 ### **Manual Moderation (Email, IP, and Keywords)**
 
-> You don’t have to use these settings, OOPSpam already blocks automated spam by default. These tools are there if you want a quick way to block or allow someone specific by email, IP, or keyword.
+> You don’t have to use these settings, oopspam already blocks automated spam by default. These tools are there if you want a quick way to block or allow someone specific by email, IP, or keyword.
 
 **Blocked Emails/IPs:** Stop known malicious senders or networks.
 
@@ -106,7 +106,7 @@ By combining these filters, you can prevent irrelevant traffic, keep spammy term
 
 ## **Final thoughts**
 
-Spam is constantly evolving. One solution isn’t enough. Combine HappyForms’ built-in honeypot, plus reCAPTCHA or hCaptcha, and advanced OOPSpam filtering to create a layered defense. Update your plugins often to stay ahead of new threats.
+Spam is constantly evolving. One solution isn’t enough. Combine HappyForms’ built-in honeypot, plus reCAPTCHA or hCaptcha, and advanced oopspam filtering to create a layered defense. Update your plugins often to stay ahead of new threats.
 
 ## Related guides
 

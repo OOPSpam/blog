@@ -5,11 +5,11 @@ date: 2026-06-22T13:33:00.000+08:00
 author: chazie
 image: /blog/assets/posts/block_countries_meta.png
 description: Learn how to block countries in Elementor Atomic Forms using
-  OOPSpam for form-level filtering and Cloudflare WAF for edge-level protection.
+  oopspam for form-level filtering and Cloudflare WAF for edge-level protection.
 tags:
   - Elementor Atomic Forms
 ---
-Elementor [Atomic Forms](https://elementor.com/help/atomic-form-element/) does not include built-in country blocking. To stop spam and unwanted submissions from specific regions, use OOPSpam for form-level country filtering or Cloudflare WAF for site-level blocking. The best practice is to combine both: OOPSpam for precision and Cloudflare for broad, edge-level protection.
+Elementor [Atomic Forms](https://elementor.com/help/atomic-form-element/) does not include built-in country blocking. To stop spam and unwanted submissions from specific regions, use oopspam for form-level country filtering or Cloudflare WAF for site-level blocking. The best practice is to combine both: oopspam for precision and Cloudflare for broad, edge-level protection.
 
 ## **Why You Might Need Country Blocking**
 
@@ -17,28 +17,28 @@ Blocking certain countries can reduce spam, fake leads, and automated submission
 
 You can either:
 
-* Filter countries at the form level using [OOPSpam](https://www.oopspam.com/) (that's us 👋).
+* Filter countries at the form level using [oopspam](https://www.oopspam.com/) (that's us 👋).
 * [Restrict countries](https://www.oopspam.com/blog/how-to-block-countries-from-your-website-the-complete-guide) at the edge level using Cloudflare's WAF (Web Application Firewall).
 
-## **Method 1: Use OOPSpam for Form-Level Country Filtering**
+## **Method 1: Use oopspam for Form-Level Country Filtering**
 
-OOPSpam integrates directly with [Elementor Atomic Forms](https://www.oopspam.com/blog/3-ways-to-protect-your-elementor-atomic-forms-from-spam). It uses reputation checks and intelligent detection to identify spam and lets you block or allow countries right from your WordPress dashboard. This gives you accurate, invisible protection without disrupting real users or adding extra steps to your form.
+oopspam integrates directly with [Elementor Atomic Forms](https://www.oopspam.com/blog/3-ways-to-protect-your-elementor-atomic-forms-from-spam). It uses reputation checks and intelligent detection to identify spam and lets you block or allow countries right from your WordPress dashboard. This gives you accurate, invisible protection without disrupting real users or adding extra steps to your form.
 
 ### **How to Set It Up**
 
-Install and activate **[OOPSpam Anti-Spam](https://www.oopspam.com/wordpress)** from the WordPress Plugin Directory.
+Install and activate **[oopspam Anti-Spam](https://www.oopspam.com/wordpress)** from the WordPress Plugin Directory.
 
-![OOPSpam](/blog/assets/posts/oopspam-anti-spam-overview.png "OOPSpam")
+![oopspam](/blog/assets/posts/oopspam-anti-spam-overview.png "oopspam")
 
-Create an OOPSpam account at[ OOPSpam.com](https://app.oopspam.com/Identity/Account/Login) and generate your API key.
+Create an oopspam account at[ oopspam.com](https://app.oopspam.com/Identity/Account/Login) and generate your API key.
 
-![Create an OOPSpam account at OOPSpam.com and generate your API key](/blog/assets/posts/oopspam-dashboard-api.png "Create an OOPSpam account at OOPSpam.com and generate your API key")
+![Create an oopspam account at oopspam.com and generate your API key](/blog/assets/posts/oopspam-dashboard-api.png "Create an oopspam account at oopspam.com and generate your API key")
 
-In WordPress, go to **Settings > OOPSpam Anti-Spam > General**, and paste your API key.
+In WordPress, go to **Settings > oopspam Anti-Spam > General**, and paste your API key.
 
-![OOPSpam Settings](/blog/assets/posts/oopspam-api-key.png "OOPSpam Settings")
+![oopspam Settings](/blog/assets/posts/oopspam-api-key.png "oopspam Settings")
 
-In the OOPSpam settings, find the **Elementor Atomic Forms** section and toggle on **Activate Spam Protection** so submissions are checked automatically.
+In the oopspam settings, find the **Elementor Atomic Forms** section and toggle on **Activate Spam Protection** so submissions are checked automatically.
 
 ![Elementor Atomic Forms section and toggle on Activate Spam Protection](/blog/assets/posts/elementor-atomic-forms-spam-protection.png "Elementor Atomic Forms section and toggle on Activate Spam Protection")
 
@@ -58,11 +58,11 @@ Set up country filtering under the General Settings tab:
 * **IP Filtering:** Block bad IP addresses, [VPNs](https://www.oopspam.com/blog/how-to-block-vpn-and-data-center-ip-submissions-in-elementor-atomic-forms), and data center traffic.
 * **Contextual Detection:** Identify hidden or AI-generated spam in message fields.
 
-After setting up your filters, test your Atomic Form by submitting it in Incognito mode. Then check the Spam and Ham [logs](https://help.oopspam.com/wordpress/form-entries/) in WordPress to confirm unwanted submissions are being blocked. You can also review the OOPSpam Dashboard to see which [submissions](https://help.oopspam.com/report/) were filtered and why.
+After setting up your filters, test your Atomic Form by submitting it in Incognito mode. Then check the Spam and Ham [logs](https://help.oopspam.com/wordpress/form-entries/) in WordPress to confirm unwanted submissions are being blocked. You can also review the oopspam Dashboard to see which [submissions](https://help.oopspam.com/report/) were filtered and why.
 
-![Logs in OOPSpam Dashboard](/blog/assets/posts/sc_reported-532356c6.png "Logs in OOPSpam Dashboard")
+![Logs in oopspam Dashboard](/blog/assets/posts/sc_reported-532356c6.png "Logs in oopspam Dashboard")
 
-### **Benefits of OOPSpam for Atomic Forms**
+### **Benefits of oopspam for Atomic Forms**
 
 * Filters spam by country, language, content, IP reputation, and submission speed.
 * Uses intelligent detection to stop advanced, human-like spam.
@@ -85,7 +85,7 @@ Cloudflare's Web Application Firewall ([WAF](https://developers.cloudflare.com/f
 
 ### **A Note on Error Messages**
 
-When OOPSpam blocks a submission, Atomic Forms shows a default error message rather than a custom one. You can make this clearer for legitimate users:
+When oopspam blocks a submission, Atomic Forms shows a default error message rather than a custom one. You can make this clearer for legitimate users:
 
 ![A Note on Error Messages](/blog/assets/posts/atomic-forms-error-message.png "A Note on Error Messages")
 
@@ -96,4 +96,4 @@ When OOPSpam blocks a submission, Atomic Forms shows a default error message rat
 
 ## **Final Takeaway**
 
-The best way to block countries in Elementor Atomic Forms is to use OOPSpam for precision and Cloudflare WAF for extra perimeter security. Together, they create a layered defense. Your Atomic Forms stay clean, your site remains accessible to real visitors, and only legitimate users get through.
+The best way to block countries in Elementor Atomic Forms is to use oopspam for precision and Cloudflare WAF for extra perimeter security. Together, they create a layered defense. Your Atomic Forms stay clean, your site remains accessible to real visitors, and only legitimate users get through.

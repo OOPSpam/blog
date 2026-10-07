@@ -10,9 +10,9 @@ tags:
   - shopify
   - geo-blocking
 ---
-At [OOPSpam](https://www.oopspam.com/), we started looking into Shopify as a potential [integration](https://www.oopspam.com/integrations/) with [our API](https://www.oopspam.com/docs/). I knew nothing about the Shopify app system, how it works, or its capabilities.
+At [oopspam](https://www.oopspam.com/), we started looking into Shopify as a potential [integration](https://www.oopspam.com/integrations/) with [our API](https://www.oopspam.com/docs/). I knew nothing about the Shopify app system, how it works, or its capabilities.
 
-> Take a look at [the article about preventing fraud and blocking countries in Shopify using OOPSpam and Shopify Flow](https://www.oopspam.com/blog/how-to-stop-fake-orders-in-shopify).
+> Take a look at [the article about preventing fraud and blocking countries in Shopify using oopspam and Shopify Flow](https://www.oopspam.com/blog/how-to-stop-fake-orders-in-shopify).
 
 After doing some research, we realized there isn't much you can do to truly secure your Shopify website. As you may know, it is a closed system, unlike [Woo](https://www.oopspam.com/woocommerce) and other open-source solutions. It's only natural that you have limited options for addressing card testing attacks, which are the main threat in e-commerce.
 

@@ -1,23 +1,23 @@
 ---
 layout: post
-title:  "[Announcement] OOPSpam Anti-Spam Plugin now supports Gravity Forms"
+title:  "[Announcement] oopspam Anti-Spam Plugin now supports Gravity Forms"
 author: onar
 image: /assets/posts/gf-oopspam-wordpress-plugin.jpg
 tags: [WordPress, contact_form, gravity_forms]
 
 
-description: "Use OOPSpam WordPress plugin to stop spam on your Gravity Forms"
+description: "Use oopspam WordPress plugin to stop spam on your Gravity Forms"
 # modified: 
 ---
 <center>
 <a href="https://wordpress.org/plugins/oopspam-anti-spam/">
-<img loading="lazy"  width="772" style="height: 200px;object-fit: cover;" alt="OOPSpam and Gravity Forms logos" src="/blog/assets/posts/gf-oopspam-wordpress-plugin.jpg">
+<img loading="lazy"  width="772" style="height: 200px;object-fit: cover;" alt="oopspam and Gravity Forms logos" src="/blog/assets/posts/gf-oopspam-wordpress-plugin.jpg">
 </a>
 </center>
 <br/>
 
 
-One of the most commonly used contact forms for WordPress is [Gravity Forms](https://www.gravityforms.com/). OOPSpam WordPress plugin already [supports Ninja Forms](https://www.oopspam.com/blog/spam-protection-for-ninja-forms). However, we got many requests to integrate Gravity Forms as well. Google Trends also shows that many people search for Gravity Forms than Ninja Forms. So, it was an easy decision to move forward with this integration.
+One of the most commonly used contact forms for WordPress is [Gravity Forms](https://www.gravityforms.com/). oopspam WordPress plugin already [supports Ninja Forms](https://www.oopspam.com/blog/spam-protection-for-ninja-forms). However, we got many requests to integrate Gravity Forms as well. Google Trends also shows that many people search for Gravity Forms than Ninja Forms. So, it was an easy decision to move forward with this integration.
 
 ![Google Trends on WordPress Contact Froms](/blog/assets/posts/contact_from_trends.png "Google Trends on WordPress Contact Froms")
 
@@ -34,10 +34,10 @@ In addition to Gravity Forms integration, we added a setting "Consider short mes
 > - Ability restrict IP analyses
 > - and more
 
-![OOPSpam Anti-Spam WordPress Plugin Settings](/blog/assets/posts/oopspam-plugin-settings.png  "OOPSpam Anti-Spam WordPress Plugin Settings")
+![oopspam Anti-Spam WordPress Plugin Settings](/blog/assets/posts/oopspam-plugin-settings.png  "oopspam Anti-Spam WordPress Plugin Settings")
 
 
-Go ahead [get an OOPSpam Anti-Spam key](https://app.oopspam.com/Identity/Account/Register) and install the [OOPSpam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/).
+Go ahead [get an oopspam Anti-Spam key](https://app.oopspam.com/Identity/Account/Register) and install the [oopspam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/).
 
 Have a spam-free day!
 

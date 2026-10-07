@@ -14,13 +14,13 @@ tags:
 
 Spam in [Brevo](https://www.brevo.com/) damages your sender reputation, hurts email deliverability, and wastes your marketing budget. To fix it, you need to clean your contact lists, secure your signup forms, authenticate your domain, manage sending volume, and use a dedicated spam-scanning tool. Here is exactly how to do each one.
 
-## **1. Scan and Clean Your List with OOPSpam**
+## **1. Scan and Clean Your List with oopspam**
 
-Your first line of defense is knowing exactly which contacts in your [Brevo list](https://www.oopspam.com/blog/how-to-verify-and-clean-up-your-brevo-email-list) are risky before you send to them. **[OOPSpam](https://www.oopspam.com/)** (that’s us 👋) integrates directly with Brevo and checks every email address in your list against a spam database. Here is the workflow:
+Your first line of defense is knowing exactly which contacts in your [Brevo list](https://www.oopspam.com/blog/how-to-verify-and-clean-up-your-brevo-email-list) are risky before you send to them. **[oopspam](https://www.oopspam.com/)** (that’s us 👋) integrates directly with Brevo and checks every email address in your list against a spam database. Here is the workflow:
 
-Go to your OOPSpam Dashboard and click **Integrations** in the left sidebar.
+Go to your oopspam Dashboard and click **Integrations** in the left sidebar.
 
-![Go to your OOPSpam Dashboard and click Integrations in the left sidebar.](/blog/assets/posts/brevo-1.png "Go to your OOPSpam Dashboard and click Integrations in the left sidebar.")
+![Go to your oopspam Dashboard and click Integrations in the left sidebar.](/blog/assets/posts/brevo-1.png "Go to your oopspam Dashboard and click Integrations in the left sidebar.")
 
 Click **Connect** on the Brevo card and enter your Brevo API Key (found under Account Settings > SMTP and API).
 
@@ -42,9 +42,9 @@ For each risky contact, you can **Unsubscribe** (removes from the list only) or 
 
 ![Bulk actions are available at the top of the results list.](/blog/assets/posts/brevo-7.png "Bulk actions are available at the top of the results list.")
 
-This single step alone can reduce bounces and spam complaints before your next campaign goes out. Note that scanning consumes OOPSpam API credits, so plan scans before major sends.
+This single step alone can reduce bounces and spam complaints before your next campaign goes out. Note that scanning consumes oopspam API credits, so plan scans before major sends.
 
-OOPSpam recently added a few new options worth turning on:
+oopspam recently added a few new options worth turning on:
 
 * **Flag soft bounces** - contacts whose most recent send came back as a soft bounce get flagged as risky.
 * **Flag non-openers** - contacts who haven’t opened your last 3 emails get flagged. This needs open tracking enabled in Brevo and can be less reliable.

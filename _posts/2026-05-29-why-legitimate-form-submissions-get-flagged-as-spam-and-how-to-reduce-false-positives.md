@@ -60,15 +60,15 @@ Spam filtering systems sometimes apply geo-based scoring, treating submissions f
 
 ## **How to Reduce False Positives**
 
-### **For WordPress Users (Using OOPSpam)**
+### **For WordPress Users (Using oopspam)**
 
-![OOPSpam Anti-Spam plugin](/blog/assets/posts/oopspam-anti-spam-overview.png "OOPSpam Anti-Spam plugin")
+![oopspam Anti-Spam plugin](/blog/assets/posts/oopspam-anti-spam-overview.png "oopspam Anti-Spam plugin")
 
-If you are using the **[OOPSpam Anti-Spam](https://www.oopspam.com/wordpress)** plugin (that’s us 👋) on WordPress, you have several built-in tools to address false positives directly.
+If you are using the **[oopspam Anti-Spam](https://www.oopspam.com/wordpress)** plugin (that’s us 👋) on WordPress, you have several built-in tools to address false positives directly.
 
 **Step 1: Diagnose the block reason**
 
-Go to **OOPSpam Anti-Spam > Form Spam Entries** in your WordPress dashboard. Check the **Reason** column next to the flagged entry. This tells you exactly why it was blocked, so you can take targeted action instead of guessing.
+Go to **oopspam Anti-Spam > Form Spam Entries** in your WordPress dashboard. Check the **Reason** column next to the flagged entry. This tells you exactly why it was blocked, so you can take targeted action instead of guessing.
 
 Common reasons and their fixes:
 
@@ -81,9 +81,9 @@ Common reasons and their fixes:
 
 Bulk select or individually mark safe entries as **Not Spam** in the Form Spam Entries view. When you do this, three things happen:
 
-1. A report is sent to help improve OOPSpam's detection accuracy
+1. A report is sent to help improve oopspam's detection accuracy
 2. The IP address and email are added to your local allowlist
-3. The system learns to prevent similar false positives from recurring, benefiting other OOPSpam users as well
+3. The system learns to prevent similar false positives from recurring, benefiting other oopspam users as well
 
 ![Mark the entry as "Not Spam"](/blog/assets/posts/not-spam-entries.png "Mark the entry as \"Not Spam\"")
 
@@ -95,13 +95,13 @@ If your website primarily serves users from specific countries where spam is unc
 
 **Step 4: Contact support**
 
-OOPSpam's support team consists of technical experts who can help you resolve persistent issues quickly. Reach us via email at [contact@oopspam.com](mailto:contact@oopspam.com) or through the live chat on the[ OOPSpam dashboard](https://app.oopspam.com/).
+oopspam's support team consists of technical experts who can help you resolve persistent issues quickly. Reach us via email at [contact@oopspam.com](mailto:contact@oopspam.com) or through the live chat on the[ oopspam dashboard](https://app.oopspam.com/).
 
 ### **For Non-WordPress Platforms and API Users**
 
-If you are integrating [OOPSpam via API](https://oopspam.com/) or using it with platforms outside WordPress (such as custom web apps, SaaS products, [Webflow](https://www.oopspam.com/integrations/spam-protection-for-webflow), [Bubble](https://www.oopspam.com/blog/spam-protection-for-bubble.io), or [others](https://www.oopspam.com/integrations/)), the same principles apply, but the remediation steps look slightly different.
+If you are integrating [oopspam via API](https://oopspam.com/) or using it with platforms outside WordPress (such as custom web apps, SaaS products, [Webflow](https://www.oopspam.com/integrations/spam-protection-for-webflow), [Bubble](https://www.oopspam.com/blog/spam-protection-for-bubble.io), or [others](https://www.oopspam.com/integrations/)), the same principles apply, but the remediation steps look slightly different.
 
-> Log in to your **OOPSpam dashboard** and go to the **Logs** section. Every submission checked through the API is recorded there. Find the entry that was incorrectly flagged, review the block reason, and mark it as **Not Spam**.
+> Log in to your **oopspam dashboard** and go to the **Logs** section. Every submission checked through the API is recorded there. Find the entry that was incorrectly flagged, review the block reason, and mark it as **Not Spam**.
 
 **Review your spam score thresholds**
 
@@ -109,7 +109,7 @@ Spam scoring systems rate submissions on a scale from 1–2 (likely human) to 3�
 
 **Skip IP analysis selectively**
 
-Using the [OOPSpam API](https://www.oopspam.com/docs/#introduction), you can pass a flag to skip IP reputation checks for specific form submissions or user segments (for example, authenticated users who are already logged in to your platform). This is particularly useful when you know your users are behind corporate proxies or VPNs.
+Using the [oopspam API](https://www.oopspam.com/docs/#introduction), you can pass a flag to skip IP reputation checks for specific form submissions or user segments (for example, authenticated users who are already logged in to your platform). This is particularly useful when you know your users are behind corporate proxies or VPNs.
 
 **Build an allowlist**
 
@@ -123,7 +123,7 @@ Rather than hard-blocking suspicious submissions, route borderline ones to a rev
 
 **Leverage email validation at the point of submission**
 
-OOPSpam performs real-time email validation automatically when an email address is passed to the API. This includes checks for disposable addresses, MX record verification, and domain reputation, catching suspicious signups at the point of submission without any extra setup on your end.
+oopspam performs real-time email validation automatically when an email address is passed to the API. This includes checks for disposable addresses, MX record verification, and domain reputation, catching suspicious signups at the point of submission without any extra setup on your end.
 
 ## **General Best Practices to Minimize False Positives**
 
@@ -141,7 +141,7 @@ False positives are an unavoidable side effect of any spam protection system, bu
 
 The goal is not to eliminate spam filtering. It is to tune it so that real users always get through while automated abuse does not. With the right tools and a habit of reviewing flagged entries, you can get false positives down to near zero.
 
-If you are using OOPSpam and a legitimate submission was blocked, do not wait. Check the reason, mark it as Not Spam, and reach out to support if needed. Every report helps the system improve, for you and for every other site relying on it.
+If you are using oopspam and a legitimate submission was blocked, do not wait. Check the reason, mark it as Not Spam, and reach out to support if needed. Every report helps the system improve, for you and for every other site relying on it.
 
 ## Related guides
 

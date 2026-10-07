@@ -4,7 +4,7 @@ title: How to Limit Form Submissions in Kadence Form?
 date: 2025-09-22T05:57:00.000+08:00
 author: chazie
 image: /blog/assets/posts/kd_rt.jpg
-description: Learn how to limit form submissions in Kadence Forms using OOPSpam,
+description: Learn how to limit form submissions in Kadence Forms using oopspam,
   Cloudflare WAF, and manual caps to control spam, quotas, and abusive entries.
 tags:
   - Kadence Form
@@ -14,7 +14,7 @@ tags:
 
 [Kadence](https://www.kadencewp.com/) Forms are lightweight and flexible, but they don’t include native tools to hard-cap submissions or enforce per-IP limits. You won’t find built-in controls to automatically close a form after 100 entries, rate-limit users by device, or filter by region.
 
-Instead, Kadence provides basic spam prevention (honeypot, reCAPTCHA, [Cloudflare Turnstile](https://www.oopspam.com/blog/common-cloudflare-turnstile-errors-in-wordpress-forms-and-how-to-fix-them) support) and database entry logging. To truly limit submissions, you’ll need to pair Kadence with external solutions like **[OOPSpam](https://www.oopspam.com/)** or Cloudflare WAF.
+Instead, Kadence provides basic spam prevention (honeypot, reCAPTCHA, [Cloudflare Turnstile](https://www.oopspam.com/blog/common-cloudflare-turnstile-errors-in-wordpress-forms-and-how-to-fix-them) support) and database entry logging. To truly limit submissions, you’ll need to pair Kadence with external solutions like **[oopspam](https://www.oopspam.com/)** or Cloudflare WAF.
 
 ### **What Kadence Offers Out of the Box**
 
@@ -27,21 +27,21 @@ Kadence Forms keep things simple. Here are the key built-ins:
 
 These features reduce bot traffic but do not enforce submission quotas or per-user [rate limits](https://www.oopspam.com/blog/protecting-forms-with-rate-limiting-in-wordpress-using-oopspam). That’s where advanced options come in.
 
-## **Option 1: Advanced Rate Limiting with OOPSpam**
+## **Option 1: Advanced Rate Limiting with oopspam**
 
-If you need adaptive [filtering](https://www.oopspam.com/blog/spam-protection-for-kadence-form) (spam scoring with ML), [country](https://www.oopspam.com/blog/how-to-block-countries-in-kadence-form) or language blocks, [VPN/Proxy/TOR blocking](https://www.oopspam.com/blog/how-to-block-vpn-and-data-center-ip-submissions-in-kadence-forms), and per-source rate limiting, all without modifying your form—**[OOPSpam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/)** (that’s us 👋) integrates with Kadence Forms. 
+If you need adaptive [filtering](https://www.oopspam.com/blog/spam-protection-for-kadence-form) (spam scoring with ML), [country](https://www.oopspam.com/blog/how-to-block-countries-in-kadence-form) or language blocks, [VPN/Proxy/TOR blocking](https://www.oopspam.com/blog/how-to-block-vpn-and-data-center-ip-submissions-in-kadence-forms), and per-source rate limiting, all without modifying your form—**[oopspam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/)** (that’s us 👋) integrates with Kadence Forms. 
 
 You enable it once, and it filters Kadence submissions centrally (with [logs](https://help.oopspam.com/wordpress/form-entries/)). 
 
 ### **How to Set It Up**
 
-**Install OOPSpam Anti-Spam** from the WordPress Plugin Repository. **Create an [OOPSpam account](https://app.oopspam.com/Identity/Account/Login)** and generate your API key.
+**Install oopspam Anti-Spam** from the WordPress Plugin Repository. **Create an [oopspam account](https://app.oopspam.com/Identity/Account/Login)** and generate your API key.
 
-![OOPSpam dashboard showing API usage, response time, active API key, and a test section for spam detection data with sample code.](/blog/assets/posts/oopspam-dashboard-api.png "OOPSpam dashboard")
+![oopspam dashboard showing API usage, response time, active API key, and a test section for spam detection data with sample code.](/blog/assets/posts/oopspam-dashboard-api.png "oopspam dashboard")
 
-In WordPress, go to **OOPSpam → General Settings** and paste your key.
+In WordPress, go to **oopspam → General Settings** and paste your key.
 
-![OOPSpam General Settings](/blog/assets/posts/oopspam-api-key.png "OOPSpam General Settings")
+![oopspam General Settings](/blog/assets/posts/oopspam-api-key.png "oopspam General Settings")
 
 Activate protection for **Kadence Forms**.
 
@@ -94,7 +94,7 @@ This isn’t automatic out of the box, but with a small snippet or manual checks
 
 Kadence Forms don’t natively support per-IP throttling or total submission caps. But you can achieve the same control by layering tools:
 
-* **OOPSpam** → per-IP/email limits, spam scoring, and country/language filters.
+* **oopspam** → per-IP/email limits, spam scoring, and country/language filters.
 * **Cloudflare WAF** → firewall-level request caps.
 * **Database Entry + Conditional Display** → simple manual quota control.
 

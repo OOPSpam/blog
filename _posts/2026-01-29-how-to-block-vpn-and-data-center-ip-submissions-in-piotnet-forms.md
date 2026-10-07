@@ -5,14 +5,14 @@ date: 2026-01-30T04:29:00.000+08:00
 author: chazie
 image: /blog/assets/posts/pn_meta.jpg
 description: Learn how to block VPN and data center IP submissions in Piotnet
-  Forms using OOPSpam and Cloudflare, with clear steps and practical warnings.
+  Forms using oopspam and Cloudflare, with clear steps and practical warnings.
 tags:
   - Piotnet Forms
   - Cloudflare
 ---
 ![Piotnet Forms](/blog/assets/posts/piotnet-forms.png "Piotnet Forms")
 
-[Piotnet Forms](https://piotnetforms.com/) does not have built-in VPN or data center IP blocking. If your forms are being abused, the most reliable solution is to add a third-party spam layer like OOPSpam. For advanced cases, you can also block infrastructure traffic at the network edge using Cloudflare security rules. This guide shows exactly how to do both, and when each method makes sense.
+[Piotnet Forms](https://piotnetforms.com/) does not have built-in VPN or data center IP blocking. If your forms are being abused, the most reliable solution is to add a third-party spam layer like oopspam. For advanced cases, you can also block infrastructure traffic at the network edge using Cloudflare security rules. This guide shows exactly how to do both, and when each method makes sense.
 
 ## **Why This Matters for Piotnet Forms Users**
 
@@ -22,29 +22,29 @@ Piotnet Forms focuses on form logic and design. It does not check IP reputation.
 
 If [CAPTCHA](https://www.oopspam.com/blog/best-captcha-alternatives) and [honeypots](https://www.oopspam.com/blog/ways-to-stop-spam#:~:text=Final%20thoughts-,Honeypot,-%3A%20filter%20spam%20with) are failing, VPN and cloud traffic is usually the cause.
 
-## **Method 1: Automatically Block VPN and Cloud IPs With OOPSpam**
+## **Method 1: Automatically Block VPN and Cloud IPs With oopspam**
 
-This is the safest option for most sites. [OOPSpam](https://www.oopspam.com/) (that’s us 👋) filters submissions before they are saved. It checks each submission against a live threat database that includes known VPNs, proxies, cloud networks, and abuse patterns. This lets Piotnet Forms evaluate where traffic comes from, not just what users type.
+This is the safest option for most sites. [oopspam](https://www.oopspam.com/) (that’s us 👋) filters submissions before they are saved. It checks each submission against a live threat database that includes known VPNs, proxies, cloud networks, and abuse patterns. This lets Piotnet Forms evaluate where traffic comes from, not just what users type.
 
-### **Step 1: Install and configure OOPSpam**
+### **Step 1: Install and configure oopspam**
 
-Install **[OOPSpam Anti-Spam](https://www.oopspam.com/wordpress)** from the WordPress plugin directory and activate it.
+Install **[oopspam Anti-Spam](https://www.oopspam.com/wordpress)** from the WordPress plugin directory and activate it.
 
-![OOPSpam](/blog/assets/posts/oopspam-anti-spam-overview.png "OOPSpam")
+![oopspam](/blog/assets/posts/oopspam-anti-spam-overview.png "oopspam")
 
-After activation, [create a free account](https://app.oopspam.com/Identity/Account/Login) in the OOPSpam dashboard. Copy your API key.
+After activation, [create a free account](https://app.oopspam.com/Identity/Account/Login) in the oopspam dashboard. Copy your API key.
 
-![OOPSpam dashboard](/blog/assets/posts/oopspam-dashboard-api.png "OOPSpam dashboard")
+![oopspam dashboard](/blog/assets/posts/oopspam-dashboard-api.png "oopspam dashboard")
 
-In WordPress, go to **Settings → OOPSpam Anti-Spam.** Open the **General** tab and paste your API key into the **My API Key** field.
+In WordPress, go to **Settings → oopspam Anti-Spam.** Open the **General** tab and paste your API key into the **My API Key** field.
 
-![Settings of OOPSpam Anti-Spam](/blog/assets/posts/oopspam-api-key.png "Settings of OOPSpam Anti-Spam")
+![Settings of oopspam Anti-Spam](/blog/assets/posts/oopspam-api-key.png "Settings of oopspam Anti-Spam")
 
 Save your settings.
 
 ### **Step 2: Make sure Piotnet Forms protection is active**
 
-Once active, OOPSpam automatically applies to supported form plugins, including Piotnet Forms. In the OOPSpam settings, confirm that spam protection is turned on. 
+Once active, oopspam automatically applies to supported form plugins, including Piotnet Forms. In the oopspam settings, confirm that spam protection is turned on. 
 
 ![Make sure Piotnet Forms protection is active](/blog/assets/posts/piotnet-forms-spam-protection.png "Make sure Piotnet Forms protection is active")
 
@@ -54,16 +54,16 @@ No additional configuration is required inside the Piotnet Forms editor.
 
 ![Enable IP filtering](/blog/assets/posts/ip-filtering-oopspam.png "Enable IP filtering")
 
-Open the **IP Filtering** tab in OOPSpam settings. You will see two important toggles:
+Open the **IP Filtering** tab in oopspam settings. You will see two important toggles:
 
 * **Block Cloud Providers –** Turn this on first. This blocks submissions from known cloud infrastructure providers commonly used for automated attacks.
 * **Block VPNs –** Enable this only if it fits your audience. VPN blocking can affect privacy-focused users or corporate networks.
 
-Click **Save Changes**. Once enabled, OOPSpam filters submissions automatically in the background.
+Click **Save Changes**. Once enabled, oopspam filters submissions automatically in the background.
 
-### **When OOPSpam alone is enough**
+### **When oopspam alone is enough**
 
-OOPSpam is usually sufficient if:
+oopspam is usually sufficient if:
 
 * Spam comes in waves or patterns
 * Submissions look human but repeat similar behavior
@@ -74,9 +74,9 @@ For many Piotnet Forms users, this is the only step needed.
 
 ## **Using Manual Moderation When Spam Is Targeted**
 
-OOPSpam includes a **Manual Moderation** section for handling targeted abuse. It allows you to respond to repeat patterns while keeping normal users unaffected.
+oopspam includes a **Manual Moderation** section for handling targeted abuse. It allows you to respond to repeat patterns while keeping normal users unaffected.
 
-![OOPSpam Manual Moderation](/blog/assets/posts/manual-moderation-settings-oopspam.png "OOPSpam Manual Moderation")
+![oopspam Manual Moderation](/blog/assets/posts/manual-moderation-settings-oopspam.png "oopspam Manual Moderation")
 
 From the Manual Moderation tab, you can:
 
@@ -125,7 +125,7 @@ For most Piotnet Forms sites, Cloudflare rules should be a secondary layer, not 
 
 If you are using Piotnet Forms and dealing with spam from VPNs or data centers, start simple.
 
-Enable OOPSpam. Turn on **Block Cloud Providers**. Monitor results. Add **Block VPNs** only if needed.
+Enable oopspam. Turn on **Block Cloud Providers**. Monitor results. Add **Block VPNs** only if needed.
 
 Use Cloudflare rules only when form-level protection is not enough. This layered approach keeps Piotnet Forms usable for real users while stopping the traffic that does not belong there.
 

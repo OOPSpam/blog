@@ -6,14 +6,14 @@ last_modified_at: 2026-01-06T11:36:00.000+08:00
 author: chazie
 image: /blog/assets/posts/wpforms-blockcontries.jpg
 description: Learn how to block countries in WPForms using the built-in country
-  filter, OOPSpam for WordPress, or Cloudflare DNS rules.
+  filter, oopspam for WordPress, or Cloudflare DNS rules.
 tags:
   - Cloudflare
   - WPForms
 ---
 ![WPForms homepage](/blog/assets/posts/wpforms-home.png "WPForms homepage")
 
-If you're dealing with spam or form abuse from specific regions, blocking countries in [WPForms](https://wpforms.com/) is a practical step. There are several ways to do this, depending on how strict you want the block to be and whether you still want access to visitor data. Below, I’ll walk you through three methods: WPForms’ built-in feature, OOPSpam for more intelligent and flexible filtering, and [DNS-level blocking via Cloudflare](https://www.oopspam.com/blog/blocking-countries-from-accessing-your-website-using-cloudflare).
+If you're dealing with spam or form abuse from specific regions, blocking countries in [WPForms](https://wpforms.com/) is a practical step. There are several ways to do this, depending on how strict you want the block to be and whether you still want access to visitor data. Below, I’ll walk you through three methods: WPForms’ built-in feature, oopspam for more intelligent and flexible filtering, and [DNS-level blocking via Cloudflare](https://www.oopspam.com/blog/blocking-countries-from-accessing-your-website-using-cloudflare).
 
 ## **1. Using WPForms Built-in Country Filter**
 
@@ -40,28 +40,28 @@ It blocks form submissions based on IP geolocation. If someone from a blocked co
 
 IP-based blocking can be bypassed using VPNs. This feature also doesn’t keep logs of blocked attempts.
 
-## **2. Blocking Countries in WPForms Using OOPSpam**
+## **2. Blocking Countries in WPForms Using oopspam**
 
-![OOPSpam WordPress plugin](/blog/assets/posts/oopspam-anti-spam-overview.png "OOPSpam WordPress plugin")
+![oopspam WordPress plugin](/blog/assets/posts/oopspam-anti-spam-overview.png "oopspam WordPress plugin")
 
-If you need a more intelligent solution that offers logging, pattern detection, and flexible control beyond static country lists, **[OOPSpam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/)** (that’s us 👋) is a strong alternative. It's especially useful if your forms are getting spammed from rotating IPs, VPNs, or legitimate-looking sources.
+If you need a more intelligent solution that offers logging, pattern detection, and flexible control beyond static country lists, **[oopspam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/)** (that’s us 👋) is a strong alternative. It's especially useful if your forms are getting spammed from rotating IPs, VPNs, or legitimate-looking sources.
 
-### **Why use OOPSpam instead of relying only on WPForms?**
+### **Why use oopspam instead of relying only on WPForms?**
 
 * **Real-time filtering:** Uses machine learning and updated IP/email reputation databases.
 * **Country filtering:** Lets you allow or block submissions by country.
 * **Logging:** Keeps logs of blocked entries—so you can review leads from blocked countries.
 * **Abuse detection:** Flags bot-like behavior and suspicious patterns.
 
-## **How to Block Countries in WPForms Using OOPSpam**
+## **How to Block Countries in WPForms Using oopspam**
 
-Install and activate the **OOPSpam WordPress plugin** from the plugin directory. 
+Install and activate the **oopspam WordPress plugin** from the plugin directory. 
 
-![OOPSpam dashboard](/blog/assets/posts/oopspam-dashboard-api.png "OOPSpam dashboard")
+![oopspam dashboard](/blog/assets/posts/oopspam-dashboard-api.png "oopspam dashboard")
 
-Then go to **OOPSpam Anti-Spam > Settings** in your dashboard. Paste your **OOPSpam API key** from your [OOPSpam account](https://app.oopspam.com/Identity/Account/Register). 
+Then go to **oopspam Anti-Spam > Settings** in your dashboard. Paste your **oopspam API key** from your [oopspam account](https://app.oopspam.com/Identity/Account/Register). 
 
-![Paste your OOPSpam API key](/blog/assets/posts/my-api-key-field.png "Paste your OOPSpam API key")
+![Paste your oopspam API key](/blog/assets/posts/my-api-key-field.png "Paste your oopspam API key")
 
 Toggle on **Activate Spam Protection** and configure any additional settings, such as sensitivity or keyword filtering, based on your needs.
 
@@ -75,7 +75,7 @@ That’s it! Your [WPForms](https://www.oopspam.com/blog/wpforms-block-user) wil
 
 ### **Review Blocked Submissions**
 
-One major advantage of using **[OOPSpam](https://www.oopspam.com/)** is the ability to review blocked entries. This is helpful if you want your forms open globally but still need to catch abuse. You can even choose to manually reach out if a legitimate lead was filtered.
+One major advantage of using **[oopspam](https://www.oopspam.com/)** is the ability to review blocked entries. This is helpful if you want your forms open globally but still need to catch abuse. You can even choose to manually reach out if a legitimate lead was filtered.
 
 ## **3. Blocking Countries at the DNS Level Using Cloudflare**
 
@@ -139,7 +139,7 @@ This setup blocks requests before they ever reach your WordPress environment, wh
       <td>Basic regional spam control</td>
     </tr>
     <tr>
-      <td>OOPSpam Plugin</td>
+      <td>oopspam Plugin</td>
       <td>Form submissions only</td>
       <td>Yes</td>
       <td>Advanced filtering, logging, and abuse protection</td>
@@ -153,14 +153,14 @@ This setup blocks requests before they ever reach your WordPress environment, wh
   </tbody>
 </table>
 
-Use OOPSpam for most use cases. It provides country filtering, [rate limiting](https://www.oopspam.com/blog/how-to-limit-form-submissions-in-wpforms), IP filtering, logging, and spam behavior detection without blocking access to your site. WPForms’ built-in filter is helpful for quick setup, while Cloudflare is ideal if you need full restriction.
+Use oopspam for most use cases. It provides country filtering, [rate limiting](https://www.oopspam.com/blog/how-to-limit-form-submissions-in-wpforms), IP filtering, logging, and spam behavior detection without blocking access to your site. WPForms’ built-in filter is helpful for quick setup, while Cloudflare is ideal if you need full restriction.
 
 ## **Final thoughts**
 
 There’s no one-size-fits-all solution to country blocking in WPForms. 
 
-If you want a basic filter, WPForms Pro offers a good start. If you need more accurate and flexible filtering, OOPSpam provides a better long-term setup. It gives you country filtering, machine learning-backed spam detection, and logs in one plugin. Cloudflare is best for fully blocking traffic from certain regions, but use it carefully to avoid blocking legitimate users.
+If you want a basic filter, WPForms Pro offers a good start. If you need more accurate and flexible filtering, oopspam provides a better long-term setup. It gives you country filtering, machine learning-backed spam detection, and logs in one plugin. Cloudflare is best for fully blocking traffic from certain regions, but use it carefully to avoid blocking legitimate users.
 
 Start with form-level blocking and monitor the results. Then scale up protection based on the type of abuse you’re facing.
 
-Need help setting this up or want to block countries in other form builders? OOPSpam supports Fluent Forms, Contact Form 7, Elementor Forms, and more.
+Need help setting this up or want to block countries in other form builders? oopspam supports Fluent Forms, Contact Form 7, Elementor Forms, and more.

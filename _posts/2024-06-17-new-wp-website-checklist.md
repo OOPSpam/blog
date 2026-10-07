@@ -31,7 +31,7 @@ Anything publicly available will be found by bots. For example, if you open your
 
 ## Secure Your Contact Forms
 
-When you are ready to publish your site, make sure to [secure your contact forms](https://www.oopspam.com/blog/best-wordpress-form-builder-plugins) with spam protection tools like OOPSpam (paid) or Turnstile (free). These tools help prevent spam and protect your site from malicious submissions.
+When you are ready to publish your site, make sure to [secure your contact forms](https://www.oopspam.com/blog/best-wordpress-form-builder-plugins) with spam protection tools like oopspam (paid) or Turnstile (free). These tools help prevent spam and protect your site from malicious submissions.
 
 ## Scan WordPress for Known Vulnerabilities
 

@@ -4,7 +4,7 @@ title: How to Block IPs from VPN and Cloud Providers in Zapier?
 date: 2025-03-19T03:25:00.000Z
 author: chazie
 image: /assets/posts/blockvpn_dc.jpg
-description: Block spam submissions in Zapier with OOPSpam’s VPN and cloud
+description: Block spam submissions in Zapier with oopspam’s VPN and cloud
   provider blocking features. Learn how to prevent junk form entries while
   keeping real users.
 tags:
@@ -16,7 +16,7 @@ tags:
 
 Spam submissions are a [common problem](https://www.oopspam.com/blog/5-common-spam-problems-in-zapier-how-to-fix-them) for website owners, form managers, and business professionals dealing with online inquiries. Many spammers hide their identity using VPNs (Virtual Private Networks) and cloud provider servers, making it harder to detect and prevent their automated spam attacks.
 
-If you’re tired of dealing with junk submissions, [OOPSpam’s Zapier integration](https://zapier.com/apps/oopspam/integrations) now has two new settings that can help:
+If you’re tired of dealing with junk submissions, [oopspam’s Zapier integration](https://zapier.com/apps/oopspam/integrations) now has two new settings that can help:
 
 * **Block VPNs** – This prevents form submissions from IPs linked to VPN services.
 * **Block Cloud Providers** – This blocks IPs associated with cloud hosting services, commonly used by spammers to send automated spam.
@@ -39,13 +39,13 @@ Spammers don’t manually send junk messages. Instead, they use automated script
 
 Since VPN and cloud provider IPs are constantly changing, traditional blacklists don’t always work. Spammers take advantage of this to rotate IP addresses and keep bypassing security filters.
 
-This is where OOPSpam’s new blocking features in Zapier come in handy.
+This is where oopspam’s new blocking features in Zapier come in handy.
 
-## **How OOPSpam’s Zapier Integration Helps**
+## **How oopspam’s Zapier Integration Helps**
 
-![How OOPSpam’s Zapier Integration Helps](/blog/assets/posts/oopspam-zapier-integrations.png "OOPSpam’s Zapier Integration")
+![How oopspam’s Zapier Integration Helps](/blog/assets/posts/oopspam-zapier-integrations.png "oopspam’s Zapier Integration")
 
-With the latest OOPSpam Zapier integration, you can automatically block spam from VPNs and cloud providers. Here’s how these two settings work:
+With the latest oopspam Zapier integration, you can automatically block spam from VPNs and cloud providers. Here’s how these two settings work:
 
 ### **Block VPNs**
 
@@ -63,45 +63,45 @@ This setting prevents submissions from IPs associated with 1,500+ cloud provider
 * Real users typically don’t submit forms from cloud servers, this setting is safe to enable in most cases.
 * If an IP falls within a cloud provider’s range, it is almost always associated with automated scripts or bots, not human users.
 
-OOPSpam’s IP database is regularly updated, but since IPs sometimes change hands, occasional false positives may occur. By enabling these settings, you can significantly cut down on spam, keeping your forms secure and free from automated attacks.
+oopspam’s IP database is regularly updated, but since IPs sometimes change hands, occasional false positives may occur. By enabling these settings, you can significantly cut down on spam, keeping your forms secure and free from automated attacks.
 
 ## **Step-by-Step: How to Block VPN and Cloud Provider IPs in Zapier?**
 
-Now, let’s go through the step-by-step process of setting up OOPSpam’s VPN and Cloud Provider blocking features in [Zapier](https://zapier.com/). This will help prevent spam submissions before they even reach your inbox.
+Now, let’s go through the step-by-step process of setting up oopspam’s VPN and Cloud Provider blocking features in [Zapier](https://zapier.com/). This will help prevent spam submissions before they even reach your inbox.
 
-### **Step 1: Access the OOPSpam Zapier Integration**
+### **Step 1: Access the oopspam Zapier Integration**
 
-![Access the OOPSpam Zapier Integration](/blog/assets/posts/oogle-forms-and-oopspam-integration-in-zapier.png "Access the OOPSpam Zapier Integration")
+![Access the oopspam Zapier Integration](/blog/assets/posts/oogle-forms-and-oopspam-integration-in-zapier.png "Access the oopspam Zapier Integration")
 
-First, log into your Zapier account and navigate to the Zap where you want to integrate OOPSpam’s spam filtering.
+First, log into your Zapier account and navigate to the Zap where you want to integrate oopspam’s spam filtering.
 
-If you haven’t connected OOPSpam yet:
+If you haven’t connected oopspam yet:
 
 1. Go to **"My Apps"** in Zapier’s dashboard.
-2. Search for **OOPSpam** and click **"Connect a new account."**
-3. Enter your **OOPSpam API key** (found in your OOPSpam account dashboard).
+2. Search for **oopspam** and click **"Connect a new account."**
+3. Enter your **oopspam API key** (found in your oopspam account dashboard).
 4. Click **Continue** to finalize the connection.
 
-Once connected, you’ll be able to use OOPSpam’s spam filtering in your workflows.
+Once connected, you’ll be able to use oopspam’s spam filtering in your workflows.
 
 ### **Step 2: Configure VPN and Cloud Provider Blocking in Zapier**
 
 ![Configure VPN and Cloud Provider Blocking in Zapier](/blog/assets/posts/configure-vpn-and-cloud-provider-blocking-in-zapier.png "VPN and Cloud Provider Blocking in Zapier")
 
-Now that [OOPSpam](https://www.oopspam.com/) is integrated into Zapier, let’s configure the new settings to block spam from VPNs and cloud providers.
+Now that [oopspam](https://www.oopspam.com/) is integrated into Zapier, let’s configure the new settings to block spam from VPNs and cloud providers.
 
-1. Open your Zap and select the **"OOPSpam – Check for Spam"** action.
+1. Open your Zap and select the **"oopspam – Check for Spam"** action.
 2. Scroll down to locate the new settings:
 3. * **Block  IP addresses from Cloud Providers** (Toggle to "True" to block spam from cloud-hosted servers.)
 
    * **Block IP addresses from VPN Providers** (Toggle to "True" if you want to block VPN submissions.)
 4. Click **"Continue"** to apply these changes.
 
-### **Step 3: Map Your Form Submission Data to OOPSpam**
+### **Step 3: Map Your Form Submission Data to oopspam**
 
-![Map Your Form Submission Data to OOPSpam](/blog/assets/posts/map-your-form-submission-data-to-oopspam.png "Map Your Form Submission Data to OOPSpam")
+![Map Your Form Submission Data to oopspam](/blog/assets/posts/map-your-form-submission-data-to-oopspam.png "Map Your Form Submission Data to oopspam")
 
-To ensure accurate spam detection, you need to properly map your form fields to OOPSpam’s system.
+To ensure accurate spam detection, you need to properly map your form fields to oopspam’s system.
 
 1. Under the **"Check for Spam"** action, select the form fields you want to scan for spam:
 2. * **Email Address** – Select the field that contains the email address submitted in your form.
@@ -109,7 +109,7 @@ To ensure accurate spam detection, you need to properly map your form fields to 
    * **Content** – Choose the field containing the message or text input.
 
    * **Sender IP** – Map fields like IP addresses to improve filtering accuracy.
-3. Double-check that the correct data is being passed to OOPSpam for analysis.
+3. Double-check that the correct data is being passed to oopspam for analysis.
 
 ### **Step 4: Test the Blocking Settings**
 
@@ -153,6 +153,6 @@ To get the most out of these settings, here are some best practices to follow:
 
 ## **Final thoughts**
 
-If you’re dealing with frequent spam submissions, OOPSpam’s new VPN and cloud provider [blocking feature in Zapier](https://www.oopspam.com/integrations/spam-protection-for-interfaces) can make a big difference. By following the steps outlined above, you can cut down on spam while keeping your forms accessible to real users. Just be sure to test and monitor your settings to avoid blocking legitimate visitors.
+If you’re dealing with frequent spam submissions, oopspam’s new VPN and cloud provider [blocking feature in Zapier](https://www.oopspam.com/integrations/spam-protection-for-interfaces) can make a big difference. By following the steps outlined above, you can cut down on spam while keeping your forms accessible to real users. Just be sure to test and monitor your settings to avoid blocking legitimate visitors.
 
-With these steps, your forms stay secure, spam-free, and efficient. Don’t let spammers disrupt your business—[set up OOPSpam](https://app.oopspam.com/Identity/Account/Register) in Zapier today and take control of your submissions.
+With these steps, your forms stay secure, spam-free, and efficient. Don’t let spammers disrupt your business—[set up oopspam](https://app.oopspam.com/Identity/Account/Register) in Zapier today and take control of your submissions.

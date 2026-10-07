@@ -5,7 +5,7 @@ date: 2025-08-19T00:20:00.000+08:00
 last_modified_at: 2026-01-06T11:36:00.000+08:00
 author: chazie
 image: /blog/assets/posts/mailpoet_header.png
-description: MailPoet lacks built-in country blocking, use OOPSpam to filter
+description: MailPoet lacks built-in country blocking, use oopspam to filter
   signups, segment by region with WooCommerce, or block access entirely via
   Cloudflare.
 tags:
@@ -24,7 +24,7 @@ Not directly. MailPoet doesn’t allow you to prevent users from certain countri
 However, there are multiple ways to work around this limitation:
 
 * Segment subscribers by country using WooCommerce data
-* Filter form submissions using OOPSpam Anti-Spam
+* Filter form submissions using oopspam Anti-Spam
 * Block entire countries from your site using Cloudflare firewall rules
 * Combine segmentation and plugins for a more advanced setup
 
@@ -55,15 +55,15 @@ This lets you:
 
 > This method filters who receives your emails, not who can submit a form. It requires WooCommerce installed and integrated with MailPoet. It also doesn’t stop subscriptions from users in those regions.*
 
-## **2. Block Country Submissions in MailPoet Forms with OOPSpam**
+## **2. Block Country Submissions in MailPoet Forms with oopspam**
 
-![OOPSpam Anti-Spam](/blog/assets/posts/oopspam-anti-spam-overview.png "OOPSpam Anti-Spam")
+![oopspam Anti-Spam](/blog/assets/posts/oopspam-anti-spam-overview.png "oopspam Anti-Spam")
 
-If you want to prevent unwanted signups at the form level, the best way is to use a third-party plugin like [OOPSpam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/) (that’s us 👋).
+If you want to prevent unwanted signups at the form level, the best way is to use a third-party plugin like [oopspam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/) (that’s us 👋).
 
-OOPSpam adds real-time spam filtering and allows you to block form submissions based on country, language, or suspicious behavior. It integrates with multiple form plugins, including MailPoet's subscription forms.
+oopspam adds real-time spam filtering and allows you to block form submissions based on country, language, or suspicious behavior. It integrates with multiple form plugins, including MailPoet's subscription forms.
 
-### **What OOPSpam Adds to MailPoet**
+### **What oopspam Adds to MailPoet**
 
 When connected, you gain:
 
@@ -78,21 +78,21 @@ When connected, you gain:
 
 **Step 1: Install the Plugin**
 
-From your WordPress dashboard: Go to **Plugins > Add New**, search for **OOPSpam Anti-Spam**, then install and activate it.
+From your WordPress dashboard: Go to **Plugins > Add New**, search for **oopspam Anti-Spam**, then install and activate it.
 
 **Step 2: Connect Your API Key**
 
-Create an account at [OOPSpam.com](https://app.oopspam.com/Identity/Account/Login), generate your API key
+Create an account at [oopspam.com](https://app.oopspam.com/Identity/Account/Login), generate your API key
 
 ![Generate your API key](/blog/assets/posts/oopspam-dashboard-api.png "Generate your API key")
 
-and paste it into **OOPSpam > Settings** in WordPress.
+and paste it into **oopspam > Settings** in WordPress.
 
-![Paste it into OOPSpam > Settings in WordPress](/blog/assets/posts/oopspam-api-key.png "Paste it into OOPSpam > Settings in WordPress")
+![Paste it into oopspam > Settings in WordPress](/blog/assets/posts/oopspam-api-key.png "Paste it into oopspam > Settings in WordPress")
 
 **Step 3: Enable Spam Protection for MailPoet**
 
-Scroll to the **MailPoet** section in OOPSpam settings and toggle it on.
+Scroll to the **MailPoet** section in oopspam settings and toggle it on.
 
 ![Enable Spam Protection for MailPoet](/blog/assets/posts/enable-spam-protection-for-mailpoet.png "Enable Spam Protection for MailPoet")
 
@@ -105,11 +105,11 @@ Choose whether to:
 
 ![Configure Country Rules](/blog/assets/posts/country-filtering-settings.png "Configure Country Rules")
 
-Save your settings, and OOPSpam will handle filtering at the form level.
+Save your settings, and oopspam will handle filtering at the form level.
 
 ### **Reviewing Blocked Submissions**
 
-[OOPSpam](https://www.oopspam.com/) gives you detailed [logging](https://help.oopspam.com/wordpress/form-entries/), including:
+[oopspam](https://www.oopspam.com/) gives you detailed [logging](https://help.oopspam.com/wordpress/form-entries/), including:
 
 * IP address
 * Spam score
@@ -119,11 +119,11 @@ Save your settings, and OOPSpam will handle filtering at the form level.
 
 You can monitor form activity and fine-tune your rules as needed, all from your dashboard
 
-![OOPSpam Dashboard logs](/blog/assets/posts/form-spam-entries-oopspam.png "OOPSpam Dashboard logs")
+![oopspam Dashboard logs](/blog/assets/posts/form-spam-entries-oopspam.png "oopspam Dashboard logs")
 
-or the OOPSpam online portal.
+or the oopspam online portal.
 
-![OOPSpam online portal](/blog/assets/posts/screenshot-1.png "OOPSpam online portal")
+![oopspam online portal](/blog/assets/posts/screenshot-1.png "oopspam online portal")
 
 ## **3. Block Countries from Accessing Your Site with Cloudflare**
 
@@ -155,11 +155,11 @@ Traffic from those countries will now be blocked across your entire site, includ
 * You must comply with legal restrictions
 * You want to reduce server load from irrelevant traffic
 
-Cloudflare doesn’t give you form-level visibility like OOPSpam, but it’s effective for broad access control.
+Cloudflare doesn’t give you form-level visibility like oopspam, but it’s effective for broad access control.
 
 ## **4. Combine MailPoet Segmentation + Plugins for Stronger Control**
 
-For the most control, consider combining: [OOPSpam](https://www.oopspam.com/) to prevent signups from unwanted countries and MailPoet segmentation to prevent email delivery to unwanted countries.
+For the most control, consider combining: [oopspam](https://www.oopspam.com/) to prevent signups from unwanted countries and MailPoet segmentation to prevent email delivery to unwanted countries.
 
 This dual approach allows you to:
 
@@ -210,7 +210,7 @@ This dual approach allows you to:
       <td>Targeted campaigns by country</td>
     </tr>
     <tr>
-      <td>OOPSpam Plugin</td>
+      <td>oopspam Plugin</td>
       <td>Form submissions</td>
       <td>Blocking fake or unwanted signups</td>
     </tr>
@@ -220,7 +220,7 @@ This dual approach allows you to:
       <td>Network-level blocking and compliance</td>
     </tr>
     <tr>
-      <td>Combination (OOPSpam + Segments)</td>
+      <td>Combination (oopspam + Segments)</td>
       <td>Both form + email delivery</td>
       <td>End-to-end control for filtering and targeting</td>
     </tr>
@@ -229,7 +229,7 @@ This dual approach allows you to:
 
 ## **Final thoughts**
 
-MailPoet doesn’t include built-in country-blocking for subscriptions, but that doesn’t mean you’re stuck. Using OOPSpam Anti-Spam, you can block form submissions from specific countries or languages. Pair it with MailPoet’s WooCommerce segmentation and Cloudflare’s firewall for full control over who can access your forms and receive your emails.
+MailPoet doesn’t include built-in country-blocking for subscriptions, but that doesn’t mean you’re stuck. Using oopspam Anti-Spam, you can block form submissions from specific countries or languages. Pair it with MailPoet’s WooCommerce segmentation and Cloudflare’s firewall for full control over who can access your forms and receive your emails.
 
 ## Related guides
 

@@ -5,16 +5,16 @@ date: 2026-06-07T13:16:00.000+08:00
 last_modified_at: 2026-09-04T20:33:00.000+08:00
 author: chazie
 image: /blog/assets/posts/email_list_brevo.jpg
-description: Learn how to verify and clean your Brevo email list with OOPSpam to
+description: Learn how to verify and clean your Brevo email list with oopspam to
   remove risky contacts, improve deliverability, and boost engagement.
 tags:
   - Brevo
 ---
-Email lists naturally collect invalid, inactive, and spam contacts over time, which can hurt deliverability and engagement. OOPSpam's new [Brevo](https://www.brevo.com/) integration connects directly to your account, scans your lists against a spam database, and lets you act on flagged contacts, all without exporting a single CSV.
+Email lists naturally collect invalid, inactive, and spam contacts over time, which can hurt deliverability and engagement. oopspam's new [Brevo](https://www.brevo.com/) integration connects directly to your account, scans your lists against a spam database, and lets you act on flagged contacts, all without exporting a single CSV.
 
 ## **Step 1: Find the Brevo Integration**
 
-From your[ OOPSpam Dashboard](https://app.oopspam.com/), click **Integrations** in the left sidebar. You'll see Brevo listed alongside the other available integrations. Click **Connect** on the Brevo card.
+From your[ oopspam Dashboard](https://app.oopspam.com/), click **Integrations** in the left sidebar. You'll see Brevo listed alongside the other available integrations. Click **Connect** on the Brevo card.
 
 ![Step 1: Find the Brevo Integration](/blog/assets/posts/brevo-1.png "Step 1: Find the Brevo Integration")
 
@@ -28,19 +28,19 @@ Paste it into the field and click **Connect**.
 
 ## **Step 3: Pick a List to Scan**
 
-After connecting, OOPSpam fetches your Brevo lists along with their subscriber counts. Click on the list you want to check.
+After connecting, oopspam fetches your Brevo lists along with their subscriber counts. Click on the list you want to check.
 
 ![Step 3: Pick a List to Scan](/blog/assets/posts/brevo-3.png "Step 3: Pick a List to Scan")
 
 ## **Step 4: Preview Contacts and Start the Scan**
 
-You'll see a full preview of the contacts in your selected list before the scan runs. OOPSpam will check each address against its spam database to identify risky emails.
+You'll see a full preview of the contacts in your selected list before the scan runs. oopspam will check each address against its spam database to identify risky emails.
 
 ![Step 4: Preview Contacts and Start the Scan](/blog/assets/posts/brevo-4.png "Step 4: Preview Contacts and Start the Scan")
 
-Click **Scan All Emails** when ready. For larger lists, the scan runs in two steps: first loading all contacts, then scanning them with OOPSpam. Either way, the process runs automatically.
+Click **Scan All Emails** when ready. For larger lists, the scan runs in two steps: first loading all contacts, then scanning them with oopspam. Either way, the process runs automatically.
 
-*Note:* scanning uses your OOPSpam API credits.
+*Note:* scanning uses your oopspam API credits.
 
 ## **Step 5: Fine-Tune What Counts as Risky (optional)**
 
@@ -66,7 +66,7 @@ You can also set **Allowed countries** and **Blocked countries** to restrict sca
 
 ## **Step 7: Let the Scan Run in the Background**
 
-Once you click **Scan All Emails**, the scan now runs entirely in the background, which is especially handy for large lists. You can close the tab and keep working; OOPSpam emails you the moment the scan finishes.
+Once you click **Scan All Emails**, the scan now runs entirely in the background, which is especially handy for large lists. You can close the tab and keep working; oopspam emails you the moment the scan finishes.
 
 ![Step 7: Let the Scan Run in the Background](/blog/assets/posts/scanning-emails.png "Step 7: Let the Scan Run in the Background")
 
@@ -113,7 +113,7 @@ Most email problems don't announce themselves, they build up quietly. A few reas
 * Engagement metrics become unreliable when a chunk of your list can't or won't open anything
 * Brevo charges by email volume, removing dead contacts keeps your costs in check
 
-A clean list means your campaigns reach real people and your stats reflect reality. Connect OOPSpam to Brevo once, and you can run a scan whenever your list needs it. No imports, no spreadsheets, no manual cross-referencing.
+A clean list means your campaigns reach real people and your stats reflect reality. Connect oopspam to Brevo once, and you can run a scan whenever your list needs it. No imports, no spreadsheets, no manual cross-referencing.
 
 ## Related guides
 

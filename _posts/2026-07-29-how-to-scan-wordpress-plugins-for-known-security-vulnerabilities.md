@@ -50,7 +50,7 @@ Install OOPVulns from **Plugins → Add New**, then **activate it**. 
 
 ![Install OOPVulns from Plugins](/blog/assets/posts/install-oopvulns-from-plugins.png "Install OOPVulns from Plugins")
 
-Enter your **OOPSpam API** **key**. Go to Settings and **enable vulnerability scanning**, it's off by default until an admin enables it.
+Enter your **oopspam API** **key**. Go to Settings and **enable vulnerability scanning**, it's off by default until an admin enables it.
 
 ![Go to Settings and enable vulnerability scanning](/blog/assets/posts/oopvulns-for-wordpress.png "Go to Settings and enable vulnerability scanning")
 

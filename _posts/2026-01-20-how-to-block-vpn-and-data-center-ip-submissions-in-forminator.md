@@ -5,7 +5,7 @@ date: 2026-01-21T02:46:00.000+08:00
 author: chazie
 image: /blog/assets/posts/header_forminator_block.jpg
 description: Learn how to block VPN and data center IP submissions in Forminator
-  using OOPSpam and Cloudflare. Clear steps, simple setup, real protection.
+  using oopspam and Cloudflare. Clear steps, simple setup, real protection.
 tags:
   - Forminator
   - Cloudflare
@@ -14,7 +14,7 @@ tags:
 
 [Forminator](https://wordpress.org/plugins/forminator/) does not natively block VPN or data center IP addresses. To stop this type of spam, you must use third-party tools.
 
-Forminator-friendly solution is [OOPSpam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/) (that’s us 👋), which filters submissions using real-time IP intelligence before spam reaches your inbox. For advanced cases, Cloudflare Security Rules can add an extra layer at the network edge.
+Forminator-friendly solution is [oopspam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/) (that’s us 👋), which filters submissions using real-time IP intelligence before spam reaches your inbox. For advanced cases, Cloudflare Security Rules can add an extra layer at the network edge.
 
 This guide explains both methods clearly and shows how to use them correctly with Forminator.
 
@@ -26,21 +26,21 @@ VPN services rotate exit IPs constantly. Cloud providers operate massive address
 
 That gap is why VPN and data center spam is so common on Forminator sites.
 
-## **Method 1: Blocking VPN And Cloud IPs In Forminator With OOPSpam**
+## **Method 1: Blocking VPN And Cloud IPs In Forminator With oopspam**
 
 The setup is straightforward.
 
-First, install and activate the **OOPSpam Anti-Spam plugin** from the WordPress plugin repository.
+First, install and activate the **oopspam Anti-Spam plugin** from the WordPress plugin repository.
 
-![OOPSpam](/blog/assets/posts/oopspam-anti-spam-overview.png "OOPSpam")
+![oopspam](/blog/assets/posts/oopspam-anti-spam-overview.png "oopspam")
 
-After activation, [create an account](https://app.oopspam.com/Identity/Account/Login) on the OOPSpam website and **generate an API key**. This key connects your site to OOPSpam’s real-time detection service.
+After activation, [create an account](https://app.oopspam.com/Identity/Account/Login) on the oopspam website and **generate an API key**. This key connects your site to oopspam’s real-time detection service.
 
-![OOPSpam dashboard](/blog/assets/posts/oopspam-dashboard-api.png "OOPSpam Dashboard")
+![oopspam dashboard](/blog/assets/posts/oopspam-dashboard-api.png "oopspam Dashboard")
 
-Paste the API key into **Settings → OOPSpam Anti-Spam** inside WordPress. 
+Paste the API key into **Settings → oopspam Anti-Spam** inside WordPress. 
 
-![Paste the API key into Settings in OOPSpam Anti-Spam](/blog/assets/posts/oopspam-api-key.png "Paste the API key into Settings in OOPSpam Anti-Spam")
+![Paste the API key into Settings in oopspam Anti-Spam](/blog/assets/posts/oopspam-api-key.png "Paste the API key into Settings in oopspam Anti-Spam")
 
 Once saved, scroll down and **turn on spam protection for Forminator**.
 
@@ -50,7 +50,7 @@ At this point, Forminator is [already protected at a basic level](https://www.oo
 
 ## **Enabling IP Filtering For Forminator Submissions**
 
-Inside the OOPSpam settings, open the **IP Filtering** tab. This is where infrastructure-based spam is handled.
+Inside the oopspam settings, open the **IP Filtering** tab. This is where infrastructure-based spam is handled.
 
 ![Enabling IP Filtering For Forminator](/blog/assets/posts/ip-filtering-oopspam.png "Enabling IP Filtering For Forminator")
 
@@ -65,7 +65,7 @@ Not all spam is fully automated. Some abuse is slow, repetitive, or intentionall
 
 ![Manual Moderation](/blog/assets/posts/manual-moderation-settings-oopspam.png "Manual Moderation")
 
-[OOPSpam](https://www.oopspam.com/) includes a **Manual Moderation** section for these cases. It allows you to fine-tune protection when patterns appear. You can:
+[oopspam](https://www.oopspam.com/) includes a **Manual Moderation** section for these cases. It allows you to fine-tune protection when patterns appear. You can:
 
 * Block specific IP addresses that repeatedly submit spam
 * Block email addresses used by known offenders
@@ -111,6 +111,6 @@ Example for Amazon AWS: (ip.src.asnum eq 16509)
 
 Forminator does not block VPN or data center IPs by default. That is normal. It is not designed to maintain IP intelligence. With the right third-party tools, this limitation is easy to address.
 
-OOPSpam provides the cleanest and most Forminator-friendly solution. Cloudflare offers a powerful backup option when needed. Used together or separately, they allow you to stop infrastructure-based spam without turning your forms into an obstacle course for real users.
+oopspam provides the cleanest and most Forminator-friendly solution. Cloudflare offers a powerful backup option when needed. Used together or separately, they allow you to stop infrastructure-based spam without turning your forms into an obstacle course for real users.
 
 That balance is the goal.

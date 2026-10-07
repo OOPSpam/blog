@@ -5,7 +5,7 @@ date: 2025-11-21T04:39:00.000+08:00
 author: chazie
 image: /blog/assets/posts/acf_header.png
 description: Protect your ACF Frontend Forms from spam with honeypots, CAPTCHAs,
-  code validation, and OOPSpam. Keep submissions clean and stop bots fast.
+  code validation, and oopspam. Keep submissions clean and stop bots fast.
 tags:
   - ACF Frontend Forms
   - Advanced Custom Fields
@@ -14,7 +14,7 @@ tags:
 ---
 ![Advanced Custom Fields](/blog/assets/posts/acf-advanced-custom-fields.png "Advanced Custom Fields")
 
-[Advanced Custom Fields](https://www.advancedcustomfields.com/) (ACF) Frontend Forms are highly flexible, but they do not include built-in spam protection. To keep bots out, you need to use a honeypot field, add CAPTCHA manually or through third-party ACF field add-ons, validate submissions using hooks, or install an anti-spam plugin like OOPSpam. A layered approach gives you the strongest protection with minimal friction.
+[Advanced Custom Fields](https://www.advancedcustomfields.com/) (ACF) Frontend Forms are highly flexible, but they do not include built-in spam protection. To keep bots out, you need to use a honeypot field, add CAPTCHA manually or through third-party ACF field add-ons, validate submissions using hooks, or install an anti-spam plugin like oopspam. A layered approach gives you the strongest protection with minimal friction.
 
 This guide explains each method in simple, actionable steps for developers, agencies, and WordPress site owners working with ACF.
 
@@ -22,27 +22,27 @@ This guide explains each method in simple, actionable steps for developers, agen
 
 Anti-spam plugins provide the strongest first layer of protection. They use machine learning, IP reputation checks, [rate limiting](https://www.oopspam.com/blog/protecting-forms-with-rate-limiting-in-wordpress-using-oopspam), and contextual detection to filter out bad submissions. This works better than stand-alone CAPTCHAs or honeypots because bots evolve quickly.
 
-**OOPSpam Anti-Spam** (that’s us 👋) supports ACF Frontend Forms and filters spam before WordPress saves the submission. It uses ML-based scoring, country rules, VPN/proxy blocking, rate limiting, and detailed logs.
+**oopspam Anti-Spam** (that’s us 👋) supports ACF Frontend Forms and filters spam before WordPress saves the submission. It uses ML-based scoring, country rules, VPN/proxy blocking, rate limiting, and detailed logs.
 
-## **How to Set Up OOPSpam for ACF Frontend Forms**
+## **How to Set Up oopspam for ACF Frontend Forms**
 
 This setup protects all forms on your WordPress site, including ACF Frontend Forms.
 
-### **Step 1: Install OOPSpam Anti-Spam**
+### **Step 1: Install oopspam Anti-Spam**
 
-Go to **Plugins → Add New** and search for **[OOPSpam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/)**. Install and activate.
+Go to **Plugins → Add New** and search for **[oopspam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/)**. Install and activate.
 
-![OOPSpam Anti-Spam](/blog/assets/posts/oopspam-anti-spam-overview.png "OOPSpam Anti-Spam")
+![oopspam Anti-Spam](/blog/assets/posts/oopspam-anti-spam-overview.png "oopspam Anti-Spam")
 
 ### **Step 2: Create an account and copy your API key**
 
-Go to **OOPSpam.com**, [create an account](https://app.oopspam.com/Identity/Account/Login), and copy the API key from the dashboard.
+Go to **oopspam.com**, [create an account](https://app.oopspam.com/Identity/Account/Login), and copy the API key from the dashboard.
 
 ![Create an account and copy your API key](/blog/assets/posts/oopspam-dashboard-api.png "Create an account and copy your API key")
 
 ### **Step 3: Paste your API key in WordPress**
 
-Navigate to **OOPSpam - General Settings → My API Key.** Paste the key from your **OOPSpam Dashboard** account.
+Navigate to **oopspam - General Settings → My API Key.** Paste the key from your **oopspam Dashboard** account.
 
 ![Paste your API key in WordPress](/blog/assets/posts/oopspam-api-key.png "Paste your API key in WordPress")
 
@@ -50,11 +50,11 @@ Turn on **ACF Frontend Forms Spam Protection** to ensure your ACF forms are full
 
 ![Turn on ACF Frontend Forms Spam Protection](/blog/assets/posts/acf-spam-protection.png "Turn on ACF Frontend Forms Spam Protection")
 
-## **Enable Advanced Spam Protection in OOPSpam**
+## **Enable Advanced Spam Protection in oopspam**
 
-OOPSpam includes several side filters that work together to protect ACF Frontend Forms from automated spam, high-volume attacks, and human-assisted spam. These features run invisibly without affecting legitimate users.
+oopspam includes several side filters that work together to protect ACF Frontend Forms from automated spam, high-volume attacks, and human-assisted spam. These features run invisibly without affecting legitimate users.
 
-Turn on the following options inside OOPSpam:
+Turn on the following options inside oopspam:
 
 * **VPN/Proxy/TOR Blocking** – Blocks anonymous networks often used by bots.
 * **Country Rules** – Allow only the regions you serve.
@@ -97,7 +97,7 @@ This prevents the post from being saved.
 
 ## **Implement CAPTCHA for ACF Frontend Forms**
 
-[CAPTCHAs](https://www.oopspam.com/blog/best-captcha-alternatives) increase friction slightly but stop basic bot traffic. They work best as an extra layer, combined with honeypots or OOPSpam.
+[CAPTCHAs](https://www.oopspam.com/blog/best-captcha-alternatives) increase friction slightly but stop basic bot traffic. They work best as an extra layer, combined with honeypots or oopspam.
 
 ![CAPTCHA for ACF Frontend Forms](/blog/assets/posts/captcha-image.png "CAPTCHA for ACF Frontend Forms")
 
@@ -155,11 +155,11 @@ Use server variables or an IP detection API to filter regions you do not serve.
 
 ## **Putting It All Together**
 
-If you use OOPSpam, you don’t need honeypots, CAPTCHA, or manual validation, OOPSpam handles everything for you. For most users, the simplest and strongest setup is:
+If you use oopspam, you don’t need honeypots, CAPTCHA, or manual validation, oopspam handles everything for you. For most users, the simplest and strongest setup is:
 
-### **Use OOPSpam Anti-Spam**
+### **Use oopspam Anti-Spam**
 
-OOPSpam replaces the need for:
+oopspam replaces the need for:
 
 * Honeypots
 * CAPTCHA
@@ -168,7 +168,7 @@ OOPSpam replaces the need for:
 
 All of the protections are built in, and you can turn them on with a toggle, no development work required.
 
-### **Optional alternatives (if not using OOPSpam):**
+### **Optional alternatives (if not using oopspam):**
 
 * Add a honeypot manually
 * Add CAPTCHA manually or via a third-party ACF field
@@ -178,7 +178,7 @@ These methods work, but they require coding, testing, and ongoing maintenance.
 
 ## **Final Takeaway**
 
-ACF Frontend Forms don’t include native spam protection, so you must add it yourself. If you want a hands-off, accurate, and easy solution, OOPSpam alone is enough. It covers all the major spam threats with one plugin and a few settings.
+ACF Frontend Forms don’t include native spam protection, so you must add it yourself. If you want a hands-off, accurate, and easy solution, oopspam alone is enough. It covers all the major spam threats with one plugin and a few settings.
 
 If you prefer to implement protection yourself, you can combine honeypots, CAPTCHA, and server-side validation to build your own layered setup, but it requires more work.
 

@@ -5,7 +5,7 @@ date: 2025-02-13T05:28:00.000Z
 author: chazie
 image: /assets/posts/stop-spam-on-your-paid-memberships-pro-membership-site.png
 description: Keep your Paid Memberships Pro site spam-free with machine learning
-  OOPSpam, PMPro’s built-in features, CAPTCHAs, and Cloudflare Turnstile for
+  oopspam, PMPro’s built-in features, CAPTCHAs, and Cloudflare Turnstile for
   secure sign-ups.
 tags:
   - Paid Memberships Pro
@@ -15,7 +15,7 @@ tags:
 
 Running a membership site using [Paid Memberships Pro](https://www.paidmembershipspro.com/) (PMPro) offers numerous benefits, but it also opens the door to potential spam threats. Spam can clutter your user database, skew analytics, and pose security risks. Implementing robust anti-spam measures is essential to maintain the integrity and professionalism of your site.
 
-Let’s explore five effective strategies to prevent spam on your PMPro membership site. We'll delve into built-in features, third-party integrations, and advanced tools like the [OOPSpam Anti-Spam plugin](https://wordpress.org/plugins/oopspam-anti-spam/) to ensure your site remains secure and user-friendly.
+Let’s explore five effective strategies to prevent spam on your PMPro membership site. We'll delve into built-in features, third-party integrations, and advanced tools like the [oopspam Anti-Spam plugin](https://wordpress.org/plugins/oopspam-anti-spam/) to ensure your site remains secure and user-friendly.
 
 ## **Why Is Spam a Big Problem for Membership Sites?**
 
@@ -28,13 +28,13 @@ Spam isn’t just annoying; it can seriously harm your business. Here’s why ta
 
 The bottom line? Ignoring spam isn’t an option. Now, let’s dive into how you can stop it.
 
-## **1. Use OOPSpam for Machine Learning Spam Protection**
+## **1. Use oopspam for Machine Learning Spam Protection**
 
-![OOPSpam Anti-Spam plugin banner with tagline "Automate your Spam and Abuse Detection."](/blog/assets/posts/oopspam-anti-spam-overview.png "OOPSpam Anti-Spam Plugin Overview")
+![oopspam Anti-Spam plugin banner with tagline "Automate your Spam and Abuse Detection."](/blog/assets/posts/oopspam-anti-spam-overview.png "oopspam Anti-Spam Plugin Overview")
 
-If you want the most effective and hassle-free way to stop spam, [OOPSpam](https://www.oopspam.com/) (that’s us! 👋) is your best option. Unlike CAPTCHA-based solutions that frustrate users, OOPSpam uses advanced machine learning to block spam before it even reaches your site.
+If you want the most effective and hassle-free way to stop spam, [oopspam](https://www.oopspam.com/) (that’s us! 👋) is your best option. Unlike CAPTCHA-based solutions that frustrate users, oopspam uses advanced machine learning to block spam before it even reaches your site.
 
-### **Why OOPSpam?**
+### **Why oopspam?**
 
 * **No CAPTCHAs Required** – No annoying puzzles or image-clicking.
 * **Customizable Filtering** – Block specific IP addresses, email domains, and keywords.
@@ -43,33 +43,33 @@ If you want the most effective and hassle-free way to stop spam, [OOPSpam](https
 * **Rate Limiting** – Prevents abuse and bot attacks.
 * **Machine Learning Detection** – Learns from spam patterns to improve accuracy over time.
 
-### **How to Set Up OOPSpam on Your PMPro Membership Site**
+### **How to Set Up oopspam on Your PMPro Membership Site**
 
-![OOPSpam dashboard displaying API usage, average response time, and API key.](/blog/assets/posts/dashboard-sample-data.png "OOPSpam Dashboard Overview")
+![oopspam dashboard displaying API usage, average response time, and API key.](/blog/assets/posts/dashboard-sample-data.png "oopspam Dashboard Overview")
 
-**1. Get an API Key from OOPSpam**
+**1. Get an API Key from oopspam**
 
-* Visit OOPSpam and [sign up](https://app.oopspam.com/Identity/Account/Register).
+* Visit oopspam and [sign up](https://app.oopspam.com/Identity/Account/Register).
 * Copy your **API key** from the dashboard.
 
-**2. Install the OOPSpam WordPress Plugin**
+**2. Install the oopspam WordPress Plugin**
 
 * Go to **WordPress Dashboard > Plugins > Add New**.
-* Search for **OOPSpam Anti-Spam** and click **Install** Now, then **Activate**.
+* Search for **oopspam Anti-Spam** and click **Install** Now, then **Activate**.
 
-**3. Configure OOPSpam Settings**
+**3. Configure oopspam Settings**
 
-Now that the plugin is installed, you need to connect it to your OOPSpam account and configure spam filtering settings.
+Now that the plugin is installed, you need to connect it to your oopspam account and configure spam filtering settings.
 
-![OOPSpam general settings page showing API key input and sensitivity level adjustment.](/blog/assets/posts/oopspam-general-settings-page.png "OOPSpam General Settings Page")
+![oopspam general settings page showing API key input and sensitivity level adjustment.](/blog/assets/posts/oopspam-general-settings-page.png "oopspam General Settings Page")
 
-* Navigate to **Settings > OOPSpam Anti-Spam**.
+* Navigate to **Settings > oopspam Anti-Spam**.
 * Enter your **API key** in the designated field.
 * Configure additional settings such as country restrictions, language restrictions, and manual moderation as needed.
 
-![OOPSpam settings page showing email and country-based spam filtering options.](/blog/assets/posts/oopspam-spam-filtering-settings.png "OOPSpam Spam Filtering Settings in WordPress")
+![oopspam settings page showing email and country-based spam filtering options.](/blog/assets/posts/oopspam-spam-filtering-settings.png "oopspam Spam Filtering Settings in WordPress")
 
-1. **Go to WordPress Dashboard > Settings > OOPSpam Anti-Spam.**
+1. **Go to WordPress Dashboard > Settings > oopspam Anti-Spam.**
 2. Find the **Country Filtering** section.
 3. Choose one of the following options:
 4. * **Allow messages only from specific countries** – Select countries from which you want to accept messages.
@@ -86,7 +86,7 @@ Now that the plugin is installed, you need to connect it to your OOPSpam account
 
 **4. Customize Spam Protection Settings**
 
-OOPSpam offers advanced customization for fine-tuning spam protection. If you need more control over spam filtering, you can manually block or allow specific IP addresses, email domains, and keywords. 
+oopspam offers advanced customization for fine-tuning spam protection. If you need more control over spam filtering, you can manually block or allow specific IP addresses, email domains, and keywords. 
 
 > This is useful for stopping repeated spam attacks from the same sources or ensuring important submissions aren't mistakenly filtered out.
 
@@ -94,19 +94,19 @@ OOPSpam offers advanced customization for fine-tuning spam protection. If you ne
 
 **How to Set Up Manual Moderation:**
 
-1. **Go to WordPress Dashboard > Settings > OOPSpam Anti-Spam.**
+1. **Go to WordPress Dashboard > Settings > oopspam Anti-Spam.**
 2. Click on the **Manual Moderation** tab.
 3. Enter the specific **IP addresses, email domains, or keywords** you want to **block** or **allow**.
 4. Click **Save Changes** to apply your settings.
 
-**5. Enable OOPSpam for Paid Memberships Pro**
+**5. Enable oopspam for Paid Memberships Pro**
 
 ![Paid Memberships Pro spam protection settings enabled.](/blog/assets/posts/paid-memberships-pro-spam-protection-settings.png "Paid Memberships Pro Spam Protection Settings")
 
-* Ensure that Paid Memberships Pro are **listed under supported forms** in OOPSpam settings.
+* Ensure that Paid Memberships Pro are **listed under supported forms** in oopspam settings.
 * Toggle “**Activate Spam Protection**” to **ON**.
 
-Now, OOPSpam will automatically filter spam from PMPro sign-ups, keeping your membership site secure and bot-free.
+Now, oopspam will automatically filter spam from PMPro sign-ups, keeping your membership site secure and bot-free.
 
 ## **2. Enable Built-in PMPro Spam Protection Features**
 
@@ -202,11 +202,11 @@ Now, you get bot protection without annoying real users.
 
 Spam can be frustrating, but stopping it is easier than you think. Here’s the best strategy:
 
-* **Use OOPSpam** – Machine learning spam filtering (best option). A more advanced filter if other options fails.
+* **Use oopspam** – Machine learning spam filtering (best option). A more advanced filter if other options fails.
 * **Enable PMPro’s built-in tools** – Email verification, approval processes, and membership restrictions.
 * **Add CAPTCHA or Cloudflare Turnstile** – CAPTCHA-free spam prevention.
 
-By implementing these four spam-blocking techniques, your PMPro membership site will remain secure, clean, and easy to manage. If you have [any questions](https://www.oopspam.com/#contact) or need extra guidance, OOPSpam’s support team is always here to help. You can also explore our [documentation](https://www.oopspam.com/help) for detailed setup instructions.
+By implementing these four spam-blocking techniques, your PMPro membership site will remain secure, clean, and easy to manage. If you have [any questions](https://www.oopspam.com/#contact) or need extra guidance, oopspam’s support team is always here to help. You can also explore our [documentation](https://www.oopspam.com/help) for detailed setup instructions.
 
 ## Related guides
 

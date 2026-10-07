@@ -6,12 +6,12 @@ date: 2026-08-18T04:50:00.000+08:00
 author: chazie
 image: /blog/assets/posts/meta_honeypot_spam.png
 description: Discover how honeypot spam protection works in WordPress, its
-  limitations, and when to pair it with OOPSpam or Turnstile for stronger
+  limitations, and when to pair it with oopspam or Turnstile for stronger
   protection.
 tags:
   - Honeypot
 ---
-A [honeypot](https://www.oopspam.com/blog/ways-to-stop-spam#honeypot-filter-spam-with-a-hidden-field) is a hidden form field that's invisible to humans but visible to bots. If it gets filled in, the submission is rejected as spam. It's free, fast, and doesn't annoy visitors. But smart bots, caching plugins, and JavaScript-dependent setups can all break it. For sites that still get spam after adding a honeypot, layer it with [OOPSpam](https://www.oopspam.com/), [Cloudflare Turnstile](https://www.oopspam.com/blog/best-turnstile-alternatives), or [reCAPTCHA v3](https://www.oopspam.com/blog/recaptcha-v2-vs-v3-which-is-right-for-your-website).
+A [honeypot](https://www.oopspam.com/blog/ways-to-stop-spam#honeypot-filter-spam-with-a-hidden-field) is a hidden form field that's invisible to humans but visible to bots. If it gets filled in, the submission is rejected as spam. It's free, fast, and doesn't annoy visitors. But smart bots, caching plugins, and JavaScript-dependent setups can all break it. For sites that still get spam after adding a honeypot, layer it with [oopspam](https://www.oopspam.com/), [Cloudflare Turnstile](https://www.oopspam.com/blog/best-turnstile-alternatives), or [reCAPTCHA v3](https://www.oopspam.com/blog/recaptcha-v2-vs-v3-which-is-right-for-your-website).
 
 ## **How Honeypot Spam Protection Works**
 
@@ -83,7 +83,7 @@ Don't replace the honeypot. Most sites keep it as a free first layer. Add one of
       <td>Free for 10,000 assessments/month, then billed. Ties into Google's data ecosystem.</td>
     </tr>
     <tr>
-      <td><strong>OOPSpam</strong></td>
+      <td><strong>oopspam</strong></td>
       <td>Contact forms, comments, WooCommerce, Mailchimp/MailPoet signups</td>
       <td>API-based detection scoring behavior, content, and IP reputation. No CAPTCHA puzzle. Free tier: 40 spam checks/month, then paid.</td>
     </tr>
@@ -95,25 +95,25 @@ Don't replace the honeypot. Most sites keep it as a free first layer. Add one of
   </tbody>
 </table>
 
-**[OOPSpam](https://www.oopspam.com/wordpress)** (that's us) is worth a closer look because it goes beyond a hidden field. It scores every submission using behavior, content, and IP reputation, and it works across contact forms, comments, [WooCommerce](https://www.oopspam.com/blog/spam-protection-for-woocommerce), and email signup plugins without a CAPTCHA puzzle.
+**[oopspam](https://www.oopspam.com/wordpress)** (that's us) is worth a closer look because it goes beyond a hidden field. It scores every submission using behavior, content, and IP reputation, and it works across contact forms, comments, [WooCommerce](https://www.oopspam.com/blog/spam-protection-for-woocommerce), and email signup plugins without a CAPTCHA puzzle.
 
-### **How to Set Up OOPSpam on WordPress**
+### **How to Set Up oopspam on WordPress**
 
-**Install the plugin.** In your WordPress dashboard, go to **Plugins → Add New**, search for "OOPSpam Anti-Spam," then click **Install Now** and **Activate**.
+**Install the plugin.** In your WordPress dashboard, go to **Plugins → Add New**, search for "oopspam Anti-Spam," then click **Install Now** and **Activate**.
 
-![Install the OOPSpam plugin](/blog/assets/posts/oopspam-anti-spam-overview.png "Install the OOPSpam plugin")
+![Install the oopspam plugin](/blog/assets/posts/oopspam-anti-spam-overview.png "Install the oopspam plugin")
 
-**Create an OOPSpam account.** Sign up at [oopspam.com](https://app.oopspam.com/Identity/Account/Register) (no credit card required). Every account starts with 40 free spam checks per month.
+**Create an oopspam account.** Sign up at [oopspam.com](https://app.oopspam.com/Identity/Account/Register) (no credit card required). Every account starts with 40 free spam checks per month.
 
-![Create an OOPSpam account](/blog/assets/posts/oopspam-dashboard-api.png "Create an OOPSpam account")
+![Create an oopspam account](/blog/assets/posts/oopspam-dashboard-api.png "Create an oopspam account")
 
-**Copy your API key.** Log in to your OOPSpam dashboard and **copy the API key** shown there.
+**Copy your API key.** Log in to your oopspam dashboard and **copy the API key** shown there.
 
-**Connect the plugin.** In WordPress, go to **Settings → OOPSpam Anti-Spam**, paste the API key into the **My API Key** field, and save.
+**Connect the plugin.** In WordPress, go to **Settings → oopspam Anti-Spam**, paste the API key into the **My API Key** field, and save.
 
 ![Connect the plugin](/blog/assets/posts/oopspam-api-key.png "Connect the plugin")
 
-**Enable protection per form plugin.** If you use [Contact Form 7](https://www.oopspam.com/blog/8-ways-to-protect-your-contact-form-7-from-spam), [WPForms](https://www.oopspam.com/blog/spam-protection-for-wpforms), [Elementor Forms](https://www.oopspam.com/blog/spam-protection-for-elementor-forms), or a similar builder, make sure the "Activate Spam Protection" option is on that plugin's settings page. OOPSpam auto-detects supported form builders and surfaces relevant settings.
+**Enable protection per form plugin.** If you use [Contact Form 7](https://www.oopspam.com/blog/8-ways-to-protect-your-contact-form-7-from-spam), [WPForms](https://www.oopspam.com/blog/spam-protection-for-wpforms), [Elementor Forms](https://www.oopspam.com/blog/spam-protection-for-elementor-forms), or a similar builder, make sure the "Activate Spam Protection" option is on that plugin's settings page. oopspam auto-detects supported form builders and surfaces relevant settings.
 
 ![Enable protection per form plugin](/blog/assets/posts/elementor-atomic-forms-spam-protection.png "Enable protection per form plugin")
 
@@ -125,13 +125,13 @@ Don't replace the honeypot. Most sites keep it as a free first layer. Add one of
 
 ![Manual Moderation](/blog/assets/posts/manual-moderation.png "Manual Moderation")
 
-That's it! OOPSpam runs in the background from that point on, no code changes required.
+That's it! oopspam runs in the background from that point on, no code changes required.
 
-> **A practical setup for 2026:** honeypot (catches dumb bots for free) + Turnstile or OOPSpam (catches everything else) + WordPress's built-in comment moderation as a backstop. Layering catches more than any single tool, because comment spam, form spam, and registration spam don't all behave the same way.
+> **A practical setup for 2026:** honeypot (catches dumb bots for free) + Turnstile or oopspam (catches everything else) + WordPress's built-in comment moderation as a backstop. Layering catches more than any single tool, because comment spam, form spam, and registration spam don't all behave the same way.
 
 ## **Final thoughts**
 
-Honeypots are a good first line of defense: cheap, invisible, and effective against basic bots. They're not enough on their own against modern scrapers or anyone targeting your site specifically. Pair one with Turnstile, reCAPTCHA v3, or OOPSpam depending on your traffic and risk level.
+Honeypots are a good first line of defense: cheap, invisible, and effective against basic bots. They're not enough on their own against modern scrapers or anyone targeting your site specifically. Pair one with Turnstile, reCAPTCHA v3, or oopspam depending on your traffic and risk level.
 
 ## Related guides
 

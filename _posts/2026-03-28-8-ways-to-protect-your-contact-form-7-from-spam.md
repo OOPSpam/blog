@@ -4,7 +4,7 @@ title: 8 Ways to Protect Your Contact Form 7 from Spam
 date: 2026-03-28T20:21:00.000+08:00
 author: chazie
 image: /blog/assets/posts/cf7_header_meta.png
-description: Protect Contact Form 7 from spam using Turnstile, OOPSpam,
+description: Protect Contact Form 7 from spam using Turnstile, oopspam,
   honeypots, and validation. Simple steps to reduce spam and improve form
   security.
 tags:
@@ -15,7 +15,7 @@ tags:
 ---
 ![Contact Form 7](/blog/assets/posts/using-contact-form-7.png "Contact Form 7")
 
-If your [Contact Form 7](https://contactform7.com/) is getting spam, start with two things: enable Cloudflare Turnstile and install OOPSpam. These handle most automated and low-quality submissions right away.
+If your [Contact Form 7](https://contactform7.com/) is getting spam, start with two things: enable Cloudflare Turnstile and install oopspam. These handle most automated and low-quality submissions right away.
 
 Then improve your form with validation, honeypots, and basic filters. This combination is simple to manage and works well for most websites.
 
@@ -65,33 +65,33 @@ To set it up, [create a Turnstile account](https://dash.cloudflare.com/sign-up) 
 
 In WordPress, go to **Contact → Integration**, find Turnstile, and paste your keys. Save the changes, and it will start working immediately.
 
-## **4. Add OOPSpam for Filtering**
+## **4. Add oopspam for Filtering**
 
-[OOPSpam](https://www.oopspam.com/) (that's us 👋) works differently from Turnstile and CAPTCHA. Instead of asking users to complete a challenge, it analyzes each submission in the background. It looks at behavior, content, and technical signals to decide whether a message is spam.
+[oopspam](https://www.oopspam.com/) (that's us 👋) works differently from Turnstile and CAPTCHA. Instead of asking users to complete a challenge, it analyzes each submission in the background. It looks at behavior, content, and technical signals to decide whether a message is spam.
 
 This makes it effective even against more advanced spam that mimics real users.
 
 ### **How to set it up**
 
-Start by installing the plugin. Go to **Plugins → Add New**, search for **“[OOPSpam Anti-Spam](https://www.oopspam.com/wordpress),”** then install and activate it.
+Start by installing the plugin. Go to **Plugins → Add New**, search for **“[oopspam Anti-Spam](https://www.oopspam.com/wordpress),”** then install and activate it.
 
-![OOPSpam Anti-Spam](/blog/assets/posts/oopspam-anti-spam-overview.png "OOPSpam Anti-Spam")
+![oopspam Anti-Spam](/blog/assets/posts/oopspam-anti-spam-overview.png "oopspam Anti-Spam")
 
-Once activated, you need to connect your website to OOPSpam using an API key.
+Once activated, you need to connect your website to oopspam using an API key.
 
-[Create an account](https://app.oopspam.com/Identity/Account/Login) on the OOPSpam website. After signing in, you will find your **API key** in the dashboard. Copy this key.
+[Create an account](https://app.oopspam.com/Identity/Account/Login) on the oopspam website. After signing in, you will find your **API key** in the dashboard. Copy this key.
 
-![OOPSpam dashboard](/blog/assets/posts/oopspam-dashboard-api.png "OOPSpam dashboard")
+![oopspam dashboard](/blog/assets/posts/oopspam-dashboard-api.png "oopspam dashboard")
 
-Next, go back to WordPress and open **Settings → OOPSpam**. Paste your API key into the field provided and save your changes.
+Next, go back to WordPress and open **Settings → oopspam**. Paste your API key into the field provided and save your changes.
 
-![OOPSpam Settings](/blog/assets/posts/oopspam-api-key.png "OOPSpam Settings")
+![oopspam Settings](/blog/assets/posts/oopspam-api-key.png "oopspam Settings")
 
 At this point, the plugin is connected, but you still need to activate spam protection for Contact Form 7.
 
 ![Activate spam protection for Contact Form 7](/blog/assets/posts/activate-contact-form-7.png "Activate spam protection for Contact Form 7")
 
-Scroll through the OOPSpam settings page and find the **Contact Form 7 integration option**. Turn it on. Once enabled, OOPSpam will start filtering submissions automatically.
+Scroll through the oopspam settings page and find the **Contact Form 7 integration option**. Turn it on. Once enabled, oopspam will start filtering submissions automatically.
 
 ### **Adjusting your settings**
 
@@ -106,9 +106,9 @@ However, you can fine-tune the protection if needed. On the settings page, you c
 
 If you are unsure, keep the sensitivity on the default “moderate” level and adjust later based on results.
 
-### **What OOPSpam checks behind the scenes**
+### **What oopspam checks behind the scenes**
 
-OOPSpam uses multiple signals to [detect spam without interrupting users](https://www.oopspam.com/spam-filter-for-contactform7).
+oopspam uses multiple signals to [detect spam without interrupting users](https://www.oopspam.com/spam-filter-for-contactform7).
 
 It evaluates things like [repeated submissions](https://www.oopspam.com/blog/how-to-limit-form-submissions-in-contact-form-7), suspicious IP behavior, and content patterns. It can also detect traffic [coming from VPNs](https://www.oopspam.com/blog/how-to-block-vpn-and-data-center-ip-submissions-in-contact-form-7), proxies, or disposable email services.
 
@@ -182,6 +182,6 @@ Contact Form 7 spam is manageable once the right tools are in place. 
 
 Spam patterns change over time, so it helps to review your form activity occasionally.
 
-Check your OOPSpam logs and look for patterns in blocked submissions. You might notice repeated phrases, email formats, or locations. Use that information to refine your filters, update your disallowed list, or adjust settings.
+Check your oopspam logs and look for patterns in blocked submissions. You might notice repeated phrases, email formats, or locations. Use that information to refine your filters, update your disallowed list, or adjust settings.
 
 A few small adjustments can make a big difference over time.

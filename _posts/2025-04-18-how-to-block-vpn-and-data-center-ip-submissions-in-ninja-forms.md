@@ -5,18 +5,18 @@ date: 2025-04-18T05:15:00.000Z
 author: chazie
 image: /assets/posts/block-vpn-and-data-center-ip-submissions-in-ninja-forms.jpg
 description: Stop spam in Ninja Forms fast. Learn how to block VPN and data
-  center IP submissions using OOPSpam or Cloudflare to boost your form security
+  center IP submissions using oopspam or Cloudflare to boost your form security
   effortlessly.
 tags:
   - Ninja Forms
   - Cloudflare
-  - OOPSpam
+  - oopspam
 ---
 ![Block VPN and Data Center IP Submissions in Ninja Forms](/blog/assets/posts/free-drag-drop-form-builder-for-wordpress-download-now-04-17-2025_03_10_pm.png "Ninja Forms")
 
 [Ninja Forms](https://ninjaforms.com/) is a user-friendly, drag-and-drop form builder for WordPress—but like many form plugins, it's vulnerable to spam. If you're noticing spammy submissions from unknown sources, chances are they’re coming from IPs tied to VPN services or cloud hosting providers.
 
-In this guide, we’ll walk through why these IPs are a common spam source and how to block them manually or automatically using the OOPSpam Anti-Spam plugin.
+In this guide, we’ll walk through why these IPs are a common spam source and how to block them manually or automatically using the oopspam Anti-Spam plugin.
 
 ## **Why Block VPN and Cloud Provider IPs in Ninja Forms?**
 
@@ -64,11 +64,11 @@ While effective, this method comes with trade-offs:
 
 Unless you’re a developer or running a high-volume site, this method can be a bit complex.
 
-## **Method 2: Block VPN and Cloud IPs in Ninja Forms Using the OOPSpam Plugin (One-Click Setup)**
+## **Method 2: Block VPN and Cloud IPs in Ninja Forms Using the oopspam Plugin (One-Click Setup)**
 
-![OOPSpam WordPress plugin](/blog/assets/posts/oopspam-anti-spam-overview.png "OOPSpam WordPress plugin")
+![oopspam WordPress plugin](/blog/assets/posts/oopspam-anti-spam-overview.png "oopspam WordPress plugin")
 
-Want something easier and more automated? The **[OOPSpam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/)** (that’s us 👋) now supports Ninja Forms and gives you an instant [way to block spam](https://www.oopspam.com/blog/spam-protection-for-ninja-forms) from VPN and cloud sources.
+Want something easier and more automated? The **[oopspam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/)** (that’s us 👋) now supports Ninja Forms and gives you an instant [way to block spam](https://www.oopspam.com/blog/spam-protection-for-ninja-forms) from VPN and cloud sources.
 
 We’ve added two helpful toggles under the IP Filtering tab:
 
@@ -77,9 +77,9 @@ We’ve added two helpful toggles under the IP Filtering tab:
 
 Once enabled, these options will start filtering spam in your Ninja Forms submissions automatically—no IP research or ASN rules required.
 
-## **Why OOPSpam Works for Ninja Forms**
+## **Why oopspam Works for Ninja Forms**
 
-OOPSpam uses a real-time database that tracks IP ranges from:
+oopspam uses a real-time database that tracks IP ranges from:
 
 * Over 2,000+ cloud data centers
 * Known VPN and proxy providers
@@ -87,26 +87,26 @@ OOPSpam uses a real-time database that tracks IP ranges from:
 
 This means your Ninja Forms are protected from both known and emerging threats. The plugin works silently in the background, offering high accuracy with low risk of blocking genuine users.
 
-This same protection also applies to [OOPSpam’s API](https://www.oopspam.com/docs/#introduction) and other plugin integrations.
+This same protection also applies to [oopspam’s API](https://www.oopspam.com/docs/#introduction) and other plugin integrations.
 
-## **How to Enable VPN and Cloud IP Blocking for Ninja Forms Using OOPSpam**
+## **How to Enable VPN and Cloud IP Blocking for Ninja Forms Using oopspam**
 
 ### **Step 1: Install or Update the Plugin**
 
 In your WordPress admin dashboard:
 
 * Go to **Plugins** > **Add New**
-* Search for **OOPSpam Anti-Spam**, install it, and activate the latest version
+* Search for **oopspam Anti-Spam**, install it, and activate the latest version
 
-![Search for OOPSpam Anti-Spam, install it, and activate the latest version](/blog/assets/posts/oopspam-dashboard-api.png "OOPSpam Anti-Spam dashboard")
+![Search for oopspam Anti-Spam, install it, and activate the latest version](/blog/assets/posts/oopspam-dashboard-api.png "oopspam Anti-Spam dashboard")
 
-Visit the[ OOPSpam Dashboard](https://app.oopspam.com/Identity/Account/Login) to get your API key, then copy it.
+Visit the[ oopspam Dashboard](https://app.oopspam.com/Identity/Account/Login) to get your API key, then copy it.
 
 ### **Step 2: Connect Your API Key & Enable Ninja Forms Protection**
 
-Head over to **Settings** > **OOPSpam Anti-Spam**.
+Head over to **Settings** > **oopspam Anti-Spam**.
 
-* Under the **General** tab, choose “OOPSpam Dashboard” as the source
+* Under the **General** tab, choose “oopspam Dashboard” as the source
 * Paste your API key in the **My API Key** field
 
 ![Paste your API key in the My API Key field](/blog/assets/posts/my-api-key-field.png "My API Key")
@@ -137,7 +137,7 @@ No other configuration is required. The plugin now protects your Ninja Forms fro
 
 * If you serve international or privacy-conscious users, test the VPN blocking feature first
 * Regularly review flagged entries to avoid missing important messages
-* For even better spam prevention, use [OOPSpam’s](https://www.oopspam.com/) additional filters like:
+* For even better spam prevention, use [oopspam’s](https://www.oopspam.com/) additional filters like:
 * * Country-based blocking
 
   * Keyword detection
@@ -148,6 +148,6 @@ No other configuration is required. The plugin now protects your Ninja Forms fro
 
 Spambots are getting smarter, but that doesn’t mean you need to spend hours blocking IPs and fighting fake submissions. With just a few clicks, you can take back control of your Ninja Forms and enjoy cleaner inboxes and better lead quality.
 
-Whether you're collecting contact info, quote requests, or newsletter signups—blocking VPN and cloud IPs with OOPSpam gives you a solid, low-maintenance layer of protection.
+Whether you're collecting contact info, quote requests, or newsletter signups—blocking VPN and cloud IPs with oopspam gives you a solid, low-maintenance layer of protection.
 
 *Need help getting started?* Our team is [happy to assist](https://www.oopspam.com/#contact) or guide you through how these features work with Ninja Forms and other supported form plugins like [Elementor Forms](https://www.oopspam.com/blog/how-to-block-vpn-and-data-center-ip-submissions-in-elementor-forms), [Fluent Forms](https://www.oopspam.com/blog/how-to-block-vpn-and-data-center-ip-submissions-in-fluent-forms), and [Gravity Forms](https://www.oopspam.com/blog/how-to-block-vpn-and-data-center-ip-submissions-in-gravity-forms).

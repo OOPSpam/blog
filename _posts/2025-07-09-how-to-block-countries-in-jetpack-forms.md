@@ -5,7 +5,7 @@ date: 2025-07-09T03:41:00.000Z
 last_modified_at: 2026-01-06T11:36:00.000+08:00
 author: chazie
 image: /blog/assets/posts/header_jetpack.jpg
-description: Jetpack Forms can’t block countries by default, but OOPSpam adds
+description: Jetpack Forms can’t block countries by default, but oopspam adds
   advanced filtering, logs, and spam protection. Use Cloudflare for full
   country-level blocks.
 tags:
@@ -21,22 +21,22 @@ The short answer is: Jetpack Forms does not currently include any native country
 But that doesn't mean you're out of options. You can still control regional spam effectively using the right tools. In this guide, we’ll walk you through:
 
 * Why Jetpack Forms alone can't block countries
-* How to add country filtering using the OOPSpam Anti-Spam plugin
+* How to add country filtering using the oopspam Anti-Spam plugin
 * How to block traffic from entire countries using Cloudflare
 
 ### **Country Blocking Is Not Available Natively in Jetpack Forms**
 
 Jetpack Forms are built to be simple and easy to use. However, they do not offer any settings for restricting form submissions based on geolocation, IP address, or user language.
 
-If you're experiencing spam from specific regions or need stricter control over who can submit your forms, you'll need to extend Jetpack’s capabilities using a plugin like **[OOPSpam](https://www.oopspam.com/)**.
+If you're experiencing spam from specific regions or need stricter control over who can submit your forms, you'll need to extend Jetpack’s capabilities using a plugin like **[oopspam](https://www.oopspam.com/)**.
 
-## **1. Use OOPSpam to Block Countries in Jetpack Forms**
+## **1. Use oopspam to Block Countries in Jetpack Forms**
 
-![OOPSpam Anti-Spam](/blog/assets/posts/oopspam-anti-spam-overview.png "OOPSpam Anti-Spam")
+![oopspam Anti-Spam](/blog/assets/posts/oopspam-anti-spam-overview.png "oopspam Anti-Spam")
 
-**[OOPSpam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/)** (that’s us 👋) is a machine learning-powered spam filtering plugin that works seamlessly with Jetpack Forms. It gives you fine-tuned control over who can submit your forms, based on country, language, source behavior, and more.
+**[oopspam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/)** (that’s us 👋) is a machine learning-powered spam filtering plugin that works seamlessly with Jetpack Forms. It gives you fine-tuned control over who can submit your forms, based on country, language, source behavior, and more.
 
-### **What OOPSpam Adds to Jetpack Forms**
+### **What oopspam Adds to Jetpack Forms**
 
 * **Country Filtering** – Block or allow submissions from specific countries
 * **Spam Behavior Detection** – Uses machine learning to spot spammy content and automated submissions
@@ -48,13 +48,13 @@ These are features Jetpack Forms doesn’t offer on its own.
 
 ### **How to Set It Up**
 
-First, install the **OOPSpam Anti-Spam** plugin from the WordPress Plugin Directory. Once activated, go to **OOPSpam Anti-Spam > Settings** from your WordPress dashboard.
+First, install the **oopspam Anti-Spam** plugin from the WordPress Plugin Directory. Once activated, go to **oopspam Anti-Spam > Settings** from your WordPress dashboard.
 
 ![Enter your API key](/blog/assets/posts/oopspam-api-key.png "Enter your API key")
 
-Enter your **API key**, which you’ll get from your [OOPSpam account](https://app.oopspam.com/Identity/Account/Register).
+Enter your **API key**, which you’ll get from your [oopspam account](https://app.oopspam.com/Identity/Account/Register).
 
-![OOPSpam account](/blog/assets/posts/oopspam-dashboard-api.png "OOPSpam account")
+![oopspam account](/blog/assets/posts/oopspam-dashboard-api.png "oopspam account")
 
 Next, enable **Spam Protection** by toggling it on. 
 
@@ -66,16 +66,16 @@ Then scroll to the **Country Filtering** section. Here, you can choose whether t
 
 Choose your settings from the dropdown, save your preferences, and you’re done!
 
-From this point forward, OOPSpam will begin [filtering submissions from Jetpack Forms](https://www.oopspam.com/blog/4-ways-to-stop-spam-on-jetpack-forms) in real time, without affecting access to your website content.
+From this point forward, oopspam will begin [filtering submissions from Jetpack Forms](https://www.oopspam.com/blog/4-ways-to-stop-spam-on-jetpack-forms) in real time, without affecting access to your website content.
 
 ### **View Blocked Submissions**
 
-Unlike Jetpack, which doesn’t offer any insight into spam handling, OOPSpam gives you full visibility into your form activity. You can access two levels of [logs](https://help.oopspam.com/wordpress/form-entries/):
+Unlike Jetpack, which doesn’t offer any insight into spam handling, oopspam gives you full visibility into your form activity. You can access two levels of [logs](https://help.oopspam.com/wordpress/form-entries/):
 
 * Inside your [WordPress](https://www.oopspam.com/wordpress) admin, you’ll see **Form Spam Entries** (blocked) and **Form Ham Entries** (clean).
-* In your OOPSpam dashboard, you’ll get detailed logs with submission content, IP, spam score, timestamp, and more.
+* In your oopspam dashboard, you’ll get detailed logs with submission content, IP, spam score, timestamp, and more.
 
-Here's what the log view looks like in your OOPSpam account:
+Here's what the log view looks like in your oopspam account:
 
 ![Submission logs ](/blog/assets/posts/screenshot-1.png "Submission logs ")
 
@@ -119,7 +119,7 @@ Consider using [Cloudflare country blocking](https://www.oopspam.com/blog/blocki
 * You have compliance obligations limiting who can access your services
 * You want to reduce hosting costs by limiting unwanted traffic from certain regions
 
-Keep in mind, though, that this is a broad solution. If your main issue is form spam, OOPSpam is a better and safer starting point.
+Keep in mind, though, that this is a broad solution. If your main issue is form spam, oopspam is a better and safer starting point.
 
 ## **What’s the Best Way to Block Countries?**
 
@@ -161,7 +161,7 @@ Keep in mind, though, that this is a broad solution. If your main issue is form 
       <td>Lightweight use, no custom filtering</td>
     </tr>
     <tr>
-      <td><span class="underline">OOPSpam Plugin</span></td>
+      <td><span class="underline">oopspam Plugin</span></td>
       <td>Form submissions only</td>
       <td>Advanced, real-time filtering, logs, and country control</td>
     </tr>
@@ -175,13 +175,13 @@ Keep in mind, though, that this is a broad solution. If your main issue is form 
 
 ## **Final thoughts**
 
-Jetpack Forms is a simple tool, but when it comes to spam protection, you’ll need more than the basics. For most users dealing with spam from specific regions, OOPSpam provides the most flexible and effective solution.
+Jetpack Forms is a simple tool, but when it comes to spam protection, you’ll need more than the basics. For most users dealing with spam from specific regions, oopspam provides the most flexible and effective solution.
 
 * You get advanced filtering by country, language, rate limiting, and spam patterns
 * You can block bots and VPNs while keeping your site accessible
 * You gain insight into blocked entries through logs
 
-OOPSpam integrates smoothly with, [WPForms](https://www.oopspam.com/blog/how-to-block-countries-in-wpforms), [Contact Form 7](https://www.oopspam.com/blog/how-to-block-countries-in-contact-form-7), [Fluent Forms](https://www.oopspam.com/blog/how-to-block-countries-in-fluent-forms), [SureForms](https://www.oopspam.com/blog/how-to-block-countries-in-sureforms), and more.
+oopspam integrates smoothly with, [WPForms](https://www.oopspam.com/blog/how-to-block-countries-in-wpforms), [Contact Form 7](https://www.oopspam.com/blog/how-to-block-countries-in-contact-form-7), [Fluent Forms](https://www.oopspam.com/blog/how-to-block-countries-in-fluent-forms), [SureForms](https://www.oopspam.com/blog/how-to-block-countries-in-sureforms), and more.
 
 ## Related guides
 

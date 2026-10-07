@@ -5,7 +5,7 @@ date: 2025-10-17T09:01:00.000+08:00
 last_modified_at: 2026-01-06T11:36:00.000+08:00
 author: chazie
 image: /blog/assets/posts/avada_header.png
-description: Block unwanted submissions in Avada Forms using OOPSpam and
+description: Block unwanted submissions in Avada Forms using oopspam and
   Cloudflare WAF for advanced, country-based spam protection without hurting
   user experience.
 tags:
@@ -14,7 +14,7 @@ tags:
 ---
 ![Avada Forms](/blog/assets/posts/avada-for-wordpress.png "Avada Forms")
 
-[Avada Forms](https://avada.com/feature/form-builder/) doesn’t include built-in country blocking. To stop spam and unwanted submissions, you can use [OOPSpam](https://www.oopspam.com/) for form-level country filtering and intelligent spam control or use Cloudflare WAF for site-level blocking. The best practice is to combine both: OOPSpam for precision and Cloudflare for broad protection.
+[Avada Forms](https://avada.com/feature/form-builder/) doesn’t include built-in country blocking. To stop spam and unwanted submissions, you can use [oopspam](https://www.oopspam.com/) for form-level country filtering and intelligent spam control or use Cloudflare WAF for site-level blocking. The best practice is to combine both: oopspam for precision and Cloudflare for broad protection.
 
 ## **Why You Might Need Country Blocking**
 
@@ -22,26 +22,26 @@ tags:
 
 You can either:
 
-* Filter countries at the form level using OOPSpam.
+* Filter countries at the form level using oopspam.
 * Restrict countries at the edge level using Cloudflare’s WAF (Web Application Firewall).
 
-## **Method 1: Use OOPSpam for Form-Level Country Filtering** 
+## **Method 1: Use oopspam for Form-Level Country Filtering** 
 
-OOPSpam integrates seamlessly with Avada Forms. It uses machine learning and reputation checks to identify spam and lets you block or allow countries directly from WordPress. This gives you accurate, invisible protection without disrupting real users.
+oopspam integrates seamlessly with Avada Forms. It uses machine learning and reputation checks to identify spam and lets you block or allow countries directly from WordPress. This gives you accurate, invisible protection without disrupting real users.
 
 ### **How to Set It Up**
 
-Install and activate [OOPSpam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/). Get it from the WordPress Plugin Directory. 
+Install and activate [oopspam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/). Get it from the WordPress Plugin Directory. 
 
-Create an OOPSpam account at [OOPSpam.com](https://app.oopspam.com/Identity/Account/Login) and generate your API key.
+Create an oopspam account at [oopspam.com](https://app.oopspam.com/Identity/Account/Login) and generate your API key.
 
-![OOPSpam Anti-Spam](/blog/assets/posts/oopspam-dashboard-api.png "OOPSpam Anti-Spam")
+![oopspam Anti-Spam](/blog/assets/posts/oopspam-dashboard-api.png "oopspam Anti-Spam")
 
-In WordPress, go to **Settings → OOPSpam Anti-Spam → General**, and paste your API key.
+In WordPress, go to **Settings → oopspam Anti-Spam → General**, and paste your API key.
 
-![ OOPSpam Anti-Spam General Settings ](/blog/assets/posts/oopspam-api-key.png " OOPSpam Anti-Spam General Settings ")
+![ oopspam Anti-Spam General Settings ](/blog/assets/posts/oopspam-api-key.png " oopspam Anti-Spam General Settings ")
 
-Activate spam protection so OOPSpam checks Avada Forms submissions automatically.
+Activate spam protection so oopspam checks Avada Forms submissions automatically.
 
 ![Activate spam protection on Avada Forms](/blog/assets/posts/spam-protection-for-avada-forms.png "Activate spam protection on Avada Forms")
 
@@ -71,11 +71,11 @@ After setting up your filters, test and monitor your Avada Form by submitting it
 
 ![Spam & Ham logs in WordPress ](/blog/assets/posts/form-spam-entries-oopspam.png "Spam & Ham logs in WordPress")
 
-You can also review the OOPSpam Dashboard to see which submissions were filtered, along with the reasons and traffic patterns.
+You can also review the oopspam Dashboard to see which submissions were filtered, along with the reasons and traffic patterns.
 
-![OOPSpam Dashboard logs](/blog/assets/posts/screenshot-1.png "OOPSpam Dashboard logs")
+![oopspam Dashboard logs](/blog/assets/posts/screenshot-1.png "oopspam Dashboard logs")
 
-### **Benefits of OOPSpam for Avada Forms**
+### **Benefits of oopspam for Avada Forms**
 
 * Filters spam by country, language, content, IP reputation, and submission speed.
 * Uses machine learning detection to stop human-assisted and advanced spam.
@@ -97,7 +97,7 @@ Cloudflare’s Web Application Firewall ([WAF](https://developers.cloudflare.com
 4. Set the field to **Country**, choose the operator **“is in,”** and select the countries you want to block.
 5. Choose **Block** as the action and click **Save** to apply the rule.
 
-> **Best Practice:** Combine Cloudflare’s edge filtering with OOPSpam’s form-level detection for maximum protection.
+> **Best Practice:** Combine Cloudflare’s edge filtering with oopspam’s form-level detection for maximum protection.
 
 ### **Keep Core Avada Protections Active**
 
@@ -107,13 +107,13 @@ Avada Forms includes essential [anti-spam tools](https://www.oopspam.com/blog/4-
 * **reCAPTCHA Field** — Verifies human activity using Google’s API (v2 or v3).
 * **Turnstile Field** — Privacy-friendly Cloudflare verification with no puzzles.
 
-> Don’t stack multiple CAPTCHA types. Use one verification field plus OOPSpam for server-side defense.
+> Don’t stack multiple CAPTCHA types. Use one verification field plus oopspam for server-side defense.
 
 ## **Final Takeaway**
 
-The best way to block countries in Avada Forms is to use OOPSpam for precision and Cloudflare WAF for extra perimeter security. 
+The best way to block countries in Avada Forms is to use oopspam for precision and Cloudflare WAF for extra perimeter security. 
 
-* OOPSpam filters unwanted submissions intelligently by country, IP, and content.
+* oopspam filters unwanted submissions intelligently by country, IP, and content.
 * [Cloudflare](https://www.cloudflare.com/) stops malicious requests before they reach your site.
 
 Together, they create a layered defense, your Avada Forms stay clean, your site stays visible, and only legitimate users can submit.

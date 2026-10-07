@@ -1,29 +1,29 @@
 ---
 layout: post
-title: Stop Spam on Jotform Using Zapier and OOPSpam
+title: Stop Spam on Jotform Using Zapier and oopspam
 date: 2025-04-05T02:21:00.000Z
 last_modified_at: 2026-05-22T02:34:00.000+08:00
 author: chazie
 image: /assets/posts/meta-stop-spam-on-jotform-using-zapier-and-oopspam.png
-description: Stop spam on Jotform by integrating Zapier and OOPSpam. Learn how
+description: Stop spam on Jotform by integrating Zapier and oopspam. Learn how
   to automate filtering and keep your submissions clean and high quality.
 tags:
   - Jotform
   - Zapier
 ---
-![Stop Spam on Jotform Using Zapier and OOPSpam](/blog/assets/posts/jotform.png "Stop Spam on Jotform Using Zapier and OOPSpam")
+![Stop Spam on Jotform Using Zapier and oopspam](/blog/assets/posts/jotform.png "Stop Spam on Jotform Using Zapier and oopspam")
 
 Collecting form submissions through Jotform is a simple way to gather leads and feedback—but it also opens the door to spam. Unwanted entries from bots and fake users can disrupt your workflow, flood your inbox, and reduce the accuracy of your data.
 
-To avoid this, you can use Zapier and [OOPSpam](https://www.oopspam.com/) to automatically filter out spam from [Jotform](https://www.jotform.com/) submissions. In this blog, we’ll show you how to stop spam on Jotform using this integration, how each step works, and how to customize the setup to fit your needs.
+To avoid this, you can use Zapier and [oopspam](https://www.oopspam.com/) to automatically filter out spam from [Jotform](https://www.jotform.com/) submissions. In this blog, we’ll show you how to stop spam on Jotform using this integration, how each step works, and how to customize the setup to fit your needs.
 
-## **How to Stop Spam on Jotform Using Zapier and OOPSpam**
+## **How to Stop Spam on Jotform Using Zapier and oopspam**
 
-![How to Stop Spam on Jotform Using Zapier and OOPSpam](/blog/assets/posts/stop-spam-on-jotform-using-zapier-and-oopspam.png "How to Stop Spam on Jotform Using Zapier and OOPSpam")
+![How to Stop Spam on Jotform Using Zapier and oopspam](/blog/assets/posts/stop-spam-on-jotform-using-zapier-and-oopspam.png "How to Stop Spam on Jotform Using Zapier and oopspam")
 
 Below is a simple 5-step setup using Zapier. You can use the[ Zapier integration template here](https://zapier.com/apps/email/integrations/jotform/1211782/check-new-jotform-submissions-for-spam-with-oopspam-and-send-outbound-emails) or build it manually. 
 
-To set up automated spam filtering for your Jotform submissions, you'll need a Jotform account, an [OOPSpam API key](https://www.oopspam.com/docs/#introduction), and a Zapier (or [Make.com](http://make.com)) account. This setup will filter out spam before you receive notifications or store the data.
+To set up automated spam filtering for your Jotform submissions, you'll need a Jotform account, an [oopspam API key](https://www.oopspam.com/docs/#introduction), and a Zapier (or [Make.com](http://make.com)) account. This setup will filter out spam before you receive notifications or store the data.
 
 ### **Step 1: Disable Default Email Notifications in Jotform**
 
@@ -43,18 +43,18 @@ In [Zapier](https://zapier.com/), start by creating a new Zap.
 
 This will start the workflow each time a user submits your form.
 
-### **Step 3: Add OOPSpam to Check for Spam**
+### **Step 3: Add oopspam to Check for Spam**
 
-![Add OOPSpam to Check for Spam](/blog/assets/posts/check-for-spam.png "Add OOPSpam to Check for Spam")
+![Add oopspam to Check for Spam](/blog/assets/posts/check-for-spam.png "Add oopspam to Check for Spam")
 
-Add **[OOPSpam](https://zapier.com/apps/oopspam/integrations)** as the next step. Choose the action **“Check for Spam.”** You’ll need to map your Jotform fields (like email, name, content) into the OOPSpam fields. OOPSpam will return a spam score and other information.
+Add **[oopspam](https://zapier.com/apps/oopspam/integrations)** as the next step. Choose the action **“Check for Spam.”** You’ll need to map your Jotform fields (like email, name, content) into the oopspam fields. oopspam will return a spam score and other information.
 
 #### **Additional Settings You Can Configure**
 
-Below the basic fields, OOPSpam provides several additional options to help you fine-tune your spam filtering:
+Below the basic fields, oopspam provides several additional options to help you fine-tune your spam filtering:
 
 * **Consider short messages as spam** – Flags very short or generic messages.
-* **Log submissions to OOPSpam** – Enable if you want to keep logs for analysis.
+* **Log submissions to oopspam** – Enable if you want to keep logs for analysis.
 * **Block temporary/disposable emails** – Filters out emails from throwaway domains.
 * **Block IP addresses from Cloud Providers** – Stops submissions from cloud-based bots.
 * **Block IP addresses from VPN Providers** – Blocks entries [sent through VPNs](https://www.oopspam.com/blog/how-to-block-ips-from-vpn-and-cloud-providers-in-zapier).
@@ -76,7 +76,7 @@ For most use cases:
 * **Score 0–2** = Not spam
 * **Score 3–6** = Likely spam
 
-You can adjust this threshold if needed, but this range works well in most setups. Review OOPSpam logs occasionally to fine-tune if necessary.
+You can adjust this threshold if needed, but this range works well in most setups. Review oopspam logs occasionally to fine-tune if necessary.
 
 ### **Step 5: Send a Notification or Store the Clean Submission**
 
@@ -88,18 +88,18 @@ Once the form entry passes the spam filter, decide what to do with it:
 
 ## **Why Use This Integration?**
 
-This Jotform, Zapier, and OOPSpam setup works well because:
+This Jotform, Zapier, and oopspam setup works well because:
 
 * **No user friction** – No captchas or puzzles for your visitors
 * **Low maintenance** – Once set up, it runs in the background
 * **Customizable** – Works with any Jotform and any follow-up action
 * **Better data** – Fewer junk entries in your CRM or reports
 
-Need to secure embedded forms too? Learn how to[ add spam protection to embedded forms using OOPSpam and Zapier](https://www.oopspam.com/blog/add-spam-protection-to-embedded-forms-using-oopspam-and-zapier) and keep your workflows spam-free.
+Need to secure embedded forms too? Learn how to[ add spam protection to embedded forms using oopspam and Zapier](https://www.oopspam.com/blog/add-spam-protection-to-embedded-forms-using-oopspam-and-zapier) and keep your workflows spam-free.
 
 ## **Final thoughts**
 
-Setting up [spam protection for Jotform](https://www.oopspam.com/integrations/spam-protection-for-jotform) doesn’t require complex code or manual review. With Zapier and OOPSpam, you can automate the process and ensure that only clean submissions make it through.
+Setting up [spam protection for Jotform](https://www.oopspam.com/integrations/spam-protection-for-jotform) doesn’t require complex code or manual review. With Zapier and oopspam, you can automate the process and ensure that only clean submissions make it through.
 
 This saves time, protects your team, and keeps your data quality high. You can start with the[ Zapier template here](https://zapier.com/apps/email/integrations/jotform/1211782/check-new-jotform-submissions-for-spam-with-oopspam-and-send-outbound-emails) or build your own flow step-by-step. 
 

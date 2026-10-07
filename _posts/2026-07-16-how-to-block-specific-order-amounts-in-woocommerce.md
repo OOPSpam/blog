@@ -5,12 +5,12 @@ date: 2026-07-16T16:49:00.000+08:00
 author: chazie
 image: /blog/assets/posts/meta_order_block_by_amount.png
 description: "Learn how to block specific order amounts in WooCommerce to stop
-  card testing attacks and fraudulent orders using OOPSpam and other methods. "
+  card testing attacks and fraudulent orders using oopspam and other methods. "
 tags:
   - WooCommerce
   - Card Testing
 ---
-If your [WooCommerce](https://woocommerce.com/) store keeps getting fraudulent orders for the same odd amounts, you're likely dealing with [card testing bots](https://www.oopspam.com/woocommerce). The fastest fix is a plugin that blocks orders by exact total. OOPSpam Anti-Spam is a strong option to start with since it combines specific-amount blocking with broader fraud detection in one free plugin.
+If your [WooCommerce](https://woocommerce.com/) store keeps getting fraudulent orders for the same odd amounts, you're likely dealing with [card testing bots](https://www.oopspam.com/woocommerce). The fastest fix is a plugin that blocks orders by exact total. oopspam Anti-Spam is a strong option to start with since it combines specific-amount blocking with broader fraud detection in one free plugin.
 
 ### **Why This Happens**
 
@@ -20,29 +20,29 @@ Here's a real example from a WooCommerce order list, where dozens of failed orde
 
 ![Dozens of failed orders all share the exact same total ](/blog/assets/posts/multiple-failed-orders.png "Dozens of failed orders all share the exact same total ")
 
-## **Option 1: OOPSpam Anti-Spam**
+## **Option 1: oopspam Anti-Spam**
 
-**[OOPSpam](https://www.oopspam.com/)** (that's us) is a WordPress plugin built for [spam and fraud prevention](https://www.oopspam.com/blog/spam-protection-for-woocommerce), including [WooCommerce](https://www.oopspam.com/woocommerce) checkouts. Rather than relying on CAPTCHA, it works quietly in the background, checking orders against a database of 500 million+ known malicious IPs and emails, plus machine learning analysis. It has reportedly caught over 1 billion spam submissions to date, and store owners report card testing attacks stopping entirely after activation.
+**[oopspam](https://www.oopspam.com/)** (that's us) is a WordPress plugin built for [spam and fraud prevention](https://www.oopspam.com/blog/spam-protection-for-woocommerce), including [WooCommerce](https://www.oopspam.com/woocommerce) checkouts. Rather than relying on CAPTCHA, it works quietly in the background, checking orders against a database of 500 million+ known malicious IPs and emails, plus machine learning analysis. It has reportedly caught over 1 billion spam submissions to date, and store owners report card testing attacks stopping entirely after activation.
 
 Its **"Block orders with specific total amounts"** setting lets you list exact dollar figures, one per line, to reject automatically at checkout.
 
-> Keep in mind that blocking by amount is a reactive, quick fix. If the same fraudster simply changes the order total, that specific rule stops catching them. This is where OOPSpam's other checks matter: alongside amount blocking, it also screens each order's [IP address](https://www.oopspam.com/blog/how-to-block-vpn-and-data-center-ip-traffic-in-your-woocommerce-shop) and email against its database of known bad actors, so an attacker can still get flagged even after switching up the total.
+> Keep in mind that blocking by amount is a reactive, quick fix. If the same fraudster simply changes the order total, that specific rule stops catching them. This is where oopspam's other checks matter: alongside amount blocking, it also screens each order's [IP address](https://www.oopspam.com/blog/how-to-block-vpn-and-data-center-ip-traffic-in-your-woocommerce-shop) and email against its database of known bad actors, so an attacker can still get flagged even after switching up the total.
 
 ### **Steps:**
 
-Install and activate the **[OOPSpam Anti-Spam](https://www.oopspam.com/wordpress)** plugin.
+Install and activate the **[oopspam Anti-Spam](https://www.oopspam.com/wordpress)** plugin.
 
-![OOPSpam Anti-Spam](/blog/assets/posts/oopspam-anti-spam-overview.png "OOPSpam Anti-Spam")
+![oopspam Anti-Spam](/blog/assets/posts/oopspam-anti-spam-overview.png "oopspam Anti-Spam")
 
-[Sign up](https://app.oopspam.com/Identity/Account/Login) for a OOPSpam API key.
+[Sign up](https://app.oopspam.com/Identity/Account/Login) for a oopspam API key.
 
-![Sign up for a OOPSpam API key](/blog/assets/posts/oopspam-dashboard-api.png "Sign up for a OOPSpam API key")
+![Sign up for a oopspam API key](/blog/assets/posts/oopspam-dashboard-api.png "Sign up for a oopspam API key")
 
-Go to **Settings > OOPSpam Anti-Spam > General**, paste the key, and save.
+Go to **Settings > oopspam Anti-Spam > General**, paste the key, and save.
 
 ![Paste the API key and save](/blog/assets/posts/oopspam-api-key.png "Paste the API key and save")
 
-In the OOPSpam settings, find the **WooCommerce** section and turn on **Activate Spam Protection**.
+In the oopspam settings, find the **WooCommerce** section and turn on **Activate Spam Protection**.
 
 ![Find the WooCommerce section and turn on Activate Spam Protection](/blog/assets/posts/woo-oopspam-settings.png "Find the WooCommerce section and turn on Activate Spam Protection")
 
@@ -98,11 +98,11 @@ This only enforces a minimum total. Blocking exact figures requires custom array
 
 ### **Which Option Should You Choose?**
 
-* **Repeated fraud at specific amounts?** OOPSpam is purpose-built for this, and layered with [fraud and spam protection](https://www.oopspam.com/blog/best-fraud-detection-plugins-for-wordpress-in-2026).
+* **Repeated fraud at specific amounts?** oopspam is purpose-built for this, and layered with [fraud and spam protection](https://www.oopspam.com/blog/best-fraud-detection-plugins-for-wordpress-in-2026).
 * **Just need a flexible min/max range without extra fraud detection?** Order Minimum/Maximum Amount for WooCommerce covers that.
 * **Comfortable maintaining code for a simple minimum?** The PHP snippet works, but you'll need to maintain it yourself.
 
-For most stores facing the classic "same odd total, over and over" pattern, OOPSpam offers a fairly complete solution with minimal setup effort.
+For most stores facing the classic "same odd total, over and over" pattern, oopspam offers a fairly complete solution with minimal setup effort.
 
 ## Related guides
 

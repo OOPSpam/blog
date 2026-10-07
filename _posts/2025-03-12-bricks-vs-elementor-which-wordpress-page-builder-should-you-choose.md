@@ -167,45 +167,45 @@ However, [Bricks' form builder](https://www.oopspam.com/blog/spam-protection-for
 
 Additionally, Elementor provides built-in integrations with popular email marketing platforms like Mailchimp, ActiveCampaign, and HubSpot.
 
-For spam protection, Elementor includes [reCAPTCHA V3](https://www.oopspam.com/blog/recaptcha-v2-vs-v3-which-is-right-for-your-website) and [hCaptcha](https://www.oopspam.com/hcaptcha-alternative), similar to Bricks. These tools help prevent automated spam but may not catch all unwanted submissions. For more advanced filtering, OOPSpam provides a more effective solution by analyzing form submissions and blocking spam.
+For spam protection, Elementor includes [reCAPTCHA V3](https://www.oopspam.com/blog/recaptcha-v2-vs-v3-which-is-right-for-your-website) and [hCaptcha](https://www.oopspam.com/hcaptcha-alternative), similar to Bricks. These tools help prevent automated spam but may not catch all unwanted submissions. For more advanced filtering, oopspam provides a more effective solution by analyzing form submissions and blocking spam.
 
 > **Best for:** Users who want an easy-to-use form builder with built-in spam protection and marketing integrations.
 
-### **Using OOPSpam for Spam Protection**
+### **Using oopspam for Spam Protection**
 
-![Using OOPSpam for Spam Protection](/blog/assets/posts/oopspam-for-spam-protection.png "OOPSpam Plugin for Spam Protection")
+![Using oopspam for Spam Protection](/blog/assets/posts/oopspam-for-spam-protection.png "oopspam Plugin for Spam Protection")
 
-**[OOPSpam](https://www.oopspam.com/)** (that’s us! 👋) is a machine learning spam filtering tool that works with both Bricks and Elementor. It goes beyond traditional [CAPTCHAs](https://www.oopspam.com/blog/best-captcha-alternatives) by analyzing submissions for spam signals, reducing false positives and keeping your forms clean.
+**[oopspam](https://www.oopspam.com/)** (that’s us! 👋) is a machine learning spam filtering tool that works with both Bricks and Elementor. It goes beyond traditional [CAPTCHAs](https://www.oopspam.com/blog/best-captcha-alternatives) by analyzing submissions for spam signals, reducing false positives and keeping your forms clean.
 
-**Why consider OOPSpam?**
+**Why consider oopspam?**
 
-* **Advanced Spam Detection:** OOPSpam analyzes multiple factors, including IP addresses, email addresses, and message content, to accurately identify and block spam submissions.
-* **Privacy-Friendly:** Designed with user privacy in mind, OOPSpam does not collect unnecessary data, ensuring compliance with privacy regulations. ​
-* **Wide Compatibility:** OOPSpam seamlessly integrates with various WordPress contact form builders, including [Ninja Forms](https://www.oopspam.com/blog/spam-protection-for-ninja-forms), [Gravity Forms](https://www.oopspam.com/blog/spam-protection-for-gravity-forms), [Contact Form 7](https://www.oopspam.com/spam-filter-for-contactform7), [WooCommerce](https://www.oopspam.com/blog/spam-protection-for-woocommerce), and more.
+* **Advanced Spam Detection:** oopspam analyzes multiple factors, including IP addresses, email addresses, and message content, to accurately identify and block spam submissions.
+* **Privacy-Friendly:** Designed with user privacy in mind, oopspam does not collect unnecessary data, ensuring compliance with privacy regulations. ​
+* **Wide Compatibility:** oopspam seamlessly integrates with various WordPress contact form builders, including [Ninja Forms](https://www.oopspam.com/blog/spam-protection-for-ninja-forms), [Gravity Forms](https://www.oopspam.com/blog/spam-protection-for-gravity-forms), [Contact Form 7](https://www.oopspam.com/spam-filter-for-contactform7), [WooCommerce](https://www.oopspam.com/blog/spam-protection-for-woocommerce), and more.
 
-#### **Steps to Integrate OOPSpam with Your WordPress Site**
+#### **Steps to Integrate oopspam with Your WordPress Site**
 
-![A screenshot of the OOPSpam dashboard showing API usage, average response time, active API key, and a "Test with your data" section featuring sample data for spam detection testing.](/blog/assets/posts/dashboard-sample-data.png "OOPSpam Dashboard Overview ")
+![A screenshot of the oopspam dashboard showing API usage, average response time, active API key, and a "Test with your data" section featuring sample data for spam detection testing.](/blog/assets/posts/dashboard-sample-data.png "oopspam Dashboard Overview ")
 
-**1. Install the OOPSpam Plugin**
+**1. Install the oopspam Plugin**
 
 * Log in to your WordPress admin dashboard.​
 * Navigate to the **'Plugins'** section and click **'Add New'.**​
-* Search for **'[OOPSpam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/)'.​**
+* Search for **'[oopspam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/)'.​**
 * Click **'Install Now'**, then **'Activate'** after installation.​
 
-**2. Obtain an OOPSpam API Key**
+**2. Obtain an oopspam API Key**
 
-![OOPSpam general settings page showing API key input and sensitivity level.](/blog/assets/posts/oopspam-general-settings-page.png "OOPSpam General Settings Page")
+![oopspam general settings page showing API key input and sensitivity level.](/blog/assets/posts/oopspam-general-settings-page.png "oopspam General Settings Page")
 
-* Visit the OOPSpam website and [sign up for an account](https://app.oopspam.com/Identity/Account/Register).​
+* Visit the oopspam website and [sign up for an account](https://app.oopspam.com/Identity/Account/Register).​
 * After logging in, navigate to your dashboard to retrieve your unique API key.​
 
 **3. Configure the Plugin Settings**
 
-![OOPSpam spam filtering settings with country and language restrictions.](/blog/assets/posts/oopspam-spam-filtering-settings.png "OOPSpam Spam Filtering Settings")
+![oopspam spam filtering settings with country and language restrictions.](/blog/assets/posts/oopspam-spam-filtering-settings.png "oopspam Spam Filtering Settings")
 
-* In your WordPress dashboard, go to **'OOPSpam Anti-Spam'** > **'Settings'.**​
+* In your WordPress dashboard, go to **'oopspam Anti-Spam'** > **'Settings'.**​
 * Enter your API key in the designated field.​
 * Adjust additional settings as needed, such as sensitivity levels, language restrictions, or country restrictions.​
 
@@ -213,7 +213,7 @@ For spam protection, Elementor includes [reCAPTCHA V3](https://www.oopspam.com/b
 
 ![Elementor Forms spam protection settings screen.](/blog/assets/posts/elementor-spam-protection-settings.png "Elementor Forms Spam Protection Settings")
 
-* OOPSpam automatically integrates with supported form builders.​
+* oopspam automatically integrates with supported form builders.​
 * Ensure that spam protection is enabled within your specific form builder's settings, if applicable.​
 
 By following these steps, you can enhance your website's defenses against spam, ensuring a cleaner and more secure user experience.
@@ -258,10 +258,10 @@ Both builders are powerful, but they cater to different users. If performance an
 
 **Can I switch from Elementor to Bricks?** Yes, but you’ll need to rebuild your site since the two builders use different structures.
 
-**Does Bricks have better spam protection?** Bricks does not have built-in spam protection, but you can integrate OOPSpam for better filtering.
+**Does Bricks have better spam protection?** Bricks does not have built-in spam protection, but you can integrate oopspam for better filtering.
 
 ## **Final thoughts**
 
-If you're looking for reliable spam filtering for your Bricks or Elementor forms, OOPSpam helps block unwanted submissions without affecting genuine users. It works seamlessly with WordPress form builders and ensures a cleaner, more secure experience.
+If you're looking for reliable spam filtering for your Bricks or Elementor forms, oopspam helps block unwanted submissions without affecting genuine users. It works seamlessly with WordPress form builders and ensures a cleaner, more secure experience.
 
-Check out OOPSpam or [contact us](https://www.oopspam.com/#contact) for help with [setup and integration](https://www.oopspam.com/help). Happy building!
+Check out oopspam or [contact us](https://www.oopspam.com/#contact) for help with [setup and integration](https://www.oopspam.com/help). Happy building!

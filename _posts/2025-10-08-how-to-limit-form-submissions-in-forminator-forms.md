@@ -5,7 +5,7 @@ date: 2025-10-08T13:18:00.000+08:00
 author: chazie
 image: /blog/assets/posts/formf_rt.jpg
 description: Limit unwanted or repeated submissions in Forminator Forms with
-  OOPSpam Anti-Spam and Cloudflare’s firewall rules. Keep entries clean and
+  oopspam Anti-Spam and Cloudflare’s firewall rules. Keep entries clean and
   fair.
 tags:
   - Forminator Forms
@@ -15,7 +15,7 @@ tags:
 
 [Forminator](https://wordpress.org/plugins/forminator/) is a flexible plugin for building contact forms, polls, and quizzes. It’s feature-rich, but there’s one limitation: it doesn’t let you set a cap on how many times a form can be submitted.
 
-That means if you’re running a competition, accepting registrations, or trying to reduce repetitive spam, you’ll need outside help. The best way to add this control is by using OOPSpam Anti-Spam and Cloudflare’s rate limiting.
+That means if you’re running a competition, accepting registrations, or trying to reduce repetitive spam, you’ll need outside help. The best way to add this control is by using oopspam Anti-Spam and Cloudflare’s rate limiting.
 
 ## **Why Forminator Needs Submission Controls**
 
@@ -27,11 +27,11 @@ Adding submission limits ensures:
 * Fair access for contests and signups
 * Better site performance under heavy traffic
 
-## **Using OOPSpam with Forminator**
+## **Using oopspam with Forminator**
 
-Forminator supports [CAPTCHA](https://www.oopspam.com/blog/best-captcha-alternatives) and [Honeypot](https://www.oopspam.com/blog/ways-to-stop-spam#honeypot-filter-spam-with-a-hidden-field:~:text=Final%20thoughts-,Honeypot%3A%20filter%20spam%20with%20a%20hidden%20field,-It%20is%20the) protection, but these are often bypassed. To truly control form activity, you need a plugin that gives you [direct control](https://www.oopspam.com/blog/spam-protection-for-forminator) over submission behavior. That’s where OOPSpam Anti-Spam comes in.
+Forminator supports [CAPTCHA](https://www.oopspam.com/blog/best-captcha-alternatives) and [Honeypot](https://www.oopspam.com/blog/ways-to-stop-spam#honeypot-filter-spam-with-a-hidden-field:~:text=Final%20thoughts-,Honeypot%3A%20filter%20spam%20with%20a%20hidden%20field,-It%20is%20the) protection, but these are often bypassed. To truly control form activity, you need a plugin that gives you [direct control](https://www.oopspam.com/blog/spam-protection-for-forminator) over submission behavior. That’s where oopspam Anti-Spam comes in.
 
-Instead of relying on visual tests for users, [OOPSpam](https://www.oopspam.com/) (that’s us 👋) works quietly in the background, analyzing requests before they reach your inbox.
+Instead of relying on visual tests for users, [oopspam](https://www.oopspam.com/) (that’s us 👋) works quietly in the background, analyzing requests before they reach your inbox.
 
 ### **Key Capabilities**
 
@@ -43,13 +43,13 @@ Instead of relying on visual tests for users, [OOPSpam](https://www.oopspam.com/
 
 ### **How to Set It Up**
 
-Install and activate **[OOPSpam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/)** from the WordPress plugin directory. [Sign up](https://app.oopspam.com/Identity/Account/Login) for an OOPSpam account and copy your API key.
+Install and activate **[oopspam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/)** from the WordPress plugin directory. [Sign up](https://app.oopspam.com/Identity/Account/Login) for an oopspam account and copy your API key.
 
-![OOPSpam dashboard](/blog/assets/posts/oopspam-dashboard-api.png "OOPSpam dashboard")
+![oopspam dashboard](/blog/assets/posts/oopspam-dashboard-api.png "oopspam dashboard")
 
-In WordPress, go to **OOPSpam → General Settings** and paste your API key.
+In WordPress, go to **oopspam → General Settings** and paste your API key.
 
-![OOPSpam to General Settings](/blog/assets/posts/oopspam-api-key.png "OOPSpam to General Settings")
+![oopspam to General Settings](/blog/assets/posts/oopspam-api-key.png "oopspam to General Settings")
 
 Activate **Spam Protection** so Forminator submissions are filtered.
 
@@ -84,16 +84,16 @@ By handling traffic at the network level, Cloudflare prevents brute-force spam f
 
 ## **Combining Both for Best Results**
 
-OOPSpam and Cloudflare work well together:
+oopspam and Cloudflare work well together:
 
-* OOPSpam gives you fine-grained control over how many times users or bots can submit, with country and proxy filtering.
+* oopspam gives you fine-grained control over how many times users or bots can submit, with country and proxy filtering.
 * Cloudflare ensures bad traffic doesn’t even touch your server, cutting off brute-force or automated attacks at the edge.
 
 Together, they help you get accurate entries, fewer duplicates, and a more stable website.
 
 ## **Final Thoughts**
 
-Forminator doesn’t include submission limits by default, but you don’t have to leave your forms wide open. By combining OOPSpam’s filtering with Cloudflare’s firewall rules, you can prevent repeated entries, block abuse, and maintain reliable form data.
+Forminator doesn’t include submission limits by default, but you don’t have to leave your forms wide open. By combining oopspam’s filtering with Cloudflare’s firewall rules, you can prevent repeated entries, block abuse, and maintain reliable form data.
 
 This way, you keep control of your forms while making the experience smoother for genuine visitors.
 

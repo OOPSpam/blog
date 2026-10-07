@@ -8,10 +8,10 @@ image: /assets/posts/do-watch/sm.png
 tags: []
 
 
-description: "Add a domain to be monitored by OOPSpam. We'll let you know if your domain is blocked by Google, Mozilla, Microsoft and other major providers."
+description: "Add a domain to be monitored by oopspam. We'll let you know if your domain is blocked by Google, Mozilla, Microsoft and other major providers."
 ---
 <center>
-<img loading="lazy"  width="" alt="Domain Reputation Watch by OOPSpam logo" src="/blog/assets/posts/do-watch/do-watch-logo.png">
+<img loading="lazy"  width="" alt="Domain Reputation Watch by oopspam logo" src="/blog/assets/posts/do-watch/do-watch-logo.png">
 </center>
 <br/>
 
@@ -21,9 +21,9 @@ Our team has been working on something great and we're excited to share with you
 
 Free for all paid plans! 
 
-Add your (or your clients’) domains to our Domain Reputation Watch ([located in your dashboard](https://app.oopspam.com/DomainWatcher)) to be monitored by OOPSpam for their reputation according to all major browsers, search engines and more. We run our comprehensive checks weekly and let you know by email if any of them are flagged as blocked.
+Add your (or your clients’) domains to our Domain Reputation Watch ([located in your dashboard](https://app.oopspam.com/DomainWatcher)) to be monitored by oopspam for their reputation according to all major browsers, search engines and more. We run our comprehensive checks weekly and let you know by email if any of them are flagged as blocked.
 
-![Domain Reputation Watch on OOPSpam dashboard](/blog/assets/posts/do-watch/do-watch-screenshot.png "Domain Reputation Watch on OOPSpam dashboard")
+![Domain Reputation Watch on oopspam dashboard](/blog/assets/posts/do-watch/do-watch-screenshot.png "Domain Reputation Watch on oopspam dashboard")
 
 
 _Why is this so valuable? Keep reading!_
@@ -53,7 +53,7 @@ Due to various reasons (we listed above) a search engine, e-mail service or brow
 
 ## How to monitor your domain reputation
 
-![Add domain in Domain Reputation Watch on OOPSpam dashboard](/blog/assets/posts/do-watch/do-add-domain.png "Add domain in Domain Reputation Watch on OOPSpam dashboard")
+![Add domain in Domain Reputation Watch on oopspam dashboard](/blog/assets/posts/do-watch/do-add-domain.png "Add domain in Domain Reputation Watch on oopspam dashboard")
 
 To start using Domain Reputation Watch, simply go to the page in [your dashboard](https://app.oopspam.com/DomainWatcher) and click the yellow button to 'Add domain'.
 

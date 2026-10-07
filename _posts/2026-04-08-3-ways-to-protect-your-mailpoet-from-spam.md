@@ -4,7 +4,7 @@ title: 3 Ways to Protect Your MailPoet from Spam
 date: 2026-04-08T18:53:00.000+08:00
 author: chazie
 image: /blog/assets/posts/header_mailpoet.png
-description: Protect MailPoet from spam with OOPSpam, double opt-in, CAPTCHA,
+description: Protect MailPoet from spam with oopspam, double opt-in, CAPTCHA,
   and email authentication. Improve deliverability and keep your list clean.
 tags:
   - MailPoet
@@ -17,27 +17,27 @@ Spam signups in [MailPoet](https://www.mailpoet.com/) do more than clutter your 
 
 The most effective way to protect MailPoet is to combine three key approaches: use a dedicated anti-spam plugin, enable MailPoet’s built-in protections, and secure your technical setup. If you set these up properly, you can significantly reduce spam while keeping your forms easy to use.
 
-## **1. Install an Anti-Spam Plugin (OOPSpam)**
+## **1. Install an Anti-Spam Plugin (oopspam)**
 
 MailPoet includes basic protection, but it is not always enough for modern spam. Bots today can bypass simple checks and submit forms at scale.
 
-This is where a dedicated anti-spam plugin like OOPSpam helps.
+This is where a dedicated anti-spam plugin like oopspam helps.
 
-[OOPSpam](https://www.oopspam.com/) (that's us 👋) filters submissions in real time by analyzing behavior, content, and origin. It works in the background, so users do not experience extra steps like puzzles or checkboxes.
+[oopspam](https://www.oopspam.com/) (that's us 👋) filters submissions in real time by analyzing behavior, content, and origin. It works in the background, so users do not experience extra steps like puzzles or checkboxes.
 
 ### **How to set it up**
 
-Start by installing the plugin. Go to **Plugins → Add New**, search for **“[OOPSpam Anti-Spam](https://www.oopspam.com/wordpress)”**, then install and activate it.
+Start by installing the plugin. Go to **Plugins → Add New**, search for **“[oopspam Anti-Spam](https://www.oopspam.com/wordpress)”**, then install and activate it.
 
-![OOPSpam Anti-Spam](/blog/assets/posts/oopspam-anti-spam-overview.png "OOPSpam Anti-Spam")
+![oopspam Anti-Spam](/blog/assets/posts/oopspam-anti-spam-overview.png "oopspam Anti-Spam")
 
-Next, connect your site using an API key. [Create an account](https://app.oopspam.com/Identity/Account/Login) on the OOPSpam website and copy your API key from the dashboard.
+Next, connect your site using an API key. [Create an account](https://app.oopspam.com/Identity/Account/Login) on the oopspam website and copy your API key from the dashboard.
 
-![OOPSpam account](/blog/assets/posts/oopspam-dashboard-api.png "OOPSpam account")
+![oopspam account](/blog/assets/posts/oopspam-dashboard-api.png "oopspam account")
 
-Go to **Settings → OOPSpam** in WordPress and paste the API key and save.
+Go to **Settings → oopspam** in WordPress and paste the API key and save.
 
-![OOPSpam Settings](/blog/assets/posts/oopspam-api-key.png "OOPSpam Settings")
+![oopspam Settings](/blog/assets/posts/oopspam-api-key.png "oopspam Settings")
 
 Then **activate spam protection for your MailPoet**. 
 
@@ -47,7 +47,7 @@ Once activated, it begins filtering submissions automatically.
 
 ### **What it helps with**
 
-OOPSpam gives you control over how submissions are handled. You can:
+oopspam gives you control over how submissions are handled. You can:
 
 * [Limit how many times](https://www.oopspam.com/blog/how-to-limit-form-submissions-in-mailpoet) an IP or email can submit
 * Block or allow [specific countries](https://www.oopspam.com/blog/how-to-block-countries-in-mailpoet)
@@ -178,6 +178,6 @@ A WAF is especially useful if your site receives high traffic or repeated spam a
 
 MailPoet spam is not just a form issue. It affects your entire email system, from list quality to deliverability.
 
-Start with OOPSpam to handle advanced filtering. Then enable MailPoet’s built-in protections like double opt-in and CAPTCHA. Finally, strengthen your setup with proper email authentication and a firewall.
+Start with oopspam to handle advanced filtering. Then enable MailPoet’s built-in protections like double opt-in and CAPTCHA. Finally, strengthen your setup with proper email authentication and a firewall.
 
 With these steps in place, you can reduce spam, protect your sender reputation, and maintain a clean, high-quality subscriber list.

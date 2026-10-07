@@ -5,7 +5,7 @@ date: 2026-01-22T01:33:00.000+08:00
 author: chazie
 image: /blog/assets/posts/header_wpdiscuz_block.jpg
 description: Learn how to block VPN and data center IP spam in WPDiscuz using
-  OOPSpam and Cloudflare, with clear steps and minimal false positives.
+  oopspam and Cloudflare, with clear steps and minimal false positives.
 tags:
   - WPDiscuz
   - Cloudflare
@@ -14,15 +14,15 @@ tags:
 
 [WPDiscuz](https://wpdiscuz.com/) does not natively block VPNs or data center IPs. If you want to stop comment spam from AWS, Google Cloud, VPNs, and proxies, you must use external IP intelligence or network-level rules.
 
-The solution is OOPSpam Anti-Spam, which filters risky IPs before comments are saved. Cloudflare rules can help at scale, but they are not WPDiscuz-specific and must be used carefully.
+The solution is oopspam Anti-Spam, which filters risky IPs before comments are saved. Cloudflare rules can help at scale, but they are not WPDiscuz-specific and must be used carefully.
 
 This guide shows both methods, explains when to use each, and focuses only on what works for WPDiscuz comment submissions.
 
-## **Method 1: Use OOPSpam Anti-Spam**
+## **Method 1: Use oopspam Anti-Spam**
 
 This is the most accurate and [WPDiscuz-friendly](https://www.oopspam.com/blog/spam-protection-for-wpdiscuz) approach, because spam is filtered before the comment is saved and without relying on static IP blocklists.
 
-[OOPSpam Anti-Spam](https://www.oopspam.com/wordpress) (that’s us 👋) evaluates each submission in real time using continuously updated threat intelligence, including:
+[oopspam Anti-Spam](https://www.oopspam.com/wordpress) (that’s us 👋) evaluates each submission in real time using continuously updated threat intelligence, including:
 
 * Known VPN and proxy networks
 * Cloud infrastructure IP ranges (AWS, Google Cloud, Azure, DigitalOcean, etc.)
@@ -32,15 +32,15 @@ Because detection happens at the application layer, this method avoids blocking 
 
 ### **Setup Steps**
 
-Start by installing the plugin. In your WordPress dashboard, go to **Plugins → Add New**, search for **OOPSpam Anti-Spam**, then install and activate it.
+Start by installing the plugin. In your WordPress dashboard, go to **Plugins → Add New**, search for **oopspam Anti-Spam**, then install and activate it.
 
-![OOPSpam Anti-Spam](/blog/assets/posts/oopspam-anti-spam-overview.png "OOPSpam Anti-Spam")
+![oopspam Anti-Spam](/blog/assets/posts/oopspam-anti-spam-overview.png "oopspam Anti-Spam")
 
-Next, connect your API key. [Create an account](https://app.oopspam.com/Identity/Account/Login) in the OOPSpam dashboard and copy your API key. 
+Next, connect your API key. [Create an account](https://app.oopspam.com/Identity/Account/Login) in the oopspam dashboard and copy your API key. 
 
-![OOPSpam dashboard](/blog/assets/posts/oopspam-dashboard-api.png "OOPSpam dashboard")
+![oopspam dashboard](/blog/assets/posts/oopspam-dashboard-api.png "oopspam dashboard")
 
-Return to WordPress and go to **Settings → OOPSpam Anti-Spam**. Paste the key into the **My API Key** field and save your changes.
+Return to WordPress and go to **Settings → oopspam Anti-Spam**. Paste the key into the **My API Key** field and save your changes.
 
 ![Paste the key into the My API Key field and save your changes.](/blog/assets/posts/oopspam-api-key.png "Paste the key into the My API Key field and save your changes.")
 
@@ -48,9 +48,9 @@ Once the API key is connected, confirm WPDiscuz integration. Make sure **spam pr
 
 ![Make sure spam protection is enabled for WPDiscuz.](/blog/assets/posts/wpdiscuz-protection.png "Make sure spam protection is enabled for WPDiscuz.")
 
-Finally, enable IP filtering. Open the **IP Filtering** tab in the OOPSpam settings. 
+Finally, enable IP filtering. Open the **IP Filtering** tab in the oopspam settings. 
 
-![IP Filtering tab in the OOPSpam settings](/blog/assets/posts/ip-filtering-oopspam.png "IP Filtering tab in the OOPSpam settings")
+![IP Filtering tab in the oopspam settings](/blog/assets/posts/ip-filtering-oopspam.png "IP Filtering tab in the oopspam settings")
 
 * Turn on **Block Cloud Providers** first. This blocks submissions from major hosting networks like AWS, Google Cloud, Azure, and DigitalOcean, which are the most common sources of automated comment spam.
 * Turn on **Block VPNs** only if needed. This filters traffic from known VPN services but may affect legitimate users who rely on VPNs for work or privacy.
@@ -61,7 +61,7 @@ After setup, spam submissions are filtered automatically in the background. Comm
 
 Not all WPDiscuz spam is automated. Some messages are written to look real, rotate IPs, and bypass basic filters. In these cases, manual moderation is needed.
 
-[OOPSpam](https://www.oopspam.com/) includes a **Manual Moderation** section for handling targeted abuse without blocking entire networks or disrupting real users.
+[oopspam](https://www.oopspam.com/) includes a **Manual Moderation** section for handling targeted abuse without blocking entire networks or disrupting real users.
 
 ![Manual Moderation](/blog/assets/posts/manual-moderation-settings-oopspam.png "Manual Moderation")
 
@@ -113,7 +113,7 @@ Expression preview: (ip.src.asnum eq 16509)
 3. Name the rule clearly (e.g. *Block AWS ASN 16509*)
 4. Deploy the rule
 
-## **OOPSpam vs Cloudflare: Which Should You Use?**
+## **oopspam vs Cloudflare: Which Should You Use?**
 
 <style>
   table {
@@ -141,7 +141,7 @@ Expression preview: (ip.src.asnum eq 16509)
   <thead>
     <tr>
       <th>Feature</th>
-      <th>OOPSpam</th>
+      <th>oopspam</th>
       <th>Cloudflare ASN Rules</th>
     </tr>
   </thead>
@@ -183,7 +183,7 @@ Expression preview: (ip.src.asnum eq 16509)
 
 For WPDiscuz comment spam involving VPNs and data center IPs:
 
-* Start with OOPSpam Anti-Spam for comment-level protection
+* Start with oopspam Anti-Spam for comment-level protection
 * Add Cloudflare ASN or managed-list rules only if you are dealing with sustained infrastructure-based attacks
 
 This layered approach balances security, accuracy, and user experience without breaking legitimate access or overblocking privacy-conscious users.

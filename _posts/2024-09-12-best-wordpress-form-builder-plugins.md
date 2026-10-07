@@ -8,7 +8,7 @@ last_modified_at: 2026-07-28T21:17:00.000+08:00
 author: onar
 image: /blog/assets/posts/wordpressforms.png
 description: We’ve been working with WordPress form builder plugins for over
-  five years, mainly integrating the OOPSpam WordPress anti-spam plugin with
+  five years, mainly integrating the oopspam WordPress anti-spam plugin with
   them. This involves coding, creating forms and testing them.
 tags:
   - wordpress
@@ -18,7 +18,7 @@ tags:
 </center>
 <br/>
 
-We've been working with WordPress forms for over five years, mainly integrating the [OOPSpam WordPress anti-spam plugin](https://wordpress.org/plugins/oopspam-anti-spam/) with them. This involves coding, creating forms and testing them.
+We've been working with WordPress forms for over five years, mainly integrating the [oopspam WordPress anti-spam plugin](https://wordpress.org/plugins/oopspam-anti-spam/) with them. This involves coding, creating forms and testing them.
 
 I also spend a lot of time working on articles like [how to build accessibility forms](https://www.oopspam.com/blog/accessible-forms) and [building a complete contact form](https://www.oopspam.com/blog/contact-form-with-PHP).
 
@@ -30,7 +30,7 @@ While most of the plugins listed below have a free version, some don't (like Gra
 
 **Our testing environment:**
 
-* No other plugins except OOPSpam Anti-Spam and the form plugin installed.
+* No other plugins except oopspam Anti-Spam and the form plugin installed.
 * PHP 8.1.23
 * WordPress 6.4.2
 * Theme enabled: Twenty Twenty-Four
@@ -454,7 +454,7 @@ WPForms is the fastest when used with Turnstile. Other lightweight plugins are F
 
 # What is the fastest spam protection for WordPress?
 
-All client-side spam protection solutions including reCAPTCHA, hCAPTCHA, Turnstile will [slow down your website](https://www.oopspam.com/blog/recaptcha-performance-analyses). This is because they load JavaScript files, use cookies. If you need to use one of them, Turnstile has slightly less impact on your site. To avoid this problem, use a backend based spam protection like [OOPSpam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/) (that's us 👋). OOPSpam has zero impact on your site speed. More about Turnstile check out: [What No One Tells You About Cloudflare Turnstile](https://www.oopspam.com/blog/cloudflare-turnstile).
+All client-side spam protection solutions including reCAPTCHA, hCAPTCHA, Turnstile will [slow down your website](https://www.oopspam.com/blog/recaptcha-performance-analyses). This is because they load JavaScript files, use cookies. If you need to use one of them, Turnstile has slightly less impact on your site. To avoid this problem, use a backend based spam protection like [oopspam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/) (that's us 👋). oopspam has zero impact on your site speed. More about Turnstile check out: [What No One Tells You About Cloudflare Turnstile](https://www.oopspam.com/blog/cloudflare-turnstile).
 
 <style>
 table, th, td {

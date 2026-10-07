@@ -18,7 +18,7 @@ CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Ap
 
 Two of the most common solutions are reCAPTCHA V2 and reCAPTCHA V3, both developed by Google. While reCAPTCHA V2 uses visual challenges to identify bots, reCAPTCHA V3 takes a more behind-the-scenes approach. 
 
-In this blog, we’ll compare these two versions to help you decide which suits your needs best. We’ll also touch on the best alternatives like [OOPSpam](https://www.oopspam.com/), which offer innovative spam protection without the need for CAPTCHA challenges.
+In this blog, we’ll compare these two versions to help you decide which suits your needs best. We’ll also touch on the best alternatives like [oopspam](https://www.oopspam.com/), which offer innovative spam protection without the need for CAPTCHA challenges.
 
 ## What is reCAPTCHA V2?
 
@@ -119,12 +119,12 @@ reCAPTCHA V3 offers a smoother, less intrusive approach, but like anything, it h
 
 ## What is the Best reCAPTCHA Alternative?
 
-![OOPSpam dashboard displaying API usage statistics, average response time, and a verified API key, with navigation options on the left including logs, domain watch, and knowledge base.](/blog/assets/posts/image4.png "OOPSpam dashboard displaying API usage statistics, average response time, and a verified API key, with navigation options on the left including logs, domain watch, and knowledge base.")
+![oopspam dashboard displaying API usage statistics, average response time, and a verified API key, with navigation options on the left including logs, domain watch, and knowledge base.](/blog/assets/posts/image4.png "oopspam dashboard displaying API usage statistics, average response time, and a verified API key, with navigation options on the left including logs, domain watch, and knowledge base.")
 
-If you’re not thrilled about the friction of V2 or the tuning required for V3, **OOPSpam** (that’s us 👋) is the [best alternative](https://www.oopspam.com/blog/best-captcha-alternatives). Unlike reCAPTCHA, it blocks spam without the need for user interaction (see the full [reCAPTCHA alternative](https://www.oopspam.com/recaptcha-alternative) comparison). Here's why it’s worth considering:
+If you’re not thrilled about the friction of V2 or the tuning required for V3, **oopspam** (that’s us 👋) is the [best alternative](https://www.oopspam.com/blog/best-captcha-alternatives). Unlike reCAPTCHA, it blocks spam without the need for user interaction (see the full [reCAPTCHA alternative](https://www.oopspam.com/recaptcha-alternative) comparison). Here's why it’s worth considering:
 
-* **No Puzzles, No Friction**: OOPSpam offers server-side spam filtering that doesn’t rely on puzzles or user behavior tracking.
-* **Privacy-First:** Unlike many spam filters, OOPSpam doesn’t collect or store data, making it fully GDPR-compliant.
+* **No Puzzles, No Friction**: oopspam offers server-side spam filtering that doesn’t rely on puzzles or user behavior tracking.
+* **Privacy-First:** Unlike many spam filters, oopspam doesn’t collect or store data, making it fully GDPR-compliant.
 * **Customization**: You can set it to block specific IP addresses, countries, or languages, tailoring the protection to your needs.
 
 ## Which reCAPTCHA Version Should You Choose?
@@ -143,9 +143,9 @@ Now that you know the differences, how do you choose between V2 and V3?
 
 That being said, it’s worth considering how CAPTCHAs can [impact your site’s conversion rates](https://baymard.com/blog/captcha-conversion-rate). CAPTCHAs can cause friction during checkout, resulting in higher abandonment rates. Users might give up after failing CAPTCHA challenges, which can seriously affect your bottom line. 
 
-#### Considering OOPSpam?
+#### Considering oopspam?
 
-If you want a solution that offers spam protection without CAPTCHA challenges, OOPSpam is worth a look. It’s customizable, GDPR-compliant, and offers excellent spam detection without disrupting your users. 
+If you want a solution that offers spam protection without CAPTCHA challenges, oopspam is worth a look. It’s customizable, GDPR-compliant, and offers excellent spam detection without disrupting your users. 
 
 ## Implementing reCAPTCHA: A Quick Guide
 
@@ -169,18 +169,18 @@ Implementing reCAPTCHA to your site is relatively straightforward. Whether you c
 3. **Integrate Site Key and Secret Key**: As with V2, add the Site Key and Secret Key into your site’s backend.
 4. **Score Tuning**: Once implemented, you’ll want to [monitor the risk scores](https://developers.google.com/recaptcha/docs/v3#interpreting_the_score) assigned by reCAPTCHA V3 and adjust accordingly.
 
-If you need something that’s easier to implement with fewer tweaks, OOPSpam is an excellent option. With ready-made [integrations](https://www.oopspam.com/integrations/) for platforms like [WordPress](https://www.oopspam.com/wordpress), Make, and Zapier, it can be up and running in minutes.
+If you need something that’s easier to implement with fewer tweaks, oopspam is an excellent option. With ready-made [integrations](https://www.oopspam.com/integrations/) for platforms like [WordPress](https://www.oopspam.com/wordpress), Make, and Zapier, it can be up and running in minutes.
 
 ## Final Thoughts
 
 The right CAPTCHA solution for your website depends on balancing security with user experience.
 
 * If security is your priority, reCAPTCHA V2 might be the better choice.
-* If a seamless user experience matters more, reCAPTCHA V3 or OOPSpam could be a better fit. 
+* If a seamless user experience matters more, reCAPTCHA V3 or oopspam could be a better fit. 
 
 Each solution has its strengths and weaknesses, so assess your site's specific needs and make a decision based on what’s most important for you—whether it's blocking bots effectively or ensuring a smooth, uninterrupted user experience.
 
-For those who want strong protection with minimal hassle, OOPSpam offers an alternative to traditional CAPTCHA solutions, providing effective spam blocking without the need for puzzles or behavioral tracking. 
+For those who want strong protection with minimal hassle, oopspam offers an alternative to traditional CAPTCHA solutions, providing effective spam blocking without the need for puzzles or behavioral tracking. 
 
 Remember, the right balance between security and user experience will not only protect your site but also ensure that legitimate users aren’t turned away.
 

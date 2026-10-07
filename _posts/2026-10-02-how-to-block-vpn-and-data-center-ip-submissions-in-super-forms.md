@@ -5,29 +5,29 @@ date: 2026-10-02T19:08:00.000+08:00
 author: chazie
 image: /blog/assets/posts/howtoblockvpn_superforms.jpg
 description: Super Forms has no built-in VPN or data center filter. Block them
-  with OOPSpam IP Filtering or Cloudflare ASN rules. Step-by-step setup.
+  with oopspam IP Filtering or Cloudflare ASN rules. Step-by-step setup.
 tags:
   - Super Forms
 ---
-[Super Forms](https://super-forms.com/) does not list a built-in setting to block VPN or data center IPs. To block them, use the OOPSpam Anti-Spam plugin and turn on Block Cloud Providers and Block VPNs. For site-wide control, add a Cloudflare rule that challenges or blocks cloud provider ASNs. Start by blocking cloud providers, and enable VPN blocking only if your audience does not rely on VPNs.
+[Super Forms](https://super-forms.com/) does not list a built-in setting to block VPN or data center IPs. To block them, use the oopspam Anti-Spam plugin and turn on Block Cloud Providers and Block VPNs. For site-wide control, add a Cloudflare rule that challenges or blocks cloud provider ASNs. Start by blocking cloud providers, and enable VPN blocking only if your audience does not rely on VPNs.
 
-## **Method 1: Block VPN and Cloud IPs With OOPSpam**
+## **Method 1: Block VPN and Cloud IPs With oopspam**
 
-**[OOPSpam](https://www.oopspam.com/)** checks each Super Forms submission against a database of known VPN services and cloud provider IP ranges. It blocks matches before they reach your inbox or entries.
+**[oopspam](https://www.oopspam.com/)** checks each Super Forms submission against a database of known VPN services and cloud provider IP ranges. It blocks matches before they reach your inbox or entries.
 
 ### **How to set it up**
 
-In WordPress, go to **Plugins > Add New**, search for **OOPSpam Anti-Spam**, then install and activate it.
+In WordPress, go to **Plugins > Add New**, search for **oopspam Anti-Spam**, then install and activate it.
 
-![OOPSpam Anti-Spam](/blog/assets/posts/oopspam-anti-spam-overview.png "OOPSpam Anti-Spam")
+![oopspam Anti-Spam](/blog/assets/posts/oopspam-anti-spam-overview.png "oopspam Anti-Spam")
 
 Create a free account at[ oopspam.com](https://app.oopspam.com/Identity/Account/Login) and copy your API key from the dashboard.
 
 ![Create a free account at oopspam.com and copy your API key from the dashboard.](/blog/assets/posts/oopspam-dashboard-api.png "Create a free account at oopspam.com and copy your API key from the dashboard.")
 
-Open the OOPSpam settings in WordPress, paste your API key, and save.
+Open the oopspam settings in WordPress, paste your API key, and save.
 
-![Open the OOPSpam settings in WordPress, paste your API key, and save.](/blog/assets/posts/oopspam-api-key.png "Open the OOPSpam settings in WordPress, paste your API key, and save.")
+![Open the oopspam settings in WordPress, paste your API key, and save.](/blog/assets/posts/oopspam-api-key.png "Open the oopspam settings in WordPress, paste your API key, and save.")
 
 Find the **Super Forms** section and check **Activate Spam Protection**.
 
@@ -42,13 +42,13 @@ Open the **IP Filtering** tab and enable:
 
 ![Open the IP Filtering tab ](/blog/assets/posts/ip-filtering-oopspam.png "Open the IP Filtering tab ")
 
-Save your changes, then submit a test entry and check the OOPSpam [spam and ham logs](https://help.oopspam.com/wordpress/form-entries/).
+Save your changes, then submit a test entry and check the oopspam [spam and ham logs](https://help.oopspam.com/wordpress/form-entries/).
 
 ### **If your site uses Cloudflare**
 
 ![Trust proxy headers](/blog/assets/posts/trust-proxy-headers.png "Trust proxy headers")
 
-Open the OOPSpam **Miscellaneous** settings and enable **Trust proxy headers**. This lets the plugin see the visitor's real IP instead of Cloudflare's. Only enable it if you trust your proxy service. Also keep the **Do not analyze IP addresses** privacy setting off, because IP filtering needs the visitor's IP.
+Open the oopspam **Miscellaneous** settings and enable **Trust proxy headers**. This lets the plugin see the visitor's real IP instead of Cloudflare's. Only enable it if you trust your proxy service. Also keep the **Do not analyze IP addresses** privacy setting off, because IP filtering needs the visitor's IP.
 
 ### **Handle false positives with Manual Moderation**
 
@@ -79,4 +79,4 @@ Repeat for other providers such as Google Cloud, Microsoft Azure, and DigitalOce
 
 ## **Final thoughts**
 
-Super Forms has no native VPN or data center filter, so add one. Set up OOPSpam first, starting with Block Cloud Providers. Add Block VPNs if your audience allows it. Add Cloudflare ASN rules only if attacks continue at scale.
+Super Forms has no native VPN or data center filter, so add one. Set up oopspam first, starting with Block Cloud Providers. Add Block VPNs if your audience allows it. Add Cloudflare ASN rules only if attacks continue at scale.

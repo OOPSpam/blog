@@ -5,7 +5,7 @@ date: 2025-10-28T06:08:00.000+08:00
 author: chazie
 image: /blog/assets/posts/metform_rt.jpg
 description: Learn how to limit form submissions in MetForm using built-in
-  settings and OOPSpam for advanced rate limiting, spam control, and abuse
+  settings and oopspam for advanced rate limiting, spam control, and abuse
   prevention.
 tags:
   - MetForm
@@ -13,7 +13,7 @@ tags:
 ---
 ![MetForm](/blog/assets/posts/metform.png "MetForm")
 
-[MetForm](https://wpmet.com/plugin/metform/) lets you set a submission cap through its “Limit Total Entries” feature. For advanced protection, pair it with OOPSpam to control how often users can submit, block spam, and manage abusive behavior automatically.
+[MetForm](https://wpmet.com/plugin/metform/) lets you set a submission cap through its “Limit Total Entries” feature. For advanced protection, pair it with oopspam to control how often users can submit, block spam, and manage abusive behavior automatically.
 
 ### **Why Limiting Form Submissions Matters**
 
@@ -46,11 +46,11 @@ This option is perfect for:
 * Preventing duplicates and over-submissions
 * Managing database load during peak activity
 
-However, MetForm’s built-in setting only limits total entries, not per user or per IP. For finer control, move on to OOPSpam.
+However, MetForm’s built-in setting only limits total entries, not per user or per IP. For finer control, move on to oopspam.
 
-## **Advanced Rate Limiting with OOPSpam**
+## **Advanced Rate Limiting with oopspam**
 
-To stop repetitive spam or abuse, you’ll need more advanced control. **[OOPSpam](https://www.oopspam.com/)** (that’s us 👋) adds rate limiting to MetForm, allowing you to restrict how many times a user, IP, or email can submit within a set period. With OOPSpam, you can:
+To stop repetitive spam or abuse, you’ll need more advanced control. **[oopspam](https://www.oopspam.com/)** (that’s us 👋) adds rate limiting to MetForm, allowing you to restrict how many times a user, IP, or email can submit within a set period. With oopspam, you can:
 
 * [Limit submissions](https://www.oopspam.com/blog/protecting-forms-with-rate-limiting-in-wordpress-using-oopspam) per IP or email per hour.
 * Block VPN, proxy, or TOR traffic.
@@ -59,19 +59,19 @@ To stop repetitive spam or abuse, you’ll need more advanced control. **[OOPSpa
 
 This plugin integrates directly into WordPress and filters each submission before it reaches your inbox or CRM.
 
-## **How to Set Up OOPSpam for MetForm**
+## **How to Set Up oopspam for MetForm**
 
-![OOPSpam ](/blog/assets/posts/oopspam-anti-spam-overview.png "OOPSpam ")
+![oopspam ](/blog/assets/posts/oopspam-anti-spam-overview.png "oopspam ")
 
 ### **Step 1: Install and Connect**
 
-From your dashboard, go to **Plugins → Add New.** Search for **[OOPSpam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/)**, install, and activate it.
+From your dashboard, go to **Plugins → Add New.** Search for **[oopspam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/)**, install, and activate it.
 
-[Create an account](https://app.oopspam.com/Identity/Account/Login) at OOPSpam and copy your **API Key**.
+[Create an account](https://app.oopspam.com/Identity/Account/Login) at oopspam and copy your **API Key**.
 
-![OOPSpam and copy your API Key](/blog/assets/posts/oopspam-dashboard-api.png "OOPSpam and copy your API Key")
+![oopspam and copy your API Key](/blog/assets/posts/oopspam-dashboard-api.png "oopspam and copy your API Key")
 
-In WordPress, go to **OOPSpam → General Settings** and paste your API key.
+In WordPress, go to **oopspam → General Settings** and paste your API key.
 
 ![General Settings and paste your API key](/blog/assets/posts/oopspam-api-key.png "General Settings and paste your API key")
 
@@ -81,7 +81,7 @@ Enable **MetForm spam protection** and then click Save Changes to apply your set
 
 ### **Step 2: Enable Rate Limiting**
 
-Go to **OOPSpam → Rate Limiting Settings.** Toggle **Enable Rate Limiting** to **ON.**
+Go to **oopspam → Rate Limiting Settings.** Toggle **Enable Rate Limiting** to **ON.**
 
 ![Rate Limiting Settings](/blog/assets/posts/rate-limiting-settings.png "Rate Limiting Settings")
 
@@ -98,7 +98,7 @@ Click **Save Changes.**
 
 ### **Strengthen Protection**
 
-Enhance form security by enabling additional OOPSpam filters:
+Enhance form security by enabling additional oopspam filters:
 
 * **VPN/Proxy/TOR Blocking** – Prevents anonymous or automated spam.
 * **Country Rules** – Only accept submissions from the regions you serve.
@@ -108,7 +108,7 @@ After setup, test by submitting multiple entries quickly to ensure the limits tr
 
 ## **Final thoughts**
 
-MetForm’s Limit Total Entries feature is ideal for basic submission control. For everything beyond that, like per-IP limits, spam detection, and abuse prevention, OOPSpam is the advanced, more flexible solution.
+MetForm’s Limit Total Entries feature is ideal for basic submission control. For everything beyond that, like per-IP limits, spam detection, and abuse prevention, oopspam is the advanced, more flexible solution.
 
 **Key advantages:**
 
@@ -117,7 +117,7 @@ MetForm’s Limit Total Entries feature is ideal for basic submission control. F
 * Reduces database clutter with automatic cleanup.
 * Doesn’t slow down your website.
 
-Together, MetForm and OOPSpam create a reliable, layered defense, one that controls both the volume and quality of form submissions.
+Together, MetForm and oopspam create a reliable, layered defense, one that controls both the volume and quality of form submissions.
 
 ## Related guides
 

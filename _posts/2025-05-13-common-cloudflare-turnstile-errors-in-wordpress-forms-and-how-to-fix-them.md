@@ -16,7 +16,7 @@ tags:
 
 [Cloudflare Turnstile](https://www.oopspam.com/blog/cloudflare-turnstile) is a user-friendly, privacy-first [CAPTCHA alternative](https://www.oopspam.com/blog/best-captcha-alternatives) that’s becoming popular with WordPress users. But it can run into issues, especially with form plugins. This guide covers common Turnstile errors in WordPress forms and how to fix them fast.
 
-> 💡 **Tired of fixing Turnstile errors?** OOPSpam stops spam on your server, with no widget for visitors, no challenge script, and no tokens to expire. See our [Cloudflare Turnstile alternative for WordPress](https://www.oopspam.com/turnstile-alternative).
+> 💡 **Tired of fixing Turnstile errors?** oopspam stops spam on your server, with no widget for visitors, no challenge script, and no tokens to expire. See our [Cloudflare Turnstile alternative for WordPress](https://www.oopspam.com/turnstile-alternative).
 
 <!-- Quick Links (Table of Contents) for: Common Cloudflare Turnstile Errors in WordPress Forms -->
 
@@ -35,7 +35,7 @@ tags:
     <li><a href="#9-client-side-execution-errors-300010-300030-300031">Client-side execution errors (300010, 300030, 300031)</a></li>
     <li><a href="#10-challenge-execution-failure-600010">Challenge execution failure (600010)</a></li>
     <li><a href="#technical-turnstile-error-codes-and-what-they-mean">Technical Turnstile error codes and what they mean</a></li>
-    <li><a href="#use-oopspam-for-advanced-spam-filtering">Use OOPSpam for advanced spam filtering</a></li>
+    <li><a href="#use-oopspam-for-advanced-spam-filtering">Use oopspam for advanced spam filtering</a></li>
     <li><a href="#final-thoughts">Final thoughts</a></li>
   </ul>
 </nav>
@@ -361,15 +361,15 @@ These errors may show up in logs or browser dev tools:
   </tbody>
 </table>
 
-## **Use OOPSpam for Advanced Spam Filtering**
+## **Use oopspam for Advanced Spam Filtering**
 
 Turnstile helps reduce automated form abuse, but it is not the whole solution. Some spam still gets through, and some attacks focus on content quality rather than pure automation.
 
-**[OOPSpam WordPress plugin](https://www.oopspam.com/wordpress)** (that’s us 👋) adds a second layer that helps catch nuisance submissions, patterns, and language based abuse, without adding more friction for real users.
+**[oopspam WordPress plugin](https://www.oopspam.com/wordpress)** (that’s us 👋) adds a second layer that helps catch nuisance submissions, patterns, and language based abuse, without adding more friction for real users.
 
-![OOPSpam WordPress plugin](/blog/assets/posts/oopspam-anti-spam-overview.png "OOPSpam WordPress plugin")
+![oopspam WordPress plugin](/blog/assets/posts/oopspam-anti-spam-overview.png "oopspam WordPress plugin")
 
-Benefits of using **[OOPSpam](https://www.oopspam.com/)**:
+Benefits of using **[oopspam](https://www.oopspam.com/)**:
 
 * Works silently in the background (no CAPTCHA)
 * Compatible with major form plugins
@@ -377,12 +377,12 @@ Benefits of using **[OOPSpam](https://www.oopspam.com/)**:
 * Country blocking to stop spam from specific regions
 * No impact on performance or user experience
 
-[Turnstile alternative](https://www.oopspam.com/turnstile-alternative) solutions like OOPSpam gives you layered protection without overburdening your users.
+[Turnstile alternative](https://www.oopspam.com/turnstile-alternative) solutions like oopspam gives you layered protection without overburdening your users.
 
 ## **Final Thoughts**
 
 Most Cloudflare Turnstile issues in WordPress come down to configuration, script loading, or token handling. Once keys are verified, caching is controlled, and server-side validation is confirmed, most errors resolve quickly.
 
-For stronger protection and fewer false positives, combining Turnstile with background spam filtering provides a more reliable approach without hurting user experience. Whether you're already using Turnstile or just exploring spam protection options, it’s a great time to [get started with OOPSpam](https://app.oopspam.com/Identity/Account/Register) for advanced, frictionless form security.
+For stronger protection and fewer false positives, combining Turnstile with background spam filtering provides a more reliable approach without hurting user experience. Whether you're already using Turnstile or just exploring spam protection options, it’s a great time to [get started with oopspam](https://app.oopspam.com/Identity/Account/Register) for advanced, frictionless form security.
 
 Stay secure and spam-free!

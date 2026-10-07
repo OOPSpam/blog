@@ -1,34 +1,34 @@
 ---
 layout: post
-title: So, you're using OOPSpam and still getting spam?
+title: So, you're using oopspam and still getting spam?
 date: 2025-05-16T16:43:00.000Z
 last_modified_at: 2026-07-30T11:25:00.000+04:00
 author: onar
 image: /assets/posts/header-oopspam.png
-description: Learn how to make the most of the OOPSpam features, such as
+description: Learn how to make the most of the oopspam features, such as
   blocking countries and disposable emails, and detecting spam with LLMs.
 ---
-You started using OOPSpam and noticed spam still coming in.
+You started using oopspam and noticed spam still coming in.
 
 No solution is going to offer 100% protection, but we can get pretty close.
 
 That's how we get customers because people still get spam when they use [reCAPTCHA](https://www.oopspam.com/blog/best-recaptcha-alternatives), [Turnstile](https://www.oopspam.com/blog/best-turnstile-alternatives), [Akismet](https://www.oopspam.com/blog/best-akismet-alternatives), or similar solutions.
 
-I wrote this post to help you get the most out of OOPSpam.
+I wrote this post to help you get the most out of oopspam.
 
-OOPSpam uses a machine learning model, IP, and email reputation by default. But there are other features you can use that will add an extra layer of protection.
+oopspam uses a machine learning model, IP, and email reputation by default. But there are other features you can use that will add an extra layer of protection.
 
 ## Verify your API key
 
-We have encountered many cases, particularly with our integration, where a customer pastes their API key and a browser extension modifies it. After pasting your API key, submit a form. Then, check if the usage number in the OOPSpam dashboard has been updated. If so, it means we are receiving requests from your API key.
+We have encountered many cases, particularly with our integration, where a customer pastes their API key and a browser extension modifies it. After pasting your API key, submit a form. Then, check if the usage number in the oopspam dashboard has been updated. If so, it means we are receiving requests from your API key.
 
-![OOPSpam dashboard](/blog/assets/posts/dashboard-sample-data.png "OOPSpam dashboard")
+![oopspam dashboard](/blog/assets/posts/dashboard-sample-data.png "oopspam dashboard")
 
 Then, look at the options below.
 
 ## Block Cloud Providers
 
-OOPSpam has a feature that blocks submissions from hosting companies. This powerful feature has a low risk of false positives. It is available in all of our official [integrations](https://www.oopspam.com/integrations/).
+oopspam has a feature that blocks submissions from hosting companies. This powerful feature has a low risk of false positives. It is available in all of our official [integrations](https://www.oopspam.com/integrations/).
 
 In [WordPress](https://help.oopspam.com/wordpress/), for example, it can be found in the [IP Filtering](https://help.oopspam.com/wordpress/configuration/#ip-filtering) tab under Settings. At the [API](https://www.oopspam.com/docs/#spam-detection) level, you add **"blockDC": true** to the request body.
 
@@ -50,7 +50,7 @@ If you have a form with a message or any other content field, you can choose to 
 
 ## Block Disposable Emails
 
-Real people rarely use throwaway emails to submit a form or sign up for a platform. OOPSpam doesn't block email forwarding services, such as Mozilla Relay. These services are used by individuals concerned about their privacy. OOPSpam only blocks temporary emails generated for one-time use.
+Real people rarely use throwaway emails to submit a form or sign up for a platform. oopspam doesn't block email forwarding services, such as Mozilla Relay. These services are used by individuals concerned about their privacy. oopspam only blocks temporary emails generated for one-time use.
 
 Use this feature to block them and only keep valid emails. This is great for lead forms where you only want valid domains.
 

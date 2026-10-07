@@ -5,7 +5,7 @@ date: 2025-09-19T18:45:00.000+08:00
 author: chazie
 image: /blog/assets/posts/ff_rt.jpg
 description: Limit submissions in Formidable Forms with scheduling, entry caps,
-  and OOPSpam rate-limiting to block spam, duplicates, and abuse.
+  and oopspam rate-limiting to block spam, duplicates, and abuse.
 tags:
   - Formidable Forms
   - Rate Limiting
@@ -49,19 +49,19 @@ Click **Update** to apply your changes. Then test your form by submitting entrie
 * **User messaging**: Add a custom message to explain why the form is closed, this keeps things clear for visitors.
 * **Plan requirement**: Form Scheduling is only available in the Formidable Basic plan or higher, so free users will need to upgrade.
 
-## **Advanced Rate Limiting Using OOPSpam**
+## **Advanced Rate Limiting Using oopspam**
 
-While Formidable’s built-in tools are powerful, sometimes you need more control. That’s where **[OOPSpam](https://www.oopspam.com/)** (that’s us 👋) comes in. It adds per-IP and per-email rate-limiting to [stop abusive behavior](https://www.oopspam.com/blog/spam-protection-for-formidable) and spam bursts.
+While Formidable’s built-in tools are powerful, sometimes you need more control. That’s where **[oopspam](https://www.oopspam.com/)** (that’s us 👋) comes in. It adds per-IP and per-email rate-limiting to [stop abusive behavior](https://www.oopspam.com/blog/spam-protection-for-formidable) and spam bursts.
 
-### **Setting Up Rate Limiting with OOPSpam**
+### **Setting Up Rate Limiting with oopspam**
 
-To get started, install and activate the **[OOPSpam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/)** plugin from the WordPress Plugin Repository. Once installed, [create an account](https://app.oopspam.com/Identity/Account/Login) on OOPSpam’s site and generate your unique **API key**. 
+To get started, install and activate the **[oopspam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/)** plugin from the WordPress Plugin Repository. Once installed, [create an account](https://app.oopspam.com/Identity/Account/Login) on oopspam’s site and generate your unique **API key**. 
 
-![OOPSpam](/blog/assets/posts/oopspam-dashboard-api.png "OOPSpam")
+![oopspam](/blog/assets/posts/oopspam-dashboard-api.png "oopspam")
 
-Enter this key under **OOPSpam → General Settings** in your WordPress dashboard.
+Enter this key under **oopspam → General Settings** in your WordPress dashboard.
 
-![OOPSpam → General Settings](/blog/assets/posts/oopspam-api-key.png "OOPSpam → General Settings")
+![oopspam → General Settings](/blog/assets/posts/oopspam-api-key.png "oopspam → General Settings")
 
 In the same tab, scroll and make sure to **activate spam protection** for [Formidable Forms](https://www.oopspam.com/blog/spam-protection-for-formidable), so the plugin connects directly with your forms.
 
@@ -84,7 +84,7 @@ Finally, click **Save Changes**. Test by attempting multiple [submissions](https
 
 ## **Final thoughts**
 
-Formidable Forms gives you the tools to control how many entries a form accepts and when. By adding OOPSpam’s rate-limiting on top, you can [block spam](https://www.oopspam.com/integrations/spam-protection-for-formidable), stop duplicate entries, and keep submissions under control.
+Formidable Forms gives you the tools to control how many entries a form accepts and when. By adding oopspam’s rate-limiting on top, you can [block spam](https://www.oopspam.com/integrations/spam-protection-for-formidable), stop duplicate entries, and keep submissions under control.
 
 ## Related guides
 

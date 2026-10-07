@@ -5,7 +5,7 @@ date: 2025-12-04T07:19:00.000+08:00
 author: chazie
 image: /blog/assets/posts/limitform_piotnet.jpg
 description: Learn how to limit Piotnet Form submissions using age rules,
-  conditional visibility, and OOPSpam rate limiting for stronger spam control
+  conditional visibility, and oopspam rate limiting for stronger spam control
   and cleaner entries.
 tags:
   - Piotnet Forms
@@ -15,7 +15,7 @@ tags:
 
 [Piotnet Forms](https://piotnetforms.com/) does not include built-in submission throttling or country blocking. It does, however, offer tools for managing who can view or complete your form. This reduces unwanted submissions at the source.
 
-You can set age limits, schedule visibility, and restrict access based on role, URL structure, or custom fields. These features shape how people interact with your form before they ever submit. For real spam filtering and rate limiting, use OOPSpam.
+You can set age limits, schedule visibility, and restrict access based on role, URL structure, or custom fields. These features shape how people interact with your form before they ever submit. For real spam filtering and rate limiting, use oopspam.
 
 This guide explains every option you can use to limit Piotnet Forms submissions, including built-in rules, visibility settings, Piotnet Addons for Elementor (PAFE) entry caps, and advanced spam filtering.
 
@@ -129,29 +129,29 @@ PAFE will immediately block new entries once the limit is reached.
 
 **Example:** If the current count is 300 and you want 50 more spots, set the limit to 350.
 
-## **Use OOPSpam for Real Spam Filtering and Rate Limiting**
+## **Use oopspam for Real Spam Filtering and Rate Limiting**
 
-Piotnet Forms does not include built-in spam detection, country blocking, or submission limits. **[OOPSpam](https://www.oopspam.com/)** (that’s us 👋) fills these gaps. It adds machine-learning spam filtering, VPN blocking, IP throttling, and country rules directly into [WordPress](https://www.oopspam.com/wordpress).
+Piotnet Forms does not include built-in spam detection, country blocking, or submission limits. **[oopspam](https://www.oopspam.com/)** (that’s us 👋) fills these gaps. It adds machine-learning spam filtering, VPN blocking, IP throttling, and country rules directly into [WordPress](https://www.oopspam.com/wordpress).
 
 This is the only way to limit how many times a user submits a Piotnet form.
 
-### **How to Install OOPSpam**
+### **How to Install oopspam**
 
-![OOPSpam](/blog/assets/posts/oopspam-anti-spam-overview.png "OOPSpam")
+![oopspam](/blog/assets/posts/oopspam-anti-spam-overview.png "oopspam")
 
 **Step 1 — Install the Plugin**
 
-You can install OOPSpam directly from your WordPress dashboard. Open **Plugins → Add New** and search for **[OOPSpam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/)**. Install the plugin and activate it. 
+You can install oopspam directly from your WordPress dashboard. Open **Plugins → Add New** and search for **[oopspam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/)**. Install the plugin and activate it. 
 
 **Step 2 — Connect Your API Key**
 
 ![Connect Your API Key](/blog/assets/posts/oopspam-dashboard-api.png "Connect Your API Key")
 
-To connect your API key, [create an account](https://app.oopspam.com/Identity/Account/Login) on **OOPSpam.com** and copy the key from your dashboard. 
+To connect your API key, [create an account](https://app.oopspam.com/Identity/Account/Login) on **oopspam.com** and copy the key from your dashboard. 
 
 ![Paste your API key into the field provided and save your settings.](/blog/assets/posts/oopspam-api-key.png "Paste your API key into the field provided and save your settings.")
 
-Go back to WordPress and open **OOPSpam → General Settings**. Paste your API key into the field provided and save your settings.
+Go back to WordPress and open **oopspam → General Settings**. Paste your API key into the field provided and save your settings.
 
 **Step 3 — Enable Piotnet Forms Protection**
 
@@ -163,11 +163,11 @@ Make sure the Piotnet Forms spam protection toggle is turned on under General Se
 
 ![Turn On Rate Limiting (Important)](/blog/assets/posts/enabled-rate-limiting-settings.png "Turn On Rate Limiting (Important)")
 
-Piotnet cannot [limit submission](https://www.oopspam.com/blog/protecting-forms-with-rate-limiting-in-wordpress-using-oopspam) frequency. OOPSpam handles this reliably.
+Piotnet cannot [limit submission](https://www.oopspam.com/blog/protecting-forms-with-rate-limiting-in-wordpress-using-oopspam) frequency. oopspam handles this reliably.
 
 ### **How to Enable Rate Limiting**
 
-1. Go to **OOPSpam → Rate Limiting** tab.
+1. Go to **oopspam → Rate Limiting** tab.
 2. Enable **Rate Limiting**.
 3. Set your limits:
 4. * **Max submissions per IP per hour –** Limits how many times the same IP address can submit in one hour.
@@ -180,7 +180,7 @@ Piotnet cannot [limit submission](https://www.oopspam.com/blog/protecting-forms-
 
 Click **Save Changes**.
 
-## **Add Extra OOPSpam Filters for Better Accuracy**
+## **Add Extra oopspam Filters for Better Accuracy**
 
 Enable these options for stronger protection:
 
@@ -194,8 +194,8 @@ These features drastically reduce bot traffic without hurting real users.
 
 ## **Final Takeaway**
 
-Piotnet Forms controls who can access your form. OOPSpam controls how and how often users can submit it.
+Piotnet Forms controls who can access your form. oopspam controls how and how often users can submit it.
 
-Use Piotnet’s age rules and visibility settings to filter users before they reach the form. Use OOPSpam for advanced spam filtering, country blocking, and rate limiting.
+Use Piotnet’s age rules and visibility settings to filter users before they reach the form. Use oopspam for advanced spam filtering, country blocking, and rate limiting.
 
 Together, they give you clean submissions, fewer bots, and a safer form experience.

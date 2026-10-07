@@ -9,7 +9,7 @@ description: Learn how CAPTCHA can create accessibility and legal risks under
 tags:
   - CAPTCHA
 ---
-CAPTCHA can violate the[ Web Content Accessibility Guidelines (WCAG) 2.2](https://www.w3.org/TR/WCAG22/), specifically[ SC 1.1.1](https://www.w3.org/WAI/WCAG22/Understanding/non-text-content.html) and[ SC 3.3.8](https://www.w3.org/WAI/WCAG22/Understanding/accessible-authentication-minimum.html). That puts your site at risk under the[ Americans with Disabilities Act (ADA)](https://www.ada.gov/) in the US and the[ European Accessibility Act (EAA)](https://eur-lex.europa.eu/eli/dir/2019/882/oj) in the EU. Both laws are now actively enforced. Over 3,100 ADA web lawsuits were filed in US federal court in 2025, and the EAA produced its first major court order against a retailer in 2026.  One way to reduce this exposure is to replace visual and audio CAPTCHA challenges with invisible, server-side spam filtering, like[ OOPSpam](https://www.oopspam.com/), that never puts a barrier in front of any user.
+CAPTCHA can violate the[ Web Content Accessibility Guidelines (WCAG) 2.2](https://www.w3.org/TR/WCAG22/), specifically[ SC 1.1.1](https://www.w3.org/WAI/WCAG22/Understanding/non-text-content.html) and[ SC 3.3.8](https://www.w3.org/WAI/WCAG22/Understanding/accessible-authentication-minimum.html). That puts your site at risk under the[ Americans with Disabilities Act (ADA)](https://www.ada.gov/) in the US and the[ European Accessibility Act (EAA)](https://eur-lex.europa.eu/eli/dir/2019/882/oj) in the EU. Both laws are now actively enforced. Over 3,100 ADA web lawsuits were filed in US federal court in 2025, and the EAA produced its first major court order against a retailer in 2026.  One way to reduce this exposure is to replace visual and audio CAPTCHA challenges with invisible, server-side spam filtering, like[ oopspam](https://www.oopspam.com/), that never puts a barrier in front of any user.
 
 If your forms use a traditional CAPTCHA (image grids, distorted text, audio clips), you likely have a compliance gap, not just a UX problem.
 
@@ -69,21 +69,21 @@ For agencies, this risk transfers to clients: a CAPTCHA added for "spam protecti
 
 ## **The Solution: Invisible Spam Protection That's WCAG-Compliant by Default**
 
-![OOPSpam ](/blog/assets/posts/oopspam-anti-spam-overview.png "OOPSpam ")
+![oopspam ](/blog/assets/posts/oopspam-anti-spam-overview.png "oopspam ")
 
 CAPTCHA's real flaw is the model itself: it puts a barrier in front of the user to prove they're human. WCAG's Accessible Authentication criterion rules that model out. The compliant path is to move detection off the user and onto the server.
 
-That's how[ OOPSpam](https://www.oopspam.com/) works. It evaluates form submissions in the background (spam score, IP reputation, language and country filtering, content analysis) before anything reaches your inbox or database. No challenge, no puzzle, no time limit, because there's nothing for the visitor to solve. A control with no user-facing test can't fail SC 1.1.1 or SC 3.3.8. It's accessible by default.
+That's how[ oopspam](https://www.oopspam.com/) works. It evaluates form submissions in the background (spam score, IP reputation, language and country filtering, content analysis) before anything reaches your inbox or database. No challenge, no puzzle, no time limit, because there's nothing for the visitor to solve. A control with no user-facing test can't fail SC 1.1.1 or SC 3.3.8. It's accessible by default.
 
 ### **Getting set up takes a few minutes:**
 
-1. Sign up for a free[ OOPSpam account](https://app.oopspam.com/Identity/Account/Register) and grab your API key.
+1. Sign up for a free[ oopspam account](https://app.oopspam.com/Identity/Account/Register) and grab your API key.
 2. Connect your form, either through the[ WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/), a direct[ API integration](https://www.oopspam.com/docs/#introduction), or a Zapier/Make connection.
 3. Set your filters, like blocked countries, languages, or a spam-score threshold, from the dashboard.
-4. Remove your CAPTCHA widget. OOPSpam checks submissions server-side, so no CAPTCHA is needed.
+4. Remove your CAPTCHA widget. oopspam checks submissions server-side, so no CAPTCHA is needed.
 5. Monitor and adjust using the analytics dashboard as real traffic comes in.
 
-See how OOPSpam compares to CAPTCHA, hCAPTCHA, reCAPTCHA, and Turnstile in[ this comparison guide](https://www.oopspam.com/blog/best-captcha-alternatives).
+See how oopspam compares to CAPTCHA, hCAPTCHA, reCAPTCHA, and Turnstile in[ this comparison guide](https://www.oopspam.com/blog/best-captcha-alternatives).
 
 <p style="font-size: 0.85em; color: #6b7280; margin-top: 2rem;">
   This article is for informational purposes and does not constitute legal advice. Consult a qualified attorney to assess your specific EAA or ADA compliance obligations.

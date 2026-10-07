@@ -5,14 +5,14 @@ date: 2025-04-10T03:08:00.000Z
 author: chazie
 image: /assets/posts/how-to-block-vpn-and-data-center-ip-submissions-in-elementor-forms.jpg
 description: Block spam in Elementor forms fast. Learn how to block VPN and data
-  center IP submissions using OOPSpam or Cloudflare. Boost form security easily.
+  center IP submissions using oopspam or Cloudflare. Boost form security easily.
 tags:
   - Elementor forms
   - VPN
 ---
 ![Block VPN and Cloud Provider IPs in Elementor Forms](/blog/assets/posts/elementor-contact-form-design.png "Elementor forms")
 
-Spam form submissions are often routed through VPNs or cloud servers. If you’re seeing fake leads or suspicious traffic in your [Elementor forms](https://elementor.com/pages/form-builder/), these sources could be the cause. In this guide, we’ll cover why blocking them helps—and how to do it manually or with one click using the OOPSpam plugin.
+Spam form submissions are often routed through VPNs or cloud servers. If you’re seeing fake leads or suspicious traffic in your [Elementor forms](https://elementor.com/pages/form-builder/), these sources could be the cause. In this guide, we’ll cover why blocking them helps—and how to do it manually or with one click using the oopspam plugin.
 
 ## **Why Block VPN and Cloud Provider IPs in Elementor Forms?**
 
@@ -53,11 +53,11 @@ You’ll need to block traffic based on [ASN](https://en.wikipedia.org/wiki/Auto
 
 So while this method works, it’s better suited to advanced users or those managing high-traffic sites with dedicated technical resources.
 
-## **Method 2: Block VPN and Cloud IPs with One Click Using the OOPSpam WordPress Plugin**
+## **Method 2: Block VPN and Cloud IPs with One Click Using the oopspam WordPress Plugin**
 
-![OOPSpam WordPress plugin](/blog/assets/posts/oopspam-anti-spam-overview.png "OOPSpam WordPress plugin")
+![oopspam WordPress plugin](/blog/assets/posts/oopspam-anti-spam-overview.png "oopspam WordPress plugin")
 
-If you want a faster, more automated way to filter out these IPs in Elementor forms (or any supported form plugin), our **[OOPSpam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/)** (that’s us 👋) makes it easy.
+If you want a faster, more automated way to filter out these IPs in Elementor forms (or any supported form plugin), our **[oopspam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/)** (that’s us 👋) makes it easy.
 
 We’ve recently added two new toggles under IP Filtering:
 
@@ -78,21 +78,21 @@ This means your Elementor forms get accurate, real-time protection without break
 
 And if you’re using [our API](https://www.oopspam.com/docs/#introduction) or other integrations beyond WordPress, these same protections are available there too.
 
-## **How to Enable VPN and Cloud IP Blocking in OOPSpam WordPress Plugin**
+## **How to Enable VPN and Cloud IP Blocking in oopspam WordPress Plugin**
 
 Setting this up takes just a few minutes. Here’s how to do it.
 
 ### **Step 1: Install or Update the Plugin**
 
-Head to your WordPress dashboard, search for **[OOPSpam Anti-Spam](https://www.oopspam.com/wordpress)** in the plugin directory, and install or update to the latest version.
+Head to your WordPress dashboard, search for **[oopspam Anti-Spam](https://www.oopspam.com/wordpress)** in the plugin directory, and install or update to the latest version.
 
-![Signing up on the OOPSpam Dashboard and copy your API key.](/blog/assets/posts/oopspam-dashboard-api.png " OOPSpam Dashboard")
+![Signing up on the oopspam Dashboard and copy your API key.](/blog/assets/posts/oopspam-dashboard-api.png " oopspam Dashboard")
 
-You’ll need an **API key**, which you can get by [signing up on the OOPSpam Dashboard](https://app.oopspam.com/Identity/Account/Login). Copy your API key and paste it into the plugin settings.
+You’ll need an **API key**, which you can get by [signing up on the oopspam Dashboard](https://app.oopspam.com/Identity/Account/Login). Copy your API key and paste it into the plugin settings.
 
 ### **Step 2: Add Your API Key and Enable Elementor Spam Protection**
 
-Go to **Settings > OOPSpam Anti-Spam** in your WordPress Admin. Under the **General** tab, select **OOPSpam Dashboard** as your source, and paste your API key into the **“My API Key”** field.
+Go to **Settings > oopspam Anti-Spam** in your WordPress Admin. Under the **General** tab, select **oopspam Dashboard** as your source, and paste your API key into the **“My API Key”** field.
 
 ![Paste your API key into the “My API Key” field](/blog/assets/posts/my-api-key-field.png "Add Your API Key")
 
@@ -116,18 +116,18 @@ Here, you’ll find two key options:
 
 Flip the toggles to turn them on based on your needs. Click the **Save Changes** button at the bottom of the page. Your Elementor forms are now protected.
 
-No additional form changes are needed—OOPSpam works in the background, silently filtering based on IP reputation and data source.
+No additional form changes are needed—oopspam works in the background, silently filtering based on IP reputation and data source.
 
 ## **Tips for Balancing Spam Protection and User Access**
 
 * If your audience includes global users, remote workers, or those in restricted regions, think carefully before blocking VPNs.
 * Review your form submissions regularly for any false positives.
-* Combine this with other filters in **[OOPSpam](https://www.oopspam.com/)** (like country or language blocking) for a layered defense.
+* Combine this with other filters in **[oopspam](https://www.oopspam.com/)** (like country or language blocking) for a layered defense.
 
 ## **Final thoughts**
 
 Spambots aren’t going anywhere, but you don’t need to spend hours chasing IP addresses to stay ahead. Whether you’re managing a contact form, lead gen, or newsletter sign-up on Elementor, these two settings give you quick control over a major source of spam.
 
-If you’ve been overwhelmed by odd submissions from anonymous sources or server farms, try blocking VPN and cloud provider IPs using the OOPSpam plugin. It’s fast, reliable, and designed to work quietly in the background while you focus on growing your site.
+If you’ve been overwhelmed by odd submissions from anonymous sources or server farms, try blocking VPN and cloud provider IPs using the oopspam plugin. It’s fast, reliable, and designed to work quietly in the background while you focus on growing your site.
 
 Let us know if you’d like [help with setup](https://www.oopspam.com/#contact) or want to explore how these features work with other form builders like Contact Form 7, WS Form, or [Gravity Forms](https://www.oopspam.com/blog/how-to-block-vpn-and-data-center-ip-submissions-in-gravity-forms).

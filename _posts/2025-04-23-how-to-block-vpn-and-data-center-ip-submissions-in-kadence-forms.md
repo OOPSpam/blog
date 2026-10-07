@@ -5,7 +5,7 @@ date: 2025-04-23T03:53:00.000Z
 author: chazie
 image: /assets/posts/how-to-block-vpn-and-data-center-ip-submissions-in-kadence-forms.jpg
 description: Keep your Kadence Forms free from spam. Learn how to block VPN and
-  data center traffic easily using Cloudflare or the OOPSpam plugin to protect
+  data center traffic easily using Cloudflare or the oopspam plugin to protect
   your website.
 tags:
   - Kadence
@@ -15,7 +15,7 @@ tags:
 
 [Kadence Forms](https://www.kadencewp.com/) offers a lightweight, flexible way to add forms to your WordPress site—but like any form plugin, it’s not immune to spam. If you’re noticing an increase in fake submissions or suspicious activity, VPNs and cloud servers could be the hidden culprits.
 
-This guide will show you why these sources are an issue and how to block them effectively—either manually using Cloudflare or automatically with the OOPSpam Anti-Spam plugin.
+This guide will show you why these sources are an issue and how to block them effectively—either manually using Cloudflare or automatically with the oopspam Anti-Spam plugin.
 
 ## **Why Block VPN and Cloud Provider IPs in Kadence Forms?**
 
@@ -65,11 +65,11 @@ Each network provider (like a VPN company or cloud host) is assigned an [ASN](ht
 
 This method is best suited for users with technical expertise or websites facing persistent, high-volume spam attacks.
 
-## **Method 2: Automatically Block VPN and Cloud IPs in Kadence Forms Using the OOPSpam Plugin**
+## **Method 2: Automatically Block VPN and Cloud IPs in Kadence Forms Using the oopspam Plugin**
 
-![OOPSpam WordPress plugin](/blog/assets/posts/oopspam-anti-spam-overview.png "The OOPSpam WordPress plugin")
+![oopspam WordPress plugin](/blog/assets/posts/oopspam-anti-spam-overview.png "The oopspam WordPress plugin")
 
-Looking for an easier way? The **[OOPSpam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/)** (that’s us 👋) integrates perfectly with Kadence Forms, allowing you to block VPNs and cloud server IPs with just a couple of clicks.
+Looking for an easier way? The **[oopspam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/)** (that’s us 👋) integrates perfectly with Kadence Forms, allowing you to block VPNs and cloud server IPs with just a couple of clicks.
 
 We recently introduced two new toggles under IP Filtering:
 
@@ -78,7 +78,7 @@ We recently introduced two new toggles under IP Filtering:
 
 By enabling these, you automatically filter spam submissions without needing to monitor or manage IP addresses yourself. 
 
-Unlike simple reCAPTCHA-based solutions, OOPSpam uses a real-time, constantly updated IP database to keep your forms protected:
+Unlike simple reCAPTCHA-based solutions, oopspam uses a real-time, constantly updated IP database to keep your forms protected:
 
 * Covers IPs from 2,000+ cloud data centers
 * Tracks known VPN and proxy services
@@ -86,28 +86,28 @@ Unlike simple reCAPTCHA-based solutions, OOPSpam uses a real-time, constantly up
 
 This means you’re not just blocking known spammers—you’re actively preventing new threats that haven’t even been reported yet.
 
-Plus, if you're using the [OOPSpam API](https://www.oopspam.com/docs/#introduction) elsewhere across your site, these protections extend beyond Kadence Forms too.
+Plus, if you're using the [oopspam API](https://www.oopspam.com/docs/#introduction) elsewhere across your site, these protections extend beyond Kadence Forms too.
 
-## **How to Enable VPN and Cloud Blocking for Kadence Forms with OOPSpam**
+## **How to Enable VPN and Cloud Blocking for Kadence Forms with oopspam**
 
 Setting this up is simple:
 
-### **Step 1: Install or Update the OOPSpam Plugin**
+### **Step 1: Install or Update the oopspam Plugin**
 
-![Sign up at the OOPSpam Dashboard and copy your API key.](/blog/assets/posts/oopspam-dashboard-api.png "OOPSpam Dashboard")
+![Sign up at the oopspam Dashboard and copy your API key.](/blog/assets/posts/oopspam-dashboard-api.png "oopspam Dashboard")
 
 * Go to your WordPress dashboard
 * Navigate to **Plugins > Add New**
-* Search for **OOPSpam Anti-Spam**, install it, and activate the latest version
+* Search for **oopspam Anti-Spam**, install it, and activate the latest version
 
-Sign up at the[ OOPSpam Dashboard](https://app.oopspam.com/Identity/Account/Login) and copy your API key.
+Sign up at the[ oopspam Dashboard](https://app.oopspam.com/Identity/Account/Login) and copy your API key.
 
 ### **Step 2: Configure the Plugin Settings**
 
 Inside your WordPress Admin:
 
-* Go to **Settings > OOPSpam Anti-Spam**
-* Under the **General** tab, select "OOPSpam Dashboard" as the source
+* Go to **Settings > oopspam Anti-Spam**
+* Under the **General** tab, select "oopspam Dashboard" as the source
 * Paste your API key into the “**My API Key**” field
 
 ![Paste API key into the “My API Key” field](/blog/assets/posts/my-api-key-field.png "My API Key field")
@@ -130,18 +130,18 @@ Next, click the **IP Filtering** tab:
 
 After toggling your settings, click **Save Changes**—and you’re done! 
 
-OOPSpam will now silently [protect your Kadence Forms](https://www.oopspam.com/blog/spam-protection-for-kadence-form) without needing any further setup.
+oopspam will now silently [protect your Kadence Forms](https://www.oopspam.com/blog/spam-protection-for-kadence-form) without needing any further setup.
 
 ## **Best Practices for Managing Spam Protection**
 
 * **Consider your audience:** If you expect remote workers or international users, monitor the VPN blocking setting closely.
 * **Review flagged entries:** Occasionally check submissions marked as spam to catch any false positives.
-* **Use a layered approach:** Combine IP blocking with [OOPSpam’s](https://www.oopspam.com/) additional tools like language, country blocking, and keyword detection for maximum protection.
+* **Use a layered approach:** Combine IP blocking with [oopspam’s](https://www.oopspam.com/) additional tools like language, country blocking, and keyword detection for maximum protection.
 
 ## **Final Thoughts**
 
 Spam submissions waste your time and clog your database—but protecting your Kadence Forms doesn’t have to be complicated. By blocking VPN and cloud provider IPs, you stop a huge portion of spam before it ever reaches your site.
 
-Using OOPSpam, you can implement this protection quickly and effortlessly—keeping your website running smoothly and your form entries clean and genuine.
+Using oopspam, you can implement this protection quickly and effortlessly—keeping your website running smoothly and your form entries clean and genuine.
 
-Have questions about setup or want help with integrating OOPSpam for Kadence Forms or other builders like [Elementor Forms](https://www.oopspam.com/blog/how-to-block-vpn-and-data-center-ip-submissions-in-elementor-forms), [Ninja Forms](https://www.oopspam.com/blog/how-to-block-vpn-and-data-center-ip-submissions-in-ninja-forms), or [Fluent Forms](https://www.oopspam.com/blog/how-to-block-vpn-and-data-center-ip-submissions-in-fluent-forms)? [Reach out to us](https://www.oopspam.com/#contact) here—we’re happy to assist.
+Have questions about setup or want help with integrating oopspam for Kadence Forms or other builders like [Elementor Forms](https://www.oopspam.com/blog/how-to-block-vpn-and-data-center-ip-submissions-in-elementor-forms), [Ninja Forms](https://www.oopspam.com/blog/how-to-block-vpn-and-data-center-ip-submissions-in-ninja-forms), or [Fluent Forms](https://www.oopspam.com/blog/how-to-block-vpn-and-data-center-ip-submissions-in-fluent-forms)? [Reach out to us](https://www.oopspam.com/#contact) here—we’re happy to assist.

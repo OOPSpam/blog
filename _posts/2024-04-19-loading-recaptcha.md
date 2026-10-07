@@ -25,9 +25,9 @@ Now, I know what you're thinking – "But won't that totally kill my site's perf
 
 ![reCaptcha performance impact](/blog/assets/posts/recaptcha/page-with-reCaptcha.png "reCaptcha performance impact")
 
-That's where a solution like [OOPSpam](https://www.oopspam.com/) comes in. Unlike reCAPTCHA, which loads resources on the front-end, OOPSpam does all its magic behind the scenes, on the server-side. That means zero impact on your website's performance! You get effective spam protection without any of the bloat.
+That's where a solution like [oopspam](https://www.oopspam.com/) comes in. Unlike reCAPTCHA, which loads resources on the front-end, oopspam does all its magic behind the scenes, on the server-side. That means zero impact on your website's performance! You get effective spam protection without any of the bloat.
 
-So, while it might seem counterintuitive, loading reCAPTCHA v3 on every page is actually Google's recommended approach for getting the most accurate interaction scoring and site protection. But to avoid any performance hits (or privacy concerns), a server-side solution like OOPSpam can help.
+So, while it might seem counterintuitive, loading reCAPTCHA v3 on every page is actually Google's recommended approach for getting the most accurate interaction scoring and site protection. But to avoid any performance hits (or privacy concerns), a server-side solution like oopspam can help.
 
 Just some food for thought as you're optimizing your website's security and performance.
 

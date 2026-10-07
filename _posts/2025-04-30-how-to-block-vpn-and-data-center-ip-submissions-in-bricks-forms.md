@@ -5,7 +5,7 @@ date: 2025-04-30T04:54:00.000Z
 author: chazie
 image: /assets/posts/how-to-block-vpn-and-data-center-ip-submissions-in-bricks-forms.jpg
 description: Protect your Bricks Forms from spam and fake entries. Learn how to
-  block VPN and cloud traffic using OOPSpam or Cloudflare for a more secure
+  block VPN and cloud traffic using oopspam or Cloudflare for a more secure
   WordPress site.
 tags:
   - Bricks Forms
@@ -16,7 +16,7 @@ tags:
 
 [Bricks](https://bricksbuilder.io/) builder gives developers and designers powerful tools to build fast, modern WordPress sites—including easy-to-integrate forms. But if you're using Bricks Forms, you've likely faced the issue of spam submissions. Many of these come from bots leveraging VPNs and cloud infrastructure to bypass filters.
 
-In this guide, we’ll explain why blocking VPN and data center traffic is essential for spam protection in Bricks Forms—and how to do it either manually via Cloudflare or instantly with the OOPSpam WordPress plugin.
+In this guide, we’ll explain why blocking VPN and data center traffic is essential for spam protection in Bricks Forms—and how to do it either manually via Cloudflare or instantly with the oopspam WordPress plugin.
 
 ## **Why VPN and Cloud IP Blocking Matters in Bricks Forms**
 
@@ -66,11 +66,11 @@ Every network provider (including cloud platforms and VPN services) has a unique
 
 This method is best suited for developers or site managers comfortable with network-level tools.
 
-## **Method 2: Block VPN and Cloud IPs in Bricks Forms with OOPSpam (One-Click Setup)**
+## **Method 2: Block VPN and Cloud IPs in Bricks Forms with oopspam (One-Click Setup)**
 
-![OOPSpam WordPress plugin](/blog/assets/posts/oopspam-anti-spam-overview.png "OOPSpam WordPress plugin")
+![oopspam WordPress plugin](/blog/assets/posts/oopspam-anti-spam-overview.png "oopspam WordPress plugin")
 
-Prefer a faster, automated solution? The **[OOPSpam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/)** (that’s us 👋) works seamlessly with [Bricks Forms](https://bricksbuilder.io/forms/) and takes just minutes to set up.
+Prefer a faster, automated solution? The **[oopspam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/)** (that’s us 👋) works seamlessly with [Bricks Forms](https://bricksbuilder.io/forms/) and takes just minutes to set up.
 
 It includes two smart toggles under IP Filtering:
 
@@ -79,7 +79,7 @@ It includes two smart toggles under IP Filtering:
 
 With these enabled, you can reduce form spam at the source—no complex rule sets, no manual filtering.
 
-### **Why OOPSpam Works So Well with Bricks Forms**
+### **Why oopspam Works So Well with Bricks Forms**
 
 The plugin connects to an intelligent, real-time database of:
 
@@ -87,23 +87,23 @@ The plugin connects to an intelligent, real-time database of:
 * VPN and proxy networks
 * Updated reputation and behavior data
 
-This means OOPSpam not only catches known threats but also adapts to block emerging spam sources—without bloating your site or requiring constant manual input.
+This means oopspam not only catches known threats but also adapts to block emerging spam sources—without bloating your site or requiring constant manual input.
 
 It integrates quietly in the background and works alongside other Bricks Builder features without conflict.
 
-## **How to Enable VPN and Cloud IP Blocking with OOPSpam for Bricks Forms**
+## **How to Enable VPN and Cloud IP Blocking with oopspam for Bricks Forms**
 
-![OOPSpam Anti-Spam Dashboard](/blog/assets/posts/oopspam-dashboard-api.png "OOPSpam Anti-Spam Dashboard")
+![oopspam Anti-Spam Dashboard](/blog/assets/posts/oopspam-dashboard-api.png "oopspam Anti-Spam Dashboard")
 
 ### **Step 1: Install the Plugin**
 
 From your WordPress dashboard:
 
 * Go to **Plugins > Add New**
-* Search for **OOPSpam Anti-Spam**
+* Search for **oopspam Anti-Spam**
 * Install and activate the latest version
 
-Then go to the [OOPSpam Dashboard](https://app.oopspam.com/Identity/Account/Login) and get your API key.
+Then go to the [oopspam Dashboard](https://app.oopspam.com/Identity/Account/Login) and get your API key.
 
 ### **Step 2: Configure the Plugin Settings**
 
@@ -111,8 +111,8 @@ Then go to the [OOPSpam Dashboard](https://app.oopspam.com/Identity/Account/Logi
 
 In WordPress:
 
-* Navigate to **Settings > OOPSpam Anti-Spam**
-* Under the **General** tab, choose **OOPSpam Dashboard** as your source
+* Navigate to **Settings > oopspam Anti-Spam**
+* Under the **General** tab, choose **oopspam Dashboard** as your source
 * Paste your API key into the “**My API Key**” field
 
 When Bricks Forms is detected, a spam protection panel will be shown.
@@ -136,7 +136,7 @@ Click **Save Changes** and you’re done! Your Bricks Forms are now actively pro
 ## **Tips for Smarter Spam Prevention in Bricks**
 
 * **Monitor your audience:** VPN blocking can sometimes interfere with legitimate users—review flagged entries periodically.
-* **Use layered filtering:** Combine IP filtering with [OOPSpam’s](https://www.oopspam.com/) other features, such as:
+* **Use layered filtering:** Combine IP filtering with [oopspam’s](https://www.oopspam.com/) other features, such as:
 * * Country restrictions
 
   * Keyword detection
@@ -151,6 +151,6 @@ This layered approach gives your forms the best chance at staying clean.
 
 Bricks Builder empowers you to design stunning, dynamic websites—but without the right protections, your Bricks Forms can become easy targets for spammers.
 
-Blocking VPN and data center IPs offers a powerful way to stop spam before it starts. And with the OOPSpam plugin, you can implement this protection in minutes—no technical headaches, just reliable results.
+Blocking VPN and data center IPs offers a powerful way to stop spam before it starts. And with the oopspam plugin, you can implement this protection in minutes—no technical headaches, just reliable results.
 
-Ready to keep your [Bricks Forms spam-free](https://www.oopspam.com/blog/spam-protection-for-bricks)? Install OOPSpam today and enjoy the peace of mind that comes with intelligent form security.
+Ready to keep your [Bricks Forms spam-free](https://www.oopspam.com/blog/spam-protection-for-bricks)? Install oopspam today and enjoy the peace of mind that comes with intelligent form security.

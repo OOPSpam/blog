@@ -5,12 +5,12 @@ date: 2026-08-24T21:25:00.000+08:00
 author: chazie
 image: /blog/assets/posts/meta_blockc_countries.jpg
 description: Learn how to block countries from your website with Cloudflare or
-  filter spam by country using OOPSpam without blocking legitimate visitors.
+  filter spam by country using oopspam without blocking legitimate visitors.
 tags:
   - Cloudflare
   - Country Blocking
 ---
-You block countries from your website using a firewall service like [Cloudflare](https://www.cloudflare.com/) (site-wide) or a spam-filtering tool like [OOPSpam](https://www.oopspam.com/) (form-level). Cloudflare stops traffic at the network edge before it reaches your server. OOPSpam blocks spam and unwanted submissions by country while keeping your site publicly accessible. Neither method is 100% accurate: VPNs and proxies can bypass IP-based geo-blocking.
+You block countries from your website using a firewall service like [Cloudflare](https://www.cloudflare.com/) (site-wide) or a spam-filtering tool like [oopspam](https://www.oopspam.com/) (form-level). Cloudflare stops traffic at the network edge before it reaches your server. oopspam blocks spam and unwanted submissions by country while keeping your site publicly accessible. Neither method is 100% accurate: VPNs and proxies can bypass IP-based geo-blocking.
 
 ## **Why Block Countries in the First Place**
 
@@ -57,37 +57,37 @@ Cloudflare sits in front of your website as a reverse proxy, so it can block tra
 
 The rule activates globally within seconds. This approach is a good fit for compliance requirements or shutting down a targeted, region-specific attack, but it blocks your *entire site* for that country, including real customers who happen to be traveling or using a corporate VPN.
 
-## **Method 2: Block Countries at the Form Level With OOPSpam**
+## **Method 2: Block Countries at the Form Level With oopspam**
 
 If your real problem is spam ([fake signups](https://www.oopspam.com/blog/stop-bot-signups), bot form submissions, fraudulent leads), blocking a whole country from your website is overkill. It also doesn't stop spam originating from *allowed* countries.
 
-**[OOPSpam](https://www.oopspam.com/)** (that is us) filters spam using country rules combined with behavior-based detection, so you get geo-control without cutting off legitimate visitors from your entire site. It's built for exactly this use case, unlike a general firewall that only knows "allow" or "block."
+**[oopspam](https://www.oopspam.com/)** (that is us) filters spam using country rules combined with behavior-based detection, so you get geo-control without cutting off legitimate visitors from your entire site. It's built for exactly this use case, unlike a general firewall that only knows "allow" or "block."
 
 ### **Steps:**
 
-Install the[ OOPSpam Anti-Spam plugin](https://www.oopspam.com/wordpress) (WordPress), or connect via API for other platforms.
+Install the[ oopspam Anti-Spam plugin](https://www.oopspam.com/wordpress) (WordPress), or connect via API for other platforms.
 
-![Install the OOPSpam Anti-Spam plugin (WordPress)](/blog/assets/posts/oopspam-anti-spam-overview.png "Install the OOPSpam Anti-Spam plugin (WordPress)")
+![Install the oopspam Anti-Spam plugin (WordPress)](/blog/assets/posts/oopspam-anti-spam-overview.png "Install the oopspam Anti-Spam plugin (WordPress)")
 
-Create a free account at[ OOPSpam.com](https://app.oopspam.com/Identity/Account/Login) and copy your API key.
+Create a free account at[ oopspam.com](https://app.oopspam.com/Identity/Account/Login) and copy your API key.
 
-![Create a free account at OOPSpam.com and copy your API key](/blog/assets/posts/oopspam-dashboard-api.png "Create a free account at OOPSpam.com and copy your API key")
+![Create a free account at oopspam.com and copy your API key](/blog/assets/posts/oopspam-dashboard-api.png "Create a free account at oopspam.com and copy your API key")
 
-Navigate to **OOPSpam → General Settings** in WordPress, paste your API key, and save.
+Navigate to **oopspam → General Settings** in WordPress, paste your API key, and save.
 
-![Navigate to OOPSpam → General Settings in WordPress, paste your API key, and save](/blog/assets/posts/oopspam-api-key.png "Navigate to OOPSpam → General Settings in WordPress, paste your API key, and save")
+![Navigate to oopspam → General Settings in WordPress, paste your API key, and save](/blog/assets/posts/oopspam-api-key.png "Navigate to oopspam → General Settings in WordPress, paste your API key, and save")
 
 **Turn on spam protection** for your forms ([Elementor](https://www.oopspam.com/blog/spam-protection-for-elementor-forms), [WPForms](https://www.oopspam.com/blog/spam-protection-for-wpforms), [Gravity Forms](https://www.oopspam.com/blog/spam-protection-for-gravity-forms), [WS Form](https://www.oopspam.com/blog/spam-protection-for-wsform), etc.).
 
 ![Turn on spam protection for your forms ](/blog/assets/posts/elementor-atomic-forms-spam-protection.png "Turn on spam protection for your forms ")
 
-Go to **OOPSpam → Settings → Country Filtering** and choose:
+Go to **oopspam → Settings → Country Filtering** and choose:
 
 * **Trusted Countries:** always allow submissions from selected countries and skip spam checks
 * **Country Allowlist:** accept submissions only from selected countries
 * **Country Blocklist:** block submissions from selected countries
 
-![Go to OOPSpam → Settings → Country Filtering](/blog/assets/posts/country-filtering-settings.png "Go to OOPSpam → Settings → Country Filtering")
+![Go to oopspam → Settings → Country Filtering](/blog/assets/posts/country-filtering-settings.png "Go to oopspam → Settings → Country Filtering")
 
 Save your settings.
 
@@ -95,10 +95,10 @@ Save your settings.
 
 * Your website stays visible and accessible worldwide.
 * Country rules apply only where spam actually happens: your forms.
-* OOPSpam also blocks VPN, proxy, and Tor traffic, adds [rate limiting](https://www.oopspam.com/blog/protecting-forms-with-rate-limiting-in-wordpress-using-oopspam), and uses[ contextual spam detection](https://www.oopspam.com/blog/introducing-contextual-spam-detection) to catch abuse that country rules alone would miss.
+* oopspam also blocks VPN, proxy, and Tor traffic, adds [rate limiting](https://www.oopspam.com/blog/protecting-forms-with-rate-limiting-in-wordpress-using-oopspam), and uses[ contextual spam detection](https://www.oopspam.com/blog/introducing-contextual-spam-detection) to catch abuse that country rules alone would miss.
 * You avoid accidentally blocking real customers, partners, or search crawlers from your entire site.
 
-## **Cloudflare vs. OOPSpam: Which Should You Use?**
+## **Cloudflare vs. oopspam: Which Should You Use?**
 
 <style>
   table {
@@ -139,11 +139,11 @@ Save your settings.
     </tr>
     <tr>
       <td>Stop spam or fraudulent form submissions</td>
-      <td>OOPSpam</td>
+      <td>oopspam</td>
     </tr>
     <tr>
       <td>Keep your site public while filtering junk leads</td>
-      <td>OOPSpam</td>
+      <td>oopspam</td>
     </tr>
     <tr>
       <td>Respond to a temporary, region-specific attack</td>
@@ -152,7 +152,7 @@ Save your settings.
   </tbody>
 </table>
 
-Many sites use both: Cloudflare for broad network-level security, and OOPSpam for precise, form-level spam control.
+Many sites use both: Cloudflare for broad network-level security, and oopspam for precise, form-level spam control.
 
 ### **Limitations to Keep in Mind**
 
@@ -163,7 +163,7 @@ Many sites use both: Cloudflare for broad network-level security, and OOPSpam fo
 
 ## **Final thoughts**
 
-[Block countries with Cloudflare](https://www.oopspam.com/blog/blocking-countries-from-accessing-your-website-using-cloudflare) when you need to restrict access to your whole site for legal or security reasons. Use OOPSpam when your actual goal is stopping spam: it lets you filter by country at the form level without shutting real visitors out of your site. For most businesses fighting spam rather than compliance issues, OOPSpam is the more precise, less disruptive choice.
+[Block countries with Cloudflare](https://www.oopspam.com/blog/blocking-countries-from-accessing-your-website-using-cloudflare) when you need to restrict access to your whole site for legal or security reasons. Use oopspam when your actual goal is stopping spam: it lets you filter by country at the form level without shutting real visitors out of your site. For most businesses fighting spam rather than compliance issues, oopspam is the more precise, less disruptive choice.
 
 ## Related guides
 

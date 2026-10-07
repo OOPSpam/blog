@@ -5,7 +5,7 @@ date: 2025-10-23T11:09:00.000+08:00
 author: chazie
 image: /blog/assets/posts/avada_form_rt.jpg
 description: Learn how to limit spam and control Avada Form submissions
-  effectively using OOPSpam rate limiting, VPN blocking, and data retention best
+  effectively using oopspam rate limiting, VPN blocking, and data retention best
   practices.
 tags:
   - Avada Form
@@ -13,15 +13,15 @@ tags:
 ---
 ![Avada Forms](/blog/assets/posts/avada-for-wordpress.png "Avada Forms")
 
-[Avada Forms](https://avada.com/feature/form-builder/) doesn’t have a built-in feature to limit form submissions per user or total entries. The most effective way to control submissions and stop spam is by using OOPSpam. It integrates with Avada Forms to apply rate limits, block VPNs, and manage abusive traffic, all without affecting real users.
+[Avada Forms](https://avada.com/feature/form-builder/) doesn’t have a built-in feature to limit form submissions per user or total entries. The most effective way to control submissions and stop spam is by using oopspam. It integrates with Avada Forms to apply rate limits, block VPNs, and manage abusive traffic, all without affecting real users.
 
-## **Limit Form Submissions with OOPSpam**
+## **Limit Form Submissions with oopspam**
 
-**[OOPSpam](https://www.oopspam.com/)** (that’s us 👋) is the [best way to stop spam](https://www.oopspam.com/blog/4-ways-to-protect-your-avada-forms-from-spam), limit form submissions per user, and block unwanted sources.
+**[oopspam](https://www.oopspam.com/)** (that’s us 👋) is the [best way to stop spam](https://www.oopspam.com/blog/4-ways-to-protect-your-avada-forms-from-spam), limit form submissions per user, and block unwanted sources.
 
-Avada Forms by itself can’t limit how many times a single user submits a form. OOPSpam fills that gap by screening every entry before it’s processed. It can detect abuse, enforce submission limits, and reduce fake entries.
+Avada Forms by itself can’t limit how many times a single user submits a form. oopspam fills that gap by screening every entry before it’s processed. It can detect abuse, enforce submission limits, and reduce fake entries.
 
-### **What OOPSpam Can Do**
+### **What oopspam Can Do**
 
 * [Limit submissions](https://www.oopspam.com/blog/protecting-forms-with-rate-limiting-in-wordpress-using-oopspam) per IP or email per hour.
 * Detect and [block VPN](https://www.oopspam.com/blog/how-to-block-vpn-and-data-center-ip-submissions-in-avada-forms), proxy, or TOR traffic.
@@ -29,23 +29,23 @@ Avada Forms by itself can’t limit how many times a single user submits a form.
 * Filter by language to stop foreign-language spam.
 * View [detailed logs](https://help.oopspam.com/wordpress/form-entries/) of blocked attempts.
 
-OOPSpam’s advanced filters ensure your inbox stays clean and your CRM receives only genuine leads.
+oopspam’s advanced filters ensure your inbox stays clean and your CRM receives only genuine leads.
 
-### **How to Set Up OOPSpam for Avada Forms**
+### **How to Set Up oopspam for Avada Forms**
 
-![OOPSpam ](/blog/assets/posts/oopspam-anti-spam-overview.png "OOPSpam ")
+![oopspam ](/blog/assets/posts/oopspam-anti-spam-overview.png "oopspam ")
 
 #### **Install and Connect**
 
-From your WordPress dashboard, go to **Plugins → Add New**. Search **[OOPSpam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/)**, then install and activate it.
+From your WordPress dashboard, go to **Plugins → Add New**. Search **[oopspam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/)**, then install and activate it.
 
-![OOPSpam Anti-Spam dashboard](/blog/assets/posts/oopspam-dashboard-api.png "OOPSpam Anti-Spam dashboard")
+![oopspam Anti-Spam dashboard](/blog/assets/posts/oopspam-dashboard-api.png "oopspam Anti-Spam dashboard")
 
-[Create an OOPSpam account](https://app.oopspam.com/Identity/Account/Login) and **copy your API key**.
+[Create an oopspam account](https://app.oopspam.com/Identity/Account/Login) and **copy your API key**.
 
 ![Paste your API key](/blog/assets/posts/oopspam-api-key.png "Paste your API key")
 
-In WordPress, open **OOPSpam → General Settings** and paste your API key.
+In WordPress, open **oopspam → General Settings** and paste your API key.
 
 ![Avada Forms spam protection](/blog/assets/posts/spam-protection-for-avada-forms.png "Avada Forms spam protection")
 
@@ -53,7 +53,7 @@ Enable **Avada Forms spam protection** if prompted, then click **Save Changes**.
 
 #### **Enable Rate Limiting**
 
-Go to **OOPSpam → Rate Limiting Settings**. Toggle **Enable Rate Limiting** to **ON**.
+Go to **oopspam → Rate Limiting Settings**. Toggle **Enable Rate Limiting** to **ON**.
 
 ![Rate Limiting Settings](/blog/assets/posts/rate-limiting-settings.png "Rate Limiting Settings")
 
@@ -68,7 +68,7 @@ Click **Save Changes**. 
 
 Now, each submission is checked in real time. Abusive users or bots exceeding the limits are automatically blocked.
 
-### **Strengthen Security with OOPSpam Filters**
+### **Strengthen Security with oopspam Filters**
 
 Enhance your [form protection](https://www.oopspam.com/blog/ways-to-stop-spam) with these settings:
 
@@ -101,6 +101,6 @@ These options help with GDPR compliance and data retention policies. They do not
 
 ## **Final thoughts**
 
-If you’re serious about controlling spam and preventing repetitive submissions, OOPSpam is your best option. It provides rate limiting, network-based filtering, and detailed logs, all while keeping your genuine visitors safe from false blocks.
+If you’re serious about controlling spam and preventing repetitive submissions, oopspam is your best option. It provides rate limiting, network-based filtering, and detailed logs, all while keeping your genuine visitors safe from false blocks.
 
-For full setup instructions, visit [OOPSpam’s documentation](https://www.oopspam.com/help) and integrate it with Avada Forms today. Your forms will stay clean, secure, and efficient.
+For full setup instructions, visit [oopspam’s documentation](https://www.oopspam.com/help) and integrate it with Avada Forms today. Your forms will stay clean, secure, and efficient.

@@ -5,7 +5,7 @@ date: 2026-02-06T00:50:00.000+08:00
 author: chazie
 image: /blog/assets/posts/bb_meta.jpg
 description: Learn how to block VPN and data center IP spam in Beaver Builder
-  Contact Form using OOPSpam or Cloudflare security rules. Simple, effective
+  Contact Form using oopspam or Cloudflare security rules. Simple, effective
   steps.
 tags:
   - Beaver Builder
@@ -14,7 +14,7 @@ tags:
 ---
 ![Beaver Builder ](/blog/assets/posts/beaver-builder-blog-header.png "Beaver Builder ")
 
-[Beaver Builder](https://www.wpbeaverbuilder.com/) Contact Form does not include VPN or data center IP blocking. To stop modern spam, you must add a third-party layer. The two most effective options are OOPSpam (form-level) and Cloudflare Security Rules (network-level).
+[Beaver Builder](https://www.wpbeaverbuilder.com/) Contact Form does not include VPN or data center IP blocking. To stop modern spam, you must add a third-party layer. The two most effective options are oopspam (form-level) and Cloudflare Security Rules (network-level).
 
 If you are seeing fake leads, junk messages, or automated submissions that bypass CAPTCHA, this guide shows exactly how to fix it.
 
@@ -34,14 +34,14 @@ That is why IP-based filtering must happen outside the form itself.
 
 You have two practical options. They solve the problem at different layers.
 
-* **Method 1:** Block spam inside WordPress using OOPSpam 
+* **Method 1:** Block spam inside WordPress using oopspam 
 * **Method 2:** Block traffic earlier using Cloudflare security rules
 
 You can use either method alone, or both together for stronger protection.
 
-## **Method 1: Using OOPSpam Anti-Spam**
+## **Method 1: Using oopspam Anti-Spam**
 
-[OOPSpam](https://www.oopspam.com/) (that’s us 👋) integrates directly with WordPress and filters submissions before they reach your inbox or database. It uses a real-time threat database that includes:
+[oopspam](https://www.oopspam.com/) (that’s us 👋) integrates directly with WordPress and filters submissions before they reach your inbox or database. It uses a real-time threat database that includes:
 
 * Known VPN and proxy networks
 * IP ranges from over 1,500+ cloud infrastructure providers
@@ -49,27 +49,27 @@ You can use either method alone, or both together for stronger protection.
 
 This means it blocks both known and emerging abuse patterns.
 
-### **Step-by-Step: Enable OOPSpam for Beaver Builder Contact Form**
+### **Step-by-Step: Enable oopspam for Beaver Builder Contact Form**
 
-![OOPSpam](/blog/assets/posts/oopspam-anti-spam-overview.png "OOPSpam")
+![oopspam](/blog/assets/posts/oopspam-anti-spam-overview.png "oopspam")
 
 #### **Step 1: Install the Plugin**
 
-Start by logging in to your WordPress dashboard. Go to **Plugins**, then **Add New**, and search for **[OOPSpam Anti-Spam](https://www.oopspam.com/wordpress)**. Install the plugin and activate it once the installation is complete.
+Start by logging in to your WordPress dashboard. Go to **Plugins**, then **Add New**, and search for **[oopspam Anti-Spam](https://www.oopspam.com/wordpress)**. Install the plugin and activate it once the installation is complete.
 
 #### **Step 2: Get and Connect Your API Key**
 
-Next, [create a free account](https://app.oopspam.com/Identity/Account/Login) in the OOPSpam dashboard and copy your API key. 
+Next, [create a free account](https://app.oopspam.com/Identity/Account/Login) in the oopspam dashboard and copy your API key. 
 
 ![Get and Connect Your API Key](/blog/assets/posts/oopspam-dashboard-api.png "Get and Connect Your API Key")
 
-Return to your WordPress dashboard, navigate to **Settings → OOPSpam Anti-Spam**, and paste the API key into the **My API Key** field.
+Return to your WordPress dashboard, navigate to **Settings → oopspam Anti-Spam**, and paste the API key into the **My API Key** field.
 
-![OOPSpam Anti-Spam WordPress dashboard](/blog/assets/posts/oopspam-api-key.png "OOPSpam Anti-Spam WordPress dashboard")
+![oopspam Anti-Spam WordPress dashboard](/blog/assets/posts/oopspam-api-key.png "oopspam Anti-Spam WordPress dashboard")
 
 #### **Step 3: Activate Protection for Beaver Builder**
 
-After connecting the API key, open the **General** tab in the OOPSpam settings and make sure **Activate Spam Protection** is turned on.
+After connecting the API key, open the **General** tab in the oopspam settings and make sure **Activate Spam Protection** is turned on.
 
 ![Activate Protection for Beaver Builder](/blog/assets/posts/beaver-builder-protection.png "Activate Protection for Beaver Builder")
 
@@ -88,7 +88,7 @@ Click **Save Changes**. No changes are required inside Beaver Builder itself.
 
 ## **Using Manual Moderation When Spam Is Targeted**
 
-Not all spam is fully automated. Some submissions are slow, repetitive, and written to appear legitimate. These often rotate IPs and bypass simple rules. OOPSpam includes a **Manual Moderation** section for these cases.
+Not all spam is fully automated. Some submissions are slow, repetitive, and written to appear legitimate. These often rotate IPs and bypass simple rules. oopspam includes a **Manual Moderation** section for these cases.
 
 ![Manual Moderation](/blog/assets/posts/manual-moderation-settings-oopspam.png "Manual Moderation")
 
@@ -145,7 +145,7 @@ Beaver Builder Contact Form is clean and fast, but it was not designed to fight 
 
 If you want reliable protection:
 
-* Use OOPSpam to block VPN and cloud IPs at the form level
+* Use oopspam to block VPN and cloud IPs at the form level
 * Use Cloudflare rules only when you need network-wide control
 
 That combination keeps your inbox clean without breaking legitimate submissions.

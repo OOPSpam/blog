@@ -5,7 +5,7 @@ date: 2025-06-12T05:13:00.000Z
 author: chazie
 image: /blog/assets/posts/stop-fake-orders-in-surecart.png
 description: Stop fake orders in SureCart with 5 proven tips. Learn how to block
-  spam, prevent card testing, and boost security using OOPSpam and reCAPTCHA v3.
+  spam, prevent card testing, and boost security using oopspam and reCAPTCHA v3.
 tags:
   - SureCart
   - reCAPTCHA v3
@@ -14,7 +14,7 @@ tags:
 
 Fake orders and spam transactions are more than just annoying, they cost time, money, and customer trust. If you're using [SureCart](https://surecart.com/), keeping these fraudulent orders out is critical for a secure and reliable store experience.
 
-In this post, I’ll walk you through five practical ways to stop spam orders in SureCart, including how to use OOPSpam for stronger protection.
+In this post, I’ll walk you through five practical ways to stop spam orders in SureCart, including how to use oopspam for stronger protection.
 
 ### **Why Do Fake Orders Happen?**
 
@@ -24,17 +24,17 @@ Other times, bots might test your checkout for security flaws—or they’re jus
 
 Understanding why these attacks happen is the first step in stopping them.
 
-## **1. Add OOPSpam**
+## **1. Add oopspam**
 
 ![Activate Spam Protection SureCart](/blog/assets/posts/surecart-active-spam-protection.png "Activate Spam Protection SureCart")
 
-**[OOPSpam](https://www.oopspam.com/)** (that’s us 👋) is a reliable WordPress plugin that works great with SureCart to stop both bots and human spammers. It’s privacy-friendly and doesn’t slow your site down.
+**[oopspam](https://www.oopspam.com/)** (that’s us 👋) is a reliable WordPress plugin that works great with SureCart to stop both bots and human spammers. It’s privacy-friendly and doesn’t slow your site down.
 
 ### **How to Do It:**
 
-Install the [OOPSpam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/), generate an API key from [oopspam.com](https://app.oopspam.com/Identity/Account/Register), and paste it into:
+Install the [oopspam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/), generate an API key from [oopspam.com](https://app.oopspam.com/Identity/Account/Register), and paste it into:
 
-**Settings > OOPSpam Anti-Spam**
+**Settings > oopspam Anti-Spam**
 
 Toggle on **“Activate Spam Protection”** and configure additional settings if needed.
 
@@ -46,11 +46,11 @@ You can tailor protection based on your store’s needs:
 
 ![Adjust the Sensitivity Level](/blog/assets/posts/oopspam-sensitivity-level.png "Adjust the Sensitivity Level")
 
-* OOPSpam already blocks many known malicious IPs and emails automatically, but you can also manually block specific ones based on your own list of **emails**, **keywords**, or **IPs**.
+* oopspam already blocks many known malicious IPs and emails automatically, but you can also manually block specific ones based on your own list of **emails**, **keywords**, or **IPs**.
 
-![Manual Moderation in OOPSpam](/blog/assets/posts/manual-moderation-settings-oopspam.png "Manual Moderation in OOPSpam")
+![Manual Moderation in oopspam](/blog/assets/posts/manual-moderation-settings-oopspam.png "Manual Moderation in oopspam")
 
-* OOPSpam includes IP filtering by default, automatically blocking known bad IPs. But you can also enable ‘**Block VPNs**’ and '**Block Cloud Providers**' to prevent future attacks from IPs that haven’t shown malicious behavior yet.
+* oopspam includes IP filtering by default, automatically blocking known bad IPs. But you can also enable ‘**Block VPNs**’ and '**Block Cloud Providers**' to prevent future attacks from IPs that haven’t shown malicious behavior yet.
 
 ![‘Block VPNs’ and 'Block Cloud Providers' ](/blog/assets/posts/ip-filtering-settings-in-security-panel.png "‘Block VPNs’ and 'Block Cloud Providers' ")
 
@@ -58,7 +58,7 @@ You can tailor protection based on your store’s needs:
 
 ![Limit submissions per IP or email](/blog/assets/posts/enabled-rate-limiting-settings.png "Limit submissions per IP or email")
 
-OOPSpam also logs blocked messages locally, so you can monitor spam activity over time.
+oopspam also logs blocked messages locally, so you can monitor spam activity over time.
 
 ## **2. Use reCAPTCHA v3**
 
@@ -102,9 +102,9 @@ In SureCart, go to your **shipping zone settings**. Choose to only sell or ship 
 
 ![Block Suspicious Countries in SureCart](/blog/assets/posts/surecart-shipping-zone-settings.png "Block Suspicious Countries in SureCart")
 
-If you’re using OOPSpam, you can take it further by blocking entire countries from submitting forms or orders.
+If you’re using oopspam, you can take it further by blocking entire countries from submitting forms or orders.
 
-![Block Suspicious Countries using OOPSpam](/blog/assets/posts/country-filtering-settings.png "Block Suspicious Countries using OOPSpam")
+![Block Suspicious Countries using oopspam](/blog/assets/posts/country-filtering-settings.png "Block Suspicious Countries using oopspam")
 
 ### **Why It Helps:**
 
@@ -138,7 +138,7 @@ Fixes from developers often patch vulnerabilities that spammers are actively exp
 
 Spam orders and card testing attacks won’t disappear overnight—but you can stop most of them with the right tools.
 
-Combining SureCart’s built-in features with smart tools like OOPSpam gives your store a strong defense. Keep an eye on your order logs and tweak your protection settings over time.
+Combining SureCart’s built-in features with smart tools like oopspam gives your store a strong defense. Keep an eye on your order logs and tweak your protection settings over time.
 
 We’re here to help keep your store clean and secure. Need assistance? [Reach out to us](https://www.oopspam.com/#contact) or explore our WordPress plugin today.
 

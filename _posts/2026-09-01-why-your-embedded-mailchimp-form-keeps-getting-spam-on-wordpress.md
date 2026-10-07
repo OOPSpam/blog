@@ -5,11 +5,11 @@ date: 2026-09-01T22:54:00.000+08:00
 author: chazie
 image: /blog/assets/posts/meta_mc_embded_wp.png
 description: Stop spam on embedded Mailchimp forms in WordPress with double
-  opt-in, Cloudflare, and OOPSpam to protect your email list from bots.
+  opt-in, Cloudflare, and oopspam to protect your email list from bots.
 tags:
   - Mailchimp
 ---
-Embedded [Mailchimp](https://mailchimp.com/) forms submit directly to Mailchimp's servers, not through WordPress. That means WordPress security plugins never see the submission, so they can't block it. Mailchimp's own reCAPTCHA and honeypot fields catch some bots, but not all. The fix is to enable double opt-in in Mailchimp, add network-level filtering with Cloudflare, or replace the raw embed with a WordPress form builder connected to Mailchimp and protect that form with OOPSpam.
+Embedded [Mailchimp](https://mailchimp.com/) forms submit directly to Mailchimp's servers, not through WordPress. That means WordPress security plugins never see the submission, so they can't block it. Mailchimp's own reCAPTCHA and honeypot fields catch some bots, but not all. The fix is to enable double opt-in in Mailchimp, add network-level filtering with Cloudflare, or replace the raw embed with a WordPress form builder connected to Mailchimp and protect that form with oopspam.
 
 ### **Why embedded Mailchimp forms get spam in the first place**
 
@@ -60,11 +60,11 @@ Since the embed skips WordPress, filtering has to happen at the network level in
 
 This stops a lot of scripted traffic before it ever loads the page. It won't stop every bot, especially ones using residential proxies or rotating IPs.
 
-## **Fix 3: Move off the raw embed and protect the form with OOPSpam**
+## **Fix 3: Move off the raw embed and protect the form with oopspam**
 
 This is the only option that puts a filtering layer back in front of the form. It works because it changes where the submission happens.
 
-Instead of Mailchimp's raw embed, use a WordPress-native form that sends data to Mailchimp on the backend, either [MC4WP: Mailchimp for WordPress](https://www.oopspam.com/blog/4-ways-to-protect-your-mc4wp-mailchimp-for-wordpress-from-spam), or a form builder like [WPForms](https://www.oopspam.com/blog/spam-protection-for-wpforms), [Gravity Forms](https://www.oopspam.com/blog/spam-protection-for-gravity-forms), [Fluent Forms](https://www.oopspam.com/blog/spam-protection-for-fluent-forms), or [Ninja Forms](https://www.oopspam.com/blog/spam-protection-for-ninja-forms) with a Mailchimp integration enabled. Because the submission now goes through WordPress, [OOPSpam](https://www.oopspam.com/) (that is us) can inspect it before it ever reaches Mailchimp.
+Instead of Mailchimp's raw embed, use a WordPress-native form that sends data to Mailchimp on the backend, either [MC4WP: Mailchimp for WordPress](https://www.oopspam.com/blog/4-ways-to-protect-your-mc4wp-mailchimp-for-wordpress-from-spam), or a form builder like [WPForms](https://www.oopspam.com/blog/spam-protection-for-wpforms), [Gravity Forms](https://www.oopspam.com/blog/spam-protection-for-gravity-forms), [Fluent Forms](https://www.oopspam.com/blog/spam-protection-for-fluent-forms), or [Ninja Forms](https://www.oopspam.com/blog/spam-protection-for-ninja-forms) with a Mailchimp integration enabled. Because the submission now goes through WordPress, [oopspam](https://www.oopspam.com/) (that is us) can inspect it before it ever reaches Mailchimp.
 
 **How to set it up:**
 
@@ -72,17 +72,17 @@ Install a WordPress form connected to Mailchimp. If you're already using MC4WP, 
 
 ![Mailchimp WPForms](/blog/assets/posts/mailchimp-wpforms.png "Mailchimp WPForms")
 
-Go to **Plugins → Add New** in WordPress, search for **OOPSpam Anti-Spam**, then install and activate it.
+Go to **Plugins → Add New** in WordPress, search for **oopspam Anti-Spam**, then install and activate it.
 
-![OOPSpam Anti-Spam](/blog/assets/posts/oopspam-anti-spam-overview.png "OOPSpam Anti-Spam")
+![oopspam Anti-Spam](/blog/assets/posts/oopspam-anti-spam-overview.png "oopspam Anti-Spam")
 
-Create a free [OOPSpam account](https://app.oopspam.com/Identity/Account/Register) and copy your API key from the dashboard.
+Create a free [oopspam account](https://app.oopspam.com/Identity/Account/Register) and copy your API key from the dashboard.
 
-![Create a free OOPSpam account and copy your API key from the dashboard.](/blog/assets/posts/oopspam-dashboard-api.png "Create a free OOPSpam account and copy your API key from the dashboard.")
+![Create a free oopspam account and copy your API key from the dashboard.](/blog/assets/posts/oopspam-dashboard-api.png "Create a free oopspam account and copy your API key from the dashboard.")
 
-In WordPress, go to **Settings → OOPSpam** and paste in your API key.
+In WordPress, go to **Settings → oopspam** and paste in your API key.
 
-![In WordPress, go to Settings → OOPSpam and paste in your API key.](/blog/assets/posts/oopspam-api-key.png "In WordPress, go to Settings → OOPSpam and paste in your API key.")
+![In WordPress, go to Settings → oopspam and paste in your API key.](/blog/assets/posts/oopspam-api-key.png "In WordPress, go to Settings → oopspam and paste in your API key.")
 
 Enable protection for the specific form connected to Mailchimp.
 
@@ -104,7 +104,7 @@ From this point on, every submission is checked before it reaches Mailchimp. Spa
 
 ## **Which fix should you use?**
 
-Layer them. Start with Mailchimp's double opt-in and reCAPTCHA since they're free and take minutes. Add Cloudflare if you're getting volume-based attacks. If you want the embedded form itself to stop letting bots through, that requires switching off the raw embed and onto a WordPress form connected to Mailchimp, protected with OOPSpam.
+Layer them. Start with Mailchimp's double opt-in and reCAPTCHA since they're free and take minutes. Add Cloudflare if you're getting volume-based attacks. If you want the embedded form itself to stop letting bots through, that requires switching off the raw embed and onto a WordPress form connected to Mailchimp, protected with oopspam.
 
 ## Related guides
 

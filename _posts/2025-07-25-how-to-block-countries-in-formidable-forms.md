@@ -5,7 +5,7 @@ date: 2025-07-25T09:51:00.000+08:00
 last_modified_at: 2026-01-06T11:36:00.000+08:00
 author: chazie
 image: /blog/assets/posts/headr_formidableforms.jpg
-description: Formidable Forms lacks country blocking, use OOPSpam for advanced
+description: Formidable Forms lacks country blocking, use oopspam for advanced
   filtering or pair with Cloudflare to block full site access from specific
   regions.
 tags:
@@ -18,30 +18,30 @@ tags:
 
 This guide walks you through two ways to [block countries:](https://www.oopspam.com/blog/how-to-block-countries-from-your-website-the-complete-guide)
 
-* Using the **[OOPSpam Anti-Spam plugin](https://wordpress.org/plugins/oopspam-anti-spam/)** for precise, form-level filtering
+* Using the **[oopspam Anti-Spam plugin](https://wordpress.org/plugins/oopspam-anti-spam/)** for precise, form-level filtering
 * Blocking entire countries with Cloudflare firewall rules
 
 We’ll also show how Formidable Locations Add-On can help build location-specific fields, but note, it won’t block submissions on its own.
 
-## **1. Block Countries in Formidable Forms Using OOPSpam**
+## **1. Block Countries in Formidable Forms Using oopspam**
 
-![OOPSpam Anti-Spam plugin](/blog/assets/posts/oopspam-anti-spam-overview.png "OOPSpam Anti-Spam plugin")
+![oopspam Anti-Spam plugin](/blog/assets/posts/oopspam-anti-spam-overview.png "oopspam Anti-Spam plugin")
 
-If you’re dealing with spammy entries from specific regions, the easiest and most effective solution is to integrate your Formidable forms with **[OOPSpam](https://www.oopspam.com/)** (that’s us 👋).
+If you’re dealing with spammy entries from specific regions, the easiest and most effective solution is to integrate your Formidable forms with **[oopspam](https://www.oopspam.com/)** (that’s us 👋).
 
-OOPSpam is a machine learning powered anti-spam plugin that adds advanced filtering, country-level controls, and detailed logging—all without affecting your site speed or user experience.
+oopspam is a machine learning powered anti-spam plugin that adds advanced filtering, country-level controls, and detailed logging—all without affecting your site speed or user experience.
 
 ### **Does Formidable Have Built-In Country Blocking?**
 
 ![Formidable Locations add-on ](/blog/assets/posts/cascading-locations_settings.png "Formidable Locations add-on ")
 
-No. Formidable Forms does not currently offer a native feature to block form submissions by country or IP address. That’s why using OOPSpam is the go-to solution if you want to restrict submissions from specific regions.
+No. Formidable Forms does not currently offer a native feature to block form submissions by country or IP address. That’s why using oopspam is the go-to solution if you want to restrict submissions from specific regions.
 
 However, Formidable does have a Locations add-on that allows users to select a country, state, or city via dropdowns. This can guide users and create conditional logic, but doesn’t prevent submission from unwanted locations.
 
-### **What OOPSpam Adds to Formidable Forms**
+### **What oopspam Adds to Formidable Forms**
 
-When you pair Formidable with OOPSpam, you unlock:
+When you pair Formidable with oopspam, you unlock:
 
 * **Country filtering** – Block or allow specific countries
 * **Language filtering** – Exclude submissions written in unwanted languages
@@ -52,19 +52,19 @@ When you pair Formidable with OOPSpam, you unlock:
 
 ### **How to Set It Up**
 
-Here’s how to connect OOPSpam to your Formidable Forms setup:
+Here’s how to connect oopspam to your Formidable Forms setup:
 
 **Step 1: Install the Plugin**
 
-From your WordPress dashboard, go to **Plugins > Add New**.  Search for **OOPSpam Anti-Spam**, install, and activate it.
+From your WordPress dashboard, go to **Plugins > Add New**.  Search for **oopspam Anti-Spam**, install, and activate it.
 
 **Step 2: Add Your API Key**
 
-Create an account at [OOPSpam.com](https://app.oopspam.com/Identity/Account/Register) and generate your API key.
+Create an account at [oopspam.com](https://app.oopspam.com/Identity/Account/Register) and generate your API key.
 
-![OOPSpam dashboard showing API usage, response time, and API key, with options to test data and view logs, along with navigation menu on the left.](/blog/assets/posts/oopspam-dashboard-api.png "OOPSpam dashboard")
+![oopspam dashboard showing API usage, response time, and API key, with options to test data and view logs, along with navigation menu on the left.](/blog/assets/posts/oopspam-dashboard-api.png "oopspam dashboard")
 
-Back in WordPress, go to **OOPSpam Anti-Spam > Settings** and paste the key.
+Back in WordPress, go to **oopspam Anti-Spam > Settings** and paste the key.
 
 ![Paste the API key](/blog/assets/posts/oopspam-api-key.png "Paste the API key")
 
@@ -74,7 +74,7 @@ Scroll to the “Formidable Forms” section and toggle on the spam protection.
 
 ![Enable Protection for Formidable](/blog/assets/posts/formidable-forms-spam-protection-update.png "Enable Protection for Formidable")
 
-This will route all your Formidable form entries through OOPSpam’s spam detection system.
+This will route all your Formidable form entries through oopspam’s spam detection system.
 
 **Step 4: Block or Allow Countries**
 
@@ -87,7 +87,7 @@ Find the **Country Filtering** settings:
 
 Choose your preferred method, select countries, and save.
 
-Done. OOPSpam will now [block submissions](https://www.oopspam.com/blog/spam-protection-for-formidable) from those regions without blocking visitors from browsing your site.
+Done. oopspam will now [block submissions](https://www.oopspam.com/blog/spam-protection-for-formidable) from those regions without blocking visitors from browsing your site.
 
 ### **Bonus: Use Formidable’s Cascading Locations Add-On**
 
@@ -105,7 +105,7 @@ You can:
 
 ### **Reviewing Blocked Entries**
 
-With OOPSpam, you’re not guessing what was blocked. You can view:
+With oopspam, you’re not guessing what was blocked. You can view:
 
 * IP address
 * Submission content
@@ -113,15 +113,15 @@ With OOPSpam, you’re not guessing what was blocked. You can view:
 * Spam score and detection reason
 * Email address (if submitted)
 
-[OOPSpam logs](https://help.oopspam.com/wordpress/form-entries/) are viewable in:
+[oopspam logs](https://help.oopspam.com/wordpress/form-entries/) are viewable in:
 
 **1. Form Spam Entries / Form Ham Entries** (inside WordPress Dashboard)
 
 ![Form Spam Entries / Form Ham Entries (inside WordPress Dashboard)](/blog/assets/posts/form-spam-entries-oopspam.png "Form Spam Entries / Form Ham Entries (inside WordPress Dashboard)")
 
-**2. OOPSpam Dashboard** (online portal with advanced logs)
+**2. oopspam Dashboard** (online portal with advanced logs)
 
-![OOPSpam Dashboard (online portal with advanced logs)](/blog/assets/posts/screenshot-1.png "OOPSpam Dashboard (online portal with advanced logs)")
+![oopspam Dashboard (online portal with advanced logs)](/blog/assets/posts/screenshot-1.png "oopspam Dashboard (online portal with advanced logs)")
 
 This visibility helps you fine-tune filters, recover false positives, and improve spam protection over time.
 
@@ -157,10 +157,10 @@ Go to [Cloudflare.com](https://dash.cloudflare.com/login), sign in, and choose t
 
 Visitors from the selected regions will now be blocked entirely from your site.
 
-For most users, though, form-level blocking (via OOPSpam) is enough and won’t affect real users browsing your website.
+For most users, though, form-level blocking (via oopspam) is enough and won’t affect real users browsing your website.
 
 ## **Final thoughts**
 
-[Formidable Forms](https://www.oopspam.com/blog/spam-protection-for-forminator) doesn’t include built-in country-blocking, but that doesn’t mean you’re stuck. With OOPSpam, you can block form submissions from unwanted countries, reduce spam, and monitor entries with full transparency.
+[Formidable Forms](https://www.oopspam.com/blog/spam-protection-for-forminator) doesn’t include built-in country-blocking, but that doesn’t mean you’re stuck. With oopspam, you can block form submissions from unwanted countries, reduce spam, and monitor entries with full transparency.
 
-OOPSpam works with many other form builders too, including [Forminator](https://www.oopspam.com/blog/how-to-block-countries-in-forminator), [Breakdance Forms](https://www.oopspam.com/blog/how-to-block-countries-in-breakdance-forms), [WS Form](https://www.oopspam.com/blog/how-to-block-countries-in-ws-form), [Jetpack Forms](https://www.oopspam.com/blog/how-to-block-countries-in-jetpack-forms), and [more](https://wordpress.org/plugins/oopspam-anti-spam/#:~:text=Supported%20form%20%26%20comment%20solutions%3A).
+oopspam works with many other form builders too, including [Forminator](https://www.oopspam.com/blog/how-to-block-countries-in-forminator), [Breakdance Forms](https://www.oopspam.com/blog/how-to-block-countries-in-breakdance-forms), [WS Form](https://www.oopspam.com/blog/how-to-block-countries-in-ws-form), [Jetpack Forms](https://www.oopspam.com/blog/how-to-block-countries-in-jetpack-forms), and [more](https://wordpress.org/plugins/oopspam-anti-spam/#:~:text=Supported%20form%20%26%20comment%20solutions%3A).

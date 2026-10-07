@@ -46,9 +46,9 @@ To [protect your WooCommerce store](https://www.oopspam.com/blog/spam-protection
 
 ### Primary Defense
 
-Install the OOPSpam plugin and enable both the Spam Protection for Woo and the **"Block orders from unknown origin"** features. This targets the specific pattern these attacks follow and can significantly reduce successful attack attempts. You can also use **“Require valid device type”** setting too.
+Install the oopspam plugin and enable both the Spam Protection for Woo and the **"Block orders from unknown origin"** features. This targets the specific pattern these attacks follow and can significantly reduce successful attack attempts. You can also use **“Require valid device type”** setting too.
 
-![WooCommerce setting in the OOPSpam WordPress plugin](/blog/assets/posts/oopspam-woo.png "WooCommerce setting in the OOPSpam WordPress plugin")
+![WooCommerce setting in the oopspam WordPress plugin](/blog/assets/posts/oopspam-woo.png "WooCommerce setting in the oopspam WordPress plugin")
 
 Blocked entries will be listed under the Form Spam Entries.
 
@@ -56,15 +56,15 @@ Blocked entries will be listed under the Form Spam Entries.
 
 ### Additional Security Layers
 
-* **Geographic Restrictions**: Implement country-based blocking for regions where you don't conduct business. You can either [use Cloudflare to block countries](https://www.oopspam.com/blog/blocking-countries-from-accessing-your-website-using-cloudflare) on the DNS-Level or the OOPSpam WordPress plugin.
+* **Geographic Restrictions**: Implement country-based blocking for regions where you don't conduct business. You can either [use Cloudflare to block countries](https://www.oopspam.com/blog/blocking-countries-from-accessing-your-website-using-cloudflare) on the DNS-Level or the oopspam WordPress plugin.
 
-  ![Country blocking in the OOPSpam](/blog/assets/posts/country-language-filter.png "Country blocking in the OOPSpam")
+  ![Country blocking in the oopspam](/blog/assets/posts/country-language-filter.png "Country blocking in the oopspam")
 * **CAPTCHA Integration**: Add a Turnstile widget to your checkout page for additional verification. You can use [the Simple Cloudflare Turnstile plugin](https://wordpress.org/plugins/simple-cloudflare-turnstile/) for this.
 
   ![CAPTHCA examples](/blog/assets/posts/captcha.webp "CAPTCHA examples")
-* **Rate Limiting**: Enable [rate limiting through the OOPSpam plugin](https://www.oopspam.com/blog/protecting-forms-with-rate-limiting-in-wordpress-using-oopspam) to restrict the number of checkout attempts from the same IP address, effectively preventing rapid-fire card testing attempts
+* **Rate Limiting**: Enable [rate limiting through the oopspam plugin](https://www.oopspam.com/blog/protecting-forms-with-rate-limiting-in-wordpress-using-oopspam) to restrict the number of checkout attempts from the same IP address, effectively preventing rapid-fire card testing attempts
 
-  ![OOPSpam WordPress plugin Rate Limiting setting](/blog/assets/posts/rate-limiting-settings.png "OOPSpam WordPress plugin Rate Limiting setting")
+  ![oopspam WordPress plugin Rate Limiting setting](/blog/assets/posts/rate-limiting-settings.png "oopspam WordPress plugin Rate Limiting setting")
 
 ## Moving Forward
 

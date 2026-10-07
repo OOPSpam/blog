@@ -5,7 +5,7 @@ date: 2026-02-03T23:50:00.000+08:00
 author: chazie
 image: /blog/assets/posts/mp_meta.jpg
 description: Learn how to block VPN and data center IP spam in MailPoet using
-  OOPSpam or Cloudflare. Keep fake subscribers out and protect deliverability.
+  oopspam or Cloudflare. Keep fake subscribers out and protect deliverability.
 tags:
   - MailPoet
   - Cloudflare
@@ -22,25 +22,25 @@ Most MailPoet spam comes from rotating networks, not a single IP. VPNs, proxies,
 
 MailPoet treats this traffic as normal users due to limited network visibility. Over time, lists grow while engagement drops, and email providers begin trusting your domain less.
 
-## **Method 1: Automatically Block VPN and Cloud IPs Using OOPSpam**
+## **Method 1: Automatically Block VPN and Cloud IPs Using oopspam**
 
-[OOPSpam](https://www.oopspam.com/) (that’s us 👋) is a form-focused anti-spam solution that evaluates each submission in real time. It connects your WordPress forms to a continuously updated threat database that identifies VPNs, proxies, Tor networks, and cloud infrastructure.
+[oopspam](https://www.oopspam.com/) (that’s us 👋) is a form-focused anti-spam solution that evaluates each submission in real time. It connects your WordPress forms to a continuously updated threat database that identifies VPNs, proxies, Tor networks, and cloud infrastructure.
 
 Spam is filtered before MailPoet saves the subscriber.
 
-### **How to Enable OOPSpam for MailPoet**
+### **How to Enable oopspam for MailPoet**
 
-Install and activate **[OOPSpam Anti-Spam](https://www.oopspam.com/wordpress)** from the WordPress plugin repository. 
+Install and activate **[oopspam Anti-Spam](https://www.oopspam.com/wordpress)** from the WordPress plugin repository. 
 
-![OOPSpam Anti-Spam](/blog/assets/posts/oopspam-anti-spam-overview.png "OOPSpam Anti-Spam")
+![oopspam Anti-Spam](/blog/assets/posts/oopspam-anti-spam-overview.png "oopspam Anti-Spam")
 
-[Create an account](https://app.oopspam.com/Identity/Account/Login) at OOPSpam.com and generate an API key. 
+[Create an account](https://app.oopspam.com/Identity/Account/Login) at oopspam.com and generate an API key. 
 
-![OOPSpam dashboard](/blog/assets/posts/oopspam-dashboard-api.png "OOPSpam dashboard")
+![oopspam dashboard](/blog/assets/posts/oopspam-dashboard-api.png "oopspam dashboard")
 
-Then open **Settings → OOPSpam Anti-Spam** in WordPress and paste your key.
+Then open **Settings → oopspam Anti-Spam** in WordPress and paste your key.
 
-![General Settings OOPSpam Anti-Spam](/blog/assets/posts/oopspam-api-key.png "General Settings OOPSpam Anti-Spam")
+![General Settings oopspam Anti-Spam](/blog/assets/posts/oopspam-api-key.png "General Settings oopspam Anti-Spam")
 
 Ensure **Activate Spam Protection** is turned ON for MailPoet. Once MailPoet is detected, protection becomes available automatically.
 
@@ -52,20 +52,20 @@ This is the step that blocks VPN and cloud traffic.
 
 ![Enable IP Filtering](/blog/assets/posts/ip-filtering-oopspam.png "Enable IP Filtering")
 
-Open the **IP Filtering** tab inside OOPSpam settings
+Open the **IP Filtering** tab inside oopspam settings
 
 * Enable **Block Cloud Providers** (strongly recommended)
 * Enable **Block VPNs** only if your audience does not rely heavily on privacy tools
 
 Save changes.
 
-From this point forward, OOPSpam filters submissions automatically in the background. No additional MailPoet configuration is required.
+From this point forward, oopspam filters submissions automatically in the background. No additional MailPoet configuration is required.
 
 ## **Using Manual Moderation When Spam Is Targeted**
 
 Not all spam is automated. Some abuse is slow, repetitive, and intentionally written to appear legitimate. These submissions often rotate IPs and avoid obvious spam keywords.
 
-OOPSpam includes a **Manual Moderation** section for these cases.
+oopspam includes a **Manual Moderation** section for these cases.
 
 ![Manual Moderation](/blog/assets/posts/manual-moderation-settings-oopspam.png "Manual Moderation tab")
 
@@ -98,6 +98,6 @@ For example, Amazon Web Services uses ASN 16509.
 
 ## **Final Recommendation**
 
-MailPoet alone cannot block VPN or data center IP spam. To protect your list, submissions must be filtered before they are saved. OOPSpam provides precise, MailPoet-safe protection at the form level. Cloudflare offers network-level control when attacks escalate.
+MailPoet alone cannot block VPN or data center IP spam. To protect your list, submissions must be filtered before they are saved. oopspam provides precise, MailPoet-safe protection at the form level. Cloudflare offers network-level control when attacks escalate.
 
 Clean lists protect deliverability and early filtering saves time. Blocking spam before it enters MailPoet is always easier than removing it later.

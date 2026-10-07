@@ -5,7 +5,7 @@ date: 2025-08-22T06:05:00.000+08:00
 last_modified_at: 2026-01-06T11:36:00.000+08:00
 author: chazie
 image: /blog/assets/posts/pionet_header.png
-description: Discover how to block countries in Piotnet Forms using OOPSpam for
+description: Discover how to block countries in Piotnet Forms using oopspam for
   form-level filtering or Cloudflare Firewall Rules for site-wide protection.
 tags:
   - Piotnet Forms
@@ -15,7 +15,7 @@ tags:
 
 If you’re using [Piotnet Forms](https://piotnetforms.com/), there’s no native option to [block countries](https://www.oopspam.com/blog/how-to-block-countries-from-your-website-the-complete-guide) directly. But you still have reliable solutions to filter unwanted traffic and keep your forms clean.
 
-This guide explains how you can achieve country-based blocking with OOPSpam Anti-Spam (for form-level filtering) or Cloudflare Firewall Rules (for site-wide blocking).
+This guide explains how you can achieve country-based blocking with oopspam Anti-Spam (for form-level filtering) or Cloudflare Firewall Rules (for site-wide blocking).
 
 ### **No Built-In Country Blocking in Piotnet Forms**
 
@@ -23,20 +23,20 @@ Unlike some enterprise-level tools, Piotnet Forms does not provide a built-in fe
 
 The two most effective approaches are:
 
-* **OOPSpam Anti-Spam** – adds advanced spam detection, geo-filtering, and logs directly within your WordPress dashboard.
+* **oopspam Anti-Spam** – adds advanced spam detection, geo-filtering, and logs directly within your WordPress dashboard.
 * **Cloudflare Firewall Rules** – blocks traffic from entire countries before they even reach your site.
 
 Let’s break down how each works.
 
-## **1. Block Countries in Piotnet Forms Using OOPSpam**
+## **1. Block Countries in Piotnet Forms Using oopspam**
 
-![OOPSpam Anti-Spam](/blog/assets/posts/oopspam-anti-spam-overview.png "OOPSpam Anti-Spam")
+![oopspam Anti-Spam](/blog/assets/posts/oopspam-anti-spam-overview.png "oopspam Anti-Spam")
 
-If you’re mainly dealing with spam entries (especially from certain countries), [OOPSpam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/) (that’s us 👋) is the most effective way. It integrates seamlessly with Piotnet Forms, giving you precise control at the form level without blocking legitimate site visitors.
+If you’re mainly dealing with spam entries (especially from certain countries), [oopspam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/) (that’s us 👋) is the most effective way. It integrates seamlessly with Piotnet Forms, giving you precise control at the form level without blocking legitimate site visitors.
 
-### **What OOPSpam Adds to Piotnet Forms**
+### **What oopspam Adds to Piotnet Forms**
 
-When paired with Piotnet Forms, OOPSpam offers:
+When paired with Piotnet Forms, oopspam offers:
 
 * **Country Filtering** – choose which countries to block or allow.
 * **Language Filtering** – exclude submissions written in specific languages.
@@ -49,21 +49,21 @@ This gives you control over spam without impacting genuine users outside the blo
 
 ### **How to Set It Up**
 
-Here’s how to connect OOPSpam with Piotnet Forms:
+Here’s how to connect oopspam with Piotnet Forms:
 
-**Step 1: Install OOPSpam**
+**Step 1: Install oopspam**
 
-From your WordPress dashboard, go to **Plugins > Add New**. Search for **OOPSpam Anti-Spam**.
+From your WordPress dashboard, go to **Plugins > Add New**. Search for **oopspam Anti-Spam**.
 
 Install and activate the plugin.
 
 **Step 2: Connect Your API Key**
 
-Sign up at [OOPSpam.com](https://app.oopspam.com/Identity/Account/Login) and generate your API key.
+Sign up at [oopspam.com](https://app.oopspam.com/Identity/Account/Login) and generate your API key.
 
 ![Connect Your API Key](/blog/assets/posts/oopspam-dashboard-api.png "Connect Your API Key")
 
-Go back to WordPress > **OOPSpam Anti-Spam > Settings**. Paste your API key in the designated field.
+Go back to WordPress > **oopspam Anti-Spam > Settings**. Paste your API key in the designated field.
 
 ![Paste your API key in the designated field.](/blog/assets/posts/oopspam-api-key.png "Paste your API key in the designated field.")
 
@@ -77,7 +77,7 @@ Scroll down to the **Piotnet Forms** section and toggle **spam protection on**.
 * **Main Content Field ID (optional)** – if you use multiple fields, enter the field IDs here.
 * **Don’t Protect These Forms** – exclude specific forms by entering their IDs.
 
-This ensures all your Piotnet Forms are now filtered through [OOPSpam](https://www.oopspam.com/)’s system.
+This ensures all your Piotnet Forms are now filtered through [oopspam](https://www.oopspam.com/)’s system.
 
 **Step 4: Set Country Filters**
 
@@ -94,7 +94,7 @@ Now, submissions from blocked countries won’t make it through your Piotnet For
 
 ### **Reviewing Blocked Submissions in Piotnet Forms**
 
-OOPSpam provides full transparency through [logs](https://help.oopspam.com/wordpress/form-entries/). You can check:
+oopspam provides full transparency through [logs](https://help.oopspam.com/wordpress/form-entries/). You can check:
 
 * Submission content
 * IP address
@@ -108,9 +108,9 @@ Logs are available in two places:
 
 ![WordPress dashboard](/blog/assets/posts/form-spam-entries-oopspam.png "WordPress dashboard – see Form Spam Entries and Form Ham Entries.")
 
-* **OOPSpam dashboard** – with deeper filtering, search, and export options.
+* **oopspam dashboard** – with deeper filtering, search, and export options.
 
-![OOPSpam dashboard](/blog/assets/posts/screenshot-1.png "OOPSpam dashboard – with deeper filtering, search, and export options.")
+![oopspam dashboard](/blog/assets/posts/screenshot-1.png "oopspam dashboard – with deeper filtering, search, and export options.")
 
 This makes it easy to:
 
@@ -122,7 +122,7 @@ This makes it easy to:
 
 If your issue goes beyond spam, like brute force logins, scraping, or [DDoS attacks](https://www.cloudflare.com/learning/ddos/what-is-a-ddos-attack/), you may want to block traffic at the network level using [Cloudflare Firewall Rules](https://developers.cloudflare.com/firewall/cf-firewall-rules/).
 
-> Unlike OOPSpam, this blocks visitors from an entire country across your whole website, not just Piotnet Forms.
+> Unlike oopspam, this blocks visitors from an entire country across your whole website, not just Piotnet Forms.
 
 ### **How to Set Up Country Blocking in Cloudflare**
 
@@ -155,12 +155,12 @@ This method is best when:
 
 Piotnet Forms doesn’t include country blocking by default, but with the right tools, you can manage it effectively.
 
-* Use OOPSpam Anti-Spam for precise, form-level filtering with country rules and detailed logs.
+* Use oopspam Anti-Spam for precise, form-level filtering with country rules and detailed logs.
 * Use Cloudflare Firewall for wider protection when your entire site is under attack or needs compliance controls.
 
 Together, they give you flexible, layered defense against unwanted traffic.
 
-OOPSpam integrates with many other form builders as well, including [MailPoet](https://www.oopspam.com/blog/how-to-block-countries-in-mailpoet), [GiveWP Donation Forms](https://www.oopspam.com/blog/how-to-block-countries-in-givewp-donation-forms), [Paid Memberships Pro](https://www.oopspam.com/blog/how-to-block-countries-in-paid-memberships-pro), [Elementor Forms](https://www.oopspam.com/blog/how-to-block-countries-in-elementor-forms), and [more](https://wordpress.org/plugins/oopspam-anti-spam/#:~:text=Supported%20form%20%26%20comment%20solutions%3A), so if you switch platforms in the future, you won’t lose protection.
+oopspam integrates with many other form builders as well, including [MailPoet](https://www.oopspam.com/blog/how-to-block-countries-in-mailpoet), [GiveWP Donation Forms](https://www.oopspam.com/blog/how-to-block-countries-in-givewp-donation-forms), [Paid Memberships Pro](https://www.oopspam.com/blog/how-to-block-countries-in-paid-memberships-pro), [Elementor Forms](https://www.oopspam.com/blog/how-to-block-countries-in-elementor-forms), and [more](https://wordpress.org/plugins/oopspam-anti-spam/#:~:text=Supported%20form%20%26%20comment%20solutions%3A), so if you switch platforms in the future, you won’t lose protection.
 
 ## Related guides
 

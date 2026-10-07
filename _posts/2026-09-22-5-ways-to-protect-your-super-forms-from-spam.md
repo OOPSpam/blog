@@ -4,14 +4,14 @@ title: 5 Ways to Protect Your Super Forms From Spam
 date: 2026-09-22T21:27:00.000+08:00
 author: chazie
 image: /blog/assets/posts/general_5ways_superforms.jpg
-description: Stop spam in Super Forms with OOPSpam, reCAPTCHA, duplicate entry
+description: Stop spam in Super Forms with oopspam, reCAPTCHA, duplicate entry
   blocking, custom PHP rules, and Cloudflare. Step-by-step setup.
 tags:
   - Super Forms
 ---
 ![Super Forms](/blog/assets/posts/super-forms.png "Super Forms")
 
-You can protect[ Super Forms](https://super-forms.com/) from spam in five ways: add an anti-spam plugin such as OOPSpam, enable Google reCAPTCHA v2 or v3, block duplicate entries, add a custom PHP blocklist, or block countries at Cloudflare. Layering two or three of these works best, since each catches a different type of spam. The steps for each method are below.
+You can protect[ Super Forms](https://super-forms.com/) from spam in five ways: add an anti-spam plugin such as oopspam, enable Google reCAPTCHA v2 or v3, block duplicate entries, add a custom PHP blocklist, or block countries at Cloudflare. Layering two or three of these works best, since each catches a different type of spam. The steps for each method are below.
 
 ## **Method 1: Add Google reCAPTCHA v2 or v3**
 
@@ -38,23 +38,23 @@ Duplicate blocking limits repeat submissions from the same email address.
 
 This stops repeats from one address. It does not stop a spammer who rotates addresses.
 
-## **Method 3: Install the OOPSpam Anti-Spam Plugin**
+## **Method 3: Install the oopspam Anti-Spam Plugin**
 
-**[OOPSpam](https://www.oopspam.com/)** hooks into the Super Forms submission process and filters spam automatically. Visitors never see a puzzle or checkbox.
+**[oopspam](https://www.oopspam.com/)** hooks into the Super Forms submission process and filters spam automatically. Visitors never see a puzzle or checkbox.
 
 ### **How to set it up**
 
-In WordPress, go to **Plugins > Add New**, search for **[OOPSpam Anti-Spam](https://www.oopspam.com/wordpress)**, then install and activate it.
+In WordPress, go to **Plugins > Add New**, search for **[oopspam Anti-Spam](https://www.oopspam.com/wordpress)**, then install and activate it.
 
-![OOPSpam Anti-Spam](/blog/assets/posts/oopspam-anti-spam-overview.png "OOPSpam Anti-Spam")
+![oopspam Anti-Spam](/blog/assets/posts/oopspam-anti-spam-overview.png "oopspam Anti-Spam")
 
 Create a free account at [oopspam.com](https://app.oopspam.com/Identity/Account/Login) and copy your API key from the dashboard.
 
 ![Copy your API key from the dashboard](/blog/assets/posts/oopspam-dashboard-api.png "Copy your API key from the dashboard")
 
-Go to **Settings > OOPSpam**, paste your API key, and save.
+Go to **Settings > oopspam**, paste your API key, and save.
 
-![Go to Settings > OOPSpam, paste your API key, and save.](/blog/assets/posts/oopspam-api-key.png "Go to Settings > OOPSpam, paste your API key, and save.")
+![Go to Settings > oopspam, paste your API key, and save.](/blog/assets/posts/oopspam-api-key.png "Go to Settings > oopspam, paste your API key, and save.")
 
 Find the **Super Forms** section and check **Activate Spam Protection**.
 
@@ -67,7 +67,7 @@ Find the **Super Forms** section and check **Activate Spam Protection**.
 * Optional: use **Content field mapping** if your form has more than one textarea. Enter the name of the main message field. For multiple forms, separate field names with commas.
 * Optional: enter form IDs in **Don't protect these forms** (for example 1,5,2) to skip forms that don't need filtering.
 
-### **What OOPSpam can filter**
+### **What oopspam can filter**
 
 * Known spam IPs and email domains
 * VPN, proxy, and data center traffic
@@ -75,9 +75,9 @@ Find the **Super Forms** section and check **Activate Spam Protection**.
 * Submissions from [countries](https://www.oopspam.com/blog/how-to-block-countries-from-your-website-the-complete-guide) you choose to block
 * [Repeat submissions](https://www.oopspam.com/blog/protecting-forms-with-rate-limiting-in-wordpress-using-oopspam) from the same IP or email within a set time
 
-OOPSpam also keeps a [submission log](https://help.oopspam.com/wordpress/form-entries/), so you can review blocked entries and adjust settings if a real visitor gets caught.
+oopspam also keeps a [submission log](https://help.oopspam.com/wordpress/form-entries/), so you can review blocked entries and adjust settings if a real visitor gets caught.
 
-![OOPSpam submission log](/blog/assets/posts/screenshot-1.png "OOPSpam submission log")
+![oopspam submission log](/blog/assets/posts/screenshot-1.png "oopspam submission log")
 
 ## **Method 4: Add a Custom PHP Blocklist**
 
@@ -98,7 +98,7 @@ This is a blunt tool. Use it only when the pattern is clear and real visitors wo
 
 ## **Final thoughts**
 
-Layer your defenses. Start with OOPSpam for automatic filtering, add reCAPTCHA for bot verification, and use duplicate blocking, custom rules, or Cloudflare for specific patterns. Keep Super Forms updated to 6.3.314 or later, which patched a critical file upload vulnerability.
+Layer your defenses. Start with oopspam for automatic filtering, add reCAPTCHA for bot verification, and use duplicate blocking, custom rules, or Cloudflare for specific patterns. Keep Super Forms updated to 6.3.314 or later, which patched a critical file upload vulnerability.
 
 ## Related guides
 

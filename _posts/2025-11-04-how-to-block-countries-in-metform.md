@@ -5,7 +5,7 @@ date: 2025-11-04T07:26:00.000+08:00
 last_modified_at: 2026-01-06T11:36:00.000+08:00
 author: chazie
 image: /blog/assets/posts/metform_block_countries.jpg
-description: Block countries in MetForm with simple steps. Use OOPSpam for
+description: Block countries in MetForm with simple steps. Use oopspam for
   form-level filtering or Cloudflare for site-wide blocking. Stop spam without
   hurting SEO.
 tags:
@@ -14,13 +14,13 @@ tags:
 ---
 ![MetForm](/blog/assets/posts/metform.png "MetForm")
 
-[MetForm](https://wpmet.com/plugin/metform/) does not have built-in country blocking. To block countries, you must use a third-party tool like [OOPSpam](https://www.oopspam.com/) or your firewall (Cloudflare). [Blocking by country](https://www.oopspam.com/blog/how-to-block-countries-from-your-website-the-complete-guide) protects your forms from spam and unwanted regions. It also keeps your site fast, secure, and focused on real leads.
+[MetForm](https://wpmet.com/plugin/metform/) does not have built-in country blocking. To block countries, you must use a third-party tool like [oopspam](https://www.oopspam.com/) or your firewall (Cloudflare). [Blocking by country](https://www.oopspam.com/blog/how-to-block-countries-from-your-website-the-complete-guide) protects your forms from spam and unwanted regions. It also keeps your site fast, secure, and focused on real leads.
 
 This guide shows the fastest way to do it, without breaking your website or hurting SEO.
 
 ## **Best Method: Block Countries Only on MetForm Forms**
 
-If your goal is to [protect form submissions](https://www.oopspam.com/blog/4-ways-to-protect-your-metform-from-spam) but keep your website public worldwide, use **OOPSpam Anti-Spam**  (that’s us 👋). It integrates directly with MetForm.
+If your goal is to [protect form submissions](https://www.oopspam.com/blog/4-ways-to-protect-your-metform-from-spam) but keep your website public worldwide, use **oopspam Anti-Spam**  (that’s us 👋). It integrates directly with MetForm.
 
 ### **Why this method works best**
 
@@ -31,21 +31,21 @@ If your goal is to [protect form submissions](https://www.oopspam.com/blog/4-way
 
 This gives you precision control and avoids hurting real users.
 
-### **How to Block Countries in MetForm Using OOPSpam**
+### **How to Block Countries in MetForm Using oopspam**
 
 Follow these steps:
 
-In WordPress dashboard, go to **Plugins → Add New.** Search **[OOPSpam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/)**,install and activate.
+In WordPress dashboard, go to **Plugins → Add New.** Search **[oopspam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/)**,install and activate.
 
-![OOPSpam Anti-Spam](/blog/assets/posts/oopspam-anti-spam-overview.png "OOPSpam Anti-Spam")
+![oopspam Anti-Spam](/blog/assets/posts/oopspam-anti-spam-overview.png "oopspam Anti-Spam")
 
-[Sign up at **OOPSpam.com**](https://app.oopspam.com/Identity/Account/Login) and get your API key.
+[Sign up at **oopspam.com**](https://app.oopspam.com/Identity/Account/Login) and get your API key.
 
-![OOPSpam Dashboard](/blog/assets/posts/oopspam-dashboard-api.png "OOPSpam Dashboard")
+![oopspam Dashboard](/blog/assets/posts/oopspam-dashboard-api.png "oopspam Dashboard")
 
-Go to **OOPSpam Anti-Spam → Settings** and paste your API key.
+Go to **oopspam Anti-Spam → Settings** and paste your API key.
 
-![OOPSpam Anti-Spam → Settings](/blog/assets/posts/oopspam-api-key.png "OOPSpam Anti-Spam → Settings")
+![oopspam Anti-Spam → Settings](/blog/assets/posts/oopspam-api-key.png "oopspam Anti-Spam → Settings")
 
 Enable **MetForm Spam Protection.**
 
@@ -53,9 +53,9 @@ Enable **MetForm Spam Protection.**
 
 ### **Set Up Country Filtering**
 
-Under **OOPSpam → Settings**, find **Country Filtering**.
+Under **oopspam → Settings**, find **Country Filtering**.
 
-![OOPSpam Country Filtering](/blog/assets/posts/country-filtering-settings.png "OOPSpam Country Filtering")
+![oopspam Country Filtering](/blog/assets/posts/country-filtering-settings.png "oopspam Country Filtering")
 
 You’ll see three options:
 
@@ -65,11 +65,11 @@ You’ll see three options:
 
 Select the countries you want to allow or block, then **Save changes**.
 
-OOPSpam will now filter MetForm submissions using IP geolocation, spam signals, and behavior analysis.
+oopspam will now filter MetForm submissions using IP geolocation, spam signals, and behavior analysis.
 
 ## **Add Extra Protection (Recommended)**
 
-Turn on these inside OOPSpam:
+Turn on these inside oopspam:
 
 * VPN/Proxy/TOR blocking
 * Language filtering
@@ -134,7 +134,7 @@ Some hosts (like SiteGround) offer [country blocking](https://world.siteground.c
   </thead>
   <tbody>
     <tr>
-      <td>Form-level (OOPSpam)</td>
+      <td>Form-level (oopspam)</td>
       <td>Lead quality, spam control, SEO safety</td>
       <td><b>Recommended</b></td>
     </tr>
@@ -148,4 +148,4 @@ Some hosts (like SiteGround) offer [country blocking](https://world.siteground.c
 
 ## **Final Thoughts**
 
-MetForm cannot block countries on its own. If your goal is clean leads and reduced spam without hurting SEO, choose OOPSpam form-level country rules. If your priority is compliance or blocking entire regions entirely, use [Cloudflare WAF geo-blocking](https://www.oopspam.com/blog/blocking-countries-from-accessing-your-website-using-cloudflare).
+MetForm cannot block countries on its own. If your goal is clean leads and reduced spam without hurting SEO, choose oopspam form-level country rules. If your priority is compliance or blocking entire regions entirely, use [Cloudflare WAF geo-blocking](https://www.oopspam.com/blog/blocking-countries-from-accessing-your-website-using-cloudflare).

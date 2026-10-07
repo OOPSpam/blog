@@ -13,7 +13,7 @@ tags:
   - wsform
 ---
 <center>
-<img loading="lazy"  width="600" alt="OOPSpam Anti-Spam WordPress Plugin supports WS Form" src="/blog/assets/posts/ws-form/WSForm.png">
+<img loading="lazy"  width="600" alt="oopspam Anti-Spam WordPress Plugin supports WS Form" src="/blog/assets/posts/ws-form/WSForm.png">
 </center>
 <br/>
 
@@ -21,11 +21,11 @@ tags:
 
 {% include toc.md %}
 
-## OOPSpam WordPress plugin
+## oopspam WordPress plugin
 
-[OOPSpam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/) (that's us 👋) is another way to stop spam in WS Form and WordPress comments. The plugin works with [OOPSpam](https://www.oopspam.com/) API that protects over 3.5M websites daily. While other spam filtering methods listed above are free, OOPSpam is a premium service and comes with 40 spam checks/month to test and see the difference.
+[oopspam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/) (that's us 👋) is another way to stop spam in WS Form and WordPress comments. The plugin works with [oopspam](https://www.oopspam.com/) API that protects over 3.5M websites daily. While other spam filtering methods listed above are free, oopspam is a premium service and comes with 40 spam checks/month to test and see the difference.
 
-It's likely you have already tried the below options, and they didn't work for you. It could be a [slow website from reCAPTCHA](https://www.oopspam.com/blog/recaptcha-performance-analyses) or overwhelming spam you are still getting despite implementing the below alternatives. These are benefits OOPSpam has over other alternative:
+It's likely you have already tried the below options, and they didn't work for you. It could be a [slow website from reCAPTCHA](https://www.oopspam.com/blog/recaptcha-performance-analyses) or overwhelming spam you are still getting despite implementing the below alternatives. These are benefits oopspam has over other alternative:
 
 1. Doesn't slow down your website
 2. Keeps your site accessible to all users
@@ -33,32 +33,32 @@ It's likely you have already tried the below options, and they didn't work for y
 
 On the plugin's settings page, you could also adjust how sensitive you want your spam filter to be. Even keeping (recommended) the default **Sensitivity level** setting will help you cut down spam to zero.
 
-![OOPSpam WordPress Plugin Sensitivity level](https://www.oopspam.com/assets/WP_SensitivyLevel.jpg "OOPSpam WordPress Plugin Sensitivity level")
+![oopspam WordPress Plugin Sensitivity level](https://www.oopspam.com/assets/WP_SensitivyLevel.jpg "oopspam WordPress Plugin Sensitivity level")
 
 In addition, the plugin allows you to set up a filter to accept submissions only from [certain countries](https://www.oopspam.com/blog/how-to-block-countries-in-ws-form) and languages.
 
-![OOPSpam WordPress Plugin country & language restrictions](https://www.oopspam.com/assets/country-language-filter.png "OOPSpam WordPress Plugin country & language restrictions")
+![oopspam WordPress Plugin country & language restrictions](https://www.oopspam.com/assets/country-language-filter.png "oopspam WordPress Plugin country & language restrictions")
 
 > ✨ Since then, we have also added the **Block messages from these countries** feature.
 
-![OOPSpam WordPress Plugin block countries](https://www.oopspam.com/blog/assets/wp-block-countries.png "OOPSpam WordPress Plugin block countries")
+![oopspam WordPress Plugin block countries](https://www.oopspam.com/blog/assets/wp-block-countries.png "oopspam WordPress Plugin block countries")
 
 Here are a few steps to activate spam protection for WS Form
 
-1. [Subscribe to get an API key](https://app.oopspam.com/Identity/Account/Register) then copy-paste the API key to the plugin's appropriate field under **Settings->OOPSpam Anti-Spam** on your WordPress Admin Dashboard.
+1. [Subscribe to get an API key](https://app.oopspam.com/Identity/Account/Register) then copy-paste the API key to the plugin's appropriate field under **Settings->oopspam Anti-Spam** on your WordPress Admin Dashboard.
 
-   > ℹ️ Make sure to select OOPSpam Dashboard on the setting page
-2. If you have WS Form installed then a special section will appear on the OOPSpam Anti-Spam plugin's settings page.
+   > ℹ️ Make sure to select oopspam Dashboard on the setting page
+2. If you have WS Form installed then a special section will appear on the oopspam Anti-Spam plugin's settings page.
 
-   ![OOPSpam Anti-Spam WordPress Plugin Settings](/blog/assets/posts/ws-form/oopspam.png "OOPSpam Anti-Spam WordPress Plugin Settings")
+   ![oopspam Anti-Spam WordPress Plugin Settings](/blog/assets/posts/ws-form/oopspam.png "oopspam Anti-Spam WordPress Plugin Settings")
 3. On this page, you need to activate the spam filtering for WS Form by checking the **Activate Spam Protection** checkbox.
 4. Don't forget to enter a short message to display when a spam form entry is submitted. Your message will appear at the bottom of the message field.
-5. We are done with setting up the OOPSpam plugin. 🎉
+5. We are done with setting up the oopspam plugin. 🎉
 
-Now your form is ready to receive submissions. [Each submission](https://www.oopspam.com/blog/how-to-limit-form-submissions-in-ws-form) will be checked by OOPSpam for spam.
+Now your form is ready to receive submissions. [Each submission](https://www.oopspam.com/blog/how-to-limit-form-submissions-in-ws-form) will be checked by oopspam for spam.
 
 <center>
-<img loading="lazy"  alt="OOPSpam detected spam on WS Form" src="/blog/assets/posts/ws-form/oopspam-message.png">
+<img loading="lazy"  alt="oopspam detected spam on WS Form" src="/blog/assets/posts/ws-form/oopspam-message.png">
 </center>
 <br/>
 

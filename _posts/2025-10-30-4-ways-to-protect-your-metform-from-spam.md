@@ -5,7 +5,7 @@ date: 2025-10-30T10:24:00.000+08:00
 author: chazie
 image: /blog/assets/posts/meta_metform.png
 description: Secure MetForm from spam using reCAPTCHA, Cloudflare Turnstile,
-  entry limits, and OOPSpam filtering. Step-by-step setup to block bots and
+  entry limits, and oopspam filtering. Step-by-step setup to block bots and
   protect form data.
 tags:
   - reCAPTCHA
@@ -14,7 +14,7 @@ tags:
 ---
 ![MetForm ](/blog/assets/posts/metform.png "MetForm ")
 
-To effectively secure [MetForm](https://wpmet.com/plugin/metform/), combine its built-in anti-spam options with Cloudflare Turnstile and OOPSpam’s ML spam protection + rate-limiting. This layered method blocks automated bots, human-generated spam, VPN abuse, and repeat attacks without harming legitimate users or lead flow.
+To effectively secure [MetForm](https://wpmet.com/plugin/metform/), combine its built-in anti-spam options with Cloudflare Turnstile and oopspam’s ML spam protection + rate-limiting. This layered method blocks automated bots, human-generated spam, VPN abuse, and repeat attacks without harming legitimate users or lead flow.
 
 Modern spam tactics can bypass basic CAPTCHAs. The following steps ensure your MetForm forms remain secure and reliable.
 
@@ -80,9 +80,9 @@ MetForm natively supports [reCAPTCHA](https://wpmet.com/how-to-add-recaptcha-to-
 
 > Best for event forms, giveaways, lead magnets, and periods of elevated spam activity.
 
-## **4. Implement OOPSpam for Advanced Filtering** 
+## **4. Implement oopspam for Advanced Filtering** 
 
-Today’s spam campaigns bypass simple CAPTCHA. **[OOPSpam](https://www.oopspam.com/)** (that’s us 👋) provides intelligent screening and rate limiting, ensuring MetForm receives real submissions only.
+Today’s spam campaigns bypass simple CAPTCHA. **[oopspam](https://www.oopspam.com/)** (that’s us 👋) provides intelligent screening and rate limiting, ensuring MetForm receives real submissions only.
 
 ### **Key Capabilities**
 
@@ -96,29 +96,29 @@ Today’s spam campaigns bypass simple CAPTCHA. **[OOPSpam](https://www.oopspam.
 
 This approach provides enterprise-grade protection while preserving user experience.
 
-### **How to Set Up OOPSpam for MetForm**
+### **How to Set Up oopspam for MetForm**
 
-![OOPSpam ](/blog/assets/posts/oopspam-anti-spam-overview.png "OOPSpam ")
+![oopspam ](/blog/assets/posts/oopspam-anti-spam-overview.png "oopspam ")
 
-Go to **Plugins → Add New**. Search for **[OOPSpam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/)**. Install and activate the plugin.
+Go to **Plugins → Add New**. Search for **[oopspam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/)**. Install and activate the plugin.
 
-Create an [OOPSpam account](https://app.oopspam.com/Identity/Account/Login). Copy your **API Key** from the OOPSpam dashboard.
+Create an [oopspam account](https://app.oopspam.com/Identity/Account/Login). Copy your **API Key** from the oopspam dashboard.
 
-![Copy your API Key from the OOPSpam dashboard](/blog/assets/posts/oopspam-dashboard-api.png "Copy your API Key from the OOPSpam dashboard")
+![Copy your API Key from the oopspam dashboard](/blog/assets/posts/oopspam-dashboard-api.png "Copy your API Key from the oopspam dashboard")
 
-In WordPress, open **OOPSpam → General Settings** and **paste your API Key**.
+In WordPress, open **oopspam → General Settings** and **paste your API Key**.
 
-![Open OOPSpam → General Settings and paste your API Key](/blog/assets/posts/oopspam-api-key.png "Open OOPSpam → General Settings and paste your API Key")
+![Open oopspam → General Settings and paste your API Key](/blog/assets/posts/oopspam-api-key.png "Open oopspam → General Settings and paste your API Key")
 
 Turn on **MetForm Spam Protection** and click **Save Changes**.
 
 ![Turn on MetForm Spam Protection](/blog/assets/posts/activate-spam-protection-for-metform.png "Turn on MetForm Spam Protection")
 
-OOPSpam will now evaluate every form submission in real time.
+oopspam will now evaluate every form submission in real time.
 
 ### **Enable Advanced Filters**
 
-Turn on the following options inside OOPSpam:
+Turn on the following options inside oopspam:
 
 * **VPN/Proxy/TOR Blocking -** Blocks anonymous networks commonly used by bots and attackers.
 * **Country Rules** (allow only regions you serve) - Ensures only traffic from approved countries can submit forms.
@@ -172,7 +172,7 @@ These filters block modern spam vectors, including distributed bot networks and 
       <td>Prevents mass-submission attacks</td>
     </tr>
     <tr>
-      <td><b>OOPSpam</b></td>
+      <td><b>oopspam</b></td>
       <td>ML spam scoring + rate limiting + advanced blocking</td>
     </tr>
   </tbody>

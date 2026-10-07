@@ -5,7 +5,7 @@ date: 2025-07-30T10:15:00.000+08:00
 last_modified_at: 2026-01-06T11:36:00.000+08:00
 author: chazie
 image: /blog/assets/posts/headr_bricks.jpg
-description: Bricks Forms lacks country blocking, but OOPSpam adds advanced
+description: Bricks Forms lacks country blocking, but oopspam adds advanced
   filtering and logs. Use Cloudflare to block access from entire countries if
   needed.
 tags:
@@ -19,21 +19,21 @@ tags:
 
 [Bricks Forms](https://bricksbuilder.io/forms/) currently does not offer built-in [country-based blocking](https://www.oopspam.com/blog/how-to-block-countries-from-your-website-the-complete-guide) for form submissions. But don’t worry, there’s a solution that doesn’t require complex coding or server-side tweaks.
 
-With the help of the **[OOPSpam Anti-Spam plugin](https://wordpress.org/plugins/oopspam-anti-spam/)** or a network-level tool like Cloudflare, you can add country-level blocking and stronger spam protection to any Bricks Form on your site.
+With the help of the **[oopspam Anti-Spam plugin](https://wordpress.org/plugins/oopspam-anti-spam/)** or a network-level tool like Cloudflare, you can add country-level blocking and stronger spam protection to any Bricks Form on your site.
 
-## **1. Block Countries in Bricks Forms Using OOPSpam**
+## **1. Block Countries in Bricks Forms Using oopspam**
 
-If you want to stop spam submissions coming from certain countries or allow only specific regions, **[OOPSpam](https://www.oopspam.com/)** (that’s us 👋) is the easiest and most effective tool to use. It [integrates directly with Bricks Forms](https://www.oopspam.com/blog/spam-protection-for-bricks) and adds advanced filtering without requiring extra scripts or form changes.
+If you want to stop spam submissions coming from certain countries or allow only specific regions, **[oopspam](https://www.oopspam.com/)** (that’s us 👋) is the easiest and most effective tool to use. It [integrates directly with Bricks Forms](https://www.oopspam.com/blog/spam-protection-for-bricks) and adds advanced filtering without requiring extra scripts or form changes.
 
 ### **Does Bricks Forms Have Built-In Country Blocking?**
 
 No, Bricks Forms doesn’t include a native feature to block submissions by country, IP address, or language.
 
-Unlike form plugins with tiered geo-blocking, Bricks Forms relies on third-party spam protection for this kind of functionality. Fortunately, OOPSpam fills that gap seamlessly.
+Unlike form plugins with tiered geo-blocking, Bricks Forms relies on third-party spam protection for this kind of functionality. Fortunately, oopspam fills that gap seamlessly.
 
-### **What OOPSpam Adds to Bricks Forms**
+### **What oopspam Adds to Bricks Forms**
 
-Here’s what you unlock when using OOPSpam with Bricks Forms:
+Here’s what you unlock when using oopspam with Bricks Forms:
 
 * **Country Filtering**: Block or allow specific countries
 * **Language Filtering**: Restrict submissions based on detected language
@@ -44,17 +44,17 @@ Here’s what you unlock when using OOPSpam with Bricks Forms:
 
 ## **How to Set It Up**
 
-Setting up OOPSpam with Bricks Forms takes only a few minutes.
+Setting up oopspam with Bricks Forms takes only a few minutes.
 
-#### **Step 1: Install the OOPSpam Plugin**
+#### **Step 1: Install the oopspam Plugin**
 
-From your WordPress admin, go to **Plugins > Add New**, search for **OOPSpam Anti-Spam**, then click **Install** and **Activate**.
+From your WordPress admin, go to **Plugins > Add New**, search for **oopspam Anti-Spam**, then click **Install** and **Activate**.
 
-![OOPSpam dashboard ](/blog/assets/posts/oopspam-dashboard-api.png "OOPSpam ")
+![oopspam dashboard ](/blog/assets/posts/oopspam-dashboard-api.png "oopspam ")
 
-#### ![](<>)**Step 2: Connect Your OOPSpam API Key**
+#### ![](<>)**Step 2: Connect Your oopspam API Key**
 
-1. Visit [OOPSpam.com](https://app.oopspam.com/Identity/Account/Register)  and create an account
+1. Visit [oopspam.com](https://app.oopspam.com/Identity/Account/Register)  and create an account
 2. Generate your **API key**
 
 Return to your WordPress dashboard:
@@ -63,7 +63,7 @@ Return to your WordPress dashboard:
 
 * ![](<>)
 
-  Go to **OOPSpam Anti-Spam > Settings**
+  Go to **oopspam Anti-Spam > Settings**
 * **Paste your API key** into the designated field
 
 #### **Step 3: Enable Bricks Forms Protection**
@@ -72,7 +72,7 @@ Return to your WordPress dashboard:
 
 ![](<>)
 
-Inside OOPSpam settings, scroll to the **Bricks Forms** section and **toggle it on**.
+Inside oopspam settings, scroll to the **Bricks Forms** section and **toggle it on**.
 
 This will activate spam protection on all forms created with Bricks Builder.
 
@@ -93,7 +93,7 @@ Form submissions from blocked regions will be rejected silently without impactin
 
 ### **Reviewing Blocked Submissions in Bricks Forms**
 
-OOPSpam doesn't just block spam blindly. It also helps you understand why a submission was blocked.
+oopspam doesn't just block spam blindly. It also helps you understand why a submission was blocked.
 
 You can review:
 
@@ -112,9 +112,9 @@ Blocked and accepted [entries](https://help.oopspam.com/wordpress/form-entries/)
 
 * ![](<>)
 
-  The **OOPSpam Dashboard**, for more advanced filtering and reporting
+  The **oopspam Dashboard**, for more advanced filtering and reporting
 
-![OOPSpam Dashboard](/blog/assets/posts/screenshot-1.png "OOPSpam Dashboard")
+![oopspam Dashboard](/blog/assets/posts/screenshot-1.png "oopspam Dashboard")
 
 ![](<>)
 
@@ -161,7 +161,7 @@ Use this only when:
 * You need to comply with geo-restrictions
 * You want to reduce server load from non-converting regions
 
-In most cases, it’s best to keep your site open and apply form-level restrictions using OOPSpam instead.
+In most cases, it’s best to keep your site open and apply form-level restrictions using oopspam instead.
 
 ## **What’s the Best Method for Country-Based Blocking in Bricks Forms?**
 
@@ -200,7 +200,7 @@ In most cases, it’s best to keep your site open and apply form-level restricti
       <td>Needs third-party integration for country-level rules</td>
     </tr>
     <tr>
-      <td>OOPSpam Plugin</td>
+      <td>oopspam Plugin</td>
       <td>Form submissions</td>
       <td>Spam control, region filtering, submission logs</td>
     </tr>
@@ -216,10 +216,10 @@ In most cases, it’s best to keep your site open and apply form-level restricti
 
 Bricks Forms doesn’t yet support native country-based blocking, but that’s not a deal-breaker.
 
-With OOPSpam, you can instantly add country filtering, language restrictions, and advanced spam prevention to your forms. It works seamlessly and protects your site from abuse while keeping legitimate traffic flowing.
+With oopspam, you can instantly add country filtering, language restrictions, and advanced spam prevention to your forms. It works seamlessly and protects your site from abuse while keeping legitimate traffic flowing.
 
 If your security needs to go beyond spam, such as blocking entire regions from viewing your content, [Cloudflare](https://www.cloudflare.com/) gives you that extra layer of protection.
 
-OOPSpam also works with other form builders, including [Formidable Forms](https://www.oopspam.com/blog/how-to-block-countries-in-formidable-forms), [WPForms](https://www.oopspam.com/blog/how-to-block-countries-in-wpforms), [Breakdance Forms](https://www.oopspam.com/blog/how-to-block-countries-in-breakdance-forms), [SureForms](https://www.oopspam.com/blog/how-to-block-countries-in-sureforms), and [more](https://wordpress.org/plugins/oopspam-anti-spam/#:~:text=Supported%20form%20%26%20comment%20solutions%3A).
+oopspam also works with other form builders, including [Formidable Forms](https://www.oopspam.com/blog/how-to-block-countries-in-formidable-forms), [WPForms](https://www.oopspam.com/blog/how-to-block-countries-in-wpforms), [Breakdance Forms](https://www.oopspam.com/blog/how-to-block-countries-in-breakdance-forms), [SureForms](https://www.oopspam.com/blog/how-to-block-countries-in-sureforms), and [more](https://wordpress.org/plugins/oopspam-anti-spam/#:~:text=Supported%20form%20%26%20comment%20solutions%3A).
 
-Need help setting this up? Visit OOPSpam [documentation](https://www.oopspam.com/help) or [contact our team](https://www.oopspam.com/#contact) to get started quickly.
+Need help setting this up? Visit oopspam [documentation](https://www.oopspam.com/help) or [contact our team](https://www.oopspam.com/#contact) to get started quickly.

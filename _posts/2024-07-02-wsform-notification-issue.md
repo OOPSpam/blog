@@ -33,7 +33,7 @@ I'll keep this section brief. To resolve the issue of WS Form not sending email 
 
 1. Use an email delivery service (e.g., [Postmark](https://postmarkapp.com/))
 2. Implement an SMTP plugin (e.g., [WP Mail SMTP](https://wordpress.org/plugins/wp-mail-smtp/))
-3. Set up spam protection (e.g., [OOPSpam](https://www.oopspam.com/wordpress))
+3. Set up spam protection (e.g., [oopspam](https://www.oopspam.com/wordpress))
 
 When combined, these solutions will ensure you receive an email notification in your inbox for each legitimate (non-spam) form submission.
 
@@ -82,36 +82,36 @@ Now that you have a form with proper email notifications set up, it's crucial to
 - Spam can lead to a higher bounce rate and more spam complaints for your Postmark account, potentially resulting in account suspension.
 - Your domain's reputation can be damaged, making it difficult for your emails to reach recipients' inboxes, regardless of the email delivery service you use.
 
-While [WS Form comes with built-in spam protection](https://www.oopspam.com/blog/spam-protection-for-wsform) such as reCAPTCHA, hCAPTCHA, Turnstile, we will use [OOPSpam Spam Protection for WordPress](https://wordpress.org/plugins/oopspam-anti-spam/) to view all form submission logs, including those that were filtered out as spam. The plugin captures these logs immediately after a visitor submits a form, before any emails are sent. This provides you with a comprehensive record of all submissions, helping you understand which ones didn't trigger an email notification and why.
+While [WS Form comes with built-in spam protection](https://www.oopspam.com/blog/spam-protection-for-wsform) such as reCAPTCHA, hCAPTCHA, Turnstile, we will use [oopspam Spam Protection for WordPress](https://wordpress.org/plugins/oopspam-anti-spam/) to view all form submission logs, including those that were filtered out as spam. The plugin captures these logs immediately after a visitor submits a form, before any emails are sent. This provides you with a comprehensive record of all submissions, helping you understand which ones didn't trigger an email notification and why.
 
-![OOPSpam WordPress Plugin Logs](/blog/assets/posts/wpforms-email-notification/form-entries.png "OOPSpam WordPress Plugin Logs")
+![oopspam WordPress Plugin Logs](/blog/assets/posts/wpforms-email-notification/form-entries.png "oopspam WordPress Plugin Logs")
 
 In addition, the plugin allows you to set up a filter to allow submissions only from certain countries and languages.
 
-![OOPSpam WordPress Plugin country & language restrictions](https://www.oopspam.com/assets/country-language-filter.png "OOPSpam WordPress Plugin country & language restrictions")
+![oopspam WordPress Plugin country & language restrictions](https://www.oopspam.com/assets/country-language-filter.png "oopspam WordPress Plugin country & language restrictions")
 
-![OOPSpam WordPress Plugin block countries](https://www.oopspam.com/blog/assets/wp-block-countries.png "OOPSpam WordPress Plugin block countries")
+![oopspam WordPress Plugin block countries](https://www.oopspam.com/blog/assets/wp-block-countries.png "oopspam WordPress Plugin block countries")
 
 Here are a few steps to activate spam protection for WS Form
 
-1. [Subscribe to get an API key](https://app.oopspam.com/Identity/Account/Register) then copy-paste the API key to the plugin's appropriate field under __Settings->OOPSpam Anti-Spam__ on your WordPress Admin Dashboard.
+1. [Subscribe to get an API key](https://app.oopspam.com/Identity/Account/Register) then copy-paste the API key to the plugin's appropriate field under __Settings->oopspam Anti-Spam__ on your WordPress Admin Dashboard.
 
-    > ℹ️ Make sure to select OOPSpam Dashboard on the setting page
+    > ℹ️ Make sure to select oopspam Dashboard on the setting page
 
-2. If you have WS Form installed then a special section will appear on the OOPSpam Anti-Spam plugin's settings page.
+2. If you have WS Form installed then a special section will appear on the oopspam Anti-Spam plugin's settings page.
 
-    ![OOPSpam Anti-Spam WordPress Plugin Settings](/blog/assets/posts/ws-form/oopspam.png "OOPSpam Anti-Spam WordPress Plugin Settings")
+    ![oopspam Anti-Spam WordPress Plugin Settings](/blog/assets/posts/ws-form/oopspam.png "oopspam Anti-Spam WordPress Plugin Settings")
 
 3. On this page, you need to activate the spam filtering for WS Form by checking the **Activate Spam Protection** checkbox.
 
 4. Don't forget to enter a short message to display when a spam form entry is submitted. Your message will appear at the bottom of the message field.
 
-5. We are done with setting up the OOPSpam plugin. 🎉
+5. We are done with setting up the oopspam plugin. 🎉
 
-Now your form is ready to receive submissions. Each submission will be checked by OOPSpam for spam.
+Now your form is ready to receive submissions. Each submission will be checked by oopspam for spam.
 
 <center>
-<img loading="lazy"  alt="OOPSpam detected spam on WS Form" src="/blog/assets/posts/ws-form/oopspam-message.png">
+<img loading="lazy"  alt="oopspam detected spam on WS Form" src="/blog/assets/posts/ws-form/oopspam-message.png">
 </center>
 <br/>
 

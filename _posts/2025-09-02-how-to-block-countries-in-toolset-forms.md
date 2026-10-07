@@ -5,7 +5,7 @@ date: 2025-09-02T04:39:00.000+08:00
 last_modified_at: 2026-01-06T11:36:00.000+08:00
 author: chazie
 image: /blog/assets/posts/toolset_header.png
-description: Toolset Forms lacks country blocking. Use OOPSpam for form-level
+description: Toolset Forms lacks country blocking. Use oopspam for form-level
   filtering or Cloudflare Firewall to block countries and stop spam effectively.
 tags:
   - Toolset Forms
@@ -15,12 +15,12 @@ tags:
 
 [Toolset Forms](https://toolset.com/home/cred/) does not include built-in [country blocking](https://www.oopspam.com/blog/how-to-block-countries-from-your-website-the-complete-guide). To stop spam or unwanted traffic, you need two options:
 
-1. Use [OOPSpam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/) (that’s us 👋) for form-level filtering.
+1. Use [oopspam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/) (that’s us 👋) for form-level filtering.
 2. Use [Cloudflare Firewall Rules](https://developers.cloudflare.com/firewall/) to block entire countries at the network level.
 
-## **Option 1: Block Countries in Toolset Forms with OOPSpam**
+## **Option 1: Block Countries in Toolset Forms with oopspam**
 
-OOPSpam Anti-Spam integrates with WordPress and adds country and language filtering to your forms. It prevents unwanted submissions while letting legitimate users through.
+oopspam Anti-Spam integrates with WordPress and adds country and language filtering to your forms. It prevents unwanted submissions while letting legitimate users through.
 
 ### **Key Features for Toolset Forms**
 
@@ -32,13 +32,13 @@ OOPSpam Anti-Spam integrates with WordPress and adds country and language filter
 
 ### **How to Set It Up**
 
-Install the OOPSpam plugin from **Plugins > Add New** in WordPress. Create an account at [OOPSpam.com](https://app.oopspam.com/Identity/Account/Login) and generate an API key.
+Install the oopspam plugin from **Plugins > Add New** in WordPress. Create an account at [oopspam.com](https://app.oopspam.com/Identity/Account/Login) and generate an API key.
 
-![OOPSpam dashboard](/blog/assets/posts/oopspam-dashboard-api.png "OOPSpam dashboard")
+![oopspam dashboard](/blog/assets/posts/oopspam-dashboard-api.png "oopspam dashboard")
 
-Paste the API key into **OOPSpam Anti-Spam > Settings**.
+Paste the API key into **oopspam Anti-Spam > Settings**.
 
-![Paste the API key into OOPSpam Anti-Spam](/blog/assets/posts/oopspam-api-key.png "Paste the API key into OOPSpam Anti-Spam")
+![Paste the API key into oopspam Anti-Spam](/blog/assets/posts/oopspam-api-key.png "Paste the API key into oopspam Anti-Spam")
 
 Enable protection for **Toolset Forms** in the plugin settings.
 
@@ -52,11 +52,11 @@ Go to **Country Filtering** and choose whether to block certain countries or all
 
 Blocked and approved submissions appear in two places: inside WordPress under the Spam & Ham [logs](https://help.oopspam.com/wordpress/form-entries/):
 
-![OOPSpam WordPress under the Spam & Ham logs](/blog/assets/posts/form-spam-entries-oopspam.png "OOPSpam WordPress under the Spam & Ham logs")
+![oopspam WordPress under the Spam & Ham logs](/blog/assets/posts/form-spam-entries-oopspam.png "oopspam WordPress under the Spam & Ham logs")
 
-and in your OOPSpam Dashboard with more detailed filtering reports:
+and in your oopspam Dashboard with more detailed filtering reports:
 
-![OOPSpam Dashboard logs](/blog/assets/posts/screenshot-1.png "OOPSpam Dashboard logs")
+![oopspam Dashboard logs](/blog/assets/posts/screenshot-1.png "oopspam Dashboard logs")
 
 This transparency lets you fine-tune settings and recover valid leads if needed.
 
@@ -78,12 +78,12 @@ Cloudflare will now block all visitors from those countries before they ever rea
 
 ## **Which Method Should You Choose?**
 
-* Use **OOPSpam** if you want precision — block only form submissions while leaving the rest of your site accessible.
+* Use **oopspam** if you want precision — block only form submissions while leaving the rest of your site accessible.
 * Use **Cloudflare Firewall** if you need to block all access from a region for security, compliance, or server performance.
 
 ## **Final thoughts**
 
-Toolset Forms does not have built-in country blocking. But with [OOPSpam](https://www.oopspam.com/), you can filter submissions by region and keep your forms clean. For stronger protection, layer Cloudflare Firewall rules to block entire countries at the network level.
+Toolset Forms does not have built-in country blocking. But with [oopspam](https://www.oopspam.com/), you can filter submissions by region and keep your forms clean. For stronger protection, layer Cloudflare Firewall rules to block entire countries at the network level.
 
 This combination gives you control, flexibility, and security,  without disrupting legitimate visitors.
 

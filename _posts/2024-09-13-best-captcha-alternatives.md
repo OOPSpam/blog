@@ -5,7 +5,7 @@ date: 2024-09-13
 last_modified_at: 2026-05-19T12:29:00.000+08:00
 author: onar
 image: /assets/posts/social-media-meta.png
-description: "1. OOPSpam Founded:  2017 Similar to:  Turnstile, hCAPTCHA,
+description: "1. oopspam Founded:  2017 Similar to:  Turnstile, hCAPTCHA,
   reCAPTCHA. Akismet Typical users:  Bloggers and small businesses:  Small-size
   B2B/B2C companies…"
 tags:
@@ -15,7 +15,7 @@ tags:
   - akismet
 ---
 <center>
-<img loading="lazy" width="772" style="height: 200px;object-fit: cover;" alt="OOPSpam illustration" src="/blog/assets/ways-to-stop-spam.png">
+<img loading="lazy" width="772" style="height: 200px;object-fit: cover;" alt="oopspam illustration" src="/blog/assets/ways-to-stop-spam.png">
 </center>
 <br/>
 
@@ -27,13 +27,13 @@ CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Ap
 
 ![CAPTCHA example](/blog/assets/posts/captcha.webp "CAPTCHA example")
 
-## 1. OOPSpam
+## 1. oopspam
 
-### What is OOPSpam?
+### What is oopspam?
 
-[OOPSpam](https://www.oopspam.com/) (that's us 👋) is an all-in-one spam protection service that uses machine learning to detect and filter out spam comments, form submissions, and user registrations on websites and applications. It comes with everything you need to quickly  react on going attack by geo restricting your platform, blocking certain countries and message languages. This means it's not just an alternative to CAPTCHA, but [hCAPTCHA](https://www.oopspam.com/hcaptcha-alternative), and [reCAPTCHA](https://www.oopspam.com/blog/best-recaptcha-alternatives).
+[oopspam](https://www.oopspam.com/) (that's us 👋) is an all-in-one spam protection service that uses machine learning to detect and filter out spam comments, form submissions, and user registrations on websites and applications. It comes with everything you need to quickly  react on going attack by geo restricting your platform, blocking certain countries and message languages. This means it's not just an alternative to CAPTCHA, but [hCAPTCHA](https://www.oopspam.com/hcaptcha-alternative), and [reCAPTCHA](https://www.oopspam.com/blog/best-recaptcha-alternatives).
 
-![OOPSpam.com homepage](/blog/assets/posts/oopspam-homepage.png "OOPSpam.com homepage")
+![oopspam.com homepage](/blog/assets/posts/oopspam-homepage.png "oopspam.com homepage")
 
 ### Key features:
 
@@ -47,10 +47,10 @@ CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Ap
 * Privacy-friendly
 * Detailed analytics and reporting
 
-### Why do companies use OOPSpam?
+### Why do companies use oopspam?
 
-1. **It replaces multiple tools**: OOPSpam can [replace Turnstile](https://www.oopspam.com/blog/best-turnstile-alternatives) (privacy-friendly CAPTCHA; see our [Turnstile alternative](https://www.oopspam.com/turnstile-alternative) page), [reCAPTCHA](https://www.oopspam.com/recaptcha-alternative) (score based filtering), [Cloudflare](https://www.oopspam.com/blog/cloudflare-turnstile) (blocking countries), Akismet (content blocking). This simplifies workflows, so you don't have to switch between tools.
-2. **Meets privacy & accessible needs:** It requires minimum data to detect abuse. OOPSpam works in server side, so your visitors don't have to solve any CAPTCHA or answer any questions. Making it [accessible for everyone](https://www.oopspam.com/blog/accessible-forms).
+1. **It replaces multiple tools**: oopspam can [replace Turnstile](https://www.oopspam.com/blog/best-turnstile-alternatives) (privacy-friendly CAPTCHA; see our [Turnstile alternative](https://www.oopspam.com/turnstile-alternative) page), [reCAPTCHA](https://www.oopspam.com/recaptcha-alternative) (score based filtering), [Cloudflare](https://www.oopspam.com/blog/cloudflare-turnstile) (blocking countries), Akismet (content blocking). This simplifies workflows, so you don't have to switch between tools.
+2. **Meets privacy & accessible needs:** It requires minimum data to detect abuse. oopspam works in server side, so your visitors don't have to solve any CAPTCHA or answer any questions. Making it [accessible for everyone](https://www.oopspam.com/blog/accessible-forms).
 3. **Pricing is transparent and scalable::** All plans come with unlimited websites. The pricing works well for businesses of all sizes.
 
 ## 2. hCAPTCHA
@@ -140,11 +140,11 @@ Turnstile is a user-friendly CAPTCHA alternative developed by Cloudflare that ai
 2. **Better privacy than reCAPTCHA:** It's designed to protect user privacy, collecting minimal data compared to other solutions.
 3. **Cloudflare's global network:** It leverages Cloudflare's extensive CDN for better performance and reliability.
 
-## Is OOPSpam right for you?
+## Is oopspam right for you?
 
 Here's the (short) sales pitch.
 
-We're biased, obviously, but we think OOPSpam is the perfect CAPTCHA replacement if:
+We're biased, obviously, but we think oopspam is the perfect CAPTCHA replacement if:
 
 * You need more powerful spam detection with additional capabilities to quickly respond to ongoing spam and abuse attacks, such as geo-blocking, IP and email blocking, and more.
 * You want a better balance between catching spam and letting legitimate customers through.

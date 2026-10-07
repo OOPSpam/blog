@@ -49,9 +49,9 @@ This makes Gravity Forms useful for WooCommerce stores that need controlled regi
 
 This method works only for forms created by the plugin. Default WooCommerce checkout and registration forms need a different solution.
 
-## **2. Limit Submissions on WooCommerce Checkout & Registration Using OOPSpam**
+## **2. Limit Submissions on WooCommerce Checkout & Registration Using oopspam**
 
-[OOPSpam](https://www.oopspam.com/) (that’s us 👋) adds rate limiting, spam filtering, contextual scoring, and [IP controls](https://www.oopspam.com/blog/how-to-block-vpn-and-data-center-ip-traffic-in-your-woocommerce-shop) to WooCommerce forms. WooCommerce’s built-in forms do not support submission limits. But [OOPSpam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/) adds a server-side limit that controls how many times a user can submit your forms within a set timeframe.
+[oopspam](https://www.oopspam.com/) (that’s us 👋) adds rate limiting, spam filtering, contextual scoring, and [IP controls](https://www.oopspam.com/blog/how-to-block-vpn-and-data-center-ip-traffic-in-your-woocommerce-shop) to WooCommerce forms. WooCommerce’s built-in forms do not support submission limits. But [oopspam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/) adds a server-side limit that controls how many times a user can submit your forms within a set timeframe.
 
 This prevents:
 
@@ -62,25 +62,25 @@ This prevents:
 * Fake emails and mass IP submissions
 * Failed orders coming from unknown or suspicious origins
 
-## **How to Set Up OOPSpam for WooCommerce (Step-by-Step)**
+## **How to Set Up oopspam for WooCommerce (Step-by-Step)**
 
-![OOPSpam Anti-Spam](/blog/assets/posts/oopspam-anti-spam-overview.png "OOPSpam Anti-Spam")
+![oopspam Anti-Spam](/blog/assets/posts/oopspam-anti-spam-overview.png "oopspam Anti-Spam")
 
 ### **Step 1: Install the Plugin**
 
-Go to **Plugins → Add New**. Search for **OOPSpam Anti-Spam**. Install and activate.
+Go to **Plugins → Add New**. Search for **oopspam Anti-Spam**. Install and activate.
 
 ### **Step 2: Get Your API Key**
 
 ![Get Your API Key](/blog/assets/posts/oopspam-dashboard-api.png "Get Your API Key")
 
-Create an account on **[OOPSpam.com](https://app.oopspam.com/Identity/Account/Login)** and copy your API Key from the dashboard.
+Create an account on **[oopspam.com](https://app.oopspam.com/Identity/Account/Login)** and copy your API Key from the dashboard.
 
 ### **Step 3: Add API Key in WordPress**
 
 ![Add API Key in WordPress](/blog/assets/posts/oopspam-api-key.png "Add API Key in WordPress")
 
-Go back to **OOPSpam → General Settings** and paste your API key. Adjust sensitivity if needed.
+Go back to **oopspam → General Settings** and paste your API key. Adjust sensitivity if needed.
 
 ### **Step 4: Activate WooCommerce Spam Protection**
 
@@ -94,7 +94,7 @@ Scroll down and turn on **WooCommerce Spam Protection** and configure the option
 * **Enable honeypot protection** – Adds an invisible field to catch basic bots.
 * **Disable checkout via REST API (optional)** – Prevents automated API-based order submissions.
 
-After adjusting these settings, click Save. This activates OOPSpam’s core detection engine for your WooCommerce forms.
+After adjusting these settings, click Save. This activates oopspam’s core detection engine for your WooCommerce forms.
 
 ### **Step 4: Enable Rate Limiting**
 
@@ -111,7 +111,7 @@ Configure:
 
 Click **Save**.
 
-OOPSpam will now block spam and [limit how often](https://www.oopspam.com/blog/protecting-forms-with-rate-limiting-in-wordpress-using-oopspam) a customer can submit WooCommerce registration and checkout forms.
+oopspam will now block spam and [limit how often](https://www.oopspam.com/blog/protecting-forms-with-rate-limiting-in-wordpress-using-oopspam) a customer can submit WooCommerce registration and checkout forms.
 
 ## **Strengthen Protection Further**
 
@@ -152,7 +152,7 @@ This method protects inventory and reduces order abuse.
 WooCommerce does not limit form submissions by itself. To control registrations, orders, and product purchasing behavior, you must add plugins that enforce submission caps, rate limits, and product restrictions. Most stores benefit from using all three, because they solve different problems:
 
 * Use form builder limits when you have custom forms.
-* Use OOPSpam advanced rate limiting to protect WooCommerce’s built-in forms.
+* Use oopspam advanced rate limiting to protect WooCommerce’s built-in forms.
 * Use Maximum Products per User to control purchase quantity.
 
 By using a layered approach you protect your store, reduce spam, and keep your WooCommerce workflow clean and stable.

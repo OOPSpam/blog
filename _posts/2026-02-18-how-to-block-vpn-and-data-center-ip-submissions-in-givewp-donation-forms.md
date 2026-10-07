@@ -5,7 +5,7 @@ date: 2026-02-17T08:07:00.000+08:00
 author: chazie
 image: /blog/assets/posts/givewp_meta.jpg
 description: Block VPN and data center spam in GiveWP donation forms using
-  OOPSpam, Cloudflare, and built-in security tools. Keep fake donations out.
+  oopspam, Cloudflare, and built-in security tools. Keep fake donations out.
 tags:
   - GiveWP
   - GiveWP Donation Forms
@@ -20,29 +20,29 @@ Donation forms are a prime target for card testing fraud. Attackers run stolen c
 
 GiveWP processes the payment. It does not evaluate where the request came from. That gap is what this guide addresses.
 
-## **Method 1: OOPSpam Anti-Spam**
+## **Method 1: oopspam Anti-Spam**
 
-![OOPSpam Anti-Spam](/blog/assets/posts/oopspam-anti-spam-overview.png "OOPSpam Anti-Spam")
+![oopspam Anti-Spam](/blog/assets/posts/oopspam-anti-spam-overview.png "oopspam Anti-Spam")
 
-[OOPSpam](https://www.oopspam.com/) (that's us 👋) blocks VPN and cloud IP submissions before GiveWP processes them. It checks against a live database covering over 1,500 cloud providers and known VPN networks.
+[oopspam](https://www.oopspam.com/) (that's us 👋) blocks VPN and cloud IP submissions before GiveWP processes them. It checks against a live database covering over 1,500 cloud providers and known VPN networks.
 
 **Step 1: Install the Plugin**
 
-Go to Plugins → Add New in WordPress. Search for "**OOPSpam Anti-Spam**", install it, and activate.
+Go to Plugins → Add New in WordPress. Search for "**oopspam Anti-Spam**", install it, and activate.
 
 **Step 2: Add Your API Key**
 
-[Sign up](https://app.oopspam.com/Identity/Account/Login) at the OOPSpam dashboard and copy your API key. 
+[Sign up](https://app.oopspam.com/Identity/Account/Login) at the oopspam dashboard and copy your API key. 
 
-![OOPSpam dashboard](/blog/assets/posts/oopspam-dashboard-api.png "OOPSpam dashboard")
+![oopspam dashboard](/blog/assets/posts/oopspam-dashboard-api.png "oopspam dashboard")
 
-Go to Settings → OOPSpam Anti-Spam, paste the key, and save.
+Go to Settings → oopspam Anti-Spam, paste the key, and save.
 
-![Settings OOPSpam Anti-Spam](/blog/assets/posts/oopspam-api-key.png "Settings OOPSpam Anti-Spam")
+![Settings oopspam Anti-Spam](/blog/assets/posts/oopspam-api-key.png "Settings oopspam Anti-Spam")
 
 **Step 3: Enable Protection**
 
-Open the General tab. Turn on Activate Spam Protection. OOPSpam automatically detects GiveWP, no additional setup inside GiveWP is needed.
+Open the General tab. Turn on Activate Spam Protection. oopspam automatically detects GiveWP, no additional setup inside GiveWP is needed.
 
 ![Enable Protection for GiveWP](/blog/assets/posts/spam-protection-for-givewp.png "Enable Protection for GiveWP")
 
@@ -59,9 +59,9 @@ Save changes.
 
 ### **Manual Moderation**
 
-For persistent abuse that does not come from automated bots, use **OOPSpam's Manual Moderation**. You can block specific IPs, email addresses, or keywords, and whitelist trusted donors to prevent false positives.
+For persistent abuse that does not come from automated bots, use **oopspam's Manual Moderation**. You can block specific IPs, email addresses, or keywords, and whitelist trusted donors to prevent false positives.
 
-![OOPSpam's Manual Moderation](/blog/assets/posts/manual-moderation-settings-oopspam.png "OOPSpam's Manual Moderation")
+![oopspam's Manual Moderation](/blog/assets/posts/manual-moderation-settings-oopspam.png "oopspam's Manual Moderation")
 
 ## **Method 2: Cloudflare Security Rules**
 
@@ -115,7 +115,7 @@ Go to Donations → Settings → Security. Enable Honeypot and save. It runs qui
 
 ## **Final Takeaway**
 
-GiveWP handles donations well, but fraud protection is not part of its core feature set. Add OOPSpam for IP-level filtering, enable Turnstile and Honeypot for bot protection, and use Cloudflare only if attacks persist at scale. All three together give your donation forms solid, layered defense.
+GiveWP handles donations well, but fraud protection is not part of its core feature set. Add oopspam for IP-level filtering, enable Turnstile and Honeypot for bot protection, and use Cloudflare only if attacks persist at scale. All three together give your donation forms solid, layered defense.
 
 ## Related guides
 

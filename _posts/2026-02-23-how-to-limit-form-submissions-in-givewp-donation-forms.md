@@ -5,14 +5,14 @@ date: 2026-02-23T23:52:00.000+08:00
 author: chazie
 image: /blog/assets/posts/givewp_limit_meta.jpg
 description: Learn how to limit form submissions in GiveWP using donation
-  limits, goals, and OOPSpam rate limiting to reduce spam and fraud.
+  limits, goals, and oopspam rate limiting to reduce spam and fraud.
 tags:
   - GiveWP
   - GiveWP Donation Forms
 ---
 ![GiveWP](/blog/assets/posts/givewp-wordpress.png "GiveWP Donation Forms")
 
-[GiveWP donation forms](https://givewp.com/features/donation-form/) are public, which makes them targets for bots and fraud. Attackers may test stolen cards, attempt large donations, or submit repeatedly. To limit submissions, use three layers: donation amount limits, Donation Goals, and rate limiting with OOPSpam. Together, they reduce spam and abuse while keeping forms open for real donors.
+[GiveWP donation forms](https://givewp.com/features/donation-form/) are public, which makes them targets for bots and fraud. Attackers may test stolen cards, attempt large donations, or submit repeatedly. To limit submissions, use three layers: donation amount limits, Donation Goals, and rate limiting with oopspam. Together, they reduce spam and abuse while keeping forms open for real donors.
 
 ## **1. Set Donation Amount Limits in GiveWP**
 
@@ -64,31 +64,31 @@ Once the goal is reached, the form closes automatically.
 
 Donation Goals are ideal for campaigns with fixed targets. They control how long a form remains open, but they do not control how frequently someone can submit it.
 
-## **3. Add Rate Limiting with OOPSpam**
+## **3. Add Rate Limiting with oopspam**
 
 GiveWP does not include built-in per-IP or per-email rate limits. Without [rate limiting](https://www.oopspam.com/blog/protecting-forms-with-rate-limiting-in-wordpress-using-oopspam), a bot can submit your form many times within minutes.
 
-![Add Rate Limiting with OOPSpam](/blog/assets/posts/oopspam-anti-spam-overview.png "Add Rate Limiting with OOPSpam")
+![Add Rate Limiting with oopspam](/blog/assets/posts/oopspam-anti-spam-overview.png "Add Rate Limiting with oopspam")
 
-[OOPSpam](https://www.oopspam.com/) (that's us 👋) adds this missing control. It checks submissions before GiveWP processes them and blocks repeated abuse automatically.
+[oopspam](https://www.oopspam.com/) (that's us 👋) adds this missing control. It checks submissions before GiveWP processes them and blocks repeated abuse automatically.
 
-### **Step 1: Install OOPSpam**
+### **Step 1: Install oopspam**
 
-Go to **Plugins → Add New**. Search for **[OOPSpam Anti-Spam](https://www.oopspam.com/wordpress)**. Install and activate the plugin.
+Go to **Plugins → Add New**. Search for **[oopspam Anti-Spam](https://www.oopspam.com/wordpress)**. Install and activate the plugin.
 
-[Create an account](https://app.oopspam.com/Identity/Account/Login) at OOPSpam.com and copy your API key.
+[Create an account](https://app.oopspam.com/Identity/Account/Login) at oopspam.com and copy your API key.
 
-![Install OOPSpam](/blog/assets/posts/oopspam-dashboard-api.png "Install OOPSpam")
+![Install oopspam](/blog/assets/posts/oopspam-dashboard-api.png "Install oopspam")
 
-In WordPress, open **OOPSpam → General Settings**, paste the API key, and save.
+In WordPress, open **oopspam → General Settings**, paste the API key, and save.
 
 ![Paste the API key](/blog/assets/posts/oopspam-api-key.png "Paste the API key")
 
-Your site is now connected to OOPSpam’s filtering system.
+Your site is now connected to oopspam’s filtering system.
 
 ### **Step 2: Enable Protection for Donation Forms**
 
-In OOPSpam settings, enable [spam protection](https://www.oopspam.com/blog/spam-protection-for-givewp) for your forms so each submission is checked before it reaches GiveWP.
+In oopspam settings, enable [spam protection](https://www.oopspam.com/blog/spam-protection-for-givewp) for your forms so each submission is checked before it reaches GiveWP.
 
 ![Enable Protection for Donation Forms](/blog/assets/posts/spam-protection-for-givewp.png "Enable Protection for Donation Forms")
 
@@ -96,7 +96,7 @@ This ensures spam and abuse are filtered early.
 
 ### **Step 3: Turn On Rate Limiting**
 
-Open the **Rate Limiting** tab in OOPSpam and enable it.
+Open the **Rate Limiting** tab in oopspam and enable it.
 
 ![Turn On Rate Limiting](/blog/assets/posts/rate-limiting-settings-oopspam.png "Turn On Rate Limiting")
 
@@ -113,7 +113,7 @@ This stops rapid-fire bot activity and repeated abuse attempts.
 
 ### **Strengthen Protection with Advanced Filters**
 
-OOPSpam also provides additional controls that GiveWP does not include by default. You can enable:
+oopspam also provides additional controls that GiveWP does not include by default. You can enable:
 
 * [VPN](https://www.oopspam.com/blog/how-to-block-vpn-and-data-center-ip-submissions-in-givewp-donation-forms), proxy, and TOR blocking
 * [Country allow or deny lists](https://www.oopspam.com/blog/how-to-block-countries-in-givewp-donation-forms)
@@ -121,7 +121,7 @@ OOPSpam also provides additional controls that GiveWP does not include by defaul
 * [Contextual spam detection](https://www.oopspam.com/blog/introducing-contextual-spam-detection)
 * Detailed [logs](https://help.oopspam.com/wordpress/form-entries/) for monitoring attempts
 
-OOPSpam also includes manual moderation tools. From the moderation tab, you can block specific email addresses, block abusive IP addresses, block common spam keywords, and allow trusted emails or IPs to bypass spam checks when needed.
+oopspam also includes manual moderation tools. From the moderation tab, you can block specific email addresses, block abusive IP addresses, block common spam keywords, and allow trusted emails or IPs to bypass spam checks when needed.
 
 ![Manual moderation tools](/blog/assets/posts/manual-moderation-settings-oopspam.png "Manual moderation tools")
 
@@ -133,7 +133,7 @@ Each method addresses a different risk.
 
 1. Donation amount limits protect against financial abuse.
 2. Donation Goals control campaign limits and form availability.
-3. OOPSpam rate limiting protects against repeated and automated submissions.
+3. oopspam rate limiting protects against repeated and automated submissions.
 
 When combined, they create a balanced and effective protection strategy for GiveWP donation forms.
 

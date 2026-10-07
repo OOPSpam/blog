@@ -5,7 +5,7 @@ date: 2025-08-26T21:01:00.000+08:00
 last_modified_at: 2026-01-06T11:36:00.000+08:00
 author: chazie
 image: /blog/assets/posts/memberpress_header.png
-description: MemberPress lacks country blocking, use OOPSpam for filtering
+description: MemberPress lacks country blocking, use oopspam for filtering
   sign-ups by region or pair with Cloudflare to block site access from unwanted
   countries.
 tags:
@@ -18,7 +18,7 @@ Running a membership site with [MemberPress](https://memberpress.com/) often mea
 
 Unfortunately, MemberPress does not include built-in tools to [block countries](https://www.oopspam.com/blog/how-to-block-countries-from-your-website-the-complete-guide) or filter users by their location. But you still have two ways to do it:
 
-1. Add OOPSpam Anti-Spam to MemberPress for form-level filtering.
+1. Add oopspam Anti-Spam to MemberPress for form-level filtering.
 2. Use Cloudflare’s Web Application Firewall (WAF) to block access site-wide.
 
 Let’s look at how both solutions work.
@@ -27,15 +27,15 @@ Let’s look at how both solutions work.
 
 While MemberPress is excellent for memberships and access control, it does not natively support country-based restrictions for forms or logins. That means if you want to stop spam sign-ups or restrict access to certain countries, you’ll need external tools.
 
-The good news: with OOPSpam and Cloudflare, you can block countries either at the form level (precision filtering) or at the network level (site-wide).
+The good news: with oopspam and Cloudflare, you can block countries either at the form level (precision filtering) or at the network level (site-wide).
 
-## **Option 1: Block Countries in MemberPress with OOPSpam**
+## **Option 1: Block Countries in MemberPress with oopspam**
 
-**[OOPSpam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/)** (that’s us 👋) integrates smoothly with WordPress and works alongside MemberPress to protect registration, [checkout](https://www.oopspam.com/blog/spam-protection-for-memberpress), and contact forms.
+**[oopspam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/)** (that’s us 👋) integrates smoothly with WordPress and works alongside MemberPress to protect registration, [checkout](https://www.oopspam.com/blog/spam-protection-for-memberpress), and contact forms.
 
-![OOPSpam Anti-Spam](/blog/assets/posts/oopspam-anti-spam-overview.png "OOPSpam Anti-Spam")
+![oopspam Anti-Spam](/blog/assets/posts/oopspam-anti-spam-overview.png "oopspam Anti-Spam")
 
-### **What OOPSpam Brings to MemberPress**
+### **What oopspam Brings to MemberPress**
 
 * **Country Filtering** – Decide which countries to block or allow for form submissions.
 * **Language Filtering** – Block sign-ups in specific languages.
@@ -48,15 +48,15 @@ This is the easiest way to deal with fake sign-ups, spammy membership attempts, 
 
 ### **How to Set It Up**
 
-**Step 1: Install OOPSpam**
+**Step 1: Install oopspam**
 
-Go to your WordPress dashboard, open **Plugins > Add New**, search for **OOPSpam Anti-Spam**, then install and activate it.
+Go to your WordPress dashboard, open **Plugins > Add New**, search for **oopspam Anti-Spam**, then install and activate it.
 
-![OOPSpam](/blog/assets/posts/oopspam-dashboard-api.png "OOPSpam Dashboard")
+![oopspam](/blog/assets/posts/oopspam-dashboard-api.png "oopspam Dashboard")
 
 **Step 2: Connect Your API Key**
 
-Create an account at [OOPSpam.com](https://app.oopspam.com/Identity/Account/Login), generate your API key, and paste it into **OOPSpam Anti-Spam > Settings** in your WordPress dashboard.
+Create an account at [oopspam.com](https://app.oopspam.com/Identity/Account/Login), generate your API key, and paste it into **oopspam Anti-Spam > Settings** in your WordPress dashboard.
 
 ![Connect Your API Key](/blog/assets/posts/oopspam-api-key.png "Connect Your API Key")
 
@@ -78,9 +78,9 @@ Blocked and approved [entries](https://help.oopspam.com/wordpress/form-entries/)
 
 ![Logs](/blog/assets/posts/form-spam-entries-oopspam.png "Logs")
 
-and in the **OOPSpam Dashboard**, which provides detailed filtering reports for deeper analysis.
+and in the **oopspam Dashboard**, which provides detailed filtering reports for deeper analysis.
 
-![OOPSpam Dashboard logs](/blog/assets/posts/screenshot-1.png "OOPSpam Dashboard logs")
+![oopspam Dashboard logs](/blog/assets/posts/screenshot-1.png "oopspam Dashboard logs")
 
 ## **Option 2: Block Countries Site-Wide with Cloudflare**
 
@@ -93,7 +93,7 @@ Sometimes spam goes beyond just form entries. You may face:
 
 In these cases, Cloudflare’s Web Application Firewall ([WAF](https://developers.cloudflare.com/firewall/cf-firewall-rules/)) lets you block entire countries before they ever reach your site.
 
-> Unlike OOPSpam, this will block all traffic from the selected countries, not just MemberPress forms.
+> Unlike oopspam, this will block all traffic from the selected countries, not just MemberPress forms.
 
 ### **How to Use Cloudflare for Country Blocking**
 
@@ -155,7 +155,7 @@ From now on, visitors from those countries will not be able to access your websi
       <td>Not an option</td>
     </tr>
     <tr>
-      <td>OOPSpam Plugin</td>
+      <td>oopspam Plugin</td>
       <td>Form submissions only</td>
       <td>Membership sign-up spam, checkout spam</td>
     </tr>
@@ -169,8 +169,8 @@ From now on, visitors from those countries will not be able to access your websi
 
 ## **Final thoughts**
 
-With OOPSpam Anti-Spam, you can filter registrations and form submissions at the membership level, while Cloudflare WAF gives you the ability to shut down site-wide attacks or unwanted traffic.
+With oopspam Anti-Spam, you can filter registrations and form submissions at the membership level, while Cloudflare WAF gives you the ability to shut down site-wide attacks or unwanted traffic.
 
-For most site owners, OOPSpam will be the first line of defense, giving precise and transparent filtering without disrupting normal visitors. If stronger protection is needed, combining OOPSpam with Cloudflare ensures you have both form-level control and network-level security.
+For most site owners, oopspam will be the first line of defense, giving precise and transparent filtering without disrupting normal visitors. If stronger protection is needed, combining oopspam with Cloudflare ensures you have both form-level control and network-level security.
 
-Need help setting things up? Visit [OOPSpam documentation](https://www.oopspam.com/help) for more resources.
+Need help setting things up? Visit [oopspam documentation](https://www.oopspam.com/help) for more resources.

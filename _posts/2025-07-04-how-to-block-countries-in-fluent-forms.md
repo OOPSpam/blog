@@ -5,7 +5,7 @@ date: 2025-07-04T03:41:00.000Z
 last_modified_at: 2026-01-06T11:36:00.000+08:00
 author: chazie
 image: /blog/assets/posts/fluentforms-country-block.jpg
-description: Block countries in Fluent Forms with built-in tools, OOPSpam for
+description: Block countries in Fluent Forms with built-in tools, oopspam for
   advanced filtering, or Cloudflare for full site blocking. Choose the best
   method for you!
 tags:
@@ -17,7 +17,7 @@ tags:
 [Spam submissions from certain regions](https://www.oopspam.com/blog/how-to-block-countries-from-your-website-the-complete-guide) can overwhelm your inbox, waste resources, and lead to security issues. If you're using **[Fluent Forms](https://fluentforms.com/)**, you have multiple ways to restrict or block form submissions based on a user’s location. In this guide, we'll cover:
 
 1. Fluent Forms’ built-in country-based restriction feature.
-2. OOPSpam plugin for advanced filtering and logging.
+2. oopspam plugin for advanced filtering and logging.
 3. Cloudflare firewall rules to block entire countries at the DNS level.
 
 ## **1. Block Countries Using Fluent Forms’ Built-In Country Filter**
@@ -49,13 +49,13 @@ Check the **Country-Based Restriction** box. From the dropdown, select the count
 
 Once selected, save your settings. Submissions from restricted countries will now be blocked.
 
-## **2. Advanced Country Blocking in Fluent Forms Using OOPSpam**
+## **2. Advanced Country Blocking in Fluent Forms Using oopspam**
 
-![OOPSpam Anti-Spam plugin](/blog/assets/posts/oopspam-anti-spam-overview.png "OOPSpam Anti-Spam plugin")
+![oopspam Anti-Spam plugin](/blog/assets/posts/oopspam-anti-spam-overview.png "oopspam Anti-Spam plugin")
 
-If spam persists even with Fluent Forms’ built-in filter or if you're seeing suspicious patterns from rotating IPs or bots—**[OOPSpam](https://www.oopspam.com/)** (that’s us 👋) offers an advanced solution.
+If spam persists even with Fluent Forms’ built-in filter or if you're seeing suspicious patterns from rotating IPs or bots—**[oopspam](https://www.oopspam.com/)** (that’s us 👋) offers an advanced solution.
 
-### **What OOPSpam Adds to Fluent Forms**
+### **What oopspam Adds to Fluent Forms**
 
 * **Machine Learning-backed Filtering**: Uses machine learning to detect and [block spam from Fluent Forms](https://www.oopspam.com/blog/spam-protection-for-fluent-forms).
 * **Country Filtering**: Choose countries to block or allow.
@@ -65,34 +65,34 @@ If spam persists even with Fluent Forms’ built-in filter or if you're seeing s
 
 ### **How to Set It Up**
 
-![OOPSpam dashboard showing API usage, response time, and API key, with options to test data and view logs, along with navigation menu on the left.](/blog/assets/posts/oopspam-dashboard-api.png "OOPSpam dashboard")
+![oopspam dashboard showing API usage, response time, and API key, with options to test data and view logs, along with navigation menu on the left.](/blog/assets/posts/oopspam-dashboard-api.png "oopspam dashboard")
 
-Install the **[OOPSpam Anti-Spam plugin](https://wordpress.org/plugins/oopspam-anti-spam/)** from the WordPress plugin directory. Once activated, go to your dashboard and open **OOPSpam Anti-Spam > Settings**.
+Install the **[oopspam Anti-Spam plugin](https://wordpress.org/plugins/oopspam-anti-spam/)** from the WordPress plugin directory. Once activated, go to your dashboard and open **oopspam Anti-Spam > Settings**.
 
-![Paste your API key from your OOPSpam account.](/blog/assets/posts/my-api-key-field.png "Paste your API key from your OOPSpam account.")
+![Paste your API key from your oopspam account.](/blog/assets/posts/my-api-key-field.png "Paste your API key from your oopspam account.")
 
-Paste your **API key** from your [OOPSpam account](https://app.oopspam.com/Identity/Account/Register). Then **activate spam protection**.
+Paste your **API key** from your [oopspam account](https://app.oopspam.com/Identity/Account/Register). Then **activate spam protection**.
 
 ![activate spam protection in Fluent Forms](/blog/assets/posts/activate-fluent-forms.png "activate spam protection in Fluent Forms")
 
 Scroll to the **Country Filtering** section. Here, you can either **block specific countries** or **allow only selected ones**. Pick the countries from the dropdown list, save your settings, and you’re done.
 
-![OOPSpam Country Filtering section](/blog/assets/posts/country-filtering-settings.png "OOPSpam Country Filtering section")
+![oopspam Country Filtering section](/blog/assets/posts/country-filtering-settings.png "oopspam Country Filtering section")
 
-OOPSpam will now actively [filter submissions in your Fluent Forms](https://www.oopspam.com/blog/fluentforms-block-user)—without blocking access to the rest of your website.
+oopspam will now actively [filter submissions in your Fluent Forms](https://www.oopspam.com/blog/fluentforms-block-user)—without blocking access to the rest of your website.
 
 ### **Review Blocked Submissions**
 
-Unlike Fluent Forms’ built-in country restriction, **OOPSpam** provides access to detailed **[submission logs](https://help.oopspam.com/wordpress/form-entries/)**—so you’re never left guessing why a submission was blocked.
+Unlike Fluent Forms’ built-in country restriction, **oopspam** provides access to detailed **[submission logs](https://help.oopspam.com/wordpress/form-entries/)**—so you’re never left guessing why a submission was blocked.
 
 You can monitor:
 
-* **Form Spam Entries**: Submissions that were flagged and blocked by OOPSpam.
+* **Form Spam Entries**: Submissions that were flagged and blocked by oopspam.
 * **Form Ham Entries**: Submissions that passed the filter and were marked as legitimate.
 
 This gives you full visibility into the quality of submissions and helps you fine-tune your filtering rules.
 
-Here's what the log view looks like in your OOPSpam dashboard:
+Here's what the log view looks like in your oopspam dashboard:
 
 ![Review Blocked Submissions](/blog/assets/posts/screenshot-1.png "Review Blocked Submissions")
 
@@ -184,7 +184,7 @@ If you're looking to set up country-level blocking with Cloudflare, our article:
       <td>Basic filtering for non-critical forms</td>
     </tr>
     <tr>
-      <td><span class="underline">OOPSpam Plugin</span></td>
+      <td><span class="underline">oopspam Plugin</span></td>
       <td>Form submissions only</td>
       <td>Advanced filtering, spam detection, and visibility</td>
     </tr>
@@ -198,12 +198,12 @@ If you're looking to set up country-level blocking with Cloudflare, our article:
 
 **Recommendation:**
 
-Use Fluent Forms’ built-in country blocking for quick setup on smaller forms. Use OOPSpam if you need smarter filtering, [rate limiting](https://www.oopspam.com/blog/how-to-limit-form-submissions-in-fluent-forms), [IP filtering](https://www.oopspam.com/blog/how-to-block-vpn-and-data-center-ip-submissions-in-fluent-forms), spam behavior detection, and submission logs. And use Cloudflare if your entire site is under attack or needs country-level restrictions for legal reasons.
+Use Fluent Forms’ built-in country blocking for quick setup on smaller forms. Use oopspam if you need smarter filtering, [rate limiting](https://www.oopspam.com/blog/how-to-limit-form-submissions-in-fluent-forms), [IP filtering](https://www.oopspam.com/blog/how-to-block-vpn-and-data-center-ip-submissions-in-fluent-forms), spam behavior detection, and submission logs. And use Cloudflare if your entire site is under attack or needs country-level restrictions for legal reasons.
 
 ## **Final Thoughts**
 
-Fluent Forms gives you a solid starting point for country-based form restrictions, but for most users dealing with serious spam or abuse, OOPSpam provides the most complete solution.
+Fluent Forms gives you a solid starting point for country-based form restrictions, but for most users dealing with serious spam or abuse, oopspam provides the most complete solution.
 
 If you’re looking to protect your Fluent Forms from spam by region, start with form-level filtering and add more layers only as needed.
 
-OOPSpam integrates with [WPForms](https://www.oopspam.com/blog/how-to-block-countries-in-wpforms), Elementor Forms, Contact Form 7, [SureForms](https://www.oopspam.com/blog/how-to-block-countries-in-sureforms), and more.
+oopspam integrates with [WPForms](https://www.oopspam.com/blog/how-to-block-countries-in-wpforms), Elementor Forms, Contact Form 7, [SureForms](https://www.oopspam.com/blog/how-to-block-countries-in-sureforms), and more.

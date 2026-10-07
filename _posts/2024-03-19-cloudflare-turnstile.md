@@ -33,6 +33,6 @@ One of the most significant drawbacks of Cloudflare Turnstile is its accessibili
 
 If you are using Cloudflare for spam protection, Turnstile will be displayed to the potentially malicious visitors. There is no way to get around this, and no custom messages can be displayed to redirect users to other communication channels.  This lack of flexibility can be especially challenging for legitimate users who depend on VPNs for privacy or security.
 
-[Turnstile alternatives](https://www.oopspam.com/turnstile-alternative) like [OOPSpam](https://www.oopspam.com/) take a different approach, working in the background without interacting with visitors. This means that even if users are flagged as potentially malicious, they can still access the website and reach out through other channels to resolve the issue.
+[Turnstile alternatives](https://www.oopspam.com/turnstile-alternative) like [oopspam](https://www.oopspam.com/) take a different approach, working in the background without interacting with visitors. This means that even if users are flagged as potentially malicious, they can still access the website and reach out through other channels to resolve the issue.
 
 While Cloudflare Turnstile promises a more user-friendly experience, it's essential to understand its limitations and potential drawbacks. Privacy and performance are undoubtedly essential factors, but accessibility and the ability to handle false positives should also be considered when choosing a CAPTCHA solution for your website.

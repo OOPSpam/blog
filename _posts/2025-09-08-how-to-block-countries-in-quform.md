@@ -5,7 +5,7 @@ date: 2025-09-08T02:15:00.000+08:00
 last_modified_at: 2026-01-06T11:36:00.000+08:00
 author: chazie
 image: /blog/assets/posts/quform_header.png
-description: QuForm doesn’t include country blocking by default. Use OOPSpam to
+description: QuForm doesn’t include country blocking by default. Use oopspam to
   filter form submissions by region or Cloudflare Firewall to block traffic
   site-wide.
 tags:
@@ -20,11 +20,11 @@ Out of the box, [QuForm](https://www.quform.com/) doesn’t give you a way to bl
 
 That means if spam or abuse is coming from specific regions, you’ll need to add another layer of protection.
 
-## **The Quick Fix: OOPSpam Anti-Spam**
+## **The Quick Fix: oopspam Anti-Spam**
 
-[OOPSpam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/) (that’s us 👋) integrates with QuForm to give you country-level control. It filters form submissions before they reach your inbox or database, letting you stop abuse at the source.
+[oopspam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/) (that’s us 👋) integrates with QuForm to give you country-level control. It filters form submissions before they reach your inbox or database, letting you stop abuse at the source.
 
-### **What You Gain with OOPSpam**
+### **What You Gain with oopspam**
 
 * [Country filtering](https://www.oopspam.com/blog/how-to-block-countries-from-your-website-the-complete-guide) to allow or block submissions.
 * Language filtering to stop unwanted text.
@@ -35,13 +35,13 @@ That means if spam or abuse is coming from specific regions, you’ll need to ad
 
 ## **How to Set It Up**
 
-Install and activate the **OOPSpam Anti-Spam** plugin in WordPress. Create an account at **[OOPSpam.com](https://app.oopspam.com/Identity/Account/Login)** and get your API key.
+Install and activate the **oopspam Anti-Spam** plugin in WordPress. Create an account at **[oopspam.com](https://app.oopspam.com/Identity/Account/Login)** and get your API key.
 
-![OOPSpam Anti-Spam](/blog/assets/posts/oopspam-dashboard-api.png "OOPSpam Anti-Spam")
+![oopspam Anti-Spam](/blog/assets/posts/oopspam-dashboard-api.png "oopspam Anti-Spam")
 
-In WordPress, go to **Settings > OOPSpam Anti-Spam** and paste in the key.
+In WordPress, go to **Settings > oopspam Anti-Spam** and paste in the key.
 
-![OOPSpam Anti-Spam and paste in the key](/blog/assets/posts/oopspam-api-key.png "OOPSpam Anti-Spam and paste in the key")
+![oopspam Anti-Spam and paste in the key](/blog/assets/posts/oopspam-api-key.png "oopspam Anti-Spam and paste in the key")
 
 Enable spam protection for **QuForm**.
 
@@ -55,9 +55,9 @@ Save your settings and monitor results in the **Spam & Ham** [logs](https://help
 
 ![Spam & Ham logs in WordPress](/blog/assets/posts/form-spam-entries-oopspam.png "Spam & Ham logs in WordPress")
 
-For deeper insights, check the **OOPSpam Dashboard**, where you’ll see detailed filtering reports, reasons for blocking, and spam patterns over time.
+For deeper insights, check the **oopspam Dashboard**, where you’ll see detailed filtering reports, reasons for blocking, and spam patterns over time.
 
-![OOPSpam dashboard logs](/blog/assets/posts/screenshot-1.png "OOPSpam dashboard logs")
+![oopspam dashboard logs](/blog/assets/posts/screenshot-1.png "oopspam dashboard logs")
 
 ## **The Bigger Solution: Cloudflare Firewall**
 
@@ -79,10 +79,10 @@ From now on, traffic from those regions will never reach your forms or your site
 
 ## **Final thoughts**
 
-* **Use OOPSpam** – When you want to block spam submissions in QuForm only.
+* **Use oopspam** – When you want to block spam submissions in QuForm only.
 * **Use Cloudflare** – When you need site-wide blocking against traffic from entire countries.
 
-QuForm is excellent for building powerful forms, but it isn’t built for country-level security. Pairing it with [OOPSpam](https://www.oopspam.com/) or Cloudflare keeps your forms open for real users while shutting out spam and abuse.
+QuForm is excellent for building powerful forms, but it isn’t built for country-level security. Pairing it with [oopspam](https://www.oopspam.com/) or Cloudflare keeps your forms open for real users while shutting out spam and abuse.
 
 ## Related guides
 

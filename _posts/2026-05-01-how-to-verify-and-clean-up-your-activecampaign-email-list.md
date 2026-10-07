@@ -5,7 +5,7 @@ date: 2026-05-01T16:01:00.000+08:00
 last_modified_at: 2026-09-22T12:03:00.000+04:00
 author: chazie
 image: /blog/assets/posts/email_list_activecampaign.jpg
-description: Clean your ActiveCampaign email list with OOPSpam. Scan, detect
+description: Clean your ActiveCampaign email list with oopspam. Scan, detect
   risky emails, and remove them to improve deliverability and engagement metrics
   fast.
 tags:
@@ -13,13 +13,13 @@ tags:
 ---
 ![How to verify and clean up your ActiveCampaign email list?](/blog/assets/posts/meta_activecampaign_header.jpg "How to verify and clean up your ActiveCampaign email list?")
 
-Keeping your email list clean is essential for good deliverability, lower bounce rates, and accurate engagement metrics. [OOPSpam](https://www.oopspam.com/) now offers a direct [ActiveCampaign integration](https://www.oopspam.com/activecampaign) that lets you scan your contacts for suspicious or risky email addresses, and remove them in just a few clicks.
+Keeping your email list clean is essential for good deliverability, lower bounce rates, and accurate engagement metrics. [oopspam](https://www.oopspam.com/) now offers a direct [ActiveCampaign integration](https://www.oopspam.com/activecampaign) that lets you scan your contacts for suspicious or risky email addresses, and remove them in just a few clicks.
 
 Here's how to get started.
 
 ## **Step 1: Go to the Integrations Page**
 
-From your [OOPSpam Dashboard](https://app.oopspam.com/), click **Integrations** in the left sidebar. You'll see the ActiveCampaign integration card. Click **Connect** to begin.
+From your [oopspam Dashboard](https://app.oopspam.com/), click **Integrations** in the left sidebar. You'll see the ActiveCampaign integration card. Click **Connect** to begin.
 
 ![Step 1: Go to the Integrations Page](/blog/assets/posts/step1-done.png "Step 1: Go to the Integrations Page")
 
@@ -36,21 +36,21 @@ Enter both fields and click **Connect**.
 
 ## **Step 3: Select an Email List**
 
-Once connected, OOPSpam will fetch your email lists from [ActiveCampaign](https://www.activecampaign.com/). Select the list you want to scan.
+Once connected, oopspam will fetch your email lists from [ActiveCampaign](https://www.activecampaign.com/). Select the list you want to scan.
 
 ![Step 3: Select an Email List](/blog/assets/posts/step3.png "Step 3: Select an Email List")
 
 ## **Step 4: Review Contacts and Start Scanning**
 
-You'll see a preview of the contacts in your selected list. OOPSpam checks each email address against its spam database to identify risky addresses.
+You'll see a preview of the contacts in your selected list. oopspam checks each email address against its spam database to identify risky addresses.
 
-Click **Scan All Emails** to start the scan. *Note:* scanning uses your OOPSpam API credits.
+Click **Scan All Emails** to start the scan. *Note:* scanning uses your oopspam API credits.
 
 ![Step 4: Review Contacts and Start Scanning](/blog/assets/posts/step4-edited.png "Step 4: Review Contacts and Start Scanning")
 
 ## **Step 5: Turn on Additional Risk Criteria**
 
-Before clicking that button, it's worth glancing at the **Additional risk criteria** section on the same screen. Two checkboxes here let OOPSpam catch things a standard scan wouldn't:
+Before clicking that button, it's worth glancing at the **Additional risk criteria** section on the same screen. Two checkboxes here let oopspam catch things a standard scan wouldn't:
 
 * **Flag contacts that have soft bounced** - picks out addresses that already failed to deliver on a recent send.
 * **Flag contacts that never opened the last 3 emails** - picks out subscribers who've gone cold. This requires open tracking to be turned on in ActiveCampaign, and the option itself flags that results can be unreliable without it.
@@ -61,7 +61,7 @@ Both checks add extra work per contact, so turning them on will stretch out how 
 
 ## **Step 6: Apply IP-Based Filters**
 
-Underneath, an **IP-based filters** section shows up whenever ActiveCampaign passes subscriber IP data along to OOPSpam. It gives you a few extra dials:
+Underneath, an **IP-based filters** section shows up whenever ActiveCampaign passes subscriber IP data along to oopspam. It gives you a few extra dials:
 
 * **Block VPN / Proxy / Tor IPs**
 * **Block data center IPs**
@@ -73,7 +73,7 @@ As with the risk criteria, enabling these filters adds a bit more time to the sc
 
 ## **Step 7: Walk Away While It Scans**
 
-Scans no longer require you to sit and wait. Once you click **Scan All Emails**, everything happens in the background, and OOPSpam emails you as soon as it's done.
+Scans no longer require you to sit and wait. Once you click **Scan All Emails**, everything happens in the background, and oopspam emails you as soon as it's done.
 
 ![background scan progress bar](/blog/assets/posts/scanning-emails.png "background scan progress bar")
 
@@ -83,7 +83,7 @@ If you want to check sooner, open **Integrations → Scan Jobs**. It shows each 
 
 ## **Step 8: Review Scan Results and Take Action**
 
-After scanning, OOPSpam shows a breakdown of your results:
+After scanning, oopspam shows a breakdown of your results:
 
 * **Total Scanned** - total number of emails checked
 * **Clean** - emails that passed and are safe to keep
@@ -115,7 +115,7 @@ Cleaning your email list improves deliverability by reducing bounce rates and he
 
 By removing inactive or risky contacts, you can lower costs since most platforms charge per subscriber, while also avoiding spam traps that could get your domain blocklisted. 
 
-With OOPSpam’s ActiveCampaign integration, the entire process is quick and simple. No exports, no CSVs, no manual work. Connect once, scan anytime.
+With oopspam’s ActiveCampaign integration, the entire process is quick and simple. No exports, no CSVs, no manual work. Connect once, scan anytime.
 
 ## Related guides
 

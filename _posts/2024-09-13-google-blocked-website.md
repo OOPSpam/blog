@@ -24,7 +24,7 @@ Fortunately, there are steps you can take to remove this warning and get your we
 
 ### Step 1: Check Your Domain Reputation
 
-Before you take any action, it's important to check your domain's reputation. You can use a free tool like [OOPSpam's Domain Reputation Checker](https://www.oopspam.com/tools/domain-reputation-checker) to see if your domain has been flagged for malware distribution, spam campaigns, phishing, or other malicious activity. If your domain has been flagged, you'll need to take steps to clean it up before proceeding.
+Before you take any action, it's important to check your domain's reputation. You can use a free tool like [oopspam's Domain Reputation Checker](https://www.oopspam.com/tools/domain-reputation-checker) to see if your domain has been flagged for malware distribution, spam campaigns, phishing, or other malicious activity. If your domain has been flagged, you'll need to take steps to clean it up before proceeding.
 
 ### Step 2: Scan Your Website for Malware
 
@@ -36,7 +36,7 @@ Another common cause of a Deceptive Site Ahead warning is a problem with your SS
 
 ### Step 4: Request a Review from Google
 
-Once you've cleaned up your site and fixed any issues with your SSL Certificate, you can [request a review from Google](https://safebrowsing.google.com/safebrowsing/report_general/). This will prompt Google to re-scan your website and remove the Deceptive Site Ahead warning if everything checks out. On [OOPSpam's Domain Reputation Checker](https://www.oopspam.com/tools/domain-reputation-checker), you may have noticed that other providers have blocked your domain in addition to Google. It is important that you go to the associated providers website and report for removal as well.
+Once you've cleaned up your site and fixed any issues with your SSL Certificate, you can [request a review from Google](https://safebrowsing.google.com/safebrowsing/report_general/). This will prompt Google to re-scan your website and remove the Deceptive Site Ahead warning if everything checks out. On [oopspam's Domain Reputation Checker](https://www.oopspam.com/tools/domain-reputation-checker), you may have noticed that other providers have blocked your domain in addition to Google. It is important that you go to the associated providers website and report for removal as well.
 
 ![Report false positive Deceptive Site](/blog/assets/posts/deceptive-site/google-report.png "Report false positive Deceptive Site")
 

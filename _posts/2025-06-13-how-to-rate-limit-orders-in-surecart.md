@@ -4,7 +4,7 @@ title: How to Rate Limit Orders in SureCart?
 date: 2025-06-13T05:05:00.000Z
 author: chazie
 image: /blog/assets/posts/surecarts-ratelimit.jpg
-description: Protect your SureCart store from spam and fake orders with OOPSpam.
+description: Protect your SureCart store from spam and fake orders with oopspam.
   Learn how rate limiting stops bots, abuse, and checkout spam without slowing
   down.
 tags:
@@ -13,7 +13,7 @@ tags:
 ---
 ![SureCart](/blog/assets/posts/surecart-homepage.png "SureCart")
 
-Spam and [fake orders](https://www.oopspam.com/blog/5-ways-to-stop-fake-orders-in-surecart) can disrupt your SureCart store, waste resources, and affect customer trust. While SureCart is reliable, it still needs extra protection. In this blog, we’ll show you how to prevent spammy behavior in your [SureCart](https://surecart.com/) store using OOPSpam’s rate limiting to limit excessive submissions—whether it’s fake checkout attempts, contact form abuse, or coupon misuse.
+Spam and [fake orders](https://www.oopspam.com/blog/5-ways-to-stop-fake-orders-in-surecart) can disrupt your SureCart store, waste resources, and affect customer trust. While SureCart is reliable, it still needs extra protection. In this blog, we’ll show you how to prevent spammy behavior in your [SureCart](https://surecart.com/) store using oopspam’s rate limiting to limit excessive submissions—whether it’s fake checkout attempts, contact form abuse, or coupon misuse.
 
 ## **What Is Rate Limiting and Why Do You Need It in SureCart?**
 
@@ -27,39 +27,39 @@ For example, you could limit users to 3 checkout submissions per hour. This help
 
 In an eCommerce context, rate limiting protects revenue, preserves customer experience, and stops your backend from being flooded with fake transactions.
 
-### **How OOPSpam Helps Protect SureCart from Fake Submissions**
+### **How oopspam Helps Protect SureCart from Fake Submissions**
 
 ![SureCart checkout forms](/blog/assets/posts/surecart-default-checkout-form.webp "SureCart checkout forms")
 
-**[OOPSpam](https://www.oopspam.com/)** (that’s us 👋) is a WordPress plugin that integrates with SureCart checkout forms and pages to add intelligent rate limiting and spam filtering. Here’s what it offers for your SureCart store:
+**[oopspam](https://www.oopspam.com/)** (that’s us 👋) is a WordPress plugin that integrates with SureCart checkout forms and pages to add intelligent rate limiting and spam filtering. Here’s what it offers for your SureCart store:
 
 * **Checkout protection**: Stop repeated submissions of the checkout form from the same user or bot.
 * **Email/IP blocks**: Prevent known spammers from accessing your store.
 * **Coupon control**: Restrict abuse of coupon forms by limiting entries per user.
 
-OOPSpam combines rate limiting with keyword filtering, IP reputation checks, and geo restrictions for a layered approach to store security.
+oopspam combines rate limiting with keyword filtering, IP reputation checks, and geo restrictions for a layered approach to store security.
 
-## **How to Set Up Rate Limiting in SureCart with OOPSpam**
+## **How to Set Up Rate Limiting in SureCart with oopspam**
 
-Here’s how to activate OOPSpam’s rate-limiting features for SureCart:
+Here’s how to activate oopspam’s rate-limiting features for SureCart:
 
-### **1. Install the OOPSpam WordPress Plugin**
+### **1. Install the oopspam WordPress Plugin**
 
 Go to your WordPress dashboard. From the menu, navigate to **Plugins** and click **Add New**.
 
-In the search bar, type **[OOPSpam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/)** plugin**.** Click **Install**, then hit **Activate** to enable the plugin.
+In the search bar, type **[oopspam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/)** plugin**.** Click **Install**, then hit **Activate** to enable the plugin.
 
-![Install the OOPSpam WordPress Plugin](/blog/assets/posts/oopspam-dashboard-api.png "Install the OOPSpam WordPress Plugin")
+![Install the oopspam WordPress Plugin](/blog/assets/posts/oopspam-dashboard-api.png "Install the oopspam WordPress Plugin")
 
-After activation, you’ll see **OOPSpam** in your admin menu. Copy your API key from [oopspam.com](https://app.oopspam.com/Identity/Account/Register), and paste it into: **Settings > OOPSpam Anti-Spam**
+After activation, you’ll see **oopspam** in your admin menu. Copy your API key from [oopspam.com](https://app.oopspam.com/Identity/Account/Register), and paste it into: **Settings > oopspam Anti-Spam**
 
 ![Paste your API key](/blog/assets/posts/my-api-key-field.png "Paste your API key")
 
-### **2. Enable SureCart Protection in OOPSpam Settings**
+### **2. Enable SureCart Protection in oopspam Settings**
 
-Go to **OOPSpam > Settings** in your WordPress dashboard. Scroll down until you see the **SureCart** section, then toggle the **Activate Spam Protection** switch to **ON**.
+Go to **oopspam > Settings** in your WordPress dashboard. Scroll down until you see the **SureCart** section, then toggle the **Activate Spam Protection** switch to **ON**.
 
-![SureCart Protection in OOPSpam](/blog/assets/posts/surecart-active-spam-protection.png "SureCart Protection in OOPSpam")
+![SureCart Protection in oopspam](/blog/assets/posts/surecart-active-spam-protection.png "SureCart Protection in oopspam")
 
 This turns on spam filtering for your SureCart orders. You can also customize the message that appears when an order is marked as spam using the **SureCart Spam Message** field.
 
@@ -81,11 +81,11 @@ After saving your settings, test your checkout forms to verify that rate limitin
 
 ## **Best Practices to Strengthen SureCart Security**
 
-OOPSpam offers a range of tools to take your store protection further. Combine rate limiting with the following options:
+oopspam offers a range of tools to take your store protection further. Combine rate limiting with the following options:
 
 ### **IP and Email Blocking**
 
-OOPSpam automatically blocks many known malicious IP addresses and email domains using its real-time threat database. In addition to this automatic protection, you can also manually block specific IPs, email addresses, or even keywords based on your own list of threats or spam patterns.
+oopspam automatically blocks many known malicious IP addresses and email domains using its real-time threat database. In addition to this automatic protection, you can also manually block specific IPs, email addresses, or even keywords based on your own list of threats or spam patterns.
 
 ![IP and Email Blocking](/blog/assets/posts/manual-moderation-settings-oopspam.png "IP and Email Blocking")
 
@@ -109,12 +109,12 @@ For added protection, you can enable **Block VPNs** and **Block Cloud Providers*
 
 ### **GDPR-Compliant Spam Filtering**
 
-OOPSpam doesn’t store sensitive user data, making it fully compliant with GDPR and similar privacy laws—something essential for eCommerce businesses.
+oopspam doesn’t store sensitive user data, making it fully compliant with GDPR and similar privacy laws—something essential for eCommerce businesses.
 
 ## **Final thoughts**
 
-Spam and bot activity can disrupt operations, lead to fake orders, and waste valuable resources in your SureCart store. OOPSpam gives you the tools to manage these threats with precision—through rate limiting, IP filtering, and advanced spam detection.
+Spam and bot activity can disrupt operations, lead to fake orders, and waste valuable resources in your SureCart store. oopspam gives you the tools to manage these threats with precision—through rate limiting, IP filtering, and advanced spam detection.
 
 Once it's set up, you can adjust the settings to fit your store’s needs and focus on what matters most: serving real customers and growing your business.
 
-Got questions about setting up OOPSpam with SureCart? Just [reach out](https://www.oopspam.com/#contact), we’re happy to help!
+Got questions about setting up oopspam with SureCart? Just [reach out](https://www.oopspam.com/#contact), we’re happy to help!

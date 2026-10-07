@@ -6,7 +6,7 @@ last_modified_at: 2026-03-24T21:55:00.000+08:00
 author: chazie
 image: /blog/assets/posts/header_wpdiscuz.png
 description: Learn 5 effective ways to protect WPDiscuz from spam using built-in
-  tools, moderation settings, and OOPSpam for advanced filtering.
+  tools, moderation settings, and oopspam for advanced filtering.
 tags:
   - WordPress
   - comment
@@ -20,7 +20,7 @@ tags:
 
 Spam is part of running any website with comments. If [WPDiscuz](https://wpdiscuz.com/) is enabled, spam will show up. The goal is not to eliminate it completely, but to control it before it becomes a problem.
 
-The most effective approach is simple: use WPDiscuz’s built-in protection, tighten WordPress moderation, and add one strong filtering layer like OOPSpam.
+The most effective approach is simple: use WPDiscuz’s built-in protection, tighten WordPress moderation, and add one strong filtering layer like oopspam.
 
 This guide walks you through the exact setup.
 
@@ -112,7 +112,7 @@ Switching this setting typically resolves compatibility issues on certain hostin
 
 WPDiscuz already includes invisible antispam by default, so CAPTCHA should be treated as an additional layer, not your only defense.
 
-> Adding too many verification steps can reduce real user engagement. The best setup combines CAPTCHA with moderation rules or an advanced filtering tool like OOPSpam for stronger, more balanced protection.
+> Adding too many verification steps can reduce real user engagement. The best setup combines CAPTCHA with moderation rules or an advanced filtering tool like oopspam for stronger, more balanced protection.
 
 ## **3. Control Guest Commenting** 
 
@@ -214,31 +214,31 @@ It also gives registered users limited control, such as deleting their own comme
 
 This is especially useful if you want to manage discussions without constantly navigating the WordPress admin dashboard.
 
-## **5. Add OOPSpam for Advanced Filtering** 
+## **5. Add oopspam for Advanced Filtering** 
 
-WPDiscuz’s built-in tools are a strong start, but modern spam requires smarter detection. This is where OOPSpam comes in. [OOPSpam](https://www.oopspam.com/) (that's us 👋) integrates directly with WPDiscuz and filters comments automatically.
+WPDiscuz’s built-in tools are a strong start, but modern spam requires smarter detection. This is where oopspam comes in. [oopspam](https://www.oopspam.com/) (that's us 👋) integrates directly with WPDiscuz and filters comments automatically.
 
 ### **How to set it up**
 
-Install “[OOPSpam Anti-Spam](https://www.oopspam.com/wordpress)” from WordPress plugins and activate the plugin.
+Install “[oopspam Anti-Spam](https://www.oopspam.com/wordpress)” from WordPress plugins and activate the plugin.
 
-![OOPSpam ](/blog/assets/posts/oopspam-anti-spam-overview.png "OOPSpam ")
+![oopspam ](/blog/assets/posts/oopspam-anti-spam-overview.png "oopspam ")
 
-[Create an account](https://app.oopspam.com/Identity/Account/Login) on OOPSpam and copy your API key.
+[Create an account](https://app.oopspam.com/Identity/Account/Login) on oopspam and copy your API key.
 
-![OOPSpam dashboard ](/blog/assets/posts/oopspam-dashboard-api.png "OOPSpam dashboard")
+![oopspam dashboard ](/blog/assets/posts/oopspam-dashboard-api.png "oopspam dashboard")
 
-Go to Settings → OOPSpam and paste the key. 
+Go to Settings → oopspam and paste the key. 
 
-![OOPSpam Settings ](/blog/assets/posts/oopspam-api-key.png "OOPSpam Settings ")
+![oopspam Settings ](/blog/assets/posts/oopspam-api-key.png "oopspam Settings ")
 
 On the plugin’s settings page, you can also adjust how sensitive you want the spam filter to be. Even keeping the default **Sensitivity level** setting will help you cut spam down to zero. The plugin also allows you to accept submissions only from certain countries and languages — or to block submissions from specific countries entirely.
 
-Enable WPDiscuz protection inside OOPSpam settings. Once enabled, it works immediately.
+Enable WPDiscuz protection inside oopspam settings. Once enabled, it works immediately.
 
 ![WPDiscuz protection ](/blog/assets/posts/wpdiscuz-protection.png "WPDiscuz protection ")
 
-### **What makes OOPSpam different**
+### **What makes oopspam different**
 
 Unlike CAPTCHA, it doesn’t rely on user interaction. It analyzes submissions using multiple signals:
 
@@ -256,7 +256,7 @@ For most sites, this becomes your main spam filter, while CAPTCHA and moderation
 
 Spam is not going away. But it can be controlled. 
 
-WPDiscuz already gives you a solid foundation. When you combine it with moderation rules and OOPSpam, you create a system that filters spam before it becomes a problem.
+WPDiscuz already gives you a solid foundation. When you combine it with moderation rules and oopspam, you create a system that filters spam before it becomes a problem.
 
 Start with these five steps, then adjust based on how your site grows. That is all! 
 

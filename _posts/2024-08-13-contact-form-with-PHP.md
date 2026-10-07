@@ -15,7 +15,7 @@ Every website has some way for its visitors to contact the site owner. It could 
 
 This article will guide you on adding a complete and secure contact form with spam filter capabilities to your website. The post is primarily aimed at developers who have some experience with HTML, CSS, and PHP. However, even if you don't have experience with PHP, the guide still should be enough to set up a contact form with spam protection.
 
-> If you are using WordPress, check out [the OOPSpam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/).
+> If you are using WordPress, check out [the oopspam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/).
 
 {% include toc.md %}
 
@@ -201,11 +201,11 @@ Here are some of them:
 
 ### Integrating spam protection
 
-Up until now, we made sure to have safe and genuine data. Spammers tend to submit valid and clean data because they want to stand out from other submissions and land in your inbox. If you have ever had a contact form, you may have already experienced the overwhelming amount of spam through it. To keep our inbox clean from spam entries, we need to implement some form of spam prevention. The most basic and straightforward solution would be [honeypot technique](https://www.oopspam.com/blog/ways-to-stop-spam#honeypot-filter-spam-with-a-hidden-field). It is the oldest trick in the book and easy to implement. Basically, we add a hidden field to our contact form and expect this field to be filled by bots only as it would invisible to legitimate users. This approach would protect your web forms from basic spam bots. As you may guess, nothing is preventing a bot from detecting this hidden field and avoiding filling it. And on top of that, once your website starts getting more traffic, it will attract manual spammers too which can easily bypass all kinds of client-side spam filtering. This is where [OOPSpam API](https://www.oopspam.com/) comes in and handles all form submissions in the backend without ever interacting with your visitors.
+Up until now, we made sure to have safe and genuine data. Spammers tend to submit valid and clean data because they want to stand out from other submissions and land in your inbox. If you have ever had a contact form, you may have already experienced the overwhelming amount of spam through it. To keep our inbox clean from spam entries, we need to implement some form of spam prevention. The most basic and straightforward solution would be [honeypot technique](https://www.oopspam.com/blog/ways-to-stop-spam#honeypot-filter-spam-with-a-hidden-field). It is the oldest trick in the book and easy to implement. Basically, we add a hidden field to our contact form and expect this field to be filled by bots only as it would invisible to legitimate users. This approach would protect your web forms from basic spam bots. As you may guess, nothing is preventing a bot from detecting this hidden field and avoiding filling it. And on top of that, once your website starts getting more traffic, it will attract manual spammers too which can easily bypass all kinds of client-side spam filtering. This is where [oopspam API](https://www.oopspam.com/) comes in and handles all form submissions in the backend without ever interacting with your visitors.
 
-First things first, [register on OOPSpam Dashboard](https://app.oopspam.com/Identity/Account/Register) and grab the API key.
+First things first, [register on oopspam Dashboard](https://app.oopspam.com/Identity/Account/Register) and grab the API key.
 
-![OOPSpam Dashboard](/blog/assets/posts/contact-form-with-PHP/oopspam-dashboard.png "OOPSpam Dashboard")
+![oopspam Dashboard](/blog/assets/posts/contact-form-with-PHP/oopspam-dashboard.png "oopspam Dashboard")
 
 Now, we are ready to start integration in the server-side *submit.php*. To make sending requests easier we will use the popular [GuzzleHttp](https://docs.guzzlephp.org/en/stable/) library to make an HTTP request. You can install Guzzle through [Composer](https://getcomposer.org/). If you are not familiar with Composer, it is a dependency manager for PHP.
 
@@ -214,7 +214,7 @@ Follow these steps to install Composer and GuzzleHTTP to your system:
 1. Follow [the official Composer tutorial](https://getcomposer.org/download/) and install it.
 2. Install GuzzleHttp by running <code>composer require guzzlehttp/guzzle:^7.0</code> in your project directory
 
-At this point, we have everything we need to make an HTTP request with our data to the API and get a spam score. OOPSpam API requires only the **content** field, but you could provide additional information in the request body for better spam detection. Here is an example of all possible request body fields:
+At this point, we have everything we need to make an HTTP request with our data to the API and get a spam score. oopspam API requires only the **content** field, but you could provide additional information in the request body for better spam detection. Here is an example of all possible request body fields:
 
 ```json
 {
@@ -228,9 +228,9 @@ At this point, we have everything we need to make an HTTP request with our data 
 
 We are going to supply **senderIP** in addition to **content**. **allowedLanguages** and **allowedCountries** are other useful fields that can be used to allow messages only from certain countries and languages. They are especially helpful if you don't expect a contact form submission from some areas and languages.
 
-> ✨ Tip: Check out [OOPSpam documentation](https://www.oopspam.com/docs/#introduction) for more information on how to use other request fields.
+> ✨ Tip: Check out [oopspam documentation](https://www.oopspam.com/docs/#introduction) for more information on how to use other request fields.
 
-Checking for spam should be done only after all fields are sanitized and validated. For our implementation, we check for spam if the submitted <code>email</code> is valid and free from bad data after all there is no point to accept any submission that doesn't have a valid email. That being said you could do a spam check at any point that makes sense for your use case. Next, we capture the user's IP and send an HTTP request to OOPSpam API.
+Checking for spam should be done only after all fields are sanitized and validated. For our implementation, we check for spam if the submitted <code>email</code> is valid and free from bad data after all there is no point to accept any submission that doesn't have a valid email. That being said you could do a spam check at any point that makes sense for your use case. Next, we capture the user's IP and send an HTTP request to oopspam API.
 
 Here is the function to capture a visitor's IP address in PHP:
 
@@ -285,8 +285,8 @@ function getSpamScore($message, $userIP) {
 }
 ```
 
-The code is pretty straightforward but let's still quickly go through it. First, we put our message and user's IP in an array (<code>$data</code>) then we create a new instance of the GuzzleHTTP client and pass JSON encoded <code>$data</code> along with our API key from OOPSpam Dashboard.
-<code>$code</code> variable holds HTTP response code from OOPSpam API. In case of successful response code (<code>200</code> ) from the API, we convert response body to JSON object and assign value of <code>Score</code> to <code>$score</code>. Finally, the function returns <code>$score</code>.
+The code is pretty straightforward but let's still quickly go through it. First, we put our message and user's IP in an array (<code>$data</code>) then we create a new instance of the GuzzleHTTP client and pass JSON encoded <code>$data</code> along with our API key from oopspam Dashboard.
+<code>$code</code> variable holds HTTP response code from oopspam API. In case of successful response code (<code>200</code> ) from the API, we convert response body to JSON object and assign value of <code>Score</code> to <code>$score</code>. Finally, the function returns <code>$score</code>.
 
 
 > 🚨 Important: For most cases, Score:3 and higher is considered spam.
@@ -612,7 +612,7 @@ function sendEmail($submission) {
 
 ### Final thoughts
 
-A contact form on your website is a great way to connect with your visitors. Unfortunately, it also attracts unwanted attention from spammers and bad actors (aka hackers). To safeguard ourselves we implemented data validation & sanitization with anti-spam capabilities in our contact form. This article was for people who want to build safe and secure contact forms on their own. If you are a WordPress user, you could use one of the popular contact form plugins and install [OOPSpam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/) (that's us 👋) for spam protection.
+A contact form on your website is a great way to connect with your visitors. Unfortunately, it also attracts unwanted attention from spammers and bad actors (aka hackers). To safeguard ourselves we implemented data validation & sanitization with anti-spam capabilities in our contact form. This article was for people who want to build safe and secure contact forms on their own. If you are a WordPress user, you could use one of the popular contact form plugins and install [oopspam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/) (that's us 👋) for spam protection.
 
 Happy spam-free day!
 

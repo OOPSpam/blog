@@ -10,7 +10,7 @@ description: "Learn how to add a spam filter to .NET Core Web App forms to preve
 # modified: 
 ---
 <center>
-<img loading="lazy" width="772" style="height: 200px;object-fit: cover;" alt="OOPSpam illustration" src="/blog/assets/ways-to-stop-spam.png">
+<img loading="lazy" width="772" style="height: 200px;object-fit: cover;" alt="oopspam illustration" src="/blog/assets/ways-to-stop-spam.png">
 </center>
 <br/>
 
@@ -20,14 +20,14 @@ When you build a web application with ASP.NET Core, it generates complete regist
 
 This all sounds great! We launch our application to the world and our website starts to get some traffic. At this point, you may notice an increasing number of fake emails in your database and a high bounce rate with email delivery. If you are using third party email delivery services like Postmark, you can quickly reach your quota limit.
 
-To [automatically block malicious emails and IPs](https://www.oopspam.com/blog/stop-bot-signups) before they can create fake accounts, let's integrate with the [OOPSpam Anti-Spam API](https://www.oopspam.com/). You can also use the same integration to protect other types of forms.
+To [automatically block malicious emails and IPs](https://www.oopspam.com/blog/stop-bot-signups) before they can create fake accounts, let's integrate with the [oopspam Anti-Spam API](https://www.oopspam.com/). You can also use the same integration to protect other types of forms.
 
 Nice to have beforehand:
 
 - Visual Studio Code (or Visual Studio)
 - ASP.NET Core Web Application
 - Basic C# knowledge
-- An API key from your OOPSpam account
+- An API key from your oopspam account
 
 You probably already have a web application and just want to see the integration, so I will just dive in.
 
@@ -53,16 +53,16 @@ On this page you have the option to pick the file you want to edit. I'm going to
 
 ## Integrate spam protection
 
-First, let's create an account on [the OOPSpam Dashboard](https://app.oopspam.com/) and grab our API key.
+First, let's create an account on [the oopspam Dashboard](https://app.oopspam.com/) and grab our API key.
 
-![OOPSpam Dashboard](/blog/assets/posts/netcore/apikey-dashboard.png "OOPSpam Dashboard")
+![oopspam Dashboard](/blog/assets/posts/netcore/apikey-dashboard.png "oopspam Dashboard")
 
-We will have two parameters to check with [OOPSpam API](https://www.oopspam.com/docs/#introduction):
+We will have two parameters to check with [oopspam API](https://www.oopspam.com/docs/#introduction):
 
 - senderIP
 - email
 
-In other types of forms like contact form you could also use the _content_ field. While you are at it, have a look at the [OOPSpam API documentation](https://www.oopspam.com/docs/#introduction) for more ways to harden your registration form.
+In other types of forms like contact form you could also use the _content_ field. While you are at it, have a look at the [oopspam API documentation](https://www.oopspam.com/docs/#introduction) for more ways to harden your registration form.
 
 We'll secure our registration form by
 
@@ -91,7 +91,7 @@ Back to the topic, add a class to your project:
     }
 ```
 
-We will use this class to pass the data from the form to the API. Now that we have our class, we need to create a method that will call the OOPSpam API and return a spam score.
+We will use this class to pass the data from the form to the API. Now that we have our class, we need to create a method that will call the oopspam API and return a spam score.
 
 ```csharp
  public async Task<int> GetSpamScoreWithOopSpam(string email, string userIp)
@@ -104,8 +104,8 @@ We will use this class to pass the data from the form to the API. Now that we ha
                 blockedCountries = new List<string>(new []{"ru", "cn"}),
                 blockTempEmail = true,
                 checkForLength = false,
-                logIt = true, // To see logs in the OOPSpam Dashboard
-                source = "My Website Registration" // Uniquely identify your website in the OOPSpam Dashboard logs
+                logIt = true, // To see logs in the oopspam Dashboard
+                source = "My Website Registration" // Uniquely identify your website in the oopspam Dashboard logs
             };
 
             var jsonContent = JsonConvert.SerializeObject(myObject);
@@ -190,7 +190,7 @@ public async Task<IActionResult> OnPostAsync(string returnUrl = null)
           userIpAddress = HttpContext.Connection.RemoteIpAddress.ToString();
         }
            
-        // Spam & abuse check with the OOPSpam API before creating an account
+        // Spam & abuse check with the oopspam API before creating an account
         var spamScore = await GetSpamScoreWithOopSpam(Input.Email, userIpAddress);
 
         // Return an error if the Score is higher or equal to 3
@@ -213,9 +213,9 @@ I promise, we are almost there. Let's submit a form with a disposable email and 
 It seems to work. Two things happened:
 
 - An error message about being blocked is displayed in the UI.
-- The blocked submission can be seen in the logs in the OOPSpam dashboard.
+- The blocked submission can be seen in the logs in the oopspam dashboard.
 
-![Logs in the OOPSpam Dashboard](/blog/assets/posts/netcore/log-dashboard.png "Logs in the OOPSpam Dashboard")
+![Logs in the oopspam Dashboard](/blog/assets/posts/netcore/log-dashboard.png "Logs in the oopspam Dashboard")
 
 ## Wrapping this up
 

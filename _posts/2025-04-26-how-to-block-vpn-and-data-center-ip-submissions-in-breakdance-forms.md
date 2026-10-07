@@ -5,7 +5,7 @@ date: 2025-04-28T06:01:00.000Z
 author: chazie
 image: /assets/posts/how-to-block-vpn-and-data-center-ip-submissions-in-breakdance-forms.jpg
 description: Protect your Breakdance Forms from spam. Discover how to block VPN
-  and data center traffic using OOPSpam for cleaner submissions and stronger
+  and data center traffic using oopspam for cleaner submissions and stronger
   form security.
 tags:
   - Breakdance Forms
@@ -16,7 +16,7 @@ tags:
 
 [Breakdance](https://breakdance.com/) builder makes creating custom websites and forms incredibly easy—but it also means your forms can attract spam submissions if you're not properly protected. Many of these unwanted entries come from users hiding behind VPNs or bots operating through cloud servers.
 
-In this guide, we’ll explain why blocking [VPN](https://en.wikipedia.org/wiki/Virtual_private_network) and cloud provider IPs matters for your Breakdance Forms—and show you two ways to do it: manually with Cloudflare or automatically with the OOPSpam WordPress plugin.
+In this guide, we’ll explain why blocking [VPN](https://en.wikipedia.org/wiki/Virtual_private_network) and cloud provider IPs matters for your Breakdance Forms—and show you two ways to do it: manually with Cloudflare or automatically with the oopspam WordPress plugin.
 
 ## **Why You Need to Block VPN and Cloud Provider IPs in Breakdance Forms**
 
@@ -66,11 +66,11 @@ Network providers and cloud hosts have unique [ASNs](https://en.wikipedia.org/wi
 
 This method is better suited for tech-savvy site owners or stores handling high volumes of traffic.
 
-## **Method 2: Block VPN and Cloud IPs Instantly in Breakdance Forms Using OOPSpam**
+## **Method 2: Block VPN and Cloud IPs Instantly in Breakdance Forms Using oopspam**
 
-![OOPSpam WordPress plugin](/blog/assets/posts/oopspam-anti-spam-overview.png "OOPSpam WordPress plugin")
+![oopspam WordPress plugin](/blog/assets/posts/oopspam-anti-spam-overview.png "oopspam WordPress plugin")
 
-Prefer a quicker, automated solution? The **[OOPSpam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/)** (that’s us 👋) is a perfect match for Breakdance Forms, giving you a hands-off way to protect your site.
+Prefer a quicker, automated solution? The **[oopspam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/)** (that’s us 👋) is a perfect match for Breakdance Forms, giving you a hands-off way to protect your site.
 
 The plugin recently introduced two smart filtering options under IP Filtering:
 
@@ -79,9 +79,9 @@ The plugin recently introduced two smart filtering options under IP Filtering:
 
 With just a flip of a switch, you can block harmful traffic from VPN users and cloud-hosted bots without managing IP lists manually.
 
-### **Why OOPSpam is Ideal for Breakdance Users**
+### **Why oopspam is Ideal for Breakdance Users**
 
-OOPSpam doesn’t just flag submissions—it actively filters traffic based on an up-to-date database of:
+oopspam doesn’t just flag submissions—it actively filters traffic based on an up-to-date database of:
 
 * 2,000+ cloud providers
 * Known VPN and proxy IP ranges
@@ -89,27 +89,27 @@ OOPSpam doesn’t just flag submissions—it actively filters traffic based on a
 
 This ensures your [Breakdance Forms are protected](https://www.oopspam.com/blog/spam-protection-for-breakdance) from both known and emerging threats, with minimal effort on your part.
 
-OOPSpam's IP filtering also extends to other forms and [API integrations](https://www.oopspam.com/docs/#introduction) if you have more than just Breakdance Forms on your site.
+oopspam's IP filtering also extends to other forms and [API integrations](https://www.oopspam.com/docs/#introduction) if you have more than just Breakdance Forms on your site.
 
-## **How to Set Up VPN and Cloud IP Blocking with OOPSpam for Breakdance Forms**
+## **How to Set Up VPN and Cloud IP Blocking with oopspam for Breakdance Forms**
 
 Setting this up is very straightforward:
 
-### **Step 1: Install or Update the OOPSpam Plugin**
+### **Step 1: Install or Update the oopspam Plugin**
 
-![OOPSpam Dashboard](/blog/assets/posts/oopspam-dashboard-api.png "OOPSpam Dashboard")
+![oopspam Dashboard](/blog/assets/posts/oopspam-dashboard-api.png "oopspam Dashboard")
 
 * Go to **Plugins > Add New** in your WordPress dashboard
-* Search for **OOPSpam Anti-Spam**, install it, and activate
+* Search for **oopspam Anti-Spam**, install it, and activate
 
-Then, sign up at the [OOPSpam Dashboard](https://app.oopspam.com/Identity/Account/Login) and retrieve your API key.
+Then, sign up at the [oopspam Dashboard](https://app.oopspam.com/Identity/Account/Login) and retrieve your API key.
 
 ### **Step 2: Configure Your Settings**
 
 In your WordPress Admin:
 
-* Navigate to **Settings > OOPSpam Anti-Spam**
-* Under the **General** tab, select **OOPSpam Dashboard** as your source
+* Navigate to **Settings > oopspam Anti-Spam**
+* Under the **General** tab, select **oopspam Dashboard** as your source
 * Paste your API key into the “**My API Key**” field
 
 ![Configure Your Settings](/blog/assets/posts/my-api-key-field.png "Configure Your Settings")
@@ -130,13 +130,13 @@ Go to the **IP Filtering** tab:
 
 ![Enable IP Filtering](/blog/assets/posts/ip-filtering-tab-block-vpn.png "Enable IP Filtering")
 
-After adjusting your settings, hit **Save Changes**. [OOPSpam](https://www.oopspam.com/) now filters incoming form traffic silently in the background.
+After adjusting your settings, hit **Save Changes**. [oopspam](https://www.oopspam.com/) now filters incoming form traffic silently in the background.
 
 ## **Tips for Balancing Spam Blocking and User Access**
 
 * If you serve international or remote visitors, monitor the effect of VPN blocking carefully.
 * Regularly check blocked submissions to ensure no legitimate users are impacted.
-* Combine IP filtering with OOPSpam's other smart features like:
+* Combine IP filtering with oopspam's other smart features like:
 * * Country-based blocking
 
   * Language filtering
@@ -151,6 +151,6 @@ This layered approach gives you maximum spam protection with minimal disruption 
 
 Breakdance Forms offer flexibility and design freedom—but to keep your forms clean and useful, you need smart protection against today's spam threats.
 
-Blocking VPN and cloud provider IPs gives you a powerful edge, helping you stay ahead of spam before it even reaches your form submissions. With OOPSpam, it’s fast, reliable, and effortless.
+Blocking VPN and cloud provider IPs gives you a powerful edge, helping you stay ahead of spam before it even reaches your form submissions. With oopspam, it’s fast, reliable, and effortless.
 
-Ready to clean up your Breakdance Forms and improve user experience? Get started with OOPSpam today—and if you need help with setup, our team is [happy to assist](https://www.oopspam.com/#contact)!
+Ready to clean up your Breakdance Forms and improve user experience? Get started with oopspam today—and if you need help with setup, our team is [happy to assist](https://www.oopspam.com/#contact)!

@@ -4,7 +4,7 @@ title: How to Block Fake Leads in Unbounce Forms?
 date: 2026-04-20T14:26:00.000+08:00
 author: chazie
 image: /blog/assets/posts/unbounce_forms_meta.jpg
-description: Block fake leads in Unbounce with CAPTCHA, honeypots, OOPSpam, IP
+description: Block fake leads in Unbounce with CAPTCHA, honeypots, oopspam, IP
   filtering, and smarter ad targeting. Reduce spam, protect your CRM, and
   improve lead quality.
 tags:
@@ -53,13 +53,13 @@ A [honeypot](https://www.oopspam.com/blog/ways-to-stop-spam#honeypot-filter-spam
 
 Honeypots are lightweight, add zero friction for real users, and are especially effective against simple bots that fill every form field they detect.
 
-### **3. Use OOPSpam for Advanced Spam Filtering**
+### **3. Use oopspam for Advanced Spam Filtering**
 
-![Use OOPSpam for Advanced Spam Filtering](/blog/assets/posts/unbounce-via-zapier.png "Use OOPSpam for Advanced Spam Filtering")
+![Use oopspam for Advanced Spam Filtering](/blog/assets/posts/unbounce-via-zapier.png "Use oopspam for Advanced Spam Filtering")
 
-For teams that need a more automated and reliable solution, [OOPSpam](https://www.oopspam.com/) (that's us 👋) is a dedicated anti-spam service that integrates directly with [Unbounce via Zapier](https://zapier.com/apps/unbounce/integrations/oopspam). It analyzes incoming form submissions against a continuously updated database of blocked IPs, disposable emails, and spam-linked content using a machine learning model.
+For teams that need a more automated and reliable solution, [oopspam](https://www.oopspam.com/) (that's us 👋) is a dedicated anti-spam service that integrates directly with [Unbounce via Zapier](https://zapier.com/apps/unbounce/integrations/oopspam). It analyzes incoming form submissions against a continuously updated database of blocked IPs, disposable emails, and spam-linked content using a machine learning model.
 
-**What OOPSpam offers for Unbounce users:**
+**What oopspam offers for Unbounce users:**
 
 * Returns a spam score with a detailed report for every submission
 * Blocks specific IP addresses and email addresses
@@ -70,11 +70,11 @@ For teams that need a more automated and reliable solution, [OOPSpam](https://ww
 **To connect it:**
 
 1. In Zapier, create a new Zap with **Unbounce: New Form Submission** as the trigger.
-2. Add **OOPSpam: Check for Spam** as the next action.
-3. Use a **Zapier Filter** to stop the Zap if OOPSpam flags the submission as spam.
+2. Add **oopspam: Check for Spam** as the next action.
+3. Use a **Zapier Filter** to stop the Zap if oopspam flags the submission as spam.
 4. Proceed with your CRM or email notification steps only for clean leads.
 
-This approach is particularly effective against sophisticated bots that can [bypass standard CAPTCHA](https://www.oopspam.com/blog/bypassing-captcha), because OOPSpam evaluates behavioral signals and submission metadata rather than relying on user interaction.
+This approach is particularly effective against sophisticated bots that can [bypass standard CAPTCHA](https://www.oopspam.com/blog/bypassing-captcha), because oopspam evaluates behavioral signals and submission metadata rather than relying on user interaction.
 
 ### **4. Filter by IP Address**
 
@@ -87,7 +87,7 @@ If you are seeing repeat fake submissions from identifiable IP addresses or geog
 * Review your lead list and identify patterns: repeated IPs, unusual submission timing (e.g., hundreds of submissions in minutes), or suspicious geographic clustering.
 * In the Unbounce dashboard, navigate to your page settings and add known offending IPs to the block list.
 * For broader geographic filtering, consider using a tool like Cloudflare in front of your Unbounce pages to apply firewall rules at the network level.
-* OOPSpam also lets you block IPs and restrict countries directly in Zapier, no need to configure Unbounce or use a separate firewall.
+* oopspam also lets you block IPs and restrict countries directly in Zapier, no need to configure Unbounce or use a separate firewall.
 
 Note that many sophisticated bots rotate IPs dynamically, so IP filtering alone will not solve the problem. It works best as a complement to the other methods listed here.
 
@@ -106,6 +106,6 @@ This single change can meaningfully reduce fake lead volume for campaigns runnin
 
 ## **Final Thoughts**
 
-No single technique will block all fake leads. The most effective approach stacks multiple defenses. Start with the honeypot and ad targeting changes as quick wins. Then layer in OOPSpam via Zapier for ongoing intelligent filtering. Add reCAPTCHA to harden the form itself.
+No single technique will block all fake leads. The most effective approach stacks multiple defenses. Start with the honeypot and ad targeting changes as quick wins. Then layer in oopspam via Zapier for ongoing intelligent filtering. Add reCAPTCHA to harden the form itself.
 
 Done right, this stack can reduce fake lead volume by well over half, giving your sales team cleaner data, your CRM fewer junk records, and your ad reporting a more accurate picture of what is actually working.

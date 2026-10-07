@@ -5,7 +5,7 @@ date: 2025-09-16T06:15:00.000+08:00
 author: chazie
 image: /blog/assets/posts/hf_rt.jpg
 description: Learn how to limit form submissions in HappyForms with caps, choice
-  limits, and OOPSpam rate-limiting to block spam and manage entries.
+  limits, and oopspam rate-limiting to block spam and manage entries.
 tags:
   - rate-limiting
   - HappyForms
@@ -40,25 +40,25 @@ Preview the form. Each choice should display its remaining availability (e.g., �
 
 ![Test the Form](/blog/assets/posts/rate-limiting-test-the-form.png "Test the Form")
 
-## **Advanced Rate Limiting Using OOPSpam**
+## **Advanced Rate Limiting Using oopspam**
 
-For per-IP or per-email submission limits, **[OOPSpam](https://www.oopspam.com/)** (that’s us 👋) adds a layer of rate-limiting beyond HappyForms’ native features. Here’s how to set it up:
+For per-IP or per-email submission limits, **[oopspam](https://www.oopspam.com/)** (that’s us 👋) adds a layer of rate-limiting beyond HappyForms’ native features. Here’s how to set it up:
 
-### **Setting Up Rate Limiting with OOPSpam**
+### **Setting Up Rate Limiting with oopspam**
 
-> **Note:** The OOPSpam plugin works with the **HappyForms Pro version only.**
+> **Note:** The oopspam plugin works with the **HappyForms Pro version only.**
 
-**1. Install and Activate OOPSpam**
+**1. Install and Activate oopspam**
 
-Install and activate the **[OOPSpam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/)** plugin from the WordPress Plugin Repository. Once installed, [create an account](https://app.oopspam.com/Identity/Account/Login) with OOPSpam to generate your unique **API key**.
+Install and activate the **[oopspam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/)** plugin from the WordPress Plugin Repository. Once installed, [create an account](https://app.oopspam.com/Identity/Account/Login) with oopspam to generate your unique **API key**.
 
-![OOPSpam](/blog/assets/posts/oopspam-dashboard-api.png "OOPSpam ")
+![oopspam](/blog/assets/posts/oopspam-dashboard-api.png "oopspam ")
 
-Enter the API key in the WordPress dashboard under **OOPSpam → General Settings**. 
+Enter the API key in the WordPress dashboard under **oopspam → General Settings**. 
 
-![Enter the API key in the WordPress dashboard under OOPSpam → General Settings. ](/blog/assets/posts/oopspam-api-key.png "API key in the WordPress dashboard under OOPSpam")
+![Enter the API key in the WordPress dashboard under oopspam → General Settings. ](/blog/assets/posts/oopspam-api-key.png "API key in the WordPress dashboard under oopspam")
 
-In the same tab, activate spam protection for **HappyForms**, so the plugin integrates directly with your forms. After this setup, OOPSpam will [start filtering spam](https://www.oopspam.com/blog/5-ways-to-protect-your-happyforms-from-spam) before it ever reaches your submissions.
+In the same tab, activate spam protection for **HappyForms**, so the plugin integrates directly with your forms. After this setup, oopspam will [start filtering spam](https://www.oopspam.com/blog/5-ways-to-protect-your-happyforms-from-spam) before it ever reaches your submissions.
 
 ![Activate spam protection for HappyForms](/blog/assets/posts/spam-protection-for-happyforms.png "Activate spam protection for HappyForms")
 
@@ -83,4 +83,4 @@ Click **Save Changes** and submit multiple entries to confirm the block works.
 
 ## **Final thoughts**
 
-HappyForms makes it simple to cap entries and limit options in a form. By combining built-in settings with [spam defenses](https://www.oopspam.com/integrations/spam-protection-for-happyforms) and OOPSpam’s rate-limiting, you can stop abuse before it starts. Take a few minutes to set these controls now, and you’ll save hours dealing with junk or overbooked slots later.
+HappyForms makes it simple to cap entries and limit options in a form. By combining built-in settings with [spam defenses](https://www.oopspam.com/integrations/spam-protection-for-happyforms) and oopspam’s rate-limiting, you can stop abuse before it starts. Take a few minutes to set these controls now, and you’ll save hours dealing with junk or overbooked slots later.

@@ -40,7 +40,7 @@ Any included JavaScript, CSS or font file will slow down your website. This is u
 
 As you may know, reCAPTCHA is a JavaScript based widget. You can [integrate reCAPTCHA V3](https://developers.google.com/recaptcha/docs/v3) into your website by including a JavaScript file in [every page](https://www.oopspam.com/blog/loading-recaptcha), a callback function to handle the token, and a button with reCAPTCHA attributes.
 
-Our testing will be done on the complete contact form we created in [our previous article](https://www.oopspam.com/blog/contact-form-with-PHP). In that article, we integrated [OOPSpam](https://www.oopspam.com/) as a spam filter instead of reCAPTCHA. This time we will use reCAPTCHA as spam protection.
+Our testing will be done on the complete contact form we created in [our previous article](https://www.oopspam.com/blog/contact-form-with-PHP). In that article, we integrated [oopspam](https://www.oopspam.com/) as a spam filter instead of reCAPTCHA. This time we will use reCAPTCHA as spam protection.
 
 The form is quite simple with 3 fields and basic styling. To see a clear difference and less noise, we stay away from using CMS systems like WordPress.
 
@@ -106,4 +106,4 @@ It's possible to improve website speed while using reCAPTCHA. You can achieve th
 
 > Some people may recommend not [loading reCAPTCHA files on every page](https://www.oopspam.com/blog/loading-recaptcha). According to Google's documentation, reCAPTCHA works best when it has the full context of how users interact with your entire site - both the legitimate behavior and the sketchy stuff.
 
-[Replacing reCAPTCHA](https://www.oopspam.com/recaptcha-alternative) with the server-side spam filtering options like [OOPSpam API](https://www.oopspam.com/) or [OOPSpam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/) (that's us 👋) is another way to get a fast-loading website. Unlike reCAPTCHA or any other CAPTCHA solution, the backend based spam filters work in your server and never interact with your users or load any resources on the client side. With OOPSpam there are no cookies, no JavaScript and no challenges for your visitors to solve.
+[Replacing reCAPTCHA](https://www.oopspam.com/recaptcha-alternative) with the server-side spam filtering options like [oopspam API](https://www.oopspam.com/) or [oopspam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/) (that's us 👋) is another way to get a fast-loading website. Unlike reCAPTCHA or any other CAPTCHA solution, the backend based spam filters work in your server and never interact with your users or load any resources on the client side. With oopspam there are no cookies, no JavaScript and no challenges for your visitors to solve.

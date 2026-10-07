@@ -5,7 +5,7 @@ date: 2025-06-03T07:00:00.000Z
 author: chazie
 image: /blog/assets/posts/gravity-forms-still-getting-spam.png
 description: Still getting spam on Gravity Forms even with reCAPTCHA? Learn why
-  it fails and how OOPSpam offers smarter, layered protection for your WordPress
+  it fails and how oopspam offers smarter, layered protection for your WordPress
   forms.
 tags:
   - reCAPTCHA
@@ -65,13 +65,13 @@ Gravity Forms Zero Spam does a good job with bots but not with semi-automated or
 
 Even when all of these are stacked together, targeted attacks can still break through.
 
-## **Using OOPSpam to Protect Gravity Forms from Spam**
+## **Using oopspam to Protect Gravity Forms from Spam**
 
-![OOPSpam WordPress plugin](/blog/assets/posts/oopspam-anti-spam-overview.png "OOPSpam WordPress plugin")
+![oopspam WordPress plugin](/blog/assets/posts/oopspam-anti-spam-overview.png "oopspam WordPress plugin")
 
-**[OOPSpam](https://www.oopspam.com/)** (that’s us 👋) is a privacy-first spam filtering tool that integrates directly with [Gravity Forms](https://www.oopspam.com/anti-spam-filter-for-gravity-forms) via its WordPress plugin. It’s designed to catch exactly the kind of nuanced spam [reCAPTCHA misses](https://www.oopspam.com/blog/recaptcha-errors).
+**[oopspam](https://www.oopspam.com/)** (that’s us 👋) is a privacy-first spam filtering tool that integrates directly with [Gravity Forms](https://www.oopspam.com/anti-spam-filter-for-gravity-forms) via its WordPress plugin. It’s designed to catch exactly the kind of nuanced spam [reCAPTCHA misses](https://www.oopspam.com/blog/recaptcha-errors).
 
-### **Key Benefits of OOPSpam:**
+### **Key Benefits of oopspam:**
 
 * **Content Analysis:** Flags low-quality, repetitive, or suspicious form text
 * **IP Reputation Checks:** Evaluates the origin of submissions for known abuse
@@ -79,43 +79,43 @@ Even when all of these are stacked together, targeted attacks can still break th
 * **IP Filtering:** Blocks known spam IPs or ranges
 * **No Extra Friction:** Doesn’t add visual challenges or puzzles for users
 
-## **How To Set Up OOPSpam with Gravity Forms**
+## **How To Set Up oopspam with Gravity Forms**
 
-Setting up OOPSpam to [protect your Gravity Forms](https://www.oopspam.com/blog/spam-protection-for-gravity-forms) takes only a few steps:
+Setting up oopspam to [protect your Gravity Forms](https://www.oopspam.com/blog/spam-protection-for-gravity-forms) takes only a few steps:
 
-### **Step 1: Install the OOPSpam WordPress Plugin**
+### **Step 1: Install the oopspam WordPress Plugin**
 
-Download and activate the [OOPSpam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/) from your dashboard.
+Download and activate the [oopspam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/) from your dashboard.
 
-Visit OOPSpam and [create an account](https://app.oopspam.com/Identity/Account/Register). Once signed in, copy your API key.
+Visit oopspam and [create an account](https://app.oopspam.com/Identity/Account/Register). Once signed in, copy your API key.
 
-![OOPSpam dashboard showing API usage, average response time, active API key, and a "Test with your data" section featuring sample data for spam detection testing. The sidebar includes navigation options like Dashboard, Reported, Domain Watch, Logs, and more.](/blog/assets/posts/oopspam-dashboard-api.png "OOPSpam dashboard")
+![oopspam dashboard showing API usage, average response time, active API key, and a "Test with your data" section featuring sample data for spam detection testing. The sidebar includes navigation options like Dashboard, Reported, Domain Watch, Logs, and more.](/blog/assets/posts/oopspam-dashboard-api.png "oopspam dashboard")
 
 ### **Step 2: Paste Your API Key**
 
 In your WordPress dashboard:
 
-1. Go to OOPSpam settings
+1. Go to oopspam settings
 2. Paste your API key
 
 ![Paste your API key into the “My API Key” field](/blog/assets/posts/my-api-key-field.png "Paste your API key")
 
-### **Step 3: Enable OOPSpam on Gravity Forms**
+### **Step 3: Enable oopspam on Gravity Forms**
 
 If Gravity Forms is active, you’ll see a spam protection section ready to configure. Switch **ON** "Activate Spam Protection" to start blocking spam entries.
 
-![Enable OOPSpam on Gravity Forms](/blog/assets/posts/gravity-forms-spam-protection-activate.png "Enable OOPSpam on Gravity Forms")
+![Enable oopspam on Gravity Forms](/blog/assets/posts/gravity-forms-spam-protection-activate.png "Enable oopspam on Gravity Forms")
 
-You’re done! All submissions will now be scanned using OOPSpam’s filtering engine before they hit your inbox or CRM.
+You’re done! All submissions will now be scanned using oopspam’s filtering engine before they hit your inbox or CRM.
 
 ## **Advanced Configuration Options**
 
-OOPSpam includes a range of settings that allow for deeper control over how form spam is filtered.
+oopspam includes a range of settings that allow for deeper control over how form spam is filtered.
 
 * **Sensitivity Level:** Controls how aggressive the filter is. The default setting is recommended for most users.
 * **Rate Limiting:** Limit the [number of submissions](https://www.oopspam.com/blog/how-to-limit-form-submissions-in-gravity-forms) per IP or email address to prevent abuse. You can also cap leads from Google Ads.
 
-![Rate limiting settings configuration in OOPSpam.](/blog/assets/posts/rate-limiting-settings.png "Rate Limiting")
+![Rate limiting settings configuration in oopspam.](/blog/assets/posts/rate-limiting-settings.png "Rate Limiting")
 
 * **IP Filtering:** Block traffic from [VPNs or cloud providers](https://www.oopspam.com/blog/how-to-block-vpn-and-data-center-ip-submissions-in-gravity-forms) like AWS and Azure. We recommend enabling this setting to reduce spam from automated services. However, be cautious with blocking VPNs—some legitimate users and businesses rely on them for secure access.
 
@@ -131,7 +131,7 @@ OOPSpam includes a range of settings that allow for deeper control over how form
 
 ### **What about performance or privacy?**
 
-OOPSpam is lightweight and privacy-focused:
+oopspam is lightweight and privacy-focused:
 
 * No user tracking
 * GDPR-compliant by default
@@ -143,9 +143,9 @@ It processes data server-side, and only relevant context (e.g., IP, text content
 
 If you're still getting spam through Gravity Forms—even with reCAPTCHA—you're likely dealing with targeted, semi-automated attacks. Traditional filters can’t keep up with evolving spam behaviors.
 
-By switching to a layered, context-aware system like OOPSpam, you significantly reduce spam without affecting real users. The setup is simple, the filtering is accurate, and your paid traffic will no longer be a spammer’s playground.
+By switching to a layered, context-aware system like oopspam, you significantly reduce spam without affecting real users. The setup is simple, the filtering is accurate, and your paid traffic will no longer be a spammer’s playground.
 
-Ready to stop form spam at the source? You can install [OOPSpam](https://www.oopspam.com/wordpress) directly from the official WordPress plugin repository. It's a simple setup that adds reliable spam filtering to your Gravity Forms—no API configuration needed.
+Ready to stop form spam at the source? You can install [oopspam](https://www.oopspam.com/wordpress) directly from the official WordPress plugin repository. It's a simple setup that adds reliable spam filtering to your Gravity Forms—no API configuration needed.
 
 ## Related guides
 

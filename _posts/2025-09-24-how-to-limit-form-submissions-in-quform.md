@@ -5,7 +5,7 @@ date: 2025-09-24T06:51:00.000+08:00
 author: chazie
 image: /blog/assets/posts/qu_rt.jpg
 description: Limit form submissions in QuForm with built-in caps, user/IP
-  restrictions, and advanced controls using OOPSpam or Cloudflare for stronger
+  restrictions, and advanced controls using oopspam or Cloudflare for stronger
   protection.
 tags:
   - QuForm
@@ -13,7 +13,7 @@ tags:
 ---
 ![QuForm](/blog/assets/posts/quform.png "QuForm")
 
-[QuForm](https://www.quform.com/) gives you built-in tools to cap entries, restrict submissions to one per user or IP, and schedule form availability. For advanced control like rate-limiting or country/language blocking, pair QuForm with **[OOPSpam](https://www.oopspam.com/)** or Cloudflare. This way, you prevent abuse and keep your forms reliable.
+[QuForm](https://www.quform.com/) gives you built-in tools to cap entries, restrict submissions to one per user or IP, and schedule form availability. For advanced control like rate-limiting or country/language blocking, pair QuForm with **[oopspam](https://www.oopspam.com/)** or Cloudflare. This way, you prevent abuse and keep your forms reliable.
 
 ## **Setting Limits in QuForm**
 
@@ -42,11 +42,11 @@ You can customize the message users see when the form is closed. Click **Save** 
 
 QuForm will now enforce them on your live site.
 
-## **Advanced Rate Limiting Using OOPSpam**
+## **Advanced Rate Limiting Using oopspam**
 
 QuForm’s built-in limits work well for most cases. But some scenarios, like blocking repeated attempts from spam networks or filtering by [country](https://www.oopspam.com/blog/how-to-block-countries-in-quform) — need stronger tools.
 
-The **[OOPSpam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/)** (that’s us 👋) integrates with QuForm and adds:
+The **[oopspam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/)** (that’s us 👋) integrates with QuForm and adds:
 
 * Rate-limits by IP or email per minute/hour
 * Country allow/deny lists
@@ -56,13 +56,13 @@ The **[OOPSpam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/)** (t
 
 **Setup:**
 
-**Install OOPSpam Anti-Spam** from the WordPress repository. Create an **[OOPSpam account](https://app.oopspam.com/Identity/Account/Login)** to get your API key.
+**Install oopspam Anti-Spam** from the WordPress repository. Create an **[oopspam account](https://app.oopspam.com/Identity/Account/Login)** to get your API key.
 
-![OOPSpam account](/blog/assets/posts/oopspam-dashboard-api.png "OOPSpam account")
+![oopspam account](/blog/assets/posts/oopspam-dashboard-api.png "oopspam account")
 
-Enter the key under **OOPSpam → General Settings.**
+Enter the key under **oopspam → General Settings.**
 
-![OOPSpam dashboard showing API usage, response time, and API key, with options to test data and view logs, along with navigation menu on the left.](/blog/assets/posts/oopspam-api-key.png "OOPSpam dashboard")
+![oopspam dashboard showing API usage, response time, and API key, with options to test data and view logs, along with navigation menu on the left.](/blog/assets/posts/oopspam-api-key.png "oopspam dashboard")
 
 Toggle **QuForm spam protection**, so the plugin filters QuForm submissions.
 
@@ -93,7 +93,7 @@ QuForm supports [reCAPTCHA](https://www.quform.com/2019/04/quform-2-8-0-released
 
 ## **Final Thoughts**
 
-QuForm lets you cap total submissions, restrict users by IP, and schedule form availability with just a few clicks. For stronger spam and abuse protection, combine QuForm with OOPSpam and modern [CAPTCHA](https://www.oopspam.com/blog/best-captcha-alternatives) services. Add Cloudflare [WAF rules](https://developers.cloudflare.com/waf/rate-limiting-rules/) if you need network-level control.
+QuForm lets you cap total submissions, restrict users by IP, and schedule form availability with just a few clicks. For stronger spam and abuse protection, combine QuForm with oopspam and modern [CAPTCHA](https://www.oopspam.com/blog/best-captcha-alternatives) services. Add Cloudflare [WAF rules](https://developers.cloudflare.com/waf/rate-limiting-rules/) if you need network-level control.
 
 Set up these layers once, and you’ll save time, stop spam, and protect the integrity of your forms.
 

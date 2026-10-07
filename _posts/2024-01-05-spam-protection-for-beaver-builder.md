@@ -52,43 +52,43 @@ Once you put your website behind Cloudflare, you have an option to block countri
 
 ![Blocking Countries in Cloudflare](/blog/assets/posts/elementor-forms/Blocking-Countries-in-Cloudflare.png "Blocking Countries in Cloudflare")
 
-## OOPSpam WordPress plugin
+## oopspam WordPress plugin
 
-[OOPSpam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/) (that's us 👋) is another way to stop spam on your Beaver Builder Forms and WordPress comments. The plugin works with OOPSpam API that protects over 3.5M websites daily. While the other two alternatives are free, OOPSPam API is a paid service. But it does come with free 40/month spam checks for you to test and see the difference.
+[oopspam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/) (that's us 👋) is another way to stop spam on your Beaver Builder Forms and WordPress comments. The plugin works with oopspam API that protects over 3.5M websites daily. While the other two alternatives are free, OOPSPam API is a paid service. But it does come with free 40/month spam checks for you to test and see the difference.
 
-It's likely you have already tried the above options, and they didn't work for you. For you, it could be a [slow website from reCAPTCHA](https://www.oopspam.com/blog/recaptcha-performance-analyses) or overwhelming spam you are still getting despite implementing the above alternatives. What makes OOPSpam different from other solutions is that it doesn't slow your website and is effective against human spammers and bots. There is no challenge to solve. No performance penalty as everything happens in your server instead of client-side. The OOPSpam API uses machine learning models, content analyses, IP reputation, and other rule-based checks to score every contact and registration form submissions, comments and search (yes, internal search spam is a thing :) ) in WordPress website. A combination of all these analyses returns a single spam score that is how it accurately stops both manual spam and bots.
+It's likely you have already tried the above options, and they didn't work for you. For you, it could be a [slow website from reCAPTCHA](https://www.oopspam.com/blog/recaptcha-performance-analyses) or overwhelming spam you are still getting despite implementing the above alternatives. What makes oopspam different from other solutions is that it doesn't slow your website and is effective against human spammers and bots. There is no challenge to solve. No performance penalty as everything happens in your server instead of client-side. The oopspam API uses machine learning models, content analyses, IP reputation, and other rule-based checks to score every contact and registration form submissions, comments and search (yes, internal search spam is a thing :) ) in WordPress website. A combination of all these analyses returns a single spam score that is how it accurately stops both manual spam and bots.
 
 On the plugin's settings page, you could also adjust how sensitive you want your spam filter to be. Even keeping default __Sensitivity level__ setting will help you cut down spam to zero.
 
-![OOPSpam WordPress Plugin Sensitivity level](https://www.oopspam.com/assets/WP_SensitivyLevel.jpg "OOPSpam WordPress Plugin Sensitivity level")
+![oopspam WordPress Plugin Sensitivity level](https://www.oopspam.com/assets/WP_SensitivyLevel.jpg "oopspam WordPress Plugin Sensitivity level")
 
 In addition, the plugin allows you to set up a filter to accept submissions only from certain countries and languages.
 
-![OOPSpam WordPress Plugin country & language restrictions](https://www.oopspam.com/assets/country-language-filter.png "OOPSpam WordPress Plugin country & language restrictions")
+![oopspam WordPress Plugin country & language restrictions](https://www.oopspam.com/assets/country-language-filter.png "oopspam WordPress Plugin country & language restrictions")
 
 > ✨ Since then, we have also added the __Block messages from these countries__ feature.
 
-![OOPSpam WordPress Plugin block countries](https://www.oopspam.com/blog/assets/wp-block-countries.png "OOPSpam WordPress Plugin block countries")
+![oopspam WordPress Plugin block countries](https://www.oopspam.com/blog/assets/wp-block-countries.png "oopspam WordPress Plugin block countries")
 
 > 📌 Using country filtering allows your site to be available worldwide, but only limits who can submit a form.
 
-Unlike other premium solutions, OOPSpam is privacy-friendly. We don't store or share your data. All cloud-based spam filtering services in the market require you to send visitors IP addresses which violates GDPR. With OOPSpam, you don't have to.
+Unlike other premium solutions, oopspam is privacy-friendly. We don't store or share your data. All cloud-based spam filtering services in the market require you to send visitors IP addresses which violates GDPR. With oopspam, you don't have to.
 
 Here are a few steps to activate spam protection for Beaver Builder Forms:
 
-1. [Subscribe to get an API key](https://app.oopspam.com/Identity/Account/Register) then copy-paste the API key to the plugin's appropriate field under __Settings->OOPSpam Anti-Spam__ on your WordPress Admin Dashboard.
+1. [Subscribe to get an API key](https://app.oopspam.com/Identity/Account/Register) then copy-paste the API key to the plugin's appropriate field under __Settings->oopspam Anti-Spam__ on your WordPress Admin Dashboard.
 
-    > ℹ️ Make sure to select OOPSpam Dashboard on the setting page
+    > ℹ️ Make sure to select oopspam Dashboard on the setting page
 
-2. If you have Beaver Builder Pro installed then a special section will appear on the OOPSpam Anti-Spam plugin's settings page.
+2. If you have Beaver Builder Pro installed then a special section will appear on the oopspam Anti-Spam plugin's settings page.
 
-    ![OOPSpam Anti-Spam WordPress Plugin Settings](/blog/assets/posts/beaver/oopspam-bb-settings.png "OOPSpam Anti-Spam WordPress Plugin Settings")
+    ![oopspam Anti-Spam WordPress Plugin Settings](/blog/assets/posts/beaver/oopspam-bb-settings.png "oopspam Anti-Spam WordPress Plugin Settings")
 
-3. On this page, you need to activate the spam filter for Beaver Builder Forms by checking the **Activate Spam Protection** checkbox. You don't have to do anything on your form. Once you activate spam protection on the OOPSpam plugin settings, you are good to go.
+3. On this page, you need to activate the spam filter for Beaver Builder Forms by checking the **Activate Spam Protection** checkbox. You don't have to do anything on your form. Once you activate spam protection on the oopspam plugin settings, you are good to go.
 
 
 <center>
-<img loading="lazy"  width="350" alt="OOPSpam detected spam on Beaver Builder Contact Form" src="/blog/assets/posts/beaver/bb-spam-detected.png">
+<img loading="lazy"  width="350" alt="oopspam detected spam on Beaver Builder Contact Form" src="/blog/assets/posts/beaver/bb-spam-detected.png">
 </center>
 <br/>
 

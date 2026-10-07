@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Stop Spam on Elementor Forms Using Make and OOPSpam
+title: Stop Spam on Elementor Forms Using Make and oopspam
 date: 2024-10-01
 last_modified_at: 2024-10-09T16:15:00.000Z
 author: chazie
 image: /assets/posts/meta-integration.png
-description: Learn how to stop spam on Elementor forms using OOPSpam and Make.
+description: Learn how to stop spam on Elementor forms using oopspam and Make.
   Follow this guide to automate spam detection and improve form submission
   management.
 tags:
@@ -17,15 +17,15 @@ tags:
 </center>
 <br/>
 
-Managing a WordPress site with Elementor forms often means dealing with spam submissions that clutter your inbox and take up your time, making it harder to focus on real leads. To solve this, we’ll automate spam detection for **Elementor forms** using [**OOPSpam**](https://www.oopspam.com/) and [**Make**](https://www.make.com/en), helping you streamline how form submissions are handled.
+Managing a WordPress site with Elementor forms often means dealing with spam submissions that clutter your inbox and take up your time, making it harder to focus on real leads. To solve this, we’ll automate spam detection for **Elementor forms** using [**oopspam**](https://www.oopspam.com/) and [**Make**](https://www.make.com/en), helping you streamline how form submissions are handled.
 
-This guide will walk you through setting up OOPSpam’s Make App to block spam efficiently. If you prefer a simpler option, OOPSpam also offers a [WordPress plugin to block spam](https://www.oopspam.com/blog/spam-protection-for-elementor-forms#oopspam-wordpress-plugin) without using Make.
+This guide will walk you through setting up oopspam’s Make App to block spam efficiently. If you prefer a simpler option, oopspam also offers a [WordPress plugin to block spam](https://www.oopspam.com/blog/spam-protection-for-elementor-forms#oopspam-wordpress-plugin) without using Make.
 
 ### Why You Need to Stop Spam Before It Starts
 
 Spam is more than just an annoyance—it can have real consequences. Every fake form submission wastes valuable time filtering out nonsense from genuine leads. If you're running email marketing or lead-gen campaigns, spam submissions can also skew your analytics, making it harder to measure real results.
 
-**OOPSpam** offers advanced spam filtering with an AI-based system designed to learn and adapt over time, ensuring that most spam never even reaches your inbox. When combined with automation via [Make’s integration](https://help.oopspam.com/other-integrations/make/), it creates a reliable and efficient solution.
+**oopspam** offers advanced spam filtering with an AI-based system designed to learn and adapt over time, ensuring that most spam never even reaches your inbox. When combined with automation via [Make’s integration](https://help.oopspam.com/other-integrations/make/), it creates a reliable and efficient solution.
 
 Let’s dive into how to set this up from scratch.
 
@@ -59,7 +59,7 @@ Log into the WordPress dashboard and go to **Plugins > Add New.** First, install
 
 **Note:** *To use Elementor Forms, the Pro version of Elementor is required, but you must install the free Elementor plugin first.*
 
-While this guide focuses on using OOPSpam’s Make App to stop spam, you can also use the [OOPSpam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/) for a simpler setup. The plugin is available in the WordPress directory.
+While this guide focuses on using oopspam’s Make App to stop spam, you can also use the [oopspam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/) for a simpler setup. The plugin is available in the WordPress directory.
 
 ### Creating the Elementor Form
 
@@ -75,9 +75,9 @@ Drag the Form widget onto the page and customize it to include fields for **Name
 
 Publish the page to start receiving form submissions.
 
-## Setting Up Accounts on Make and OOPSpam
+## Setting Up Accounts on Make and oopspam
 
-Before setting up the automation, ensure you have accounts on both Make and OOPSpam. The process is quick and easy.
+Before setting up the automation, ensure you have accounts on both Make and oopspam. The process is quick and easy.
 
 ### Creating an Account on Make
 
@@ -85,13 +85,13 @@ Before setting up the automation, ensure you have accounts on both Make and OOPS
 
 Go to [Make’s website](https://make.com/) and click on **Sign Up.** Enter your email, create a password, verify your email address, and you’ll be directed to the Make dashboard.
 
-### Creating an Account on OOPSpam
+### Creating an Account on oopspam
 
-![OOPSpam Dashboard](/blog/assets/posts/elementor-make/oopspam-dashboard.png "OOPSpam Dashboard")
+![oopspam Dashboard](/blog/assets/posts/elementor-make/oopspam-dashboard.png "oopspam Dashboard")
 
-Go to [OOPSpam’s website](https://www.oopspam.com/), click **Sign Up**, fill in your details, and log in to the dashboard.
+Go to [oopspam’s website](https://www.oopspam.com/), click **Sign Up**, fill in your details, and log in to the dashboard.
 
-Click on **Copy** under **Your API Key** to copy your OOPSpam API key.
+Click on **Copy** under **Your API Key** to copy your oopspam API key.
 
 ## Creating the Automation in Make
 
@@ -109,13 +109,13 @@ In Make, click **Create a new scenario.** Add a **Webhook** module. Make will ge
 
 Copy the Webhook URL from Make and paste it into the Elementor form settings under **Actions After Submit \> Webhook.** Now, every time the form is submitted, the form data is sent directly to Make.
 
-## Integrating OOPSpam with Make
+## Integrating oopspam with Make
 
-With the form data flowing into Make, the next step is to integrate OOPSpam to check for spam.
+With the form data flowing into Make, the next step is to integrate oopspam to check for spam.
 
-In the Make scenario, click the **plus \+** button to add a new module. Search for **OOPSpam Anti-Spam**, select **Check for Spam**, and create a connection using your OOPSpam API key.
+In the Make scenario, click the **plus \+** button to add a new module. Search for **oopspam Anti-Spam**, select **Check for Spam**, and create a connection using your oopspam API key.
 
-![Make OOPSpam Connection](/blog/assets/posts/elementor-make/oopspam-make.png "Make OOPSpam Connection")
+![Make oopspam Connection](/blog/assets/posts/elementor-make/oopspam-make.png "Make oopspam Connection")
 
 Map the form fields:
 
@@ -123,21 +123,21 @@ Map the form fields:
 
 * **Email**: Map this to the **Email** field.
 
-![Make OOPSpam mapping](/blog/assets/posts/elementor-make/oopspam-mapping.png "Make OOPSpam mapping")
+![Make oopspam mapping](/blog/assets/posts/elementor-make/oopspam-mapping.png "Make oopspam mapping")
 
-**Note:** *If an IP address field is available, map it for better spam detection. OOPSpam also helps block disposable emails, filter messages by language, and even limit submissions by country for extra protection.*
+**Note:** *If an IP address field is available, map it for better spam detection. oopspam also helps block disposable emails, filter messages by language, and even limit submissions by country for extra protection.*
 
 More advanced configurations of spam protection in Elementor forms are available through features such as [blocking specific users](https://www.oopspam.com/blog/elementor-forms-block-user) directly within forms.
 
 ## Handling Spam and Legitimate Submissions
 
-With OOPSpam integrated and returning a spam score, it’s time to set up conditions for spam and legitimate submissions.
+With oopspam integrated and returning a spam score, it’s time to set up conditions for spam and legitimate submissions.
 
 ### Adding a Router
 
 ![Router in Make](/blog/assets/posts/elementor-make/make-elementor-oopspam.png "Router in Make")
 
-[Add a **Router** module](https://www.make.com/en/help/modules/router#adding-a-router-to-a-scenario) after the OOPSpam Anti-Spam module. This creates two separate paths: one for spam submissions and one for legitimate submissions.
+[Add a **Router** module](https://www.make.com/en/help/modules/router#adding-a-router-to-a-scenario) after the oopspam Anti-Spam module. This creates two separate paths: one for spam submissions and one for legitimate submissions.
 
 #### Handling Spam Submissions
 
@@ -169,6 +169,6 @@ In Make, click **Run Once** to manually trigger the automation and review the re
 
 ## Wrapping Up
 
-Following these steps, you can set up an automated system to keep spam out of your Elementor forms. OOPSpam handles spam detection, while Make automates the process, saving you hours of manual filtering.
+Following these steps, you can set up an automated system to keep spam out of your Elementor forms. oopspam handles spam detection, while Make automates the process, saving you hours of manual filtering.
 
-This setup offers reliable spam prevention with the flexibility to customize how submissions are handled. We hope this guide helps you set up an effective spam prevention system using OOPSpam and Make.
+This setup offers reliable spam prevention with the flexibility to customize how submissions are handled. We hope this guide helps you set up an effective spam prevention system using oopspam and Make.
