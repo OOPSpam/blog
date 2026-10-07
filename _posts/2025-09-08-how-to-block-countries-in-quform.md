@@ -1,7 +1,8 @@
 ---
 layout: post
 title: How to block countries in QuForm?
-date: 2026-01-06T11:36:00.000+08:00
+date: 2025-09-08T02:15:00.000+08:00
+last_modified_at: 2026-01-06T11:36:00.000+08:00
 author: chazie
 image: /blog/assets/posts/quform_header.png
 description: QuForm doesn’t include country blocking by default. Use OOPSpam to

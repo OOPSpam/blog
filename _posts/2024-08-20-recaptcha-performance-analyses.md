@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  "Does reCAPTCHA slow down your website?"
+date: 2022-10-13
+last_modified_at: 2024-08-20
 author: onar
 image: /assets/posts/recaptcha/recaptcha-meta.png
 tags: [captcha, contact_form]

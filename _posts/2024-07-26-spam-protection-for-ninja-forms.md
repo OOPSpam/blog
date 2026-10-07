@@ -1,7 +1,8 @@
 ---
 layout: post
 title: 4 ways to protect your Ninja Forms from spam
-date: 2026-05-22T02:02:00.000+08:00
+date: 2024-07-26
+last_modified_at: 2026-05-22T02:02:00.000+08:00
 author: onar
 image: /assets/nj-oopspam-wordpress-plugin.jpg
 description: Learn how to add spam protection to Ninja Forms with these 4

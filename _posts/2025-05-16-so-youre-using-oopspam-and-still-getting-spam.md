@@ -1,7 +1,8 @@
 ---
 layout: post
 title: So, you're using OOPSpam and still getting spam?
-date: 2026-07-30T11:25:00.000+04:00
+date: 2025-05-16T16:43:00.000Z
+last_modified_at: 2026-07-30T11:25:00.000+04:00
 author: onar
 image: /assets/posts/header-oopspam.png
 description: Learn how to make the most of the OOPSpam features, such as

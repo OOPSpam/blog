@@ -15,7 +15,8 @@ collections:
     fields:
       - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'post' }
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime', hint: "Set once, when the post is first published. Don't change it when you update a post." }
+      - { label: 'Last Updated', name: 'last_modified_at', widget: 'datetime', required: false, hint: "Filled in automatically each time you save changes to a published post. Shown as 'Updated' on the post and sent to Google." }
       - {
         label: 'Author',
         name: 'author',

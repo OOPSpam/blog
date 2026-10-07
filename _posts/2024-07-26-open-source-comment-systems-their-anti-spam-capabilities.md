@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  "3 top open-source comment systems and their anti-spam capabilities"
+date: 2019-11-24
+last_modified_at: 2024-07-26
 author: onar
 image: /assets/open-source-comment-systems.png
 tags: [comment, spam]

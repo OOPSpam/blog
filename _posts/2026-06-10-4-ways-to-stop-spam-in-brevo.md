@@ -1,7 +1,8 @@
 ---
 layout: post
 title: 4 Ways to Stop Spam in Brevo
-date: 2026-09-22T11:56:00.000+04:00
+date: 2026-06-10T14:46:00.000+08:00
+last_modified_at: 2026-09-22T11:56:00.000+04:00
 author: chazie
 image: /blog/assets/posts/email_stopspam_brevo.jpg
 description: "Learn 4 effective ways to stop spam in Brevo, improve email

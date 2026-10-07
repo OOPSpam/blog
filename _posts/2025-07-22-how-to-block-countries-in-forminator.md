@@ -1,7 +1,8 @@
 ---
 layout: post
 title: How to block countries in Forminator?
-date: 2026-01-06T11:36:00.000+08:00
+date: 2025-07-22T11:38:00.000+08:00
+last_modified_at: 2026-01-06T11:36:00.000+08:00
 author: chazie
 image: /blog/assets/posts/header_forminator.jpg
 description: Forminator can’t block countries by default, use OOPSpam for

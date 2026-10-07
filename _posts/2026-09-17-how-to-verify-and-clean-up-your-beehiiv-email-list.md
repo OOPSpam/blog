@@ -1,7 +1,8 @@
 ---
 layout: post
 title: How to verify and clean up your beehiiv email list?
-date: 2026-09-22T12:06:00.000+04:00
+date: 2026-09-17
+last_modified_at: 2026-09-22T12:06:00.000+04:00
 author: chazie
 image: /blog/assets/posts/email_list_beehiiv.jpg
 description: "Learn how to verify and clean your beehiiv email list with OOPSpam

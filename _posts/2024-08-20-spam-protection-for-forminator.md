@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  "Securing Your Forminator Contact Forms: Proven Tactics for Spam Prevention"
+date: 2023-05-22
+last_modified_at: 2024-08-20
 author: onar
 image: /assets/posts/forminator/forminator-meta.png
 tags: [WordPress, contact_form, forminator]

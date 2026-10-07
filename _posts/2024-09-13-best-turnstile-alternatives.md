@@ -1,7 +1,8 @@
 ---
 layout: post
 title: The Best Turnstile Alternatives & Competitors in 2026, Compared
-date: 2026-01-22T11:13:00.000Z
+date: 2024-09-13
+last_modified_at: 2026-01-22T11:13:00.000Z
 author: onar
 image: /assets/posts/social-media-meta.png
 description: "1. OOPSpam Founded:  2019 Similar to:  Turnstile, hCAPTCHA.

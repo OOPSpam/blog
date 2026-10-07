@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  "Does hCAPTCHA slow down your website?"
+date: 2022-10-27
+last_modified_at: 2024-09-13
 author: onar
 image: /assets/posts/hcaptcha/hcaptcha-meta.png
 tags: [captcha, contact_form]

@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  "3 ways to protect your Kadence Form Block from spam"
+date: 2023-02-24
+last_modified_at: 2024-08-20
 author: onar
 image: /assets/posts/kadence/kb-meta-image.png
 tags: [WordPress, contact_form, kadence]

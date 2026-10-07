@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  "Building Accessible Forms: 6 Tips"
+date: 2023-10-31
+last_modified_at: 2024-08-20
 author: onar
 image: /assets/posts/accessible-form/meta.png
 tags: [captcha, contact_form, accessible]

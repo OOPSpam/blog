@@ -3,7 +3,8 @@ preview: /posts/best-wp-form/WordpressForms.png
 layout: post
 title: The 8 Best WordPress Form Plugins for Accessibility, Performance and Spam
   Protection in 2026
-date: 2026-07-28T21:17:00.000+08:00
+date: 2024-01-22
+last_modified_at: 2026-07-28T21:17:00.000+08:00
 author: onar
 image: /blog/assets/posts/wordpressforms.png
 description: We’ve been working with WordPress form builder plugins for over

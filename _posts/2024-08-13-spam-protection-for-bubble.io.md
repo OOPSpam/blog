@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Spam protection for Bubble.io
-date: 2026-04-23T12:50:00.000+09:00
+date: 2021-12-10
+last_modified_at: 2026-04-23T12:50:00.000+09:00
 author: onar
 image: /assets/bubble_oopspam.png
 description: Learn how to add spam protection to your Bubble app forms.

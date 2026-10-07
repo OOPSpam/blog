@@ -1,7 +1,8 @@
 ---
 layout: post
 title: 5 Ways to Stop Spam on WPDiscuz Comments
-date: 2026-03-24T21:55:00.000+08:00
+date: 2023-05-24
+last_modified_at: 2026-03-24T21:55:00.000+08:00
 author: chazie
 image: /blog/assets/posts/header_wpdiscuz.png
 description: Learn 5 effective ways to protect WPDiscuz from spam using built-in

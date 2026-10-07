@@ -1,7 +1,8 @@
 ---
 layout: post
 title: 5 effective ways to protect your Formidable Forms from spam
-date: 2026-05-22T01:55:00.000+08:00
+date: 2022-05-20
+last_modified_at: 2026-05-22T01:55:00.000+08:00
 author: onar
 image: /assets/posts/formidable-forms/twitterCard.png
 description: Learn how to add spam protection to Formidable Forms with these 5

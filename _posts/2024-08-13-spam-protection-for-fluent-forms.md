@@ -1,7 +1,8 @@
 ---
 layout: post
 title: 4 ways to protect your Fluent Forms from spam
-date: 2026-05-22T01:58:00.000+08:00
+date: 2022-03-09
+last_modified_at: 2026-05-22T01:58:00.000+08:00
 author: onar
 image: /assets/posts/social-media-meta.png
 description: Learn how to add spam protection to Fluent Forms with these 4

@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  "4 Ways to Stop Fake Account Sign-Ups"
+date: 2023-10-26
+last_modified_at: 2024-08-20
 author: onar
 image: /assets/posts/spam-signups/meta.png
 tags: [signup, spam]

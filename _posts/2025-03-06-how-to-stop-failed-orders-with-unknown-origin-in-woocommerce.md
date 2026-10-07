@@ -1,7 +1,8 @@
 ---
 layout: post
 title: How to Stop Failed Orders with Unknown Origin in WooCommerce
-date: 2025-09-22T17:37:00.000-05:00
+date: 2025-03-06T05:06:00.000Z
+last_modified_at: 2025-09-22T17:37:00.000-05:00
 author: chazie
 image: /assets/posts/stop-failed-orders-with-unknown-origin-in-woocommerce.png
 description: Stop failed WooCommerce orders with "Unknown" origin caused by card

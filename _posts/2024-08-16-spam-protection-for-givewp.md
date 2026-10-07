@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  "4 ways to protect your GiveWP Donation Forms from spam"
+date: 2022-06-26
+last_modified_at: 2024-08-16
 author: onar
 image: /assets/posts/give/give-meta.png
 tags: [WordPress, givewp, "card_testing"]

@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  "How to Remove the 'Deceptive Site Ahead' Browser Warning"
+date: 2023-10-19
+last_modified_at: 2024-09-13
 author: onar
 image: /assets/posts/deceptive-site/sm.png
 tags: []

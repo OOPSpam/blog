@@ -2,7 +2,8 @@
 layout: post
 title: "Introducing Context-Aware Spam Detection: Now evaluating messages
   against your website's purpose"
-date: 2025-11-07T13:53:00.000-06:00
+date: 2025-05-02T16:24:00.000Z
+last_modified_at: 2025-11-07T13:53:00.000-06:00
 author: onar
 image: /assets/posts/header_contextual.png
 description: Introducing Contextual Spam Detection. Learn how to use the OOPSpam

@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Stop spam on Netlify Forms using Zapier and OOPSpam
-date: 2026-05-22T02:33:00.000+08:00
+date: 2023-10-21
+last_modified_at: 2026-05-22T02:33:00.000+08:00
 author: onar
 image: /assets/posts/social-media-meta.png
 description: Learn how to add spam protection to your Netlify Forms without reCAPTCHA

@@ -1,7 +1,8 @@
 ---
 layout: post
 title: How to block countries in Gravity Forms?
-date: 2026-01-06T11:36:00.000+08:00
+date: 2025-08-01T00:29:00.000+08:00
+last_modified_at: 2026-01-06T11:36:00.000+08:00
 author: chazie
 image: /blog/assets/posts/header_gravityforms.jpg
 description: Gravity Forms lacks native country blocking, use OOPSpam for

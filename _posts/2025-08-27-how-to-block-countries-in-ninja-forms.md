@@ -1,7 +1,8 @@
 ---
 layout: post
 title: How to block countries in Ninja Forms?
-date: 2026-01-06T11:36:00.000+08:00
+date: 2025-08-26T22:13:00.000+08:00
+last_modified_at: 2026-01-06T11:36:00.000+08:00
 author: chazie
 image: /blog/assets/posts/ninaj_header.png
 description: Ninja Forms doesn’t block countries by default, use OOPSpam for

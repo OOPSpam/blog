@@ -1,7 +1,8 @@
 ---
 layout: post
 title: How to block countries in Bricks Forms?
-date: 2026-01-06T11:36:00.000+08:00
+date: 2025-07-30T10:15:00.000+08:00
+last_modified_at: 2026-01-06T11:36:00.000+08:00
 author: chazie
 image: /blog/assets/posts/headr_bricks.jpg
 description: Bricks Forms lacks country blocking, but OOPSpam adds advanced

@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  "Building a complete contact form with PHP & HTML"
+date: 2022-03-30
+last_modified_at: 2024-08-13
 author: onar
 image: /assets/posts/contact-form-with-PHP/complete-contact-form-with-PHP.png
 tags: [PHP, HTML, spam, contact_form]

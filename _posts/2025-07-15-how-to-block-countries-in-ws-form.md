@@ -1,7 +1,8 @@
 ---
 layout: post
 title: How to block countries in WS Form?
-date: 2026-01-06T11:36:00.000+08:00
+date: 2025-07-15T10:42:00.000+08:00
+last_modified_at: 2026-01-06T11:36:00.000+08:00
 author: chazie
 image: /blog/assets/posts/header_wsform.jpg
 description: WS Form can’t block countries by default, but OOPSpam adds advanced

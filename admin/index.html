@@ -9,5 +9,16 @@
   <body>
     <!-- Include the script that builds the page and powers Decap CMS -->
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+    <script>
+      // When an existing blog post is saved, record the save time as "Last Updated" and keep the
+      // original Publish Date. New posts are left alone, so they only get a Publish Date.
+      CMS.registerEventListener({
+        name: 'preSave',
+        handler: ({ entry }) => {
+          if (entry.get('collection') !== 'blog' || entry.get('newRecord')) return;
+          return entry.get('data').set('last_modified_at', new Date().toISOString());
+        },
+      });
+    </script>
   </body>
 </html>

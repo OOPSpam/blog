@@ -1,7 +1,8 @@
 ---
 layout: post
 title: How to verify and clean up your ActiveCampaign email list?
-date: 2026-09-22T12:03:00.000+04:00
+date: 2026-05-01T16:01:00.000+08:00
+last_modified_at: 2026-09-22T12:03:00.000+04:00
 author: chazie
 image: /blog/assets/posts/email_list_activecampaign.jpg
 description: Clean your ActiveCampaign email list with OOPSpam. Scan, detect

@@ -23,8 +23,16 @@ layout: default
       <div style="display: inline-flex; align-items: end; margin: 1em; flex-direction: column;">
         <p style="color:#555; margin-bottom: 0%;">{% include reading-time.html %}</p>
         {% if page.date %}
-       <time  datetime="{{ page.date }}">{{ page.date | date: "%b %d, %Y" }}</time>
+       <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%b %d, %Y" }}</time>
       {% endif %}
+        {% comment %} "Updated" line: set last_modified_at in the post's front matter (the CMS fills it in when you edit a published post). {% endcomment %}
+        {% if page.last_modified_at %}
+          {% assign published_day = page.date | date: "%Y%m%d" %}
+          {% assign updated_day = page.last_modified_at | date: "%Y%m%d" %}
+          {% if updated_day > published_day %}
+       <span style="color:#555;">Updated <time datetime="{{ page.last_modified_at | date_to_xmlschema }}">{{ page.last_modified_at | date: "%b %d, %Y" }}</time></span>
+          {% endif %}
+        {% endif %}
   
       
       </div>
