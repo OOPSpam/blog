@@ -2,12 +2,10 @@
 layout: post
 title: Common Cloudflare Turnstile Errors in WordPress Forms (And How to Fix Them)
 date: 2025-05-13T03:05:00.000Z
-last_modified_at: 2026-10-05T03:05:00.000Z
+last_modified_at: 2026-10-08T12:00:00.000+04:00
 author: chazie
 image: /assets/posts/header-turnstile-errors.png
-description: Fix common Cloudflare Turnstile errors in WordPress forms. Learn
-  causes, solutions, and how to keep your site spam-free with better Turnstile
-  alternatives.
+description: "Fix Cloudflare Turnstile errors in WordPress forms: 110200 domain not authorized, invalid sitekey, timeouts, 106010, 300030, 600010 and missing tokens."
 tags:
   - Cloudflare Turnstile
   - WordPress Forms
@@ -27,14 +25,22 @@ tags:
     <li><a href="#1-cloudflare-turnstile-verification-failed-please-try-again-later">Cloudflare Turnstile verification failed, please try again later</a></li>
     <li><a href="#2-turnstile-widget-not-displaying-on-form">Turnstile widget not displaying on form</a></li>
     <li><a href="#3-form-submission-blocked-even-after-passing-turnstile">Form submission blocked even after passing Turnstile</a></li>
-    <li><a href="#4-invalid-sitekey-or-invalid-domain-errors">Invalid sitekey or invalid domain errors</a></li>
-    <li><a href="#5-invalid-action-or-invalid-cdata">Invalid action or invalid cData errors</a></li>
-    <li><a href="#6-turnstile-challenge-timeout">Turnstile challenge timeout</a></li>
-    <li><a href="#7-cloudflare-turnstile-error-code-106010">Cloudflare Turnstile error code 106010</a></li>
+    <li><a href="#error-110200-domain-not-authorized">Error 110200: Domain not authorized</a></li>
+    <li><a href="#error-110100-invalid-sitekey">Error 110100 / 400020: Invalid sitekey</a></li>
+    <li><a href="#error-110110-sitekey-not-found">Error 110110: Sitekey not found</a></li>
+    <li><a href="#error-400070-sitekey-disabled">Error 400070: Sitekey disabled</a></li>
+    <li><a href="#error-400021-sitekey-domain-mismatch">Error 400021: Sitekey domain mismatch</a></li>
+    <li><a href="#error-110600-challenge-timed-out">Error 110600: Challenge timed out</a></li>
+    <li><a href="#error-110620-interaction-timed-out">Error 110620: Interaction timed out</a></li>
+    <li><a href="#error-200100-clock-or-cache-problem">Error 200100: Clock or cache problem</a></li>
+    <li><a href="#error-200500-iframe-load-error">Error 200500: Iframe load error</a></li>
+    <li><a href="#error-110420-invalid-action">Error 110420: Invalid action</a></li>
+    <li><a href="#error-110430-invalid-cdata">Error 110430: Invalid cData</a></li>
+    <li><a href="#7-cloudflare-turnstile-error-code-106010">Error 106010</a></li>
     <li><a href="#8-turnstile-token-missing">Turnstile token missing</a></li>
-    <li><a href="#9-client-side-execution-errors-300010-300030-300031">Client-side execution errors (300010, 300030, 300031)</a></li>
-    <li><a href="#10-challenge-execution-failure-600010">Challenge execution failure (600010)</a></li>
-    <li><a href="#technical-turnstile-error-codes-and-what-they-mean">Technical Turnstile error codes and what they mean</a></li>
+    <li><a href="#9-client-side-execution-errors-300010-300030-300031">Errors 300010, 300030, 300031</a></li>
+    <li><a href="#10-challenge-execution-failure-600010">Error 600010</a></li>
+    <li><a href="#technical-turnstile-error-codes-and-what-they-mean">Turnstile error codes and what they mean</a></li>
     <li><a href="#use-oopspam-for-advanced-spam-filtering">Use oopspam for advanced spam filtering</a></li>
     <li><a href="#final-thoughts">Final thoughts</a></li>
   </ul>
@@ -105,57 +111,166 @@ This issue can happen with any WordPress form builder, but we’ve seen the most
 * Check whether the plugin supports Turnstile officially, or use the Simple Cloudflare Turnstile plugin to manage validation
 * Manually add token verification if using a custom form
 
-### **4. "Invalid sitekey" or "Invalid domain" Errors**
+<span id="4-invalid-sitekey-or-invalid-domain-errors"></span>
 
-!["Invalid domain" Cloudflare Turnstile Errors](/blog/assets/posts/invalid-domain-errors.png "\\\\\\\\"Invalid domain\\\\\\\\" Errors")
+### **4. Error 110200: "Domain not authorized"** {#error-110200-domain-not-authorized}
 
-These errors are typically due to incorrect settings in your Cloudflare dashboard.
+!["Invalid domain" Cloudflare Turnstile Errors](/blog/assets/posts/invalid-domain-errors.png "Error 110200: Domain not authorized")
 
-#### **Error Codes:**
+#### Error codes:
 
-* `110100`: Invalid sitekey
-* `110200`: Unknown domain
-
-#### **How to Fix:**
-
-* Visit your Cloudflare Turnstile dashboard and verify:
-
-  * The correct sitekey is being used
-  * Your domain is listed under **Allowed Domains**
-
-### **5. "Invalid action" or "Invalid cData"**
-
-These are client-side errors, commonly triggered by incorrectly formatted inputs.
-
-#### **Error Codes:**
-
-* `110420`: Invalid action
-* `110430`: Invalid cData
-
-#### **How to Fix:**
-
-* Make sure the action and any `cData` parameters in your widget script follow the required format
-* Use alphanumeric characters and avoid special symbols
-* Follow Turnstile’s documentation for proper configuration
-
-### **6. Turnstile Challenge Timeout**
-
-![Turnstile Challenge Timeout](/blog/assets/posts/turnstile-challenge-timeout.png "Turnstile Challenge Timeout")
-
-#### **Error Codes:**
-
-* `110600`, `110620`
+* `110200`: Domain not authorized. In the browser console it often reads `unknown domain: Domain not allowed`, with an HTTP 400 response.
 
 #### **Cause:**
 
-These errors occur when a user takes too long to solve the challenge or if their device’s system clock is out of sync. An outdated widget or time discrepancy can cause the verification to expire.
+Turnstile only runs on hostnames you've added to the widget. The page showing your form is on a hostname the widget doesn't list. Common reasons in WordPress:
 
-#### **How to Fix:**
+* You added only `www.example.com`, but the form loads on `example.com`. Adding the root domain covers `www` and every other subdomain; adding `www` alone does not cover the root.
+* The form runs on a staging site, a new subdomain, a temporary hosting URL (like a `.vercel.app` or host-provided domain) or `localhost`.
+* The site key in your plugin belongs to a different widget or Cloudflare account than the one where you added the domain.
+* The hostname was removed from the widget's list.
 
-* Ask the user to refresh the page and retry
-* Ensure the system clock is synced correctly
+#### **How to fix:**
 
-### **7. Cloudflare Turnstile error code `106010`**
+1. In the Cloudflare dashboard, open **Turnstile**, select the widget whose site key your plugin uses, then go to **Settings > Hostname Management** and select **Add Hostnames**.
+2. Add the root domain (for example `example.com`). Enter the hostname only: no `https://`, port, path or wildcard.
+3. Save, then reload the form page with the cache cleared.
+4. If the hostname is already listed and the error continues, remove it and add it again. That fixed it for [this Cloudflare community user](https://community.cloudflare.com/t/new-hostname-not-verified-returns-110200/800804).
+5. For `localhost` or local development, use Cloudflare's [test site keys](https://developers.cloudflare.com/turnstile/troubleshooting/testing/), which work on any domain, instead of adding local domains to your production widget.
+
+Free Cloudflare plans allow up to 10 hostnames per widget, so if you run many sites, use one widget per group of sites.
+
+### **5. Error 110100 / 400020: "Invalid sitekey"** {#error-110100-invalid-sitekey}
+
+#### Error codes:
+
+* `110100`, `400020`: Invalid sitekey
+
+#### **How to fix:**
+
+* Copy the **Site Key** again from the widget in your Cloudflare dashboard and paste it into your form or Turnstile plugin settings. Watch for extra spaces.
+* Make sure you didn't paste the **Secret Key** into the Site Key field.
+
+### **6. Error 110110: "Sitekey not found"** {#error-110110-sitekey-not-found}
+
+#### Error codes:
+
+* `110110`: Sitekey not found
+
+#### **How to fix:**
+
+* Check the site key for typos.
+* Confirm the widget still exists in your Cloudflare dashboard. If someone deleted it, create a new widget and update both keys in WordPress.
+
+### **7. Error 400070: "Sitekey disabled"** {#error-400070-sitekey-disabled}
+
+#### Error codes:
+
+* `400070`: Sitekey disabled
+
+#### **How to fix:**
+
+* Open the widget in your Cloudflare dashboard and check whether it's disabled. Re-enable it, or create a new widget and update the keys in WordPress.
+
+### **8. Error 400021: "Sitekey domain mismatch"** {#error-400021-sitekey-domain-mismatch}
+
+#### Error codes:
+
+* `400021`: Sitekey domain mismatch
+
+#### **How to fix:**
+
+* Cloudflare describes this as the site key's region not matching the domain in the Turnstile script tag. Load the script exactly as shown in Cloudflare's [client-side rendering guide](https://developers.cloudflare.com/turnstile/get-started/client-side-rendering/), and check that a plugin or CDN isn't rewriting the script URL.
+
+<span id="6-turnstile-challenge-timeout"></span>
+
+### **9. Error 110600: "Challenge timed out"** {#error-110600-challenge-timed-out}
+
+![Turnstile Challenge Timeout](/blog/assets/posts/turnstile-challenge-timeout.png "Turnstile Challenge Timeout")
+
+#### Error codes:
+
+* `110600`: Challenge timed out
+
+#### **Cause:**
+
+The challenge took too long to complete, or the visitor's device clock is wrong.
+
+#### **How to fix:**
+
+* Ask the visitor to refresh the page and try again.
+* Ask them to check that their device's date and time are set automatically.
+
+### **10. Error 110620: "Interaction timed out"** {#error-110620-interaction-timed-out}
+
+#### Error codes:
+
+* `110620`: Interaction timed out
+
+#### **Cause:**
+
+The visitor didn't interact with the widget in time, for example by leaving the form open in a tab and coming back later.
+
+#### **How to fix:**
+
+* If your form plugin allows custom code, reset the widget with `turnstile.reset()` before the next attempt. Otherwise, a page refresh fixes it.
+
+### **11. Error 200100: "Clock or cache problem"** {#error-200100-clock-or-cache-problem}
+
+#### Error codes:
+
+* `200100`: Clock or cache problem
+
+#### **Cause:**
+
+Either the visitor's clock is wrong, or something between the visitor and Cloudflare cached the challenge. On WordPress, that's usually a page cache or CDN serving an old copy of the form page.
+
+#### **How to fix:**
+
+* Exclude form pages from page caching in plugins like WP Rocket, LiteSpeed Cache or W3 Total Cache, and in your CDN.
+* Purge the cache after changing Turnstile settings.
+* Ask affected visitors to check their device's date and time.
+
+### **12. Error 200500: "Iframe load error"** {#error-200500-iframe-load-error}
+
+#### Error codes:
+
+* `200500`: Iframe load error
+
+#### **Cause:**
+
+The Turnstile iframe couldn't load, usually because `challenges.cloudflare.com` is blocked.
+
+#### **How to fix:**
+
+* Check your Content Security Policy allows `challenges.cloudflare.com` in `script-src` and `frame-src`.
+* Test without ad blockers, privacy extensions, VPNs or corporate firewalls.
+
+<span id="5-invalid-action-or-invalid-cdata"></span>
+
+### **13. Error 110420: "Invalid action"** {#error-110420-invalid-action}
+
+#### Error codes:
+
+* `110420`: Invalid action
+
+#### **How to fix:**
+
+* If your form or plugin sets a Turnstile `action`, keep it short and use only letters, numbers, dashes and underscores.
+
+### **14. Error 110430: "Invalid cData"** {#error-110430-invalid-cdata}
+
+#### Error codes:
+
+* `110430`: Invalid cData
+
+#### **How to fix:**
+
+* Make sure any `cData` value passed to the widget follows the same format: short, letters, numbers, dashes and underscores only.
+
+These two codes aren't in Cloudflare's current [error code table](https://developers.cloudflare.com/turnstile/troubleshooting/client-side-errors/error-codes/), but they still appear in older integrations and forum threads.
+
+### **15. Cloudflare Turnstile error code `106010`** {#7-cloudflare-turnstile-error-code-106010}
 
 ![Cloudflare Turnstile error code 106010](/blog/assets/posts/error-code-106010.png "Cloudflare Turnstile error code 106010")
 
@@ -163,7 +278,7 @@ These errors occur when a user takes too long to solve the challenge or if their
 
 * `106010`
 
-Cloudflare groups Turnstile errors into families. The **`106*`** family is documented as [invalid parameters](https://developers.cloudflare.com/turnstile/troubleshooting/client-side-errors/error-codes/). That aligns with how **`106010`** tends to appear in real implementations, especially when something about the request environment or parameters is not accepted.
+**`106010`** isn't in Cloudflare's current [error code table](https://developers.cloudflare.com/turnstile/troubleshooting/client-side-errors/error-codes/), but it's one of the most searched Turnstile errors. In WordPress it usually appears when something about the page environment or the widget's parameters isn't accepted.
 
 #### **Common WordPress level causes to check**
 
@@ -179,7 +294,7 @@ Cloudflare groups Turnstile errors into families. The **`106*`** family is docum
 * Check DevTools Network and Console for blocked requests or 4xx errors on Turnstile resources.
 * Review CSP rules and allow Cloudflare Turnstile endpoints if you enforce CSP.
 
-### **8. “Turnstile token missing”**
+### **16. “Turnstile token missing”** {#8-turnstile-token-missing}
 
 ![Turnstile token missing](/blog/assets/posts/turnstile-token-missing.png "Turnstile token missing")
 
@@ -199,8 +314,8 @@ Turnstile automatically injects a hidden input named `cf-turnstile-response`insi
 
 #### **How to fix**
 
-* Confirm the widget renders on the page and the hidden `cf-turnstile-response` field exists.[](https://developers.cloudflare.com/turnstile/get-started/client-side-rendering/?utm_source=chatgpt.com)
-* [](https://developers.cloudflare.com/turnstile/get-started/client-side-rendering/?utm_source=chatgpt.com)If the form uses AJAX, confirm the token is included in the AJAX payload.
+* Confirm the widget renders on the page and the hidden `cf-turnstile-response` field exists.
+* If the form uses AJAX, confirm the token is included in the AJAX payload.
 * Make sure your integration validates the token via **[Siteverify](https://developers.cloudflare.com/turnstile/get-started/server-side-validation/)**, and that the server sends both the token and the secret.
 * Reduce caching or exclude the form page. Also exclude Turnstile scripts from delay and minify.
 * If the form stays on the same page after submission, ensure the Turnstile widget resets and generates a fresh token before another submit.
@@ -217,7 +332,7 @@ Cloudflare documents these Siteverify response errors, which map directly to rea
 
 This error occurs when a form submission reaches the server without a Turnstile response token attached.
 
-### **9. Client-Side Execution Errors (`300010`, `300030`, `300031`)**
+### **17. Client-Side Execution Errors (`300010`, `300030`, `300031`)** {#9-client-side-execution-errors-300010-300030-300031}
 
 ![Client-Side Execution Errors (300010, 300030, 300031)](/blog/assets/posts/execution-errors-300010-300030-300031-.png "Client-Side Execution Errors (300010, 300030, 300031)")
 
@@ -225,7 +340,7 @@ This error occurs when a form submission reaches the server without a Turnstile 
 
 * `300010`, `300030`, `300031`
 
-Cloudflare documents **`300*`** as [client side execution](https://developers.cloudflare.com/turnstile/troubleshooting/client-side-errors/error-codes/#:~:text=Generic%20client%20execution%20error) related errors. In practice, these often show up when the widget cannot complete its front end flow reliably.[ ](https://developers.cloudflare.com/turnstile/troubleshooting/client-side-errors/error-codes/?utm_source=chatgpt.com)
+Cloudflare lists **`300*`** as a [generic challenge failure](https://developers.cloudflare.com/turnstile/troubleshooting/client-side-errors/error-codes/): Turnstile detected bot-like behavior. Real visitors usually hit it when the widget can't complete its front-end flow, because scripts are delayed, blocked or rewritten.
 
 #### **How to fix**
 
@@ -236,7 +351,7 @@ Cloudflare documents **`300*`** as [client side execution](https://developers.cl
 
 Retrying may work temporarily, but persistent errors point to browser or script-loading issues.
 
-### **10. Challenge Execution Failure (`600010`)**
+### **18. Challenge Execution Failure (`600010`)** {#10-challenge-execution-failure-600010}
 
 ![Challenge Execution Failure (600010)](/blog/assets/posts/challenge-execution-failure-600010-.png "Challenge Execution Failure (600010)")
 
@@ -244,7 +359,7 @@ Retrying may work temporarily, but persistent errors point to browser or script-
 
 * `600010`
 
-Cloudflare documents **`600*`** as [challenge execution failures](https://developers.cloudflare.com/turnstile/troubleshooting/client-side-errors/error-codes/#:~:text=Challenge%20execution%20failure). In the Cloudflare community, `600010` is often discussed as a configuration or environment issue that can be influenced by browser state and blockers.[ ](https://developers.cloudflare.com/turnstile/troubleshooting/client-side-errors/error-codes/?utm_source=chatgpt.com)
+Cloudflare also lists **`600*`** as a [generic challenge failure](https://developers.cloudflare.com/turnstile/troubleshooting/client-side-errors/error-codes/): bot-like behavior was detected. In the Cloudflare community, `600010` is often discussed alongside browser state, extensions and network blockers.
 
 #### **How to fix**
 
@@ -257,7 +372,7 @@ This error is expected behavior when Turnstile detects abnormal execution condit
 
 ## **Technical Turnstile Error Codes and What They Mean**
 
-These errors may show up in logs or browser dev tools:
+These are the codes Cloudflare currently documents. They show up in the browser console or in your form plugin's error message:
 
 <style>
   table {
@@ -280,86 +395,89 @@ These errors may show up in logs or browser dev tools:
 <table>
   <thead>
     <tr>
-      <th>Error Code</th>
-      <th>Category</th>
-      <th>Meaning</th>
+      <th>Error code</th>
+      <th>Cloudflare's description</th>
       <th>Retry</th>
       <th>Fix</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>100xxx</td>
-      <td>Initialization</td>
-      <td>Widget failed to start</td>
-      <td>No</td>
-      <td>Refresh page, check scripts</td>
-    </tr>
-    <tr>
-      <td>105xxx</td>
-      <td>API</td>
-      <td>Deprecated API usage</td>
-      <td>No</td>
-      <td>Update plugin or integration</td>
-    </tr>
-    <tr>
-      <td>106010</td>
-      <td>API</td>
-      <td>Unsupported integration</td>
-      <td>No</td>
-      <td>Update or replace plugin</td>
-    </tr>
-    <tr>
       <td>110100</td>
-      <td>Config</td>
       <td>Invalid sitekey</td>
       <td>No</td>
-      <td>Verify site key</td>
+      <td>Copy the site key again from the dashboard</td>
+    </tr>
+    <tr>
+      <td>110110</td>
+      <td>Sitekey not found</td>
+      <td>No</td>
+      <td>Check spelling; confirm the widget exists</td>
     </tr>
     <tr>
       <td>110200</td>
-      <td>Config</td>
-      <td>Unknown domain</td>
+      <td>Domain not authorized</td>
       <td>No</td>
-      <td>Add domain to allowed list</td>
+      <td>Add the domain in Hostname Management</td>
     </tr>
     <tr>
-      <td>110420</td>
-      <td>Client</td>
-      <td>Invalid action</td>
+      <td>110600</td>
+      <td>Challenge timed out</td>
+      <td>Yes</td>
+      <td>Refresh; check the device clock</td>
+    </tr>
+    <tr>
+      <td>110620</td>
+      <td>Interaction timed out</td>
+      <td>Yes</td>
+      <td>Reset the widget with <code>turnstile.reset()</code></td>
+    </tr>
+    <tr>
+      <td>200100</td>
+      <td>Clock or cache problem</td>
       <td>No</td>
-      <td>Fix widget parameters</td>
+      <td>Exclude form pages from cache; check the clock</td>
     </tr>
     <tr>
-      <td>110430</td>
-      <td>Client</td>
-      <td>Invalid cData</td>
+      <td>200500</td>
+      <td>Iframe load error</td>
+      <td>Yes</td>
+      <td>Unblock <code>challenges.cloudflare.com</code></td>
+    </tr>
+    <tr>
+      <td>300*</td>
+      <td>Generic challenge failure</td>
+      <td>Yes</td>
+      <td>Check scripts, extensions, VPNs</td>
+    </tr>
+    <tr>
+      <td>400020</td>
+      <td>Invalid sitekey</td>
       <td>No</td>
-      <td>Use valid alphanumeric data</td>
+      <td>Copy the site key again from the dashboard</td>
     </tr>
     <tr>
-      <td>110600 / 110620</td>
-      <td>Token</td>
-      <td>Timeout or expired</td>
-      <td>Yes</td>
-      <td>Refresh and retry</td>
+      <td>400021</td>
+      <td>Sitekey domain mismatch</td>
+      <td>No</td>
+      <td>Load the script tag exactly as documented</td>
     </tr>
     <tr>
-      <td>300xxx</td>
-      <td>Client</td>
-      <td>Execution error</td>
-      <td>Yes</td>
-      <td>Check browser and JS</td>
+      <td>400070</td>
+      <td>Sitekey disabled</td>
+      <td>No</td>
+      <td>Re-enable the widget or create a new one</td>
     </tr>
     <tr>
-      <td>600010</td>
-      <td>Challenge</td>
-      <td>Execution failure</td>
+      <td>600*</td>
+      <td>Generic challenge failure</td>
       <td>Yes</td>
-      <td>Retry, update browser</td>
+      <td>Check scripts, extensions, VPNs</td>
     </tr>
   </tbody>
 </table>
+
+Source: Cloudflare's [Turnstile error codes](https://developers.cloudflare.com/turnstile/troubleshooting/client-side-errors/error-codes/), checked 8 October 2026. A `*` means the remaining digits vary. Codes like `106010`, `110420` and `110430` aren't in the current table; see their sections above.
 
 ## **Use oopspam for Advanced Spam Filtering**
 
