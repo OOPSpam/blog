@@ -1,13 +1,11 @@
 ---
 layout: post
-title: Blocking Countries from Accessing Your Website Using Cloudflare
+title: "How to Block Countries in Cloudflare (Step by Step)"
 date: 2024-10-31T03:36:00.000Z
-last_modified_at: 2026-01-06T11:36:00.000+08:00
+last_modified_at: 2026-10-12T12:00:00.000+04:00
 author: chazie
 image: /assets/posts/blockcountrieswithcloudflare-2x.webp
-description: Restrict website access by country using Cloudflare. Control spam,
-  enhance security, and manage your site's reach effectively with simple setup
-  steps.
+description: "Block a country in Cloudflare with a custom security rule: the exact steps, the ip.src.country expression, when to block vs challenge, and what VPNs bypass."
 tags:
   - Cloudflare
   - Blocking Country
@@ -23,6 +21,18 @@ This guide explains:[](https://www.cloudflare.com/)
 * How country blocking actually works in Cloudflare today
 * When country blocking makes sense
 * Better alternatives for stopping spam without restricting legitimate users
+
+## Quick answer: how to block a country in Cloudflare
+
+To block a country in Cloudflare, go to **Security → Security rules → Create rule**, set **Field: Country**, **Operator: is in**, pick the countries, choose **Block** (or **Managed Challenge**), and click **Deploy**. The rule takes effect within seconds. Custom rules are available on every plan, and the Free plan includes 5 of them.
+
+If you prefer the expression editor, the same rule looks like this (country codes are ISO 3166-1 two-letter codes):
+
+```
+(ip.src.country in {"RU" "CN"})
+```
+
+To allow only certain countries instead, use **is not in**, for example `(not ip.src.country in {"US" "CA"})`. Keep in mind that VPNs and proxies can change a visitor's apparent country, so country rules reduce unwanted traffic but don't stop a determined spammer.
 
 ## **What “Country Blocking” Really Means in Cloudflare**
 
@@ -92,7 +102,7 @@ To block multiple countries:
 * Add more countries in the value field, or
 * Use multiple conditions joined with **OR**
 
-Behind the scenes, Cloudflare evaluates: `ip.geoip.country`
+Behind the scenes, Cloudflare evaluates the `ip.src.country` field. Older guides show `ip.geoip.country`, which Cloudflare has deprecated in favor of `ip.src.country`.
 
 ### **Step 5: Choose the Action**
 
@@ -129,7 +139,7 @@ If your goal is stopping spam (especially form spam), form-level filtering is us
 
 ## **Alternative: Control Countries and Stop Spam with oopspam**
 
-**[oopspam](<>)** (that’s us 👋) lets you restrict countries where it matters (forms) while also blocking spam using behavioral and contextual detection. Unlike Cloudflare’s site-wide country blocking, oopspam combines country controls with advanced spam filtering, so you don’t have to choose one or the other.
+**[oopspam](https://www.oopspam.com/)** (that’s us 👋) lets you restrict countries where it matters (forms) while also blocking spam using behavioral and contextual detection. Unlike Cloudflare’s site-wide country blocking, oopspam combines country controls with advanced spam filtering, so you don’t have to choose one or the other.
 
 ## **How to Use oopspam for Country Blocking** 
 
@@ -174,6 +184,28 @@ Save your settings once complete.
 * [Logs](https://help.oopspam.com/wordpress/form-entries/) and monitoring for visibility
 
 Your website remains accessible, and only spam submissions are blocked.
+
+## FAQ: blocking countries in Cloudflare
+
+### Can I block countries on the Cloudflare Free plan?
+
+Yes. Country rules are custom security rules, which every plan includes. The Free plan allows 5 custom rules, and one rule can list as many countries as you need.
+
+### How do I block every country except one?
+
+Create a rule with **Field: Country**, **Operator: is not in** and your allowed country, then set the action to **Block**. In the expression editor: `(not ip.src.country in {"US"})`.
+
+### Can I block a country only on my login or contact page?
+
+Yes. Add a second condition joined with **AND**, such as **URI Path** contains `/wp-login.php` or `/contact`. The rest of your site stays open to everyone.
+
+### Will blocking a country hurt my SEO?
+
+Not if you leave search engines' home countries open. Googlebot crawls mostly from US IP addresses, so blocking the United States can drop your pages from Google. Blocking other countries rarely affects search crawling.
+
+### Can visitors bypass Cloudflare country blocking?
+
+Yes. A VPN, proxy or Tor exit node in an allowed country gets through. For forms, combine country rules with VPN and proxy detection, such as [oopspam's country and VPN filtering](https://www.oopspam.com/blog/how-to-block-countries-from-your-website-the-complete-guide).
 
 ## **Final Thoughts**
 

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Common Cloudflare Turnstile Errors in WordPress Forms (And How to Fix Them)
+title: "Cloudflare Turnstile Errors (110200, 600010…) and Fixes"
 date: 2025-05-13T03:05:00.000Z
-last_modified_at: 2026-10-08T12:00:00.000+04:00
+last_modified_at: 2026-10-12T12:00:00.000+04:00
 author: chazie
 image: /assets/posts/header-turnstile-errors.png
 description: "Fix Cloudflare Turnstile errors in WordPress forms: 110200 domain not authorized, invalid sitekey, timeouts, 106010, 300030, 600010 and missing tokens."
@@ -14,6 +14,26 @@ tags:
 
 [Cloudflare Turnstile](https://www.oopspam.com/blog/cloudflare-turnstile) is a user-friendly, privacy-first [CAPTCHA alternative](https://www.oopspam.com/blog/best-captcha-alternatives) that’s becoming popular with WordPress users. But it can run into issues, especially with form plugins. This guide covers common Turnstile errors in WordPress forms and how to fix them fast.
 
+## Quick answer: Turnstile error codes and fixes
+
+Most Cloudflare Turnstile errors in WordPress come down to three things: the site's hostname isn't added to the Turnstile widget, the Site Key or Secret Key is wrong, or caching and script optimization break the widget. Find your error below for the one-line fix, then open the full section for the details.
+
+| Error | What it means | Quick fix |
+|---|---|---|
+| [110200](#error-110200-domain-not-authorized) | Domain not authorized | Add your root domain under **Turnstile > Settings > Hostname Management** |
+| [110100 / 400020](#error-110100-invalid-sitekey) | Invalid sitekey | Copy the Site Key (not the Secret Key) into your plugin again |
+| [110110](#error-110110-sitekey-not-found) | Sitekey not found | Check for typos; create a new widget if the old one was deleted |
+| [400070](#error-400070-sitekey-disabled) | Sitekey disabled | Re-enable the widget in Cloudflare, or create a new one |
+| [400021](#error-400021-sitekey-domain-mismatch) | Sitekey domain mismatch | Load the Turnstile script exactly as Cloudflare documents it |
+| [110600](#error-110600-challenge-timed-out) / [110620](#error-110620-interaction-timed-out) | Challenge or interaction timed out | Refresh the page and check the device's date and time |
+| [200100](#error-200100-clock-or-cache-problem) | Clock or cache problem | Exclude form pages from page caching and your CDN, then purge |
+| [200500](#error-200500-iframe-load-error) | Iframe load error | Allow `challenges.cloudflare.com` in your CSP; test without ad blockers |
+| [106010](#7-cloudflare-turnstile-error-code-106010) | Not in Cloudflare's current table; usually blocked resources | Test in Incognito, then check CSP and script optimization |
+| [300010 / 300030 / 300031](#9-client-side-execution-errors-300010-300030-300031), [600010](#10-challenge-execution-failure-600010) | Generic challenge failure | Stop minifying or delaying Turnstile scripts; test without extensions or VPN |
+| ["Verification failed, please try again later"](#1-cloudflare-turnstile-verification-failed-please-try-again-later) | Wrong keys or a cached form | Re-check both keys and exclude the form page from cache |
+| ["Turnstile token missing"](#8-turnstile-token-missing) | No `cf-turnstile-response` reached the server | Make sure the widget renders and AJAX forms send the token |
+| ["Invalid Turnstile captcha response" / "Incorrect or missing Turnstile token"](#8-turnstile-token-missing) | The token was missing, expired or already used | Exclude the form page from cache and reset the widget before each new submit |
+
 > 💡 **Tired of fixing Turnstile errors?** oopspam stops spam on your server, with no widget for visitors, no challenge script, and no tokens to expire. See our [Cloudflare Turnstile alternative for WordPress](https://www.oopspam.com/turnstile-alternative).
 
 <!-- Quick Links (Table of Contents) for: Common Cloudflare Turnstile Errors in WordPress Forms -->
@@ -21,6 +41,7 @@ tags:
 <nav class="turnstile-quick-links" aria-label="Quick links">
   <p><strong>Quick Links</strong></p>
   <ul>
+    <li><a href="#quick-answer-turnstile-error-codes-and-fixes">Quick answer: error codes and fixes</a></li>
     <li><a href="#why-cloudflare-turnstile-errors-happen-in-wordpress">Why Cloudflare Turnstile errors happen in WordPress</a></li>
     <li><a href="#1-cloudflare-turnstile-verification-failed-please-try-again-later">Cloudflare Turnstile verification failed, please try again later</a></li>
     <li><a href="#2-turnstile-widget-not-displaying-on-form">Turnstile widget not displaying on form</a></li>
