@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "Building a complete contact form with PHP & HTML"
+title: "PHP Contact Form with Validation & Spam Protection"
 date: 2022-03-30
-last_modified_at: 2024-08-13
+last_modified_at: 2026-10-12
 author: onar
 image: /assets/posts/contact-form-with-PHP/complete-contact-form-with-PHP.png
 tags: [PHP, HTML, spam, contact_form]
 
-description: "Learn how to build complete contact form with PHP and HTML with this step-by-step tutorial. We will validate, sanitize and check for spam to ensure our form is secure and protected."
+description: "Build a PHP contact form step by step: sanitize and validate input on PHP 8, check the message, IP and email for spam, and send email with PHPMailer."
 # modified: 
 ---
 
@@ -143,20 +143,22 @@ Once submitted, you should see all submitted data displayed in an array format.
 
 ![Contact form submission in PHP](/blog/assets/posts/contact-form-with-PHP/contact-form-submit.gif "Contact form submission in PHP")
 
-We confirmed that the form works. Time to pick every input from [$_POST](https://www.php.net/manual/en/reserved.variables.post.php) and sanitize before moving on. For this, we use [filter_var()](https://www.php.net/manual/en/function.filter-var.php) function, this filter function takes a passed variable name from *$_POST* and returns sanitized value. In our example, we clean up each field one by one but you could alternatively use [filter_var_array()](https://www.php.net/manual/en/function.filter-var-array.php) to remove malicious data at once.
+We confirmed that the form works. Time to pick every input from [$_POST](https://www.php.net/manual/en/reserved.variables.post.php) and sanitize before moving on. For the email we use the [filter_var()](https://www.php.net/manual/en/function.filter-var.php) function, which takes a value from *$_POST* and returns it sanitized. For the name and message we use [htmlspecialchars()](https://www.php.net/manual/en/function.htmlspecialchars.php), which escapes HTML so nothing a visitor types can run as code. In our example, we clean up each field one by one but you could alternatively use [filter_var_array()](https://www.php.net/manual/en/function.filter-var-array.php) to remove malicious data at once.
 
 Here is an example use case for *filter_var()*:
 
 ```php
 <?php
 // Sanitize inputs
-$nameSanitized = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
-$emailSanitized = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
-$messageSanitized = filter_var($_POST['message'], FILTER_SANITIZE_STRING);
+$nameSanitized = htmlspecialchars(trim($_POST['name'] ?? ''), ENT_QUOTES, 'UTF-8');
+$emailSanitized = filter_var(trim($_POST['email'] ?? ''), FILTER_SANITIZE_EMAIL);
+$messageSanitized = htmlspecialchars(trim($_POST['message'] ?? ''), ENT_QUOTES, 'UTF-8');
 ?>
 ```
 
-Al three variables (<code>$name</code>, <code>$email</code>, <code>$message</code>) now contain corresponding sanitized value and ready to validated in the server-side.
+All three variables (<code>$nameSanitized</code>, <code>$emailSanitized</code>, <code>$messageSanitized</code>) now contain sanitized values, ready to be validated on the server side.
+
+> Note for PHP 8: many older tutorials use <code>FILTER_SANITIZE_STRING</code>. It has been deprecated since PHP 8.1 and throws warnings, so use <code>htmlspecialchars()</code> for text fields instead.
 
 #### Why do we need to validate both on the client-side and server-side?
 
@@ -175,10 +177,10 @@ Here is the complete code with both sanitization and validation using *filter_va
 ```php
 <?php
 // Sanitize email input
-$emailSanitized = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
+$emailSanitized = filter_var(trim($_POST['email'] ?? ''), FILTER_SANITIZE_EMAIL);
 
 // Validate $emailSanitized
-if (!filter_var($emailSanitized, FILTER_VALIDATE_EMAIL) === false) {
+if (filter_var($emailSanitized, FILTER_VALIDATE_EMAIL) !== false) {
   echo ("$emailSanitized is a valid email address");
   // The submitted email is clean and VALID. 
   // You may integrate anti-spam API and send email.
@@ -201,7 +203,7 @@ Here are some of them:
 
 ### Integrating spam protection
 
-Up until now, we made sure to have safe and genuine data. Spammers tend to submit valid and clean data because they want to stand out from other submissions and land in your inbox. If you have ever had a contact form, you may have already experienced the overwhelming amount of spam through it. To keep our inbox clean from spam entries, we need to implement some form of spam prevention. The most basic and straightforward solution would be [honeypot technique](https://www.oopspam.com/blog/ways-to-stop-spam#honeypot-filter-spam-with-a-hidden-field). It is the oldest trick in the book and easy to implement. Basically, we add a hidden field to our contact form and expect this field to be filled by bots only as it would invisible to legitimate users. This approach would protect your web forms from basic spam bots. As you may guess, nothing is preventing a bot from detecting this hidden field and avoiding filling it. And on top of that, once your website starts getting more traffic, it will attract manual spammers too which can easily bypass all kinds of client-side spam filtering. This is where [oopspam API](https://www.oopspam.com/) comes in and handles all form submissions in the backend without ever interacting with your visitors.
+Up until now, we made sure to have safe and genuine data. Spammers tend to submit valid and clean data because they want to stand out from other submissions and land in your inbox. If you have ever had a contact form, you may have already experienced the overwhelming amount of spam through it. To keep our inbox clean from spam entries, we need to implement some form of spam prevention. The most basic and straightforward solution would be [honeypot technique](https://www.oopspam.com/blog/ways-to-stop-spam#honeypot-filter-spam-with-a-hidden-field). It is the oldest trick in the book and easy to implement. Basically, we add a hidden field to our contact form and expect this field to be filled by bots only as it would invisible to legitimate users. This approach would protect your web forms from basic spam bots. As you may guess, nothing is preventing a bot from detecting this hidden field and avoiding filling it. And on top of that, once your website starts getting more traffic, it will attract manual spammers too which can easily bypass all kinds of client-side spam filtering. This is where the [oopspam spam detection API](https://www.oopspam.com/spam-detection-api) comes in: one call checks the message, the sender's IP and their email address in the backend, without ever interacting with your visitors.
 
 First things first, [register on oopspam Dashboard](https://app.oopspam.com/Identity/Account/Register) and grab the API key.
 
@@ -219,14 +221,16 @@ At this point, we have everything we need to make an HTTP request with our data 
 ```json
 {
     "senderIP": "91.203.67.110",
+    "email": "testing@example.com",
     "content": "Dear Agent, We are a manufacturing company which specializes in supplying Aluminum Rod with Zinc Alloy Rod to customers worldwide, based in Japan, Asia. We have been unable to follow up payments effectively for transactions with debtor customers in your country due to our distant locations, thus our reason for requesting for your services representation.",
     "checkForLength": true,
     "allowedLanguages" : ["en"],
-    "allowedCountries" : ["it","us"]
+    "allowedCountries" : ["it","us"],
+    "blockTempEmail": true
 }
 ```
 
-We are going to supply **senderIP** in addition to **content**. **allowedLanguages** and **allowedCountries** are other useful fields that can be used to allow messages only from certain countries and languages. They are especially helpful if you don't expect a contact form submission from some areas and languages.
+We are going to supply **senderIP** and **email** in addition to **content**. The IP and email are checked against oopspam's blocklists of known spam sources (150M+ IPs and 200M+ email addresses), which catches a lot of spam that looks harmless as text. Set **blockTempEmail** to also reject disposable inboxes. **allowedLanguages** and **allowedCountries** are other useful fields that can be used to allow messages only from certain countries and languages. They are especially helpful if you don't expect a contact form submission from some areas and languages.
 
 > ✨ Tip: Check out [oopspam documentation](https://www.oopspam.com/docs/#introduction) for more information on how to use other request fields.
 
@@ -252,11 +256,12 @@ function getUserIpAddr(){
 and finally, our spam checking function:
 
 ```php
-function getSpamScore($message, $userIP) {
+function getSpamScore($message, $userIP, $email) {
     try {
         $data = array(
           'content' => $message,
-          'senderIP' => $userIP
+          'senderIP' => $userIP,
+          'email' => $email
       );
 
       $url = "https://api.oopspam.com/v1/spamdetection";
@@ -285,7 +290,7 @@ function getSpamScore($message, $userIP) {
 }
 ```
 
-The code is pretty straightforward but let's still quickly go through it. First, we put our message and user's IP in an array (<code>$data</code>) then we create a new instance of the GuzzleHTTP client and pass JSON encoded <code>$data</code> along with our API key from oopspam Dashboard.
+The code is pretty straightforward but let's still quickly go through it. First, we put the message, the user's IP and their email in an array (<code>$data</code>) then we create a new instance of the GuzzleHTTP client and pass JSON encoded <code>$data</code> along with our API key from oopspam Dashboard.
 <code>$code</code> variable holds HTTP response code from oopspam API. In case of successful response code (<code>200</code> ) from the API, we convert response body to JSON object and assign value of <code>Score</code> to <code>$score</code>. Finally, the function returns <code>$score</code>.
 
 
@@ -300,18 +305,18 @@ use GuzzleHttp\Client;
 
 $SPAM_THRESHOLD = 3;
 
-$nameSanitized = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
-$emailSanitized = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
-$messageSanitized = filter_var($_POST['message'], FILTER_SANITIZE_STRING);
+$nameSanitized = htmlspecialchars(trim($_POST['name'] ?? ''), ENT_QUOTES, 'UTF-8');
+$emailSanitized = filter_var(trim($_POST['email'] ?? ''), FILTER_SANITIZE_EMAIL);
+$messageSanitized = htmlspecialchars(trim($_POST['message'] ?? ''), ENT_QUOTES, 'UTF-8');
 
 // Validate $emailSanitized
-if (!filter_var($emailSanitized, FILTER_VALIDATE_EMAIL) === false) {
+if (filter_var($emailSanitized, FILTER_VALIDATE_EMAIL) !== false) {
     echo ("$emailSanitized is a valid email address");
 
     // Check for spam
     // returns: Spam Score from 0 to 6.
     // We consider $score value 3 or higher as spam
-     $score = getSpamScore($messageSanitized, getUserIpAddr());
+     $score = getSpamScore($messageSanitized, getUserIpAddr(), $emailSanitized);
      
      if ($score >= $SPAM_THRESHOLD) {
       // It is spam
@@ -340,11 +345,12 @@ function getUserIpAddr(){
   return $ip;
 }
 
-function getSpamScore($message, $userIP) {
+function getSpamScore($message, $userIP, $email) {
     try {
         $data = array(
           'content' => $message,
-          'senderIP' => $userIP
+          'senderIP' => $userIP,
+          'email' => $email
       );
 
       $url = "https://api.oopspam.com/v1/spamdetection";
@@ -380,7 +386,7 @@ At this point, we have clean and valid data. We integrated spam protection and a
 
 There are a few ways to send email in PHP. One of them is using built-in [mail()](https://www.php.net/manual/en/function.mail.php) function. However, *mail()* is limited and in many cases, it is not flexible enough. In *mail()*, you need to escape special characters, use a local mail server so no SMTP. Another issue with *mail()* is deliverability as there is no authentication going on if you use "From:" in the email header. As a result, email spam filters will flag your emails as spam. In general, it is advised to avoid using *mail()* when possible and there are faster and [safer](https://exploitbox.io/paper/Pwning-PHP-Mail-Function-For-Fun-And-RCE.html) alternatives.
 
-For the above reasons, we will go with the popular mail sender in [PHPMailer](https://github.com/PHPMailer/PHPMailer). It supports SMTP, security & authentication headers so your email doesn't end up in spam, attachments, and plan & HTML emails. Let's install PHPMailer using Composer:
+For the above reasons, we will go with the popular mail sender in [PHPMailer](https://github.com/PHPMailer/PHPMailer). It supports SMTP, security & authentication headers so your email doesn't end up in spam, attachments, and plain & HTML emails. Let's install PHPMailer using Composer:
 
 ```php
 composer require phpmailer/phpmailer
@@ -404,12 +410,11 @@ function sendEmail($submission) {
   $mail->From = "someonewithgmail@gmail.com";
   $mail->FromName = "My Name";
 
-  //To address and name
-  $mail->addAddress($submission["email"], $submission["name"]);
-  // $mail->addAddress($data); //Recipient name is optional
+  //Send the notification to yourself (the site owner)
+  $mail->addAddress("you@example.com", "Your Name");
 
-  //Address to which recipient will reply
-  // $mail->addReplyTo("someonewithgmail@gmail.com", "Reply");
+  //Replies go straight to the visitor who filled in the form
+  $mail->addReplyTo($submission["email"], $submission["name"]);
 
   //CC and BCC
   // $mail->addCC("cc@example.com");
@@ -495,18 +500,18 @@ use PHPMailer\PHPMailer\Exception;
 
 $SPAM_THRESHOLD = 3;
 
-$nameSanitized = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
-$emailSanitized = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
-$messageSanitized = filter_var($_POST['message'], FILTER_SANITIZE_STRING);
+$nameSanitized = htmlspecialchars(trim($_POST['name'] ?? ''), ENT_QUOTES, 'UTF-8');
+$emailSanitized = filter_var(trim($_POST['email'] ?? ''), FILTER_SANITIZE_EMAIL);
+$messageSanitized = htmlspecialchars(trim($_POST['message'] ?? ''), ENT_QUOTES, 'UTF-8');
 
 // Validate $emailSanitized
-if (!filter_var($emailSanitized, FILTER_VALIDATE_EMAIL) === false) {
+if (filter_var($emailSanitized, FILTER_VALIDATE_EMAIL) !== false) {
     echo ("$emailSanitized is a valid email address <br>");
 
     // Check for spam
     // returns: Spam Score from 0 to 6.
     // We consider $score value 3 or higher as spam
-     $score = getSpamScore($messageSanitized, getUserIpAddr());
+     $score = getSpamScore($messageSanitized, getUserIpAddr(), $emailSanitized);
      
      if ($score >= $SPAM_THRESHOLD) {
       // It is spam
@@ -541,11 +546,12 @@ function getUserIpAddr(){
   return $ip;
 }
 
-function getSpamScore($message, $userIP) {
+function getSpamScore($message, $userIP, $email) {
     try {
         $data = array(
           'content' => $message,
-          'senderIP' => $userIP
+          'senderIP' => $userIP,
+          'email' => $email
       );
 
       $url = "https://api.oopspam.com/v1/spamdetection";
@@ -577,12 +583,11 @@ function sendEmail($submission) {
   $mail->From = "someonewithgmail@gmail.com";
   $mail->FromName = "My Name";
 
-  //To address and name
-  $mail->addAddress($submission["email"], $submission["name"]);
-  // $mail->addAddress($data); //Recipient name is optional
+  //Send the notification to yourself (the site owner)
+  $mail->addAddress("you@example.com", "Your Name");
 
-  //Address to which recipient will reply
-  // $mail->addReplyTo("someonewithgmail@gmail.com", "Reply");
+  //Replies go straight to the visitor who filled in the form
+  $mail->addReplyTo($submission["email"], $submission["name"]);
 
   //CC and BCC
   // $mail->addCC("cc@example.com");
@@ -613,6 +618,8 @@ function sendEmail($submission) {
 ### Final thoughts
 
 A contact form on your website is a great way to connect with your visitors. Unfortunately, it also attracts unwanted attention from spammers and bad actors (aka hackers). To safeguard ourselves we implemented data validation & sanitization with anti-spam capabilities in our contact form. This article was for people who want to build safe and secure contact forms on their own. If you are a WordPress user, you could use one of the popular contact form plugins and install [oopspam WordPress plugin](https://wordpress.org/plugins/oopspam-anti-spam/) (that's us 👋) for spam protection.
+
+Building something other than WordPress? See what the [spam detection API](https://www.oopspam.com/spam-detection-api) checks, with code samples and pricing. You can start with 40 free checks a month.
 
 Happy spam-free day!
 

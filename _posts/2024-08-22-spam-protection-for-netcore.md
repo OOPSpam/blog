@@ -224,3 +224,8 @@ It seems to work. Two things happened:
 So we took a simple web application and added spam protection to it. You could do the same for other forms like quote, contact or comment system.There are other parameters you can use to make your forms even more secure, like using the _allowedCountries_ filter to only allow submissions from your target country.
 
 Hope this was helpful.
+
+## Related guides
+
+- [PHP Contact Form with Validation & Spam Protection](https://www.oopspam.com/blog/contact-form-with-PHP)
+- [7 ways to stop spam on your website](https://www.oopspam.com/blog/ways-to-stop-spam)

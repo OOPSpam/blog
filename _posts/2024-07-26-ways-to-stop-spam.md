@@ -184,6 +184,7 @@ Happy spam-free day!
 
 ## Related guides
 
+- [PHP Contact Form with Validation & Spam Protection](https://www.oopspam.com/blog/contact-form-with-PHP)
 - [3 top open-source comment systems and their anti-spam capabilities](https://www.oopspam.com/blog/open-source-comment-systems-their-anti-spam-capabilities)
 - [How to Protect Your WordPress Website from Internal Search Spam](https://www.oopspam.com/blog/how-to-protect-your-wordpress-website-from-internal-search-spam)
 - [So, you're using oopspam and still getting spam?](https://www.oopspam.com/blog/so-youre-using-oopspam-and-still-getting-spam)
