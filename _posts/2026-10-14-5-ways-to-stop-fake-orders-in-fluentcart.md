@@ -2,7 +2,7 @@
 layout: post
 title: 5 Ways to Stop Fake Orders in FluentCart
 date: 2026-10-14T16:21:00.000+08:00
-last_modified_at: 2026-10-14T16:21:00.000+08:00
+last_modified_at: 2026-10-14T08:27:17.803Z
 author: chazie
 image: /blog/assets/posts/social-media-meta.png
 description: Learn 5 ways to stop fake orders in FluentCart using oopspam,
@@ -114,34 +114,6 @@ If fake orders slip through, remove them fast and learn from them.
 Watch your Stripe Dashboard for spikes in declined payments. A sudden jump in small failed charges is the clearest sign of card testing.
 
 ### **Quick Setup Checklist**
-
-<style>
-  .oopspam-table {
-    border: 2px solid black;
-    border-collapse: collapse;
-    width: 100%;
-  }
-
-  .oopspam-table th,
-  .oopspam-table td {
-    border: 2px solid black;
-    padding: 12px;
-    text-align: left;
-    vertical-align: top;
-  }
-
-  .oopspam-table th {
-    background-color: #f2f2f2;
-    font-weight: bold;
-  }
-
-  .oopspam-table-title {
-    color: #806000;
-    font-weight: bold;
-  }
-</style>
-
-<h2 class="oopspam-table-title">Quick Setup Checklist</h2>
 
 <table class="oopspam-table">
   <thead>
