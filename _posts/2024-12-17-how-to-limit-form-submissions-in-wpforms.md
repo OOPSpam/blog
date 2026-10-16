@@ -3,6 +3,7 @@ layout: post
 title: How to Limit Form Submissions in WPForms?
 date: 2024-12-17T02:04:00.000Z
 author: chazie
+hub: vpn-country-rate-limits
 image: /assets/posts/limitform_wpforms.jpg
 description: Limit form submissions in WPForms using the Form Locker addon and
   oopspam rate limiting. Learn how to control entry caps, user limits, and spam

@@ -4,6 +4,7 @@ title: How to block countries in Avada Forms?
 date: 2025-10-17T09:01:00.000+08:00
 last_modified_at: 2026-01-06T11:36:00.000+08:00
 author: chazie
+hub: vpn-country-rate-limits
 image: /blog/assets/posts/avada_header.png
 description: Block unwanted submissions in Avada Forms using oopspam and
   Cloudflare WAF for advanced, country-based spam protection without hurting

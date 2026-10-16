@@ -3,6 +3,7 @@ layout: post
 title: How to Limit Form Submissions in Jetpack Forms?
 date: 2025-10-06T10:00:00.000+08:00
 author: chazie
+hub: vpn-country-rate-limits
 image: /blog/assets/posts/jp_rt.jpg
 description: Learn how to limit form submissions in Jetpack Forms using oopspam
   Anti-Spam and Cloudflare rate limiting to block bots and repeated entries.

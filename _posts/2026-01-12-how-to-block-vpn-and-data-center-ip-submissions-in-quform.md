@@ -3,6 +3,7 @@ layout: post
 title: How to Block VPN and Data Center IP Submissions in QuForm
 date: 2026-01-12T09:14:00.000+08:00
 author: chazie
+hub: vpn-country-rate-limits
 image: /blog/assets/posts/header_quform_block.jpg
 description: Learn how to block VPN and data center IP submissions in QuForm
   using oopspam or Cloudflare to stop spam without blocking real users.

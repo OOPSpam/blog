@@ -2,6 +2,7 @@
 layout: post
 title: The Tricks Spammers Use to Fool CAPTCHAs
 author: onar
+hub: cloudflare-captcha
 image: /assets/posts/bypassing-captcha/meta.png
 tags: [recaptcha, hcaptcha, turnstile]
 

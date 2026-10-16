@@ -1,0 +1,20 @@
+{% comment %} "Related integration" box: first title match in _data/integrations.yml, else the hub's default, else the API page. {% endcomment %}
+{% assign ri_title = page.title | downcase | prepend: ' ' | append: ' ' %}
+{% assign ri = nil %}
+{% for r in site.data.integrations %}{% if ri_title contains r.match %}{% assign ri = r %}{% break %}{% endif %}{% endfor %}
+{% if ri %}
+  {% assign ri_url = ri.url %}{% assign ri_name = ri.name %}{% assign ri_blurb = ri.blurb %}
+{% else %}
+  {% assign ri_hub = nil %}{% if page.hub %}{% assign ri_hub = site.data.hubs | where: "slug", page.hub | first %}{% endif %}
+  {% if ri_hub %}
+    {% assign ri_url = ri_hub.integration_url %}{% assign ri_name = ri_hub.integration_name %}{% assign ri_blurb = ri_hub.integration_blurb %}
+  {% else %}
+    {% assign ri_url = "https://www.oopspam.com/spam-detection-api" %}{% assign ri_name = "oopspam spam detection API" %}{% assign ri_blurb = "One API call checks the message, IP and email for spam, on any platform." %}
+  {% endif %}
+{% endif %}
+<aside class="related-integration" aria-label="Related integration">
+  <p class="ri-label">Related integration</p>
+  <p class="ri-name"><a href="{{ ri_url }}">{{ ri_name }}</a></p>
+  <p class="ri-blurb">{{ ri_blurb }}</p>
+  <a class="ri-link" href="{{ ri_url }}">Learn more →</a>
+</aside>

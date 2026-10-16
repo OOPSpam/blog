@@ -4,6 +4,7 @@ title: How to block countries in Paid Memberships Pro?
 date: 2025-08-08T09:39:00.000+08:00
 last_modified_at: 2026-01-06T11:36:00.000+08:00
 author: chazie
+hub: vpn-country-rate-limits
 image: /blog/assets/posts/header_pmp.png
 description: Paid Memberships Pro lacks native country blocking, use oopspam for
   advanced filtering or custom code and Cloudflare for broader access control.

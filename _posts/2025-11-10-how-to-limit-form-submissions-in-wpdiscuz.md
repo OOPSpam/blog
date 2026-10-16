@@ -3,6 +3,7 @@ layout: post
 title: How to Limit Form Submissions in WPDiscuz?
 date: 2025-11-10T01:04:00.000+08:00
 author: chazie
+hub: vpn-country-rate-limits
 image: /blog/assets/posts/wp_rt.jpg
 description: Learn how to limit form submissions in WPDiscuz. Use built-in
   comment limits and advanced rate-limiting with oopspam to block spam and

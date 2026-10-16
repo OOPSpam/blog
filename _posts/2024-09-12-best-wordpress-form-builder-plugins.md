@@ -5,6 +5,7 @@ title: "8 Best WordPress Form Plugins in 2026: Speed & Accessibility Tested"
 date: 2024-01-22
 last_modified_at: 2026-10-12T12:00:00.000+04:00
 author: onar
+hub: wordpress-forms
 image: /blog/assets/posts/wordpressforms.png
 description: "We tested 8 WordPress form plugins (WPForms, Gravity Forms, CF7, Fluent Forms and more) for page speed, accessibility and spam protection. See the results table."
 tags:

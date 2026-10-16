@@ -2,6 +2,7 @@
 layout: post
 title: How to Hide the reCAPTCHA Badge?
 author: onar
+hub: cloudflare-captcha
 image: /assets/posts/recaptcha-badge/meta.png
 tags: [recaptcha]
 

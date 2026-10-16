@@ -2,6 +2,7 @@
 layout: post
 title:  "Gravity Forms: Advanced User Blocking to Enhance Form Security"
 author: onar
+hub: wordpress-forms
 image: /assets/posts/user-blocking/gravity-meta.png
 tags: [wordpress, contact_form, gravity]
 

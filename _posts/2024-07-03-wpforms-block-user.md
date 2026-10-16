@@ -2,6 +2,7 @@
 layout: post
 title:  "WPForms: Advanced User Blocking to Enhance Form Security"
 author: onar
+hub: wordpress-forms
 image: /assets/posts/user-blocking/wpforms-meta.png
 tags: [wordpress, contact_form, wpforms]
 

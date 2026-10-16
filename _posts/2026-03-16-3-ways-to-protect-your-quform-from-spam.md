@@ -3,6 +3,7 @@ layout: post
 title: 3 Ways to Protect Your QuForm from Spam
 date: 2026-03-16T14:59:00.000+08:00
 author: chazie
+hub: wordpress-forms
 image: /blog/assets/posts/quform_headers.png
 description: Protect Quform from spam using built-in tools, Turnstile, hCaptcha,
   submission limits, and oopspam advanced filtering.

@@ -7,7 +7,12 @@
     title, so Google doesn't cut it off. jekyll-seo-tag still writes the description, canonical,
     Open Graph tags and structured data.
   {% endcomment %}
-  {% if page.title %}
+  {% if page.layout == 'home' and paginator and paginator.page > 1 %}
+    {% comment %} Blog pages 2+: their own title so they don't duplicate page 1 {% endcomment %}
+    {% assign seo_page_title = "Spam Protection Guides – Page " | append: paginator.page | append: " | oopspam" %}
+  {% elsif page.layout == 'author' %}
+    {% assign seo_page_title = page.display_name | append: ", " | append: page.position | append: " | oopspam" %}
+  {% elsif page.title %}
     {% assign seo_page_title = page.title | strip_html | strip %}
     {% assign seo_full_title = seo_page_title | append: " | oopspam" %}
     {% if seo_full_title.size <= 60 %}{% assign seo_page_title = seo_full_title %}{% endif %}

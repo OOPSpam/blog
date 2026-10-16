@@ -4,6 +4,7 @@ title: How to block countries in Contact Form 7?
 date: 2025-07-08T04:13:00.000Z
 last_modified_at: 2026-01-06T11:36:00.000+08:00
 author: chazie
+hub: vpn-country-rate-limits
 image: /blog/assets/posts/cf7-block-countries.jpg
 description: Block countries in Contact Form 7 using oopspam for smart filtering
   and logs, or Cloudflare for full-site blocking. Stop regional spam before it

@@ -26,6 +26,20 @@ collections:
         search_fields: [display_name],
         value_field: 'name',
         }
+      - {
+        label: 'Topic hub',
+        name: 'hub',
+        widget: 'select',
+        required: false,
+        hint: "Puts the post on that topic page and in the breadcrumb (Blog › Topic › Post). Leave empty if none fits.",
+        options: [
+          { label: 'WordPress forms', value: 'wordpress-forms' },
+          { label: 'Email lists', value: 'email-lists' },
+          { label: 'E-commerce fraud', value: 'ecommerce-fraud' },
+          { label: 'Cloudflare, Turnstile & CAPTCHA', value: 'cloudflare-captcha' },
+          { label: 'VPN, country blocking & rate limits', value: 'vpn-country-rate-limits' }
+        ]
+        }
       - { label: 'Meta image', name: 'image', widget: 'image' }
       - { label: 'Meta description', name: 'description', widget: 'string' }
       - { label: 'Tags', name: 'tags', widget: 'list' }
@@ -42,4 +56,8 @@ collections:
       - { label: 'Display Name', name: 'display_name', widget: 'string' }
       - { label: 'Position', name: 'position', widget: 'string' }
       - { label: 'Avatar', name: 'avatar', widget: 'image' }
+      - { label: 'LinkedIn URL', name: 'linkedin', widget: 'string', required: false }
+      - { label: 'X (Twitter) URL', name: 'x', widget: 'string', required: false }
+      - { label: 'Short bio', name: 'short_bio', widget: 'text', hint: "1–2 sentences. Shown in the bio box at the end of every post." }
+      - { label: 'Profiles (for search engines)', name: 'same_as', widget: 'list', required: false, hint: "Full URLs of this person's public profiles, e.g. LinkedIn, X, an About page." }
       - { label: 'Body', name: 'body', widget: 'markdown' }

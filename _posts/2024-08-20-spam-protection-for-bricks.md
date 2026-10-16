@@ -4,6 +4,7 @@ title: "Securing Bricks Form: Effective Strategies for Spam Prevention"
 date: 2023-10-06
 last_modified_at: 2026-05-22T02:21:00.000+08:00
 author: onar
+hub: wordpress-forms
 image: /assets/posts/bricks/sm.png
 description: Learn how to add spam protection to Bricks Form Element with these
   4 different methods in WordPress.

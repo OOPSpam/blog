@@ -3,6 +3,7 @@ layout: post
 title: 4 ways to protect your Avada Forms from spam
 date: 2025-10-15T12:15:00.000+08:00
 author: chazie
+hub: wordpress-forms
 image: /blog/assets/posts/header_avada.png
 description: Protect your Avada Forms from spam using Honeypot, reCAPTCHA,
   Turnstile, and oopspam for stronger and seamless form security.

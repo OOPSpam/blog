@@ -3,6 +3,7 @@ layout: post
 title: How to Block VPN and Data Center IP Submissions in Kadence Forms
 date: 2025-04-23T03:53:00.000Z
 author: chazie
+hub: vpn-country-rate-limits
 image: /assets/posts/how-to-block-vpn-and-data-center-ip-submissions-in-kadence-forms.jpg
 description: Keep your Kadence Forms free from spam. Learn how to block VPN and
   data center traffic easily using Cloudflare or the oopspam plugin to protect

@@ -3,6 +3,7 @@ layout: post
 title: How to Block VPN and Data Center IP Submissions in Beaver Builder Contact Form?
 date: 2026-02-06T00:50:00.000+08:00
 author: chazie
+hub: vpn-country-rate-limits
 image: /blog/assets/posts/bb_meta.jpg
 description: Learn how to block VPN and data center IP spam in Beaver Builder
   Contact Form using oopspam or Cloudflare security rules. Simple, effective

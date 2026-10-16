@@ -1,14 +1,31 @@
-<h1>{{ page.display_name }}</h1>
-<h2>{{ page.position }}</h2>
+---
+layout: default
+---
+{% include schema-author.html %}
+<div class="profile">
+  {% include breadcrumbs.html %}
+  <div class="profile-head">
+    {% if page.avatar %}<img src="{{ page.avatar }}" alt="{{ page.display_name }}" width="120" height="120">{% endif %}
+    <div>
+      <h1>{{ page.display_name }}</h1>
+      <p class="profile-role">{{ page.position }} at <a href="https://www.oopspam.com/">oopspam</a></p>
+      <ul class="profile-links">
+        {% if page.linkedin %}<li><a href="{{ page.linkedin }}" rel="me noopener" target="_blank">LinkedIn</a></li>{% endif %}
+        {% if page.x %}<li><a href="{{ page.x }}" rel="me noopener" target="_blank">X</a></li>{% endif %}
+      </ul>
+    </div>
+  </div>
+  <div class="profile-bio">
+    {{ content }}
+  </div>
+</div>
 
-{{ content }}
-
-<h2>Posts</h2>
-<ul>
-  {% assign filtered_posts = site.posts | where: 'author', page.name %} {% for post in
-  filtered_posts %}
-  <li>
-    <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-  </li>
-  {% endfor %}
-</ul>
+{% assign author_posts = site.posts | where: 'author', page.name %}
+<div class="catalogue">
+  <h2 class="section-title">Posts by {{ page.display_name | split: ' ' | first }} ({{ author_posts.size }})</h2>
+  <div class="band">
+    {% for post in author_posts %}
+    <div class="item">{% include post-card.html post=post %}</div>
+    {% endfor %}
+  </div>
+</div>

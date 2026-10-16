@@ -3,6 +3,7 @@ layout: post
 title: "How to Limit Form Submissions in MC4WP: Mailchimp for WordPress?"
 date: 2025-11-13T11:35:00.000+08:00
 author: chazie
+hub: vpn-country-rate-limits
 image: /blog/assets/posts/mc4wp_rt.jpg
 description: Learn how to limit form submissions in MC4WP using advanced rate
   limiting, spam filters, and oopspam for cleaner, safer sign-ups.

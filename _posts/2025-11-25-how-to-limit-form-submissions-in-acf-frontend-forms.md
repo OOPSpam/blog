@@ -3,6 +3,7 @@ layout: post
 title: How to Limit Form Submissions in ACF Frontend Forms?
 date: 2025-11-25T03:00:00.000+08:00
 author: chazie
+hub: vpn-country-rate-limits
 image: /blog/assets/posts/acf_header_rt.jpg
 description: Learn how to limit form submissions in ACF Frontend Forms using
   Advanced Forms Pro, oopspam rate limiting, or custom PHP for full control.

@@ -4,6 +4,7 @@ title: How to block countries in WPForms?
 date: 2025-06-26T01:30:00.000Z
 last_modified_at: 2026-01-06T11:36:00.000+08:00
 author: chazie
+hub: vpn-country-rate-limits
 image: /blog/assets/posts/wpforms-blockcontries.jpg
 description: Learn how to block countries in WPForms using the built-in country
   filter, oopspam for WordPress, or Cloudflare DNS rules.

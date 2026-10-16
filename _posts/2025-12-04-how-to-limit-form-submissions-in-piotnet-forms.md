@@ -3,6 +3,7 @@ layout: post
 title: How to Limit Form Submissions in Piotnet Forms
 date: 2025-12-04T07:19:00.000+08:00
 author: chazie
+hub: vpn-country-rate-limits
 image: /blog/assets/posts/limitform_piotnet.jpg
 description: Learn how to limit Piotnet Form submissions using age rules,
   conditional visibility, and oopspam rate limiting for stronger spam control

@@ -3,6 +3,7 @@ layout: post
 title: 4 Ways to Stop Spam on Jetpack Forms
 date: 2025-02-10T04:42:00.000Z
 author: chazie
+hub: wordpress-forms
 image: /assets/posts/header-jetpack-forms.png
 description: Stop spam on Jetpack Forms with oopspam, Akismet, reCAPTCHA, or
   hCaptcha. Get advanced machine learning filtering and block bots & manual spam

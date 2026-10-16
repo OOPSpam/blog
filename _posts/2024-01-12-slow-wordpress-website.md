@@ -4,6 +4,7 @@ title: You're Doing WordPress Performance WRONG. Here's Why.
 date: 2024-01-12
 last_modified_at: 2026-07-28T21:05:00.000+08:00
 author: onar
+hub: wordpress-forms
 image: /assets/posts/slow-wordpress/meta.png
 description: Let's take a look at what's slowing down your WordPress website and
   what you can do to fix it.

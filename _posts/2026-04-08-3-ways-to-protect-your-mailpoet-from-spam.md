@@ -3,6 +3,7 @@ layout: post
 title: 3 Ways to Protect Your MailPoet from Spam
 date: 2026-04-08T18:53:00.000+08:00
 author: chazie
+hub: email-lists
 image: /blog/assets/posts/header_mailpoet.png
 description: Protect MailPoet from spam with oopspam, double opt-in, CAPTCHA,
   and email authentication. Improve deliverability and keep your list clean.

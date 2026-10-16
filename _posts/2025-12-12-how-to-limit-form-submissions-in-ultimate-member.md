@@ -3,6 +3,7 @@ layout: post
 title: How to Limit Form Submissions in Ultimate Member
 date: 2025-12-11T07:11:00.000+08:00
 author: chazie
+hub: vpn-country-rate-limits
 image: /blog/assets/posts/limitform_um.jpg
 description: Learn how to limit Ultimate Member form submissions with oopspam
   and built-in tools that reduce spam, repeated attempts, and abusive

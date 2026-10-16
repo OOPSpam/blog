@@ -3,6 +3,7 @@ layout: post
 title: How to Block VPN and Data Center IP Submissions in Toolset Forms?
 date: 2026-01-28T01:59:00.000+08:00
 author: chazie
+hub: vpn-country-rate-limits
 image: /blog/assets/posts/ts_meta.jpg
 description: Learn how to block VPN and data center spam in Toolset Forms using
   oopspam or Cloudflare. Clear steps, low false positives, and best practices.

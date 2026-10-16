@@ -3,6 +3,7 @@ layout: post
 title: 4 Ways to Protect Your Piotnet Forms from Spam
 date: 2026-04-05T21:29:00.000+08:00
 author: chazie
+hub: wordpress-forms
 image: /blog/assets/posts/header_meta_pf.png
 description: Protect Piotnet Forms from spam using oopspam, reCAPTCHA, honeypot,
   and WAF. Simple steps to reduce spam and keep your forms secure.

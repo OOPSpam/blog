@@ -3,6 +3,7 @@ layout: post
 title: How to Limit Form Submissions in Elementor Forms?
 date: 2024-12-23T09:47:00.000Z
 author: chazie
+hub: vpn-country-rate-limits
 image: /assets/posts/limitform_elforms.jpg
 description: Secure your Elementor Forms with advanced rate limiting from
   oopspam. Block spam and focus on genuine submissions effortlessly.

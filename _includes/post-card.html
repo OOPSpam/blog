@@ -1,0 +1,21 @@
+{% comment %} One post card. Pass the post: {% include post-card.html post=post %} {% endcomment %}
+{% assign card = include.post %}
+{% assign card_img = card.image | relative_url | replace: '/blog/blog/', '/blog/' %}
+{% assign card_pub = card.date | date: "%Y%m%d" %}
+{% assign card_upd = card.last_modified_at | date: "%Y%m%d" %}
+<a href="{{ card.url | prepend: site.baseurl }}" class="card">
+  {% if card.image %}<img class="thumb" src="{{ card_img }}" alt="" loading="lazy" width="400" height="225">{% endif %}
+  <article>
+    <h2>{{ card.title }}</h2>
+    <p class="card-meta">
+      {% if card.last_modified_at and card_upd > card_pub %}
+      <span>Updated <time datetime="{{ card.last_modified_at | date_to_xmlschema }}">{{ card.last_modified_at | date: "%b %-d, %Y" }}</time></span>
+      {% else %}
+      <span><time datetime="{{ card.date | date_to_xmlschema }}">{{ card.date | date: "%b %-d, %Y" }}</time></span>
+      {% endif %}
+      {% assign card_words = card.content | number_of_words %}
+      {% assign card_min = card_words | divided_by: 200.0 | ceil | at_least: 1 %}
+      <span>{{ card_min }} min read</span>
+    </p>
+  </article>
+</a>

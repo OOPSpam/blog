@@ -3,6 +3,7 @@ layout: post
 title: How to Block VPN and Data Center IP Submissions in Super Forms
 date: 2026-10-02T19:08:00.000+08:00
 author: chazie
+hub: vpn-country-rate-limits
 image: /blog/assets/posts/howtoblockvpn_superforms.jpg
 description: Super Forms has no built-in VPN or data center filter. Block them
   with oopspam IP Filtering or Cloudflare ASN rules. Step-by-step setup.

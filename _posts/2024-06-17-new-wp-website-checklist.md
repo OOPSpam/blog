@@ -4,6 +4,7 @@ title: The WordPress Security Checklist Most Developers Wish They Knew Sooner
 date: 2024-06-17
 last_modified_at: 2026-07-28T20:48:00.000+08:00
 author: onar
+hub: wordpress-forms
 image: /assets/posts/best-wp-form/WordpressForms.png
 description: Learn to develop locally, secure forms, update plugins, and
   implement essential safety measures to keep your website safe from threats

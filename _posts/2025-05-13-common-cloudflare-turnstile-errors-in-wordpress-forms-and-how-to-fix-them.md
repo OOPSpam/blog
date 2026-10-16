@@ -4,6 +4,7 @@ title: "Cloudflare Turnstile Errors (110200, 600010…) and Fixes"
 date: 2025-05-13T03:05:00.000Z
 last_modified_at: 2026-10-12T12:00:00.000+04:00
 author: chazie
+hub: cloudflare-captcha
 image: /assets/posts/header-turnstile-errors.png
 description: "Fix Cloudflare Turnstile errors in WordPress forms: 110200 domain not authorized, invalid sitekey, timeouts, 106010, 300030, 600010 and missing tokens."
 tags:

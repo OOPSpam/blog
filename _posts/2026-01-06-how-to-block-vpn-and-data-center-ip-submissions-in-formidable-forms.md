@@ -3,6 +3,7 @@ layout: post
 title: How to Block VPN and Data Center IP Submissions in Formidable Forms
 date: 2026-01-07T01:20:00.000+08:00
 author: chazie
+hub: vpn-country-rate-limits
 image: /blog/assets/posts/header_ff_block.jpg
 description: Learn how to block VPN and data center IP submissions in Formidable
   Forms using oopspam and Cloudflare, with clear steps and best practices.

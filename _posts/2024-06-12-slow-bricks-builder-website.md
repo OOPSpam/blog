@@ -2,6 +2,7 @@
 layout: post
 title:  "Slow Bricks Site? 7 Hacks to Improve Website Performance"
 author: onar
+hub: wordpress-forms
 image: /assets/posts/slow-bricks/meta.png
 tags: [wordpress]
 

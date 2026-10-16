@@ -4,6 +4,7 @@ title: 6 Ways to Block Spam & Card Testing Attack in MemberPress Checkouts
 date: 2024-07-25
 last_modified_at: 2026-05-22T02:15:00.000+08:00
 author: onar
+hub: ecommerce-fraud
 image: /assets/posts/mpress/meta.png
 description: Learn how to add spam & card testing protection to the MemberPress
   Forms using these 6 different methods in WordPress.

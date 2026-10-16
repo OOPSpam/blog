@@ -2,6 +2,7 @@
 layout: post
 title: What No One Tells You About Cloudflare Turnstile
 author: onar
+hub: cloudflare-captcha
 image: /assets/posts/turnstile/meta.png
 tags: [turnstile]
 

@@ -3,6 +3,7 @@ layout: post
 title: How to Block VPN and Data Center IP Submissions in WPDiscuz?
 date: 2026-01-22T01:33:00.000+08:00
 author: chazie
+hub: vpn-country-rate-limits
 image: /blog/assets/posts/header_wpdiscuz_block.jpg
 description: Learn how to block VPN and data center IP spam in WPDiscuz using
   oopspam and Cloudflare, with clear steps and minimal false positives.

@@ -4,6 +4,7 @@ title: The Best CAPTCHA Alternatives & Competitors in 2026, Compared
 date: 2024-09-13
 last_modified_at: 2026-05-19T12:29:00.000+08:00
 author: onar
+hub: cloudflare-captcha
 image: /assets/posts/social-media-meta.png
 description: "1. oopspam Founded:  2017 Similar to:  Turnstile, hCAPTCHA,
   reCAPTCHA. Akismet Typical users:  Bloggers and small businesses:  Small-size

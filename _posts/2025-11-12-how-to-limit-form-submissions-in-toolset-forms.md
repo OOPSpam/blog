@@ -3,6 +3,7 @@ layout: post
 title: How to Limit Form Submissions in Toolset Forms?
 date: 2025-11-12T07:52:00.000+08:00
 author: chazie
+hub: vpn-country-rate-limits
 image: /blog/assets/posts/tf_rt.jpg
 description: Learn how to limit form submissions in Toolset Forms using Access
   Control and oopspam rate limiting for better spam prevention.

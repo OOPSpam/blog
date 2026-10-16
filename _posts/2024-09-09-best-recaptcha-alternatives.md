@@ -4,6 +4,7 @@ title: The Best reCAPTCHA Alternatives & Competitors in 2026, Compared
 date: 2024-09-09
 last_modified_at: 2026-01-22T11:13:00.000Z
 author: onar
+hub: cloudflare-captcha
 image: /assets/posts/social-media-meta.png
 description: "1. oopspam Founded:  2019 Similar to:  reCAPTCHA, hCAPTCHA.
   Akismet Typical users:  Bloggers and small businesses customers:  Small-size

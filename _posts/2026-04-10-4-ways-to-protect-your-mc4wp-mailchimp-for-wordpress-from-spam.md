@@ -3,6 +3,7 @@ layout: post
 title: "4 Ways to Protect Your MC4WP: Mailchimp for WordPress from Spam"
 date: 2026-04-11T01:43:00.000+08:00
 author: chazie
+hub: email-lists
 image: /blog/assets/posts/mc4wp_header_meta.png
 description: "Protect your MC4WP: Mailchimp for WordPress forms from spam with 4
   proven methods, including double opt-in, CAPTCHA, oopspam, and Cloudflare

@@ -3,6 +3,7 @@ layout: post
 title: How to Protect Your E-commerce Site from Spam Attacks
 date: 2024-12-02T02:03:00.000Z
 author: chazie
+hub: ecommerce-fraud
 image: /assets/posts/meta.jpg
 description: Protect your e-commerce site from spam attacks, especially this
   holiday season. Learn strategies to combat bots, fake sign-ups, and fraudulent

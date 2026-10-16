@@ -3,6 +3,7 @@ layout: post
 title: How to Limit Form Submissions in Super Forms?
 date: 2026-09-24T15:41:00.000+08:00
 author: chazie
+hub: vpn-country-rate-limits
 image: /blog/assets/posts/howtolimitformsubs_superforms_.jpg
 description: Limit Super Forms submissions with built-in user and global
   lockers, or add per-IP and per-email rate limiting with oopspam. Step-by-step

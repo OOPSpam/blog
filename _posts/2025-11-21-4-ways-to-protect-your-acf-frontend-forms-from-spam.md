@@ -3,6 +3,7 @@ layout: post
 title: 4 Ways to Protect Your ACF Frontend Forms From Spam
 date: 2025-11-21T04:39:00.000+08:00
 author: chazie
+hub: wordpress-forms
 image: /blog/assets/posts/acf_header.png
 description: Protect your ACF Frontend Forms from spam with honeypots, CAPTCHAs,
   code validation, and oopspam. Keep submissions clean and stop bots fast.

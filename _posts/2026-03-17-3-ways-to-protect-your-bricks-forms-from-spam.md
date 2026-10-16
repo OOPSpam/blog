@@ -3,6 +3,7 @@ layout: post
 title: 3 Ways to Protect Your Bricks Forms from Spam
 date: 2026-03-18T03:09:00.000+08:00
 author: chazie
+hub: wordpress-forms
 image: /blog/assets/posts/bricks_header.png
 description: Protect Bricks Forms from spam using honeypots, CAPTCHA, validation
   rules, and oopspam. Simple steps to block bots and improve lead quality.

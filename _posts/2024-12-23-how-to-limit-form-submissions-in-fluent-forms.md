@@ -3,6 +3,7 @@ layout: post
 title: How to Limit Form Submissions in Fluent Forms?
 date: 2024-12-23T08:22:00.000Z
 author: chazie
+hub: vpn-country-rate-limits
 image: /assets/posts/limitform_ffforms.jpg
 description: Optimize Fluent Forms security with oopspam, combining rate
   limiting and spam protection for better data integrity.

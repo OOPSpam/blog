@@ -4,6 +4,7 @@ title: How to block countries in Beaver Builder Contact Form?
 date: 2025-09-02T03:24:00.000+08:00
 last_modified_at: 2026-01-06T11:36:00.000+08:00
 author: chazie
+hub: vpn-country-rate-limits
 image: /blog/assets/posts/beaver_header.png
 description: Beaver Builder Contact Form lacks country blocking. Use oopspam for
   form-level filtering or Cloudflare Firewall to block traffic site-wide.

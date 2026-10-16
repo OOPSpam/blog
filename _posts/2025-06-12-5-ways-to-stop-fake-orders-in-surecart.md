@@ -3,6 +3,7 @@ layout: post
 title: 5 Ways to Stop Fake Orders in SureCart
 date: 2025-06-12T05:13:00.000Z
 author: chazie
+hub: ecommerce-fraud
 image: /blog/assets/posts/stop-fake-orders-in-surecart.png
 description: Stop fake orders in SureCart with 5 proven tips. Learn how to block
   spam, prevent card testing, and boost security using oopspam and reCAPTCHA v3.

@@ -3,6 +3,7 @@ layout: post
 title: How to Rate Limit Orders in SureCart?
 date: 2025-06-13T05:05:00.000Z
 author: chazie
+hub: vpn-country-rate-limits
 image: /blog/assets/posts/surecarts-ratelimit.jpg
 description: Protect your SureCart store from spam and fake orders with oopspam.
   Learn how rate limiting stops bots, abuse, and checkout spam without slowing

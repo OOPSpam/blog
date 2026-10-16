@@ -4,6 +4,7 @@ title: How to block countries in Gravity Forms?
 date: 2025-08-01T00:29:00.000+08:00
 last_modified_at: 2026-01-06T11:36:00.000+08:00
 author: chazie
+hub: vpn-country-rate-limits
 image: /blog/assets/posts/header_gravityforms.jpg
 description: Gravity Forms lacks native country blocking, use oopspam for
   advanced spam filtering or Cloudflare to block full site access from selected

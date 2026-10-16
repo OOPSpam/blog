@@ -4,6 +4,7 @@ title: 3 Ways to Protect Your Elementor Atomic Forms From Spam
 date: 2026-06-15
 last_modified_at: 2026-07-17T00:04:00.000+08:00
 author: chazie
+hub: wordpress-forms
 image: /blog/assets/posts/atomic_elementor_meta.png
 description: Learn 3 ways to protect Elementor Atomic Forms from spam using
   Cloudflare, custom PHP filters, and oopspam anti-spam protection.

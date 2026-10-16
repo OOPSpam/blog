@@ -3,6 +3,7 @@ layout: post
 title: How to Rate Limit Orders in FluentCart?
 date: 2026-10-16T15:39:00.000+08:00
 author: chazie
+hub: vpn-country-rate-limits
 image: /blog/assets/posts/meta_fluentcart-rt.jpg
 description: Learn how to rate limit orders in FluentCart using built-in limits,
   oopspam, and Cloudflare to prevent fake orders, card testing, and checkout

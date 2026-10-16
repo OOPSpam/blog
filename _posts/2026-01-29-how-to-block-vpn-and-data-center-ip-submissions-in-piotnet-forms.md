@@ -3,6 +3,7 @@ layout: post
 title: How to Block VPN and Data Center IP Submissions in Piotnet Forms?
 date: 2026-01-30T04:29:00.000+08:00
 author: chazie
+hub: vpn-country-rate-limits
 image: /blog/assets/posts/pn_meta.jpg
 description: Learn how to block VPN and data center IP submissions in Piotnet
   Forms using oopspam and Cloudflare, with clear steps and practical warnings.

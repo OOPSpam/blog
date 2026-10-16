@@ -3,6 +3,7 @@ layout: post
 title: How to Limit Form Submissions in Breakdance Forms?
 date: 2025-09-30T01:46:00.000+08:00
 author: chazie
+hub: vpn-country-rate-limits
 image: /blog/assets/posts/bf_rt.jpg
 description: Learn how to limit form submissions in Breakdance Forms using
   oopspam with rate limits, filters, and spam protection settings.

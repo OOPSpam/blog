@@ -2,6 +2,7 @@
 layout: post
 title:  "Don't Optimize for Speed - Load reCAPTCHA v3 on Every Page (Here's Why)"
 author: onar
+hub: cloudflare-captcha
 image: /assets/posts/loading-recaptcha/meta.png
 tags: [recaptcha]
 

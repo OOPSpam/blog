@@ -3,6 +3,7 @@ layout: post
 title: How to Limit Form Submissions in Avada Forms?
 date: 2025-10-23T11:09:00.000+08:00
 author: chazie
+hub: vpn-country-rate-limits
 image: /blog/assets/posts/avada_form_rt.jpg
 description: Learn how to limit spam and control Avada Form submissions
   effectively using oopspam rate limiting, VPN blocking, and data retention best

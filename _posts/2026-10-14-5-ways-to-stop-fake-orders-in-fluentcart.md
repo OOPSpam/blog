@@ -4,6 +4,7 @@ title: 5 Ways to Stop Fake Orders in FluentCart
 date: 2026-10-14T16:21:00.000+08:00
 last_modified_at: 2026-10-14T15:49:14.504Z
 author: chazie
+hub: ecommerce-fraud
 image: /blog/assets/posts/meta_fluentcart.jpg
 description: Learn 5 ways to stop fake orders in FluentCart using oopspam,
   Cloudflare Turnstile, Stripe fraud protection, and checkout security tools.

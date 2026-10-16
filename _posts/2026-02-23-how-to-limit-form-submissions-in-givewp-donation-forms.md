@@ -3,6 +3,7 @@ layout: post
 title: How to Limit Form Submissions in GiveWP Donation Forms?
 date: 2026-02-23T23:52:00.000+08:00
 author: chazie
+hub: vpn-country-rate-limits
 image: /blog/assets/posts/givewp_limit_meta.jpg
 description: Learn how to limit form submissions in GiveWP using donation
   limits, goals, and oopspam rate limiting to reduce spam and fraud.

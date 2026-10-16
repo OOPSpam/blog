@@ -2,6 +2,7 @@
 layout: post
 title: Common reCAPTCHA Errors And How To Solve Them
 author: onar
+hub: cloudflare-captcha
 image: /assets/posts/recaptcha-errors/meta.png
 tags: [recaptcha]
 

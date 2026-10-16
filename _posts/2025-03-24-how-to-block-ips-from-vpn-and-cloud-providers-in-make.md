@@ -3,6 +3,7 @@ layout: post
 title: How to Block IPs from VPN and Cloud Providers in Make
 date: 2025-03-24T02:18:00.000Z
 author: chazie
+hub: vpn-country-rate-limits
 image: /assets/posts/how-to-block-ips-from-vpn-and-cloud-providers-in-make.jpg
 description: Block VPN and cloud provider IPs in Make with oopspam to reduce
   spam and maintain clean data. Improve workflows while keeping real users

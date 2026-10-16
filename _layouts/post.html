@@ -1,48 +1,55 @@
 ---
 layout: default
 ---
+{% include schema-post.html %}
+<div class="post-layout">
+<div class="post-main">
 
 <div class="post">
-  <div class="post-info" style="display: flex; align-items: center; justify-content: space-between;">
-    {% assign author = site.authors | where: 'name', page.author |
-      first %} {% if author %}
-      <div style="display: inline-flex; align-items: center; margin: 1em;">
-        {% if author.avatar %}
-        <img style="width: 64px; height: 64px; margin:0em; margin-right: 8px;
-        border: solid;
-        border-radius: 3em;
-        border-color: #000;" src="{{ author.avatar }}" alt="image of {{ author.display_name }}" />
-        {% endif %}
-        <div style="display: flex; flex-direction: column;">
-        <p style="color:#555; margin-bottom: 0%;">{{ author.display_name }}</p>
-        <p style="margin-bottom: 0%;">{{ author.position }}</p>
+  {% include breadcrumbs.html %}
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    {% assign author = nil %}{% if page.author %}{% assign author = site.authors | where: 'name', page.author | first %}{% endif %}
+    {% assign reviewer = site.authors | where: 'name', site.reviewer | first %}
+    <div class="post-people">
+      {% if author %}
+      <div class="person">
+        {% if author.avatar %}<img src="{{ author.avatar }}" alt="" width="44" height="44">{% endif %}
+        <div>
+          <p class="person-name"><span class="person-label">By</span> <a href="{{ author.url | prepend: site.baseurl }}" rel="author">{{ author.display_name }}</a></p>
+          <p class="person-role">{{ author.position }}</p>
         </div>
-        
       </div>
       {% endif %}
-      <div style="display: inline-flex; align-items: end; margin: 1em; flex-direction: column;">
-        <p style="color:#555; margin-bottom: 0%;">{% include reading-time.html %}</p>
-        {% if page.date %}
-       <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%b %d, %Y" }}</time>
-      {% endif %}
-        {% comment %} "Updated" line: set last_modified_at in the post's front matter (the CMS fills it in when you edit a published post). {% endcomment %}
-        {% if page.last_modified_at %}
-          {% assign published_day = page.date | date: "%Y%m%d" %}
-          {% assign updated_day = page.last_modified_at | date: "%Y%m%d" %}
-          {% if updated_day > published_day %}
-       <span style="color:#555;">Updated <time datetime="{{ page.last_modified_at | date_to_xmlschema }}">{{ page.last_modified_at | date: "%b %d, %Y" }}</time></span>
-          {% endif %}
-        {% endif %}
-  
-      
+      {% if reviewer and page.author != site.reviewer %}
+      <div class="person">
+        {% if reviewer.avatar %}<img src="{{ reviewer.avatar }}" alt="" width="44" height="44">{% endif %}
+        <div>
+          <p class="person-name"><span class="person-label">Reviewed by</span> <a href="{{ reviewer.url | prepend: site.baseurl }}">{{ reviewer.display_name }}</a></p>
+          <p class="person-role">{{ reviewer.position }}</p>
+        </div>
       </div>
-  </div>
-  <hr style="width: 50px; margin-bottom: 5em;">
-  <h1 class="post-title">{{ page.title }}</h1>
-  <div class="post-line"></div>
+      {% endif %}
+    </div>
+    {% comment %} Dates: "Updated" first when the post was edited after it was published (last_modified_at, filled in by the CMS). {% endcomment %}
+    {% assign published_day = page.date | date: "%Y%m%d" %}
+    {% assign updated_day = page.last_modified_at | date: "%Y%m%d" %}
+    {% assign read_min = content | number_of_words | divided_by: 200.0 | ceil | at_least: 1 %}
+    <p class="post-dates">
+      {% if page.last_modified_at and updated_day > published_day %}
+      <span>Updated <time datetime="{{ page.last_modified_at | date_to_xmlschema }}">{{ page.last_modified_at | date: "%b %-d, %Y" }}</time></span>
+      <span>Published <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%b %-d, %Y" }}</time></span>
+      {% else %}
+      <span>Published <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%b %-d, %Y" }}</time></span>
+      {% endif %}
+      <span>{{ read_min }} min read</span>
+    </p>
+  </header>
 
   {{ content }}
 
+  {% include related-integration.html %}
+  {% include author-box.html %}
 </div>
 
 <div class="endofarticleButtons">
@@ -100,3 +107,71 @@ layout: default
 
   <a href="#" class="top">Topꜛ</a>
 </div>
+
+</div><!-- /.post-main -->
+<aside class="post-toc" aria-label="On this page" hidden>
+  <nav>
+    <p class="post-toc-title">On this page</p>
+    <ol id="post-toc-list"></ol>
+  </nav>
+</aside>
+</div><!-- /.post-layout -->
+
+<script>
+// "On this page": built from the post's H2/H3 headings, highlights the section in view.
+(function () {
+  var aside = document.querySelector('.post-toc');
+  var list = document.getElementById('post-toc-list');
+  if (!aside || !list) return;
+  var heads = Array.prototype.slice.call(document.querySelectorAll('.post > h2[id], .post > h3[id]'));
+  if (heads.length < 2) return;
+  var links = {};
+  var currentH2 = null;
+  heads.forEach(function (h) {
+    var li = document.createElement('li');
+    var a = document.createElement('a');
+    a.href = '#' + h.id;
+    a.textContent = h.textContent.replace(/\s+/g, ' ').trim();
+    li.appendChild(a);
+    if (h.tagName === 'H3' && currentH2) {
+      var sub = currentH2.querySelector('ol') || currentH2.appendChild(document.createElement('ol'));
+      sub.appendChild(li);
+    } else {
+      list.appendChild(li);
+      if (h.tagName === 'H2') currentH2 = li;
+    }
+    links[h.id] = a;
+  });
+  aside.hidden = false;
+  document.body.classList.add('has-post-toc');
+  if (!('IntersectionObserver' in window)) return;
+  var active = null;
+  var openLi = null;
+  var setActive = function (id) {
+    if (active && active === links[id]) return;
+    if (active) active.classList.remove('is-active');
+    active = links[id];
+    if (!active) return;
+    active.classList.add('is-active');
+    // expand only the current top-level section's sub-items
+    var top = active.closest('#post-toc-list > li');
+    if (openLi && openLi !== top) openLi.classList.remove('is-open');
+    if (top) { top.classList.add('is-open'); openLi = top; }
+    // keep the active item visible inside the sidebar without moving the page
+    var box = aside.getBoundingClientRect(), r = active.getBoundingClientRect();
+    if (r.top < box.top + 40 || r.bottom > box.bottom - 40) aside.scrollTop += r.top - box.top - box.height / 3;
+  };
+  var visible = {};
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) { visible[e.target.id] = e.isIntersecting; });
+    for (var i = 0; i < heads.length; i++) { if (visible[heads[i].id]) { setActive(heads[i].id); return; } }
+  }, { rootMargin: '0px 0px -70% 0px' });
+  heads.forEach(function (h) { io.observe(h); });
+  // Above the first heading: nothing active. Scrolled past a heading with none in view: keep the last one passed.
+  window.addEventListener('scroll', function () {
+    var passed = null;
+    for (var i = 0; i < heads.length; i++) { if (heads[i].getBoundingClientRect().top < 120) passed = heads[i].id; }
+    if (passed && !Object.keys(visible).some(function (k) { return visible[k]; })) setActive(passed);
+  }, { passive: true });
+})();
+</script>

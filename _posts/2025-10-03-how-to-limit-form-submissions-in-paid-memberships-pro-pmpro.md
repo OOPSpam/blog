@@ -3,6 +3,7 @@ layout: post
 title: How to Limit Form Submissions in Paid Memberships Pro (PMPro)
 date: 2025-10-03T04:38:00.000+08:00
 author: chazie
+hub: vpn-country-rate-limits
 image: /blog/assets/posts/pmp_rt.jpg
 description: Learn how to limit form submissions in Paid Memberships Pro using
   add-ons, WS Form integration, and oopspam for spam protection and rate limits.

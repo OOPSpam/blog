@@ -3,6 +3,7 @@ layout: post
 title: "How to Block Countries From Your Website: The Complete Guide"
 date: 2026-08-24T21:25:00.000+08:00
 author: chazie
+hub: vpn-country-rate-limits
 image: /blog/assets/posts/meta_blockc_countries.jpg
 description: Learn how to block countries from your website with Cloudflare or
   filter spam by country using oopspam without blocking legitimate visitors.

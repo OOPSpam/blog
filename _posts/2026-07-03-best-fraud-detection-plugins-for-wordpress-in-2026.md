@@ -3,6 +3,7 @@ layout: post
 title: Best Fraud Detection Plugins for WordPress in 2026
 date: 2026-07-03T17:32:00.000+08:00
 author: chazie
+hub: ecommerce-fraud
 image: /blog/assets/posts/meta_best_fraud_header.jpg
 description: Discover the best WordPress fraud detection plugins for 2026 to
   stop fake orders, spam, bot signups, and fraudulent form submissions.

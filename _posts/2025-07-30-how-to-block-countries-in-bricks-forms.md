@@ -4,6 +4,7 @@ title: How to block countries in Bricks Forms?
 date: 2025-07-30T10:15:00.000+08:00
 last_modified_at: 2026-01-06T11:36:00.000+08:00
 author: chazie
+hub: vpn-country-rate-limits
 image: /blog/assets/posts/headr_bricks.jpg
 description: Bricks Forms lacks country blocking, but oopspam adds advanced
   filtering and logs. Use Cloudflare to block access from entire countries if

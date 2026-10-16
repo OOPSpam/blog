@@ -3,6 +3,7 @@ layout: post
 title: How to Block VPN and Data Center IP Submissions in Jetpack Forms?
 date: 2026-01-18T11:22:00.000+08:00
 author: chazie
+hub: vpn-country-rate-limits
 image: /blog/assets/posts/header_jp_block.jpg
 description: Learn how to block VPN and data center spam in Jetpack Forms using
   oopspam, Cloudflare, and Jetpack’s firewall.

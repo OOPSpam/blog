@@ -4,6 +4,7 @@ title: How to block countries in Ninja Forms?
 date: 2025-08-26T22:13:00.000+08:00
 last_modified_at: 2026-01-06T11:36:00.000+08:00
 author: chazie
+hub: vpn-country-rate-limits
 image: /blog/assets/posts/ninaj_header.png
 description: Ninja Forms doesn’t block countries by default, use oopspam for
   region-based spam filtering or Cloudflare to block full site access from

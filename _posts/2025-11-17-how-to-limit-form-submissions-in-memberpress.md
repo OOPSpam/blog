@@ -3,6 +3,7 @@ layout: post
 title: How to Limit Form Submissions in MemberPress?
 date: 2025-11-17T13:50:00.000+08:00
 author: chazie
+hub: vpn-country-rate-limits
 image: /blog/assets/posts/mp_rt.jpg
 description: Learn how to limit form submissions in MemberPress using its
   Registration Restrictions add-on and oopspam for advanced spam protection.

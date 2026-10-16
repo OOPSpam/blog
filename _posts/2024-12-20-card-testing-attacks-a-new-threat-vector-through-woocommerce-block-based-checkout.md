@@ -5,6 +5,7 @@ title: "Card Testing Attacks: A New Threat Vector Through WooCommerce
 date: 2024-12-20T17:13:00.000Z
 last_modified_at: 2025-09-23T13:09:00.000-05:00
 author: onar
+hub: ecommerce-fraud
 image: /assets/posts/blockcountrieswithcloudflare-copy-2x.jpg
 description: Learn how to prevent fake and spam orders on your WooCommerce
   store. Explore how card testing attacks exploit the Store API and how to

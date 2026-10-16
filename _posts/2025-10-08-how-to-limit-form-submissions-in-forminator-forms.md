@@ -3,6 +3,7 @@ layout: post
 title: How to Limit Form Submissions in Forminator Forms?
 date: 2025-10-08T13:18:00.000+08:00
 author: chazie
+hub: vpn-country-rate-limits
 image: /blog/assets/posts/formf_rt.jpg
 description: Limit unwanted or repeated submissions in Forminator Forms with
   oopspam Anti-Spam and Cloudflare’s firewall rules. Keep entries clean and

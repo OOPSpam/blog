@@ -3,6 +3,7 @@ layout: post
 title: How to Block VPN and Data Center IP Submissions in Forminator?
 date: 2026-01-21T02:46:00.000+08:00
 author: chazie
+hub: vpn-country-rate-limits
 image: /blog/assets/posts/header_forminator_block.jpg
 description: Learn how to block VPN and data center IP submissions in Forminator
   using oopspam and Cloudflare. Clear steps, simple setup, real protection.

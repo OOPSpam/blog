@@ -4,6 +4,7 @@ title: How to block countries in Kadence Form?
 date: 2025-08-22T05:20:00.000+08:00
 last_modified_at: 2026-01-06T11:36:00.000+08:00
 author: chazie
+hub: vpn-country-rate-limits
 image: /blog/assets/posts/kadence_header.png
 description: Learn how to block countries in Kadence Forms using oopspam
   Anti-Spam and Cloudflare for stronger spam protection and cleaner form

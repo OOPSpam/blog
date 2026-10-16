@@ -4,6 +4,7 @@ title: How to verify and clean up your EmailOctopus email list?
 date: 2026-05-11T21:37:00.000+08:00
 last_modified_at: 2026-09-22T12:02:00.000+04:00
 author: chazie
+hub: email-lists
 image: /blog/assets/posts/email_list_emailoctopus.jpg
 description: Clean your EmailOctopus list with oopspam. Scan and remove risky
   emails, spam traps, and fake signups to improve deliverability fast.

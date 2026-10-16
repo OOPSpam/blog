@@ -69,3 +69,14 @@ twitter:
 collections:
   authors:
     output: true
+
+# Author and topic pages get their layouts automatically
+defaults:
+  - scope: { path: "", type: authors }
+    values: { layout: author }
+
+# Technical reviewer shown as "Reviewed by" on every post (except the reviewer's own posts)
+reviewer: onar
+
+# Fallback share image for pages without their own image
+default_image: https://www.oopspam.com/assets/meta_oopspam.png

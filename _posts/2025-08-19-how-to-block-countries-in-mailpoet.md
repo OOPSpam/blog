@@ -4,6 +4,7 @@ title: How to block countries in MailPoet?
 date: 2025-08-19T00:20:00.000+08:00
 last_modified_at: 2026-01-06T11:36:00.000+08:00
 author: chazie
+hub: vpn-country-rate-limits
 image: /blog/assets/posts/mailpoet_header.png
 description: MailPoet lacks built-in country blocking, use oopspam to filter
   signups, segment by region with WooCommerce, or block access entirely via

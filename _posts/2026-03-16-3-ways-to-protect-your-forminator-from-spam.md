@@ -3,6 +3,7 @@ layout: post
 title: 3 Ways to Protect Your Forminator from Spam
 date: 2026-03-16T15:26:00.000+08:00
 author: chazie
+hub: wordpress-forms
 image: /blog/assets/posts/formintor_header.png
 description: Protect your Forminator forms from spam with Honeypot, CAPTCHA, and
   oopspam. Learn 3 effective ways to block bots and reduce spam submissions in

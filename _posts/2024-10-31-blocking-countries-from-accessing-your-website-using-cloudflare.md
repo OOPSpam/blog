@@ -4,6 +4,7 @@ title: "How to Block Countries in Cloudflare (Step by Step)"
 date: 2024-10-31T03:36:00.000Z
 last_modified_at: 2026-10-12T12:00:00.000+04:00
 author: chazie
+hub: vpn-country-rate-limits
 image: /assets/posts/blockcountrieswithcloudflare-2x.webp
 description: "Block a country in Cloudflare with a custom security rule: the exact steps, the ip.src.country expression, when to block vs challenge, and what VPNs bypass."
 tags:

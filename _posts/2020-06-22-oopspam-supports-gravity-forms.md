@@ -2,6 +2,7 @@
 layout: post
 title:  "[Announcement] oopspam Anti-Spam Plugin now supports Gravity Forms"
 author: onar
+hub: wordpress-forms
 image: /assets/posts/gf-oopspam-wordpress-plugin.jpg
 tags: [WordPress, contact_form, gravity_forms]
 

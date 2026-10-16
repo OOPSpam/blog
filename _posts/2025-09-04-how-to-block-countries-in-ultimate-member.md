@@ -4,6 +4,7 @@ title: How to block countries in Ultimate Member?
 date: 2025-09-04T03:22:00.000+08:00
 last_modified_at: 2026-01-06T11:36:00.000+08:00
 author: chazie
+hub: vpn-country-rate-limits
 image: /blog/assets/posts/ultimate_header.png
 description: Ultimate Member doesn’t have built-in country blocking. Use oopspam
   for form-level protection or Cloudflare Firewall for site-wide blocking.

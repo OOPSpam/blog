@@ -3,6 +3,7 @@ layout: post
 title: How to Block VPN and Data Center IP Submissions in SureCart Forms
 date: 2025-06-17T09:58:00.000Z
 author: chazie
+hub: vpn-country-rate-limits
 image: /blog/assets/posts/surecart_vpn.jpg
 description: Stop spam in SureCart forms by blocking VPNs and data center IPs.
   Learn how to enable powerful filtering with oopspam in just a few clicks.

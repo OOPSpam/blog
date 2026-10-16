@@ -3,6 +3,7 @@ layout: post
 title: How to Block VPN and Data Center IP Submissions in Elementor Forms
 date: 2025-04-10T03:08:00.000Z
 author: chazie
+hub: vpn-country-rate-limits
 image: /assets/posts/how-to-block-vpn-and-data-center-ip-submissions-in-elementor-forms.jpg
 description: Block spam in Elementor forms fast. Learn how to block VPN and data
   center IP submissions using oopspam or Cloudflare. Boost form security easily.

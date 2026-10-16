@@ -4,6 +4,7 @@ title: How to block countries in GiveWP Donation Forms?
 date: 2025-08-15T01:01:00.000+08:00
 last_modified_at: 2026-01-06T11:36:00.000+08:00
 author: chazie
+hub: vpn-country-rate-limits
 image: /blog/assets/posts/givewp_header.png
 description: GiveWP lacks native country blocking, use oopspam for
   location-based spam control or pair with Cloudflare to block access from

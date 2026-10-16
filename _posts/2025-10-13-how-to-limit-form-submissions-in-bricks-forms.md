@@ -3,6 +3,7 @@ layout: post
 title: How to Limit Form Submissions in Bricks Forms?
 date: 2025-10-13T02:56:00.000+08:00
 author: chazie
+hub: vpn-country-rate-limits
 image: /blog/assets/posts/bricksf_rt.jpg
 description: Stop spam and floods in Bricks Forms. Use Bricks’ native limits
   plus oopspam rate limiting, VPN detection, and country filters for full

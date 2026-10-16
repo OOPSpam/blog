@@ -3,6 +3,7 @@ layout: post
 title: How to Block Orders by Billing Address in WooCommerce
 date: 2026-07-22T20:22:00.000+08:00
 author: chazie
+hub: ecommerce-fraud
 image: /blog/assets/posts/meta_block_order_by_address.png
 description: Learn how to block WooCommerce orders by billing address to prevent
   repeat fraud, chargebacks, and spam using oopspam or custom methods.

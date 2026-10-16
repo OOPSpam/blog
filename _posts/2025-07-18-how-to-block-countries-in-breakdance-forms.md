@@ -4,6 +4,7 @@ title: How to block countries in Breakdance Forms?
 date: 2025-07-18T12:02:00.000+08:00
 last_modified_at: 2026-01-06T11:36:00.000+08:00
 author: chazie
+hub: vpn-country-rate-limits
 image: /blog/assets/posts/header_breakdance.jpg
 description: Breakdance Forms can't block countries by default. Use Cloudflare
   or oopspam for advanced filtering by country, IP, VPN, and language plus full

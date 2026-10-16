@@ -3,6 +3,7 @@ layout: post
 title: How to Block VPN and Data Center IP Submissions in Paid Memberships Pro?
 date: 2026-02-19T13:09:00.000+08:00
 author: chazie
+hub: vpn-country-rate-limits
 image: /blog/assets/posts/meta_pmp.jpg
 description: Block VPN and data center IP spam in Paid Memberships Pro using
   oopspam, Cloudflare, and built-in checkout spam protection. Stop fake signups.

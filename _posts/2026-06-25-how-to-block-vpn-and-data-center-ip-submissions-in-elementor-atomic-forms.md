@@ -3,6 +3,7 @@ layout: post
 title: How to Block VPN and Data Center IP Submissions in Elementor Atomic Forms
 date: 2026-06-25T17:53:00.000+08:00
 author: chazie
+hub: vpn-country-rate-limits
 image: /blog/assets/posts/header_elementor_atomic_vpn.jpg
 description: Learn how to block VPN and data center IP submissions in Elementor
   Atomic Forms using oopspam and Cloudflare Security Rules to stop bots and

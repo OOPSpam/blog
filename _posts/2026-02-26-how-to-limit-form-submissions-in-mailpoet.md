@@ -3,6 +3,7 @@ layout: post
 title: How to Limit Form Submissions in MailPoet?
 date: 2026-02-26T10:40:00.000+08:00
 author: chazie
+hub: vpn-country-rate-limits
 image: /blog/assets/posts/maipoet_meta.jpg
 description: Learn how to limit form submissions in MailPoet using list
   controls, signup settings, and oopspam rate limiting to reduce spam and abuse.

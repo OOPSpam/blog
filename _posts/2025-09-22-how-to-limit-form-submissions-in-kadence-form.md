@@ -3,6 +3,7 @@ layout: post
 title: How to Limit Form Submissions in Kadence Form?
 date: 2025-09-22T05:57:00.000+08:00
 author: chazie
+hub: vpn-country-rate-limits
 image: /blog/assets/posts/kd_rt.jpg
 description: Learn how to limit form submissions in Kadence Forms using oopspam,
   Cloudflare WAF, and manual caps to control spam, quotas, and abusive entries.

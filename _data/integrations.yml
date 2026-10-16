@@ -1,0 +1,28 @@
+# "Related integration" box: the first rule whose `match` appears in the post title (lower case) wins.
+# If none match, the post's hub default from _data/hubs.yml is used.
+- { match: "woocommerce", url: "https://www.oopspam.com/woocommerce", name: "oopspam for WooCommerce", blurb: "Blocks fake orders, card testing and spam registrations at checkout." }
+- { match: "gravity forms", url: "https://www.oopspam.com/anti-spam-filter-for-gravity-forms", name: "Gravity Forms spam filter", blurb: "Filters Gravity Forms spam on your server, with no CAPTCHA." }
+- { match: "ninja forms", url: "https://www.oopspam.com/anti-spam-filter-for-ninja-forms", name: "Ninja Forms spam filter", blurb: "Filters Ninja Forms spam on your server, with no CAPTCHA." }
+- { match: "contact form 7", url: "https://www.oopspam.com/spam-filter-for-contactform7", name: "Contact Form 7 spam filter", blurb: "Filters Contact Form 7 spam on your server, with no CAPTCHA." }
+- { match: "wpforms", url: "https://www.oopspam.com/integrations/spam-protection-for-wpforms", name: "Spam protection for WPForms", blurb: "Checks every WPForms entry for spam before it reaches your inbox." }
+- { match: "ws form", url: "https://www.oopspam.com/integrations/spam-protection-for-ws-form", name: "Spam protection for WS Form", blurb: "Checks every WS Form entry for spam before it reaches your inbox." }
+- { match: "formidable", url: "https://www.oopspam.com/integrations/spam-protection-for-formidable", name: "Spam protection for Formidable Forms", blurb: "Checks every Formidable Forms entry for spam." }
+- { match: "google forms", url: "https://www.oopspam.com/integrations/spam-protection-for-google-forms", name: "Spam protection for Google Forms", blurb: "Filters Google Forms responses for spam through Zapier or Make." }
+- { match: "jotform", url: "https://www.oopspam.com/integrations/spam-protection-for-jotform", name: "Spam protection for Jotform", blurb: "Filters Jotform submissions for spam through Zapier." }
+- { match: "typeform", url: "https://www.oopspam.com/integrations/spam-protection-for-typeform", name: "Spam protection for Typeform", blurb: "Filters Typeform responses for spam through Zapier." }
+- { match: "netlify", url: "https://www.oopspam.com/integrations/spam-protection-for-netlify", name: "Spam protection for Netlify Forms", blurb: "Filters Netlify Forms submissions for spam through Zapier." }
+- { match: "webflow", url: "https://www.oopspam.com/integrations/spam-protection-for-webflow", name: "Spam protection for Webflow", blurb: "Filters Webflow form submissions for spam through Zapier." }
+- { match: "unbounce", url: "https://www.oopspam.com/integrations/spam-protection-for-unbounce", name: "Spam protection for Unbounce", blurb: "Blocks fake leads from Unbounce forms." }
+- { match: "activecampaign", url: "https://www.oopspam.com/activecampaign", name: "oopspam for ActiveCampaign", blurb: "Scans your ActiveCampaign contacts for spammy, risky and fake emails." }
+- { match: "akismet", url: "https://www.oopspam.com/akismet-alternative", name: "An Akismet alternative", blurb: "Unlimited websites, more checks, and no logs by default." }
+- { match: "cleantalk", url: "https://www.oopspam.com/cleantalk-alternative", name: "A CleanTalk alternative", blurb: "Spam filtering with no per-site licenses and no spam logs by default." }
+- { match: "hcaptcha", url: "https://www.oopspam.com/hcaptcha-alternative", name: "An hCaptcha alternative", blurb: "Stops spam on your server, with no puzzle for visitors." }
+- { match: "recaptcha", url: "https://www.oopspam.com/recaptcha-alternative", name: "A reCAPTCHA alternative", blurb: "Invisible, server-side spam filtering with no Google tracking." }
+- { match: "turnstile", url: "https://www.oopspam.com/turnstile-alternative", name: "A Turnstile alternative", blurb: "Stops spam on your server, with no widget, challenge or token to break." }
+- { match: "domain reputation", url: "https://www.oopspam.com/tools/domain-reputation-checker", name: "Domain reputation checker", blurb: "Check whether a domain is on spam and abuse blocklists, free." }
+- { match: "disposable", url: "https://www.oopspam.com/tools/disposable-email-checker", name: "Disposable email checker", blurb: "Check whether an email address comes from a throwaway inbox, free." }
+- { match: "zapier", url: "https://www.oopspam.com/spam-detection-api", name: "oopspam spam detection API", blurb: "Add a spam check step to any Zap or Make scenario." }
+- { match: " make ", url: "https://www.oopspam.com/spam-detection-api", name: "oopspam spam detection API", blurb: "Add a spam check step to any Zap or Make scenario." }
+- { match: "php", url: "https://www.oopspam.com/spam-detection-api", name: "oopspam spam detection API", blurb: "One API call checks the message, IP and email for spam." }
+- { match: "asp.net", url: "https://www.oopspam.com/spam-detection-api", name: "oopspam spam detection API", blurb: "One API call checks the message, IP and email for spam." }
+- { match: "api", url: "https://www.oopspam.com/spam-detection-api", name: "oopspam spam detection API", blurb: "One API call checks the message, IP and email for spam." }

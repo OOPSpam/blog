@@ -3,6 +3,7 @@ layout: post
 title: How to Limit Form Submissions in SureForms?
 date: 2025-09-26T05:25:00.000+08:00
 author: chazie
+hub: vpn-country-rate-limits
 image: /blog/assets/posts/sf_rt.jpg
 description: Limit form submissions in SureForms with entry caps, date
   restrictions, and oopspam rate limiting to prevent spam and manage responses.

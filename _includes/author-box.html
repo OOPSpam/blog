@@ -1,0 +1,13 @@
+{% comment %} Short bio box at the end of a post, linking to the author page. {% endcomment %}
+{% assign ab = nil %}{% if page.author %}{% assign ab = site.authors | where: 'name', page.author | first %}{% endif %}
+{% if ab %}
+<aside class="author-box" aria-label="About the author">
+  {% if ab.avatar %}<img src="{{ ab.avatar }}" alt="{{ ab.display_name }}" width="80" height="80" loading="lazy">{% endif %}
+  <div>
+    <p class="author-box-name">Written by <a href="{{ ab.url | prepend: site.baseurl }}">{{ ab.display_name }}</a></p>
+    <p class="author-box-role">{{ ab.position }}</p>
+    <p class="author-box-bio">{{ ab.short_bio }}</p>
+    <p class="author-box-links"><a href="{{ ab.url | prepend: site.baseurl }}">More posts by {{ ab.display_name | split: ' ' | first }} →</a>{% if ab.linkedin %} · <a href="{{ ab.linkedin }}" rel="me noopener" target="_blank">LinkedIn</a>{% endif %}{% if ab.x %} · <a href="{{ ab.x }}" rel="me noopener" target="_blank">X</a>{% endif %}</p>
+  </div>
+</aside>
+{% endif %}

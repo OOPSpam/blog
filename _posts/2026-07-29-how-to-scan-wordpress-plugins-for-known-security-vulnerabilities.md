@@ -3,6 +3,7 @@ layout: post
 title: How to Scan WordPress Plugins for Known Security Vulnerabilities
 date: 2026-07-30T00:34:00.000+08:00
 author: chazie
+hub: wordpress-forms
 image: /blog/assets/posts/meta_scan_vulns.jpg
 description: "Learn how to scan WordPress plugins for known security
   vulnerabilities using OOPVulns, Wordfence, or WPScan to identify and fix risks

@@ -3,6 +3,7 @@ layout: post
 title: How to Limit Form Submissions in Beaver Builder Contact Form
 date: 2025-12-13T22:06:00.000+08:00
 author: chazie
+hub: vpn-country-rate-limits
 image: /blog/assets/posts/limitform_bbcf.jpg
 description: Learn how to limit Beaver Builder Contact Form submissions using
   oopspam and third-party form plugins to prevent spam and control entries.

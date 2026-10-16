@@ -3,6 +3,7 @@ layout: post
 title: How to Limit Form Submissions in WS Form?
 date: 2024-12-19T03:39:00.000Z
 author: chazie
+hub: vpn-country-rate-limits
 image: /assets/posts/limitform_wsforms.jpg
 description: Learn how to secure WS Form using oopspam advanced rate-limiting
   features to block spam, manage submissions, and protect your website.

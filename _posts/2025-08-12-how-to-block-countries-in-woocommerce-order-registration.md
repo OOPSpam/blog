@@ -4,6 +4,7 @@ title: How to block countries in WooCommerce Order & Registration?
 date: 2025-08-12T10:31:00.000+08:00
 last_modified_at: 2026-01-06T11:36:00.000+08:00
 author: chazie
+hub: vpn-country-rate-limits
 image: /blog/assets/posts/header_woo.png
 description: WooCommerce lets you block orders by country. Use oopspam for added
   spam protection, or Cloudflare to block full site access from selected

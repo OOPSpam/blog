@@ -3,6 +3,7 @@ layout: post
 title: 4 ways to protect your MetForm from spam
 date: 2025-10-30T10:24:00.000+08:00
 author: chazie
+hub: wordpress-forms
 image: /blog/assets/posts/meta_metform.png
 description: Secure MetForm from spam using reCAPTCHA, Cloudflare Turnstile,
   entry limits, and oopspam filtering. Step-by-step setup to block bots and

@@ -3,6 +3,7 @@ layout: post
 title: 8 Ways to Protect Your Contact Form 7 from Spam
 date: 2026-03-28T20:21:00.000+08:00
 author: chazie
+hub: wordpress-forms
 image: /blog/assets/posts/cf7_header_meta.png
 description: Protect Contact Form 7 from spam using Turnstile, oopspam,
   honeypots, and validation. Simple steps to reduce spam and improve form

@@ -3,6 +3,7 @@ layout: post
 title: Why Your Embedded Mailchimp Form Keeps Getting Spam on WordPress
 date: 2026-09-01T22:54:00.000+08:00
 author: chazie
+hub: email-lists
 image: /blog/assets/posts/meta_mc_embded_wp.png
 description: Stop spam on embedded Mailchimp forms in WordPress with double
   opt-in, Cloudflare, and oopspam to protect your email list from bots.

@@ -4,6 +4,7 @@ title: How to block countries in Formidable Forms?
 date: 2025-07-25T09:51:00.000+08:00
 last_modified_at: 2026-01-06T11:36:00.000+08:00
 author: chazie
+hub: vpn-country-rate-limits
 image: /blog/assets/posts/headr_formidableforms.jpg
 description: Formidable Forms lacks country blocking, use oopspam for advanced
   filtering or pair with Cloudflare to block full site access from specific

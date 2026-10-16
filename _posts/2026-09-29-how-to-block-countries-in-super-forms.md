@@ -3,6 +3,7 @@ layout: post
 title: How to Block Countries in Super Forms?
 date: 2026-09-29T15:42:00.000+08:00
 author: chazie
+hub: vpn-country-rate-limits
 image: /blog/assets/posts/blockcountriesinsuperforms.jpg
 description: Super Forms has no built-in country blocking. Learn how to block
   countries with oopspam form-level filtering and Cloudflare site-level rules.

@@ -1,0 +1,25 @@
+---
+layout: null
+sitemap: false
+---
+<?xml version="1.0" encoding="UTF-8"?>
+{% comment %}
+  Hand-written sitemap (jekyll-sitemap skips generating one when this file exists).
+  Lists the blog index once, its numbered pages, topic hubs, author pages and every published post.
+  Leaves out /admin/ (noindex) and the old /authors/chaize redirect.
+{% endcomment %}
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>{{ '/' | absolute_url }}</loc>{% if site.posts.first %}<lastmod>{{ site.time | date_to_xmlschema }}</lastmod>{% endif %}</url>
+  {% assign total_pages = site.posts.size | plus: site.paginate | minus: 1 | divided_by: site.paginate | floor %}
+  {% if total_pages > 1 %}{% for n in (2..total_pages) %}
+  <url><loc>{{ '/page' | append: n | append: '/' | absolute_url }}</loc></url>{% endfor %}{% endif %}
+  {% for h in site.data.hubs %}
+  <url><loc>{{ '/topics/' | append: h.slug | append: '/' | absolute_url }}</loc></url>{% endfor %}
+  {% for a in site.authors %}
+  <url><loc>{{ a.url | absolute_url }}</loc></url>{% endfor %}
+  {% for post in site.posts %}{% unless post.sitemap == false %}
+  <url>
+    <loc>{{ post.url | absolute_url | xml_escape }}</loc>
+    <lastmod>{% if post.last_modified_at %}{{ post.last_modified_at | date_to_xmlschema }}{% else %}{{ post.date | date_to_xmlschema }}{% endif %}</lastmod>
+  </url>{% endunless %}{% endfor %}
+</urlset>

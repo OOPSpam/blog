@@ -4,6 +4,7 @@ title: How to block countries in MemberPress?
 date: 2025-08-26T21:01:00.000+08:00
 last_modified_at: 2026-01-06T11:36:00.000+08:00
 author: chazie
+hub: vpn-country-rate-limits
 image: /blog/assets/posts/memberpress_header.png
 description: MemberPress lacks country blocking, use oopspam for filtering
   sign-ups by region or pair with Cloudflare to block site access from unwanted

@@ -3,6 +3,7 @@ layout: post
 title: How to Limit Form Submissions in Elementor Atomic Forms?
 date: 2026-06-17T20:41:00.000+08:00
 author: chazie
+hub: vpn-country-rate-limits
 image: /blog/assets/posts/header_meta_atomic.jpg
 description: Learn how to limit form submissions in Elementor Atomic Forms using
   oopspam rate limiting to block repeated bot and spam submissions.

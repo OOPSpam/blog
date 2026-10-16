@@ -3,6 +3,7 @@ layout: post
 title: Why Updating a WordPress Plugin Is Not Always Enough
 date: 2026-08-08T02:25:00.000+08:00
 author: chazie
+hub: wordpress-forms
 image: /blog/assets/posts/meta_updating_wp.png
 description: "Updating a WordPress plugin isn't always enough. Learn why, how to
   check for compromise, and verify fixes with OOPVulns vulnerability scans. "

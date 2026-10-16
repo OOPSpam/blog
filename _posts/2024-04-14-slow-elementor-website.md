@@ -2,6 +2,7 @@
 layout: post
 title:  "Slow Elementor Site? 7 Hacks Experts Use to Drastically Improve Page Speed"
 author: onar
+hub: wordpress-forms
 image: /assets/posts/slow-elementor/meta.png
 tags: [wordpress]
 

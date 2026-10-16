@@ -3,6 +3,7 @@ layout: post
 title: How to Limit Form Submissions in MetForm?
 date: 2025-10-28T06:08:00.000+08:00
 author: chazie
+hub: vpn-country-rate-limits
 image: /blog/assets/posts/metform_rt.jpg
 description: Learn how to limit form submissions in MetForm using built-in
   settings and oopspam for advanced rate limiting, spam control, and abuse

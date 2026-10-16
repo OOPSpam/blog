@@ -2,6 +2,7 @@
 layout: post
 title:  "[Announcement] oopspam Anti-Spam WordPress Plugin is here"
 author: onar
+hub: wordpress-forms
 image: /assets/posts/social-media-meta.png
 tags: [WordPress, spam]
 

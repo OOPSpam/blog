@@ -3,6 +3,7 @@ layout: post
 title: How to Block VPN and Data Center IP Submissions in MemberPress?
 date: 2026-02-13T05:25:00.000+08:00
 author: chazie
+hub: vpn-country-rate-limits
 image: /blog/assets/posts/meta_mp.jpg
 description: Block VPN and data center spam in MemberPress using oopspam,
   Cloudflare, or built-in restrictions. Protect memberships from fake signups.

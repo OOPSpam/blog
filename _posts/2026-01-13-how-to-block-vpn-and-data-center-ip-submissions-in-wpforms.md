@@ -3,6 +3,7 @@ layout: post
 title: How to Block VPN and Data Center IP Submissions in WPForms
 date: 2026-01-14T03:12:00.000+08:00
 author: chazie
+hub: vpn-country-rate-limits
 image: /blog/assets/posts/header_wpforms_block.jpg
 description: Learn how to block VPN and data center IP spam in WPForms using
   oopspam and Cloudflare. Simple steps, fewer false leads, safer forms.

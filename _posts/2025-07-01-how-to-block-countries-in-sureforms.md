@@ -3,6 +3,7 @@ layout: post
 title: How to block countries in SureForms?
 date: 2025-07-01T02:18:00.000Z
 author: chazie
+hub: vpn-country-rate-limits
 image: /blog/assets/posts/sureforms-block-countries.jpg
 description: Learn how to block countries in SureForms using oopspam for
   advanced spam control or Cloudflare for full site protection.

@@ -2,6 +2,7 @@
 layout: post
 title:  "Introducing Country Restrictions"
 author: onar
+hub: vpn-country-rate-limits
 image: /assets/posts/connected_world.png
 
 

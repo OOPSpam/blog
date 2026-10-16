@@ -3,6 +3,7 @@ layout: post
 title: How to Block VPN and Data Center IP Submissions in GiveWP Donation Forms?
 date: 2026-02-17T08:07:00.000+08:00
 author: chazie
+hub: vpn-country-rate-limits
 image: /blog/assets/posts/givewp_meta.jpg
 description: Block VPN and data center spam in GiveWP donation forms using
   oopspam, Cloudflare, and built-in security tools. Keep fake donations out.

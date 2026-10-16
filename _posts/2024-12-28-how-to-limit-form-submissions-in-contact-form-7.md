@@ -3,6 +3,7 @@ layout: post
 title: How to Limit Form Submissions in Contact Form 7?
 date: 2024-12-28T12:30:00.000Z
 author: chazie
+hub: vpn-country-rate-limits
 image: /assets/posts/limitform_cf7forms.jpg
 description: Secure your Contact Form 7 with oopspam’s rate-limiting feature.
   Block spam, manage submissions, and enhance form usability effortlessly.

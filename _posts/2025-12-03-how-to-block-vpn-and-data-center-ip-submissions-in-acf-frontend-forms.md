@@ -4,6 +4,7 @@ title: How to Block VPN and Data Center IP Submissions in ACF Frontend Forms?
 date: 2025-12-02T20:33:00.000+08:00
 last_modified_at: 2026-01-06T11:36:00.000+08:00
 author: chazie
+hub: vpn-country-rate-limits
 image: /blog/assets/posts/acf_block_vpn_cp.jpg
 description: Block spammy VPN and data center traffic in ACF Frontend Forms with
   oopspam and Cloudflare using simple steps, layered defenses, and clear control

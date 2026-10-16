@@ -3,6 +3,7 @@ layout: post
 title: How to Limit Form Submissions in HappyForms?
 date: 2025-09-16T06:15:00.000+08:00
 author: chazie
+hub: vpn-country-rate-limits
 image: /blog/assets/posts/hf_rt.jpg
 description: Learn how to limit form submissions in HappyForms with caps, choice
   limits, and oopspam rate-limiting to block spam and manage entries.

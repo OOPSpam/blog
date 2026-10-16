@@ -4,6 +4,7 @@ title: How to block countries in  ACF Frontend Forms?
 date: 2025-11-27T14:53:00.000+08:00
 last_modified_at: 2026-01-06T11:36:00.000+08:00
 author: chazie
+hub: vpn-country-rate-limits
 image: /blog/assets/posts/acf_block_countries.jpg
 description: Learn how to block countries in ACF Frontend Forms using oopspam,
   Cloudflare, and security tools. Simple steps to keep spam out while keeping

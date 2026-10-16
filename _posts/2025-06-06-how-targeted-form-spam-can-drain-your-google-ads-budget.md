@@ -3,6 +3,7 @@ layout: post
 title: How Targeted Form Spam Can Drain Your Google Ads Budget
 date: 2025-06-06T08:49:00.000Z
 author: chazie
+hub: wordpress-forms
 image: /blog/assets/posts/header_form_ads.jpg
 description: Targeted form spam can drain your Google Ads budget fast. Learn how
   to detect, prevent, and stop spam on WordPress forms with tools like oopspam.

@@ -3,6 +3,7 @@ layout: post
 title: How to Block Foreign-Language Spam in WordPress Forms
 date: 2026-06-04T12:26:00.000+08:00
 author: chazie
+hub: wordpress-forms
 image: /blog/assets/posts/block_foreign_languge_meta.jpg
 description: Learn how to block foreign-language spam in WordPress forms using
   language filters, keyword blocklists, and oopspam protection.

@@ -1,0 +1,9 @@
+{% comment %} Visible breadcrumb: Blog › Hub › current page. The matching BreadcrumbList is in the page's JSON-LD. {% endcomment %}
+{% assign bc_hub = nil %}{% if page.hub %}{% assign bc_hub = site.data.hubs | where: "slug", page.hub | first %}{% endif %}
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+  <ol>
+    <li><a href="{{ site.baseurl }}/">Blog</a></li>
+    {% if bc_hub and page.layout == 'post' %}<li><a href="{{ site.baseurl }}/topics/{{ bc_hub.slug }}/">{{ bc_hub.name }}</a></li>{% endif %}
+    <li aria-current="page">{% if page.layout == 'hub' %}{{ bc_hub.name }}{% elsif page.layout == 'author' %}{{ page.display_name }}{% else %}{{ page.title }}{% endif %}</li>
+  </ol>
+</nav>

@@ -3,6 +3,7 @@ layout: post
 title: How to Prevent Fake Orders in Shopify with Shopify Flow and oopspam
 date: 2025-07-03T16:48:00.000Z
 author: onar
+hub: ecommerce-fraud
 image: /blog/assets/posts/shopify-header.png
 description: Discover how to prevent fake orders in Shopify by leveraging
   Shopify Flow and oopspam to block unwanted countries, IPs, and emails.

@@ -3,6 +3,7 @@ layout: post
 title: 5 Ways to Protect Your Super Forms From Spam
 date: 2026-09-22T21:27:00.000+08:00
 author: chazie
+hub: wordpress-forms
 image: /blog/assets/posts/general_5ways_superforms.jpg
 description: Stop spam in Super Forms with oopspam, reCAPTCHA, duplicate entry
   blocking, custom PHP rules, and Cloudflare. Step-by-step setup.

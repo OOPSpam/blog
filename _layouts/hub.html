@@ -1,0 +1,24 @@
+---
+layout: default
+---
+{% include schema-hub.html %}
+{% assign hub_posts = site.posts | where: 'hub', page.hub %}
+<div class="hub-head">
+  {% include breadcrumbs.html %}
+  <h1>{{ page.title }}</h1>
+  {{ content }}
+</div>
+<div class="catalogue">
+  <h2 class="section-title">{{ hub_posts.size }} guides</h2>
+  <div class="band">
+    {% for post in hub_posts %}
+    <div class="item">{% include post-card.html post=post %}</div>
+    {% endfor %}
+  </div>
+</div>
+<nav class="hub-links" aria-label="Other topics" style="margin-top:3rem">
+  <h2>Other topics</h2>
+  <ul>
+    {% for h in site.data.hubs %}{% unless h.slug == page.hub %}<li><a href="{{ site.baseurl }}/topics/{{ h.slug }}/">{{ h.name }}</a></li>{% endunless %}{% endfor %}
+  </ul>
+</nav>

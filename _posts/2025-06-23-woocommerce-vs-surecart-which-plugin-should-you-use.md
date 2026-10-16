@@ -3,6 +3,7 @@ layout: post
 title: "WooCommerce vs SureCart: Which Plugin Should You Use?"
 date: 2025-06-23T10:11:00.000Z
 author: chazie
+hub: ecommerce-fraud
 image: /blog/assets/posts/surecartvswoo.png
 description: Compare WooCommerce vs SureCart to find the best eCommerce plugin
   for your WordPress site. See features, setup, pricing, and spam protection

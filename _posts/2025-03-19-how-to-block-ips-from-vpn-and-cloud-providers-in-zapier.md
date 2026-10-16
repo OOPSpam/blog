@@ -3,6 +3,7 @@ layout: post
 title: How to Block IPs from VPN and Cloud Providers in Zapier?
 date: 2025-03-19T03:25:00.000Z
 author: chazie
+hub: vpn-country-rate-limits
 image: /assets/posts/blockvpn_dc.jpg
 description: Block spam submissions in Zapier with oopspam’s VPN and cloud
   provider blocking features. Learn how to prevent junk form entries while

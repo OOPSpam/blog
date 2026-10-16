@@ -4,6 +4,7 @@ title: How to block countries in Toolset Forms?
 date: 2025-09-02T04:39:00.000+08:00
 last_modified_at: 2026-01-06T11:36:00.000+08:00
 author: chazie
+hub: vpn-country-rate-limits
 image: /blog/assets/posts/toolset_header.png
 description: Toolset Forms lacks country blocking. Use oopspam for form-level
   filtering or Cloudflare Firewall to block countries and stop spam effectively.

@@ -3,6 +3,7 @@ layout: post
 title: How to Limit Form Submissions in Gravity Forms?
 date: 2024-12-17T02:26:00.000Z
 author: chazie
+hub: vpn-country-rate-limits
 image: /assets/posts/limitform_gravityforms.jpeg
 description: Secure your Gravity Forms with oopspam's rate limiting, spam
   protection, and geo-blocking for better user experience and advanced form

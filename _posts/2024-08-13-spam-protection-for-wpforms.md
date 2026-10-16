@@ -4,6 +4,7 @@ title: 5 ways to protect your WPForms from spam
 date: 2022-02-10
 last_modified_at: 2026-05-21T02:10:00.000+08:00
 author: onar
+hub: wordpress-forms
 image: /assets/posts/social-media-meta.png
 description: Learn how to add spam protection to WPForms with these 5 different
   methods in WordPress.

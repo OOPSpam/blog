@@ -2,6 +2,7 @@
 layout: post
 title:  "Troubleshooting Elementor Forms Not Sending Email Notifications"
 author: onar
+hub: wordpress-forms
 image: /assets/posts/elementorforms-email-notification/meta.png
 tags: [wordpress, contact_form, elementor_forms]
 

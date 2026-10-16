@@ -3,6 +3,7 @@ layout: post
 title: "CAPTCHA and Accessibility: Why Your Forms Might Be Breaking the Law in 2026"
 date: 2026-08-13T21:54:00.000+08:00
 author: chazie
+hub: cloudflare-captcha
 image: /blog/assets/posts/meta_captcha_accessible.jpg
 description: Learn how CAPTCHA can create accessibility and legal risks under
   WCAG, ADA, and EAA rules, and explore accessible spam protection alternatives.

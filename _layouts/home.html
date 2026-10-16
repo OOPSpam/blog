@@ -1,58 +1,82 @@
 ---
 layout: default
 ---
+{% comment %}
+  Blog index. Page 1: H1, intro, topic hubs, "Start here", then the latest posts.
+  Pages 2+: a "Page N" H1 and the post list only, so they don't duplicate page 1.
+{% endcomment %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "@id": {{ '/' | absolute_url | append: '#blog' | jsonify }},
+  "name": "oopspam Blog",
+  "url": {{ '/' | absolute_url | jsonify }},
+  "description": {{ site.description | jsonify }},
+  "publisher": { "@id": "https://www.oopspam.com/#organization" },
+  "inLanguage": "en-US"
+}
+</script>
 
-<header>
-  <h1 style="font-weight: normal;">We write about spam protection, accessibility, and more.</h1>
+{% if paginator.page == 1 %}
+<header class="blog-head">
+  <h1>Guides to stopping form, signup and order spam</h1>
+  <p class="blog-intro">Practical guides from the team behind oopspam on keeping spam, fake sign-ups and fraudulent orders out of your forms, email lists and online store. Protect any platform with the <a href="https://www.oopspam.com/spam-detection-api">spam detection API</a>, or WordPress sites with the <a href="https://www.oopspam.com/wordpress">oopspam Anti-Spam plugin</a>.</p>
 </header>
+
+<nav class="hub-links" aria-label="Topics">
+  <h2>Browse by topic</h2>
+  <ul>
+    {% for h in site.data.hubs %}
+    {% assign h_posts = site.posts | where: 'hub', h.slug %}
+    <li><a href="{{ site.baseurl }}/topics/{{ h.slug }}/">{{ h.name }}<span class="hub-count">{{ h_posts.size }}</span></a></li>
+    {% endfor %}
+  </ul>
+</nav>
+
+{% assign start_urls = "/common-cloudflare-turnstile-errors-in-wordpress-forms-and-how-to-fix-them,/blocking-countries-from-accessing-your-website-using-cloudflare,/best-wordpress-form-builder-plugins,/8-ways-to-protect-your-contact-form-7-from-spam" | split: "," %}
+<section class="start-here" aria-labelledby="start-here-title">
+  <h2 id="start-here-title">Start here: most read</h2>
+  <ol>
+    {% for u in start_urls %}
+    {% assign sp = site.posts | where: 'url', u | first %}
+    {% if sp %}
+    <li><a href="{{ sp.url | prepend: site.baseurl }}">
+      {% if sp.image %}<img src="{{ sp.image | relative_url | replace: '/blog/blog/', '/blog/' }}" alt="" width="72" height="72" loading="lazy">{% endif %}
+      <span>{{ sp.title }}</span>
+    </a></li>
+    {% endif %}
+    {% endfor %}
+  </ol>
+</section>
+<h2 class="all-posts-title">Latest guides</h2>
+{% else %}
+<header class="blog-head">
+  <h1>Spam protection guides: page {{ paginator.page }}</h1>
+</header>
+{% endif %}
+
 <div class="catalogue">
   <div class="band">
     {% for post in paginator.posts %}
-    <div class="item-{% increment postNo %}" style="border: solid;">
-      <a href="{{ post.url | prepend: site.baseurl }}" class="card">
-        
-        <div class="thumb" style="background-image: url({{ post.image | relative_url | replace: '/blog/blog/', '/blog/' }});"></div>
-        <article tabindex="0">
-          <h2>{{ post.title }}</h2>
-          
-            <span>
-            {% capture words %}
-            {{ post.content | number_of_words | minus: 180 }}
-            {% endcapture %}
-            {% unless words contains '-' %}
-            {{ words | plus: 150 | divided_by: 150 | append: ' minute read' }}
-            {% endunless %}
-          </span>
-          
-        </article>
-      </a>
-    </div>
-  {% endfor %}
-
+    <div class="item-{% increment postNo %}">{% include post-card.html post=post %}</div>
+    {% endfor %}
   </div>
 
   <div class="pagination">
+    {% comment %} One URL form for every page: trailing slash, matching the canonical (/page2/). {% endcomment %}
     {% if paginator.previous_page %}
-      <a tabindex="0" style="font-size: xx-large;" href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="left arrow">&#8592;</a>
+      {% assign prev_path = paginator.previous_page_path | prepend: site.baseurl | append: '/' | replace: '//', '/' %}
+      <a tabindex="0" style="font-size: xx-large;" href="{{ prev_path }}" class="left arrow" rel="prev" aria-label="Previous page">&#8592;</a>
     {% endif %}
-  
-      <span class="page_number ">
-        Page: {{ paginator.page }} of {{ paginator.total_pages }}
-      </span>
-     
+    <span class="page_number">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
     {% if paginator.next_page %}
-      <a tabindex="0" style="font-size: xx-large;" href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="right arrow">&#8594;</a>
+      {% assign next_path = paginator.next_page_path | prepend: site.baseurl | append: '/' | replace: '//', '/' %}
+      <a tabindex="0" style="font-size: xx-large;" href="{{ next_path }}" class="right arrow" rel="next" aria-label="Next page">&#8594;</a>
     {% endif %}
-  
-  
   </div>
-
-
 </div>
 
 <script>
-  const childElement = document.querySelector('.catalogue');
-
-  childElement.parentElement.style.maxWidth = 'unset';
-
+  document.querySelector('.catalogue').parentElement.style.maxWidth = 'unset';
 </script>

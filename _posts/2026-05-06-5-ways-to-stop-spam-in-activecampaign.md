@@ -4,6 +4,7 @@ title: 5 Ways to Stop Spam in ActiveCampaign
 date: 2026-05-06T21:27:00.000+08:00
 last_modified_at: 2026-09-22T12:02:00.000+04:00
 author: chazie
+hub: email-lists
 image: /blog/assets/posts/email_stopspam_activecampaign.jpg
 description: Stop spam in ActiveCampaign with 5 proven methods. Learn how to use
   oopspam, CAPTCHA, double opt-in, and more to protect your list and

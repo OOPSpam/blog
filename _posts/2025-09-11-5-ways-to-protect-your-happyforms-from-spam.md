@@ -3,6 +3,7 @@ layout: post
 title: 5 ways to protect your HappyForms from spam
 date: 2025-09-11T06:15:00.000+08:00
 author: chazie
+hub: wordpress-forms
 image: /blog/assets/posts/header_hf.png
 description: Stop spam in HappyForms with built-in honeypots, reCAPTCHA, and
   oopspam. Block bots, filter by country, and keep your forms clean and secure.

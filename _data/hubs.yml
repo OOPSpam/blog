@@ -1,0 +1,33 @@
+# Topic hubs. Each post can set `hub:` to one of these slugs.
+# Used for the hub pages (/blog/topics/<slug>/), breadcrumbs (Blog › Hub › Post),
+# the hub links on the blog index and the fallback "Related integration" box.
+- slug: wordpress-forms
+  name: WordPress forms
+  description: Stop spam in WordPress form plugins like WPForms, Gravity Forms, Contact Form 7, Elementor and Fluent Forms.
+  integration_url: https://www.oopspam.com/wordpress
+  integration_name: oopspam Anti-Spam for WordPress
+  integration_blurb: Filters spam in 40+ WordPress form, membership and checkout plugins, with no CAPTCHA.
+- slug: email-lists
+  name: Email lists
+  description: Keep bots and fake sign-ups out of Mailchimp, beehiiv, Brevo, ActiveCampaign and other email lists.
+  integration_url: https://www.oopspam.com/spam-detection-api
+  integration_name: oopspam spam detection API
+  integration_blurb: Checks each sign-up's email, IP and message before it reaches your list.
+- slug: ecommerce-fraud
+  name: E-commerce fraud
+  description: Block fake orders, card testing and checkout spam in WooCommerce, FluentCart, SureCart and other stores.
+  integration_url: https://www.oopspam.com/woocommerce
+  integration_name: oopspam for WooCommerce
+  integration_blurb: Blocks fake orders, card testing and spam registrations at checkout.
+- slug: cloudflare-captcha
+  name: Cloudflare, Turnstile & CAPTCHA
+  description: Fix Cloudflare Turnstile and reCAPTCHA errors, compare CAPTCHAs, and stop spam without one.
+  integration_url: https://www.oopspam.com/turnstile-alternative
+  integration_name: A CAPTCHA-free alternative to Turnstile
+  integration_blurb: Stops spam on your server, with no widget, challenge or token to break.
+- slug: vpn-country-rate-limits
+  name: VPN, country blocking & rate limits
+  description: Block VPN and data center IPs, restrict countries and rate-limit form submissions.
+  integration_url: https://www.oopspam.com/wordpress
+  integration_name: oopspam Anti-Spam for WordPress
+  integration_blurb: Blocks VPNs, proxies, data center IPs and chosen countries, and rate-limits submissions.

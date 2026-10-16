@@ -2,6 +2,7 @@
 layout: post
 title:  "How to Add hCAPTCHA to Elementor Forms"
 author: onar
+hub: cloudflare-captcha
 image: /assets/posts/social-media-meta.png
 tags: [WordPress, contact_form, elementor]
 

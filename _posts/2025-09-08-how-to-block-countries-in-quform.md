@@ -4,6 +4,7 @@ title: How to block countries in QuForm?
 date: 2025-09-08T02:15:00.000+08:00
 last_modified_at: 2026-01-06T11:36:00.000+08:00
 author: chazie
+hub: vpn-country-rate-limits
 image: /blog/assets/posts/quform_header.png
 description: QuForm doesn’t include country blocking by default. Use oopspam to
   filter form submissions by region or Cloudflare Firewall to block traffic

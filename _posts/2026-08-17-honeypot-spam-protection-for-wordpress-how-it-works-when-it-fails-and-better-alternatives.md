@@ -4,6 +4,7 @@ title: "Honeypot Spam Protection for WordPress: How It Works, When It Fails, and
   Better Alternatives"
 date: 2026-08-18T04:50:00.000+08:00
 author: chazie
+hub: cloudflare-captcha
 image: /blog/assets/posts/meta_honeypot_spam.png
 description: Discover how honeypot spam protection works in WordPress, its
   limitations, and when to pair it with oopspam or Turnstile for stronger

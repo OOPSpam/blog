@@ -3,6 +3,7 @@ layout: post
 title: How to Limit Form Submissions in WooCommerce for Orders and Registrations
 date: 2025-12-08T08:28:00.000+08:00
 author: chazie
+hub: vpn-country-rate-limits
 image: /blog/assets/posts/limitform_woocommerce.jpg
 description: Learn how to limit WooCommerce form submissions for orders and
   registrations using plugins, rate limiting, anti-spam tools, and product

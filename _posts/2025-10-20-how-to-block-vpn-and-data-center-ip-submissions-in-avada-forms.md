@@ -3,6 +3,7 @@ layout: post
 title: "How to Block VPN and Data Center IP Submissions in Avada Forms? "
 date: 2025-10-20T13:54:00.000+08:00
 author: chazie
+hub: vpn-country-rate-limits
 image: /blog/assets/posts/avada_form_block.jpg
 description: Block spam at the source. Learn how to stop VPN and data center IP
   submissions in Avada Forms using oopspam and Cloudflare for safer entries.

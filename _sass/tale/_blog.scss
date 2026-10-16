@@ -1,0 +1,148 @@
+// Blog additions: index hubs/"Start here", post cards, breadcrumbs, "On this page" sidebar,
+// reviewed-by line, related integration box, author box and author/hub pages.
+$yellow: #fcdd56;
+$cream: #fbf6ed;
+$ink: #111;
+$muted: #555;
+$line: rgba(0, 0, 0, .12);
+
+// ---------- Breadcrumbs ----------
+.breadcrumbs {
+  font-family: $sans-serif;
+  font-size: .85rem;
+  margin: 0 0 1.25rem;
+  ol { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .25rem; }
+  li { color: $muted; font-size: .85rem; margin: 0; text-align: left; }
+  li + li::before { content: "›"; margin: 0 .4rem 0 .15rem; color: $default-tint; }
+  a { color: $muted; text-decoration: underline; text-underline-offset: .15em; }
+  [aria-current] { color: $ink; max-width: 32ch; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+}
+
+// ---------- Post byline ----------
+// ---------- Post header: title, By / Reviewed by, dates ----------
+.post .post-header { margin: 0 0 2.5rem; padding-bottom: 1.75rem; border-bottom: 1px solid $line; font-family: $sans-serif; }
+.post .post-title { font-family: $sans-serif; font-size: 2.6rem; line-height: 1.18; text-align: left; margin: 0 0 1.5rem; color: $ink; letter-spacing: -.01em;
+  @media (max-width: 600px) { font-size: 2rem; } }
+.post .post-people { display: flex; flex-wrap: wrap; gap: 1rem 2.5rem; margin: 0 0 1rem; }
+.post .person { display: flex; align-items: center; gap: .75rem;
+  img { width: 44px; height: 44px; border-radius: 50%; object-fit: cover; margin: 0; flex: none; border: 1px solid $line; }
+  p { margin: 0; text-align: left; font-size: .95rem; line-height: 1.35; }
+  .person-label { color: $muted; }
+  .person-name a { color: $ink; font-weight: 600; text-decoration: none; }
+  .person-name a:hover { text-decoration: underline; }
+  .person-role { color: $muted; font-size: .85rem; } }
+.post .post-dates { display: flex; flex-wrap: wrap; gap: .25rem 0; margin: 0; text-align: left; font-size: .875rem; color: $muted;
+  span:not(:last-child)::after { content: "·"; margin: 0 .55rem; color: $default-tint; } }
+
+// ---------- Post layout with "On this page" ----------
+.post-toc { display: none; }
+@media (min-width: 1200px) {
+  main.main-post { max-width: 1240px; width: 92%; }
+  .has-post-toc .post-layout { display: grid; grid-template-columns: minmax(0, 1fr) 270px; column-gap: 64px; }
+  .has-post-toc .post-toc { display: block; }
+  // the sidebar replaces the in-article table of contents on wide screens
+  .has-post-toc #markdown-toc { display: none; }
+}
+.post-toc {
+  position: sticky; top: 1.5rem; align-self: start; margin-top: 3rem;
+  max-height: calc(100vh - 3rem); overflow-y: auto; scrollbar-width: none; -ms-overflow-style: none;
+  &::-webkit-scrollbar { display: none; }
+  font-family: $sans-serif; font-size: .875rem; line-height: 1.45;
+  nav { border-left: 2px solid $line; padding-left: 1rem; }
+  .post-toc-title { font-size: .75rem; letter-spacing: .08em; text-transform: uppercase; color: $muted; margin: 0 0 .6rem; font-weight: 600; }
+  ol { list-style: none; margin: 0; padding: 0; }
+  ol ol { padding-left: .85rem; margin: .35rem 0 .2rem; font-size: .82rem; display: none; }
+  li.is-open > ol { display: block; }
+  li { margin: 0 0 .45rem; line-height: 1.45; }
+  a { color: $muted; display: block; line-height: 1.45; transition: color .15s; }
+  a:hover { color: $ink; text-decoration: underline; }
+  a.is-active { color: $ink; font-weight: 700; }
+}
+
+// ---------- Related integration ----------
+.related-integration {
+  margin: 3rem 0 1.5rem; padding: 1.25rem 1.5rem; border: 1px solid #000; border-radius: 12px;
+  background: $cream; box-shadow: 4px 5px 0 $yellow; font-family: $sans-serif;
+  p { text-align: left; margin: 0 0 .35rem; font-size: 1rem; }
+  .ri-label { font-size: .75rem; letter-spacing: .08em; text-transform: uppercase; color: $muted; }
+  .ri-name { font-size: 1.2rem; font-weight: 700; a { color: $ink; } }
+  .ri-blurb { color: #333; }
+  .ri-link { display: inline-block; margin-top: .4rem; font-weight: 600; color: $ink; box-shadow: inset 0 -6px 0 $yellow; }
+}
+
+// ---------- Author box (end of post) ----------
+.author-box {
+  display: flex; gap: 1.25rem; align-items: flex-start; margin: 1.5rem 0 3rem; padding: 1.5rem;
+  border-top: 1px solid $line; border-bottom: 1px solid $line; font-family: $sans-serif;
+  img { width: 80px; height: 80px; border-radius: 50%; border: 2px solid #000; object-fit: cover; margin: 0; flex: none; }
+  p { text-align: left; margin: 0 0 .35rem; font-size: 1rem; }
+  .author-box-name { font-weight: 700; font-size: 1.1rem; a { color: $ink; text-decoration: underline; text-underline-offset: .15em; } }
+  .author-box-role { color: $muted; font-size: .9rem; }
+  .author-box-bio { color: #333; line-height: 1.6; }
+  .author-box-links a { color: $ink; text-decoration: underline; text-underline-offset: .15em; }
+  @media (max-width: 600px) { flex-direction: column; }
+}
+
+// ---------- Post cards (index, hubs, author pages) ----------
+.catalogue .card {
+  img.thumb { width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; margin: 0; background: #eee; }
+  h2 { font-size: 1.05rem; line-height: 1.35; margin: 0 0 .75rem; color: #222; }
+  article { padding: 16px 18px 18px; }
+  .card-meta { display: flex; flex-wrap: wrap; gap: .35rem .9rem; margin: 0; font-family: $sans-serif; }
+  .card-meta span { margin: 0; font-size: 12px; color: #555; }
+}
+.catalogue .item-0 .card h2 { @media (min-width: 60em) { font-size: 1.35rem; } }
+
+// ---------- Blog index ----------
+.blog-head { width: 100%; max-width: none; margin: 2.5rem auto 1.5rem; font-family: $sans-serif;
+  h1 { font-size: 2.6rem; line-height: 1.15; margin: 0 0 1rem; color: $ink; max-width: 22ch; }
+  .blog-intro { font-size: 1.15rem; line-height: 1.6; color: #333; max-width: 46rem; margin: 0;
+    a { color: $ink; text-decoration: underline; text-underline-offset: .15em; } }
+  @media (max-width: 600px) { h1 { font-size: 2rem; } }
+}
+.hub-links { width: 100%; max-width: none; margin: 0 auto 2.5rem; font-family: $sans-serif;
+  h2 { font-size: .8rem; letter-spacing: .08em; text-transform: uppercase; color: $muted; margin: 0 0 .75rem; }
+  ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .6rem; }
+  a { display: inline-block; padding: .5rem 1rem; border: 1px solid #000; border-radius: 999px; background: #fff; color: $ink; font-size: .95rem; transition: background .15s; }
+  a:hover, a:focus-visible { background: $yellow; }
+  .hub-count { color: $muted; font-size: .85rem; margin-left: .3rem; }
+}
+.start-here { width: 100%; max-width: none; margin: 0 auto 3rem; padding: 1.5rem; background: $cream; border: 1px solid #000; border-radius: 16px; font-family: $sans-serif;
+  h2 { font-size: 1.4rem; margin: 0 0 1rem; color: $ink; }
+  ol { list-style: none; margin: 0; padding: 0; display: grid; gap: 1rem; grid-template-columns: 1fr;
+    @media (min-width: 40em) { grid-template-columns: 1fr 1fr; }
+    @media (min-width: 70em) { grid-template-columns: repeat(4, 1fr); } }
+  a { display: flex; gap: .75rem; align-items: center; color: $ink; }
+  img { width: 72px; height: 72px; object-fit: cover; border-radius: 8px; border: 1px solid $line; margin: 0; flex: none; }
+  span { font-size: .95rem; line-height: 1.35; font-weight: 600; }
+  a:hover span { text-decoration: underline; }
+}
+.all-posts-title { width: 100%; max-width: none; margin: 0 auto 1rem; font-family: $sans-serif; font-size: 1.4rem; color: $ink; }
+
+// ---------- Author & hub pages ----------
+main.main-wide { max-width: 1240px; width: 90%; }
+.profile { max-width: 800px; margin: 2rem auto 3rem; font-family: $sans-serif;
+  .profile-head { display: flex; gap: 1.5rem; align-items: center; margin-bottom: 1.5rem; }
+  img { width: 120px; height: 120px; border-radius: 50%; border: 2px solid #000; object-fit: cover; margin: 0; flex: none; }
+  h1 { font-size: 2.4rem; margin: 0; line-height: 1.15; color: $ink; }
+  .profile-role { margin: .3rem 0 .6rem; color: $muted; font-size: 1.05rem; }
+  .profile-links { display: flex; gap: .6rem; flex-wrap: wrap; margin: 0; padding: 0; list-style: none;
+    a { display: inline-block; padding: .3rem .85rem; border: 1px solid #000; border-radius: 999px; color: $ink; font-size: .9rem; }
+    a:hover { background: $yellow; } }
+  .profile-bio p { font-size: 1.1rem; line-height: 1.7; color: #222; margin: 0 0 1rem; }
+  @media (max-width: 600px) { .profile-head { flex-direction: column; align-items: flex-start; } h1 { font-size: 2rem; } }
+}
+.hub-head { max-width: 800px; margin: 2rem auto 2.5rem; font-family: $sans-serif;
+  h1 { font-size: 2.4rem; line-height: 1.15; margin: 0 0 1rem; color: $ink; }
+  p { font-size: 1.1rem; line-height: 1.7; color: #222; }
+}
+.section-title { font-family: $sans-serif; font-size: 1.4rem; color: $ink; margin: 0 0 1rem; }
+
+// ---------- Wide content on small screens ----------
+// Tables and code blocks scroll inside their own box instead of widening the page.
+.post table { display: block; max-width: 100%; overflow-x: auto; }
+.post pre { max-width: 100%; overflow-x: auto; }
+.post p code, .post li code, .post td code { overflow-wrap: anywhere; }
+
+// Top bar lines up with the wider post / index layout
+.nav-container { max-width: 1240px; width: 92%; }

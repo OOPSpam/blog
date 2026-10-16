@@ -1,0 +1,59 @@
+{% comment %}
+  Structured data for a blog post: BlogPosting + WebPage (with reviewedBy) + BreadcrumbList.
+  Replaces the JSON-LD from jekyll-seo-tag on posts (see _plugins/strip_seo_jsonld.rb).
+{% endcomment %}
+{% assign sp_url = page.url | absolute_url %}
+{% assign sp_author = nil %}{% if page.author %}{% assign sp_author = site.authors | where: 'name', page.author | first %}{% endif %}
+{% assign sp_reviewer = site.authors | where: 'name', site.reviewer | first %}
+{% assign sp_hub = nil %}{% if page.hub %}{% assign sp_hub = site.data.hubs | where: "slug", page.hub | first %}{% endif %}
+{% if page.image %}{% assign sp_image = page.image | absolute_url | replace: '/blog/blog/', '/blog/' %}{% else %}{% assign sp_image = site.default_image %}{% endif %}
+{% if page.last_modified_at %}{% assign sp_modified = page.last_modified_at %}{% else %}{% assign sp_modified = page.date %}{% endif %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": {{ sp_url | append: '#article' | jsonify }},
+      "headline": {{ page.title | strip_html | jsonify }},
+      "description": {{ page.description | default: site.description | strip_html | strip_newlines | jsonify }},
+      "image": {{ sp_image | jsonify }},
+      "datePublished": {{ page.date | date_to_xmlschema | jsonify }},
+      "dateModified": {{ sp_modified | date_to_xmlschema | jsonify }},
+      {% if sp_author %}"author": {
+        "@type": "Person",
+        "@id": {{ sp_author.url | absolute_url | append: '#person' | jsonify }},
+        "name": {{ sp_author.display_name | jsonify }},
+        "url": {{ sp_author.url | absolute_url | jsonify }}
+      },{% endif %}
+      "publisher": { "@id": "https://www.oopspam.com/#organization" },
+      "mainEntityOfPage": { "@id": {{ sp_url | jsonify }} },
+      "inLanguage": "en-US",
+      "wordCount": {{ content | number_of_words }}
+    },
+    {
+      "@type": "WebPage",
+      "@id": {{ sp_url | jsonify }},
+      "url": {{ sp_url | jsonify }},
+      "name": {{ page.title | strip_html | jsonify }},
+      "isPartOf": { "@id": {{ '/' | absolute_url | append: '#blog' | jsonify }} },
+      "breadcrumb": { "@id": {{ sp_url | append: '#breadcrumb' | jsonify }} }{% if sp_reviewer and page.author != site.reviewer %},
+      "reviewedBy": {
+        "@type": "Person",
+        "@id": {{ sp_reviewer.url | absolute_url | append: '#person' | jsonify }},
+        "name": {{ sp_reviewer.display_name | jsonify }},
+        "url": {{ sp_reviewer.url | absolute_url | jsonify }}
+      }{% endif %}
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": {{ sp_url | append: '#breadcrumb' | jsonify }},
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Blog", "item": {{ '/' | absolute_url | jsonify }} },
+        {% if sp_hub %}{ "@type": "ListItem", "position": 2, "name": {{ sp_hub.name | jsonify }}, "item": {{ '/topics/' | append: sp_hub.slug | append: '/' | absolute_url | jsonify }} },
+        { "@type": "ListItem", "position": 3, "name": {{ page.title | strip_html | jsonify }} }{% else %}{ "@type": "ListItem", "position": 2, "name": {{ page.title | strip_html | jsonify }} }{% endif %}
+      ]
+    }
+  ]
+}
+</script>

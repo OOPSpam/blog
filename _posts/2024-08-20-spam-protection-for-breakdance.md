@@ -4,6 +4,7 @@ title: "Breakdance Forms Spam Protection: A Step-by-Step Guide"
 date: 2023-09-29
 last_modified_at: 2024-10-29T11:20:00.000Z
 author: onar
+hub: wordpress-forms
 image: /assets/posts/breakdance/sm.png
 description: Learn how to add spam protection to Breakdance Forms with these 3
   different methods in WordPress.

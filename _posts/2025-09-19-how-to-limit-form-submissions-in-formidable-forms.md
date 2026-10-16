@@ -3,6 +3,7 @@ layout: post
 title: How to Limit Form Submissions in Formidable Forms?
 date: 2025-09-19T18:45:00.000+08:00
 author: chazie
+hub: vpn-country-rate-limits
 image: /blog/assets/posts/ff_rt.jpg
 description: Limit submissions in Formidable Forms with scheduling, entry caps,
   and oopspam rate-limiting to block spam, duplicates, and abuse.

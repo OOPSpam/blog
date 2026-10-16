@@ -4,6 +4,7 @@ title: "How to Block VPN and Data Center IP Submissions in MC4WP: Mailchimp for
   WordPress?"
 date: 2026-02-10T13:24:00.000+08:00
 author: chazie
+hub: vpn-country-rate-limits
 image: /blog/assets/posts/header_mc4wp_vpn.jpg
 description: "Stop VPN and data center spam in MC4WP: Mailchimp for WordPress
   using oopspam or Cloudflare. Simple steps to block fake signups."

@@ -3,6 +3,7 @@ layout: post
 title: How to Block VPN and Data Center IP Submissions in Ultimate Member?
 date: 2026-02-09T10:17:00.000+08:00
 author: chazie
+hub: vpn-country-rate-limits
 image: /blog/assets/posts/um_meta.jpg
 description: Learn how to block VPN and data center IP submissions in Ultimate
   Member using oopspam and Cloudflare to stop fake registrations and spam
