@@ -85,7 +85,9 @@ $line: rgba(0, 0, 0, .12);
 
 // ---------- Post cards (index, hubs, author pages) ----------
 .catalogue .card {
-  img.thumb { width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; margin: 0; background: #eee; }
+  // padding: 0 overrides the old theme's padding-bottom trick for background thumbnails,
+  // which otherwise squashes the <img> to zero height
+  img.thumb { width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; margin: 0; padding: 0; background: #eee; }
   h2 { font-size: 1.05rem; line-height: 1.35; margin: 0 0 .75rem; color: #222; }
   article { padding: 16px 18px 18px; }
   .card-meta { display: flex; flex-wrap: wrap; gap: .35rem .9rem; margin: 0; font-family: $sans-serif; }
