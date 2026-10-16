@@ -7,7 +7,7 @@
 
     {% include navigation.html %}
 
-    <main{% if page.layout == 'post' %} class="main-post"{% elsif page.layout == 'author' or page.layout == 'hub' %} class="main-wide"{% endif %}>
+    <main{% if page.layout == 'post' %} class="main-post"{% elsif page.layout == 'author' or page.layout == 'hub' %} class="main-wide"{% elsif page.layout == 'home' %} class="main-home"{% endif %}>
       {{ content }}
     </main>
 

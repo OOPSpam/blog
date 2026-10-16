@@ -12,9 +12,12 @@ $code-color: #bf616a;
 $border-color: orange;
 
 // Fonts
-$serif-primary: 'Libre Baskerville', 'Times New Roman', Times, serif;
-$serif-secondary: Palatino, 'Palatino LT STD', 'Palatino Linotype', 'Book Antiqua', 'Georgia', serif;
-$sans-serif: 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, sans-serif;
+// Same pairing as oopspam.com: Bricolage Grotesque for headings, Open Sans for text.
+// The old serif variables now point to Open Sans so every part of the blog is sans-serif.
+$sans-serif: 'Open Sans', 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, sans-serif;
+$display: 'Bricolage Grotesque', 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+$serif-primary: $sans-serif;
+$serif-secondary: $sans-serif;
 $monospaced: Menlo, Monaco, monospace;
 
 @mixin box-sizing($type: border-box) {

@@ -49,13 +49,18 @@
     width: 4rem;
   }
 
-  ul, table {
-    font-size: 20px;
+  // Open Sans reads best left-aligned at 18px (justified text leaves uneven word gaps)
+  ul, ol {
+    font-size: 18px;
+  }
+  table {
+    font-size: 16px;
   }
   p, li {
     margin: 0 0 1rem;
-    text-align: justify;
-    font-size: 20px;
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.75;
   }
 
   a:hover {

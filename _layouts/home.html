@@ -19,31 +19,35 @@ layout: default
 </script>
 
 {% if paginator.page == 1 %}
-<header class="blog-head">
-  <h1>Guides to stopping form, signup and order spam</h1>
-  <p class="blog-intro">Practical guides from the team behind oopspam on keeping spam, fake sign-ups and fraudulent orders out of your forms, email lists and online store. Protect any platform with the <a href="https://www.oopspam.com/spam-detection-api">spam detection API</a>, or WordPress sites with the <a href="https://www.oopspam.com/wordpress">oopspam Anti-Spam plugin</a>.</p>
-</header>
+<section class="blog-hero">
+  <div class="blog-hero-inner">
+    <h1>Guides to stopping spam<br> in forms, signups and ecommerce</h1>
+    <p class="blog-intro">Practical guides from the team behind oopspam on keeping spam, fake sign-ups and fraudulent orders out of your forms, email lists and online store. Protect any platform with the <a href="https://www.oopspam.com/spam-detection-api">spam detection API</a>, or WordPress sites with the <a href="https://www.oopspam.com/wordpress">oopspam Anti-Spam plugin</a>.</p>
+    <nav class="hub-links" aria-label="Topics">
+      <h2>Browse by topic</h2>
+      <ul>
+        {% for h in site.data.hubs %}
+        {% assign h_posts = site.posts | where: 'hub', h.slug %}
+        <li><a href="{{ site.baseurl }}/topics/{{ h.slug }}/">{{ h.name }}<span class="hub-count">{{ h_posts.size }}</span></a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+</section>
 
-<nav class="hub-links" aria-label="Topics">
-  <h2>Browse by topic</h2>
-  <ul>
-    {% for h in site.data.hubs %}
-    {% assign h_posts = site.posts | where: 'hub', h.slug %}
-    <li><a href="{{ site.baseurl }}/topics/{{ h.slug }}/">{{ h.name }}<span class="hub-count">{{ h_posts.size }}</span></a></li>
-    {% endfor %}
-  </ul>
-</nav>
-
-{% assign start_urls = "/common-cloudflare-turnstile-errors-in-wordpress-forms-and-how-to-fix-them,/blocking-countries-from-accessing-your-website-using-cloudflare,/best-wordpress-form-builder-plugins,/8-ways-to-protect-your-contact-form-7-from-spam" | split: "," %}
+<div class="home-inner">
+{% comment %} "Most read": post URL | short label shown on the box {% endcomment %}
+{% assign start_items = "/common-cloudflare-turnstile-errors-in-wordpress-forms-and-how-to-fix-them|Fix Turnstile errors;/blocking-countries-from-accessing-your-website-using-cloudflare|Block countries in Cloudflare;/best-wordpress-form-builder-plugins|Best WordPress form plugins;/8-ways-to-protect-your-contact-form-7-from-spam|Stop Contact Form 7 spam" | split: ";" %}
 <section class="start-here" aria-labelledby="start-here-title">
-  <h2 id="start-here-title">Start here: most read</h2>
+  <h2 id="start-here-title">Most read</h2>
   <ol>
-    {% for u in start_urls %}
-    {% assign sp = site.posts | where: 'url', u | first %}
+    {% for item in start_items %}
+    {% assign parts = item | split: "|" %}
+    {% assign sp = site.posts | where: 'url', parts[0] | first %}
     {% if sp %}
-    <li><a href="{{ sp.url | prepend: site.baseurl }}">
-      {% if sp.image %}<img src="{{ sp.image | relative_url | replace: '/blog/blog/', '/blog/' }}" alt="" width="72" height="72" loading="lazy">{% endif %}
-      <span>{{ sp.title }}</span>
+    <li><a href="{{ sp.url | prepend: site.baseurl }}" title="{{ sp.title | escape }}">
+      {% if sp.image %}<img src="{{ sp.image | relative_url | replace: '/blog/blog/', '/blog/' }}" alt="" width="64" height="64" loading="lazy">{% endif %}
+      <span>{{ parts[1] }}</span>
     </a></li>
     {% endif %}
     {% endfor %}
@@ -51,6 +55,7 @@ layout: default
 </section>
 <h2 class="all-posts-title">Latest guides</h2>
 {% else %}
+<div class="home-inner">
 <header class="blog-head">
   <h1>Spam protection guides: page {{ paginator.page }}</h1>
 </header>
@@ -76,7 +81,4 @@ layout: default
     {% endif %}
   </div>
 </div>
-
-<script>
-  document.querySelector('.catalogue').parentElement.style.maxWidth = 'unset';
-</script>
+</div>
