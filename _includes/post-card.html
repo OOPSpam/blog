@@ -7,6 +7,8 @@
   {% if card.image %}<img class="thumb" src="{{ card_img }}" alt="" loading="lazy" width="400" height="225">{% endif %}
   <article>
     <h2>{{ card.title }}</h2>
+    {% assign card_text = card.card_excerpt | default: card.description %}
+    {% if card_text %}<p class="card-excerpt">{{ card_text | strip_html | escape }}</p>{% endif %}
     <p class="card-meta">
       {% if card.last_modified_at and card_upd > card_pub %}
       <span>Updated <time datetime="{{ card.last_modified_at | date_to_xmlschema }}">{{ card.last_modified_at | date: "%b %-d, %Y" }}</time></span>

@@ -42,6 +42,7 @@ collections:
         }
       - { label: 'Meta image', name: 'image', widget: 'image' }
       - { label: 'Meta description', name: 'description', widget: 'string' }
+      - { label: 'Card excerpt', name: 'summary', widget: 'text', required: false, hint: "Optional. Two sentences shown under the title on the blog index and topic pages. Leave empty to use the first two sentences of the article." }
       - { label: 'Tags', name: 'tags', widget: 'list' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
   - name: 'authors'
