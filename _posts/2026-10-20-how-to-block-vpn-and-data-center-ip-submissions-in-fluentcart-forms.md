@@ -2,6 +2,7 @@
 layout: post
 title: How to Block VPN and Data Center IP Submissions in FluentCart Forms
 date: 2026-10-20T13:14:00.000+08:00
+last_modified_at: 2026-10-20T05:17:24.700Z
 author: chazie
 hub: vpn-country-rate-limits
 image: /blog/assets/posts/meta_fluentcart_vpn_dc.jpg
@@ -136,7 +137,7 @@ This method suits developers and teams with time to maintain rules. It works bes
     <tr>
       <th></th>
       <th>oopspam</th>
-      <th>Cloudflare WAF</th>
+      <th>Cloudflare</th>
     </tr>
   </thead>
   <tbody>
