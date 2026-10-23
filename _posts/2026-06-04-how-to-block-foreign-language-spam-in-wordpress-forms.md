@@ -2,11 +2,13 @@
 layout: post
 title: How to Block Foreign-Language Spam in WordPress Forms
 date: 2026-06-04T12:26:00.000+08:00
+last_modified_at: 2026-10-23T11:57:33.751Z
 author: chazie
 hub: wordpress-forms
 image: /blog/assets/posts/block_foreign_languge_meta.jpg
-description: Learn how to block foreign-language spam in WordPress forms using
-  language filters, keyword blocklists, and oopspam protection.
+description: Block Russian, Chinese, and other foreign-language spam in
+  WordPress forms with language allowlists, form builder filters, and one-click
+  spam word lists.
 tags:
   - WordPress forms
 ---
@@ -22,7 +24,7 @@ If your business serves English-speaking customers only, there is no legitimate 
 
 ## **Method 1: Use a Plugin with a Built-In Language Filter**
 
-The fastest and reliable approach is to install **[oopspam](https://www.oopspam.com/wordpress)** (that’s us 👋), an anti-spam plugin built specifically for WordPress forms. It works silently in the background, requires no [CAPTCHA](https://www.oopspam.com/blog/best-captcha-alternatives), and does not slow down your site.
+The fastest and most reliable approach is to install[ **oopspam**](https://www.oopspam.com/wordpress), an anti-spam plugin built specifically for WordPress forms. It works silently in the background, requires no[ CAPTCHA](https://www.oopspam.com/blog/best-captcha-alternatives), and does not slow down your site.
 
 ### **How oopspam's Language Allowlist Works**
 
@@ -58,9 +60,13 @@ This two-layer approach (language + country) gives you much stronger protection 
 
 **Supported form plugins include:** [WPForms](https://www.oopspam.com/blog/spam-protection-for-wpforms), [Fluent Forms](https://www.oopspam.com/blog/spam-protection-for-fluent-forms), [Elementor Forms](https://www.oopspam.com/blog/spam-protection-for-elementor-forms), [WS Form](https://www.oopspam.com/blog/spam-protection-for-wsform), [Forminator](https://www.oopspam.com/blog/spam-protection-for-forminator), [HappyForms](https://www.oopspam.com/blog/5-ways-to-protect-your-happyforms-from-spam), [Gravity Forms](https://www.oopspam.com/blog/spam-protection-for-gravity-forms), and [more](https://wordpress.org/plugins/oopspam-anti-spam/#:~:text=Supported%20form%20%26%20comment%20solutions%3A).
 
-## **Method 2: Use WPForms' Native Keyword and Country Filter**
+## **Method 2: Use Your Form Builder's Native Keyword and Country Filter**
 
-If you are already using WPForms, you can take advantage of its [built-in filtering](https://www.oopspam.com/blog/how-to-block-countries-in-wpforms).
+Many WordPress form builders include their own spam settings, such as keyword blocking or country filtering. If yours does, it is worth turning on as an extra layer. The exact menu names differ between plugins, so look for a section called something like Spam Protection, Anti-Spam, or Security in your form's settings.
+
+### **Example: Country and Keyword Filtering in WPForms**
+
+[WPForms](https://www.oopspam.com/blog/wpforms-block-user) is a good example of how these native filters work. You can use its[ built-in filtering](https://www.oopspam.com/blog/how-to-block-countries-in-wpforms) to allow or block submissions by country or keyword.
 
 ![Use WPForms' Native Keyword and Country Filter](/blog/assets/posts/wpforms-spam-protection-and-security.png "Use WPForms' Native Keyword and Country Filter")
 
@@ -73,11 +79,13 @@ If you are already using WPForms, you can take advantage of its [built-in filter
 
 ![Enable the Country or Keyword Filter option.](/blog/assets/posts/wpforms-country-or-keyword-filter.png "Enable the Country or Keyword Filter option.")
 
-This native setting is straightforward and works well for basic filtering needs. However, it is less granular than oopspam's language detection and may not catch submissions from bots that spoof their location.
+If you use a different form builder, check its settings or documentation for a similar keyword or country option. The steps will vary, but the idea is the same.
+
+Native filters like these are straightforward and work well for basic needs. However, they filter by country or exact keyword, not by the language a message is written in. They are less granular than oopspam's language detection and may not catch bots that spoof their location.
 
 ## **Method 3: Build a Keyword Blocklist**
 
-For a simpler, no-cost option, you can create a [keyword blocklist](https://github.com/oopspam/spam-words) using WordPress's built-in comment filtering or your form plugin's native blocklist feature. This method targets specific characters or words that appear frequently in foreign-language spam.
+A[ keyword blocklist](https://github.com/oopspam/spam-words) lets you reject submissions that contain specific words or phrases that show up often in foreign-language spam. You can set one up in WordPress core (for comments only) or in oopspam (for comments and forms).
 
 ### **Steps via WordPress Core (Discussion Settings):**
 
@@ -100,32 +108,54 @@ Unlike the WordPress core option, the Blocked Keywords feature in oopspam works 
 
 1. In your WordPress dashboard, go to **oopspam Anti-Spam > Settings**.
 2. Click the **Manual Moderation** tab.
-3. Expand the **Blocked keywords** section.
-4. Add your foreign-language terms or character sets, one per line (for example, Cyrillic words, common Chinese spam phrases, or spam-linked domain extensions like **.ru**).
-5. Save your settings.
+3. Expand the **Blocked keywords & phrases** section.
+4. Add your own foreign-language words or phrases, one per line, or use the quick-add buttons below to load a ready-made list.
+5. Click **Save Changes**.
+
+#### **Add Ready-Made Spam Word Lists in One Click**
+
+You do not have to build your blocklist from scratch. Below the keyword field, oopspam includes three quick-add buttons:
+
+* **Add English spam words**
+* **Add Chinese spam words**
+* **Add Russian spam words**
+
+Click a button and oopspam appends a curated list of common spam words in that language to your blocklist. Words already on your list are skipped, so you will not end up with duplicates. The lists come from oopspam's open-source[ spam-words](https://github.com/oopspam/spam-words) repository. Click **Save Changes** to apply them.
+
+![Add Ready-Made Spam Word Lists in One Click](/blog/assets/posts/oopspam-blocked-keywords-phrases-section.png "Add Ready-Made Spam Word Lists in One Click")
+
+You can edit the list after adding it. Remove any word that might appear in a genuine enquiry for your business, or add your own terms on new lines.
+
+> **Tip:** Matching is case-insensitive and exact. For example, "seo" matches "seo" but not "seoul". This keeps false positives low, but it also means single letters or partial words will not catch spam. Add whole words and phrases instead.
 
 Any form submission containing a blocked keyword is rejected automatically. This is particularly useful when you have already spotted recurring spam phrases in your inbox and want to shut them down immediately without waiting for the machine learning filter to catch up.
 
 **What to add to your blocklist:**
 
-* Common Cyrillic characters or words (useful if you receive Russian spam)
-* Specific spam phrases you have already spotted in your inbox
+* A ready-made list for the language you receive spam in, such as the Russian or Chinese list
+* Specific spam words or phrases you have already spotted in your inbox
 * Domain extensions frequently linked to spam, such as **.ru**
 
 > **Important limitation:** Keyword blocklists, whether managed through WordPress core or oopspam, require occasional updates as spammers shift their tactics. Treat them as a quick-response tool within a broader spam protection setup, not a standalone solution.
+
+## **How to Block Russian Spam in WordPress Forms**
+
+If your WordPress forms are receiving spam written in Russian or other Cyrillic languages, you can use **oopspam's Language Allowlist** to allow only the languages your business accepts. For example, an English-only website can allow English and automatically block submissions written in Russian.
+
+For extra coverage, open the **Manual Moderation** tab and click **Add Russian spam words** to load a ready-made list of common Russian spam terms into your blocklist. If you do not serve customers in Russia, you can also use the Country Blocklist's quick-add button to block submissions from Russia outright.
 
 ## **Combining Methods for Maximum Protection**
 
 No single method is 100% foolproof, but layering your defenses significantly reduces the risk. Here is a practical stack that works for most WordPress sites:
 
 1. oopspam as your primary filter (language allowlist + country blocking + machine learning)
-2. WPForms' built-in language filter as a secondary gate (if you use WPForms)
-3. A keyword blocklist for catching anything that slips through
+2. Your form builder's built-in keyword or country filter as a secondary gate, if it has one (for example, WPForms' Country or Keyword Filter)
+3. A keyword blocklist, such as oopspam's ready-made Russian, Chinese, or English spam word lists, for catching anything that slips through
 
-This layered approach handles both automated bot submissions and manual human spam, which is increasingly common as spammers [bypass basic CAPTCHA](https://www.oopspam.com/blog/bypassing-captcha) systems.
+This layered approach handles both automated bot submissions and manual human spam, which is increasingly common as spammers[ bypass basic CAPTCHA](https://www.oopspam.com/blog/bypassing-captcha) systems.
 
 ## **Final Thoughts**
 
-Foreign-language spam is a manageable problem with the right tools. For most site owners and developers, oopspam offers the most complete and low-maintenance solution, especially with its Language Allowlist, Keyword blocklists, and country-based filtering working together. 
+Foreign-language spam is a manageable problem with the right tools. For most site owners and developers, oopspam offers the most complete and low-maintenance solution, especially with its Language Allowlist, keyword blocklists, and country-based filtering working together.
 
 Start with the method that fits your current form plugin and budget, and scale up your protection as your site grows.
