@@ -2,7 +2,7 @@
 layout: post
 title: How to Block Foreign-Language Spam in WordPress Forms
 date: 2026-06-04T12:26:00.000+08:00
-last_modified_at: 2026-10-23T11:57:33.751Z
+last_modified_at: 2026-10-23T12:19:13.844Z
 author: chazie
 hub: wordpress-forms
 image: /blog/assets/posts/block_foreign_languge_meta.jpg
@@ -89,7 +89,7 @@ A[ keyword blocklist](https://github.com/oopspam/spam-words) lets you reject sub
 
 ### **Steps via WordPress Core (Discussion Settings):**
 
-![Steps via WordPress Core (Discussion Settings)](/blog/assets/posts/wordpress-discussion-settings.png "Steps via WordPress Core (Discussion Settings)")
+![Steps via WordPress Core (Discussion Settings)](/blog/assets/posts/oopspam-anti-spam-settings-blocked-keywords.png "Steps via WordPress Core (Discussion Settings)")
 
 1. Go to **Settings > Discussion** in your WordPress dashboard.
 2. Scroll down to the **Disallowed Comment Keys** box.
