@@ -2,7 +2,7 @@
 layout: post
 title: How to Block Foreign-Language Spam in WordPress Forms
 date: 2026-06-04T12:26:00.000+08:00
-last_modified_at: 2026-10-23T12:19:13.844Z
+last_modified_at: 2026-10-23T12:24:06.182Z
 author: chazie
 hub: wordpress-forms
 image: /blog/assets/posts/block_foreign_languge_meta.jpg
@@ -104,7 +104,7 @@ If you are already using oopspam, you do not need a separate blocklist tool. The
 
 Unlike the WordPress core option, the Blocked Keywords feature in oopspam works across both the WordPress comment system and all supported form builders.
 
-![Steps via oopspam's Manual Moderation Tab](/blog/assets/posts/oopspam-manual-moderation-tab.png "Steps via oopspam's Manual Moderation Tab")
+![Steps via oopspam's Manual Moderation Tab](/blog/assets/posts/oopspam-anti-spam-settings-blocked-keywords.png "Steps via oopspam's Manual Moderation Tab")
 
 1. In your WordPress dashboard, go to **oopspam Anti-Spam > Settings**.
 2. Click the **Manual Moderation** tab.
