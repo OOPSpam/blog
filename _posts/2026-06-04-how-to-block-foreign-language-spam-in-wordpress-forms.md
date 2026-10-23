@@ -2,7 +2,7 @@
 layout: post
 title: How to Block Foreign-Language Spam in WordPress Forms
 date: 2026-06-04T12:26:00.000+08:00
-last_modified_at: 2026-10-23T12:24:31.052Z
+last_modified_at: 2026-10-23T12:36:18.123Z
 author: chazie
 hub: wordpress-forms
 image: /blog/assets/posts/block_foreign_languge_meta.jpg
@@ -112,7 +112,7 @@ Unlike the WordPress core option, the Blocked Keywords feature in oopspam works 
 4. Add your own foreign-language words or phrases, one per line, or use the quick-add buttons below to load a ready-made list.
 5. Click **Save Changes**.
 
-#### **Add Ready-Made Spam Word Lists in One Click**
+### **Add Ready-Made Spam Word Lists in One Click**
 
 You do not have to build your blocklist from scratch. Below the keyword field, oopspam includes three quick-add buttons:
 
@@ -129,6 +129,12 @@ You can edit the list after adding it. Remove any word that might appear in a ge
 > **Tip:** Matching is case-insensitive and exact. For example, "seo" matches "seo" but not "seoul". This keeps false positives low, but it also means single letters or partial words will not catch spam. Add whole words and phrases instead.
 
 Any form submission containing a blocked keyword is rejected automatically. This is particularly useful when you have already spotted recurring spam phrases in your inbox and want to shut them down immediately without waiting for the machine learning filter to catch up.
+
+### **Steps via the oopspam Dashboard (All Your Websites at Once):**
+
+Managing several websites? Keywords added on the **Moderation** page of your [oopspam dashboard](https://app.oopspam.com/) apply to every website on your account, not just the one where the plugin is installed. Go to **Moderation > Blocked keywords**, enter one word or phrase per line, and click **Add**.
+
+![Steps via the oopspam Dashboard (All Your Websites at Once)](/blog/assets/posts/oopspam-dashboard-blocked-keywords.png "Steps via the oopspam Dashboard (All Your Websites at Once)")
 
 **What to add to your blocklist:**
 
