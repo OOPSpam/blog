@@ -2,6 +2,7 @@
 layout: post
 title: 7 Ways to Protect Your Bricksforge Forms from Spam
 date: 2026-10-28T23:31:00.000+08:00
+last_modified_at: 2026-10-28T15:45:11.654Z
 author: chazie
 hub: wordpress-forms
 image: /blog/assets/posts/social-media-meta.png
@@ -41,31 +42,31 @@ It scores message content and checks IP and email reputation. Optional rules add
 
 Setup takes about five minutes. No changes inside the Bricks builder are needed.
 
-1. In WordPress, go to **Plugins > Add New**, search for **oopspam Anti-Spam**, then install and activate it. Make sure you run version 1.2.87 or later.
+In WordPress, go to **Plugins > Add New**, search for **oopspam Anti-Spam**, then install and activate it. Make sure you run version 1.2.87 or later.
 
 ![oopspam Anti-Spam](/blog/assets/posts/oopspam-anti-spam-overview.png "oopspam Anti-Spam")
 
-2. [Create an oopspam account](https://app.oopspam.com/Identity/Account/Register) and copy your API key from the dashboard.
+[Create an oopspam account](https://app.oopspam.com/Identity/Account/Register) and copy your API key from the dashboard.
 
 ![Create an oopspam account and copy your API key from the dashboard.](/blog/assets/posts/oopspam-dashboard-api.png "Create an oopspam account and copy your API key from the dashboard.")
 
-3. Go to **Settings > oopspam Anti-Spam**. Paste the key into **My API Key** and select **oopspam Dashboard** as the key source.
+Go to **Settings > oopspam Anti-Spam**. Paste the key into **My API Key** and select **oopspam Dashboard** as the key source.
 
 ![Go to Settings > oopspam Anti-Spam. Paste the key into My API Key and select oopspam Dashboard as the key source.](/blog/assets/posts/oopspam-api-key.png "Go to Settings > oopspam Anti-Spam. Paste the key into My API Key and select oopspam Dashboard as the key source.")
 
-4. Find the **Bricksforge Forms** section and check **Activate Spam Protection**. Do the same for **[Bricks Forms](https://www.oopspam.com/blog/3-ways-to-protect-your-bricks-forms-from-spam)** if you also use native Bricks forms.
+Find the **Bricksforge Forms** section and check **Activate Spam Protection**. Do the same for **[Bricks Forms](https://www.oopspam.com/blog/3-ways-to-protect-your-bricks-forms-from-spam)** if you also use native Bricks forms.
 
 ![Find the Bricksforge Forms section and check Activate Spam Protection. ](/blog/assets/posts/bricksforge-forms-section.png "Find the Bricksforge Forms section and check Activate Spam Protection. ")
 
-5. ***Optional:*** set the sensitivity level, enable rate limiting, and add country, language, VPN, or disposable email filters.
+***Optional:*** set the sensitivity level, enable rate limiting, and add country, language, VPN, or disposable email filters.
 
 ![Set the sensitivity level, enable rate limiting, and add country, language, VPN, or disposable email filters.](/blog/assets/posts/oopspam-settings.png "Set the sensitivity level, enable rate limiting, and add country, language, VPN, or disposable email filters.")
 
-6. If your site runs behind Cloudflare or another proxy, enable **Trust proxy headers** so oopspam sees real visitor IPs.
+If your site runs behind Cloudflare or another proxy, enable **Trust proxy headers** so oopspam sees real visitor IPs.
 
 ![Enable Trust proxy headers](/blog/assets/posts/trust-proxy-headers.png "Enable Trust proxy headers")
 
-7. Submit a test entry. Check **Spam Entries** and **Valid Entries** to confirm it was logged.
+Submit a test entry. Check **Spam Entries** and **Valid Entries** to confirm it was logged.
 
 ![Submit a test entry. Check Spam Entries and Valid Entries to confirm it was logged.](/blog/assets/posts/bricksforge-forms-spam.png "Submit a test entry. Check Spam Entries and Valid Entries to confirm it was logged.")
 
