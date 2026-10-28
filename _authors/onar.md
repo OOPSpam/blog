@@ -3,14 +3,16 @@ layout: author
 name: onar
 display_name: Onar Alili
 position: Co-founder & Engineer
-avatar: /blog/assets/posts/1541446643330.jpg
+avatar: /blog/assets/posts/onaralili_bw.png
 linkedin: https://www.linkedin.com/in/onaralili/
 x: https://x.com/OnarAlili
+short_bio: Onar is the co-founder of oopspam and the engineer behind its spam
+  detection API. He started oopspam in 2017 as a cybersecurity project and
+  reviews the technical content on this blog.
 same_as:
   - https://www.linkedin.com/in/onaralili/
   - https://x.com/OnarAlili
   - https://www.oopspam.com/about
-short_bio: "Onar is the co-founder of oopspam and the engineer behind its spam detection API. He started oopspam in 2017 as a cybersecurity project and reviews the technical content on this blog."
 ---
 Onar Alili is the co-founder of oopspam and the engineer behind its spam detection API.
 
