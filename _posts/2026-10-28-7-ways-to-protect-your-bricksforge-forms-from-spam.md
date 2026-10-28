@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 7 Ways to Protect Your Bricksforge Forms from Spam
-date: 2026-10-28T23:31:00.000+08:00
-last_modified_at: 2026-10-28T15:45:11.654Z
+date: 2026-10-28T23:58:00.000+08:00
+last_modified_at: 2026-10-28T15:58:23.500Z
 author: chazie
 hub: wordpress-forms
 image: /blog/assets/posts/social-media-meta.png
