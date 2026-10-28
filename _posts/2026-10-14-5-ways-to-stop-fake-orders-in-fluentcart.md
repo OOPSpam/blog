@@ -2,7 +2,7 @@
 layout: post
 title: 5 Ways to Stop Fake Orders in FluentCart
 date: 2026-10-14T16:21:00.000+08:00
-last_modified_at: 2026-10-14T15:49:14.504Z
+last_modified_at: 2026-10-28T06:25:26.084Z
 author: chazie
 hub: ecommerce-fraud
 image: /blog/assets/posts/meta_fluentcart.jpg
@@ -51,7 +51,7 @@ Find the **FluentCart** section and turn on **Activate Spam Protection**.
 
 * **Block VPNs and cloud providers.** Card testers hide behind VPNs and data center IPs. Real shoppers rarely do.
 * **Rate limiting.** Cap order attempts per IP or email in a [set time window](https://www.oopspam.com/blog/protecting-forms-with-rate-limiting-in-wordpress-using-oopspam). This stops rapid-fire card testing.
-* **Country blocking.** Reject orders from [countries](https://www.oopspam.com/blog/how-to-block-countries-from-your-website-the-complete-guidehttps://www.oopspam.com/blog/how-to-block-countries-from-your-website-the-complete-guide) you do not sell to.
+* **Country blocking.** Reject orders from [countries](https://www.oopspam.com/blog/how-to-block-countries-from-your-website-the-complete-guide) you do not sell to.
 * **Manual rules.** Block specific IPs, emails, or keywords you see in bad orders.
 * **Logs.** Review spam and valid entries to see why each order was blocked or allowed.
 
