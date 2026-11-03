@@ -83,7 +83,7 @@ Then open **Form Spam Entries** in WordPress. The entry should show VPN or cloud
 
 Spammers often combine tactics. Two more oopspam settings help:
 
-* **Rate Limiting:** [cap submissions](https://www.oopspam.com/blog/protecting-forms-with-rate-limiting-in-wordpress-using-oopspam) per IP or email within a set time window.
+* **Rate Limiting:** [cap submissions](https://www.oopspam.com/blog/how-to-limit-form-submissions-in-bricksforge-forms) per IP or email within a set time window.
 * **Country Filtering:** reject submissions from countries you don't serve. See [How to block countries in Bricksforge Forms](https://www.oopspam.com/blog/how-to-block-countries-in-bricksforge-forms).
 
 ![Rate limiting settings in oopspam](/blog/assets/posts/enabled-rate-limiting-settings.png "Rate limiting settings in oopspam")
@@ -245,3 +245,4 @@ Using the native Bricks Form element? See [How to block VPN and data center IP s
 
 - [7 Ways to Protect Your Bricksforge Forms from Spam](https://www.oopspam.com/blog/7-ways-to-protect-your-bricksforge-forms-from-spam)
 - [How to Block Countries in Bricksforge Forms?](https://www.oopspam.com/blog/how-to-block-countries-in-bricksforge-forms)
+- [How to Limit Form Submissions in Bricksforge Forms?](https://www.oopspam.com/blog/how-to-limit-form-submissions-in-bricksforge-forms)

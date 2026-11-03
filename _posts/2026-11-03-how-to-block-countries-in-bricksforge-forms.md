@@ -112,7 +112,7 @@ When a submission is blocked, the visitor sees the spam message on the form. If 
 Country blocking alone won't stop spammers who use a VPN. Combine it with:
 
 * **VPN and data center IP blocking:** see [How to block VPN and data center IP submissions in Bricksforge Forms](https://www.oopspam.com/blog/how-to-block-vpn-and-data-center-ip-submissions-in-bricksforge-forms).
-* **Rate limiting:** see [Protecting forms with rate limiting in WordPress](https://www.oopspam.com/blog/protecting-forms-with-rate-limiting-in-wordpress-using-oopspam).
+* **Rate limiting:** see [How to limit form submissions in Bricksforge Forms](https://www.oopspam.com/blog/how-to-limit-form-submissions-in-bricksforge-forms).
 * **Language filtering:** see [How to block foreign language spam in WordPress forms](https://www.oopspam.com/blog/how-to-block-foreign-language-spam-in-wordpress-forms).
 
 ### **Review blocked submissions**
@@ -254,3 +254,5 @@ Using another form builder? We also cover country blocking for [Bricks Forms](ht
 
 - [7 Ways to Protect Your Bricksforge Forms from Spam](https://www.oopspam.com/blog/7-ways-to-protect-your-bricksforge-forms-from-spam)
 - [How to Block Countries in Bricks Forms?](https://www.oopspam.com/blog/how-to-block-countries-in-bricks-forms)
+- [How to Block VPN and Data Center IP Submissions in Bricksforge Forms](https://www.oopspam.com/blog/how-to-block-vpn-and-data-center-ip-submissions-in-bricksforge-forms)
+- [How to Limit Form Submissions in Bricksforge Forms?](https://www.oopspam.com/blog/how-to-limit-form-submissions-in-bricksforge-forms)
