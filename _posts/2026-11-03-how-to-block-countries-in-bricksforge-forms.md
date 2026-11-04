@@ -2,6 +2,7 @@
 layout: post
 title: How to Block Countries in Bricksforge Forms?
 date: 2026-11-03T12:00:00.000+04:00
+last_modified_at: 2026-11-04T10:21:00.000Z
 author: daniella
 hub: vpn-country-rate-limits
 image: /blog/assets/posts/meta_bricksforge_blockcountries.png
@@ -12,7 +13,7 @@ tags:
   - Bricksforge Forms
   - Cloudflare
 ---
-Bricksforge Pro Forms has no built-in country blocking. To block countries, use the [oopspam Anti-Spam](https://www.oopspam.com/wordpress) plugin to filter Pro Forms submissions by country, or use Cloudflare to block whole countries from your website. For most sites, form-level filtering is the better choice because your site stays open to everyone.
+Bricksforge Pro Forms has no built-in country blocking. To block countries, use the [oopspam Anti-Spam](https://www.oopspam.com/wordpress) plugin (that's us 👋) to filter Pro Forms submissions by country, or use Cloudflare to block whole countries from your website. For most sites, form-level filtering is the better choice because your site stays open to everyone.
 
 [Bricksforge](https://bricksforge.io/) is an add-on for the [Bricks](https://bricksbuilder.io/) site builder. Its Pro Forms element can create posts, register users, send webhooks and take payments. That makes every spam submission more expensive than a junk email. If most of your spam comes from countries you don't serve, blocking those countries is a quick way to cut the noise.
 
@@ -93,7 +94,7 @@ Trusted Countries always override the blocklist. Pick the allowlist if you only 
 
 ![Set up country filtering for Bricksforge Forms in oopspam](/blog/assets/posts/country-filtering-settings.png "Set up country filtering for Bricksforge Forms in oopspam")
 
-**Step 6: Turn on Trust proxy headers (if you use Cloudflare)**
+**Step 6: Turn on Trust proxy headers (if you use Cloudflare or another proxy)**
 
 If your site runs behind Cloudflare or another proxy, go to the **Misc** tab in oopspam settings and turn on **Trust proxy headers**. Without it, oopspam sees the proxy's IP address instead of the visitor's. Country rules would then match the proxy's location, not your visitor's.
 

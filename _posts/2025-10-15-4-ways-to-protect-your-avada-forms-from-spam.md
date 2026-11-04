@@ -2,6 +2,7 @@
 layout: post
 title: 4 ways to protect your Avada Forms from spam
 date: 2025-10-15T12:15:00.000+08:00
+last_modified_at: 2026-11-04T10:21:00.000Z
 author: chazie
 hub: wordpress-forms
 image: /blog/assets/posts/header_avada.png
@@ -15,7 +16,7 @@ tags:
 ---
 ![Avada Forms](/blog/assets/posts/avada-for-wordpress.png "Avada Forms")
 
-Spam submissions waste time, flood inboxes, and slow websites. The best way to protect your [Avada Forms](https://avada.com/feature/form-builder/) is to use the built-in Honeypot, reCAPTCHA, or Cloudflare Turnstile elements,  then layer an advanced external filter like [oopspam](https://www.oopspam.com/) for advanced protection.
+Spam submissions waste time, flood inboxes, and slow websites. The best way to protect your [Avada Forms](https://avada.com/feature/form-builder/) is to use the built-in Honeypot, reCAPTCHA, or Cloudflare Turnstile elements,  then layer an advanced external filter like [oopspam](https://www.oopspam.com/) (that's us 👋) for advanced protection.
 
 Each method below builds upon the last, combining front-end and back-end defense to stop both basic bots and smarter human-assisted spam.
 
@@ -48,7 +49,31 @@ The Avada [reCAPTCHA Field](https://avada.com/documentation/recaptcha-field-elem
 
 Use v3 for smoother UX and v2 for high-risk forms (like quote or contact requests). If your submit button disappears, exclude reCAPTCHA scripts from JS minification in your cache plugin.
 
-## **3. Strengthen Protection with oopspam** 
+## **3. Use Cloudflare Turnstile Field Element**
+
+![Use Cloudflare Turnstile Field Element](/blog/assets/posts/avada-turnstile.png "Cloudflare Turnstile")
+
+The Avada [Turnstile Field](https://avada.com/element/turnstile-field/) verifies human visitors without puzzles or images. It’s fast, lightweight, and doesn’t rely on tracking cookies.
+
+**How to set it up:**
+
+1. Log in to **Cloudflare** → **Turnstile** → click **Add Widget**.
+2. Add your website domain and copy the **Site Key** and **Secret Key**.
+3. In Avada, go to **Options → Forms → Cloudflare Turnstile** → paste both keys.
+4. Add the **Turnstile Field Element** to your form.
+5. Choose your display mode — “Always” or “Interaction Only.”
+
+Turnstile improves UX, avoids Google dependencies, and works seamlessly with Avada. It’s ideal if you want invisible spam protection that doesn’t frustrate real users.
+
+### **Bonus Tips to Keep Forms Clean**
+
+* Don’t stack multiple CAPTCHA systems. Use only one per form.
+* Always test forms in an Incognito browser after setup.
+* Exclude CAPTCHA or Turnstile scripts from JS minify/defer in cache plugins.
+* Review blocked logs weekly to adjust sensitivity and catch edge cases.
+* Add rate-limit rules in oopspam or [Cloudflare](https://developers.cloudflare.com/waf/rate-limiting-rules/) for high-traffic and public forms.
+
+## **4. Strengthen Protection with oopspam** 
 
 Even with [CAPTCHA](https://www.oopspam.com/blog/best-captcha-alternatives) tools, human-assisted and machine learning-driven spam can slip through. That’s where **[oopspam Anti-Spam](https://wordpress.org/plugins/oopspam-anti-spam/)** comes in.
 
@@ -86,30 +111,6 @@ Enable extra protections under these tabs:
 > **Pro Tip:** Start with moderate sensitivity, review your logs after one week, then fine-tune.
 
 This combination, Avada’s built-in spam protection plus oopspam, stops almost all automated and human-assisted spam attacks.
-
-## **4. Use Cloudflare Turnstile Field Element**
-
-![Use Cloudflare Turnstile Field Element](/blog/assets/posts/avada-turnstile.png "Cloudflare Turnstile")
-
-The Avada [Turnstile Field](https://avada.com/element/turnstile-field/) verifies human visitors without puzzles or images. It’s fast, lightweight, and doesn’t rely on tracking cookies.
-
-**How to set it up:**
-
-1. Log in to **Cloudflare** → **Turnstile** → click **Add Widget**.
-2. Add your website domain and copy the **Site Key** and **Secret Key**.
-3. In Avada, go to **Options → Forms → Cloudflare Turnstile** → paste both keys.
-4. Add the **Turnstile Field Element** to your form.
-5. Choose your display mode — “Always” or “Interaction Only.”
-
-Turnstile improves UX, avoids Google dependencies, and works seamlessly with Avada. It’s ideal if you want invisible spam protection that doesn’t frustrate real users.
-
-### **Bonus Tips to Keep Forms Clean**
-
-* Don’t stack multiple CAPTCHA systems. Use only one per form.
-* Always test forms in an Incognito browser after setup.
-* Exclude CAPTCHA or Turnstile scripts from JS minify/defer in cache plugins.
-* Review blocked logs weekly to adjust sensitivity and catch edge cases.
-* Add rate-limit rules in oopspam or [Cloudflare](https://developers.cloudflare.com/waf/rate-limiting-rules/) for high-traffic and public forms.
 
 ## **Final Takeaway**
 

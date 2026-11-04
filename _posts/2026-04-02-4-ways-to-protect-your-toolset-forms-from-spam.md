@@ -2,6 +2,7 @@
 layout: post
 title: 4 Ways to Protect Your Toolset Forms from Spam
 date: 2026-04-02T17:29:00.000+08:00
+last_modified_at: 2026-11-04T10:21:00.000Z
 author: chazie
 hub: wordpress-forms
 image: /blog/assets/posts/toolset_meta_header.png
@@ -62,7 +63,28 @@ Why this works well:
 
 Honeypots are lightweight and effective, but they only stop basic spam. They should be used alongside other methods, not on their own.
 
-## **3. Add oopspam for Advanced Filtering**
+## **3. Use a Firewall or Web Application Firewall (WAF)**
+
+A firewall helps stop spam before it even reaches your website. Services like [Cloudflare](https://www.cloudflare.com/) act as a filter between your site and incoming traffic. They can block:
+
+* known malicious IP addresses
+* suspicious traffic patterns
+* automated bot requests
+
+This reduces the load on your Toolset Forms and prevents a large portion of spam at the network level.
+
+**How to set it up**
+
+![Use a Firewall or Web Application Firewall (WAF)](/blog/assets/posts/cloudflare-security-level.png "Use a Firewall or Web Application Firewall (WAF)")
+
+1. Create a Cloudflare account
+2. Add your website and update nameservers
+3. Set security level to **Medium or higher**
+4. Enable bot protection
+
+A firewall is especially useful if your site receives high traffic and sees repeated spam attacks.
+
+## **4. Add oopspam for Advanced Filtering**
 
 [oopspam](https://www.oopspam.com/) (that's us 👋) adds a stronger layer of protection by analyzing each submission instead of relying on user challenges. Unlike [CAPTCHA](https://www.oopspam.com/blog/best-captcha-alternatives), it does not ask users to complete anything. It runs in the background and evaluates signals such as:
 
@@ -117,27 +139,6 @@ If unsure, keep the default “moderate” setting and adjust based on your resu
 oopspam focuses on behavior and content, not just form interaction. This helps detect spam that basic tools may miss.
 
 For many Toolset Forms setups, oopspam can handle most of the filtering on its own. You do not need to rely on reCAPTCHA if it is already working effectively.
-
-## **4. Use a Firewall or Web Application Firewall (WAF)**
-
-A firewall helps stop spam before it even reaches your website. Services like [Cloudflare](https://www.cloudflare.com/) act as a filter between your site and incoming traffic. They can block:
-
-* known malicious IP addresses
-* suspicious traffic patterns
-* automated bot requests
-
-This reduces the load on your Toolset Forms and prevents a large portion of spam at the network level.
-
-**How to set it up**
-
-![Use a Firewall or Web Application Firewall (WAF)](/blog/assets/posts/cloudflare-security-level.png "Use a Firewall or Web Application Firewall (WAF)")
-
-1. Create a Cloudflare account
-2. Add your website and update nameservers
-3. Set security level to **Medium or higher**
-4. Enable bot protection
-
-A firewall is especially useful if your site receives high traffic and sees repeated spam attacks.
 
 ## **Final Thoughts**
 

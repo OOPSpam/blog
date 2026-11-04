@@ -2,6 +2,7 @@
 layout: post
 title: 3 Ways to Protect Your MailPoet from Spam
 date: 2026-04-08T18:53:00.000+08:00
+last_modified_at: 2026-11-04T10:21:00.000Z
 author: chazie
 hub: email-lists
 image: /blog/assets/posts/header_mailpoet.png
@@ -16,48 +17,9 @@ tags:
 
 Spam signups in [MailPoet](https://www.mailpoet.com/) do more than clutter your list. They affect deliverability, increase bounce rates, and can damage your sender reputation.
 
-The most effective way to protect MailPoet is to combine three key approaches: use a dedicated anti-spam plugin, enable MailPoet’s built-in protections, and secure your technical setup. If you set these up properly, you can significantly reduce spam while keeping your forms easy to use.
+The most effective way to protect MailPoet is to combine three key approaches: enable MailPoet’s built-in protections, secure your technical setup, and add a dedicated anti-spam plugin such as oopspam (that's us 👋). If you set these up properly, you can significantly reduce spam while keeping your forms easy to use.
 
-## **1. Install an Anti-Spam Plugin (oopspam)**
-
-MailPoet includes basic protection, but it is not always enough for modern spam. Bots today can bypass simple checks and submit forms at scale.
-
-This is where a dedicated anti-spam plugin like oopspam helps.
-
-[oopspam](https://www.oopspam.com/) (that's us 👋) filters submissions in real time by analyzing behavior, content, and origin. It works in the background, so users do not experience extra steps like puzzles or checkboxes.
-
-### **How to set it up**
-
-Start by installing the plugin. Go to **Plugins → Add New**, search for **“[oopspam Anti-Spam](https://www.oopspam.com/wordpress)”**, then install and activate it.
-
-![oopspam Anti-Spam](/blog/assets/posts/oopspam-anti-spam-overview.png "oopspam Anti-Spam")
-
-Next, connect your site using an API key. [Create an account](https://app.oopspam.com/Identity/Account/Login) on the oopspam website and copy your API key from the dashboard.
-
-![oopspam account](/blog/assets/posts/oopspam-dashboard-api.png "oopspam account")
-
-Go to **Settings → oopspam** in WordPress and paste the API key and save.
-
-![oopspam Settings](/blog/assets/posts/oopspam-api-key.png "oopspam Settings")
-
-Then **activate spam protection for your MailPoet**. 
-
-![Activate spam protection for your MailPoet.](/blog/assets/posts/enable-spam-protection-for-mailpoet.png "Activate spam protection for your MailPoet.")
-
-Once activated, it begins filtering submissions automatically.
-
-### **What it helps with**
-
-oopspam gives you control over how submissions are handled. You can:
-
-* [Limit how many times](https://www.oopspam.com/blog/how-to-limit-form-submissions-in-mailpoet) an IP or email can submit
-* Block or allow [specific countries](https://www.oopspam.com/blog/how-to-block-countries-in-mailpoet)
-* Filter traffic from [VPNs, proxies, and data centers](https://www.oopspam.com/blog/how-to-block-vpn-and-data-center-ip-submissions-in-mailpoet)
-* Detect disposable or suspicious email patterns
-
-It also provides [logs](https://help.oopspam.com/wordpress/form-entries/), so you can review what is being blocked and adjust your settings if needed. For many setups, this becomes the main spam filter.
-
-## **2. Use MailPoet’s Built-In Protections**
+## **1. Use MailPoet’s Built-In Protections**
 
 MailPoet already includes features designed to reduce spam. These should always be enabled before adding more complex solutions.
 
@@ -109,7 +71,7 @@ Once enabled, CAPTCHA applies to all MailPoet subscription forms.
 
 > **Note:** This setting only protects MailPoet forms. If you use other forms (e.g., contact or checkout), you will need to secure those separately.
 
-## **3. Strengthen Your Technical and Security Setup**
+## **2. Strengthen Your Technical and Security Setup**
 
 Even with form-level protection, spam can still reach your site. Strengthening your technical setup helps stop unwanted traffic earlier and protects your email system.
 
@@ -175,10 +137,49 @@ To set up [Cloudflare](https://www.cloudflare.com/):
 
 A WAF is especially useful if your site receives high traffic or repeated spam attacks.
 
+## **3. Install an Anti-Spam Plugin (oopspam)**
+
+MailPoet includes basic protection, but it is not always enough for modern spam. Bots today can bypass simple checks and submit forms at scale.
+
+This is where a dedicated anti-spam plugin like oopspam helps.
+
+[oopspam](https://www.oopspam.com/) filters submissions in real time by analyzing behavior, content, and origin. It works in the background, so users do not experience extra steps like puzzles or checkboxes.
+
+### **How to set it up**
+
+Start by installing the plugin. Go to **Plugins → Add New**, search for **“[oopspam Anti-Spam](https://www.oopspam.com/wordpress)”**, then install and activate it.
+
+![oopspam Anti-Spam](/blog/assets/posts/oopspam-anti-spam-overview.png "oopspam Anti-Spam")
+
+Next, connect your site using an API key. [Create an account](https://app.oopspam.com/Identity/Account/Login) on the oopspam website and copy your API key from the dashboard.
+
+![oopspam account](/blog/assets/posts/oopspam-dashboard-api.png "oopspam account")
+
+Go to **Settings → oopspam** in WordPress and paste the API key and save.
+
+![oopspam Settings](/blog/assets/posts/oopspam-api-key.png "oopspam Settings")
+
+Then **activate spam protection for your MailPoet**. 
+
+![Activate spam protection for your MailPoet.](/blog/assets/posts/enable-spam-protection-for-mailpoet.png "Activate spam protection for your MailPoet.")
+
+Once activated, it begins filtering submissions automatically.
+
+### **What it helps with**
+
+oopspam gives you control over how submissions are handled. You can:
+
+* [Limit how many times](https://www.oopspam.com/blog/how-to-limit-form-submissions-in-mailpoet) an IP or email can submit
+* Block or allow [specific countries](https://www.oopspam.com/blog/how-to-block-countries-in-mailpoet)
+* Filter traffic from [VPNs, proxies, and data centers](https://www.oopspam.com/blog/how-to-block-vpn-and-data-center-ip-submissions-in-mailpoet)
+* Detect disposable or suspicious email patterns
+
+It also provides [logs](https://help.oopspam.com/wordpress/form-entries/), so you can review what is being blocked and adjust your settings if needed. For many setups, this becomes the main spam filter.
+
 ## **Final Thoughts**
 
 MailPoet spam is not just a form issue. It affects your entire email system, from list quality to deliverability.
 
-Start with oopspam to handle advanced filtering. Then enable MailPoet’s built-in protections like double opt-in and CAPTCHA. Finally, strengthen your setup with proper email authentication and a firewall.
+Start with MailPoet’s built-in protections like double opt-in and CAPTCHA. Then strengthen your setup with proper email authentication and a firewall. Finally, add oopspam to filter the advanced spam that gets through.
 
 With these steps in place, you can reduce spam, protect your sender reputation, and maintain a clean, high-quality subscriber list.

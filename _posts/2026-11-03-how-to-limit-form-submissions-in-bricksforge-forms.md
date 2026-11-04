@@ -2,6 +2,7 @@
 layout: post
 title: How to Limit Form Submissions in Bricksforge Forms?
 date: 2026-11-03T16:00:00.000+04:00
+last_modified_at: 2026-11-04T10:21:00.000Z
 author: daniella
 hub: vpn-country-rate-limits
 image: /blog/assets/posts/meta_bricksforge_limit_submissions.jpg
@@ -11,7 +12,7 @@ description: Limit Bricksforge Pro Forms submissions with Maximum Submissions
 tags:
   - Bricksforge Forms
 ---
-Bricksforge Pro Forms has two built-in submission limits in the **Submissions** group of the Create Submission action. **Maximum Submissions** caps how many entries are stored, and **Prevent Duplicates** rejects a repeat value in a field such as email. Neither limits how often one visitor can submit. To cap submissions per IP or email per hour, add rate limiting with the oopspam Anti-Spam plugin.
+Bricksforge Pro Forms has two built-in submission limits in the **Submissions** group of the Create Submission action. **Maximum Submissions** caps how many entries are stored, and **Prevent Duplicates** rejects a repeat value in a field such as email. Neither limits how often one visitor can submit. To cap submissions per IP or email per hour, add rate limiting with the oopspam Anti-Spam plugin (that's us 👋).
 
 [Bricksforge](https://bricksforge.io/) is an add-on for the [Bricks](https://bricksbuilder.io/) site builder. Its [Pro Forms](https://docs.bricksforge.io/en/elements/pro-forms/) element can create posts, register users, call webhooks and take payments, so a flood of submissions does more damage than a full inbox. This guide covers three methods, step by step.
 
@@ -99,7 +100,7 @@ Click **Save Changes**.
 
 A good starting point is 3 submissions per hour per IP and per email, a 24-hour block and a 48-hour clean-up. Raise the numbers if your form has legitimate repeat users, such as a support form.
 
-### **Turn On Trust Proxy Headers (If You Use Cloudflare)**
+### **Turn On Trust Proxy Headers (If You Use Cloudflare or Another Proxy)**
 
 Per-IP limits only work if oopspam sees each visitor's real IP address. If your site runs behind Cloudflare or another proxy, open the **Misc** tab and turn on **Trust proxy headers**. Without it, all visitors share the proxy's IP and could hit the limit together.
 

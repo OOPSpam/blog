@@ -2,6 +2,7 @@
 layout: post
 title: How to Block VPN and Data Center IP Submissions in Bricksforge Forms
 date: 2026-11-03T15:00:00.000+04:00
+last_modified_at: 2026-11-04T10:21:00.000Z
 author: daniella
 hub: vpn-country-rate-limits
 image: /blog/assets/posts/meta_bricksforge_vpn_dc.jpg
@@ -11,7 +12,7 @@ tags:
   - Bricksforge Forms
   - Cloudflare
 ---
-Bricksforge Pro Forms has no setting to block VPN or data center IP addresses. The fastest fix is the oopspam Anti-Spam plugin. Install it, turn on Bricksforge Forms protection, then enable **Block VPNs** and **Block Cloud Providers** in the **IP Filtering** tab. For a manual, network-level option, create Cloudflare custom rules that block hosting provider ASNs and Tor traffic.
+Bricksforge Pro Forms has no setting to block VPN or data center IP addresses. The fastest fix is the oopspam Anti-Spam plugin (that's us 👋). Install it, turn on Bricksforge Forms protection, then enable **Block VPNs** and **Block Cloud Providers** in the **IP Filtering** tab. For a manual, network-level option, create Cloudflare custom rules that block hosting provider ASNs and Tor traffic.
 
 ## **Why VPN and Data Center IPs Are a Problem for Bricksforge Forms**
 
@@ -63,7 +64,7 @@ Click **Save Changes**. oopspam now filters your Pro Forms automatically.
 
 ![Turn on Block VPNs and Block Cloud Providers in the IP Filtering tab](/blog/assets/posts/ip-filtering-oopspam.png "Turn on Block VPNs and Block Cloud Providers in the IP Filtering tab")
 
-### **Step 5: Turn On Trust Proxy Headers (If You Use Cloudflare)**
+### **Step 5: Turn On Trust Proxy Headers (If You Use Cloudflare or Another Proxy)**
 
 IP filtering only works if oopspam sees the visitor's real IP address. If your site runs behind Cloudflare or another proxy, open the **Misc** tab and turn on **Trust proxy headers**. Without it, every submission appears to come from the proxy's own network.
 
