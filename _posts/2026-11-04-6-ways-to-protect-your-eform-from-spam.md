@@ -36,6 +36,8 @@ Two things to know:
 
 eForm has strong built-in limits under **Form Settings > Submission Limitation** ([docs](https://eform.live/fsqm/form-submission-related/limiting-eform-submissions/)). You can cap submissions per email, per IP address, per registered user, per browser cookie, or in total. Each limit has its own notice message.
 
+![Set submission limits per email, IP address, registered user and in total under Form Settings > Submission Limitation in eForm](/blog/assets/posts/eform-submission-limitation.png "Set submission limits per email, IP address, registered user and in total under Form Settings > Submission Limitation in eForm")
+
 A per-IP or per-email cap stops one bot from submitting a form hundreds of times. These are lifetime counts, though, not per-hour limits. For time-based rate limiting on public forms, use oopspam. See [How to limit form submissions in eForm](https://www.oopspam.com/blog/how-to-limit-form-submissions-in-eform) for step-by-step setup.
 
 ## **3. Restrict Who Can Submit**
