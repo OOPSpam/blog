@@ -146,10 +146,6 @@ Cloudflare works best alongside oopspam, not instead of it. See Cloudflare's [cu
     background-color: #f2f2f2;
     font-weight: bold;
   }
-
-  .post table.oopspam-table {
-    display: table;
-  }
 </style>
 
 <table class="oopspam-table">

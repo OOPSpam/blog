@@ -171,6 +171,11 @@ main.main-wide { max-width: 1240px; width: 90%; }
 
 // ---------- Wide content on small screens ----------
 // Tables and code blocks scroll inside their own box instead of widening the page.
-.post table { display: block; max-width: 100%; overflow-x: auto; }
+// Desktop: normal table layout so the border hugs the columns (display:block left an empty
+// "extra column" when cells were narrower than the box). Small screens: scroll inside the box.
+.post table { max-width: 100%; }
+@media (max-width: 768px) {
+  .post table { display: block; overflow-x: auto; }
+}
 .post pre { max-width: 100%; overflow-x: auto; }
 .post p code, .post li code, .post td code { overflow-wrap: anywhere; }
