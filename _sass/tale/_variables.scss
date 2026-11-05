@@ -11,9 +11,7 @@ $shadow-color: rgba(0, 0, 0, .2);
 $code-color: #bf616a;
 $border-color: orange;
 
-// Fonts
-// Same pairing as oopspam.com: Bricolage Grotesque for headings, Open Sans for text.
-// The old serif variables now point to Open Sans so every part of the blog is sans-serif.
+
 $sans-serif: 'Open Sans', 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, sans-serif;
 $display: 'Bricolage Grotesque', 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 $serif-primary: $sans-serif;
