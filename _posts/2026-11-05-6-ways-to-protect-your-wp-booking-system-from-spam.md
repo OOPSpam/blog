@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 6 Ways to Protect Your WP Booking System from Spam
-date: 2026-11-05T14:00:00.000+04:00
+date: 2026-11-05T12:00:00.000+04:00
 author: daniella
 hub: wordpress-forms
 image: /blog/assets/posts/meta_wpbs_protect_spam.png

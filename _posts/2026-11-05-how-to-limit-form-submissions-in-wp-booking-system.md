@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to Limit Form Submissions in WP Booking System
-date: 2026-11-05T15:30:00.000+04:00
+date: 2026-11-05T12:45:00.000+04:00
 author: daniella
 hub: vpn-country-rate-limits
 image: /blog/assets/posts/meta_wpbs_limit_submissions.png

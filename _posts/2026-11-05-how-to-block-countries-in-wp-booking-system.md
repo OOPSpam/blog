@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to Block Countries in WP Booking System
-date: 2026-11-05T14:30:00.000+04:00
+date: 2026-11-05T12:15:00.000+04:00
 author: daniella
 hub: vpn-country-rate-limits
 image: /blog/assets/posts/meta_wpbs_blockcountries.png

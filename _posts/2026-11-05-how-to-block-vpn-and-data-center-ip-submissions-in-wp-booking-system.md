@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to Block VPN and Data Center IP Submissions in WP Booking System
-date: 2026-11-05T15:00:00.000+04:00
+date: 2026-11-05T12:30:00.000+04:00
 author: daniella
 hub: vpn-country-rate-limits
 image: /blog/assets/posts/meta_wpbs_vpn_dc.png
