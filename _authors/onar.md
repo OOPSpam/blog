@@ -2,7 +2,7 @@
 layout: author
 name: onar
 display_name: Onar Alili
-position: Co-founder & Engineer
+position: Anti-Abuse Engineer & Co-founder
 avatar: /blog/assets/posts/onaralili_bw.png
 linkedin: https://www.linkedin.com/in/onaralili/
 x: https://x.com/OnarAlili
