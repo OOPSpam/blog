@@ -46,7 +46,7 @@ A honeypot costs nothing and adds no friction. It has two limits: the prospect i
 
 ## **3. Clean Up Spam with Automation Rules**
 
-Spam usually follows a pattern: the same message, a naming style, a country or a set of email domains. Turn that pattern into an automation rule:
+Spam usually follows a pattern: the same message, a naming style, a country or a set of email domains. Turn that pattern into an [automation rule](https://trailhead.salesforce.com/content/learn/modules/account-engagement-for-targeted-audiences/get-started-with-automation):
 
 1. Create an automation rule with criteria that match the spam, such as a country, an email domain or a phrase in a message field.
 2. Set its actions to add matching prospects to a "Spam" list and stop them from syncing to Salesforce.
@@ -83,9 +83,9 @@ There are two ways to set it up.
 
 Use this for your website forms. Instead of posting to a form handler, your form sends each submission to Zapier, and only clean submissions become prospects.
 
-1. **Trigger:** if your form builder has a Zapier app, such as Webflow, Typeform or Jotform, choose it and its new-submission event. For Webflow, that's **New Form Submission**. For a custom HTML form, use **Webhooks by Zapier** with **Catch Hook**, and post your form data to the webhook URL Zapier gives you.
+1. **Trigger:** if your form builder has a Zapier app, such as Webflow, Typeform or Jotform, choose it and its new-submission event. For Webflow, that's **New Form Submission**. For a custom HTML form, use **Webhooks by Zapier** with **Catch Hook**, and post your form data to the webhook URL Zapier gives you ([Zapier help](https://help.zapier.com/hc/en-us/articles/8496288690317-Trigger-Zaps-from-webhooks)).
 2. **Check for Spam:** add an **oopspam** step and choose **Check for Spam**. Connect your oopspam API key. Map the message to **Content**, the visitor's IP to **Sender IP** and the email to **Email**. Turn on extra options, such as blocking disposable emails, if you need them.
-3. **Filter:** add **Filter by Zapier**. Set **Only continue if** to **Spam Score**, **(Number) Less than**, **3**.
+3. **Filter:** add [Filter by Zapier](https://help.zapier.com/hc/en-us/articles/8496276332557-Add-conditions-to-Zaps-with-filters). Set **Only continue if** to **Spam Score**, **(Number) Less than**, **3**.
 4. **Create the prospect:** add a **Pardot** step with **Create Prospect**, or **Find or Create Prospect** to avoid duplicates. Map the email, name and other fields.
 
 ![Map the form fields to the oopspam Check for Spam action](/blog/assets/posts/zapier-oopspam-fields.png "Map the form fields to the oopspam Check for Spam action")
@@ -115,11 +115,11 @@ For a full walkthrough of the oopspam steps, see [Add Spam Protection to Embedde
 
 ### **Option B: Filter Spam with the oopspam API (For Developers)**
 
-This is the most complete setup. Your website form posts to your own server instead of the form handler. Your server checks the submission with oopspam and forwards only clean submissions to Account Engagement. Bots never see the form handler URL, so they can't post to it directly.
+This is the most complete setup. Your website form posts to your own server instead of the form handler. Your server checks the submission with oopspam and forwards only clean submissions to Account Engagement, using a server-side post to the form handler ([Nebula Consulting](https://nebulaconsulting.co.uk/insights/using-account-engagement-form-handlers/)). Bots never see the form handler URL, so they can't post to it directly.
 
 1. Change your form's `action` to an endpoint on your server, for example `/contact`.
 2. On the server, send the message, the visitor's IP and the email to `https://api.oopspam.com/v1/spamdetection`, with your API key in the `X-Api-Key` header.
-3. If the `Score` is 3 or more, drop the submission and show the visitor your usual thank-you page. If it's lower, post the fields to your form handler URL, or create the prospect with the Account Engagement API.
+3. If the `Score` is 3 or more, drop the submission and show the visitor your usual thank-you page. If it's lower, post the fields to your form handler URL, or create the prospect with the [Account Engagement API](https://developer.salesforce.com/docs/marketing/pardot/guide/prospect-v5.html).
 
 Here's an example in JavaScript (Node.js with Express) and PHP:
 
@@ -265,7 +265,7 @@ A few things to know:
 * **Add rules in the request.** Use `blockedCountries` or `allowedCountries`, `allowedLanguages`, `blockVPN` and `blockDC` to filter by location, language and network. The [API docs](https://www.oopspam.com/docs/) list every option.
 * **Tracking can change.** A submission forwarded from your server doesn't carry the visitor's browser cookie, so Account Engagement may not link the new prospect to their earlier page views. Test it before you switch your main forms.
 
-![Review checked submissions and their spam scores in the oopspam dashboard](/blog/assets/posts/netcore/log-dashboard.png "Review checked submissions and their spam scores in the oopspam dashboard")
+![Review checked submissions and their spam scores in the oopspam Logs](/blog/assets/posts/netcore/log-dashboard.png "Review checked submissions and their spam scores in the oopspam Logs")
 
 ## **Comparison**
 
@@ -364,7 +364,7 @@ Yes, for forms built in Account Engagement. Turn on **Enable explicit bot protec
 
 ### **Can I add reCAPTCHA to a Pardot form handler?**
 
-You can add reCAPTCHA to your own website form, but it only helps if your server verifies the token before passing the data on. Bots that post straight to the form handler URL skip it.
+You can add reCAPTCHA to your own website form, but it only helps if your server [verifies the token](https://developers.google.com/recaptcha/docs/verify) before passing the data on. Bots that post straight to the form handler URL skip it.
 
 ### **How do I delete spam prospects already in Account Engagement?**
 
