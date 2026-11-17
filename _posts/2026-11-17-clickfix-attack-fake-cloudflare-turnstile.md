@@ -20,7 +20,7 @@ The pages look convincing because they copy Cloudflare's logo, colours and wordi
 
 This guide explains how ClickFix works, how to tell a fake check from a real one, what to do if you ran the command, and what website owners should do if their site starts showing one.
 
-> **Never run the command.** If you see one of these pages, don't copy, paste or test the instructions, even to see what happens. We describe the steps below, but we don't reproduce any attacker commands.
+> **Never run the command.** If you see one of these pages, don't copy, paste or test the instructions, even to see what happens. We show one real command below as an image so you can recognise it, but never type it out or run it.
 
 ## **How a ClickFix Attack Works**
 
@@ -39,6 +39,10 @@ Because you start the command yourself, there's no suspicious download or email 
 Some versions add an extra step, like the one below: open the Run box, type `cmd` to open the Command Prompt, then paste and press Enter.
 
 ![A fake Cloudflare Human Verification page asking the visitor to press Windows + R, type cmd, press Ctrl + V and Enter](/blog/assets/posts/clickfix-fake-turnstile.png "A fake Cloudflare Human Verification page asking the visitor to press Windows + R, type cmd, press Ctrl + V and Enter")
+
+This is what a pasted command can look like. It's deliberately scrambled so you can't tell what it does at a glance, and it runs in a minimised window so you don't see it working.
+
+![A real ClickFix command, scrambled to hide what it downloads and runs. Don't type or run it.](/blog/assets/posts/clickfix-malicious-command.png "A real ClickFix command, scrambled to hide what it downloads and runs. Don't type or run it.")
 
 ## **Why You're Seeing Fake Cloudflare Checks Everywhere**
 
