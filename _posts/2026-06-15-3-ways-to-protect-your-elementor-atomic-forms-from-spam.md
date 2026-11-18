@@ -1,21 +1,59 @@
 ---
 layout: post
-title: 3 Ways to Protect Your Elementor Atomic Forms From Spam
+title: 5 Ways to Protect Your Elementor Atomic Forms From Spam
 date: 2026-06-15
-last_modified_at: 2026-07-17T00:04:00.000+08:00
+last_modified_at: 2026-11-18T12:30:00.000+04:00
 author: chazie
 hub: wordpress-forms
 image: /blog/assets/posts/atomic_elementor_meta.png
-description: Learn 3 ways to protect Elementor Atomic Forms from spam using
-  Cloudflare, custom PHP filters, and oopspam anti-spam protection.
+description: Learn 5 ways to protect Elementor Atomic Forms from spam using
+  the new Honeypot and Score-based reCAPTCHA elements, Cloudflare, custom PHP filters
+  and oopspam.
 tags:
   - Elementor Atomic Forms
 ---
-You can protect Elementor Atomic Forms from spam using three methods: blocking countries via Cloudflare before requests reach your site, leveraging the `elementor_pro/atomic_forms/spam_check` PHP filter for custom validation rules, or installing the oopspam Anti-Spam plugin for automated multi-layered filtering. [Elementor Atomic Forms](https://elementor.com/help/atomic-form-element/) is the new form builder in Elementor Editor V4, using a modular, component-based system for greater design flexibility. However, because it is still evolving, key spam protection features available in the classic [Elementor Form](https://www.oopspam.com/blog/spam-protection-for-elementor-forms) widget, such as honeypot fields and reCAPTCHA integration, are not yet supported.
+You can protect Elementor Atomic Forms from spam in five ways. Since Elementor Pro 4.4, Atomic Forms has two built-in options: a Honeypot element and a Score-based reCAPTCHA element. You can also block countries with Cloudflare, add your own rules with the `elementor_pro/atomic_forms/spam_check` PHP filter, or install the oopspam Anti-Spam plugin (that's us 👋) to catch the spam the built-in tools miss.
 
-Here are the three options that actually work right now.
+[Elementor Atomic Forms](https://elementor.com/help/atomic-form-element/) is the form builder in Elementor Editor V4. It builds forms from separate field elements instead of one Form widget, which gives you more design control. When it launched, it had none of the spam protection of the classic [Elementor Form](https://www.oopspam.com/blog/spam-protection-for-elementor-forms) widget. Elementor Pro 4.4, released on November 9, 2026, added honeypot and score-based reCAPTCHA protection to Atomic Forms ([Elementor Pro changelog](https://elementor.com/pro/changelog/)).
 
-## **Method 1: Block Countries at the Cloudflare Level**
+Here are the five options, starting with the built-in ones.
+
+## **Method 1: Add the Honeypot Element**
+
+A honeypot is a hidden field that visitors never see but spam bots fill in. When it's filled, the submission is blocked. It adds no friction for real visitors and needs no third-party service.
+
+1. Update Elementor and Elementor Pro to version 4.4 or later.
+2. Open your page in the Elementor editor and select your Atomic Form.
+3. In the **Elements** panel, drag the **Honeypot** element into the form. A form can have only one.
+
+![Honeypot and Score-based reCAPTCHA elements in the Elementor Elements panel](/blog/assets/posts/atomic-forms-spam-elements.png "Honeypot and Score-based reCAPTCHA elements in the Elementor Elements panel")
+
+4. Check that **Honeypot** appears in the form's **Structure** panel. It has no settings to configure, and it doesn't show on the page.
+
+![The Honeypot element in the Atomic Form structure](/blog/assets/posts/atomic-forms-honeypot.png "The Honeypot element in the Atomic Form structure")
+
+5. Update the page and send a test submission to check that normal entries still go through.
+
+A honeypot stops simple bots. Bots that skip hidden fields, and people who fill in forms by hand, get past it.
+
+## **Method 2: Add the Score-based reCAPTCHA Element**
+
+The **Score-based reCAPTCHA** element uses Google reCAPTCHA v3. Google scores each submission in the background, and Atomic Forms blocks submissions that score too low. Visitors don't see a checkbox or a puzzle.
+
+1. Create a reCAPTCHA v3 key pair in the [Google reCAPTCHA admin console](https://www.google.com/recaptcha/admin) and add your domain.
+2. In WordPress, go to **Elementor > Editor > Settings** and open the **Integrations** tab. In the **reCAPTCHA V3** section, enter your **Site Key** and **Secret Key**, set the score threshold, and save.
+
+![The reCAPTCHA V3 section in the Elementor Integrations settings](/blog/assets/posts/elementor-recaptcha-integrations.png "The reCAPTCHA V3 section in the Elementor Integrations settings")
+
+3. In the editor, drag the **Score-based reCAPTCHA** element into your Atomic Form. A form can have only one. If you haven't added your keys yet, the element shows a **Set up** button that takes you to **Integrations**.
+
+![The Score-based reCAPTCHA element with the Set up button](/blog/assets/posts/atomic-forms-score-based-recaptcha.png "The Score-based reCAPTCHA element with the Set up button")
+
+4. Update the page and send a test submission.
+
+A higher threshold blocks more bots but can also block real visitors. Start with the default and raise it only if spam keeps getting through. reCAPTCHA sends visitor data to Google, which matters under GDPR, and it doesn't stop spam typed by real people. See [reCAPTCHA v2 vs v3](https://www.oopspam.com/blog/recaptcha-v2-vs-v3-which-is-right-for-your-website) for more on how scoring works.
+
+## **Method 3: Block Countries at the Cloudflare Level**
 
 If your legitimate audience is geographically concentrated and you are getting spam traffic from [specific regions](https://www.oopspam.com/blog/blocking-countries-from-accessing-your-website-using-cloudflare), Cloudflare's country blocking is one of the effective and lowest-effort options available. Because it acts before a request ever reaches your WordPress site, it stops spam before the form submission even happens.
 
@@ -31,11 +69,11 @@ If your legitimate audience is geographically concentrated and you are getting s
 
 This approach is blunt by design. Use it when you have a clear geographic pattern to your spam and when blocking entire countries does not risk locking out real visitors. For more targeted control, combine it with the methods below.
 
-## **Method 2: Use the** `elementor_pro/atomic_forms/spam_check` **Filter**
+## **Method 4: Use the** `elementor_pro/atomic_forms/spam_check` **Filter**
 
 Elementor Atomic Forms exposes a PHP filter hook called **`elementor_pro/atomic_forms/spam_check`**. This hook fires during the form submission process and lets you inject custom validation logic before a submission is accepted. If your check fails, the submission is rejected.
 
-This is the flexible option available right now. You can use it to block specific IP addresses, flag known spam email addresses, check against external APIs, or apply any custom rules your site requires.
+This is the most flexible option. You can use it to block specific IP addresses, flag known spam email addresses, check against external APIs, or apply any custom rules your site requires.
 
 ### **Example: Blocking by IP address and email**
 
@@ -100,9 +138,9 @@ To do so:
 
 ![Elementor Atomic Forms Settings](/blog/assets/posts/atomic-forms-error-message.png "Elementor Atomic Forms Settings")
 
-## **Method 3: Install oopspam Anti-Spam Plugin**
+## **Method 5: Install oopspam Anti-Spam Plugin**
 
-[oopspam](https://www.oopspam.com/) (that's us 👋) is the most capable plug-and-play solution currently available for Elementor Atomic Forms. It hooks directly into the form submission process and applies multiple layers of intelligent filtering before anything reaches your inbox.
+[oopspam](https://www.oopspam.com/) is the most complete plug-and-play option for Elementor Atomic Forms. It hooks directly into the form submission process and applies multiple layers of intelligent filtering before anything reaches your inbox.
 
 ### **How to set it up**
 
@@ -134,8 +172,6 @@ Once active, it begins filtering submissions automatically.
 
 oopspam also includes a [submission log](https://help.oopspam.com/wordpress/form-entries/) so you can review what is being blocked and fine-tune your settings over time. This is particularly useful when legitimate submissions get caught and you need to adjust sensitivity.
 
-> **Note on error messages:** The same limitation applies here as with the custom filter. Because Atomic Forms does not yet support custom error messages, a blocked submission will show a generic error to the user. This is expected to be addressed in a future Elementor update.
-
 ## **Final thoughts**
 
-Elementor Atomic Forms offers greater flexibility than the classic Form widget, but native spam protection is still catching up. Fortunately, solutions like Cloudflare, custom PHP filters, and oopspam provide effective, production-ready protection today. As Elementor continues to develop Editor V4, native anti-spam features will likely arrive. Until then, a layered approach can keep your forms secure and your inbox free of spam.
+Elementor Atomic Forms now has its own spam protection. Start with the free Honeypot element, and add the Score-based reCAPTCHA element if bots still get through. Neither stops spam typed by real people, VPN and data center traffic, or repeat submissions, so add oopspam for those, with Cloudflare and the PHP filter for site-wide or custom rules.

@@ -2,6 +2,7 @@
 layout: post
 title: How to Limit Form Submissions in Elementor Atomic Forms?
 date: 2026-06-17T20:41:00.000+08:00
+last_modified_at: 2026-11-18T12:30:00.000+04:00
 author: chazie
 hub: vpn-country-rate-limits
 image: /blog/assets/posts/header_meta_atomic.jpg
@@ -10,7 +11,7 @@ description: Learn how to limit form submissions in Elementor Atomic Forms using
 tags:
   - Elementor Atomic Forms
 ---
-Elementor [Atomic Forms](https://elementor.com/help/atomic-form-element/) does not include built-in submission throttling. That means a bot can hit your form dozens of times in a few minutes, flooding your inbox and inflating your submission count with junk. Because Atomic Forms is still new, there is currently no native rate limiting option to fall back on.
+Elementor [Atomic Forms](https://elementor.com/help/atomic-form-element/) does not include built-in submission throttling. That means a bot can hit your form dozens of times in a few minutes, flooding your inbox and inflating your submission count with junk. Elementor Pro 4.4 added Honeypot and Score-based reCAPTCHA elements to Atomic Forms, but neither limits how often the same visitor can submit, so there is still no native rate limiting option.
 
 To limit form submissions in Elementor Atomic Forms, you need to add rate limiting with [oopspam](https://www.oopspam.com/) (that's us 👋). This caps how many times a single IP address or email can submit your form within a set time window, stopping rapid bot driven abuse before it reaches your database.
 
@@ -72,6 +73,6 @@ You can also manually block specific emails, IP addresses, or keywords, and allo
 
 ## **Final Thoughts**
 
-Limiting form submissions in Elementor Atomic Forms takes one setup step once oopspam is connected. Since the form builder itself has no native throttling yet, rate limiting through oopspam is the most direct way to stop repeated bot abuse without slowing down real visitors.
+Limiting form submissions in Elementor Atomic Forms takes one setup step once oopspam is connected. Since the form builder itself still has no native throttling, rate limiting through oopspam is the most direct way to stop repeated bot abuse without slowing down real visitors.
 
 A clean, accurately limited form always performs better than one buried in repeat junk submissions. Set the limit early and you avoid the cleanup later.
