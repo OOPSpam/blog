@@ -55,6 +55,18 @@
   }
   table {
     font-size: 16px;
+    border-collapse: collapse;
+    width: 100%;
+    margin: 0 0 1.5rem;
+  }
+  th, td {
+    border: 1px solid #e3e3e3;
+    padding: 0.5rem 0.75rem;
+    text-align: left;
+    vertical-align: top;
+  }
+  th {
+    background: #f6f6f6;
   }
   p, li {
     margin: 0 0 1rem;
